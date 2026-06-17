@@ -14,7 +14,7 @@
         body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background-color: #F7F8FA; color: #333; scroll-behavior: smooth; }
         
         .sidebar-fixed { width: 280px; height: calc(100vh - 64px); position: fixed; top: 64px; left: 0; background: white; border-right: 1px solid #E5E7EB; overflow-y: auto; z-index: 40; }
-        .main-content { margin-left: 280px; padding-top: 80px; padding-bottom: 100px; }
+        .main-content { margin-left: 280px; padding-top: 80px; padding-bottom: 60px; }
         
         .comparison-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 3rem; border: 1px solid #F3F4F6; overflow: hidden; }
         .hospital-box { border-radius: 8px; padding: 16px; border: 1px solid #F3F4F6; transition: all 0.2s; position: relative; }
@@ -429,6 +429,28 @@
                         </tbody>
                     </table>
                 </div>
+
+                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3 flex items-center gap-2">🏥 醫療機構專屬通道</h4>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-6">本平台致力於推動醫療收費透明化。若貴院發現平台展示的數據有誤、政策有最新調整，或希望「免費認領」貴院專屬板塊以提供更精準的全包套餐資訊，歡迎隨時與我們聯繫。我們將為官方代表提供綠色通道，於 24 小時內優先處理您的更新或下架請求。</p>
+                            <a href="#" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded transition-colors border border-gray-600">官方數據糾錯 / 認領專屬頁面 →</a>
+                        </div>
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3 flex items-center gap-2">💬 找不到想看的手術或醫院？</h4>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-6">我們的數據庫正在持續擴充中。如果您在平台上沒有找到特定的專科手術、想對比某家未收錄的醫院（包含海外或跨境機構），或者對網站功能有任何建議，請隨時給我們留言！您的需求是我們優化引擎的最大動力。</p>
+                            <a href="#" class="inline-block bg-[#2B579A] hover:bg-[#1D4E89] text-white text-sm font-bold py-2.5 px-5 rounded transition-colors shadow-md">提交數據需求 / 聯繫我們 →</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-6 text-xs text-gray-400">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                            <h5 class="font-bold text-gray-300 text-sm">⚖️ 免責聲明 (Legal Disclaimer)</h5>
+                            <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">🕒 數據庫最後更新時間：2026年5月</span>
+                        </div>
+                        <p class="leading-relaxed">本平台提供的所有醫療收費、保險自付額預估及質素指標，均由系統整理自各醫療機構官方網站、香港衛生署公開資訊及權威市場報告。所有數據僅供預算參考，<strong class="text-gray-300">不構成任何具約束力的報價、醫療診斷或理賠承諾</strong>。實際收費會因患者具體病況、醫生獨立定價、房型升級及突發併發症而有所不同。請務必於入院或接受治療前，直接向相關醫療機構或您的保險顧問索取最終報價。</p>
+                    </div>
+                </footer>
 
             </div>
         </main>
