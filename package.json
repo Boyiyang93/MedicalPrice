@@ -1,0 +1,11 @@
+{
+  "name": "medical-price-portal",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000 --host"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
