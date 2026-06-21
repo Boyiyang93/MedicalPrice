@@ -3,103 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>模組建置中 - 醫療價格第三方門戶</title>
+    <title>婦科微創與宮腔鏡手術臨床決策中心 (V14.3)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --ufh-blue: #1D4E89; --title-blue: #2B579A; --ufh-mint: #99D6D1; }
-        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background-color: #F7F8FA; color: #333; }
+        :root {
+            --ufh-blue: #1D4E89; 
+            --title-blue: #2B579A;
+            --ufh-mint: #99D6D1;
+        }
+        body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background-color: #F7F8FA; color: #333; scroll-behavior: smooth; }
+        
+        .sidebar-fixed { width: 280px; height: calc(100vh - 64px); position: fixed; top: 64px; left: 0; background: white; border-right: 1px solid #E5E7EB; overflow-y: auto; z-index: 40; }
+        .main-content { margin-left: 280px; padding-top: 80px; padding-bottom: 60px; }
+        
+        .lane-container { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 2.5rem; border: 1px solid #E5E7EB; padding: 20px; position: relative; }
+        .hospital-box { border-radius: 8px; padding: 14px; border: 1px solid #F3F4F6; transition: all 0.3s ease; background: white; display: flex; flex-direction: column; justify-content: space-between; min-height: 140px; }
+        .hospital-box.best-value { border: 2px solid var(--ufh-mint); background-color: #F0FAF9; }
+        
+        /* 核心隱藏控制類 */
+        .user-hidden { display: none !important; } 
+        .price-hidden { display: none !important; } 
+        
+        .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; }
+        .hospital-link:hover { border-bottom-color: var(--ufh-mint); color: var(--ufh-blue); }
+        .lane-header::before { content: ""; display: inline-block; width: 4px; height: 16px; background: var(--ufh-blue); margin-right: 8px; vertical-align: middle; }
     </style>
 </head>
 <body>
 
-    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-50 flex items-center px-6 justify-between shadow-md">
-        <div class="flex items-center gap-3 cursor-pointer" onclick="goBackHome()">
-            <div class="w-7 h-7 bg-[#99D6D1] rounded-sm"></div>
-            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">全局總控中心</span></span>
+    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 justify-between shadow-md">
+        <div class="flex items-center gap-3">
+            <a href="index.html" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-opacity-90 transition-all">←</a>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">婦科微創精算專線</span></span>
         </div>
-        <nav class="hidden md:flex gap-6 text-sm">
-            <a href="javascript:void(0)" onclick="goBackHome()" class="hover:text-[#99D6D1]">首頁</a>
-            <a href="javascript:void(0)" onclick="goBackHome('#specialties')" class="hover:text-[#99D6D1]">專科比價</a>
-            <a href="javascript:void(0)" onclick="goBackHome('#macro-data')" class="hover:text-[#99D6D1]">醫療情報</a>
+        <nav class="hidden md:flex gap-6 text-sm items-center">
+            <a href="index.html" class="opacity-80 hover:opacity-100 text-white transition-opacity">首頁主控制台</a>
+            <span class="text-[#99D6D1] font-bold border-b-2 border-[#99D6D1] pb-1">5大臨床專線</span>
+            <div class="bg-[#99D6D1] text-[#1D4E89] text-xs font-bold px-3 py-1.5 rounded ml-2">2026 婦科微創數據庫已對接</div>
         </nav>
     </header>
 
-    <main class="pt-32 pb-8 px-4 max-w-3xl mx-auto text-center min-h-[65vh] flex flex-col justify-center items-center space-y-6">
-        
-        <div class="relative flex items-center justify-center w-24 h-24 mb-2">
-            <div class="absolute w-full h-full bg-[#99D6D1]/30 rounded-full animate-ping opacity-75"></div>
-            <div class="absolute w-20 h-20 bg-[#1D4E89]/5 rounded-full animate-pulse"></div>
-            <div class="relative w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-md border border-gray-100 text-2xl">⏳</div>
-        </div>
-        
-        <div class="space-y-3">
-            <div class="text-[10px] font-black tracking-widest text-[#1D4E89] uppercase bg-[#99D6D1]/30 px-3 py-1 rounded-full inline-block animate-pulse">Coming Soon</div>
-            <h2 class="text-3xl font-black bg-gradient-to-r from-[#1D4E89] via-[#2B579A] to-[#99D6D1] bg-clip-text text-transparent" id="page-title">專科中心大數據</h2>
-            <p class="text-xs text-gray-400 max-w-sm mx-auto leading-relaxed">跨機構定額套餐數據與醫保動態精算模型正在進行最後一輪集成調試，預計近期上線開放，敬請期待。</p>
-        </div>
-        
-        <button onclick="goBackHome()" class="px-6 py-2.5 bg-[#2B579A] text-white text-sm font-bold rounded-lg hover:bg-[#1D4E89] transition-all shadow-md transform hover:-translate-y-0.5 active:translate-y-0">
-            ← 攜帶當前醫保預設返回首頁
-        </button>
-    </main>
+    <div class="flex">
+        <aside class="sidebar-fixed p-6 hidden lg:block">
+            <div class="mb-6">
+                <p class="text-xs font-bold text-gray-400 mb-2">📍 當前分頁</p>
+                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded flex items-center gap-2">🏥 婦科5大核心臨床專區</div>
+            </div>
+            <div>
+                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">醫院篩選器 (動態多選)</p>
+                <div class="space-y-2.5 px-1 h-[460px] overflow-y-auto" id="filter-container">
+                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="szufh" checked> 深圳新風和睦家</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="cuhk" checked> 中大醫院 (CUHK)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="ghk" checked> 港怡醫院 (GHK)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="hksh"> 養和醫院 (HKSH)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="sph"> 聖保祿醫院 (SPH)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="pbh"> 寶血醫院 (PBH)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="baptist"> 香港浸信會 (HKBH)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="sth"> 聖德肋撒 (法國)</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="canossa"> 嘉諾撒醫院</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="matilda"> 明德國際醫院</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="union"> 仁安醫院</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="evangel"> 播道醫院</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="twah"> 荃灣港安醫院</label>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="hkah"> 香港港安–司徒拔道</label>
+                </div>
+            </div>
+        </aside>
 
-    <footer class="mt-8 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
-            <div class="bg-gray-800 p-8 flex flex-col justify-between">
+        <main class="main-content flex-1 px-4 lg:px-10">
+            <div class="max-w-6xl mx-auto">
+                
                 <div class="mb-6">
-                    <h4 class="text-lg font-bold mb-3 flex items-center gap-2">🏥 醫療機構專屬通道</h4>
-                    <p class="text-sm text-gray-300 leading-relaxed">本平台致力於推動醫療收費透明化。若貴院發現平台展示的數據有誤、政策有最新調整，或希望「免費認領」貴院專屬板塊以提供更精準的全包套餐資訊，歡迎隨時與我們聯繫。我們將為官方代表提供綠色通道，於 24 小時內優先處理您的更新或下架請求。</p>
+                    <h2 class="text-2xl font-black text-[#2B579A]">婦科微創與宮腔鏡手術臨床費用精算矩陣</h2>
                 </div>
-                <div>
-                    <a href="#" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded transition-colors border border-gray-600 w-full sm:w-auto text-center">官方數據糾錯 / 認領專屬頁面 →</a>
+
+                <div class="lane-header text-base font-bold text-[#2B579A] mb-2">宮腔鏡/子宮內膜息肉日間專區 (Hysteroscopy)</div>
+                <div class="lane-container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 procedure-lane">
+                        
+                        <div class="hospital-box" data-hospital="cuhk" data-price="19800">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">中大醫院 (CUHK)</a><span class="bg-emerald-100 text-emerald-700 text-[9px] px-1.5 py-0.5 rounded font-bold">香港定額標桿</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間標準房全包套餐價</span><span class="text-xl font-black text-gray-800">HK$19,800</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 預算清晰：本地全包定額推行最徹底，出院賬單無溢出風險。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="ghk" data-price="21500">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">港怡醫院 (GHK)</a><span class="bg-blue-100 text-blue-700 text-[9px] px-1.5 py-0.5 rounded font-bold">100%全包套餐</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間定額手術程序套餐</span><span class="text-xl font-black text-gray-800">HK$21,500</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 包含術後藥：包含術後常規止痛藥與三天口服抗生素雜費。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="szufh" data-price="22000">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-blue-100 text-blue-700 text-[9px] px-1.5 py-0.5 rounded font-bold">跨境免找數</span><span class="bg-emerald-100 text-emerald-700 text-[9px] px-1.5 py-0.5 rounded font-bold">一般風險全包</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間操作定額 (￥20,000)</span><span class="text-xl font-black text-gray-800">HK$22,000</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 包多項操作：含活檢/息肉切除/黏連分離/異物取出，無隱性累加。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="hksh" data-price="9999999">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">養和醫院 (HKSH)</a><span class="bg-gray-100 text-gray-500 text-[9px] px-1.5 py-0.5 rounded">傳統計費</span></div>
+                            <div class="my-2"><span class="text-xl font-bold text-gray-400">核對中 Coming Soon</span></div>
+                            <div class="text-[11px] text-gray-400 border-t pt-1.5">該院婦科採拆開計費模式，定額數據正在全力校準中。</div>
+                        </div>
+                        <div class="hospital-box" data-hospital="sph" data-price="9999999"><div class="text-sm font-bold"><a href="#" class="hospital-link">聖保祿醫院 (SPH)</a></div><div class="my-2"><span class="text-xl font-bold text-gray-400">Coming Soon</span></div><div class="text-[11px] text-gray-400 border-t pt-1.5">定額數據校準中。</div></div>
+                        <div class="hospital-box" data-hospital="pbh" data-price="9999999"><div class="text-sm font-bold"><a href="#" class="hospital-link">寶血醫院 (PBH)</a></div><div class="my-2"><span class="text-xl font-bold text-gray-400">Coming Soon</span></div><div class="text-[11px] text-gray-400 border-t pt-1.5">定額數據校準中。</div></div>
+                    </div>
+                    <div class="empty-placeholder hidden p-8 text-center text-gray-400 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                        ⚠️ 當前篩選組合下，本專區暫無可對比的定額套餐數據，請在左側重新勾選標桿私院。
+                    </div>
                 </div>
+
+                <div class="lane-header text-base font-bold text-[#2B579A] mb-2">宮頸病變微創日間專區 (LEEP / 錐切手術)</div>
+                <div class="lane-container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 procedure-lane">
+                        
+                        <div class="hospital-box" data-hospital="szufh" data-price="16500">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-emerald-100 text-emerald-700 text-[9px] px-1.5 py-0.5 rounded font-bold">子宮頸電環切除 (LEEP)</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間 LEEP 套餐價 (￥15,000)</span><span class="text-xl font-black text-gray-800">HK$16,500</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 當天即做：包含局部麻醉與術後基礎傷口修復護理外用藥。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="ghk" data-price="17200">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">港怡醫院 (GHK)</a><span class="bg-gray-100 text-gray-600 text-[9px] px-1.5 py-0.5 rounded font-bold">港島定額</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間程序 LEEP 標配套餐</span><span class="text-xl font-black text-gray-800">HK$17,200</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 港島首選：日間手術中心操作，全包定額，保險理賠申報快捷。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="szufh" data-price="19800">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-yellow-100 text-yellow-700 text-[9px] px-1.5 py-0.5 rounded font-bold">子宮頸錐形切除術</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">日間操作冷刀錐切 (￥18,000)</span><span class="text-xl font-black text-gray-800">HK$19,800</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 專家團隊：由大灣區資深婦產科主任親自操刀，切緣乾淨安全。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="hksh" data-price="9999999"><div class="text-sm font-bold"><a href="#" class="hospital-link">養和醫院 (HKSH)</a></div><div class="my-2"><span class="text-xl font-bold text-gray-400">Coming Soon</span></div><div class="text-[11px] text-gray-400 border-t pt-1.5">數據校準中。</div></div>
+                        <div class="hospital-box" data-hospital="sph" data-price="9999999"><div class="text-sm font-bold"><a href="#" class="hospital-link">聖保祿醫院 (SPH)</a></div><div class="my-2"><span class="text-xl font-bold text-gray-400">Coming Soon</span></div><div class="text-[11px] text-gray-400 border-t pt-1.5">數據校準中。</div></div>
+                    </div>
+                    <div class="empty-placeholder hidden p-8 text-center text-gray-400 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                        ⚠️ 當前篩選組合下，本專區暫無可對比的定額套餐數據，請在左側重新勾選標桿私院。
+                    </div>
+                </div>
+
+                <div class="lane-header text-base font-bold text-[#2B579A] mb-2">子宮肌瘤剔除核心專區 (Myomectomy)</div>
+                <div class="lane-container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 procedure-lane">
+                        
+                        <div class="hospital-box" data-hospital="szufh" data-price="66000">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-emerald-100 text-emerald-700 text-[9px] px-1.5 py-0.5 rounded font-bold">贈3晚獨立私家房</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">微創腹腔鏡肌瘤切除 (￥60,000)</span><span class="text-xl font-black text-gray-800">HK$66,000</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 降維打擊：包含3晚全獨立私家套房房費。同等預算在香港只能住大房。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="cuhk" data-price="68500">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">中大醫院 (CUHK)</a><span class="bg-gray-100 text-gray-600 text-[9px] px-1.5 py-0.5 rounded font-bold">4-6人標準房</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">腹腔鏡子宮肌瘤剔除 (2晚)</span><span class="text-xl font-black text-gray-800">HK$68,500</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 香港本地標桿：包含全流程醫生費與常規耗材，升級房型需補差價。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="ghk" data-price="72800">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">港怡醫院 (GHK)</a><span class="bg-blue-100 text-blue-700 text-[9px] px-1.5 py-0.5 rounded font-bold">標準雙人房</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">腹腔鏡子宮肌瘤剔除 (2晚)</span><span class="text-xl font-black text-gray-800">HK$72,800</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 包含麻醉費：全包定額套餐已含麻醉師與手術室基礎費，保障性高。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="hksh" data-price="9999999"><div class="text-sm font-bold"><a href="#" class="hospital-link">養和醫院 (HKSH)</a></div><div class="my-2"><span class="text-xl font-bold text-gray-400">Coming Soon</span></div><div class="text-[11px] text-gray-400 border-t pt-1.5">數據校準中。</div></div>
+                    </div>
+                    <div class="empty-placeholder hidden p-8 text-center text-gray-400 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                        ⚠️ 當前篩選組合下，本專區暫無可對比的定額套餐數據，請在左側重新勾選標桿私院。
+                    </div>
+                </div>
+
+                <div class="lane-header text-base font-bold text-[#2B579A] mb-2">卵巢囊腫微創住院專區 (Ovarian Cystectomy)</div>
+                <div class="lane-container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 procedure-lane">
+                        
+                        <div class="hospital-box" data-hospital="szufh" data-price="55000">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-emerald-100 text-emerald-700 text-[9px] px-1.5 py-0.5 rounded font-bold">單側囊腫剔除 (3晚)</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">微創腹腔鏡單側套餐 (￥50,000)</span><span class="text-xl font-black text-gray-800">HK$55,000</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 保障全：套餐包含全體手術用藥與三天独立病房，性價比極高。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="cuhk" data-price="59200">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">中大醫院 (CUHK)</a><span class="bg-gray-100 text-gray-600 text-[9px] px-1.5 py-0.5 rounded font-bold">標準房定額</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">腹腔鏡卵巢囊腫剔除 (2晚)</span><span class="text-xl font-black text-gray-800">HK$59,200</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 本地保障：香港本地標準房定額套餐，有效防範術後賬單溢出。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="szufh" data-price="60500">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-yellow-100 text-yellow-700 text-[9px] px-1.5 py-0.5 rounded font-bold">雙側囊腫剔除 (3晚)</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">微創腹腔鏡雙側套餐 (￥55,000)</span><span class="text-xl font-black text-gray-800">HK$60,500</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 精細剝離：鏡下精細創面止血，最大程度保留女性卵巢皮質及生育力。</div>
+                        </div>
+                    </div>
+                    <div class="empty-placeholder hidden p-8 text-center text-gray-400 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                        ⚠️ 當前篩選組合下，本專區暫無可對比的定額套餐數據，請在左側重新勾選標桿私院。
+                    </div>
+                </div>
+
+                <div class="lane-header text-base font-bold text-[#2B579A] mb-2">避孕置環及終止妊娠日間專區 (Contraception & TOP)</div>
+                <div class="lane-container">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 procedure-lane">
+                        
+                        <div class="hospital-box" data-hospital="szufh" data-price="6600">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-blue-100 text-blue-700 text-[9px] px-1.5 py-0.5 rounded font-bold">Mirena® 曼月樂環</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">門診置環定額 (￥6,000)</span><span class="text-xl font-black text-gray-800">HK$6,600</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 包含藥械費：包含了進口曼月樂環藥物費與專科醫生置入操作費。</div>
+                        </div>
+
+                        <div class="hospital-box" data-hospital="szufh" data-price="19800">
+                            <div class="text-sm font-bold flex items-center gap-1.5"><a href="#" class="hospital-link">深圳新風和睦家</a><span class="bg-purple-100 text-purple-700 text-[9px] px-1.5 py-0.5 rounded font-bold">高度私隱保護</span></div>
+                            <div class="my-2"><span class="text-xs text-gray-400 block">終止妊娠/子宮擴刮術 (￥18,000)</span><span class="text-xl font-black text-gray-800">HK$19,800</span></div>
+                            <div class="text-[11px] text-gray-500 border-t pt-1.5">✓ 包含靜脈麻醉：含無痛靜脈麻醉（MAC）及術後子宮恢復複查。</div>
+                        </div>
+                    </div>
+                    <div class="empty-placeholder hidden p-8 text-center text-gray-400 text-sm bg-gray-50 rounded-lg border border-dashed border-gray-300">
+                        ⚠️ 當前篩選組合下，本專區暫無可對比的定額套餐數據，請在左側重新勾選標桿私院。
+                    </div>
+                </div>
+
+                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8">
+                    <div class="bg-gray-950 p-6 text-xs text-gray-400">
+                        <p class="leading-relaxed">⚖️ 免責聲明：所有數據僅供日間門診/住院微創程序預算參考。實際收費會因患者個體風險、術中特殊耗材使用而有不同。最後更新時間：2026年6月。</p>
+                    </div>
+                </footer>
+
             </div>
-            <div class="bg-gray-800 p-8 flex flex-col justify-between">
-                <div class="mb-6">
-                    <h4 class="text-lg font-bold mb-3 flex items-center gap-2">💬 找不到想看的手術或醫院？</h4>
-                    <p class="text-sm text-gray-300 leading-relaxed">我們的數據庫正在持續擴充中。如果您在平台上沒有找到特定的專科手術、想對比某家未收錄的醫院（包含海外或跨境機構），或者對網站功能有任何建議，請隨時給我們留言！您的需求是我們優化引擎的最大動力。</p>
-                </div>
-                <div>
-                    <a href="#" class="inline-block bg-[#2B579A] hover:bg-[#1D4E89] text-white text-sm font-bold py-2.5 px-5 rounded transition-colors shadow-md w-full sm:w-auto text-center">提交數據需求 / 聯繫我們 →</a>
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-900 p-6 text-xs text-gray-400">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                <h5 class="font-bold text-gray-300 text-sm">⚖️ 免責聲明 (Legal Disclaimer)</h5>
-                <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">🕒 數據庫最後更新時間：2026年5月</span>
-            </div>
-            <p class="leading-relaxed">本平台提供的所有醫療收費、保險自付額預估及質素指標，均由系統整理自各醫療機構官方網站、香港衛生署公開資訊及權威市場報告。所有數據僅供預算參考，<strong>不構成任何具約束力的報價、醫療診斷或理賠承諾</strong>。實際收費會因患者具體病況、醫生獨立定價、房型升級及突發併發症而有所不同。請務必於入院或接受治療前，直接向相關醫療機構或您的保險顧問索取最終報價。</p>
-        </div>
-    </footer>
+        </main>
+    </div>
 
     <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const path = window.location.pathname;
-            const page = path.split("/").pop().replace(".html", "");
-            const titleMap = {
-                'outpatient': '門診費用中心',
-                'ward': '私家醫院病房中心',
-                'imaging': '內窺鏡與影像掃描中心',
-                'gyn': '婦產科中心',
-                'general-surgery': '一般外科中心',
-                'orthopedics': '骨科中心',
-                'pain-management': '疼痛科中心',
-                'ent': '耳鼻喉科中心',
-                'ophthalmology': '眼科中心',
-                'cardiology': '心內科中心',
-                'plastics': '整形美容中心',
-                'consulting': '醫療諮詢總頻道'
-            };
-            if(titleMap[page]) {
-                document.getElementById('page-title').innerText = `${titleMap[page]} 配置中`;
-            }
-        });
+        const checkboxes = document.querySelectorAll('#filter-container input[type="checkbox"]');
 
-        function goBackHome(hash = '') {
-            const currentSearch = window.location.search; 
-            window.location.href = 'index.html' + currentSearch + hash;
+        function updateView() {
+            const activeHospitals = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+            
+            // 1. 執行多選框全域隱藏
+            document.querySelectorAll('.hospital-box[data-hospital]').forEach(box => {
+                const hospId = box.getAttribute('data-hospital');
+                if (activeHospitals.includes(hospId)) {
+                    box.classList.remove('user-hidden');
+                } else {
+                    box.classList.add('user-hidden');
+                }
+            });
+
+            // 2. 遍歷每個專區，執行低價物理排序與防空白對策
+            document.querySelectorAll('.lane-container').forEach(container => {
+                const lane = container.querySelector('.procedure-lane');
+                const placeholder = container.querySelector('.empty-placeholder');
+                
+                // 抓取當前專區內「沒有被用戶隱藏」的卡片
+                const visibleBoxes = Array.from(lane.querySelectorAll('.hospital-box:not(.user-hidden)'));
+
+                // 判斷是否一個可顯示的卡片都沒有
+                if (visibleBoxes.length === 0) {
+                    lane.classList.add('hidden'); // 隱藏網格
+                    if(placeholder) placeholder.classList.remove('hidden'); // 展現動態後備框
+                    return;
+                } else {
+                    lane.classList.remove('hidden');
+                    if(placeholder) placeholder.classList.add('hidden');
+                }
+
+                // 按價格升序重排 (讓最便宜或 Coming soon 正常排位)
+                visibleBoxes.sort((a, b) => parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price')));
+
+                // 物理重插節點
+                visibleBoxes.forEach(box => lane.appendChild(box));
+
+                // 初始化卡片樣式
+                lane.querySelectorAll('.hospital-box').forEach(box => {
+                    box.classList.add('price-hidden');
+                    box.classList.remove('best-value');
+                });
+
+                // 只放行前 3 名，並對其中真正的「全包底價第一名」追加高亮
+                visibleBoxes.forEach((box, index) => {
+                    const priceValue = parseFloat(box.getAttribute('data-price'));
+                    if (index < 3) {
+                        box.classList.remove('price-hidden'); // 打開顯示
+                        if (index === 0 && priceValue < 9999999) {
+                            box.classList.add('best-value'); // 標桿高亮
+                        }
+                    }
+                });
+            });
         }
+
+        checkboxes.forEach(cb => cb.addEventListener('change', updateView));
+        updateView();
     </script>
 </body>
 </html>
