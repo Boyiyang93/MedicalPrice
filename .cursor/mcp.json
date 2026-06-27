@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "codegraph": {
+      "type": "stdio",
+      "command": "/Users/boyiyang/Desktop/medicalprice/MedicalPrice/node_modules/.bin/codegraph",
+      "args": [
+        "serve",
+        "--mcp",
+        "--path",
+        "/Users/boyiyang/Desktop/medicalprice/MedicalPrice"
+      ]
+    }
+  }
+}

@@ -205,31 +205,7 @@
         </main>
     </div>
 
-    <script>
-        const checkboxes = document.querySelectorAll('#filter-container input[type="checkbox"]');
-
-        function updateView() {
-            // 獲取當前被選取的醫院代號
-            const activeHospitals = Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
-            
-            // 對應隱藏或展示表格行
-            document.querySelectorAll('#ward-table-body tr[data-hospital]').forEach(row => {
-                const hospId = row.getAttribute('data-hospital');
-                if (activeHospitals.includes(hospId)) {
-                    row.classList.remove('user-hidden');
-                } else {
-                    row.classList.add('user-hidden');
-                }
-            });
-        }
-
-        // 強制使用純原生監聽，防禦 CodeSandbox 模組作用域隔離限制
-        checkboxes.forEach(cb => {
-            cb.addEventListener('change', updateView);
-        });
-
-        // 啟動即執行一次初次渲染
-        updateView();
-    </script>
+    <script src="data/db.js"></script>
+    <script src="js/engine.js"></script>
 </body>
 </html>
