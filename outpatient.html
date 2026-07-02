@@ -14,6 +14,7 @@
         .comparison-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 3rem; border: 1px solid #F3F4F6; overflow: hidden; }
         .hospital-box { border-radius: 8px; padding: 16px; border: 1px solid #F3F4F6; transition: all 0.2s; position: relative; background: white; }
         .hospital-box.best-value { border: 2px solid var(--ufh-mint); background-color: #F0FAF9; }
+        .hospital-box.coming-soon-card { border-color: #E5E7EB; background-color: #F9FAFB; }
         .user-hidden { display: none !important; } 
         .price-hidden { display: none !important; } 
         .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; display: inline-block; }
@@ -25,7 +26,7 @@
 
     <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 justify-between shadow-md">
         <div class="flex items-center gap-3">
-            <button onclick="goBackHome()" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-white transition-colors">←</button>
+            <button type="button" id="btn-back-home" data-action="go-back-home" data-hash="#specialties" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-white transition-colors">←</button>
             <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">門診費用決策中心</span></span>
         </div>
     </header>
@@ -93,20 +94,6 @@
 
             renderFilters();
             renderContainers();
-
-            const urlParams = new URLSearchParams(window.location.search);
-            const insurance = urlParams.get('insurance');
-            const time = urlParams.get('time');
-            if (insurance && document.getElementById('insurance-select').querySelector(`option[value="${insurance}"]`)) {
-                document.getElementById('insurance-select').value = insurance;
-            }
-            if (time && document.getElementById('time-select').querySelector(`option[value="${time}"]`)) {
-                document.getElementById('time-select').value = time;
-            }
-
-            document.getElementById('loading-skeleton').classList.add('hidden');
-            document.getElementById('outpatient-grid').classList.remove('hidden');
-
             updateView();
         }
 
@@ -140,13 +127,6 @@
                     <div class="insurance-box mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200"></div>
                 </div>
             `).join('');
-        }
-
-        function goBackHome() {
-            let insurance = document.getElementById('insurance-select').value;
-            let time = document.getElementById('time-select').value;
-            if (insurance === 'wemed') insurance = 'vhis-std';
-            window.location.href = `index.html?insurance=${insurance}&time=${time}#specialties`;
         }
 
         window.addEventListener('DOMContentLoaded', initPage);

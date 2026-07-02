@@ -3,204 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>醫療價格第三方門戶 - 病房收費決策中心 (V12.2)</title>
+    <meta name="description" content="香港私家醫院病房日費基準對比">
+    <title>醫療價格第三方門戶 - 病房收費決策中心</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --ufh-blue: #1D4E89; 
-            --title-blue: #2B579A;
-            --ufh-mint: #99D6D1;
-        }
+        :root { --ufh-blue: #1D4E89; --title-blue: #2B579A; --ufh-mint: #99D6D1; }
         body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background-color: #F7F8FA; color: #333; scroll-behavior: smooth; }
-        
         .sidebar-fixed { width: 280px; height: calc(100vh - 64px); position: fixed; top: 64px; left: 0; background: white; border-right: 1px solid #E5E7EB; overflow-y: auto; z-index: 40; }
         .main-content { margin-left: 280px; padding-top: 80px; padding-bottom: 60px; }
-        
-        /* 1:1 還原 V11 表格核心外觀 */
+        @media (max-width: 1023px) { .main-content { margin-left: 0; } }
         .comparison-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 3rem; border: 1px solid #E5E7EB; overflow: hidden; }
         .data-table { width: 100%; text-align: left; border-collapse: collapse; }
         .data-table th { padding: 16px 12px; background-color: #F9FAFB; font-weight: 600; color: #6B7280; font-size: 13px; border-bottom: 1px solid #E5E7EB; }
-        .data-table td { padding: 16px 12px; border-bottom: 1px solid #F3F4F6; font-size: 14px; color: #4B5563; transition: background-color 0.2s; }
+        .data-table td { padding: 16px 12px; border-bottom: 1px solid #F3F4F6; font-size: 14px; color: #4B5563; }
         .data-table tr:hover td { background-color: #F9FAFB; }
-        
-        /* V11 樣式隱藏類 */
-        .user-hidden { display: none !important; } 
-        
-        .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; display: inline-block; }
+        .user-hidden { display: none !important; }
+        .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; }
         .hospital-link:hover { border-bottom-color: var(--ufh-mint); color: var(--ufh-blue); }
     </style>
 </head>
-<body>
+<body data-page-module="ward">
 
-    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 justify-between shadow-md">
-        <div class="flex items-center gap-3">
-            <a href="index.html" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-opacity-90 transition-all">←</a>
+    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 shadow-md" role="banner">
+        <button type="button" data-action="go-back-home" data-hash="#specialties" class="flex items-center gap-3" aria-label="返回首頁">
+            <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
             <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">病房收費決策中心</span></span>
-        </div>
-        <nav class="hidden md:flex gap-6 text-sm items-center">
-            <a href="index.html" class="opacity-80 hover:opacity-100 text-white transition-opacity">首頁主控制台</a>
-            <span class="text-[#99D6D1] font-bold border-b-2 border-[#99D6D1] pb-1">病房基準</span>
-            <div class="bg-[#99D6D1] text-[#1D4E89] text-xs font-bold px-3 py-1.5 rounded ml-2">2026 私院病房數據庫已更新</div>
-        </nav>
+        </button>
     </header>
 
     <div class="flex">
-        <aside class="sidebar-fixed p-6 hidden lg:block">
+        <aside class="sidebar-fixed p-6 hidden lg:block" aria-label="醫院篩選">
             <div class="mb-6">
                 <p class="text-xs font-bold text-gray-400 mb-2">📍 當前分頁</p>
-                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded flex items-center gap-2">🏥 私家醫院病房基準</div>
+                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded">🏥 私家醫院病房基準</div>
             </div>
-            <div>
-                <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">醫院篩選器 (動態多選)</p>
-                <div class="space-y-2.5 px-1 h-[480px] overflow-y-auto" id="filter-container">
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="hksh" checked> 養和醫院 (HKSH)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="ghk" checked> 港怡醫院 (GHK)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="matilda" checked> 明德國際醫院</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="sth" checked> 聖德肋撒 (法國)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="baptist" checked> 香港浸信會 (HKBH)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="union" checked> 仁安醫院</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="cuhk" checked> 中大醫院 (CUHK)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="canossa" checked> 嘉諾撒醫院</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-600 cursor-pointer"><input type="checkbox" value="szufh" checked> 深圳新風和睦家</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="sph" checked> 聖保祿醫院 (SPH)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="pbh" checked> 寶血醫院 (PBH)</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="evangel" checked> 播道醫院</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="twah" checked> 荃灣港安醫院</label>
-                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer"><input type="checkbox" value="hkah" checked> 香港港安–司徒拔道</label>
-                </div>
-            </div>
+            <div id="filter-container" class="space-y-2.5 px-1 h-[480px] overflow-y-auto"></div>
         </aside>
 
-        <main class="main-content flex-1 px-4 lg:px-10">
+        <main class="main-content flex-1 px-4 lg:px-10" role="main">
             <div class="max-w-6xl mx-auto">
-                
                 <section class="mb-6">
-                    <h2 class="text-2xl font-black text-[#2B579A] mb-2">全港私家醫院常規病房每日基準開支對比</h2>
-                    <p class="text-xs text-gray-500 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 數據聯動：取消勾選左側的醫院，表格內對應的數據行將會即時隱藏。</p>
+                    <h1 class="text-2xl font-black text-[#2B579A] mb-2">全港私家醫院常規病房每日基準開支對比</h1>
+                    <p class="text-xs text-gray-500 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 數據來自 db.js，修改數據源後頁面自動更新。</p>
                 </section>
 
                 <div class="comparison-card">
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th class="w-1/4">醫院名稱</th>
-                                <th>普通病房 (HK$)</th>
-                                <th>半私家房 (HK$)</th>
-                                <th>私家房 (HK$)</th>
+                                <th class="w-1/4" scope="col">醫院名稱</th>
+                                <th scope="col">普通病房 (HK$)</th>
+                                <th scope="col">半私家房 (HK$)</th>
+                                <th scope="col">私家房 (HK$)</th>
                             </tr>
                         </thead>
-                        <tbody id="ward-table-body">
-                            <tr data-hospital="hksh">
-                                <td class="font-bold text-gray-800"><a href="https://www.hksh-hospital.com/" target="_blank" class="hospital-link">養和醫院</a></td>
-                                <td class="font-medium text-gray-700">$1,300 – $1,960</td>
-                                <td>$2,800 – $3,950</td>
-                                <td>$4,600 – $23,000</td>
-                            </tr>
-                            <tr data-hospital="ghk">
-                                <td class="font-bold text-gray-800"><a href="https://gleneagles.hk/" target="_blank" class="hospital-link">港怡醫院</a></td>
-                                <td class="font-medium text-gray-700">$980 – $1,080</td>
-                                <td>$1,800 – $2,700</td>
-                                <td>$4,200 – $10,800</td>
-                            </tr>
-                            <tr data-hospital="matilda">
-                                <td class="font-bold text-gray-800"><a href="https://www.matilda.org/" target="_blank" class="hospital-link">明德國際醫院</a></td>
-                                <td class="font-medium text-gray-700">$900 – $1,100</td>
-                                <td>$1,990 – $2,300</td>
-                                <td>$3,300 – $4,500</td>
-                            </tr>
-                            <tr data-hospital="sth">
-                                <td class="font-bold text-gray-800"><a href="http://www.sth.org.hk/" target="_blank" class="hospital-link">聖德肋撒醫院 (法國)</a></td>
-                                <td class="font-medium text-gray-700">$610 – $800</td>
-                                <td>$1,000 – $1,750</td>
-                                <td>$2,100 – $15,300</td>
-                            </tr>
-                            <tr data-hospital="baptist">
-                                <td class="font-bold text-gray-800"><a href="https://www.hkbh.org.hk/" target="_blank" class="hospital-link">香港浸信會醫院</a></td>
-                                <td class="font-medium text-gray-700">$820 – $1,240</td>
-                                <td>$1,810 – $2,320</td>
-                                <td>$3,500 – $4,780</td>
-                            </tr>
-                            <tr data-hospital="union">
-                                <td class="font-bold text-gray-800"><a href="https://www.union.org/" target="_blank" class="hospital-link">仁安醫院</a></td>
-                                <td class="font-medium text-gray-700">$600 – $950</td>
-                                <td>$1,080 – $2,000</td>
-                                <td>$2,500 – $8,000</td>
-                            </tr>
-                            <tr data-hospital="cuhk">
-                                <td class="font-bold text-gray-800"><a href="https://www.cuhkmc.hk/" target="_blank" class="hospital-link">中大醫院 (CUHK)</a></td>
-                                <td class="font-medium text-gray-700">$1,000</td>
-                                <td>$1,500 – $2,500</td>
-                                <td>$3,600 – $4,800</td>
-                            </tr>
-                            <tr data-hospital="canossa">
-                                <td class="font-bold text-gray-800"><a href="#" class="hospital-link">嘉諾撒醫院</a></td>
-                                <td class="font-medium text-gray-700">$800 – $1,100</td>
-                                <td>$2,600</td>
-                                <td>$4,200</td>
-                            </tr>
-                            <tr data-hospital="szufh">
-                                <td class="font-bold text-gray-800"><a href="https://www.szufh.hk/" target="_blank" class="hospital-link">深圳新風和睦家</a></td>
-                                <td class="font-medium text-gray-700">$1,558</td>
-                                <td>$2,170</td>
-                                <td>$3,565 – $7,619</td>
-                            </tr>
-                            <tr data-hospital="sph">
-                                <td class="font-bold text-gray-400">聖保祿醫院 (SPH)</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                            </tr>
-                            <tr data-hospital="pbh">
-                                <td class="font-bold text-gray-400">寶血醫院 (PBH)</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                            </tr>
-                            <tr data-hospital="evangel">
-                                <td class="font-bold text-gray-400">播道醫院</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                            </tr>
-                            <tr data-hospital="twah">
-                                <td class="font-bold text-gray-400">荃灣港安醫院</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                            </tr>
-                            <tr data-hospital="hkah">
-                                <td class="font-bold text-gray-400">香港港安–司徒拔道</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                                <td class="text-gray-400 italic font-normal">Coming Soon</td>
-                            </tr>
-                        </tbody>
+                        <tbody id="ward-table-body"></tbody>
                     </table>
                 </div>
 
-                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8">
+                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8" role="contentinfo">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
-                        <div class="bg-gray-800 p-8 flex flex-col">
-                            <h4 class="text-lg font-bold mb-3 flex items-center gap-2">🏥 醫療機構專屬通道</h4>
-                            <p class="text-sm text-gray-300 leading-relaxed mb-6 flex-grow">本平台致力於推動醫療收費透明化。若貴院發現平台展示的房費有調整，或希望認領專屬頁面提供更精準的全包套餐資訊，歡迎隨時與我們官方渠道聯絡。</p>
-                            <div class="mt-auto">
-                                <a href="#" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded transition-colors border border-gray-600 w-full text-center md:w-auto">官方數據糾錯 / 認領專屬頁面 →</a>
-                            </div>
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3">🏥 醫療機構專屬通道</h4>
+                            <p class="text-sm text-gray-300 mb-6">若貴院房費有調整，歡迎聯絡我們更新。</p>
+                            <a href="mailto:data@medicalprice.hk?subject=病房數據糾錯" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded border border-gray-600">官方數據糾錯 →</a>
                         </div>
-                        <div class="bg-gray-800 p-8 flex flex-col">
-                            <h4 class="text-lg font-bold mb-3 flex items-center gap-2">💬 找不到想看的手術或醫院？</h4>
-                            <p class="text-sm text-gray-300 leading-relaxed mb-6 flex-grow">我們的病房數據庫正在持續擴充中。如果您在平台上沒有找到特定的客製化套房房型，或者對網站功能有任何建議，請隨時給我們留言！</p>
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3">💬 聯繫我們</h4>
+                            <p class="text-sm text-gray-300 mb-6">找不到特定房型？歡迎提交需求。</p>
+                            <a href="mailto:contact@medicalprice.hk?subject=病房數據需求" class="inline-block bg-[#2B579A] text-white text-sm font-bold py-2.5 px-5 rounded">聯繫我們 →</a>
                         </div>
                     </div>
                     <div class="bg-gray-900 p-6 text-xs text-gray-400">
-                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
-                            <h5 class="font-bold text-gray-300 text-sm">⚖️ 免責聲明 (Legal Disclaimer)</h5>
-                            <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">🕒 數據庫最後更新時間：2026年6月</span>
-                        </div>
-                        <p class="leading-relaxed">本平台提供的所有醫療收費、保險自付額預估及質素指標，均由系統整理自各醫療機構官方網站、香港衛生署公開資訊。所有數據僅供預算參考，<strong>不構成任何具約束力的報價、醫療診斷或理賠承諾</strong>。實際收費請以醫院最終結算賬單為準。</p>
+                        <p>⚖️ 免責聲明：數據僅供預算參考，不構成報價承諾。實際收費以醫院賬單為準。</p>
                     </div>
                 </footer>
-
             </div>
         </main>
     </div>
