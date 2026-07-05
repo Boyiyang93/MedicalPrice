@@ -125,6 +125,52 @@
     return parseFloat(box.getAttribute('data-price')) || PLACEHOLDER_PRICE;
   }
 
+  function formatCurrency(amount) {
+    return '$' + Number(amount).toLocaleString('en-US');
+  }
+
+  function getOutpatientDisplayAttr(timeMode) {
+    var map = {
+      regular: 'data-display-regular',
+      night: 'data-display-night',
+      holiday: 'data-display-holiday'
+    };
+    return map[timeMode] || map.regular;
+  }
+
+  function getOutpatientDisplayText(box, timeMode, numericPrice) {
+    var custom = box.getAttribute(getOutpatientDisplayAttr(timeMode));
+    if (custom) return custom;
+    return formatCurrency(numericPrice);
+  }
+
+  function getOutpatientSlotAttr(timeMode) {
+    var map = {
+      regular: 'data-slot-regular',
+      night: 'data-slot-night',
+      holiday: 'data-slot-holiday'
+    };
+    return map[timeMode] || map.regular;
+  }
+
+  function getOutpatientSlotText(box, timeMode) {
+    return box.getAttribute(getOutpatientSlotAttr(timeMode)) || '';
+  }
+
+  function updateOutpatientSlotDisplay(box, timeMode) {
+    var slotEl = box.querySelector('.outpatient-slot');
+    if (!slotEl) return;
+
+    var slotText = getOutpatientSlotText(box, timeMode);
+    if (slotText) {
+      slotEl.innerHTML = '<span>🕐 ' + escapeHtml(slotText) + '</span>';
+      slotEl.classList.remove('hidden');
+    } else {
+      slotEl.innerHTML = '';
+      slotEl.classList.add('hidden');
+    }
+  }
+
   function renderComingSoonPriceHtml() {
     return (
       '<div class="text-xl font-bold text-gray-400">Coming Soon</div>' +
@@ -140,6 +186,10 @@
     }).join('');
   }
 
+  function isCustomUnavailableDisplay(text) {
+    return text === '詳情查看' || text === '详情查看';
+  }
+
   function updateProcedureCardDisplay(box) {
     var price = parseFloat(box.getAttribute('data-price')) || PLACEHOLDER_PRICE;
     var priceDisplayDiv = box.querySelector('.price-display');
@@ -151,7 +201,7 @@
     }
 
     var label = box.getAttribute('data-price-label') || '';
-    var display = box.getAttribute('data-display-price') || ('HK$' + price);
+    var display = box.getAttribute('data-display-price') || formatCurrency(price);
     priceDisplayDiv.innerHTML =
       (label ? '<div class="text-xs text-gray-400 block mb-0.5">' + escapeHtml(label) + '</div>' : '') +
       '<span class="text-xl font-black text-gray-800">' + escapeHtml(display) + '</span>';
@@ -162,39 +212,43 @@
     var currentPrice = resolved.price;
     var normalPrice = resolved.normal;
     var priceLabel = resolved.label;
-    var hospitalId = box.getAttribute('data-hospital');
+    var displayText = getOutpatientDisplayText(box, timeMode, currentPrice);
+    var normalDisplay = getOutpatientDisplayText(box, 'regular', normalPrice);
+    var isSpecialty = box.getAttribute('data-outpatient-type') === 'specialty';
 
     box.setAttribute('data-price', currentPrice);
     box.setAttribute('data-current-price', currentPrice);
+    updateOutpatientSlotDisplay(box, timeMode);
 
     var priceDisplayDiv = box.querySelector('.price-display');
     if (!priceDisplayDiv) return;
 
-    if (isComingSoonPrice(currentPrice)) {
+    if (isComingSoonPrice(currentPrice) && isCustomUnavailableDisplay(displayText)) {
+      priceDisplayDiv.innerHTML =
+        '<div class="text-xl font-bold text-gray-500">' + escapeHtml(displayText) + '</div>' +
+        '<div class="text-[10px] text-gray-400 mt-0.5">' + escapeHtml(priceLabel) + '</div>';
+    } else if (isComingSoonPrice(currentPrice)) {
       priceDisplayDiv.innerHTML = renderComingSoonPriceHtml();
-    } else if (currentPrice >= OUTPATIENT_UNAVAILABLE) {
+    } else if (!isSpecialty && currentPrice >= OUTPATIENT_UNAVAILABLE) {
       priceDisplayDiv.innerHTML =
         '<div class="text-xl font-bold text-gray-300">-</div>' +
         '<div class="text-[10px] text-gray-400 mt-1">醫院當前時段不設全科門診</div>';
     } else if (currentPrice > normalPrice) {
       priceDisplayDiv.innerHTML =
-        '<div class="text-[10px] text-red-400 line-through">原日常診金: HK$' + normalPrice + '</div>' +
-        '<div class="text-xl font-black text-red-600">HK$' + currentPrice + '</div>' +
-        '<div class="text-[9px] text-red-500 font-bold mt-0.5">⚡ 觸發時段附加費 (' + priceLabel + ')</div>';
-    } else if (hospitalId === 'szufh') {
-      priceDisplayDiv.innerHTML =
-        '<div class="text-xl font-black text-[#1D4E89]">￥550</div>' +
-        '<div class="text-[10px] text-gray-500 mt-0.5">約 HK$' + currentPrice + ' (常規辦公)</div>';
+        '<div class="text-[10px] text-red-400 line-through">原日常診金: ' + escapeHtml(normalDisplay) + '</div>' +
+        '<div class="text-xl font-black text-red-600">' + escapeHtml(displayText) + '</div>' +
+        '<div class="text-[9px] text-red-500 font-bold mt-0.5">⚡ 觸發時段附加費 (' + escapeHtml(priceLabel) + ')</div>';
     } else {
       priceDisplayDiv.innerHTML =
-        '<div class="text-xl font-bold text-gray-700">HK$' + currentPrice + '</div>' +
-        '<div class="text-[10px] text-gray-400 mt-0.5">' + priceLabel + '</div>';
+        '<div class="text-xl font-bold text-gray-700">' + escapeHtml(displayText) + '</div>' +
+        '<div class="text-[10px] text-gray-400 mt-0.5">' + escapeHtml(priceLabel) + '</div>';
     }
 
     var insBox = box.querySelector('.insurance-box');
     if (!insBox) return;
 
-    if (currentPrice >= OUTPATIENT_UNAVAILABLE || isComingSoonPrice(currentPrice)) {
+    if (isSpecialty || isComingSoonPrice(currentPrice) || isCustomUnavailableDisplay(displayText) ||
+        (!isSpecialty && currentPrice >= OUTPATIENT_UNAVAILABLE)) {
       insBox.classList.add('hidden');
     } else {
       insBox.classList.remove('hidden');
@@ -203,15 +257,60 @@
         insBox.innerHTML =
           '<div class="text-[10px] text-blue-500 font-semibold">WeMedi 門診網絡保障已對接</div>' +
           '<div class="flex items-end gap-1 mt-0.5"><div class="text-xs text-gray-600">預估自付診金:</div>' +
-          '<div class="text-base font-black text-[#1D4E89]">HK$ 50</div></div>';
+          '<div class="text-base font-black text-[#1D4E89]">$50</div></div>';
       } else {
         insBox.className = 'mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200 transition-all insurance-box';
         insBox.innerHTML =
           '<div class="text-[10px] text-gray-400">自費模式 (不使用門診卡)</div>' +
           '<div class="flex items-end gap-1 mt-0.5"><div class="text-xs text-gray-600">自付總計:</div>' +
-          '<div class="text-base font-bold text-gray-700">HK$ ' + currentPrice + '</div></div>';
+          '<div class="text-base font-bold text-gray-700">' + escapeHtml(displayText) + '</div></div>';
       }
     }
+  }
+
+  function renderOutpatientCardHtml(h, options) {
+    options = options || {};
+    var tagClass = h.alert
+      ? 'bg-orange-100 text-orange-600 border border-orange-200'
+      : 'bg-[#99D6D1] text-[#1D4E89]';
+    var hospitalTagHtml = h.tag
+      ? '<span class="' + tagClass + ' text-[9px] px-1.5 py-0.5 rounded font-bold">' + escapeHtml(h.tag) + '</span>'
+      : '';
+    var scopeTagsHtml = renderTagsHtml(h.scopes);
+    var remarksClass = h.alert ? 'text-red-500 font-medium' : 'text-gray-400';
+    var insuranceBoxHtml = options.hideInsurance
+      ? ''
+      : '<div class="insurance-box mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200"></div>';
+
+    var attrs =
+      'data-hospital="' + h.id + '" ' +
+      'data-normal="' + h.prices.regular + '" ' +
+      'data-night="' + h.prices.night + '" ' +
+      'data-holiday="' + h.prices.holiday + '"';
+    if (options.type === 'specialty') attrs += ' data-outpatient-type="specialty"';
+    if (h.displayPrices) {
+      if (h.displayPrices.regular) attrs += ' data-display-regular="' + escapeAttr(h.displayPrices.regular) + '"';
+      if (h.displayPrices.night) attrs += ' data-display-night="' + escapeAttr(h.displayPrices.night) + '"';
+      if (h.displayPrices.holiday) attrs += ' data-display-holiday="' + escapeAttr(h.displayPrices.holiday) + '"';
+    }
+    if (h.timeSlots) {
+      if (h.timeSlots.regular) attrs += ' data-slot-regular="' + escapeAttr(h.timeSlots.regular) + '"';
+      if (h.timeSlots.night) attrs += ' data-slot-night="' + escapeAttr(h.timeSlots.night) + '"';
+      if (h.timeSlots.holiday) attrs += ' data-slot-holiday="' + escapeAttr(h.timeSlots.holiday) + '"';
+    }
+
+    return (
+      '<div class="hospital-box animate-fadeIn" ' + attrs + '>' +
+      '<div class="flex justify-between items-start mb-1 flex-wrap gap-1">' +
+      '<a href="' + (h.link || '#') + '" target="_blank" class="hospital-link text-[11px]">' + escapeHtml(h.name) + ' ↗</a>' +
+      '<div class="flex flex-wrap gap-1">' + hospitalTagHtml + scopeTagsHtml + '</div>' +
+      '</div>' +
+      '<div class="text-[9px] text-gray-400 mb-3 leading-relaxed outpatient-slot hidden"></div>' +
+      '<div class="price-display min-h-[50px]"></div>' +
+      '<div class="text-[9px] ' + remarksClass + ' mt-2 block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
+      insuranceBoxHtml +
+      '</div>'
+    );
   }
 
   function renderProcedureCardHtml(h) {
@@ -354,6 +453,13 @@
     });
   }
 
+  function isDetailOnlyOutpatientBox(box) {
+    if (box.getAttribute('data-outpatient-type') !== 'specialty') return false;
+    var timeMode = getSelectValue('time-select', 'regular');
+    var display = box.getAttribute(getOutpatientDisplayAttr(timeMode));
+    return isCustomUnavailableDisplay(display);
+  }
+
   function processCompareGroup(group, insMode) {
     var visibleBoxes = Array.from(group.querySelectorAll('.hospital-box:not(.user-hidden)'));
 
@@ -365,10 +471,13 @@
       group.appendChild(box);
     });
 
+    var detailOnly = visibleBoxes.filter(isDetailOnlyOutpatientBox);
     var available = visibleBoxes.filter(function (box) {
+      if (isDetailOnlyOutpatientBox(box)) return false;
       return !isUnavailablePrice(box.getAttribute('data-price'), box);
     });
     var comingSoon = visibleBoxes.filter(function (box) {
+      if (isDetailOnlyOutpatientBox(box)) return false;
       return isUnavailablePrice(box.getAttribute('data-price'), box);
     });
 
@@ -391,6 +500,10 @@
     comingSoon.forEach(function (box) {
       box.classList.remove('price-hidden');
       box.classList.add('coming-soon-card', 'opacity-50');
+    });
+
+    detailOnly.forEach(function (box) {
+      box.classList.remove('price-hidden');
     });
   }
 
@@ -451,6 +564,7 @@
 
   window.updateView = updateView;
   window.goBackHome = goBackHome;
+  window.renderOutpatientCardHtml = renderOutpatientCardHtml;
 
   document.addEventListener('DOMContentLoaded', function () {
     applyUrlParams();
@@ -463,8 +577,10 @@
 
     var loadingSkeleton = document.getElementById('loading-skeleton');
     var outpatientGrid = document.getElementById('outpatient-grid');
+    var specialtyGrid = document.getElementById('outpatient-specialty-grid');
     if (loadingSkeleton) loadingSkeleton.classList.add('hidden');
     if (outpatientGrid) outpatientGrid.classList.remove('hidden');
+    if (specialtyGrid) specialtyGrid.classList.remove('hidden');
 
     var filterContainer = document.getElementById('filter-container');
     if (filterContainer) {

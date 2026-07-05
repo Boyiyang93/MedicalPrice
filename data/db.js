@@ -3,7 +3,7 @@
  * 14 家醫院 × 門診 / 病房 / 專科模組統一數據源
  *
  * Schema 約定：
- * - B 型門診: prices.regular / night / holiday + remarks
+ * - B 型門診: prices + remarks + displayPrices (可選) + timeSlots (可選)
  * - C 型病房: prices.* (排序數字) + ranges.* (展示文字)
  * - D 型套餐: price + priceLabel + displayPrice + remarks + tags[]
  * - 9999999 = Coming Soon | 9999 = 門診時段不提供
@@ -32,112 +32,84 @@ const globalMedicalData = {
       name: "深圳新風和睦家",
       link: "https://www.szufh.hk/",
       tag: "高透明度",
-      waitTime: "<15分",
-      score: "4.8",
       alert: false
     },
     cuhk: {
       name: "香港中文大學醫院",
       link: "https://www.cuhkmc.hk/",
       tag: "",
-      waitTime: "15-30分",
-      score: "4.5",
       alert: false
     },
     hksh: {
       name: "養和醫院 (HKSH)",
       link: "https://www.hksh-hospital.com/",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     ghk: {
       name: "港怡醫院 (GHK)",
       link: "https://gleneagles.hk/",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     matilda: {
       name: "明德國際醫院",
       link: "https://www.matilda.org/",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     sth: {
       name: "聖德肋撒醫院 (法國)",
       link: "http://www.sth.org.hk/",
       tag: "",
-      waitTime: "40-80分",
-      score: "4.1",
       alert: false
     },
     baptist: {
       name: "香港浸信會醫院",
       link: "https://www.hkbh.org.hk/",
       tag: "",
-      waitTime: "45-90分",
-      score: "4.0",
       alert: false
     },
     union: {
       name: "仁安醫院",
       link: "https://www.union.org/",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     canossa: {
       name: "嘉諾撒醫院",
       link: "#",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     sph: {
       name: "聖保祿醫院 (SPH)",
       link: "https://www.stpaul.org.hk/",
       tag: "⚠️ 漏洞條款",
-      waitTime: "30-60分",
-      score: "4.2",
       alert: true
     },
     pbh: {
       name: "寶血醫院 (PBH)",
       link: "https://www.pbh.hk/",
       tag: "",
-      waitTime: "20-40分",
-      score: "3.9",
       alert: false
     },
     evangel: {
       name: "播道醫院",
       link: "#",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     twah: {
       name: "荃灣港安醫院",
       link: "#",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     },
     hkah: {
       name: "香港港安–司徒拔道",
       link: "#",
       tag: "",
-      waitTime: "",
-      score: "",
       alert: false
     }
   },
@@ -145,19 +117,39 @@ const globalMedicalData = {
     outpatient: {
       szufh: {
         prices: {
-          regular: 635,
-          night: 935,
-          holiday: 935
+          regular: 813,
+          night: 1375,
+          holiday: 1375
         },
-        remarks: "備註：夜診外加RMB300，法定假日外加RMB300（此處已作匯率折算換算）。"
+        displayPrices: {
+          regular: "$625 – $1,000",
+          night: "$1,250 – $1,500",
+          holiday: "$1,250 – $1,500"
+        },
+        timeSlots: {
+          regular: "星期一至五 08:30-17:30；星期六至日 08:30-17:30",
+          night: "星期一至星期日 17:30-08:30（24小時全天候急診）",
+          holiday: "國家法定公眾假期"
+        },
+        remarks: "診金不包括小手術費、藥費及化驗費等。支持香港長者醫療券。"
       },
       cuhk: {
         prices: {
-          regular: 600,
-          night: 9999,
-          holiday: 9999
+          regular: 400,
+          night: 700,
+          holiday: 700
         },
-        remarks: "備註：常規普通門診基本起步診金為 $600。非辦公時間段安排多需致電預約。"
+        displayPrices: {
+          regular: "$400",
+          night: "$600 – $800",
+          holiday: "$600 – $800"
+        },
+        timeSlots: {
+          regular: "星期一至五 8:00-17:59；星期六 8:00-12:59",
+          night: "星期一至五 18:00-07:59；星期六 13:00-07:59",
+          holiday: "星期日、公眾假期及惡劣天氣 8:00-21:59"
+        },
+        remarks: "診金不包括小手術費、藥費及化驗費等。"
       },
       hksh: {
         prices: {
@@ -254,6 +246,46 @@ const globalMedicalData = {
           holiday: 9999999
         },
         remarks: "數據核對中。"
+      }
+    },
+    outpatientSpecialty: {
+      cuhk: {
+        prices: {
+          regular: 370,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$370 – $4,000",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "星期一至五 09:00-17:00/18:00；星期六 09:00-13:00（星期日及公眾假期部分中心休息）",
+          night: "非辦公時間、星期日及公眾假期收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["基礎專科", "眼科", "腫瘤科", "中西醫", "專職醫療"],
+        remarks: "診金普遍不包括藥費、醫生費、小手術及化驗費。非辦公時間、星期日及公眾假期收費將有所調整。"
+      },
+      szufh: {
+        prices: {
+          regular: 1000,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$1,000 – $1,875",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "星期一至五 08:30-17:30；星期六至日 08:30-17:30（各專科開診時間依排班為準）",
+          night: "非辦公時間、星期日及公眾假期收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["內科", "外科", "婦科", "兒科", "骨科", "眼科", "耳鼻喉", "中醫"],
+        remarks: "專科診金因醫生級別（主治、副主任、主任、特聘專家）而異。部分指定專科套餐不適用於非常規時段。"
       }
     },
     ward: {
@@ -1449,6 +1481,16 @@ const globalMedicalData = {
       page: "outpatient.html",
       hash: "",
       label: "門診診金"
+    },
+    {
+      keywords: [
+        "專科門診",
+        "專科診金",
+        "specialist outpatient"
+      ],
+      page: "outpatient.html",
+      hash: "#specialty-outpatient",
+      label: "專科門診"
     },
     {
       keywords: [

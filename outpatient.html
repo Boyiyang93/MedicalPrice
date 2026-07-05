@@ -54,7 +54,7 @@
                             <label class="block text-xs font-bold text-gray-500 mb-2">🛡️ 您的門診醫療保障 (同步自首頁)</label>
                             <select id="insurance-select" class="w-full p-2.5 border border-gray-300 rounded-lg text-sm bg-gray-50 outline-none">
                                 <option value="none">無醫療保險 (全額自付)</option>
-                                <option value="wemed">WeMedi 門診保 / 網絡卡 (自付額固定HK$50)</option>
+                                <option value="wemed">WeMedi 門診保 / 網絡卡 (自付額固定 $50)</option>
                             </select>
                         </div>
                         <div class="flex-1 min-w-[240px]">
@@ -80,6 +80,19 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="specialty-outpatient" class="mt-12">
+                    <div class="section-header text-xl font-bold text-[#2B579A] mb-2">專科門診 (Specialist Outpatient)</div>
+                    <p class="text-xs text-gray-500 mb-4 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 專科診金因科室及醫生級別而異；夜診/節日時段請向醫院查詢最新收費。</p>
+
+                    <div class="comparison-card">
+                        <div class="p-6">
+                            <div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-6 hidden" id="outpatient-specialty-grid">
+                                <!-- 專科門診卡片由 JS 注入 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
@@ -88,12 +101,15 @@
     <script src="js/engine.js"></script>
     <script>
         let hospitalDatabase = [];
+        let specialtyDatabase = [];
 
         function initPage() {
             hospitalDatabase = getModuleHospitalList('outpatient');
+            specialtyDatabase = getModuleHospitalList('outpatientSpecialty');
 
             renderFilters();
-            renderContainers();
+            renderOutpatientGrid('outpatient-grid', hospitalDatabase);
+            renderOutpatientGrid('outpatient-specialty-grid', specialtyDatabase, { type: 'specialty', hideInsurance: true });
             updateView();
         }
 
@@ -106,27 +122,10 @@
             `).join('');
         }
 
-        function renderContainers() {
-            const grid = document.getElementById('outpatient-grid');
-            grid.innerHTML = hospitalDatabase.map(h => `
-                <div class="hospital-box animate-fadeIn"
-                     data-hospital="${h.id}"
-                     data-normal="${h.prices.regular}"
-                     data-night="${h.prices.night}"
-                     data-holiday="${h.prices.holiday}">
-                    <div class="flex justify-between items-start mb-1">
-                        <a href="${h.link}" target="_blank" class="hospital-link text-[11px]">${h.name} ↗</a>
-                        ${h.tag ? `<span class="${h.alert ? 'bg-orange-100 text-orange-600 border border-orange-200' : 'bg-[#99D6D1] text-[#1D4E89]'} text-[9px] px-1.5 py-0.5 rounded font-bold">${h.tag}</span>` : ''}
-                    </div>
-                    <div class="text-[9px] text-gray-400 mb-3 flex gap-2">
-                        ${h.waitTime ? `<span>⏱️ 候診預估: ${h.waitTime}</span>` : ''}
-                        ${h.score ? `<span>⭐ 質素評分: ${h.score}</span>` : ''}
-                    </div>
-                    <div class="price-display min-h-[50px]"></div>
-                    <div class="text-[9px] ${h.alert ? 'text-red-500 font-medium' : 'text-gray-400'} mt-2 block-remarks">${h.remarks}</div>
-                    <div class="insurance-box mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200"></div>
-                </div>
-            `).join('');
+        function renderOutpatientGrid(gridId, hospitals, options = {}) {
+            const grid = document.getElementById(gridId);
+            if (!grid) return;
+            grid.innerHTML = hospitals.map(h => renderOutpatientCardHtml(h, options)).join('');
         }
 
         window.addEventListener('DOMContentLoaded', initPage);
