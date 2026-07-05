@@ -299,12 +299,24 @@
       if (h.timeSlots.holiday) attrs += ' data-slot-holiday="' + escapeAttr(h.timeSlots.holiday) + '"';
     }
 
+    var tagsCombined = hospitalTagHtml + scopeTagsHtml;
+    var tagsRowClass = options.type === 'specialty'
+      ? 'card-tags flex flex-wrap gap-1 mt-1.5'
+      : 'flex flex-wrap gap-1 mt-1.5';
+    var tagsRowHtml = tagsCombined
+      ? '<div class="' + tagsRowClass + '">' + tagsCombined + '</div>'
+      : (options.type === 'specialty'
+        ? '<div class="' + tagsRowClass + '"></div>'
+        : '');
+    var headerHtml =
+      '<div class="mb-1">' +
+      '<a href="' + (h.link || '#') + '" target="_blank" class="hospital-link text-[11px]">' + escapeHtml(h.name) + ' ↗</a>' +
+      tagsRowHtml +
+      '</div>';
+
     return (
       '<div class="hospital-box animate-fadeIn" ' + attrs + '>' +
-      '<div class="flex justify-between items-start mb-1 flex-wrap gap-1">' +
-      '<a href="' + (h.link || '#') + '" target="_blank" class="hospital-link text-[11px]">' + escapeHtml(h.name) + ' ↗</a>' +
-      '<div class="flex flex-wrap gap-1">' + hospitalTagHtml + scopeTagsHtml + '</div>' +
-      '</div>' +
+      headerHtml +
       '<div class="text-[9px] text-gray-400 mb-3 leading-relaxed outpatient-slot hidden"></div>' +
       '<div class="price-display min-h-[50px]"></div>' +
       '<div class="text-[9px] ' + remarksClass + ' mt-2 block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
@@ -344,7 +356,10 @@
 
   function getPageHospitalList() {
     var pageModule = document.body && document.body.getAttribute('data-page-module');
-    var multiProcedureModules = ['imaging', 'gynecology'];
+    var multiProcedureModules = [
+      'imaging', 'gynecology', 'generalSurgery', 'orthopedics', 'ent',
+      'ophthalmology', 'painManagement', 'cardiology', 'plastics', 'urology'
+    ];
 
     if (pageModule && multiProcedureModules.indexOf(pageModule) !== -1 && typeof getOrderedHospitals === 'function') {
       return getOrderedHospitals();
@@ -498,8 +513,8 @@
     });
 
     comingSoon.forEach(function (box) {
-      box.classList.remove('price-hidden');
-      box.classList.add('coming-soon-card', 'opacity-50');
+      box.classList.add('price-hidden');
+      box.classList.remove('coming-soon-card', 'opacity-50');
     });
 
     detailOnly.forEach(function (box) {
@@ -531,6 +546,19 @@
     document.querySelectorAll('.compare-group').forEach(function (group) {
       processCompareGroup(group, insMode);
     });
+
+    hideEmptyProcedureSections();
+  }
+
+  function hideEmptyProcedureSections() {
+    document.querySelectorAll('.compare-group[data-module]').forEach(function (group) {
+      var section = group.closest('section');
+      if (!section) return;
+      var visibleCount = group.querySelectorAll(
+        '.hospital-box:not(.price-hidden):not(.user-hidden)'
+      ).length;
+      section.classList.toggle('hidden', visibleCount === 0);
+    });
   }
 
   function goBackHome(hash) {
@@ -544,6 +572,38 @@
     if (document.getElementById('time-select')) params.set('time', time);
 
     window.location.href = 'index.html?' + params.toString() + hash;
+  }
+
+  function injectHeaderNav() {
+    var header = document.querySelector('header');
+    if (!header || header.querySelector('nav')) return;
+    header.classList.add('justify-between');
+
+    var fullWidthBtn = header.querySelector('button.w-full');
+    if (fullWidthBtn) {
+      var wrap = document.createElement('div');
+      wrap.className = 'flex items-center gap-3 min-w-0';
+      fullWidthBtn.classList.remove('w-full', 'text-left');
+      fullWidthBtn.classList.add('w-7', 'h-7', 'shrink-0', 'bg-[#99D6D1]', 'rounded-sm', 'flex', 'items-center', 'justify-center', 'text-[#1D4E89]', 'font-bold', 'hover:bg-white', 'transition-colors');
+      var title = fullWidthBtn.querySelector('.text-xl');
+      if (title) {
+        title.classList.add('tracking-tighter');
+        fullWidthBtn.innerHTML = '←';
+        wrap.appendChild(fullWidthBtn);
+        wrap.appendChild(title);
+      } else {
+        wrap.appendChild(fullWidthBtn);
+      }
+      header.insertBefore(wrap, header.firstChild);
+    }
+
+    var nav = document.createElement('nav');
+    nav.className = 'hidden md:flex gap-6 text-sm shrink-0 whitespace-nowrap';
+    nav.innerHTML =
+      '<a href="index.html" class="hover:text-[#99D6D1]">首頁</a>' +
+      '<a href="index.html#specialties" class="text-[#99D6D1] font-bold">專科比價</a>' +
+      '<a href="index.html#macro-data" class="hover:text-[#99D6D1]">醫療情報</a>';
+    header.appendChild(nav);
   }
 
   function bindNavigation() {
@@ -569,6 +629,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     applyUrlParams();
     bindNavigation();
+    injectHeaderNav();
 
     initModuleGroups();
     initWardTable();

@@ -20,6 +20,8 @@
         .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; display: inline-block; }
         .hospital-link:hover { border-bottom-color: var(--ufh-mint); color: var(--ufh-blue); }
         .section-header::before { content: ""; display: inline-block; width: 4px; height: 20px; background: var(--ufh-mint); margin-right: 10px; vertical-align: middle; }
+        .lane-container { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 2.5rem; border: 1px solid #E5E7EB; padding: 20px; }
+        .lane-header::before { content: ""; display: inline-block; width: 4px; height: 16px; background: var(--ufh-blue); margin-right: 8px; vertical-align: middle; }
     </style>
 </head>
 <body data-page-module="generalSurgery">
@@ -29,6 +31,11 @@
             <button type="button" id="btn-back-home" data-action="go-back-home" data-hash="#specialties" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-white transition-colors">←</button>
             <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">一般外科決策中心</span></span>
         </div>
+        <nav class="hidden md:flex gap-6 text-sm">
+            <a href="index.html" class="hover:text-[#99D6D1]">首頁</a>
+            <a href="index.html#specialties" class="text-[#99D6D1] font-bold">專科比價</a>
+            <a href="index.html#macro-data" class="hover:text-[#99D6D1]">醫療情報</a>
+        </nav>
     </header>
 
     <div class="flex">
@@ -66,18 +73,70 @@
                     </div>
                 </section>
 
-                <div class="section-header text-xl font-bold text-[#2B579A] mb-2">腹腔鏡膽囊切除術 (Cholecystectomy)</div>
-                <p class="text-xs text-gray-500 mb-4 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 智能動態比價：有定額數據的醫院自動 Top 3 排序展示；暫無數據的醫院以卡片降級沉底，不佔用前三名名額。</p>
-
-                <div class="comparison-card">
-                    <div class="p-6">
-                        <div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-6" data-module="generalSurgery"></div>
-                    </div>
-                </div>
+                                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>
+                <section id="cholecystectomy" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">腹腔鏡膽囊切除術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="cholecystectomy"></div></div>
+                </section>
+                <section id="breast_lump" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">乳房腫塊切除術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="breast_lump"></div></div>
+                </section>
+                <section id="circumcision" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">包皮環切術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="circumcision"></div></div>
+                </section>
+                <section id="thyroid_fna" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">甲狀腺細針穿刺檢查</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="thyroid_fna"></div></div>
+                </section>
+                <section id="hemithyroidectomy" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">偏側甲狀腺切除術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="hemithyroidectomy"></div></div>
+                </section>
+                <section id="thyroidectomy" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">甲狀腺/副甲狀腺切除術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="thyroidectomy"></div></div>
+                </section>
+                <section id="hernia_abdominal" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">腹腔疝氣修補術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="hernia_abdominal"></div></div>
+                </section>
+                <section id="hernia_unilateral" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">單側腹股溝疝氣修補術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="hernia_unilateral"></div></div>
+                </section>
+                <section id="hernia_bilateral" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">雙側腹股溝疝氣修補術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="hernia_bilateral"></div></div>
+                </section>
+                <section id="appendectomy" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">闌尾切除術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="appendectomy"></div></div>
+                </section>
+                <section id="hemorrhoid" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">痔瘡專項處置</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="hemorrhoid"></div></div>
+                </section>
+                <section id="thyroid_surgery" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">甲狀腺處置手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="thyroid_surgery"></div></div>
+                </section>
+                <section id="port_a_cath" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">輸液港手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="port_a_cath"></div></div>
+                </section>
+                <section id="breast_biopsy" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">乳腺抽針及旋切活檢</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="breast_biopsy"></div></div>
+                </section>
+                <section id="breast_surgery" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">乳腺外科手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="generalSurgery" data-procedure="breast_surgery"></div></div>
+                </section>
             </div>
         </main>
     </div>
-
     <script src="data/db.js"></script>
     <script src="js/engine.js"></script>
 </body>

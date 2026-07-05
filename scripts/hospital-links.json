@@ -1,0 +1,270 @@
+{
+  "surgery": {
+    "gynecology": {
+      "normal_delivery": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
+      },
+      "c_section": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
+      },
+      "cervical_treatment": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "hysteroscopy": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "myomectomy": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "hysterectomy": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "tubal_ectopic": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "ovarian_cyst": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "contraception": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "imaging": {
+      "bronchoscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+      },
+      "dual_scope": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        "szufh": "https://www.szufh.hk/xiaohuaneijing.html"
+      },
+      "gastroscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+        "szufh": "https://www.szufh.hk/xiaohuaneijing.html"
+      },
+      "colonoscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+        "szufh": "https://www.szufh.hk/xiaohuaneijing.html"
+      }
+    },
+    "ent": {
+      "micro_laryngoscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+      },
+      "tonsillectomy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+      },
+      "adenoid_tonsil": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "sinus_surgery": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "tympanoplasty": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "ophthalmology": {
+      "cataract": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "strabismus": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "generalSurgery": {
+      "breast_lump": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+      },
+      "cholecystectomy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "circumcision": {
+        "cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+      },
+      "thyroid_fna": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "hemithyroidectomy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "thyroidectomy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "hernia_abdominal": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "hernia_unilateral": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "hernia_bilateral": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+      },
+      "appendectomy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "hemorrhoid": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "thyroid_surgery": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "port_a_cath": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "breast_biopsy": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "breast_surgery": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "orthopedics": {
+      "shoulder_arthroscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "shoulder_replacement": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "orif_upper_limb": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "carpal_tunnel": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "trigger_finger": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "knee_arthroscopy": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "knee_replacement": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "orif_lower_limb": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "hip_replacement": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "achilles_ankle": {
+        "cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+      "joint_replacement": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "spine_surgery": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "sports_ortho": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "urology": {
+      "prostate": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "kidney_stone": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "urodynamics": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "andrology": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "painManagement": {
+      "nerve_block": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "spine_endoscopy": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      },
+      "scs_implant": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "plastics": {
+      "laceration_repair": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    },
+    "cardiology": {
+      "pci": {
+        "szufh": "https://www.szufh.hk/shoushusf.html"
+      }
+    }
+  },
+  "flat": {
+    "outpatient.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/emergency-medicine-centre",
+    "outpatientSpecialty.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/specialist-outpatient-clinic",
+    "outpatient.szufh": "https://www.szufh.hk/fuwusf.html",
+    "outpatientSpecialty.szufh": "https://www.szufh.hk/yiliaoquan.html",
+    "gynecology.normal_delivery.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
+    "gynecology.c_section.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
+    "gynecology.cervical_treatment.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.hysteroscopy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.myomectomy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.hysterectomy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.tubal_ectopic.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.ovarian_cyst.szufh": "https://www.szufh.hk/shoushusf.html",
+    "gynecology.contraception.szufh": "https://www.szufh.hk/shoushusf.html",
+    "imaging.bronchoscopy.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "imaging.dual_scope.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "imaging.dual_scope.szufh": "https://www.szufh.hk/xiaohuaneijing.html",
+    "imaging.gastroscopy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+    "imaging.gastroscopy.szufh": "https://www.szufh.hk/xiaohuaneijing.html",
+    "imaging.colonoscopy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+    "imaging.colonoscopy.szufh": "https://www.szufh.hk/xiaohuaneijing.html",
+    "ent.micro_laryngoscopy.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "ent.tonsillectomy.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "ent.adenoid_tonsil.szufh": "https://www.szufh.hk/shoushusf.html",
+    "ent.sinus_surgery.szufh": "https://www.szufh.hk/shoushusf.html",
+    "ent.tympanoplasty.szufh": "https://www.szufh.hk/shoushusf.html",
+    "ophthalmology.cataract.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "ophthalmology.cataract.szufh": "https://www.szufh.hk/shoushusf.html",
+    "ophthalmology.strabismus.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.breast_lump.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "generalSurgery.cholecystectomy.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "generalSurgery.cholecystectomy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.circumcision.cuhk": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "generalSurgery.thyroid_fna.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.hemithyroidectomy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.thyroidectomy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.hernia_abdominal.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.hernia_unilateral.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.hernia_bilateral.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.appendectomy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "generalSurgery.appendectomy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.hemorrhoid.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.thyroid_surgery.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.port_a_cath.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.breast_biopsy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "generalSurgery.breast_surgery.szufh": "https://www.szufh.hk/shoushusf.html",
+    "orthopedics.shoulder_arthroscopy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.shoulder_replacement.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.orif_upper_limb.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.carpal_tunnel.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.trigger_finger.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.knee_arthroscopy.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.knee_replacement.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.orif_lower_limb.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.hip_replacement.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.achilles_ankle.cuhk": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "orthopedics.joint_replacement.szufh": "https://www.szufh.hk/shoushusf.html",
+    "orthopedics.spine_surgery.szufh": "https://www.szufh.hk/shoushusf.html",
+    "orthopedics.sports_ortho.szufh": "https://www.szufh.hk/shoushusf.html",
+    "urology.prostate.szufh": "https://www.szufh.hk/shoushusf.html",
+    "urology.kidney_stone.szufh": "https://www.szufh.hk/shoushusf.html",
+    "urology.urodynamics.szufh": "https://www.szufh.hk/shoushusf.html",
+    "urology.andrology.szufh": "https://www.szufh.hk/shoushusf.html",
+    "painManagement.nerve_block.szufh": "https://www.szufh.hk/shoushusf.html",
+    "painManagement.spine_endoscopy.szufh": "https://www.szufh.hk/shoushusf.html",
+    "painManagement.scs_implant.szufh": "https://www.szufh.hk/shoushusf.html",
+    "plastics.laceration_repair.szufh": "https://www.szufh.hk/shoushusf.html",
+    "cardiology.pci.szufh": "https://www.szufh.hk/shoushusf.html"
+  }
+}

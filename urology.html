@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="香港私家醫院內窺鏡與影像掃描定額比價">
-    <title>內窺鏡與高階影像掃描臨床決策中心</title>
+    <meta name="description" content="香港私家醫院泌尿外科手術定額比價">
+    <title>醫療價格第三方門戶 - 泌尿外科決策中心</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>        :root { --ufh-blue: #1D4E89; --title-blue: #2B579A; --ufh-mint: #99D6D1; }
         body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background-color: #F7F8FA; color: #333; scroll-behavior: smooth; }
         .sidebar-fixed { width: 280px; height: calc(100vh - 64px); position: fixed; top: 64px; left: 0; background: white; border-right: 1px solid #E5E7EB; overflow-y: auto; z-index: 40; }
         .main-content { padding-top: 80px; padding-bottom: 60px; }
         @media (min-width: 1024px) { .main-content { margin-left: 280px; } }
-        .comparison-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 3rem; border: 1px solid #F3F4F6; overflow: hidden; }
         .hospital-box { border-radius: 8px; padding: 16px; border: 1px solid #F3F4F6; transition: all 0.2s; position: relative; background: white; }
         .hospital-box.best-value { border: 2px solid var(--ufh-mint); background-color: #F0FAF9; }
         .hospital-box.coming-soon-card { border-color: #E5E7EB; background-color: #F9FAFB; }
@@ -19,48 +18,55 @@
         .price-hidden { display: none !important; }
         .hospital-link { color: var(--title-blue); font-weight: bold; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.2s; display: inline-block; }
         .hospital-link:hover { border-bottom-color: var(--ufh-mint); color: var(--ufh-blue); }
-        .section-header::before { content: ""; display: inline-block; width: 4px; height: 20px; background: var(--ufh-mint); margin-right: 10px; vertical-align: middle; }
         .lane-container { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 2.5rem; border: 1px solid #E5E7EB; padding: 20px; }
         .lane-header::before { content: ""; display: inline-block; width: 4px; height: 16px; background: var(--ufh-blue); margin-right: 8px; vertical-align: middle; }</style>
 </head>
-<body data-page-module="imaging">
+<body data-page-module="urology">
     <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 shadow-md" role="banner">
-        <button type="button" data-action="go-back-home" data-hash="#specialties" class="flex items-center gap-3" aria-label="返回首頁">
-            <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
-            <span class="text-xl font-bold">MedicalPrice <span class="font-light opacity-60 ml-2">鏡檢與影像專線中心</span></span>
-        </button>
+        <div class="flex items-center gap-3">
+            <button type="button" data-action="go-back-home" data-hash="#specialties" class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold hover:bg-white transition-colors" aria-label="返回首頁">←</button>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">泌尿外科決策中心</span></span>
+        </div>
     </header>
     <div class="flex">
-        <aside class="sidebar-fixed p-6 hidden lg:block" aria-label="醫院篩選"><div id="filter-container" class="space-y-2.5"></div></aside>
+        <aside class="sidebar-fixed p-6 hidden lg:block" aria-label="醫院篩選">
+            <div class="mb-6"><p class="text-xs font-bold text-gray-400 mb-2">📍 當前模組</p>
+            <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded">🫘 泌尿外科定額比價</div></div>
+            <div id="filter-container" class="space-y-3 px-1 h-[450px] overflow-y-auto"></div>
+        </aside>
         <main class="main-content flex-1 px-4 lg:px-10" role="main">
             <div class="max-w-6xl mx-auto">
-                <h1 class="text-2xl font-black text-[#2B579A] mb-6">高頻內窺鏡與高階影像掃描臨床精算矩陣</h1>
-                
-                <section id="gastroscopy" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">日間胃鏡檢查臨床精算專區 (Gastroscopy)</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="gastroscopy"></div></div>
+                <section class="mb-8">
+                    <h1 class="text-2xl font-black text-[#2B579A] mb-4">全港私家醫院泌尿外科手術定額對比</h1>
+                    <div class="mt-6 bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex flex-wrap gap-6">
+                        <div class="flex-1 min-w-[240px]">
+                            <label for="insurance-select" class="block text-xs font-bold text-gray-500 mb-2">🛡️ 醫療保障</label>
+                            <select id="insurance-select" class="w-full p-2.5 border border-gray-300 rounded-lg text-sm bg-gray-50">
+                                <option value="none">無醫療保險 (全額自付)</option>
+                                <option value="vhis-std">VHIS 自願醫保 (標準計劃)</option>
+                                <option value="vhis-adv">VHIS 自願醫保 (靈活/高端計劃)</option>
+                            </select>
+                        </div>
+                    </div>
                 </section>
-                <section id="colonoscopy" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">日間結腸鏡檢查臨床精算專區 (Colonoscopy)</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="colonoscopy"></div></div>
+                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>
+                <section id="prostate" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">前列腺診療手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="urology" data-procedure="prostate"></div></div>
                 </section>
-                <section id="dual_scope" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">黃金組合「胃鏡 + 大腸鏡」聯查專區</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="dual_scope"></div></div>
+                <section id="kidney_stone" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">泌尿系結石碎石手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="urology" data-procedure="kidney_stone"></div></div>
                 </section>
-                                <section id="bronchoscopy" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">支氣管鏡檢查</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="bronchoscopy"></div></div>
+                <section id="urodynamics" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">尿動力及膀胱鏡檢查</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="urology" data-procedure="urodynamics"></div></div>
                 </section>
-                <section id="ct_brain" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">CT 腦部掃描臨床精算專區</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="ct_brain"></div></div>
+                <section id="andrology" class="mb-8">
+                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">男科處置手術</h2>
+                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="urology" data-procedure="andrology"></div></div>
                 </section>
-                <section id="mri_brain" class="mb-8">
-                    <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">MRI 腦部掃描臨床精算專區</h2>
-                    <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="imaging" data-procedure="mri_brain"></div></div>
-                </section>
-                                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8" role="contentinfo">
+                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8" role="contentinfo">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
                         <div class="bg-gray-800 p-8 flex flex-col">
                             <h4 class="text-lg font-bold mb-3">🏥 醫療機構專屬通道</h4>

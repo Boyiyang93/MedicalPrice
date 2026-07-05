@@ -85,8 +85,8 @@ const globalMedicalData = {
     sph: {
       name: "聖保祿醫院 (SPH)",
       link: "https://www.stpaul.org.hk/",
-      tag: "⚠️ 漏洞條款",
-      alert: true
+      tag: "",
+      alert: false
     },
     pbh: {
       name: "寶血醫院 (PBH)",
@@ -116,6 +116,7 @@ const globalMedicalData = {
   modules: {
     outpatient: {
       szufh: {
+        link: "https://www.szufh.hk/fuwusf.html",
         prices: {
           regular: 813,
           night: 1375,
@@ -134,6 +135,7 @@ const globalMedicalData = {
         remarks: "診金不包括小手術費、藥費及化驗費等。支持香港長者醫療券。"
       },
       cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/emergency-medicine-centre",
         prices: {
           regular: 400,
           night: 700,
@@ -250,6 +252,7 @@ const globalMedicalData = {
     },
     outpatientSpecialty: {
       cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/specialist-outpatient-clinic",
         prices: {
           regular: 370,
           night: 9999999,
@@ -269,6 +272,7 @@ const globalMedicalData = {
         remarks: "診金普遍不包括藥費、醫生費、小手術及化驗費。非辦公時間、星期日及公眾假期收費將有所調整。"
       },
       szufh: {
+        link: "https://www.szufh.hk/yiliaoquan.html",
         prices: {
           regular: 1000,
           night: 9999999,
@@ -459,320 +463,1462 @@ const globalMedicalData = {
       }
     },
     generalSurgery: {
+      cholecystectomy: {
       szufh: {
-        price: 28500,
-        priceLabel: "日間膽囊切除套餐 (￥25,000)",
-        displayPrice: "HK$28,500",
-        remarks: "✓ 跨境定額：含術前評估、麻醉及術後隨訪。"
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 77344,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$68,750 – $85,938",
+        remarks: "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级。标准住院天数均为2晚。"
       },
+
       cuhk: {
-        price: 32000,
-        priceLabel: "日間腹腔鏡膽囊切除定額",
-        displayPrice: "HK$32,000",
-        remarks: "✓ 智慧定額：透明打包，無隱性行政附加費。"
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 110387,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$95,688 – $125,086",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
       },
+
       hksh: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       ghk: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       matilda: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       sth: {
-        price: 18500,
+        price: 20250,
         priceLabel: "日間普通房基準套餐",
         displayPrice: "HK$18,500 – $22,000",
         remarks: "⚠️ 雜費風險：病理化驗與耗材可能另計。"
       },
+
       baptist: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       union: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       canossa: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       sph: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       pbh: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       evangel: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       twah: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       },
+
       hkah: {
         price: 9999999,
         remarks: "定額一般外科手術數據核對中。"
       }
+      },
+      breast_lump: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 73976,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$52,175 – $95,776",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      circumcision: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 40016,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$29,674 – $50,357",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      thyroid_fna: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 17245,
+        priceLabel: "超聲波導引甲狀腺細針穿刺",
+        displayPrice: "HK$14,960 – $19,530",
+        remarks: "✓ 麻醉级别与住院形式。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      hemithyroidectomy: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 136280,
+        priceLabel: "偏側甲狀腺切除術",
+        displayPrice: "HK$85,960 – $186,600",
+        remarks: "✓ 是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      thyroidectomy: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 171580,
+        priceLabel: "甲狀腺/副甲狀腺切除術",
+        displayPrice: "HK$94,360 – $248,800",
+        remarks: "✓ 切除范围（局部/次全/全/副甲状腺）、是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      hernia_abdominal: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 113950,
+        priceLabel: "腹腔疝氣修補術",
+        displayPrice: "HK$51,000 – $176,900",
+        remarks: "✓ 手术形式（開放式/腹腔鏡）、住院形式及住院級別。均包括使用人工網膜補片及全身麻醉。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      hernia_unilateral: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 64700,
+        priceLabel: "單側腹股溝疝氣修補術",
+        displayPrice: "HK$40,800 – $88,600",
+        remarks: "✓ 手术形式（開放式/腹腔鏡）、麻醉与形式（全身/局部/鎮靜麻醉）、是否使用人工網膜補片。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      hernia_bilateral: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 131405,
+        priceLabel: "雙側腹股溝疝氣修補術",
+        displayPrice: "HK$62,010 – $200,800",
+        remarks: "✓ 手术形式（開放式/腹腔鏡）及是否使用人工網膜補片。均在全身麻醉下住院进行。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      appendectomy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 76438,
+        priceLabel: "闌尾切除術",
+        displayPrice: "HK$62,250 – $90,625",
+        remarks: "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级.标准住院天数均为1晚。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+        price: 130645,
+        priceLabel: "闌尾切除術",
+        displayPrice: "HK$91,290 – $170,000",
+        remarks: "✓ 慢阑尾炎病症复杂程度（非複雜性/複雜性）。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      hemorrhoid: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 14063,
+        priceLabel: "痔瘡專項處置",
+        displayPrice: "HK$3,125 – $25,000",
+        remarks: "✓ 痔疮术式类别（传统切除术/RBL胶圈套扎/库克一次性套扎/硬化剂注射）与手术风险等级。属于同台手术加项。标准住院天数为0至1晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      thyroid_surgery: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 57063,
+        priceLabel: "甲狀腺處置手術",
+        displayPrice: "HK$4,750 – $109,375",
+        remarks: "✓ 手术术式（超声引导下穿刺活检/次全切除/全切除术）与手术风险等级。标准住院天数为日間至3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      port_a_cath: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 29563,
+        priceLabel: "輸液港手術",
+        displayPrice: "HK$12,250 – $46,875",
+        remarks: "✓ 处置形式（置入/取出）与麻醉形式（局部麻醉/监测麻醉/全身麻醉）及手术风险等级。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      breast_biopsy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 19250,
+        priceLabel: "乳腺抽針及旋切活檢",
+        displayPrice: "HK$3,500 – $35,000",
+        remarks: "✓ 术式类别（细针FNA/粗针CNB/旋切VAB）、进刀口与结节增项数量、单双侧以及麻醉。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      },
+      breast_surgery: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 80000,
+        priceLabel: "乳腺外科手術",
+        displayPrice: "HK$35,000 – $125,000",
+        remarks: "✓ 手术路径复杂程度（单双侧肿块切除/部分切除+前哨活检/乳腺癌根治术）与手术风险等级。标准住院天数为日間至5晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額一般外科手術數據核對中。"
+      }
+      }
     },
     imaging: {
       gastroscopy: {
-        szufh: {
-          price: 8580,
-          priceLabel: "門診日間中心套餐價 (￥7,800)",
-          displayPrice: "HK$8,580",
-          remarks: "✓ 全包定額：含幽門螺桿菌測試與瘜肉切除費。",
-          tags: [
-            "跨境免找數",
-            "含瘜肉切除"
-          ]
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        hksh: {
-          price: 9200,
-          priceLabel: "日間中心程序起步底價",
-          displayPrice: "HK$9,200 – $10,800",
-          remarks: "⚠️ 非全包：醫生費、巡房費與化驗費按件累加。",
-          tags: [
-            "頂尖專家"
-          ]
-        },
-        ghk: {
-          price: 7820,
-          priceLabel: "日間定額醫療程序套餐",
-          displayPrice: "HK$7,820",
-          remarks: "✓ 定額保障：已包含基礎用藥與組織化驗雜費。",
-          tags: [
-            "100%全包",
-            "港島旗艦"
-          ]
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        sth: {
-          price: 6100,
-          priceLabel: "日間程序普通房常規區間",
-          displayPrice: "HK$6,100 – $7,800",
-          remarks: "⚠️ 雜費風險：人流量大，切除活檢費與耗材另計。",
-          tags: [
-            "九龍核心"
-          ]
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        pbh: {
-          price: 5800,
-          priceLabel: "日間大房基準套餐價",
-          displayPrice: "HK$5,800",
-          remarks: "✓ 全港地板價：性價比極高，標準計劃基本全覆蓋。",
-          tags: [
-            "常規體檢首選"
-          ]
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "定額胃鏡數據核對中。"
-        }
+      szufh: {
+        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        price: 7563,
+        priceLabel: "無痛胃鏡健康檢查 (監察麻醉)",
+        displayPrice: "HK$6,000 – $9,125",
+        remarks: "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额胃镜检查费、麻醉及医生费。",
+        tags: ["跨境免找數"]
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+        price: 14990,
+        priceLabel: "日間胃鏡 (鎮靜麻醉)",
+        displayPrice: "HK$10,550 – $19,430",
+        remarks: "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 10000,
+        priceLabel: "日間中心程序起步底價",
+        displayPrice: "HK$9,200 – $10,800",
+        remarks: "⚠️ 非全包：醫生費、巡房費與化驗費按件累加。",
+        tags: ["頂尖專家"]
+      },
+
+      ghk: {
+        price: 7820,
+        priceLabel: "日間定額醫療程序套餐",
+        displayPrice: "HK$7,820",
+        remarks: "✓ 定額保障：已包含基礎用藥與組織化驗雜費。",
+        tags: ["100%全包", "港島旗艦"]
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sth: {
+        price: 6950,
+        priceLabel: "日間程序普通房常規區間",
+        displayPrice: "HK$6,100 – $7,800",
+        remarks: "⚠️ 雜費風險：人流量大，切除活檢費與耗材另計。",
+        tags: ["九龍核心"]
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      pbh: {
+        price: 5800,
+        priceLabel: "日間大房基準套餐價",
+        displayPrice: "HK$5,800",
+        remarks: "✓ 全港地板價：性價比極高，標準計劃基本全覆蓋。",
+        tags: ["常規體檢首選"]
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      }
       },
       colonoscopy: {
-        szufh: {
-          price: 11550,
-          priceLabel: "日間全包套餐 (￥10,500)",
-          displayPrice: "HK$11,550",
-          remarks: "✓ 零預約輪候：已包含常規瘜肉切除與基本化驗費。",
-          tags: [
-            "瘜肉全包",
-            "當天出報告"
-          ]
-        },
-        cuhk: {
-          price: 9800,
-          priceLabel: "日間定額醫療套餐",
-          displayPrice: "HK$9,800",
-          remarks: "✓ 透明防震：智慧定額制度，絕不設任何隱性行政後加開支。",
-          tags: [
-            "數位定額",
-            "絕無雜費"
-          ]
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        ghk: {
-          price: 10420,
-          priceLabel: "日間定額全包區間",
-          displayPrice: "HK$10,420 – $13,440",
-          remarks: "✓ 結構清晰：已含基礎瘜肉切除與組織活檢化驗費。",
-          tags: [
-            "港島推薦"
-          ]
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        baptist: {
-          price: 11000,
-          priceLabel: "日間常規程序基準",
-          displayPrice: "HK$11,000 – $13,500",
-          remarks: "⚠️ 瘜肉階梯：切除超出3粒後觸發階梯收費，輪候約2週。",
-          tags: [
-            "常規程序"
-          ]
-        },
-        union: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        pbh: {
-          price: 8200,
-          priceLabel: "日間大房基準套餐價",
-          displayPrice: "HK$8,200",
-          remarks: "✓ 價格親民：香港本地極致性價比，適合基礎篩查。",
-          tags: [
-            "預算優選"
-          ]
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "定額結腸鏡數據核對中。"
-        }
+      szufh: {
+        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        price: 8438,
+        priceLabel: "無痛腸鏡健康檢查 (監察麻醉)",
+        displayPrice: "HK$6,875 – $10,000",
+        remarks: "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额肠镜检查费、麻醉及医生费。",
+        tags: ["瘜肉全包", "當天出報告"]
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+        price: 16980,
+        priceLabel: "日間結腸鏡 (鎮靜麻醉)",
+        displayPrice: "HK$13,250 – $20,710",
+        remarks: "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      ghk: {
+        price: 11930,
+        priceLabel: "日間定額全包區間",
+        displayPrice: "HK$10,420 – $13,440",
+        remarks: "✓ 結構清晰：已含基礎瘜肉切除與組織活檢化驗費。",
+        tags: ["港島推薦"]
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      baptist: {
+        price: 12250,
+        priceLabel: "日間常規程序基準",
+        displayPrice: "HK$11,000 – $13,500",
+        remarks: "⚠️ 瘜肉階梯：切除超出3粒後觸發階梯收費，輪候約2週。",
+        tags: ["常規程序"]
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      pbh: {
+        price: 8200,
+        priceLabel: "日間大房基準套餐價",
+        displayPrice: "HK$8,200",
+        remarks: "✓ 價格親民：香港本地極致性價比，適合基礎篩查。",
+        tags: ["預算優選"]
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      }
       },
       dual_scope: {
-        szufh: {
-          price: 16280,
-          priceLabel: "雙鏡聯查專線 (￥14,800)",
-          displayPrice: "HK$16,280",
-          remarks: "✓ 降維打擊：一劑清腸。雙鏡套餐價格比在香港分開做划算極多。",
-          tags: [
-            "一次麻醉",
-            "節省近35%"
-          ]
-        },
-        cuhk: {
-          price: 15200,
-          priceLabel: "日間定額雙鏡聯合套餐",
-          displayPrice: "HK$15,200",
-          remarks: "✓ 包含麻醉：已含靜脈鎮靜劑，香港本地定額防震標桿。",
-          tags: [
-            "中產首選"
-          ]
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        ghk: {
-          price: 16800,
-          priceLabel: "日間全包雙鏡定額套餐",
-          displayPrice: "HK$16,800",
-          remarks: "✓ 醫療團隊強：港島全包雙鏡天花板，放射與內窺鏡安心度高。",
-          tags: [
-            "全包保障"
-          ]
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        pbh: {
-          price: 12500,
-          priceLabel: "常規兩項程序大房加總底價",
-          displayPrice: "HK$12,500",
-          remarks: "ℹ️ 本地經濟解：香港本地最省錢的雙鏡聯合排查方案。",
-          tags: [
-            "極致低價"
-          ]
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "雙鏡聯查數據核對中。"
-        }
+      szufh: {
+        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        price: 10938,
+        priceLabel: "無痛胃腸鏡健康檢查 (雙鏡聯合)",
+        displayPrice: "HK$9,375 – $12,500",
+        remarks: "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。专为双镜联合设计的套餐。",
+        tags: ["一次麻醉", "節省近35%"]
       },
-      ct_brain: {
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 32203,
+        priceLabel: "日間胃鏡及大腸鏡聯查",
+        displayPrice: "HK$28,056 – $36,350",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      ghk: {
+        price: 16800,
+        priceLabel: "日間全包雙鏡定額套餐",
+        displayPrice: "HK$16,800",
+        remarks: "✓ 醫療團隊強：港島全包雙鏡天花板，放射與內窺鏡安心度高。",
+        tags: ["全包保障"]
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      pbh: {
+        price: 12500,
+        priceLabel: "常規兩項程序大房加總底價",
+        displayPrice: "HK$12,500",
+        remarks: "ℹ️ 本地經濟解：香港本地最省錢的雙鏡聯合排查方案。",
+        tags: ["極致低價"]
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      }
+      },
+      bronchoscopy: {
+      szufh: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 47031,
+        priceLabel: "支氣管鏡檢查 (日間)",
+        displayPrice: "HK$40,796 – $53,266",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "定額內窺鏡數據核對中。"
+      }
+      },
+    ct_brain: {
         szufh: {
           price: 3850,
           priceLabel: "無造影劑掃描 (￥3,500)",
@@ -851,7 +1997,7 @@ const globalMedicalData = {
           remarks: "CT 腦部掃描數據核對中。"
         }
       },
-      mri_brain: {
+    mri_brain: {
         szufh: {
           price: 7590,
           priceLabel: "無造影劑 MRI (￥6,900)",
@@ -933,424 +2079,2534 @@ const globalMedicalData = {
     },
     gynecology: {
       normal_delivery: {
-        szufh: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "自然分娩套餐數據核對中。"
-        }
+      szufh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
+        price: 33550,
+        priceLabel: "自然分娩套餐 (二人房/一人房)",
+        displayPrice: "HK$23,200 – $43,900",
+        remarks: "⚠️ 不包括醫生費用。含 3日2夜或 4日3夜住院。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
       },
       c_section: {
-        szufh: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "剖腹產套餐數據核對中。"
-        }
+      szufh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
+        price: 45400,
+        priceLabel: "剖腹分娩套餐 (二人房/一人房)",
+        displayPrice: "HK$31,000 – $59,800",
+        remarks: "⚠️ 不包括醫生費用。含選擇性或緊急剖腹及 5日4夜住院。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      cervical_treatment: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 25625,
+        priceLabel: "子宮頸病變治療手術",
+        displayPrice: "HK$7,500 – $43,750",
+        remarks: "✓ 手术具体术式（锥切/LEEP/环扎/射频治疗）以及麻醉形式（局部麻醉/监测麻醉）。包括全包医院费、麻醉及医生费。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      hysteroscopy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 28125,
+        priceLabel: "子宮鏡診治手術",
+        displayPrice: "HK$25,000 – $31,250",
+        remarks: "✓ 手术风险等级（一般风险/中等风险）。项目包含子宫镜下的活组织检查、息肉切除、纵隔切除、黏连分离及异物取出。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      myomectomy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 64375,
+        priceLabel: "子宮肌瘤切除術",
+        displayPrice: "HK$35,000 – $93,750",
+        remarks: "✓ 手术路径形式（子宮鏡/腹腔鏡/開放式）与手术风险等级。标准住院天数为日間至3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      hysterectomy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 101563,
+        priceLabel: "子宮切除術",
+        displayPrice: "HK$81,250 – $121,875",
+        remarks: "✓ 手术术式（常规腹腔鏡/LAVH輔助/開放式）与手术风险等级。标准住院天数均为3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      tubal_ectopic: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 42063,
+        priceLabel: "輸卵管及宮外孕手術",
+        displayPrice: "HK$6,000 – $78,125",
+        remarks: "✓ 具体手术项目（超声输卵管造影/腹腔镜结扎术/切开取胚/宫外孕切除）与手术风险等级。标准住院天数为日間至1晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      ovarian_cyst: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 74219,
+        priceLabel: "卵巢囊腫切除術",
+        displayPrice: "HK$62,500 – $85,938",
+        remarks: "✓ 切除手术范围（腹腔鏡單側/雙側/開放式）与手术风险等级。标准住院天数均为3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
+      },
+      contraception: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 12500,
+        priceLabel: "避孕及終止妊娠",
+        displayPrice: "HK$2,500 – $22,500",
+        remarks: "✓ 具体处置项目（普通或Mirena子宫环置入/取出、皮下避孕剂置入/取出、终止妊娠子宫扩刮术）。均在日间操作完成。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "婦產科套餐數據核對中。"
+      }
       }
     },
     orthopedics: {
       knee_replacement: {
-        szufh: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "全膝關節置換術數據核對中。"
-        }
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 338950,
+        priceLabel: "全人工膝關節置換術",
+        displayPrice: "HK$156,900 – $521,000",
+        remarks: "✓ 单侧或双侧置换、使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      shoulder_arthroscopy: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 181585,
+        priceLabel: "肩關節鏡手術",
+        displayPrice: "HK$109,370 – $253,800",
+        remarks: "✓ 手术形式（盂唇韧带/肩袖修复）与住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      shoulder_replacement: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 297750,
+        priceLabel: "全肩關節置換術",
+        displayPrice: "HK$198,500 – $397,000",
+        remarks: "✓ 住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      orif_upper_limb: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 207750,
+        priceLabel: "ORIF (鎖骨/橈骨遠端)",
+        displayPrice: "HK$138,500 – $277,000",
+        remarks: "✓ 骨折具体部位（锁骨/桡骨远端）与住院级别.包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      carpal_tunnel: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 91490,
+        priceLabel: "內視鏡腕管解除術",
+        displayPrice: "HK$49,380 – $133,600",
+        remarks: "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      trigger_finger: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 76600,
+        priceLabel: "板機狀指鬆解術",
+        displayPrice: "HK$19,600 – $133,600",
+        remarks: "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      knee_arthroscopy: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 194310,
+        priceLabel: "膝關節鏡手術",
+        displayPrice: "HK$63,620 – $325,000",
+        remarks: "✓ 术式复杂性（单侧游离体移除/半月板修复/前或后十字韧带重建）与住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      orif_lower_limb: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 129985,
+        priceLabel: "ORIF (髕骨/足踝骨折)",
+        displayPrice: "HK$71,170 – $188,800",
+        remarks: "✓ 骨折具体部位（髌骨/足踝单双踝）与住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      hip_replacement: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 247900,
+        priceLabel: "髖關節全關節置換",
+        displayPrice: "HK$163,800 – $332,000",
+        remarks: "✓ 使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      achilles_ankle: {
+      szufh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+        price: 123760,
+        priceLabel: "跟腱修補/踝關節鏡韌帶修補",
+        displayPrice: "HK$65,220 – $182,300",
+        remarks: "✓ 术式类型（开放式跟腱/关节镜韧带修补）与住院级别。包括所有醫院收費及所有醫生費用。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      joint_replacement: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 110625,
+        priceLabel: "人工關節置換術",
+        displayPrice: "HK$52,500 – $168,750",
+        remarks: "✓ 手术部位及形式（全膝/单髁/机械臂辅助CORI/全髋陶瓷对陶瓷/陶瓷对聚乙烯）、指定耗材品牌选项以及手术风险等级。标准住院天数为5至6晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      spine_surgery: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 200313,
+        priceLabel: "脊柱手術",
+        displayPrice: "HK$135,000 – $265,625",
+        remarks: "✓ 手術術式（腰椎減壓融合/頸椎前路融合ACDF/人工椎間盤ADR/UBE鏡下減壓術）、是否屬於【集採】渠道耗材以及手術風險等級。標準住院天數為3至6晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
+      },
+      sports_ortho: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 75813,
+        priceLabel: "骨科小手術及運動醫學",
+        displayPrice: "HK$11,000 – $140,625",
+        remarks: "✓ 手术术式（肿块切除/腱鞘囊肿/冰冻肩松解/交叉韧带重建/半月板成形修复/踝关节韧带修补）与复杂程度及手术风险等级。标准住院天数为日間至4晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "骨科手術數據核對中。"
+      }
       }
     },
     cardiology: {
       angiography: {
-        szufh: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "心臟導管造影數據核對中。"
-        }
+      szufh: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      }
+      },
+      pci: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 60000,
+        priceLabel: "冠狀動脈造影及支架置入 (PCI)",
+        displayPrice: "HK$27,500 – $92,500",
+        remarks: "✓ 手术路径术式（单纯造影日间/造影住院1晚/PCI造影+支架置入2晚）以及是否每增加一个支架（增项基准单价+20000）。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "心臟導管造影數據核對中。"
+      }
       }
     },
     ophthalmology: {
       cataract: {
-        szufh: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "白內障手術數據核對中。"
-        }
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 24813,
+        priceLabel: "白內障超聲乳化晶體植入",
+        displayPrice: "HK$9,000 – $40,625",
+        remarks: "✓ 人工晶体级别选择（单焦距/双焦距/EDOF/三焦距非散光）、玻璃体注药术以及手术风险等级。均在局部麻醉下日间操作完成。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 55825,
+        priceLabel: "白內障超聲乳化手術",
+        displayPrice: "HK$33,770 – $77,879",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      }
+      },
+      strabismus: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 29688,
+        priceLabel: "斜視手術",
+        displayPrice: "HK$25,000 – $34,375",
+        remarks: "✓ 矫正眼外肌数量（1条水平肌/2条水平肌）与手术风险等级().均在全身麻醉下日间完成。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "眼科手術數據核對中。"
+      }
       }
     },
     ent: {
       tonsillectomy: {
-        szufh: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "扁桃腺切除術數據核對中。"
-        }
+      szufh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 83955,
+        priceLabel: "扁桃體切除術",
+        displayPrice: "HK$66,667 – $101,242",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      }
+      },
+      micro_laryngoscopy: {
+      szufh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      cuhk: {
+        link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+        price: 70720,
+        priceLabel: "微型喉鏡檢查",
+        displayPrice: "HK$65,748 – $75,691",
+        remarks: "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      }
+      },
+      adenoid_tonsil: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 41125,
+        priceLabel: "腺樣體及扁桃體手術",
+        displayPrice: "HK$31,000 – $51,250",
+        remarks: "✓ 手术具体类别（内窥镜单切腺样体/常规扁桃体切除/腺样体+扁桃体同台复合术）与手术风险等级。均在日间手术室完成。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      }
+      },
+      sinus_surgery: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 76563,
+        priceLabel: "鼻竇炎及鼻中隔手術",
+        displayPrice: "HK$43,750 – $109,375",
+        remarks: "✓ 手术复杂程度（功能性内窥镜FESS不伴鼻息肉/伴息肉切除/鼻中隔矫正/功能复合术业务）与手术风险等级。标准住院天数为2至3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      }
+      },
+      tympanoplasty: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 32500,
+        priceLabel: "鼓膜修補及顯微喉鏡",
+        displayPrice: "HK$27,500 – $37,500",
+        remarks: "✓ 具体手术术式（常规鼓膜修补/显微喉镜检查+/-活组织检查）。注：针对未标注中等风险项，依照全局常规1.25倍系数拉齐极值区间。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "耳鼻喉科手術數據核對中。"
+      }
       }
     },
     painManagement: {
       nerve_block: {
-        szufh: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        cuhk: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        hksh: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        ghk: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        matilda: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        sth: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        baptist: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        union: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        canossa: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        sph: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        pbh: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        evangel: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        twah: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        },
-        hkah: {
-          price: 9999999,
-          remarks: "神經阻滯治療數據核對中。"
-        }
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 174125,
+        priceLabel: "疼痛管理 (神經阻滯/射頻等)",
+        displayPrice: "HK$4,500 – $343,750",
+        remarks: "✓ 处置类别（超声引导阻滞/手术室神经造影/射频治疗/三叉神经球囊压迫/鞘内镇痛泵植入）与手术风险等级。标准住院天数为日間至5晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      }
+      },
+      spine_endoscopy: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 45000,
+        priceLabel: "脊柱內鏡診療手術",
+        displayPrice: "HK$40,000 – $50,000",
+        remarks: "✓ 手术风险等级（一般风险/中等风险）。均在监测麻醉（MAC）下日间进行。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      }
+      },
+      scs_implant: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 48438,
+        priceLabel: "脊髓電刺激植入術",
+        displayPrice: "HK$37,500 – $59,375",
+        remarks: "✓ 植入分期阶段（第一期测试阶段3晚 / 第二期永久植入1晚）与手术风险等级。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "疼痛管理數據核對中。"
+      }
       }
     },
     plastics: {
-      rhinoplasty: {
+    rhinoplasty: {
         szufh: {
           price: 9999999,
           remarks: "隆鼻手術數據核對中。"
@@ -1407,6 +4663,377 @@ const globalMedicalData = {
           price: 9999999,
           remarks: "隆鼻手術數據核對中。"
         }
+      },
+      laceration_repair: {
+      szufh: {
+        price: 4625,
+        priceLabel: "急症/整形外科縫合套餐",
+        displayPrice: "HK$3,000 – $6,250",
+        remarks: "✓ 伤口长度跨度与缝合材料（小于2cm / 2-4cm / 4-8cm / 4cm以内组织胶水缝合）与手术风险等级。均在日间操作完成。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "整形外科手術數據核對中。"
+      }
+      }
+    },
+    urology: {
+      prostate: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 66407,
+        priceLabel: "前列腺診療手術",
+        displayPrice: "HK$31,250 – $101,563",
+        remarks: "✓ 手术术式（MRI-超声融合活检/Rezum热蒸汽消融/Urolift悬扩/TURP电切/HoLEP铥激光剜除）与手术风险等级。标准住院天数为日間至3晚。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      }
+      },
+      kidney_stone: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 51563,
+        priceLabel: "泌尿系結石碎石手術",
+        displayPrice: "HK$12,500 – $90,625",
+        remarks: "✓ 手术形式（输尿管硬镜/软镜铥激光碎石术、硬镜/软镜双J管拔除）与手术风险等级。均在日间手术室完成。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      }
+      },
+      urodynamics: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 14063,
+        priceLabel: "尿動力及膀胱鏡檢查",
+        displayPrice: "HK$9,375 – $18,750",
+        remarks: "✓ 项目类别（常规尿动力学套餐/膀胱尿道镜）与手术风险等级。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      }
+      },
+      andrology: {
+      szufh: {
+        link: "https://www.szufh.hk/shoushusf.html",
+        price: 15625,
+        priceLabel: "男科處置手術",
+        displayPrice: "HK$6,250 – $25,000",
+        remarks: "✓ 手术术式（输精管切除术/传统/套环/吻合器包皮枪）与麻醉形式及年龄段（局麻/全麻、儿童/成人/新生儿）与手术风险等级。"
+      },
+
+      cuhk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hksh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      ghk: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      matilda: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sth: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      baptist: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      union: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      canossa: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      sph: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      pbh: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      evangel: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      twah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      },
+
+      hkah: {
+        price: 9999999,
+        remarks: "泌尿外科手術數據核對中。"
+      }
       }
     }
   },
@@ -1550,6 +5177,35 @@ const globalMedicalData = {
       page: "ent.html",
       hash: "",
       label: "耳鼻喉科"
+    },
+    {
+      keywords: [
+        "支氣管鏡",
+        "bronchoscopy"
+      ],
+      page: "imaging.html",
+      hash: "#bronchoscopy",
+      label: "支氣管鏡檢查"
+    },
+    {
+      keywords: [
+        "泌尿外科",
+        "前列腺",
+        "urology"
+      ],
+      page: "urology.html",
+      hash: "#prostate",
+      label: "泌尿外科手術"
+    },
+    {
+      keywords: [
+        "一般外科",
+        "闌尾",
+        "疝氣"
+      ],
+      page: "general-surgery.html",
+      hash: "#appendectomy",
+      label: "一般外科手術"
     }
   ]
 };
