@@ -216,3 +216,168 @@ body[data-page-module] {
 .bg-mp-canvas-soft { background-color: var(--mp-canvas-soft); }
 .border-mp-accent { border-color: var(--mp-brand-accent); }
 .border-mp-hairline { border-color: var(--mp-hairline); }
+
+/* ── Homepage: 醫療門戶 · 鮮活配色 ── */
+.home-hero-bg {
+  background: linear-gradient(160deg, #e8f4fc 0%, #f0faf9 45%, var(--mp-canvas-soft) 100%);
+}
+
+.specialty-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .specialty-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .specialty-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.specialty-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--mp-canvas);
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(29, 78, 137, 0.06);
+  overflow: hidden;
+}
+
+.specialty-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--card-accent, var(--mp-brand-accent));
+}
+
+.specialty-card:hover,
+.specialty-card:focus-visible {
+  border-color: var(--card-accent, var(--mp-brand-accent));
+  box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--card-accent, #99D6D1) 35%, transparent);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.specialty-card-span-2 {
+  grid-column: span 1;
+}
+
+@media (min-width: 640px) {
+  .specialty-card-span-2 { grid-column: span 2; }
+}
+
+.specialty-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: var(--card-bg, var(--mp-brand-accent-soft));
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.specialty-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 6px;
+  transition: color 0.2s;
+}
+
+.specialty-card:hover .specialty-card-title { color: var(--mp-brand-primary); }
+
+.specialty-card-desc {
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--mp-ink-muted);
+  flex: 1;
+}
+
+.specialty-card-cta {
+  margin-top: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--card-accent, var(--mp-brand-title));
+}
+
+.section-heading {
+  border-left: 4px solid var(--mp-brand-accent);
+  padding-left: 12px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--mp-brand-title);
+}
+
+.hero-search-box {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 4px 16px rgba(29, 78, 137, 0.1);
+}
+
+.filter-box {
+  background: white;
+  border: 1px solid var(--mp-hairline-soft);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(29, 78, 137, 0.05);
+}
+
+.article-feature {
+  background: linear-gradient(135deg, #ffffff 0%, #f0faf9 100%);
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 24px;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.article-feature:hover {
+  border-color: var(--mp-brand-accent);
+  box-shadow: 0 6px 16px rgba(153, 214, 209, 0.25);
+}
+
+.article-side {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.article-side:hover { border-color: var(--mp-brand-accent); }
+
+.stat-panel {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(29, 78, 137, 0.05);
+}
+
+.stat-panel-public {
+  border-top: 4px solid #ef4444;
+}
+
+.stat-panel-private {
+  border-top: 4px solid var(--mp-brand-title);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .specialty-card { transition: none; }
+  .specialty-card:hover { transform: none; }
+}

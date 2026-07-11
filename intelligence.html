@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MedicalPrice 醫療情報 — 香港醫療政策、避坑指南、保險理賠解析與跨境醫療資訊">
+    <title>醫療情報 - MedicalPrice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/design-system.css">
+</head>
+<body class="home-hero-bg">
+
+    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-50 flex items-center px-6 justify-between shadow-md" role="banner">
+        <a href="index.html" class="flex items-center gap-3">
+            <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">醫療情報</span></span>
+        </a>
+        <nav class="hidden md:flex gap-6 text-sm" aria-label="主導航">
+            <a href="index.html" class="hover:text-[#99D6D1] transition-colors">首頁</a>
+            <a href="index.html#specialties" class="hover:text-[#99D6D1] transition-colors">專科比價</a>
+            <a href="intelligence.html" class="text-[#99D6D1] font-bold">醫療情報</a>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-16 px-4 max-w-6xl mx-auto space-y-10" role="main">
+
+        <!-- Hero -->
+        <section class="text-center max-w-2xl mx-auto space-y-3">
+            <h1 class="text-3xl md:text-4xl font-black text-[#2B579A]">醫療情報中心</h1>
+            <p class="text-sm text-gray-500 leading-relaxed">匯集香港醫療政策動態、私院避坑指南、保險理賠解析與跨境就醫資訊，助您做出更明智的醫療決策。</p>
+        </section>
+
+        <!-- 分類篩選 -->
+        <section aria-label="文章分類">
+            <div id="category-tabs" class="flex flex-wrap gap-2 justify-center"></div>
+        </section>
+
+        <!-- 精選文章 -->
+        <section id="featured-section" class="space-y-4 hidden">
+            <div class="section-heading">精選文章</div>
+            <div id="featured-article"></div>
+        </section>
+
+        <!-- 文章列表 -->
+        <section class="space-y-4">
+            <div class="flex justify-between items-center border-l-4 border-[#99D6D1] pl-3">
+                <div class="text-lg font-bold text-[#2B579A]">全部文章</div>
+                <span id="article-count" class="text-xs text-gray-400"></span>
+            </div>
+            <div id="article-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+            <div id="empty-state" class="hidden text-center py-16 text-gray-400">
+                <p class="text-4xl mb-3">📭</p>
+                <p class="text-sm">此分類暫無文章，敬請期待。</p>
+            </div>
+        </section>
+
+        <!-- 基準數據入口 -->
+        <section class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-sm">
+            <div>
+                <h2 class="font-bold text-[#2B579A] mb-1">香港醫療基礎收費基準</h2>
+                <p class="text-xs text-gray-500">醫管局公立醫院收費、常見疾病治療總開支預估等宏觀數據。</p>
+            </div>
+            <a href="index.html#macro-data" class="shrink-0 bg-[#2B579A] text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#1D4E89] transition-colors">查看基準數據 →</a>
+        </section>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-4 pb-8 text-xs text-gray-400" role="contentinfo">
+        <p>⚖️ 文章內容僅供參考，不構成醫療或保險建議。數據來源請以各機構官方公佈為準。</p>
+    </footer>
+
+    <script src="js/intelligence.js"></script>
+</body>
+</html>

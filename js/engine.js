@@ -602,7 +602,7 @@
     nav.innerHTML =
       '<a href="index.html" class="hover:text-[#99D6D1]">首頁</a>' +
       '<a href="index.html#specialties" class="text-[#99D6D1] font-bold">專科比價</a>' +
-      '<a href="index.html#macro-data" class="hover:text-[#99D6D1]">醫療情報</a>';
+      '<a href="intelligence.html" class="hover:text-[#99D6D1]">醫療情報</a>';
     header.appendChild(nav);
   }
 

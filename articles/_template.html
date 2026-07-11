@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<!--
+  ═══════════════════════════════════════════════════════════════
+  MedicalPrice 文章模板 — 新文章建立步驟
+  ═══════════════════════════════════════════════════════════════
+  1. 複製本檔為 articles/{id}.html（id 與 js/intelligence.js 一致）
+  2. 替換下方「可編輯區塊」內所有 {{PLACEHOLDER}}
+  3. 在 assets/articles/ 放入配圖，更新 figure src
+  4. 在 js/intelligence.js 的 ARTICLES 追加或更新 href 欄位
+  5. （可選）更新 index.html 首頁文章預覽卡片
+  ═══════════════════════════════════════════════════════════════
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <title>{{ARTICLE_TITLE}} - MedicalPrice 醫療情報</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/article.css">
+</head>
+<body class="article-page">
+
+    <!-- ── 頁首（通常無需修改） ── -->
+    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-50 flex items-center px-6 justify-between shadow-md" role="banner">
+        <a href="../intelligence.html" class="flex items-center gap-3">
+            <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">醫療情報</span></span>
+        </a>
+        <nav class="hidden md:flex gap-6 text-sm" aria-label="主導航">
+            <a href="../index.html" class="hover:text-[#99D6D1] transition-colors">首頁</a>
+            <a href="../index.html#specialties" class="hover:text-[#99D6D1] transition-colors">專科比價</a>
+            <a href="../intelligence.html" class="text-[#99D6D1] font-bold">醫療情報</a>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-16 px-4" role="main">
+        <article class="article-container space-y-8">
+
+            <!-- ── 可編輯：文章標頭 ── -->
+            <header class="space-y-4">
+                <div class="article-meta">
+                    <span class="article-tag">#{{CATEGORY}}</span>
+                    <time datetime="{{DATE_ISO}}">{{DATE_DISPLAY}}</time>
+                    <span>·</span>
+                    <span>約 {{READ_TIME}} 分鐘閱讀</span>
+                </div>
+                <h1 class="article-title">{{ARTICLE_TITLE}}</h1>
+                <p class="article-lead">{{LEAD_PARAGRAPH}}</p>
+            </header>
+
+            <!-- ── 可編輯：Hero 配圖 ── -->
+            <figure class="article-hero">
+                <img src="../assets/articles/{{HERO_IMAGE}}" alt="{{HERO_ALT}}" width="1280" height="720">
+            </figure>
+
+            <!-- ── 可編輯：正文 ── -->
+            <div class="article-body">
+
+                <h2>{{SECTION_1_TITLE}}</h2>
+                <p>{{SECTION_1_CONTENT}}</p>
+
+                <!-- 提示框範例 -->
+                <div class="article-callout article-callout-tip">
+                    <strong>💡 精算小貼士</strong>
+                    {{CALLOUT_TIP_TEXT}}
+                </div>
+
+                <!-- 配圖範例 -->
+                <figure class="article-figure">
+                    <img src="../assets/articles/{{INLINE_IMAGE}}" alt="{{INLINE_ALT}}" width="800" height="600" loading="lazy">
+                    <figcaption>{{FIGURE_CAPTION}}</figcaption>
+                </figure>
+
+                <h2>{{SECTION_2_TITLE}}</h2>
+                <p>{{SECTION_2_CONTENT}}</p>
+
+                <!-- 表格範例 -->
+                <div class="article-table-wrap">
+                    <table class="article-table">
+                        <thead>
+                            <tr>
+                                <th>{{TABLE_COL_1}}</th>
+                                <th>{{TABLE_COL_2}}</th>
+                                <th>{{TABLE_COL_3}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{TABLE_ROW_1_COL_1}}</td>
+                                <td>{{TABLE_ROW_1_COL_2}}</td>
+                                <td>{{TABLE_ROW_1_COL_3}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 警告框範例 -->
+                <div class="article-callout article-callout-warn">
+                    <strong>⚠️ 注意</strong>
+                    {{CALLOUT_WARN_TEXT}}
+                </div>
+
+                <h2>{{SECTION_3_TITLE}}</h2>
+                <ul class="article-checklist">
+                    <li>{{CHECKLIST_ITEM_1}}</li>
+                    <li>{{CHECKLIST_ITEM_2}}</li>
+                    <li>{{CHECKLIST_ITEM_3}}</li>
+                </ul>
+
+                <!-- 頁內導航 -->
+                <nav class="article-footer-nav" aria-label="文章導航">
+                    <a href="../intelligence.html" class="text-sm text-[#2B579A] font-bold hover:underline">← 返回醫療情報</a>
+                    <a href="{{NEXT_ARTICLE_HREF}}" class="text-sm text-gray-400 hover:text-[#2B579A]">{{NEXT_ARTICLE_LABEL}} →</a>
+                </nav>
+            </div>
+
+            <!-- ── 可編輯：文末 CTA ── -->
+            <aside class="article-cta-box">
+                <div>
+                    <h3>{{CTA_TITLE}}</h3>
+                    <p>{{CTA_DESCRIPTION}}</p>
+                </div>
+                <a href="{{CTA_LINK}}" class="article-btn">{{CTA_BUTTON_TEXT}}</a>
+            </aside>
+
+            <p class="article-disclaimer">
+                ⚖️ 本文內容由 MedicalPrice 整理，僅供醫療費用預算參考，<strong>不構成醫療診斷、治療建議或保險理賠承諾</strong>。實際收費因醫院、醫生、病況及保險計劃而異，請以醫療機構書面報價及保險條款為準。數據最後更新：{{LAST_UPDATED}}。
+            </p>
+
+        </article>
+    </main>
+</body>
+</html>
