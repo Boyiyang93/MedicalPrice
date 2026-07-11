@@ -5,6 +5,7 @@
 ## 技術架構
 
 - **前端**：純靜態 HTML + Tailwind CDN + 原生 JavaScript
+- **設計系統**：[`DESIGN.md`](DESIGN.md) + [`css/design-system.css`](css/design-system.css)（基於 [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) / Mintlify 閱讀型佈局，MedicalPrice 醫療品牌色）
 - **數據源**：[`data/db.js`](data/db.js) — `globalMedicalData` 統一數據底層
 - **渲染引擎**：[`js/engine.js`](js/engine.js) — `updateView()` 統一比價流水線
 

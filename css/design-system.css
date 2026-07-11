@@ -1,0 +1,218 @@
+/**
+ * MedicalPrice Design System
+ * Tokens from DESIGN.md — based on awesome-design-md/mintlify, customized for medical pricing UI.
+ */
+
+:root {
+  /* Brand */
+  --mp-brand-primary: #1D4E89;
+  --mp-brand-title: #2B579A;
+  --mp-brand-accent: #99D6D1;
+  --mp-brand-accent-soft: #F0FAF9;
+  --mp-brand-accent-muted: rgba(153, 214, 209, 0.30);
+
+  /* Surfaces */
+  --mp-canvas: #FFFFFF;
+  --mp-canvas-soft: #F7F8FA;
+  --mp-surface-muted: #F9FAFB;
+
+  /* Ink */
+  --mp-ink: #333333;
+  --mp-ink-secondary: #4B5563;
+  --mp-ink-muted: #9CA3AF;
+
+  /* Borders */
+  --mp-hairline: #E5E7EB;
+  --mp-hairline-soft: #F3F4F6;
+
+  /* Semantic */
+  --mp-on-primary: #FFFFFF;
+  --mp-semantic-error: #DC2626;
+  --mp-semantic-error-soft: #F87171;
+  --mp-footer-bg: #1F2937;
+  --mp-footer-deep: #111827;
+
+  /* Legacy aliases (engine.js + HTML) */
+  --ufh-blue: var(--mp-brand-primary);
+  --title-blue: var(--mp-brand-title);
+  --ufh-mint: var(--mp-brand-accent);
+
+  /* Spacing */
+  --mp-space-xs: 4px;
+  --mp-space-sm: 8px;
+  --mp-space-md: 12px;
+  --mp-space-lg: 16px;
+  --mp-space-xl: 24px;
+  --mp-space-2xl: 32px;
+  --mp-space-section: 48px;
+
+  /* Radius */
+  --mp-radius-sm: 4px;
+  --mp-radius-md: 8px;
+  --mp-radius-lg: 12px;
+
+  /* Shadow */
+  --mp-shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --mp-shadow-card-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.10);
+  --mp-shadow-header: 0 1px 3px rgba(0, 0, 0, 0.10);
+
+  /* Layout */
+  --mp-header-height: 64px;
+  --mp-sidebar-width: 280px;
+}
+
+/* ── Base ── */
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  background-color: var(--mp-canvas-soft);
+  color: var(--mp-ink);
+}
+
+body[data-page-module] {
+  scroll-behavior: smooth;
+}
+
+/* ── Header ── */
+.site-header {
+  height: var(--mp-header-height);
+  background-color: var(--mp-brand-primary);
+  color: var(--mp-on-primary);
+  box-shadow: var(--mp-shadow-header);
+}
+
+.site-header .logo-mark {
+  width: 28px;
+  height: 28px;
+  background-color: var(--mp-brand-accent);
+  border-radius: var(--mp-radius-sm);
+  color: var(--mp-brand-primary);
+}
+
+.site-header .nav-active {
+  color: var(--mp-brand-accent);
+  font-weight: 700;
+}
+
+.site-header .nav-link:hover {
+  color: var(--mp-brand-accent);
+}
+
+/* ── Module / comparison layout ── */
+.sidebar-fixed {
+  width: var(--mp-sidebar-width);
+  height: calc(100vh - var(--mp-header-height));
+  position: fixed;
+  top: var(--mp-header-height);
+  left: 0;
+  background: var(--mp-canvas);
+  border-right: 1px solid var(--mp-hairline);
+  overflow-y: auto;
+  z-index: 40;
+}
+
+.main-content {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    margin-left: var(--mp-sidebar-width);
+  }
+}
+
+.comparison-card {
+  background: var(--mp-canvas);
+  border-radius: var(--mp-radius-lg);
+  box-shadow: var(--mp-shadow-card);
+  margin-bottom: 3rem;
+  border: 1px solid var(--mp-hairline-soft);
+  overflow: hidden;
+}
+
+.lane-container {
+  background: var(--mp-canvas);
+  border-radius: var(--mp-radius-lg);
+  box-shadow: var(--mp-shadow-card);
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--mp-hairline);
+  padding: 20px;
+}
+
+.lane-header::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background: var(--mp-brand-primary);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.section-header::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: var(--mp-brand-accent);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* ── Hospital comparison cards ── */
+.hospital-box {
+  border-radius: var(--mp-radius-md);
+  padding: var(--mp-space-lg);
+  border: 1px solid var(--mp-hairline-soft);
+  transition: all 0.2s;
+  position: relative;
+  background: var(--mp-canvas);
+}
+
+.hospital-box.best-value {
+  border: 2px solid var(--mp-brand-accent);
+  background-color: var(--mp-brand-accent-soft);
+}
+
+.hospital-box.coming-soon-card {
+  border-color: var(--mp-hairline);
+  background-color: var(--mp-surface-muted);
+}
+
+.hospital-link {
+  color: var(--mp-brand-title);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.hospital-link:hover {
+  border-bottom-color: var(--mp-brand-accent);
+  color: var(--mp-brand-primary);
+}
+
+.compare-group {
+  align-items: start;
+}
+
+#outpatient-specialty-grid .card-tags {
+  min-height: 3rem;
+  align-content: flex-start;
+}
+
+/* ── Utility ── */
+.user-hidden { display: none !important; }
+.price-hidden { display: none !important; }
+
+/* ── Tailwind arbitrary-value helpers (use as classes) ── */
+.text-mp-primary { color: var(--mp-brand-primary); }
+.text-mp-title { color: var(--mp-brand-title); }
+.text-mp-accent { color: var(--mp-brand-accent); }
+.bg-mp-primary { background-color: var(--mp-brand-primary); }
+.bg-mp-title { background-color: var(--mp-brand-title); }
+.bg-mp-accent { background-color: var(--mp-brand-accent); }
+.bg-mp-canvas-soft { background-color: var(--mp-canvas-soft); }
+.border-mp-accent { border-color: var(--mp-brand-accent); }
+.border-mp-hairline { border-color: var(--mp-hairline); }
