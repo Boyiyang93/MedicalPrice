@@ -14,13 +14,15 @@ ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "data" / "db.js"
 SURGERY_CSV = ROOT / "pricedata" / "手术费用_CUHKMC-整理后表格.csv"
 OUTPATIENT_CSV = ROOT / "pricedata" / "门诊费_CUHKMC-门诊费.csv"
-SURGERY_XLSX = Path("/Users/boyiyang/Downloads/手术费用_CUHKMC.xlsx")
+SURGERY_XLSX = ROOT / "pricedata" / "手术费用_CUHKMC.xlsx"
 OUTPATIENT_XLSX = Path("/Users/boyiyang/Downloads/门诊费_CUHKMC.xlsx")
 LINKS_JSON = Path(__file__).resolve().parent / "hospital-links.json"
 
 HOSPITAL_IDS = {
     "香港中文大學醫院": "cuhk",
     "深圳新風和睦家醫院": "szufh",
+    "香港港怡醫院": "ghk",
+    "香港養和醫院": "hksh",
 }
 
 HOSPITAL_ORDER = [
@@ -50,6 +52,19 @@ SZUFH_DEPT_LINKS = {
 
 CUHK_ENDOSCOPY_PKG = "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
 CUHK_REFERENCE = "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+GHK_DEPT_LINKS = {
+    "婦科": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology",
+    "普通外科": "https://gleneagles.hk/tc/patient-care-services/general-surgery",
+    "內視鏡中心": "https://gleneagles.hk/tc/patient-care-services/endoscopy",
+    "呼吸系統科": "https://gleneagles.hk/tc/patient-care-services/endoscopy",
+    "耳鼻喉科": "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat",
+    "眼科": "https://gleneagles.hk/tc/patient-care-services/ophthalmology",
+    "泌尿外科": "https://gleneagles.hk/tc/patient-care-services/urology",
+}
+HKSH_DEPT_LINKS = {
+    "婦產科": "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx",
+    "普通外科": "https://www.hksh-hospital.com/tc_chi/services/service_general_surgery.aspx",
+}
 CUHK_DEPT_FALLBACKS = {
     "婦產科": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
     "骨科": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
@@ -210,6 +225,10 @@ def resolve_surgery_link(row: dict, xlsx_links: dict[tuple, str]) -> str | None:
 
     if row["hospital"] == "szufh":
         return SZUFH_DEPT_LINKS.get(dept, "https://www.szufh.hk/shoushusf.html")
+    if row["hospital"] == "ghk":
+        return GHK_DEPT_LINKS.get(dept, "https://gleneagles.hk/")
+    if row["hospital"] == "hksh":
+        return HKSH_DEPT_LINKS.get(dept, "https://www.hksh-hospital.com/")
     return None
 
 
@@ -348,7 +367,7 @@ def patch_db_js(flat_links: dict[str, str]) -> int:
         if m6 and module:
             name = m6.group(1)
             if is_hospital_id(name):
-                if name not in ("cuhk", "szufh"):
+                if name not in ("cuhk", "szufh", "ghk", "hksh"):
                     out.append(line)
                     continue
                 indent, hid = "      ", name

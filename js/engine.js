@@ -164,10 +164,39 @@
     var slotText = getOutpatientSlotText(box, timeMode);
     if (slotText) {
       slotEl.innerHTML = '<span>🕐 ' + escapeHtml(slotText) + '</span>';
-      slotEl.classList.remove('hidden');
+      slotEl.classList.remove('outpatient-slot--empty', 'hidden');
     } else {
-      slotEl.innerHTML = '';
-      slotEl.classList.add('hidden');
+      slotEl.innerHTML = '<span aria-hidden="true">&nbsp;</span>';
+      slotEl.classList.add('outpatient-slot--empty');
+      slotEl.classList.remove('hidden');
+    }
+  }
+
+  function equalizeOutpatientCardSections(group) {
+    if (!group.id || (group.id !== 'outpatient-grid' && group.id !== 'outpatient-specialty-grid')) {
+      return;
+    }
+
+    var boxes = Array.from(group.querySelectorAll('.hospital-box:not(.user-hidden):not(.price-hidden)'));
+    if (!boxes.length) return;
+
+    var sections = ['.card-header', '.outpatient-slot', '.price-display'];
+    sections.forEach(function (selector) {
+      boxes.forEach(function (box) {
+        var el = box.querySelector(selector);
+        if (el) el.style.minHeight = '';
+      });
+    });
+
+    var cols = window.matchMedia('(min-width: 768px)').matches ? 3 : 1;
+    for (var i = 0; i < boxes.length; i += cols) {
+      var row = boxes.slice(i, i + cols);
+      sections.forEach(function (selector) {
+        var els = row.map(function (box) { return box.querySelector(selector); }).filter(Boolean);
+        if (!els.length) return;
+        var max = Math.max.apply(null, els.map(function (el) { return el.getBoundingClientRect().height; }));
+        els.forEach(function (el) { el.style.minHeight = Math.ceil(max) + 'px'; });
+      });
     }
   }
 
@@ -309,7 +338,7 @@
         ? '<div class="' + tagsRowClass + '"></div>'
         : '');
     var headerHtml =
-      '<div class="mb-1">' +
+      '<div class="card-header mb-1">' +
       '<a href="' + (h.link || '#') + '" target="_blank" class="hospital-link text-[11px]">' + escapeHtml(h.name) + ' ↗</a>' +
       tagsRowHtml +
       '</div>';
@@ -317,7 +346,7 @@
     return (
       '<div class="hospital-box animate-fadeIn" ' + attrs + '>' +
       headerHtml +
-      '<div class="text-[9px] text-gray-400 mb-3 leading-relaxed outpatient-slot hidden"></div>' +
+      '<div class="text-[9px] text-gray-400 mb-3 leading-relaxed outpatient-slot outpatient-slot--empty"><span aria-hidden="true">&nbsp;</span></div>' +
       '<div class="price-display min-h-[50px]"></div>' +
       '<div class="text-[9px] ' + remarksClass + ' mt-2 block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
       insuranceBoxHtml +
@@ -522,15 +551,28 @@
     });
   }
 
+  function updateSpecialtySectionVisibility(timeMode) {
+    var section = document.getElementById('specialty-outpatient');
+    if (!section) return;
+    if (timeMode === 'night' || timeMode === 'holiday') {
+      section.classList.add('hidden');
+    } else {
+      section.classList.remove('hidden');
+    }
+  }
+
   function updateView() {
     var activeHospitals = getActiveHospitals();
     var timeMode = getSelectValue('time-select', 'regular');
     var insMode = getSelectValue('insurance-select', 'none');
     var roomMode = getSelectValue('room-select', 'standard');
 
+    updateSpecialtySectionVisibility(timeMode);
+
     document.querySelectorAll('.hospital-box[data-hospital]').forEach(function (box) {
       if (box.hasAttribute('data-normal')) {
-        updateOutpatientCardDisplay(box, timeMode, insMode);
+        var cardTimeMode = box.getAttribute('data-outpatient-type') === 'specialty' ? 'regular' : timeMode;
+        updateOutpatientCardDisplay(box, cardTimeMode, insMode);
       } else if (box.hasAttribute('data-standard')) {
         var price = resolveWardPrice(box, roomMode);
         box.setAttribute('data-price', price);
@@ -545,6 +587,7 @@
 
     document.querySelectorAll('.compare-group').forEach(function (group) {
       processCompareGroup(group, insMode);
+      equalizeOutpatientCardSections(group);
     });
 
     hideEmptyProcedureSections();
@@ -558,6 +601,133 @@
         '.hospital-box:not(.price-hidden):not(.user-hidden)'
       ).length;
       section.classList.toggle('hidden', visibleCount === 0);
+    });
+  }
+
+  var SURGERY_PAGE_MODULES = {
+    generalSurgery: 1,
+    orthopedics: 1,
+    ent: 1,
+    ophthalmology: 1,
+    urology: 1,
+    painManagement: 1,
+    plastics: 1,
+    cardiology: 1,
+    gynecology: 1,
+    imaging: 1
+  };
+
+  var SURGERY_MODULE_NAV = [
+    { pageModule: 'imaging', href: 'imaging.html', emoji: '🔬', title: '內窺鏡與影像' },
+    { pageModule: 'gynecology', href: 'gyn.html', emoji: '👩', title: '婦產科' },
+    { pageModule: 'generalSurgery', href: 'general-surgery.html', emoji: '✂️', title: '外科' },
+    { pageModule: 'orthopedics', href: 'orthopedics.html', emoji: '🦴', title: '骨科' },
+    { pageModule: 'painManagement', href: 'pain-management.html', emoji: '💉', title: '疼痛科' },
+    { pageModule: 'ent', href: 'ent.html', emoji: '👂', title: '耳鼻喉科' },
+    { pageModule: 'ophthalmology', href: 'ophthalmology.html', emoji: '👁️', title: '眼科' },
+    { pageModule: 'cardiology', href: 'cardiology.html', emoji: '❤️', title: '心內科' },
+    { pageModule: 'plastics', href: 'plastics.html', emoji: '💄', title: '整形美容' },
+    { pageModule: 'urology', href: 'urology.html', emoji: '💧', title: '泌尿外科' }
+  ];
+
+  function buildModuleNavQuery() {
+    var params = new URLSearchParams(window.location.search);
+    var q = new URLSearchParams();
+    var ins = params.get('insurance') || getSelectValue('insurance-select', 'none');
+    if (ins === 'wemed') ins = 'vhis-std';
+    q.set('insurance', ins);
+    if (params.get('time') || document.getElementById('time-select')) {
+      q.set('time', params.get('time') || getSelectValue('time-select', 'regular'));
+    }
+    return q.toString();
+  }
+
+  function getSurgeryNavHref(href) {
+    var query = buildModuleNavQuery();
+    return query ? href + '?' + query : href;
+  }
+
+  function renderModuleNavItem(item, currentModule, variant) {
+    var label = item.emoji + ' ' + item.title;
+    var isActive = item.pageModule === currentModule;
+
+    if (variant === 'chip') {
+      if (isActive) {
+        return '<span class="surgery-module-chip is-active" aria-current="page">' + escapeHtml(label) + '</span>';
+      }
+      return '<a class="surgery-module-chip" href="' + escapeAttr(getSurgeryNavHref(item.href)) + '">' + escapeHtml(label) + '</a>';
+    }
+
+    if (isActive) {
+      return '<li><span class="surgery-module-sidebar-link is-active" aria-current="page">' + escapeHtml(label) + '</span></li>';
+    }
+    return '<li><a class="surgery-module-sidebar-link" href="' + escapeAttr(getSurgeryNavHref(item.href)) + '">' + escapeHtml(label) + '</a></li>';
+  }
+
+  function findSurgeryNavAnchor(mainWrap) {
+    var h1 = mainWrap.querySelector('h1');
+    if (h1) return h1.closest('section') || h1;
+
+    var pageTitle = mainWrap.querySelector('section h2.text-2xl, section > h2');
+    if (pageTitle) return pageTitle.closest('section') || pageTitle;
+
+    return null;
+  }
+
+  function injectSurgeryModuleNav() {
+    var currentModule = document.body.getAttribute('data-page-module');
+    if (!SURGERY_PAGE_MODULES[currentModule] || document.getElementById('surgery-module-nav-chips')) return;
+
+    var chipsHtml =
+      '<nav id="surgery-module-nav-chips" class="surgery-module-nav surgery-module-nav--chips" aria-label="切換手術專科">' +
+        '<p class="surgery-module-nav-label">切換專科</p>' +
+        '<div class="surgery-module-nav-scroll">' +
+          SURGERY_MODULE_NAV.map(function (item) {
+            return renderModuleNavItem(item, currentModule, 'chip');
+          }).join('') +
+        '</div>' +
+      '</nav>';
+
+    var mainWrap = document.querySelector('main .max-w-6xl');
+    if (mainWrap) {
+      var anchor = findSurgeryNavAnchor(mainWrap);
+      if (anchor) anchor.insertAdjacentHTML('afterend', chipsHtml);
+      else mainWrap.insertAdjacentHTML('afterbegin', chipsHtml);
+    }
+
+    var filterContainer = document.getElementById('filter-container');
+    if (filterContainer && !document.getElementById('surgery-module-nav-sidebar')) {
+      var sidebarHtml =
+        '<nav id="surgery-module-nav-sidebar" class="surgery-module-nav surgery-module-nav--sidebar" aria-label="切換手術專科">' +
+          '<p class="surgery-module-nav-sidebar-label">切換專科</p>' +
+          '<ul class="surgery-module-nav-sidebar-list">' +
+            SURGERY_MODULE_NAV.map(function (item) {
+              return renderModuleNavItem(item, currentModule, 'sidebar');
+            }).join('') +
+          '</ul>' +
+        '</nav>';
+      filterContainer.insertAdjacentHTML('afterend', sidebarHtml);
+    }
+  }
+
+  function hideSurgeryFilterPanel() {
+    var pageModule = document.body.getAttribute('data-page-module');
+    if (!SURGERY_PAGE_MODULES[pageModule]) return;
+
+    document.querySelectorAll('.surgery-filter-panel, [data-surgery-filter-panel]').forEach(function (el) {
+      el.classList.add('hidden');
+    });
+
+    var ins = document.getElementById('insurance-select');
+    if (ins) {
+      var panel = ins.closest('div.rounded-xl');
+      if (panel) panel.classList.add('hidden');
+    }
+
+    document.querySelectorAll('main .max-w-6xl > p, main .max-w-6xl p.surgery-filter-hint').forEach(function (p) {
+      if (/有定額數據|Top 3|Coming Soon|自動隱藏/.test(p.textContent || '')) {
+        p.classList.add('hidden');
+      }
     });
   }
 
@@ -630,6 +800,8 @@
     applyUrlParams();
     bindNavigation();
     injectHeaderNav();
+    hideSurgeryFilterPanel();
+    injectSurgeryModuleNav();
 
     initModuleGroups();
     initWardTable();
@@ -657,6 +829,17 @@
 
     if (document.querySelector('.compare-group') || document.querySelector('#ward-table-body')) {
       updateView();
+    }
+
+    if (outpatientGrid || specialtyGrid) {
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+          if (outpatientGrid) equalizeOutpatientCardSections(outpatientGrid);
+          if (specialtyGrid) equalizeOutpatientCardSections(specialtyGrid);
+        }, 150);
+      });
     }
 
     scrollToHash();

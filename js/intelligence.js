@@ -39,7 +39,7 @@ var ARTICLES = [
         summary: '深圳新風和睦家在內窺鏡與影像專線提供跨境定額套餐，可在影像模組與香港私院直接對比。',
         date: '2026-05',
         featured: false,
-        href: '#'
+        href: 'articles/cross-border-elderly.html'
     }
 ];
 

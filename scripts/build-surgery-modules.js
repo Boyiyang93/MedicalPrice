@@ -12,13 +12,49 @@ const HOSPITAL_ORDER = [
 ];
 const HOSPITAL_MAP = {
   '香港中文大學醫院': 'cuhk',
-  '深圳新風和睦家醫院': 'szufh'
+  '深圳新風和睦家醫院': 'szufh',
+  '香港港怡醫院': 'ghk',
+  '香港養和醫院': 'hksh'
+};
+
+const MODULE_LINKS = {
+  gynecology: {
+    cuhk: 'https://www.cuhkmc.hk/sc/fees-and-charges/maternity',
+    hksh: 'https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx',
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology'
+  },
+  generalSurgery: {
+    cuhk: 'https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery',
+    hksh: 'https://www.hksh-hospital.com/tc_chi/services/service_general_surgery.aspx',
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/general-surgery',
+    szufh: 'https://www.szufh.hk/shoushusf.html'
+  },
+  imaging: {
+    cuhk: 'https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees',
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/endoscopy',
+    szufh: 'https://www.szufh.hk/xiaohuaneijing.html'
+  },
+  ent: {
+    cuhk: 'https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures',
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/ear-nose-throat',
+    szufh: 'https://www.szufh.hk/shoushusf.html'
+  },
+  ophthalmology: {
+    cuhk: 'https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures',
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/ophthalmology',
+    szufh: 'https://www.szufh.hk/shoushusf.html'
+  },
+  urology: {
+    ghk: 'https://gleneagles.hk/tc/patient-care-services/urology',
+    szufh: 'https://www.szufh.hk/shoushusf.html'
+  }
 };
 
 /** Explicit CSV row → module.procedure mapping */
 const ROW_MAP = [
   // imaging
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('支氣管鏡') && r.package.includes('日間'), module: 'imaging', procedure: 'bronchoscopy', label: '支氣管鏡檢查 (日間)' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('支氣管'), module: 'imaging', procedure: 'bronchoscopy', label: '支氣管內視鏡檢查' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('胃鏡檢查 (鎮靜麻醉)'), module: 'imaging', procedure: 'gastroscopy', label: '日間胃鏡 (鎮靜麻醉)' },
   { match: (r) => r.hospital === 'szufh' && r.package.includes('無痛胃鏡'), module: 'imaging', procedure: 'gastroscopy', label: '無痛胃鏡健康檢查 (監察麻醉)' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('結腸內視鏡檢查 (鎮靜麻醉)'), module: 'imaging', procedure: 'colonoscopy', label: '日間結腸鏡 (鎮靜麻醉)' },
@@ -26,17 +62,28 @@ const ROW_MAP = [
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('胃鏡及大腸鏡') && r.package.includes('日間'), module: 'imaging', procedure: 'dual_scope', label: '日間胃鏡及大腸鏡聯查' },
   { match: (r) => r.hospital === 'szufh' && r.package.includes('雙鏡聯合'), module: 'imaging', procedure: 'dual_scope', label: '無痛胃腸鏡健康檢查 (雙鏡聯合)' },
 
-  // gynecology (SZUFH)
+  // gynecology — delivery packages (CUHK / HKSH)
+  { match: (r) => r.package.includes('自然分娩套餐'), module: 'gynecology', procedure: 'normal_delivery', label: '自然分娩套餐 (二人房/一人房)' },
+  { match: (r) => (r.package.includes('選擇性剖腹分娩') || r.package.includes('緊急剖腹分娩')), module: 'gynecology', procedure: 'c_section', label: '剖腹分娩套餐 (二人房/一人房)' },
+
+  // gynecology (SZUFH + GHK)
   { match: (r) => r.package.includes('子宮頸病變'), module: 'gynecology', procedure: 'cervical_treatment', label: '子宮頸病變治療手術' },
-  { match: (r) => r.package.includes('子宮鏡診治'), module: 'gynecology', procedure: 'hysteroscopy', label: '子宮鏡診治手術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('陰道窺鏡'), module: 'gynecology', procedure: 'cervical_treatment', label: '陰道窺鏡檢查' },
+  { match: (r) => r.package.includes('子宮鏡診治') || (r.hospital === 'ghk' && r.package.includes('宮腔鏡')), module: 'gynecology', procedure: 'hysteroscopy', label: '子宮鏡診治手術' },
   { match: (r) => r.package.includes('子宮肌瘤切除'), module: 'gynecology', procedure: 'myomectomy', label: '子宮肌瘤切除術' },
   { match: (r) => r.package.includes('子宮切除術'), module: 'gynecology', procedure: 'hysterectomy', label: '子宮切除術' },
-  { match: (r) => r.package.includes('輸卵管及宮外孕'), module: 'gynecology', procedure: 'tubal_ectopic', label: '輸卵管及宮外孕手術' },
+  { match: (r) => r.package.includes('輸卵管及宮外孕') || (r.hospital === 'ghk' && r.package.includes('婦科小手術')), module: 'gynecology', procedure: 'tubal_ectopic', label: '輸卵管及宮外孕手術' },
   { match: (r) => r.package.includes('卵巢囊腫切除'), module: 'gynecology', procedure: 'ovarian_cyst', label: '卵巢囊腫切除術' },
-  { match: (r) => r.package.includes('避孕及終止妊娠'), module: 'gynecology', procedure: 'contraception', label: '避孕及終止妊娠' },
+  { match: (r) => r.package.includes('避孕及終止妊娠') || (r.hospital === 'ghk' && r.package.includes('終止妊娠')), module: 'gynecology', procedure: 'contraception', label: '避孕及終止妊娠' },
 
   // generalSurgery
   { match: (r) => r.package.includes('膽囊切除'), module: 'generalSurgery', procedure: 'cholecystectomy', label: '腹腔鏡膽囊切除術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('乳房腫塊'), module: 'generalSurgery', procedure: 'breast_surgery', label: '乳房腫塊/腫瘤切除術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('甲狀腺切除術'), module: 'generalSurgery', procedure: 'thyroidectomy', label: '甲狀腺切除術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('腹股溝疝氣'), module: 'generalSurgery', procedure: 'hernia_unilateral', label: '腹股溝疝氣修補術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('闌尾'), module: 'generalSurgery', procedure: 'appendectomy', label: '闌尾切除術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('痔瘡切除'), module: 'generalSurgery', procedure: 'hemorrhoid', label: '痔瘡切除術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('包皮環切'), module: 'generalSurgery', procedure: 'circumcision', label: '包皮環切術' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('乳房腫塊切除'), module: 'generalSurgery', procedure: 'breast_lump', label: '乳房腫塊切除術' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('包皮環切'), module: 'generalSurgery', procedure: 'circumcision', label: '包皮環切術' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('甲狀腺細針穿刺'), module: 'generalSurgery', procedure: 'thyroid_fna', label: '超聲波導引甲狀腺細針穿刺' },
@@ -71,20 +118,25 @@ const ROW_MAP = [
   // ent
   { match: (r) => r.package.includes('微型喉鏡'), module: 'ent', procedure: 'micro_laryngoscopy', label: '微型喉鏡檢查' },
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('扁桃體切除'), module: 'ent', procedure: 'tonsillectomy', label: '扁桃體切除術' },
-  { match: (r) => r.package.includes('腺樣體'), module: 'ent', procedure: 'adenoid_tonsil', label: '腺樣體及扁桃體手術' },
-  { match: (r) => r.package.includes('鼻竇炎及鼻中隔'), module: 'ent', procedure: 'sinus_surgery', label: '鼻竇炎及鼻中隔手術' },
-  { match: (r) => r.package.includes('鼓膜修補'), module: 'ent', procedure: 'tympanoplasty', label: '鼓膜修補及顯微喉鏡' },
+  { match: (r) => r.package.includes('腺樣體') || (r.hospital === 'ghk' && r.package.includes('扁桃腺')), module: 'ent', procedure: 'adenoid_tonsil', label: '腺樣體及扁桃體手術' },
+  { match: (r) => r.package.includes('鼻竇炎及鼻中隔') || (r.hospital === 'ghk' && r.package.includes('鼻竇炎')), module: 'ent', procedure: 'sinus_surgery', label: '鼻竇炎及鼻中隔手術' },
+  { match: (r) => r.package.includes('鼓膜修補') || (r.hospital === 'ghk' && r.package.includes('鼓膜')), module: 'ent', procedure: 'tympanoplasty', label: '鼓膜修補及顯微喉鏡' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('顯微喉鏡'), module: 'ent', procedure: 'micro_laryngoscopy', label: '顯微喉鏡檢查' },
 
   // ophthalmology
   { match: (r) => r.hospital === 'cuhk' && r.package.includes('白內障'), module: 'ophthalmology', procedure: 'cataract', label: '白內障超聲乳化手術' },
   { match: (r) => r.hospital === 'szufh' && r.package.includes('白內障'), module: 'ophthalmology', procedure: 'cataract', label: '白內障超聲乳化晶體植入' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('白內障'), module: 'ophthalmology', procedure: 'cataract', label: '白內障超聲乳化手術' },
   { match: (r) => r.package.includes('斜視手術'), module: 'ophthalmology', procedure: 'strabismus', label: '斜視手術' },
 
   // urology (SZUFH)
   { match: (r) => r.package.includes('前列腺診療'), module: 'urology', procedure: 'prostate', label: '前列腺診療手術' },
   { match: (r) => r.package.includes('結石碎石'), module: 'urology', procedure: 'kidney_stone', label: '泌尿系結石碎石手術' },
   { match: (r) => r.package.includes('尿動力檢查'), module: 'urology', procedure: 'urodynamics', label: '尿動力及膀胱鏡檢查' },
-  { match: (r) => r.package.includes('男科處置'), module: 'urology', procedure: 'andrology', label: '男科處置手術' },
+  { match: (r) => r.package.includes('男科處置') || (r.hospital === 'ghk' && r.package.includes('輸精管切除')), module: 'urology', procedure: 'andrology', label: '男科處置手術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('膀胱鏡'), module: 'urology', procedure: 'urodynamics', label: '膀胱鏡檢查' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('輸尿管碎石'), module: 'urology', procedure: 'kidney_stone', label: '泌尿系結石碎石手術' },
+  { match: (r) => r.hospital === 'ghk' && r.package.includes('前列腺'), module: 'urology', procedure: 'prostate', label: '前列腺及膀胱腫瘤手術' },
 
   // painManagement
   { match: (r) => r.package.includes('疼痛管理'), module: 'painManagement', procedure: 'nerve_block', label: '疼痛管理 (神經阻滯/射頻等)' },
@@ -262,10 +314,10 @@ const LEGACY = {
   },
   gynecology: {
     normal_delivery: {
-      cuhk: { min: 23200, max: 43900, priceLabel: '自然分娩套餐 (二人房/一人房)', remarks: '⚠️ 不包括醫生費用。含 3日2夜或 4日3夜住院。' }
+      cuhk: { min: 23200, max: 43900, priceLabel: '自然分娩套餐 (二人房/一人房)', remarks: '⚠️ 套式收費不包括醫生費用。3日2夜 HK$23,200–40,300；4日3夜 HK$26,000–43,900。', link: 'https://www.cuhkmc.hk/sc/fees-and-charges/maternity' }
     },
     c_section: {
-      cuhk: { min: 31000, max: 59800, priceLabel: '剖腹分娩套餐 (二人房/一人房)', remarks: '⚠️ 不包括醫生費用。含選擇性或緊急剖腹及 5日4夜住院。' }
+      cuhk: { min: 31000, max: 59800, priceLabel: '剖腹分娩套餐 (二人房/一人房)', remarks: '⚠️ 套式收費不包括醫生費用。選擇性 HK$31,000–49,800；緊急 HK$39,500–59,800。含 5日4夜住院。', link: 'https://www.cuhkmc.hk/sc/fees-and-charges/maternity' }
     }
   }
 };
@@ -287,7 +339,59 @@ function applyLegacy(store) {
           store[key].hospitals[hid] = entry;
         }
       }
+      // CUHK delivery: prefer curated remarks from LEGACY
+      if (mod === 'gynecology' && (proc === 'normal_delivery' || proc === 'c_section')) {
+        for (const hid of ['cuhk']) {
+          if (hospitals[hid]) store[key].hospitals[hid] = hospitals[hid];
+        }
+      }
     }
+  }
+}
+
+function applyModuleLinks(store) {
+  for (const item of Object.values(store)) {
+    const modLinks = MODULE_LINKS[item.module];
+    if (!modLinks) continue;
+    for (const [hid, link] of Object.entries(modLinks)) {
+      if (store[item.module + '.' + item.procedure]?.hospitals[hid]) {
+        const entry = store[item.module + '.' + item.procedure].hospitals[hid];
+        if (entry && !entry.link) entry.link = link;
+      }
+    }
+  }
+  for (const key of Object.keys(store)) {
+    const item = store[key];
+    const modLinks = MODULE_LINKS[item.module];
+    if (!modLinks) continue;
+    for (const [hid, link] of Object.entries(modLinks)) {
+      if (item.hospitals[hid] && !item.hospitals[hid].link) {
+        item.hospitals[hid].link = link;
+      }
+    }
+  }
+}
+
+function finalizeDeliveryPackages(store, rows) {
+  const hkshNd = rows.filter((r) => r.hospital === 'hksh' && r.package.includes('自然分娩'));
+  const hkshCs = rows.filter((r) => r.hospital === 'hksh' && (r.package.includes('選擇性剖腹') || r.package.includes('緊急剖腹')));
+  const ndKey = 'gynecology.normal_delivery';
+  const csKey = 'gynecology.c_section';
+  if (store[ndKey]?.hospitals.hksh && hkshNd.length) {
+    store[ndKey].hospitals.hksh.link = MODULE_LINKS.gynecology.hksh;
+    store[ndKey].hospitals.hksh.remarks = '⚠️ 套式收費不包括醫生費用。';
+  }
+  if (store[csKey]?.hospitals.hksh && hkshCs.length) {
+    store[csKey].hospitals.hksh.link = MODULE_LINKS.gynecology.hksh;
+    let remarks = '⚠️ 套式收費不包括醫生費用。';
+    const elective = hkshCs.find((r) => r.package.includes('選擇性'));
+    const emergency = hkshCs.find((r) => r.package.includes('緊急'));
+    if (elective && emergency) {
+      const e1 = parsePrice(elective.priceRaw);
+      const e2 = parsePrice(emergency.priceRaw);
+      remarks += `選擇性 HK$${fmt(e1.min)}–${fmt(e1.max)}；緊急 HK$${fmt(e2.min)}–${fmt(e2.max)}。`;
+    }
+    store[csKey].hospitals.hksh.remarks = remarks;
   }
 }
 
@@ -304,6 +408,8 @@ const csv = fs.readFileSync(CSV_PATH, 'utf8');
 const rows = parseCsv(csv);
 const store = buildModules(rows);
 applyLegacy(store);
+finalizeDeliveryPackages(store, rows);
+applyModuleLinks(store);
 
 // Group by module
 const byModule = {};

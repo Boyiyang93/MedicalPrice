@@ -21,7 +21,7 @@ const PAGES = {
     startMarker: '<div class="section-header text-xl font-bold',
     endMarker: '<script src="data/db.js">',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['cholecystectomy', '腹腔鏡膽囊切除術'],
       ['breast_lump', '乳房腫塊切除術'],
@@ -45,7 +45,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['knee_replacement', '全人工膝關節置換術'],
       ['hip_replacement', '髖關節全關節置換'],
@@ -92,7 +92,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['tonsillectomy', '扁桃體切除術'],
       ['micro_laryngoscopy', '微型喉鏡檢查'],
@@ -106,7 +106,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['cataract', '白內障超聲乳化手術'],
       ['strabismus', '斜視手術']
@@ -117,7 +117,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['nerve_block', '疼痛管理 (神經阻滯/射頻等)'],
       ['spine_endoscopy', '脊柱內鏡診療手術'],
@@ -129,7 +129,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['angiography', '心臟導管造影檢查'],
       ['pci', '冠狀動脈造影及支架置入 (PCI)']
@@ -140,7 +140,7 @@ const PAGES = {
     startMarker: '<h2 class="section-header text-xl font-bold',
     endMarker: '<footer class="mt-16',
     introReplace: true,
-    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
+    intro: `                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據沉底顯示 Coming Soon。</p>\n`,
     items: [
       ['rhinoplasty', '隆鼻手術'],
       ['laceration_repair', '急症/整形外科縫合套餐']

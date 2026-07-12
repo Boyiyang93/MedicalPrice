@@ -25,7 +25,7 @@
             <div class="max-w-6xl mx-auto">
                 <section class="mb-8">
                     <h1 class="text-2xl font-black text-[#2B579A] mb-4">全港私家醫院心臟科定額對比</h1>
-                    <div class="mt-6 bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex flex-wrap gap-6">
+                    <div class="mt-6 bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex flex-wrap gap-6 hidden surgery-filter-panel" data-surgery-filter-panel>
                         <div class="flex-1 min-w-[240px]">
                             <label for="insurance-select" class="block text-xs font-bold text-gray-500 mb-2">🛡️ 醫療保障</label>
                             <select id="insurance-select" class="w-full p-2.5 border border-gray-300 rounded-lg text-sm bg-gray-50">
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </section>
-                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據的項目自動隱藏。</p>
+                <p class="text-xs text-gray-500 mb-6 bg-blue-50/50 inline-block px-3 py-1 rounded hidden surgery-filter-hint">ℹ️ 有定額數據的醫院自動 Top 3 排序；暫無數據的項目自動隱藏。</p>
                 <section id="pci" class="mb-8">
                     <h2 class="lane-header text-base font-bold text-[#2B579A] mb-2">冠狀動脈造影及支架置入 (PCI)</h2>
                     <div class="lane-container"><div class="compare-group grid grid-cols-1 md:grid-cols-3 gap-4" data-module="cardiology" data-procedure="pci"></div></div>

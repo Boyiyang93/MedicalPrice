@@ -1,5 +1,47 @@
 {
   "store": {
+    "gynecology.normal_delivery": {
+      "module": "gynecology",
+      "procedure": "normal_delivery",
+      "label": "自然分娩套餐 (二人房/一人房)",
+      "hospitals": {
+        "cuhk": {
+          "min": 23200,
+          "max": 43900,
+          "priceLabel": "自然分娩套餐 (二人房/一人房)",
+          "remarks": "⚠️ 套式收費不包括醫生費用。3日2夜 HK$23,200–40,300；4日3夜 HK$26,000–43,900。",
+          "link": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
+        },
+        "hksh": {
+          "min": 22300,
+          "max": 38600,
+          "priceLabel": "自然分娩套餐 (二人房/一人房)",
+          "remarks": "⚠️ 套式收費不包括醫生費用。",
+          "link": "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx"
+        }
+      }
+    },
+    "gynecology.c_section": {
+      "module": "gynecology",
+      "procedure": "c_section",
+      "label": "剖腹分娩套餐 (二人房/一人房)",
+      "hospitals": {
+        "cuhk": {
+          "min": 31000,
+          "max": 59800,
+          "priceLabel": "剖腹分娩套餐 (二人房/一人房)",
+          "remarks": "⚠️ 套式收費不包括醫生費用。選擇性 HK$31,000–49,800；緊急 HK$39,500–59,800。含 5日4夜住院。",
+          "link": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
+        },
+        "hksh": {
+          "min": 28800,
+          "max": 67200,
+          "priceLabel": "剖腹分娩套餐 (二人房/一人房)",
+          "remarks": "⚠️ 套式收費不包括醫生費用。選擇性 HK$28,800–55,200；緊急 HK$35,800–67,200。",
+          "link": "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx"
+        }
+      }
+    },
     "imaging.bronchoscopy": {
       "module": "imaging",
       "procedure": "bronchoscopy",
@@ -9,7 +51,15 @@
           "min": 40796,
           "max": 53266,
           "priceLabel": "支氣管鏡檢查 (日間)",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
+        },
+        "ghk": {
+          "min": 39400,
+          "max": 222690,
+          "priceLabel": "支氣管內視鏡檢查",
+          "remarks": "⚠️ 麻醉方式(監測/全身)、是否附加超音波、活檢結節數量(1至≥3個)以及手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/endoscopy"
         }
       }
     },
@@ -22,13 +72,15 @@
           "min": 28056,
           "max": 36350,
           "priceLabel": "日間胃鏡及大腸鏡聯查",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
         },
         "szufh": {
           "min": 9375,
           "max": 12500,
           "priceLabel": "無痛胃腸鏡健康檢查 (雙鏡聯合)",
-          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。专为双镜联合设计的套餐。"
+          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。专为双镜联合设计的套餐。",
+          "link": "https://www.szufh.hk/xiaohuaneijing.html"
         },
         "ghk": {
           "min": 16800,
@@ -37,7 +89,8 @@
           "remarks": "✓ 醫療團隊強：港島全包雙鏡天花板，放射與內窺鏡安心度高。",
           "tags": [
             "全包保障"
-          ]
+          ],
+          "link": "https://gleneagles.hk/tc/patient-care-services/endoscopy"
         },
         "pbh": {
           "min": 12500,
@@ -59,7 +112,15 @@
           "min": 65748,
           "max": 75691,
           "priceLabel": "微型喉鏡檢查",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
+        },
+        "ghk": {
+          "min": 70200,
+          "max": 86910,
+          "priceLabel": "顯微喉鏡檢查",
+          "remarks": "⚠️ 是否使用激光設備。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
         }
       }
     },
@@ -72,7 +133,8 @@
           "min": 66667,
           "max": 101242,
           "priceLabel": "扁桃體切除術",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
         }
       }
     },
@@ -85,13 +147,22 @@
           "min": 33770,
           "max": 77879,
           "priceLabel": "白內障超聲乳化手術",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
         },
         "szufh": {
           "min": 9000,
           "max": 40625,
           "priceLabel": "白內障超聲乳化晶體植入",
-          "remarks": "✓ 人工晶体级别选择（单焦距/双焦距/EDOF/三焦距非散光）、玻璃体注药术以及手术风险等级。均在局部麻醉下日间操作完成。"
+          "remarks": "✓ 人工晶体级别选择（单焦距/双焦距/EDOF/三焦距非散光）、玻璃体注药术以及手术风险等级。均在局部麻醉下日间操作完成。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 23800,
+          "max": 111280,
+          "priceLabel": "白內障超聲乳化手術",
+          "remarks": "⚠️ 所選擇的人工晶體級別(標準/雙光/三光/多焦點/散光)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/ophthalmology"
         }
       }
     },
@@ -104,7 +175,8 @@
           "min": 52175,
           "max": 95776,
           "priceLabel": "乳房腫塊切除術",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         }
       }
     },
@@ -117,13 +189,29 @@
           "min": 95688,
           "max": 125086,
           "priceLabel": "腹腔鏡膽囊切除術",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         },
         "szufh": {
           "min": 68750,
           "max": 85938,
           "priceLabel": "腹腔鏡膽囊切除術",
-          "remarks": "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级。标准住院天数均为2晚。"
+          "remarks": "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级。标准住院天数均为2晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 99900,
+          "max": 142220,
+          "priceLabel": "腹腔鏡膽囊切除術",
+          "remarks": "⚠️ 手術路徑(常規腹腔鏡/單孔腹腔鏡/開放式)、能量設備(超聲刀/雙極刀)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        },
+        "hksh": {
+          "min": 85000,
+          "max": 110000,
+          "priceLabel": "腹腔鏡膽囊切除術",
+          "remarks": "⚠️ 視乎病房級別（普通房/半私家房/私家房）。醫生費需另計。",
+          "link": "https://www.hksh-hospital.com/tc_chi/services/service_general_surgery.aspx"
         },
         "sth": {
           "min": 18500,
@@ -142,7 +230,15 @@
           "min": 29674,
           "max": 50357,
           "priceLabel": "包皮環切術",
-          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。"
+          "remarks": "⚠️ 2025年歷史統計。總收費=醫生費+醫院費。標準房。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+        },
+        "ghk": {
+          "min": 18300,
+          "max": 128830,
+          "priceLabel": "包皮環切術",
+          "remarks": "⚠️ 手術項目(包皮/膿腫/藏毛竇/激光靜脈曲張/脂肪瘤)、麻醉方式與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -155,13 +251,15 @@
           "min": 10550,
           "max": 19430,
           "priceLabel": "日間胃鏡 (鎮靜麻醉)",
-          "remarks": "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
         },
         "szufh": {
           "min": 6000,
           "max": 9125,
           "priceLabel": "無痛胃鏡健康檢查 (監察麻醉)",
-          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额胃镜检查费、麻醉及医生费。"
+          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额胃镜检查费、麻醉及医生费。",
+          "link": "https://www.szufh.hk/xiaohuaneijing.html"
         },
         "hksh": {
           "min": 9200,
@@ -180,7 +278,8 @@
           "tags": [
             "100%全包",
             "港島旗艦"
-          ]
+          ],
+          "link": "https://gleneagles.hk/tc/patient-care-services/endoscopy"
         },
         "sth": {
           "min": 6100,
@@ -211,13 +310,15 @@
           "min": 13250,
           "max": 20710,
           "priceLabel": "日間結腸鏡 (鎮靜麻醉)",
-          "remarks": "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
         },
         "szufh": {
           "min": 6875,
           "max": 10000,
           "priceLabel": "無痛腸鏡健康檢查 (監察麻醉)",
-          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额肠镜检查费、麻醉及医生费。"
+          "remarks": "✓ 住院休养形式（标准日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额肠镜检查费、麻醉及医生费。",
+          "link": "https://www.szufh.hk/xiaohuaneijing.html"
         },
         "ghk": {
           "min": 10420,
@@ -226,7 +327,8 @@
           "remarks": "✓ 結構清晰：已含基礎瘜肉切除與組織活檢化驗費。",
           "tags": [
             "港島推薦"
-          ]
+          ],
+          "link": "https://gleneagles.hk/tc/patient-care-services/endoscopy"
         },
         "baptist": {
           "min": 11000,
@@ -257,7 +359,8 @@
           "min": 14960,
           "max": 19530,
           "priceLabel": "超聲波導引甲狀腺細針穿刺",
-          "remarks": "✓ 麻醉级别与住院形式。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 麻醉级别与住院形式。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         }
       }
     },
@@ -270,7 +373,8 @@
           "min": 85960,
           "max": 186600,
           "priceLabel": "偏側甲狀腺切除術",
-          "remarks": "✓ 是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         }
       }
     },
@@ -283,7 +387,15 @@
           "min": 94360,
           "max": 248800,
           "priceLabel": "甲狀腺/副甲狀腺切除術",
-          "remarks": "✓ 切除范围（局部/次全/全/副甲状腺）、是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 切除范围（局部/次全/全/副甲状腺）、是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+        },
+        "ghk": {
+          "min": 89000,
+          "max": 177320,
+          "priceLabel": "甲狀腺切除術",
+          "remarks": "⚠️ 切除範圍(半邊/全邊)、是否併用神經監測，與手術風險等級。均使用能量設備。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -296,7 +408,8 @@
           "min": 51000,
           "max": 176900,
           "priceLabel": "腹腔疝氣修補術",
-          "remarks": "✓ 手术形式（開放式/腹腔鏡）、住院形式及住院級別。均包括使用人工網膜補片及全身麻醉。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 手术形式（開放式/腹腔鏡）、住院形式及住院級別。均包括使用人工網膜補片及全身麻醉。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         }
       }
     },
@@ -309,7 +422,15 @@
           "min": 40800,
           "max": 88600,
           "priceLabel": "單側腹股溝疝氣修補術",
-          "remarks": "✓ 手术形式（開放式/腹腔鏡）、麻醉与形式（全身/局部/鎮靜麻醉）、是否使用人工網膜補片。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 手术形式（開放式/腹腔鏡）、麻醉与形式（全身/局部/鎮靜麻醉）、是否使用人工網膜補片。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+        },
+        "ghk": {
+          "min": 42800,
+          "max": 135330,
+          "priceLabel": "腹股溝疝氣修補術",
+          "remarks": "⚠️ 手術路徑(開放式/腹腔鏡)、單雙邊、患者年齡(成人/兒童)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -322,7 +443,8 @@
           "min": 62010,
           "max": 200800,
           "priceLabel": "雙側腹股溝疝氣修補術",
-          "remarks": "✓ 手术形式（開放式/腹腔鏡）及是否使用人工網膜補片。均在全身麻醉下住院进行。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 手术形式（開放式/腹腔鏡）及是否使用人工網膜補片。均在全身麻醉下住院进行。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         }
       }
     },
@@ -335,13 +457,22 @@
           "min": 91290,
           "max": 170000,
           "priceLabel": "闌尾切除術",
-          "remarks": "✓ 慢阑尾炎病症复杂程度（非複雜性/複雜性）。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 慢阑尾炎病症复杂程度（非複雜性/複雜性）。包括所有醫院收費及所有醫生費用。",
+          "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
         },
         "szufh": {
           "min": 62250,
           "max": 90625,
           "priceLabel": "闌尾切除術",
-          "remarks": "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级.标准住院天数均为1晚。"
+          "remarks": "✓ 手术形式（常规腹腔鏡/開放式）与手术风险等级.标准住院天数均为1晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 93400,
+          "max": 139490,
+          "priceLabel": "闌尾切除術",
+          "remarks": "⚠️ 手術路徑(開放/腹腔鏡)、病症複雜程度(簡單/複雜)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -354,7 +485,8 @@
           "min": 109370,
           "max": 253800,
           "priceLabel": "肩關節鏡手術",
-          "remarks": "✓ 手术形式（盂唇韧带/肩袖修复）与住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 手术形式（盂唇韧带/肩袖修复）与住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -367,7 +499,8 @@
           "min": 198500,
           "max": 397000,
           "priceLabel": "全肩關節置換術",
-          "remarks": "✓ 住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -380,7 +513,8 @@
           "min": 138500,
           "max": 277000,
           "priceLabel": "ORIF (鎖骨/橈骨遠端)",
-          "remarks": "✓ 骨折具体部位（锁骨/桡骨远端）与住院级别.包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 骨折具体部位（锁骨/桡骨远端）与住院级别.包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -393,7 +527,8 @@
           "min": 49380,
           "max": 133600,
           "priceLabel": "內視鏡腕管解除術",
-          "remarks": "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -406,7 +541,8 @@
           "min": 19600,
           "max": 133600,
           "priceLabel": "板機狀指鬆解術",
-          "remarks": "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 是否附加板機狀指鬆解及住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -419,7 +555,8 @@
           "min": 63620,
           "max": 325000,
           "priceLabel": "膝關節鏡手術",
-          "remarks": "✓ 术式复杂性（单侧游离体移除/半月板修复/前或后十字韧带重建）与住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 术式复杂性（单侧游离体移除/半月板修复/前或后十字韧带重建）与住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -432,7 +569,8 @@
           "min": 156900,
           "max": 521000,
           "priceLabel": "全人工膝關節置換術",
-          "remarks": "✓ 单侧或双侧置换、使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 单侧或双侧置换、使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -445,7 +583,8 @@
           "min": 71170,
           "max": 188800,
           "priceLabel": "ORIF (髕骨/足踝骨折)",
-          "remarks": "✓ 骨折具体部位（髌骨/足踝单双踝）与住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 骨折具体部位（髌骨/足踝单双踝）与住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -458,7 +597,8 @@
           "min": 163800,
           "max": 332000,
           "priceLabel": "髖關節全關節置換",
-          "remarks": "✓ 使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -471,7 +611,8 @@
           "min": 65220,
           "max": 182300,
           "priceLabel": "跟腱修補/踝關節鏡韌帶修補",
-          "remarks": "✓ 术式类型（开放式跟腱/关节镜韧带修补）与住院级别。包括所有醫院收費及所有醫生費用。"
+          "remarks": "✓ 术式类型（开放式跟腱/关节镜韧带修补）与住院级别。包括所有醫院收費及所有醫生費用。",
+          "link": null
         }
       }
     },
@@ -484,7 +625,15 @@
           "min": 3125,
           "max": 25000,
           "priceLabel": "痔瘡專項處置",
-          "remarks": "✓ 痔疮术式类别（传统切除术/RBL胶圈套扎/库克一次性套扎/硬化剂注射）与手术风险等级。属于同台手术加项。标准住院天数为0至1晚。"
+          "remarks": "✓ 痔疮术式类别（传统切除术/RBL胶圈套扎/库克一次性套扎/硬化剂注射）与手术风险等级。属于同台手术加项。标准住院天数为0至1晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 42700,
+          "max": 72800,
+          "priceLabel": "痔瘡切除術",
+          "remarks": "⚠️ 手術方式(傳統/環狀切除/使用Ligasure)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -497,7 +646,15 @@
           "min": 7500,
           "max": 43750,
           "priceLabel": "子宮頸病變治療手術",
-          "remarks": "✓ 手术具体术式（锥切/LEEP/环扎/射频治疗）以及麻醉形式（局部麻醉/监测麻醉）。包括全包医院费、麻醉及医生费。"
+          "remarks": "✓ 手术具体术式（锥切/LEEP/环扎/射频治疗）以及麻醉形式（局部麻醉/监测麻醉）。包括全包医院费、麻醉及医生费。",
+          "link": null
+        },
+        "ghk": {
+          "min": 16000,
+          "max": 43940,
+          "priceLabel": "陰道窺鏡檢查",
+          "remarks": "⚠️ 麻醉方式(局麻/監測/全身)、是否附加活組織或電環切除(Letz)，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -510,7 +667,15 @@
           "min": 25000,
           "max": 31250,
           "priceLabel": "子宮鏡診治手術",
-          "remarks": "✓ 手术风险等级（一般风险/中等风险）。项目包含子宫镜下的活组织检查、息肉切除、纵隔切除、黏连分离及异物取出。"
+          "remarks": "✓ 手术风险等级（一般风险/中等风险）。项目包含子宫镜下的活组织检查、息肉切除、纵隔切除、黏连分离及异物取出。",
+          "link": null
+        },
+        "ghk": {
+          "min": 39500,
+          "max": 80340,
+          "priceLabel": "子宮鏡診治手術",
+          "remarks": "⚠️ 診斷性或手術性、麻醉方式、是否使用Hysteroscopic Shaver設備，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -523,7 +688,15 @@
           "min": 35000,
           "max": 93750,
           "priceLabel": "子宮肌瘤切除術",
-          "remarks": "✓ 手术路径形式（子宮鏡/腹腔鏡/開放式）与手术风险等级。标准住院天数为日間至3晚。"
+          "remarks": "✓ 手术路径形式（子宮鏡/腹腔鏡/開放式）与手术风险等级。标准住院天数为日間至3晚。",
+          "link": null
+        },
+        "ghk": {
+          "min": 115000,
+          "max": 196300,
+          "priceLabel": "子宮肌瘤切除術",
+          "remarks": "⚠️ 手術路徑(開放式/腹腔鏡)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -536,7 +709,15 @@
           "min": 81250,
           "max": 121875,
           "priceLabel": "子宮切除術",
-          "remarks": "✓ 手术术式（常规腹腔鏡/LAVH輔助/開放式）与手术风险等级。标准住院天数均为3晚。"
+          "remarks": "✓ 手术术式（常规腹腔鏡/LAVH輔助/開放式）与手术风险等级。标准住院天数均为3晚。",
+          "link": null
+        },
+        "ghk": {
+          "min": 102500,
+          "max": 214500,
+          "priceLabel": "子宮切除術",
+          "remarks": "⚠️ 手術路徑(經陰道/開放式/腹腔鏡輔助)及是否連帶雙側輸卵管及卵巢切除，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -549,7 +730,15 @@
           "min": 6000,
           "max": 78125,
           "priceLabel": "輸卵管及宮外孕手術",
-          "remarks": "✓ 具体手术项目（超声输卵管造影/腹腔镜结扎术/切开取胚/宫外孕切除）与手术风险等级。标准住院天数为日間至1晚。"
+          "remarks": "✓ 具体手术项目（超声输卵管造影/腹腔镜结扎术/切开取胚/宫外孕切除）与手术风险等级。标准住院天数为日間至1晚。",
+          "link": null
+        },
+        "ghk": {
+          "min": 40800,
+          "max": 129350,
+          "priceLabel": "輸卵管及宮外孕手術",
+          "remarks": "⚠️ 手術類別(迷你腹腔結紮/腹腔鏡宮外孕切除/診斷性腹腔鏡)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -562,7 +751,15 @@
           "min": 62500,
           "max": 85938,
           "priceLabel": "卵巢囊腫切除術",
-          "remarks": "✓ 切除手术范围（腹腔鏡單側/雙側/開放式）与手术风险等级。标准住院天数均为3晚。"
+          "remarks": "✓ 切除手术范围（腹腔鏡單側/雙側/開放式）与手术风险等级。标准住院天数均为3晚。",
+          "link": null
+        },
+        "ghk": {
+          "min": 93000,
+          "max": 197600,
+          "priceLabel": "卵巢囊腫切除術",
+          "remarks": "⚠️ 手術路徑、單雙側切除、是否使用Ligasure/Enseal能量設備，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -575,7 +772,15 @@
           "min": 2500,
           "max": 22500,
           "priceLabel": "避孕及終止妊娠",
-          "remarks": "✓ 具体处置项目（普通或Mirena子宫环置入/取出、皮下避孕剂置入/取出、终止妊娠子宫扩刮术）。均在日间操作完成。"
+          "remarks": "✓ 具体处置项目（普通或Mirena子宫环置入/取出、皮下避孕剂置入/取出、终止妊娠子宫扩刮术）。均在日间操作完成。",
+          "link": null
+        },
+        "ghk": {
+          "min": 25800,
+          "max": 41340,
+          "priceLabel": "避孕及終止妊娠",
+          "remarks": "⚠️ 處置項目(常規擴刮/終止妊娠/產後流產後擴刮)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
         }
       }
     },
@@ -588,7 +793,15 @@
           "min": 31250,
           "max": 101563,
           "priceLabel": "前列腺診療手術",
-          "remarks": "✓ 手术术式（MRI-超声融合活检/Rezum热蒸汽消融/Urolift悬扩/TURP电切/HoLEP铥激光剜除）与手术风险等级。标准住院天数为日間至3晚。"
+          "remarks": "✓ 手术术式（MRI-超声融合活检/Rezum热蒸汽消融/Urolift悬扩/TURP电切/HoLEP铥激光剜除）与手术风险等级。标准住院天数为日間至3晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 40900,
+          "max": 133250,
+          "priceLabel": "前列腺及膀胱腫瘤手術",
+          "remarks": "⚠️ 處置項目(經會陰活組織檢查/經尿道前列腺切除/膀胱腫瘤切除)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/urology"
         }
       }
     },
@@ -601,7 +814,15 @@
           "min": 12500,
           "max": 90625,
           "priceLabel": "泌尿系結石碎石手術",
-          "remarks": "✓ 手术形式（输尿管硬镜/软镜铥激光碎石术、硬镜/软镜双J管拔除）与手术风险等级。均在日间手术室完成。"
+          "remarks": "✓ 手术形式（输尿管硬镜/软镜铥激光碎石术、硬镜/软镜双J管拔除）与手术风险等级。均在日间手术室完成。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 49600,
+          "max": 116480,
+          "priceLabel": "泌尿系結石碎石手術",
+          "remarks": "⚠️ 手術方式(體外衝擊波/輸尿管內窺鏡取石/鈥激光/銩激光碎石)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/urology"
         }
       }
     },
@@ -614,7 +835,15 @@
           "min": 9375,
           "max": 18750,
           "priceLabel": "尿動力及膀胱鏡檢查",
-          "remarks": "✓ 项目类别（常规尿动力学套餐/膀胱尿道镜）与手术风险等级。"
+          "remarks": "✓ 项目类别（常规尿动力学套餐/膀胱尿道镜）与手术风险等级。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 17800,
+          "max": 32240,
+          "priceLabel": "膀胱鏡檢查",
+          "remarks": "⚠️ 使用硬鏡或軟鏡、麻醉方式(局麻/監察/全身麻醉)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/urology"
         }
       }
     },
@@ -627,7 +856,15 @@
           "min": 6250,
           "max": 25000,
           "priceLabel": "男科處置手術",
-          "remarks": "✓ 手术术式（输精管切除术/传统/套环/吻合器包皮枪）与麻醉形式及年龄段（局麻/全麻、儿童/成人/新生儿）与手术风险等级。"
+          "remarks": "✓ 手术术式（输精管切除术/传统/套环/吻合器包皮枪）与麻醉形式及年龄段（局麻/全麻、儿童/成人/新生儿）与手术风险等级。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 27000,
+          "max": 62400,
+          "priceLabel": "男科處置手術",
+          "remarks": "⚠️ 手術項目、麻醉方式(局麻/監察/全身麻醉)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/urology"
         }
       }
     },
@@ -640,7 +877,8 @@
           "min": 4750,
           "max": 109375,
           "priceLabel": "甲狀腺處置手術",
-          "remarks": "✓ 手术术式（超声引导下穿刺活检/次全切除/全切除术）与手术风险等级。标准住院天数为日間至3晚。"
+          "remarks": "✓ 手术术式（超声引导下穿刺活检/次全切除/全切除术）与手术风险等级。标准住院天数为日間至3晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
         }
       }
     },
@@ -653,7 +891,8 @@
           "min": 12250,
           "max": 46875,
           "priceLabel": "輸液港手術",
-          "remarks": "✓ 处置形式（置入/取出）与麻醉形式（局部麻醉/监测麻醉/全身麻醉）及手术风险等级。"
+          "remarks": "✓ 处置形式（置入/取出）与麻醉形式（局部麻醉/监测麻醉/全身麻醉）及手术风险等级。",
+          "link": "https://www.szufh.hk/shoushusf.html"
         }
       }
     },
@@ -666,7 +905,8 @@
           "min": 3500,
           "max": 35000,
           "priceLabel": "乳腺抽針及旋切活檢",
-          "remarks": "✓ 术式类别（细针FNA/粗针CNB/旋切VAB）、进刀口与结节增项数量、单双侧以及麻醉。"
+          "remarks": "✓ 术式类别（细针FNA/粗针CNB/旋切VAB）、进刀口与结节增项数量、单双侧以及麻醉。",
+          "link": "https://www.szufh.hk/shoushusf.html"
         }
       }
     },
@@ -679,7 +919,15 @@
           "min": 35000,
           "max": 125000,
           "priceLabel": "乳腺外科手術",
-          "remarks": "✓ 手术路径复杂程度（单双侧肿块切除/部分切除+前哨活检/乳腺癌根治术）与手术风险等级。标准住院天数为日間至5晚。"
+          "remarks": "✓ 手术路径复杂程度（单双侧肿块切除/部分切除+前哨活检/乳腺癌根治术）与手术风险等级。标准住院天数为日間至5晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 48200,
+          "max": 196040,
+          "priceLabel": "乳房腫塊/腫瘤切除術",
+          "remarks": "⚠️ 切除範圍(單個或多個腫塊/部分/全乳/根治性)、單雙邊、是否附加冷凍切片/前哨結活檢/腋下淋巴廓清術，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/general-surgery"
         }
       }
     },
@@ -692,7 +940,8 @@
           "min": 52500,
           "max": 168750,
           "priceLabel": "人工關節置換術",
-          "remarks": "✓ 手术部位及形式（全膝/单髁/机械臂辅助CORI/全髋陶瓷对陶瓷/陶瓷对聚乙烯）、指定耗材品牌选项以及手术风险等级。标准住院天数为5至6晚。"
+          "remarks": "✓ 手术部位及形式（全膝/单髁/机械臂辅助CORI/全髋陶瓷对陶瓷/陶瓷对聚乙烯）、指定耗材品牌选项以及手术风险等级。标准住院天数为5至6晚。",
+          "link": null
         }
       }
     },
@@ -705,7 +954,8 @@
           "min": 135000,
           "max": 265625,
           "priceLabel": "脊柱手術",
-          "remarks": "✓ 手術術式（腰椎減壓融合/頸椎前路融合ACDF/人工椎間盤ADR/UBE鏡下減壓術）、是否屬於【集採】渠道耗材以及手術風險等級。標準住院天數為3至6晚。"
+          "remarks": "✓ 手術術式（腰椎減壓融合/頸椎前路融合ACDF/人工椎間盤ADR/UBE鏡下減壓術）、是否屬於【集採】渠道耗材以及手術風險等級。標準住院天數為3至6晚。",
+          "link": null
         }
       }
     },
@@ -718,7 +968,8 @@
           "min": 11000,
           "max": 140625,
           "priceLabel": "骨科小手術及運動醫學",
-          "remarks": "✓ 手术术式（肿块切除/腱鞘囊肿/冰冻肩松解/交叉韧带重建/半月板成形修复/踝关节韧带修补）与复杂程度及手术风险等级。标准住院天数为日間至4晚。"
+          "remarks": "✓ 手术术式（肿块切除/腱鞘囊肿/冰冻肩松解/交叉韧带重建/半月板成形修复/踝关节韧带修补）与复杂程度及手术风险等级。标准住院天数为日間至4晚。",
+          "link": null
         }
       }
     },
@@ -731,7 +982,8 @@
           "min": 4500,
           "max": 343750,
           "priceLabel": "疼痛管理 (神經阻滯/射頻等)",
-          "remarks": "✓ 处置类别（超声引导阻滞/手术室神经造影/射频治疗/三叉神经球囊压迫/鞘内镇痛泵植入）与手术风险等级。标准住院天数为日間至5晚。"
+          "remarks": "✓ 处置类别（超声引导阻滞/手术室神经造影/射频治疗/三叉神经球囊压迫/鞘内镇痛泵植入）与手术风险等级。标准住院天数为日間至5晚。",
+          "link": null
         }
       }
     },
@@ -744,7 +996,8 @@
           "min": 40000,
           "max": 50000,
           "priceLabel": "脊柱內鏡診療手術",
-          "remarks": "✓ 手术风险等级（一般风险/中等风险）。均在监测麻醉（MAC）下日间进行。"
+          "remarks": "✓ 手术风险等级（一般风险/中等风险）。均在监测麻醉（MAC）下日间进行。",
+          "link": null
         }
       }
     },
@@ -757,7 +1010,8 @@
           "min": 37500,
           "max": 59375,
           "priceLabel": "脊髓電刺激植入術",
-          "remarks": "✓ 植入分期阶段（第一期测试阶段3晚 / 第二期永久植入1晚）与手术风险等级。"
+          "remarks": "✓ 植入分期阶段（第一期测试阶段3晚 / 第二期永久植入1晚）与手术风险等级。",
+          "link": null
         }
       }
     },
@@ -770,7 +1024,15 @@
           "min": 31000,
           "max": 51250,
           "priceLabel": "腺樣體及扁桃體手術",
-          "remarks": "✓ 手术具体类别（内窥镜单切腺样体/常规扁桃体切除/腺样体+扁桃体同台复合术）与手术风险等级。均在日间手术室完成。"
+          "remarks": "✓ 手术具体类别（内窥镜单切腺样体/常规扁桃体切除/腺样体+扁桃体同台复合术）与手术风险等级。均在日间手术室完成。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 54000,
+          "max": 104000,
+          "priceLabel": "腺樣體及扁桃體手術",
+          "remarks": "⚠️ 手術範圍(扁桃腺/腺體/垂腭咽)、是否合併內窺鏡切除，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
         }
       }
     },
@@ -783,7 +1045,15 @@
           "min": 43750,
           "max": 109375,
           "priceLabel": "鼻竇炎及鼻中隔手術",
-          "remarks": "✓ 手术复杂程度（功能性内窥镜FESS不伴鼻息肉/伴息肉切除/鼻中隔矫正/功能复合术业务）与手术风险等级。标准住院天数为2至3晚。"
+          "remarks": "✓ 手术复杂程度（功能性内窥镜FESS不伴鼻息肉/伴息肉切除/鼻中隔矫正/功能复合术业务）与手术风险等级。标准住院天数为2至3晚。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 42000,
+          "max": 155610,
+          "priceLabel": "鼻竇炎及鼻中隔手術",
+          "remarks": "⚠️ 手術項目(鼻骨閉合復位/內窺鏡鼻甲成形/鼻中膈修補/FESS)、是否附加定位導航，與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
         }
       }
     },
@@ -796,7 +1066,15 @@
           "min": 27500,
           "max": 37500,
           "priceLabel": "鼓膜修補及顯微喉鏡",
-          "remarks": "✓ 具体手术术式（常规鼓膜修补/显微喉镜检查+/-活组织检查）。注：针对未标注中等风险项，依照全局常规1.25倍系数拉齐极值区间。"
+          "remarks": "✓ 具体手术术式（常规鼓膜修补/显微喉镜检查+/-活组织检查）。注：针对未标注中等风险项，依照全局常规1.25倍系数拉齐极值区间。",
+          "link": "https://www.szufh.hk/shoushusf.html"
+        },
+        "ghk": {
+          "min": 39100,
+          "max": 100230,
+          "priceLabel": "鼓膜修補及顯微喉鏡",
+          "remarks": "⚠️ 手術術式(鼓膜切開伴中耳導管植入/鼓膜成型修補術)與手術風險等級。",
+          "link": "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
         }
       }
     },
@@ -809,7 +1087,8 @@
           "min": 25000,
           "max": 34375,
           "priceLabel": "斜視手術",
-          "remarks": "✓ 矫正眼外肌数量（1条水平肌/2条水平肌）与手术风险等级().均在全身麻醉下日间完成。"
+          "remarks": "✓ 矫正眼外肌数量（1条水平肌/2条水平肌）与手术风险等级().均在全身麻醉下日间完成。",
+          "link": "https://www.szufh.hk/shoushusf.html"
         }
       }
     },
@@ -822,7 +1101,8 @@
           "min": 3000,
           "max": 6250,
           "priceLabel": "急症/整形外科縫合套餐",
-          "remarks": "✓ 伤口长度跨度与缝合材料（小于2cm / 2-4cm / 4-8cm / 4cm以内组织胶水缝合）与手术风险等级。均在日间操作完成。"
+          "remarks": "✓ 伤口长度跨度与缝合材料（小于2cm / 2-4cm / 4-8cm / 4cm以内组织胶水缝合）与手术风险等级。均在日间操作完成。",
+          "link": null
         }
       }
     },
@@ -835,33 +1115,8 @@
           "min": 27500,
           "max": 92500,
           "priceLabel": "冠狀動脈造影及支架置入 (PCI)",
-          "remarks": "✓ 手术路径术式（单纯造影日间/造影住院1晚/PCI造影+支架置入2晚）以及是否每增加一个支架（增项基准单价+20000）。"
-        }
-      }
-    },
-    "gynecology.normal_delivery": {
-      "module": "gynecology",
-      "procedure": "normal_delivery",
-      "label": "normal_delivery",
-      "hospitals": {
-        "cuhk": {
-          "min": 23200,
-          "max": 43900,
-          "priceLabel": "自然分娩套餐 (二人房/一人房)",
-          "remarks": "⚠️ 不包括醫生費用。含 3日2夜或 4日3夜住院。"
-        }
-      }
-    },
-    "gynecology.c_section": {
-      "module": "gynecology",
-      "procedure": "c_section",
-      "label": "c_section",
-      "hospitals": {
-        "cuhk": {
-          "min": 31000,
-          "max": 59800,
-          "priceLabel": "剖腹分娩套餐 (二人房/一人房)",
-          "remarks": "⚠️ 不包括醫生費用。含選擇性或緊急剖腹及 5日4夜住院。"
+          "remarks": "✓ 手术路径术式（单纯造影日间/造影住院1晚/PCI造影+支架置入2晚）以及是否每增加一个支架（增项基准单价+20000）。",
+          "link": null
         }
       }
     }
@@ -908,15 +1163,15 @@
       "mri_brain"
     ],
     "gynecology": [
+      "normal_delivery",
+      "c_section",
       "cervical_treatment",
       "hysteroscopy",
       "myomectomy",
       "hysterectomy",
       "tubal_ectopic",
       "ovarian_cyst",
-      "contraception",
-      "normal_delivery",
-      "c_section"
+      "contraception"
     ],
     "ent": [
       "micro_laryngoscopy",

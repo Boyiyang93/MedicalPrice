@@ -169,6 +169,18 @@ body[data-page-module] {
   background: var(--mp-canvas);
 }
 
+#outpatient-grid .hospital-box,
+#outpatient-specialty-grid .hospital-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#outpatient-grid .block-remarks,
+#outpatient-specialty-grid .block-remarks {
+  margin-top: auto;
+}
+
 .hospital-box.best-value {
   border: 2px solid var(--mp-brand-accent);
   background-color: var(--mp-brand-accent-soft);
@@ -194,12 +206,16 @@ body[data-page-module] {
 }
 
 .compare-group {
-  align-items: start;
+  align-items: stretch;
 }
 
 #outpatient-specialty-grid .card-tags {
   min-height: 3rem;
   align-content: flex-start;
+}
+
+.outpatient-slot--empty {
+  visibility: hidden;
 }
 
 /* ── Utility ── */
@@ -375,6 +391,103 @@ body[data-page-module] {
 
 .stat-panel-private {
   border-top: 4px solid var(--mp-brand-title);
+}
+
+/* ── Surgery module cross-navigation ── */
+.surgery-module-nav--chips {
+  margin-bottom: 1.5rem;
+}
+
+.surgery-module-nav-label,
+.surgery-module-nav-sidebar-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 0.625rem;
+}
+
+.surgery-module-nav-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.surgery-module-chip {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0.5rem 0.875rem;
+  border-radius: 9999px;
+  border: 1px solid var(--mp-hairline);
+  background: var(--mp-canvas);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--mp-brand-title);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+a.surgery-module-chip:hover {
+  border-color: var(--mp-brand-accent);
+  background: #f0faf9;
+  color: var(--mp-brand-primary);
+}
+
+.surgery-module-chip.is-active {
+  border-color: var(--mp-brand-primary);
+  background: var(--mp-brand-primary);
+  color: #fff;
+  cursor: default;
+}
+
+.surgery-module-nav--sidebar {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--mp-hairline);
+}
+
+.surgery-module-nav-sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.surgery-module-sidebar-link {
+  display: block;
+  padding: 0.5rem 0.625rem;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--mp-brand-title);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+a.surgery-module-sidebar-link:hover {
+  background: #eff6ff;
+  color: var(--mp-brand-primary);
+}
+
+.surgery-module-sidebar-link.is-active {
+  background: #eff6ff;
+  color: var(--mp-brand-primary);
+  cursor: default;
+}
+
+@media (max-width: 1023px) {
+  .surgery-module-nav--sidebar {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
