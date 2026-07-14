@@ -300,16 +300,16 @@ const LEGACY = {
       hksh: { min: 9200, max: 10800, priceLabel: '日間中心程序起步底價', remarks: '⚠️ 非全包：醫生費、巡房費與化驗費按件累加。', tags: ['頂尖專家'] },
       ghk: { min: 7820, max: 7820, priceLabel: '日間定額醫療程序套餐', remarks: '✓ 定額保障：已包含基礎用藥與組織化驗雜費。', tags: ['100%全包', '港島旗艦'] },
       sth: { min: 6100, max: 7800, priceLabel: '日間程序普通房常規區間', remarks: '⚠️ 雜費風險：人流量大，切除活檢費與耗材另計。', tags: ['九龍核心'] },
-      pbh: { min: 5800, max: 5800, priceLabel: '日間大房基準套餐價', remarks: '✓ 全港地板價：性價比極高，標準計劃基本全覆蓋。', tags: ['常規體檢首選'] }
+      pbh: { min: 5800, max: 5800, priceLabel: '日間大房基準套餐價', remarks: '✓ 全港最低參考價：性價比高，標準計劃基本全覆蓋。', tags: ['常規體檢首選'] }
     },
     colonoscopy: {
       ghk: { min: 10420, max: 13440, priceLabel: '日間定額全包區間', remarks: '✓ 結構清晰：已含基礎瘜肉切除與組織活檢化驗費。', tags: ['港島推薦'] },
       baptist: { min: 11000, max: 13500, priceLabel: '日間常規程序基準', remarks: '⚠️ 瘜肉階梯：切除超出3粒後觸發階梯收費，輪候約2週。', tags: ['常規程序'] },
-      pbh: { min: 8200, max: 8200, priceLabel: '日間大房基準套餐價', remarks: '✓ 價格親民：香港本地極致性價比，適合基礎篩查。', tags: ['預算優選'] }
+      pbh: { min: 8200, max: 8200, priceLabel: '日間大房基準套餐價', remarks: '✓ 價格相宜：香港本地高性價比，適合基礎篩查。', tags: ['預算優選'] }
     },
     dual_scope: {
       ghk: { min: 16800, max: 16800, priceLabel: '日間全包雙鏡定額套餐', remarks: '✓ 醫療團隊強：港島全包雙鏡天花板，放射與內窺鏡安心度高。', tags: ['全包保障'] },
-      pbh: { min: 12500, max: 12500, priceLabel: '常規兩項程序大房加總底價', remarks: 'ℹ️ 本地經濟解：香港本地最省錢的雙鏡聯合排查方案。', tags: ['極致低價'] }
+      pbh: { min: 12500, max: 12500, priceLabel: '常規兩項程序大房加總底價', remarks: 'ℹ️ 本地經濟之選：香港本地參考低價的雙鏡聯合檢查方案。', tags: ['參考低價'] }
     }
   },
   gynecology: {

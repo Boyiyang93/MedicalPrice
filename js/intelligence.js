@@ -11,14 +11,14 @@
  *   featured — 是否精選（true 時顯示於頂部大卡片）
  *   href     — 文章連結；留空或 '#' 表示詳情頁尚未上線
  */
-var CATEGORIES = ['全部', '避坑指南', '理賠解析', '跨境醫療', '政策動態'];
+var CATEGORIES = ['全部', '費用須知', '理賠解析', '跨境醫療', '政策動態'];
 
 var ARTICLES = [
     {
         id: 'hidden-fees',
-        category: '避坑指南',
-        title: '香港私家醫院隱藏收費大揭秘：醫生巡房費與儀器使用費如何精算？',
-        summary: '許多患者誤以為私院套餐已包含所有開支。本文深入解讀各院「非打包項目」的隱形計費標準，教您如何看懂入院報價單，避免出院時面臨巨額賬單差價。',
+        category: '費用須知',
+        title: '私家醫院隱藏收費解析：巡房費、儀器費點樣計？',
+        summary: '許多患者誤以為私院套餐已包含所有開支。本文深入解讀各院「非套餐項目」的隱形計費標準，教您如何看懂入院報價單，避免出院時面臨巨額帳單差價。',
         date: '2026年6月',
         featured: true,
         href: 'articles/hidden-fees.html'
@@ -26,8 +26,8 @@ var ARTICLES = [
     {
         id: 'vhis-smm',
         category: '理賠解析',
-        title: 'VHIS 自願醫保「附加保障 (SMM)」真實報銷比例實測及案例分析',
-        summary: '標準計劃與靈活計劃在日間手術、病房升級時的自付差異顯著。使用首頁保險預設進入各模組，可同步您的 VHIS 計劃設定。',
+        title: 'VHIS「附加醫療保障（SMM）」理賠比例實測及案例分析',
+        summary: '標準計劃與靈活計劃在日間手術、病房升級時的自付差異顯著。使用首頁保險設定進入各專科頁面，可同步您的 VHIS 計劃設定。',
         date: '2026-05',
         featured: false,
         href: '#'
@@ -36,7 +36,7 @@ var ARTICLES = [
         id: 'cross-border-elderly',
         category: '跨境醫療',
         title: '長者醫療券深圳新風和睦家醫院落地指南：如何扣減香港 VHIS 自付額？',
-        summary: '深圳新風和睦家在內窺鏡與影像專線提供跨境定額套餐，可在影像模組與香港私院直接對比。',
+        summary: '深圳新風和睦家在內窺鏡與影像專線提供跨境定額套餐，可在影像專頁與香港私院直接對比。',
         date: '2026-05',
         featured: false,
         href: 'articles/cross-border-elderly.html'

@@ -126,8 +126,36 @@ body[data-page-module] {
   border-radius: var(--mp-radius-lg);
   box-shadow: var(--mp-shadow-card);
   margin-bottom: 3rem;
-  border: 1px solid var(--mp-hairline-soft);
+  border: 1px solid var(--mp-hairline);
   overflow: hidden;
+}
+
+/* ── Ward / data tables ── */
+.data-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  padding: 16px 12px;
+  background-color: var(--mp-surface-muted);
+  font-weight: 600;
+  color: #6B7280;
+  font-size: 13px;
+  border-bottom: 1px solid var(--mp-hairline);
+}
+
+.data-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--mp-hairline-soft);
+  font-size: 14px;
+  color: var(--mp-ink-secondary);
+  transition: background-color 0.2s;
+}
+
+.data-table tr:hover td {
+  background-color: var(--mp-surface-muted);
 }
 
 .lane-container {
@@ -160,13 +188,36 @@ body[data-page-module] {
 }
 
 /* ── Hospital comparison cards ── */
+@keyframes mp-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: mp-fade-in-up 0.45s ease both;
+  animation-delay: calc(var(--stagger, 0) * 70ms);
+}
+
 .hospital-box {
   border-radius: var(--mp-radius-md);
   padding: var(--mp-space-lg);
   border: 1px solid var(--mp-hairline-soft);
-  transition: all 0.2s;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
   position: relative;
   background: var(--mp-canvas);
+  overflow: hidden;
+}
+
+.hospital-box:not(.price-hidden):not(.coming-soon-card):hover {
+  border-color: color-mix(in srgb, var(--mp-brand-accent) 55%, var(--mp-hairline));
+  box-shadow: var(--mp-shadow-card-hover);
+  transform: translateY(-2px);
 }
 
 #outpatient-grid .hospital-box,
@@ -191,6 +242,31 @@ body[data-page-module] {
   background-color: var(--mp-surface-muted);
 }
 
+.hospital-box__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.hospital-box__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.hospital-box .price-display {
+  transition: transform 0.2s ease;
+}
+
+.hospital-box:not(.coming-soon-card):hover .price-display {
+  transform: scale(1.02);
+  transform-origin: left center;
+}
+
 .hospital-link {
   color: var(--mp-brand-title);
   font-weight: 700;
@@ -198,6 +274,8 @@ body[data-page-module] {
   border-bottom: 1px solid transparent;
   transition: 0.2s;
   display: inline-block;
+  font-size: 0.8125rem;
+  line-height: 1.35;
 }
 
 .hospital-link:hover {
@@ -207,6 +285,229 @@ body[data-page-module] {
 
 .compare-group {
   align-items: stretch;
+}
+
+/* ── Procedure favorites ── */
+.procedure-lane-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.procedure-lane-head .lane-header {
+  margin-bottom: 0 !important;
+  flex: 1;
+  min-width: 0;
+}
+
+.procedure-fav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--mp-hairline);
+  background: var(--mp-canvas);
+  color: var(--mp-ink-muted);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.procedure-fav-btn:hover {
+  border-color: var(--mp-brand-accent);
+  color: var(--mp-brand-primary);
+  background: var(--mp-brand-accent-soft);
+}
+
+.procedure-fav-btn.is-active {
+  border-color: #FCA5A5;
+  background: #FEF2F2;
+  color: #DC2626;
+}
+
+section.is-favorited > .lane-container {
+  border-color: color-mix(in srgb, var(--mp-brand-accent) 50%, var(--mp-hairline));
+  box-shadow: 0 4px 14px rgba(153, 214, 209, 0.2);
+}
+
+.mp-fav-header-wrap {
+  position: relative;
+}
+
+.mp-fav-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.mp-fav-header-btn:hover,
+.mp-fav-header-btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--mp-brand-accent);
+}
+
+.mp-fav-header-btn__count {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--mp-brand-accent);
+  color: var(--mp-brand-primary);
+  font-size: 10px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.mp-fav-header-btn__count[data-count="0"] {
+  display: none;
+}
+
+.mp-fav-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(320px, calc(100vw - 24px));
+  max-height: 360px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--mp-canvas);
+  border: 1px solid var(--mp-hairline);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+  z-index: 200;
+}
+
+.mp-fav-panel.is-open {
+  animation: mp-fade-in-up 0.2s ease both;
+}
+
+.mp-fav-panel__head {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--mp-hairline-soft);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--mp-brand-title);
+}
+
+.mp-fav-panel__list {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.mp-fav-panel__item {
+  margin-bottom: 4px;
+}
+
+.mp-fav-panel__link {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+}
+
+.mp-fav-panel__link:hover {
+  background: var(--mp-brand-accent-soft);
+}
+
+.mp-fav-panel__proc {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mp-ink);
+  line-height: 1.35;
+}
+
+.mp-fav-panel__meta {
+  font-size: 10px;
+  color: var(--mp-ink-muted);
+  margin-top: 2px;
+}
+
+.mp-fav-panel__empty {
+  padding: 20px 14px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--mp-ink-muted);
+  line-height: 1.55;
+}
+
+.mp-fav-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px dashed var(--mp-hairline);
+  background: var(--mp-canvas-soft);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--mp-brand-title);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.mp-fav-filter-btn:hover,
+.mp-fav-filter-btn.is-active {
+  border-color: var(--mp-brand-accent);
+  background: var(--mp-brand-accent-soft);
+  border-style: solid;
+}
+
+.mp-fav-home-section {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(29, 78, 137, 0.05);
+}
+
+.mp-fav-home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.mp-fav-home-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--mp-hairline-soft);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.mp-fav-home-item:hover {
+  border-color: var(--mp-brand-accent);
+  background: var(--mp-brand-accent-soft);
 }
 
 #outpatient-specialty-grid .card-tags {
@@ -493,4 +794,8 @@ a.surgery-module-sidebar-link:hover {
 @media (prefers-reduced-motion: reduce) {
   .specialty-card { transition: none; }
   .specialty-card:hover { transform: none; }
+  .animate-fadeIn { animation: none; opacity: 1; transform: none; }
+  .hospital-box:not(.price-hidden):not(.coming-soon-card):hover { transform: none; }
+  .hospital-box:not(.coming-soon-card):hover .price-display { transform: none; }
+  .mp-fav-panel.is-open { animation: none; }
 }

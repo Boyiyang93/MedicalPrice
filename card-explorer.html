@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>比价卡 v2 预览 · MedicalPrice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/card-explorer.css">
+</head>
+<body class="card-explorer-page">
+
+  <header class="ce-hero">
+    <div class="ce-hero-inner">
+      <span class="ce-badge">Preview · 待确认</span>
+      <h1 class="text-2xl md:text-3xl font-black tracking-tight mb-2">比價卡 v2 · 確認後全站上線</h1>
+      <p class="text-sm opacity-85 max-w-2xl leading-relaxed">
+        本页为独立模拟，<strong>不影响生产页面</strong>。确认方案后才会写入 engine.js 与各专科页。
+      </p>
+      <div class="flex flex-wrap gap-3 mt-4 text-xs">
+        <a href="ent.html" class="text-[#99D6D1] hover:text-white font-bold">→ 对比生产页 (耳鼻喉科)</a>
+        <a href="index.html" class="text-white/70 hover:text-white">返回首页</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="ce-main">
+
+    <div class="ce-note">
+      <strong>v2 方案要点</strong>
+      <div class="ce-checklist">
+        <span>✅ 保留：错落淡入动效、hover 上浮、价格放大、收藏按钮</span>
+        <span>❌ 去掉：医院首字图标、角标「最低价」</span>
+        <span>✅ 保留：最优价仅用薄荷色边框 + 浅底区分（与现网一致）</span>
+      </div>
+    </div>
+
+    <!-- Mock header with favorites -->
+    <div class="ce-mock-header">
+      <span class="ce-mock-header-title">模拟顶栏 · 收藏入口预览</span>
+      <div class="ce-fav-panel-wrap">
+        <button type="button" id="ce-fav-toggle" class="ce-fav-panel-btn" aria-expanded="false">
+          ♥ 收藏 <span class="ce-fav-count" id="ce-fav-count" data-count="0">0</span>
+        </button>
+        <div id="ce-fav-dropdown" class="ce-fav-dropdown hidden" role="dialog" aria-label="已收藏手术"></div>
+      </div>
+    </div>
+
+    <!-- Baseline -->
+    <section class="ce-section" id="baseline">
+      <div class="ce-section-head">
+        <div>
+          <h2 class="ce-section-title">现状 · 生产环境</h2>
+          <p class="ce-section-sub">当前 ent.html / engine.js 渲染样式，无动效、无收藏。</p>
+        </div>
+        <span class="ce-tag ce-tag--old">生产中</span>
+      </div>
+      <div class="ce-section-body">
+        <div class="ce-proc-title mb-4">扁桃體切除術</div>
+        <div class="ce-grid" id="baseline-grid"></div>
+      </div>
+    </section>
+
+    <!-- Proposed v2 -->
+    <section class="ce-section" id="proposed">
+      <div class="ce-section-head">
+        <div>
+          <h2 class="ce-section-title">建议方案 v2</h2>
+          <p class="ce-section-sub">確認後將全站替換 hospital-box 模板；含手術收藏與側欄篩選預覽。</p>
+        </div>
+        <span class="ce-tag ce-tag--new">待确认</span>
+      </div>
+      <div class="ce-section-body">
+
+        <div class="ce-proc-head" id="proc-tonsillectomy-head">
+          <div class="ce-proc-title">扁桃體切除術</div>
+          <button type="button" class="ce-fav-btn" data-fav-id="ent:tonsillectomy" data-fav-label="扁桃體切除術" data-fav-module="耳鼻喉科" aria-pressed="false">
+            <span aria-hidden="true">♥</span><span class="ce-fav-label">收藏</span>
+          </button>
+        </div>
+        <div class="ce-grid" id="proposed-grid-1"></div>
+
+        <div class="ce-proc-head mt-8" id="proc-sinus-head">
+          <div class="ce-proc-title">鼻竇炎及鼻中隔手術</div>
+          <button type="button" class="ce-fav-btn" data-fav-id="ent:sinus_surgery" data-fav-label="鼻竇炎及鼻中隔手術" data-fav-module="耳鼻喉科" aria-pressed="false">
+            <span aria-hidden="true">♥</span><span class="ce-fav-label">收藏</span>
+          </button>
+        </div>
+        <div class="ce-grid" id="proposed-grid-2"></div>
+
+        <button type="button" id="ce-filter-btn" class="ce-filter-btn">
+          <span aria-hidden="true">♥</span> 只看收藏的手术（模拟侧栏筛选）
+        </button>
+      </div>
+    </section>
+
+    <footer class="text-center text-xs text-gray-400 py-6">
+      模拟页 · localStorage 键 <code class="bg-gray-100 px-1 rounded">mp_procedure_favorites_preview</code> · 与生产隔离
+    </footer>
+  </main>
+
+  <script>
+  (function () {
+    'use strict';
+
+    var STORAGE_KEY = 'mp_procedure_favorites_preview';
+    var filterActive = false;
+
+    var HOSPITALS_TONSIL = [
+      { name: '養和醫院', price: 82000, tag: '定額包', remarks: '含標準病房 2 晚', best: true },
+      { name: '港怡醫院', price: 95000, tag: '定額包', remarks: '含標準病房 2 晚' },
+      { name: '仁安醫院', price: 108000, tag: '定額包', remarks: '⚠️ 不含麻醉師費用', alert: true },
+      { name: '嘉諾撒醫院', comingSoon: true, remarks: '暫無定額信息' }
+    ];
+
+    var HOSPITALS_SINUS = [
+      { name: '港怡醫院', price: 78000, tag: '定額包', remarks: '含標準病房 1 晚', best: true },
+      { name: '養和醫院', price: 92000, tag: '定額包', remarks: '含標準病房 1 晚' },
+      { name: '仁安醫院', price: 105000, tag: '定額包', remarks: '含標準病房 1 晚' }
+    ];
+
+    function fmt(n) {
+      return '$' + n.toLocaleString('en-US');
+    }
+
+    function readFavs() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+      catch (e) { return []; }
+    }
+
+    function writeFavs(list) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+    }
+
+    function isFav(id) {
+      return readFavs().some(function (f) { return f.id === id; });
+    }
+
+    function toggleFav(id, label, module) {
+      var list = readFavs();
+      var idx = list.findIndex(function (f) { return f.id === id; });
+      if (idx !== -1) list.splice(idx, 1);
+      else list.unshift({ id: id, label: label, module: module, href: 'ent.html#' + id.split(':')[1] });
+      writeFavs(list);
+      syncFavUI();
+    }
+
+    function renderBaseline(list, el) {
+      el.innerHTML = list.map(function (h) {
+        return (
+          '<div class="ce-v0-card' + (h.best ? ' is-best' : '') + '">' +
+          '<div class="ce-v0-name">' + h.name + ' ↗</div>' +
+          (h.tag ? '<span class="ce-v0-tag">' + h.tag + '</span>' : '') +
+          '<div class="ce-v0-price">' + (h.comingSoon ? '<span style="color:#9CA3AF;font-size:1rem">資料整理中</span>' : fmt(h.price)) + '</div>' +
+          '<div class="ce-v0-remark">' + h.remarks + '</div></div>'
+        );
+      }).join('');
+    }
+
+    function renderProposed(list, el) {
+      el.innerHTML = list.map(function (h, i) {
+        var cls = 'ce-v2-card ce-animate' + (h.best ? ' is-best' : '') + (h.comingSoon ? ' is-muted' : '');
+        return (
+          '<article class="' + cls + '" style="--stagger:' + i + '">' +
+          '<div class="ce-v2-top">' +
+          '<a href="#" class="ce-v2-name">' + h.name + ' ↗</a>' +
+          '<div class="ce-v2-tags">' +
+          (h.tag ? '<span class="ce-v2-tag' + (h.alert ? ' ce-v2-tag--warn' : '') + '">' + h.tag + '</span>' : '') +
+          '</div></div>' +
+          '<div class="ce-v2-price">' + (h.comingSoon ? '<span style="color:#9CA3AF;font-size:1.1rem">資料整理中</span>' : fmt(h.price)) + '</div>' +
+          (h.comingSoon ? '<div class="ce-v2-price-label">暫無定額信息</div>' : '<div class="ce-v2-price-label">手術定額包</div>') +
+          '<div class="ce-v2-remark' + (h.alert ? ' ce-v2-remark--alert' : '') + '">' + h.remarks + '</div>' +
+          '</article>'
+        );
+      }).join('');
+    }
+
+    function syncFavUI() {
+      var list = readFavs();
+      var count = document.getElementById('ce-fav-count');
+      count.textContent = String(list.length);
+      count.setAttribute('data-count', String(list.length));
+
+      document.querySelectorAll('.ce-fav-btn').forEach(function (btn) {
+        var active = isFav(btn.getAttribute('data-fav-id'));
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        btn.querySelector('.ce-fav-label').textContent = active ? '已收藏' : '收藏';
+      });
+
+      var dropdown = document.getElementById('ce-fav-dropdown');
+      if (!list.length) {
+        dropdown.innerHTML = '<div class="ce-fav-empty">点击手术旁的「收藏」加入列表</div>';
+      } else {
+        dropdown.innerHTML = list.map(function (f) {
+          return '<a class="ce-fav-item" href="' + f.href + '">' + f.label +
+            '<div class="ce-fav-item-meta">👂 ' + f.module + '</div></a>';
+        }).join('');
+      }
+
+      applyFilter();
+    }
+
+    function applyFilter() {
+      var blocks = [
+        { id: 'ent:tonsillectomy', head: 'proc-tonsillectomy-head', grid: 'proposed-grid-1' },
+        { id: 'ent:sinus_surgery', head: 'proc-sinus-head', grid: 'proposed-grid-2' }
+      ];
+      blocks.forEach(function (b) {
+        var show = !filterActive || isFav(b.id);
+        document.getElementById(b.head).classList.toggle('hidden', !show);
+        document.getElementById(b.grid).classList.toggle('hidden', !show);
+      });
+    }
+
+    document.querySelectorAll('.ce-fav-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        toggleFav(btn.getAttribute('data-fav-id'), btn.getAttribute('data-fav-label'), btn.getAttribute('data-fav-module'));
+      });
+    });
+
+    var toggle = document.getElementById('ce-fav-toggle');
+    var dropdown = document.getElementById('ce-fav-dropdown');
+    var wrap = toggle.parentElement;
+
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var hidden = dropdown.classList.toggle('hidden');
+      dropdown.classList.toggle('is-open', !hidden);
+      toggle.setAttribute('aria-expanded', hidden ? 'false' : 'true');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!wrap.contains(e.target)) {
+        dropdown.classList.add('hidden');
+        dropdown.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.getElementById('ce-filter-btn').addEventListener('click', function () {
+      filterActive = !filterActive;
+      this.classList.toggle('is-active', filterActive);
+      applyFilter();
+    });
+
+    renderBaseline(HOSPITALS_TONSIL, document.getElementById('baseline-grid'));
+    renderProposed(HOSPITALS_TONSIL, document.getElementById('proposed-grid-1'));
+    renderProposed(HOSPITALS_SINUS, document.getElementById('proposed-grid-2'));
+    syncFavUI();
+  })();
+  </script>
+</body>
+</html>

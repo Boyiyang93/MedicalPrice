@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="香港私家醫院病房日費基準對比">
-    <title>醫療價格第三方門戶 - 病房收費決策中心</title>
+    <title>病房收費比較 | MedicalPrice</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/design-system.css">
 </head>
@@ -13,15 +13,15 @@
     <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 shadow-md" role="banner">
         <button type="button" data-action="go-back-home" data-hash="#specialties" class="flex items-center gap-3" aria-label="返回首頁">
             <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
-            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">病房收費決策中心</span></span>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">病房收費收費比較</span></span>
         </button>
     </header>
 
     <div class="flex">
         <aside class="sidebar-fixed p-6 hidden lg:block" aria-label="醫院篩選">
             <div class="mb-6">
-                <p class="text-xs font-bold text-gray-400 mb-2">📍 當前分頁</p>
-                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded flex items-center gap-2">🛏️ 私家醫院病房基準</div>
+                <p class="text-xs font-bold text-gray-400 mb-2">📍 當前專科</p>
+                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded flex items-center gap-2">🛏️ 私家醫院病房收費</div>
             </div>
             <div id="filter-container" class="space-y-2.5 px-1 h-[480px] overflow-y-auto"></div>
         </aside>
@@ -29,8 +29,8 @@
         <main class="main-content flex-1 px-4 lg:px-10" role="main">
             <div class="max-w-6xl mx-auto">
                 <section class="mb-6">
-                    <h1 class="text-2xl font-black text-[#2B579A] mb-2">全港私家醫院常規病房每日基準開支對比</h1>
-                    <p class="text-xs text-gray-500 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 數據來自 db.js，修改數據源後頁面自動更新。</p>
+                    <h1 class="text-2xl font-black text-[#2B579A] mb-2">全港私家醫院病房日租比較</h1>
+                    <p class="text-xs text-gray-500 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 房費資料定期更新，實際收費以醫院公布為準。</p>
                 </section>
 
                 <div class="comparison-card">
@@ -52,16 +52,16 @@
                         <div class="bg-gray-800 p-8">
                             <h4 class="text-lg font-bold mb-3">🏥 醫療機構專屬通道</h4>
                             <p class="text-sm text-gray-300 mb-6">若貴院房費有調整，歡迎聯絡我們更新。</p>
-                            <a href="mailto:data@medicalprice.hk?subject=病房數據糾錯" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded border border-gray-600">官方數據糾錯 →</a>
+                            <a href="mailto:data@medicalprice.hk?subject=病房資料糾錯" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded border border-gray-600">官方資料糾錯 →</a>
                         </div>
                         <div class="bg-gray-800 p-8">
-                            <h4 class="text-lg font-bold mb-3">💬 聯繫我們</h4>
+                            <h4 class="text-lg font-bold mb-3">💬 聯絡我們</h4>
                             <p class="text-sm text-gray-300 mb-6">找不到特定房型？歡迎提交需求。</p>
-                            <a href="mailto:contact@medicalprice.hk?subject=病房數據需求" class="inline-block bg-[#2B579A] text-white text-sm font-bold py-2.5 px-5 rounded">聯繫我們 →</a>
+                            <a href="mailto:contact@medicalprice.hk?subject=病房資料需求" class="inline-block bg-[#2B579A] text-white text-sm font-bold py-2.5 px-5 rounded">聯絡我們 →</a>
                         </div>
                     </div>
                     <div class="bg-gray-900 p-6 text-xs text-gray-400">
-                        <p>⚖️ 免責聲明：數據僅供預算參考，不構成報價承諾。實際收費以醫院賬單為準。</p>
+                        <p>⚖️ 免責聲明：資料僅供預算參考，不構成報價承諾。實際收費以醫院帳單為準。</p>
                     </div>
                 </footer>
             </div>
