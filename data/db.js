@@ -116,16 +116,16 @@ const globalMedicalData = {
   modules: {
     outpatient: {
       szufh: {
-        link: "https://www.szufh.hk/fuwusf.html",
+        link: "https://www.szufh.hk/service-fees.html",
         prices: {
           regular: 813,
           night: 1375,
           holiday: 1375
         },
         displayPrices: {
-          regular: "$625 – $1,000",
-          night: "$1,250 – $1,500",
-          holiday: "$1,250 – $1,500"
+          regular: "￥625 – ￥1,000",
+          night: "￥1,250 – ￥1,500",
+          holiday: "￥1,250 – ￥1,500"
         },
         timeSlots: {
           regular: "星期一至五 08:30-17:30；星期六至日 08:30-17:30",
@@ -292,14 +292,14 @@ const globalMedicalData = {
         remarks: "診金普遍不包括藥費、醫生費、小手術及化驗費。非辦公時間、星期日及公眾假期收費將有所調整。"
       },
       szufh: {
-        link: "https://www.szufh.hk/yiliaoquan.html",
+        link: "https://www.szufh.hk/service-fees.html",
         prices: {
           regular: 1000,
           night: 9999999,
           holiday: 9999999
         },
         displayPrices: {
-          regular: "$1,000 – $1,875",
+          regular: "￥1,000 – ￥1,875",
           night: "詳情查看",
           holiday: "詳情查看"
         },
@@ -358,9 +358,9 @@ const globalMedicalData = {
           private: 3565
         },
         ranges: {
-          standard: "$1,558",
-          semiPrivate: "$2,170",
-          private: "$3,565 – $7,619"
+          standard: "￥1,558",
+          semiPrivate: "￥2,170",
+          private: "￥3,565 – ￥7,619"
         }
       },
       cuhk: {
@@ -523,11 +523,11 @@ const globalMedicalData = {
     generalSurgery: {
       cholecystectomy: {
       szufh: {
-        price: 77344,
+        price: 61875,
         priceLabel: "腹腔鏡膽囊切除術",
-        displayPrice: "HK$68,750 – $85,938",
+        displayPrice: "￥55,000 – ￥68,750",
         remarks: "✓ 手術形式（常規腹腔鏡／開放式）與風險等級；標準住院天數為 2 晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -608,8 +608,11 @@ const globalMedicalData = {
       },
       breast_lump: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 35875,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "￥28,000 – ￥43,750",
+        remarks: "✓ 單側／雙側腫塊切除與風險等級。",
+        link: "https://www.szufh.hk/breast-surgery-fees.html"
       },
 
       cuhk: {
@@ -682,8 +685,11 @@ const globalMedicalData = {
       },
       circumcision: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 11875,
+        priceLabel: "包皮環切術",
+        displayPrice: "￥5,000 – ￥18,750",
+        remarks: "✓ 術式、年齡與麻醉及風險等級。",
+        link: "https://www.szufh.hk/urology-surgery-fees.html"
       },
 
       cuhk: {
@@ -759,8 +765,11 @@ const globalMedicalData = {
       },
       thyroid_fna: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 4275,
+        priceLabel: "超聲波導引甲狀腺細針穿刺",
+        displayPrice: "￥3,800 – ￥4,750",
+        remarks: "✓ 超聲引導下甲狀腺穿刺活檢；日間操作；一般／中等風險。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -833,8 +842,11 @@ const globalMedicalData = {
       },
       hemithyroidectomy: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 67500,
+        priceLabel: "甲狀腺次全切術",
+        displayPrice: "￥60,000 – ￥75,000",
+        remarks: "✓ 甲狀腺次全切術；標準住院天數為 3 晚；一般／中等風險。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -907,8 +919,11 @@ const globalMedicalData = {
       },
       thyroidectomy: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 78750,
+        priceLabel: "甲狀腺全切術",
+        displayPrice: "￥70,000 – ￥87,500",
+        remarks: "✓ 甲狀腺全切術；標準住院天數為 3 晚；一般／中等風險。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1058,8 +1073,11 @@ const globalMedicalData = {
       },
       hernia_unilateral: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 40875,
+        priceLabel: "單側腹股溝疝氣修補術",
+        displayPrice: "￥33,000 – ￥48,750",
+        remarks: "✓ 是否含補片與風險等級；標準住院天數為 2 晚。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1135,8 +1153,11 @@ const globalMedicalData = {
       },
       hernia_bilateral: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 60375,
+        priceLabel: "雙側腹股溝疝氣修補術",
+        displayPrice: "￥47,000 – ￥73,750",
+        remarks: "✓ 是否含補片與風險等級；標準住院天數為 2 晚。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1209,11 +1230,11 @@ const globalMedicalData = {
       },
       appendectomy: {
       szufh: {
-        price: 76438,
+        price: 61150,
         priceLabel: "闌尾切除術",
-        displayPrice: "HK$62,250 – $90,625",
-        remarks: "✓ 手術形式（常規腹腔鏡/開放式）與手術風險等級.標準住院天數均為1晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥49,800 – ￥72,500",
+        remarks: "✓ 手術形式（常規腹腔鏡／開放式）與風險等級；標準住院天數為 1 晚。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1289,11 +1310,11 @@ const globalMedicalData = {
       },
       hemorrhoid: {
       szufh: {
-        price: 14063,
+        price: 12900,
         priceLabel: "痔瘡專項處置",
-        displayPrice: "HK$3,125 – $25,000",
-        remarks: "✓ 痔瘡術式类别（传统切除术/RBL胶圈套扎/库克一次性套扎/硬化剂注射）與手術風險等級。属于同台手術加项。標準住院天數为0至1晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥5,800 – ￥20,000",
+        remarks: "✓ 術式（傳統切除／RBL／庫克套扎／硬化劑）與風險等級。",
+        link: "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html"
       },
 
       cuhk: {
@@ -1366,11 +1387,11 @@ const globalMedicalData = {
       },
       thyroid_surgery: {
       szufh: {
-        price: 57063,
+        price: 45650,
         priceLabel: "甲狀腺處置手術",
-        displayPrice: "HK$4,750 – $109,375",
-        remarks: "✓ 手術術式（超聲引导下穿刺活检/次全切除/全切除术）與手術風險等級。標準住院天數为日間至3晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥3,800 – ￥87,500",
+        remarks: "✓ 術式（穿刺活檢／次全切除／全切除）與風險等級；日間至 3 晚。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1440,11 +1461,11 @@ const globalMedicalData = {
       },
       port_a_cath: {
       szufh: {
-        price: 29563,
+        price: 23650,
         priceLabel: "輸液港手術",
-        displayPrice: "HK$12,250 – $46,875",
-        remarks: "✓ 处置形式（置入/取出）与麻醉形式（局部麻醉/監測麻醉/全身麻醉）及手術風險等級。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥9,800 – ￥37,500",
+        remarks: "✓ 處置形式（置入／取出）與麻醉及風險等級；日間手術。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -1514,11 +1535,11 @@ const globalMedicalData = {
       },
       breast_biopsy: {
       szufh: {
-        price: 19250,
+        price: 15400,
         priceLabel: "乳腺抽針及旋切活檢",
-        displayPrice: "HK$3,500 – $35,000",
-        remarks: "✓ 術式类别（细针FNA/粗针CNB/旋切VAB）、进刀口与结节增项数量、單雙側以及麻醉。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥2,800 – ￥28,000",
+        remarks: "✓ 術式（幼針／粗針／真空輔助）及麻醉；日間操作。不含加項。",
+        link: "https://www.szufh.hk/breast-surgery-fees.html"
       },
 
       cuhk: {
@@ -1588,11 +1609,11 @@ const globalMedicalData = {
       },
       breast_surgery: {
       szufh: {
-        price: 80000,
+        price: 64000,
         priceLabel: "乳腺外科手術",
-        displayPrice: "HK$35,000 – $125,000",
-        remarks: "✓ 手術路径复杂程度（單雙側肿块切除/部分切除+前哨活检/乳腺癌根治术）與手術風險等級。標準住院天數为日間至5晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥28,000 – ￥100,000",
+        remarks: "✓ 術式（腫塊切除／部分切除+前哨／乳腺癌根治）與風險等級。",
+        link: "https://www.szufh.hk/breast-surgery-fees.html"
       },
 
       cuhk: {
@@ -1667,11 +1688,11 @@ const globalMedicalData = {
     imaging: {
       gastroscopy: {
       szufh: {
-        price: 7563,
+        price: 6050,
         priceLabel: "無痛胃鏡健康檢查 (監察麻醉)",
-        displayPrice: "HK$6,000 – $9,125",
-        remarks: "✓ 住院休养形式（標準日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额胃镜检查费、麻醉及医生费。",
-        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        displayPrice: "￥4,800 – ￥7,300",
+        remarks: "✓ 套餐形式（標準日間／PRO精英版／PRO休養版）。不含超出套餐外的病理活檢及息肉切除。",
+        link: "https://www.szufh.hk/gi-endoscopy-fees.html",
         tags: ["跨境免找數"]
       },
 
@@ -1758,11 +1779,11 @@ const globalMedicalData = {
       },
       colonoscopy: {
       szufh: {
-        price: 8438,
+        price: 6750,
         priceLabel: "無痛腸鏡健康檢查 (監察麻醉)",
-        displayPrice: "HK$6,875 – $10,000",
-        remarks: "✓ 住院休养形式（標準日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。套餐包含全额肠镜检查费、麻醉及医生费。",
-        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        displayPrice: "￥5,500 – ￥8,000",
+        remarks: "✓ 套餐形式（標準日間／PRO精英版／PRO休養版）。不含超出套餐外的病理活檢及息肉切除。",
+        link: "https://www.szufh.hk/gi-endoscopy-fees.html",
         tags: ["瘜肉全包", "當天出報告"]
       },
 
@@ -1846,11 +1867,11 @@ const globalMedicalData = {
       },
       dual_scope: {
       szufh: {
-        price: 10938,
+        price: 8750,
         priceLabel: "無痛胃腸鏡健康檢查 (雙鏡聯合)",
-        displayPrice: "HK$9,375 – $12,500",
-        remarks: "✓ 住院休养形式（標準日間操作/PRO精英版1天不过夜/PRO休養版入住1晚）。不含超出套餐外的病理活检及息肉切除。专为双镜联合设计的套餐。",
-        link: "https://www.szufh.hk/xiaohuaneijing.html",
+        displayPrice: "￥7,500 – ￥10,000",
+        remarks: "✓ 套餐形式（標準日間／PRO精英版／PRO休養版）。專為雙鏡聯合設計。",
+        link: "https://www.szufh.hk/gi-endoscopy-fees.html",
         tags: ["一次麻醉", "節省近35%"]
       },
 
@@ -2008,9 +2029,9 @@ const globalMedicalData = {
       },
     ct_brain: {
         szufh: {
-          price: 3850,
-          priceLabel: "無造影劑掃描 (￥3,500)",
-          displayPrice: "HK$3,850",
+          price: 3500,
+          priceLabel: "無造影劑掃描",
+          displayPrice: "￥3,500",
           remarks: "✓ 高效流轉：當天可直接取走膠片與數位電子報告，零耽誤。",
           tags: [
             "極速出片",
@@ -2087,9 +2108,9 @@ const globalMedicalData = {
       },
     mri_brain: {
         szufh: {
-          price: 7590,
-          priceLabel: "無造影劑 MRI (￥6,900)",
-          displayPrice: "HK$7,590",
+          price: 6900,
+          priceLabel: "無造影劑 MRI",
+          displayPrice: "￥6,900",
           remarks: "✓ 無幽閉感：配備頂級高排磁力共振，內置娛樂影音緩解緊張。",
           tags: [
             "旗艦3T設備",
@@ -2322,10 +2343,11 @@ const globalMedicalData = {
       },
       cervical_treatment: {
       szufh: {
-        price: 25625,
+        price: 20500,
         priceLabel: "子宮頸病變治療手術",
-        displayPrice: "HK$7,500 – $43,750",
-        remarks: "✓ 手術具体術式（锥切/LEEP/環紮/射频治疗）以及麻醉形式（局部麻醉/監測麻醉）。包括全包医院费、麻醉及医生费。"
+        displayPrice: "￥6,000 – ￥35,000",
+        remarks: "✓ 術式（錐切／LEEP／環紮／射頻）及麻醉。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2398,10 +2420,11 @@ const globalMedicalData = {
       },
       hysteroscopy: {
       szufh: {
-        price: 28125,
+        price: 22500,
         priceLabel: "子宮鏡診治手術",
-        displayPrice: "HK$25,000 – $31,250",
-        remarks: "✓ 手術風險等級（一般風險/中等風險）。项目包含子宫镜下的活组织检查、息肉切除、纵隔切除、黏连分离及异物取出。"
+        displayPrice: "￥20,000 – ￥25,000",
+        remarks: "✓ 一般／中等風險。含活檢、息肉、縱隔、黏連及異物取出。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2474,10 +2497,11 @@ const globalMedicalData = {
       },
       myomectomy: {
       szufh: {
-        price: 64375,
+        price: 51500,
         priceLabel: "子宮肌瘤切除術",
-        displayPrice: "HK$35,000 – $93,750",
-        remarks: "✓ 手術路径形式（子宮鏡/腹腔鏡/開放式）與手術風險等級。標準住院天數为日間至3晚。"
+        displayPrice: "￥28,000 – ￥75,000",
+        remarks: "✓ 路徑（子宮鏡／腹腔鏡／開放式）與風險等級。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2550,10 +2574,11 @@ const globalMedicalData = {
       },
       hysterectomy: {
       szufh: {
-        price: 101563,
+        price: 81250,
         priceLabel: "子宮切除術",
-        displayPrice: "HK$81,250 – $121,875",
-        remarks: "✓ 手術術式（常規腹腔鏡/LAVH輔助/開放式）與手術風險等級。標準住院天數均為3晚。"
+        displayPrice: "￥65,000 – ￥97,500",
+        remarks: "✓ 術式（腹腔鏡／LAVH／開放式）與風險等級。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2626,10 +2651,11 @@ const globalMedicalData = {
       },
       tubal_ectopic: {
       szufh: {
-        price: 42063,
+        price: 33650,
         priceLabel: "輸卵管及宮外孕手術",
-        displayPrice: "HK$6,000 – $78,125",
-        remarks: "✓ 具体手術项目（超聲输卵管造影/腹腔镜结扎术/切开取胚/宫外孕切除）與手術風險等級。標準住院天數为日間至1晚。"
+        displayPrice: "￥4,800 – ￥62,500",
+        remarks: "✓ 項目（造影／結紮／取胚／宮外孕切除）與風險等級。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2702,10 +2728,11 @@ const globalMedicalData = {
       },
       ovarian_cyst: {
       szufh: {
-        price: 74219,
+        price: 59375,
         priceLabel: "卵巢囊腫切除術",
-        displayPrice: "HK$62,500 – $85,938",
-        remarks: "✓ 切除手術范围（腹腔鏡單側/雙側/開放式）與手術風險等級。標準住院天數均為3晚。"
+        displayPrice: "￥50,000 – ￥68,750",
+        remarks: "✓ 範圍（腹腔鏡單側／雙側／開放式）與風險等級。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2778,10 +2805,11 @@ const globalMedicalData = {
       },
       contraception: {
       szufh: {
-        price: 12500,
+        price: 10000,
         priceLabel: "避孕及終止妊娠",
-        displayPrice: "HK$2,500 – $22,500",
-        remarks: "✓ 具体处置项目（普通或Mirena子宫环置入/取出、皮下避孕剂置入/取出、终止妊娠子宫扩刮术）。均在日間操作完成。"
+        displayPrice: "￥2,000 – ￥18,000",
+        remarks: "✓ 子宮環／皮下避孕劑／終止妊娠擴刮術；日間操作。",
+        link: "https://www.szufh.hk/gynecology-surgery-fees.html"
       },
 
       cuhk: {
@@ -2856,8 +2884,11 @@ const globalMedicalData = {
     orthopedics: {
       knee_replacement: {
       szufh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 88500,
+        priceLabel: "單側全膝關節置換術",
+        displayPrice: "￥42,000 – ￥135,000",
+        remarks: "✓ 植入物選項及機械臂輔助 CORI；一般／中等風險。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3294,8 +3325,11 @@ const globalMedicalData = {
       },
       knee_arthroscopy: {
       szufh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 73750,
+        priceLabel: "膝關節鏡手術",
+        displayPrice: "￥35,000 – ￥112,500",
+        remarks: "✓ 關節鏡術式與風險等級。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3440,8 +3474,11 @@ const globalMedicalData = {
       },
       hip_replacement: {
       szufh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 97375,
+        priceLabel: "單側全髖關節置換術",
+        displayPrice: "￥76,000 – ￥118,750",
+        remarks: "✓ 陶瓷對陶瓷／陶瓷對聚乙烯及品牌選項；一般／中等風險。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3586,10 +3623,11 @@ const globalMedicalData = {
       },
       joint_replacement: {
       szufh: {
-        price: 110625,
+        price: 88500,
         priceLabel: "人工關節置換術",
-        displayPrice: "HK$52,500 – $168,750",
-        remarks: "✓ 手術部位及形式（全膝/單髁/机械臂辅助CORI/全髋陶瓷對陶瓷/陶瓷對聚乙烯）、指定耗材品牌选项以及手術風險等級。標準住院天數为5至6晚。"
+        displayPrice: "￥42,000 – ￥135,000",
+        remarks: "✓ 全膝／單髁／機械臂CORI／全髖及植入物選項與風險等級。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3659,10 +3697,11 @@ const globalMedicalData = {
       },
       spine_surgery: {
       szufh: {
-        price: 200313,
+        price: 160250,
         priceLabel: "脊柱手術",
-        displayPrice: "HK$135,000 – $265,625",
-        remarks: "✓ 手術術式（腰椎減壓融合/頸椎前路融合ACDF/人工椎間盤ADR/UBE鏡下減壓術）、是否屬於【集採】渠道耗材以及手術風險等級。標準住院天數為3至6晚。"
+        displayPrice: "￥108,000 – ￥212,500",
+        remarks: "✓ 腰椎減壓融合／ACDF／人工椎間盤／UBE及集採選項與風險等級。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3732,10 +3771,11 @@ const globalMedicalData = {
       },
       sports_ortho: {
       szufh: {
-        price: 75813,
+        price: 61150,
         priceLabel: "骨科小手術及運動醫學",
-        displayPrice: "HK$11,000 – $140,625",
-        remarks: "✓ 手術術式（肿块切除/腱鞘囊腫/冰凍肩松解/交叉韌帶重建/半月板成形修復/踝关节韌帶修补）与复杂程度及手術風險等級。標準住院天數为日間至4晚。"
+        displayPrice: "￥9,800 – ￥112,500",
+        remarks: "✓ 腫塊／腱鞘／冰凍肩／交叉韌帶／半月板等與風險等級。",
+        link: "https://www.szufh.hk/orthopedic-surgery-fees.html"
       },
 
       cuhk: {
@@ -3807,8 +3847,11 @@ const globalMedicalData = {
     cardiology: {
       angiography: {
       szufh: {
-        price: 9999999,
-        remarks: "心臟導管造影資料整理中。"
+        price: 23250,
+        priceLabel: "冠狀動脈造影",
+        displayPrice: "￥22,000 – ￥24,500",
+        remarks: "✓ 日間手術或住院 1 晚。",
+        link: "https://www.szufh.hk/cardiology-surgery-fees.html"
       },
 
       cuhk: {
@@ -3878,10 +3921,11 @@ const globalMedicalData = {
       },
       pci: {
       szufh: {
-        price: 60000,
+        price: 40000,
         priceLabel: "冠狀動脈造影及支架置入 (PCI)",
-        displayPrice: "HK$27,500 – $92,500",
-        remarks: "✓ 手術路径術式（單純造影日間/造影住院1晚/PCI造影+支架置入2晚）以及是否每增加一个支架（增项基准单价+20000）。"
+        displayPrice: "￥22,000 – ￥58,000",
+        remarks: "✓ 造影日間／住院／造影+支架；每增加一個支架另計。",
+        link: "https://www.szufh.hk/cardiology-surgery-fees.html"
       },
 
       cuhk: {
@@ -3953,11 +3997,11 @@ const globalMedicalData = {
     ophthalmology: {
       cataract: {
       szufh: {
-        price: 24813,
+        price: 19850,
         priceLabel: "白內障超聲乳化晶體植入",
-        displayPrice: "HK$9,000 – $40,625",
-        remarks: "✓ 人工晶体級別选择（單焦距/雙焦距/EDOF/三焦距非散光）、玻璃体注药术以及手術風險等級。均在局部麻醉下日間操作完成。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥7,200 – ￥32,500",
+        remarks: "✓ 晶體級別（單焦／雙焦／EDOF／三焦）及玻璃體注藥；局麻日間。",
+        link: "https://www.szufh.hk/ophthalmic-surgery-fees.html"
       },
 
       cuhk: {
@@ -4033,11 +4077,11 @@ const globalMedicalData = {
       },
       strabismus: {
       szufh: {
-        price: 29688,
+        price: 23750,
         priceLabel: "斜視手術",
-        displayPrice: "HK$25,000 – $34,375",
-        remarks: "✓ 矫正眼外肌数量（1条水平肌/2条水平肌）與手術風險等級().均在全身麻醉下日間完成。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥20,000 – ￥27,500",
+        remarks: "✓ 矯正眼外肌數量（1條／2條）；全身麻醉日間。",
+        link: "https://www.szufh.hk/ophthalmic-surgery-fees.html"
       },
 
       cuhk: {
@@ -4109,8 +4153,11 @@ const globalMedicalData = {
     ent: {
       tonsillectomy: {
       szufh: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 33525,
+        priceLabel: "扁桃體切除術",
+        displayPrice: "￥29,800 – ￥37,250",
+        remarks: "✓ 扁桃體切除術；日間手術；一般／中等風險。",
+        link: "https://www.szufh.hk/ent-surgery-fees.html"
       },
 
       cuhk: {
@@ -4183,8 +4230,11 @@ const globalMedicalData = {
       },
       micro_laryngoscopy: {
       szufh: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 33750,
+        priceLabel: "顯微喉鏡檢查",
+        displayPrice: "￥30,000 – ￥37,500",
+        remarks: "✓ 顯微喉鏡±活檢；未標中等風險項按 1.25 倍拉齊上限。",
+        link: "https://www.szufh.hk/ent-surgery-fees.html"
       },
 
       cuhk: {
@@ -4260,11 +4310,11 @@ const globalMedicalData = {
       },
       adenoid_tonsil: {
       szufh: {
-        price: 41125,
+        price: 32900,
         priceLabel: "腺樣體及扁桃體手術",
-        displayPrice: "HK$31,000 – $51,250",
-        remarks: "✓ 手術具体类别（内窥镜单切腺样体/常規扁桃体切除/腺样体+扁桃体同台复合术）與手術風險等級。均在日間手術室完成。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥24,800 – ￥41,000",
+        remarks: "✓ 腺樣體／扁桃體／同台複合；日間手術室。",
+        link: "https://www.szufh.hk/ent-surgery-fees.html"
       },
 
       cuhk: {
@@ -4337,11 +4387,11 @@ const globalMedicalData = {
       },
       sinus_surgery: {
       szufh: {
-        price: 76563,
+        price: 61250,
         priceLabel: "鼻竇炎及鼻中隔手術",
-        displayPrice: "HK$43,750 – $109,375",
-        remarks: "✓ 手術复杂程度（功能性内窥镜FESS不伴鼻息肉/伴息肉切除/鼻中隔矫正/功能复合术业务）與手術風險等級。標準住院天數为2至3晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥35,000 – ￥87,500",
+        remarks: "✓ FESS／鼻中隔矯正／複合術與風險等級。",
+        link: "https://www.szufh.hk/ent-surgery-fees.html"
       },
 
       cuhk: {
@@ -4414,11 +4464,11 @@ const globalMedicalData = {
       },
       tympanoplasty: {
       szufh: {
-        price: 32500,
+        price: 26000,
         priceLabel: "鼓膜修補及顯微喉鏡",
-        displayPrice: "HK$27,500 – $37,500",
-        remarks: "✓ 具体手術術式（常規鼓膜修补/显微喉镜检查+/-活组织检查）。注：针对未标注中等風險项，依照全局常規1.25倍系数拉齐极值区间。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥22,000 – ￥30,000",
+        remarks: "✓ 鼓膜修補／顯微喉鏡±活檢。未標中等風險項按 1.25 倍拉齊上限。",
+        link: "https://www.szufh.hk/ent-surgery-fees.html"
       },
 
       cuhk: {
@@ -4493,10 +4543,11 @@ const globalMedicalData = {
     painManagement: {
       nerve_block: {
       szufh: {
-        price: 174125,
+        price: 139300,
         priceLabel: "疼痛管理 (神經阻滯/射頻等)",
-        displayPrice: "HK$4,500 – $343,750",
-        remarks: "✓ 处置类别（超聲引导阻滞/手術室神经造影/射频治疗/三叉神经球囊压迫/鞘内镇痛泵植入）與手術風險等級。標準住院天數为日間至5晚。"
+        displayPrice: "￥3,600 – ￥275,000",
+        remarks: "✓ 阻滯／造影／射頻／三叉神經球囊／鞘內鎮痛泵與風險等級。",
+        link: "https://www.szufh.hk/pain-management-procedure-fees.html"
       },
 
       cuhk: {
@@ -4568,8 +4619,9 @@ const globalMedicalData = {
       szufh: {
         price: 45000,
         priceLabel: "脊柱內鏡診療手術",
-        displayPrice: "HK$40,000 – $50,000",
-        remarks: "✓ 手術風險等級（一般風險/中等風險）。均在監測麻醉（MAC）下日間進行。"
+        displayPrice: "￥40,000 – ￥50,000",
+        remarks: "✓ 腰椎／頸椎；監測麻醉下日間；一般／中等風險。",
+        link: "https://www.szufh.hk/pain-management-procedure-fees.html"
       },
 
       cuhk: {
@@ -4639,10 +4691,11 @@ const globalMedicalData = {
       },
       scs_implant: {
       szufh: {
-        price: 48438,
+        price: 38750,
         priceLabel: "脊髓電刺激植入術",
-        displayPrice: "HK$37,500 – $59,375",
-        remarks: "✓ 植入分期阶段（第一期测试阶段3晚 / 第二期永久植入1晚）與手術風險等級。"
+        displayPrice: "￥30,000 – ￥47,500",
+        remarks: "✓ 第一期測試／第二期永久植入與風險等級。",
+        link: "https://www.szufh.hk/pain-management-procedure-fees.html"
       },
 
       cuhk: {
@@ -4772,10 +4825,11 @@ const globalMedicalData = {
       },
       laceration_repair: {
       szufh: {
-        price: 4625,
+        price: 3700,
         priceLabel: "急症/整形外科縫合套餐",
-        displayPrice: "HK$3,000 – $6,250",
-        remarks: "✓ 伤口长度跨度与缝合材料（小于2cm / 2-4cm / 4-8cm / 4cm以内组织胶水缝合）與手術風險等級。均在日間操作完成。"
+        displayPrice: "￥2,400 – ￥5,000",
+        remarks: "✓ 傷口長度與材料；日間操作。",
+        link: "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html"
       },
 
       cuhk: {
@@ -4847,309 +4901,11 @@ const globalMedicalData = {
     urology: {
       prostate: {
       szufh: {
-        link: "https://www.szufh.hk/shoushusf.html",
-        price: 66407,
+        price: 53125,
         priceLabel: "前列腺診療手術",
-        displayPrice: "HK$31,250 – $101,563",
-        remarks: "✓ 手術術式（MRI-超聲融合活检/Rezum热蒸汽消融/Urolift悬扩/TURP电切/HoLEP铥激光剜除）與手術風險等級。標準住院天數为日間至3晚。"
-      },
-
-      cuhk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hksh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      ghk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      matilda: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sth: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      baptist: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      canossa: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sph: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      evangel: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      twah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hkah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      }
-      },
-      kidney_stone: {
-      szufh: {
-        link: "https://www.szufh.hk/shoushusf.html",
-        price: 51563,
-        priceLabel: "泌尿系結石碎石手術",
-        displayPrice: "HK$12,500 – $90,625",
-        remarks: "✓ 手術形式（输尿管硬镜/软镜铥激光碎石术、硬镜/软镜双J管拔除）與手術風險等級。均在日間手術室完成。"
-      },
-
-      cuhk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hksh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      ghk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      matilda: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sth: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      baptist: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      canossa: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sph: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      evangel: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      twah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hkah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      }
-      },
-      urodynamics: {
-      szufh: {
-        link: "https://www.szufh.hk/shoushusf.html",
-        price: 14063,
-        priceLabel: "尿動力及膀胱鏡檢查",
-        displayPrice: "HK$9,375 – $18,750",
-        remarks: "✓ 项目类别（常規尿动力学套餐/膀胱尿道镜）與手術風險等級。"
-      },
-
-      cuhk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hksh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      ghk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      matilda: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sth: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      baptist: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      canossa: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sph: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      evangel: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      twah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hkah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      }
-      },
-      andrology: {
-      szufh: {
-        link: "https://www.szufh.hk/shoushusf.html",
-        price: 15625,
-        priceLabel: "男科處置手術",
-        displayPrice: "HK$6,250 – $25,000",
-        remarks: "✓ 手術術式（输精管切除术/传统/套环/吻合器包皮枪）与麻醉形式及年龄段（局麻/全麻、儿童/成人/新生儿）與手術風險等級。"
-      },
-
-      cuhk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hksh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      ghk: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      matilda: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sth: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      baptist: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      canossa: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      sph: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      evangel: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      twah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      },
-
-      hkah: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
-      }
-      }
-    },
-    urology: {
-      prostate: {
-      szufh: {
-        price: 66407,
-        priceLabel: "前列腺診療手術",
-        displayPrice: "HK$31,250 – $101,563",
-        remarks: "✓ 手術術式（MRI-超聲融合活检/Rezum热蒸汽消融/Urolift悬扩/TURP电切/HoLEP铥激光剜除）與手術風險等級。標準住院天數为日間至3晚。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥25,000 – ￥81,250",
+        remarks: "✓ MRI融合活檢／Rezum／Urolift／TURP／HoLEP與風險等級。",
+        link: "https://www.szufh.hk/urology-surgery-fees.html"
       },
 
       cuhk: {
@@ -5222,11 +4978,11 @@ const globalMedicalData = {
       },
       kidney_stone: {
       szufh: {
-        price: 51563,
+        price: 41250,
         priceLabel: "泌尿系結石碎石手術",
-        displayPrice: "HK$12,500 – $90,625",
-        remarks: "✓ 手術形式（输尿管硬镜/软镜铥激光碎石术、硬镜/软镜双J管拔除）與手術風險等級。均在日間手術室完成。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥10,000 – ￥72,500",
+        remarks: "✓ 硬鏡／軟鏡碎石、雙J管拔除與風險等級。",
+        link: "https://www.szufh.hk/urology-surgery-fees.html"
       },
 
       cuhk: {
@@ -5299,11 +5055,11 @@ const globalMedicalData = {
       },
       urodynamics: {
       szufh: {
-        price: 14063,
+        price: 11250,
         priceLabel: "尿動力及膀胱鏡檢查",
-        displayPrice: "HK$9,375 – $18,750",
-        remarks: "✓ 项目类别（常規尿动力学套餐/膀胱尿道镜）與手術風險等級。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥7,500 – ￥15,000",
+        remarks: "✓ 尿動力套餐／膀胱尿道鏡±活檢與風險等級。",
+        link: "https://www.szufh.hk/urology-surgery-fees.html"
       },
 
       cuhk: {
@@ -5376,11 +5132,11 @@ const globalMedicalData = {
       },
       andrology: {
       szufh: {
-        price: 15625,
+        price: 12500,
         priceLabel: "男科處置手術",
-        displayPrice: "HK$6,250 – $25,000",
-        remarks: "✓ 手術術式（输精管切除术/传统/套环/吻合器包皮枪）与麻醉形式及年龄段（局麻/全麻、儿童/成人/新生儿）與手術風險等級。",
-        link: "https://www.szufh.hk/shoushusf.html"
+        displayPrice: "￥5,000 – ￥20,000",
+        remarks: "✓ 輸精管結紮／包皮術式與麻醉及年齡段。",
+        link: "https://www.szufh.hk/urology-surgery-fees.html"
       },
 
       cuhk: {

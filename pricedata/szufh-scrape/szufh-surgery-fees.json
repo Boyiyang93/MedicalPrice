@@ -1,0 +1,4153 @@
+{
+  "source": "https://www.szufh.hk/",
+  "item_count": 163,
+  "scraped_pages": [
+    {
+      "key": "surgical-fees",
+      "label": "手术收费总览",
+      "url": "https://www.szufh.hk/surgical-fees.html",
+      "tables": 0,
+      "items": 0,
+      "title": "深圳新风和睦家医院手术收费 | 跨境医疗服务 香港医疗券"
+    },
+    {
+      "key": "gi-endoscopy",
+      "label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "tables": 2,
+      "items": 22,
+      "title": "无痛胃肠镜检查 | 深圳新风和睦家 价格透明 4800起"
+    },
+    {
+      "key": "gynecology",
+      "label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "tables": 8,
+      "items": 27,
+      "title": "深圳妇科手术價格 | 宫腔镜 子宫肌瘤 深圳新风和睦家医院收费"
+    },
+    {
+      "key": "urology",
+      "label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "tables": 6,
+      "items": 20,
+      "title": "泌尿外科手術價格 | 深圳新风和睦家 前列腺结石治疗 包皮环切术"
+    },
+    {
+      "key": "colorectal",
+      "label": "肛肠外科",
+      "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+      "tables": 1,
+      "items": 4,
+      "title": "胃肠镜痔疮治疗價格 | 深圳新风和睦家医院 肛肠外科 专业可靠"
+    },
+    {
+      "key": "general-surgery",
+      "label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "tables": 6,
+      "items": 14,
+      "title": "普外科手术收费 | 深圳新风和睦家医院 胆囊 甲状腺 疝气手术"
+    },
+    {
+      "key": "breast",
+      "label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "tables": 3,
+      "items": 15,
+      "title": "乳腺手术價格 | 深圳新风和睦家医院 肿块切除 癌症治疗手术"
+    },
+    {
+      "key": "orthopedic",
+      "label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "tables": 4,
+      "items": 28,
+      "title": "骨科手术收费 | 深圳新风和睦家医院 关节置换 腰椎颈椎治疗手术"
+    },
+    {
+      "key": "pain",
+      "label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "tables": 3,
+      "items": 9,
+      "title": "疼痛治疗手术费用 | 深圳新风和睦家医院 慢性疼痛 神经调控 全面疼痛管理服务"
+    },
+    {
+      "key": "ent",
+      "label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "tables": 3,
+      "items": 9,
+      "title": "耳鼻喉科手术價格 |深圳新风和睦家医院 扁桃体 鼻窦炎 内窥镜微创"
+    },
+    {
+      "key": "ophthalmic",
+      "label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "tables": 3,
+      "items": 7,
+      "title": "眼科手术费用 | 深圳新风和睦家医院 白内障 斜视 玻璃體價格"
+    },
+    {
+      "key": "emergency-plastic",
+      "label": "急诊整形外科",
+      "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+      "tables": 1,
+      "items": 4,
+      "title": "急诊整形外科價格 | 深圳新风和睦家医院 外伤处理 美容修复手术费用"
+    },
+    {
+      "key": "cardiology",
+      "label": "心内科",
+      "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+      "tables": 1,
+      "items": 4,
+      "title": "冠心病诊疗收费 深圳新风和睦家医院 日间手术 精准诊断"
+    }
+  ],
+  "items": [
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡（監察麻醉）健康檢查-標準",
+      "name_en": "Gastroscopy (MAC) Packages - standard",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "4,800",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡（監察麻醉）健康檢查-標準",
+        "日間操作",
+        "4,800",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛腸鏡（監察麻醉）健康檢查-標準",
+      "name_en": "Colonoscopy (MAC) Packages - standard",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "5,500",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛腸鏡（監察麻醉）健康檢查-標準",
+        "日間操作",
+        "5,500",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃腸鏡（監察麻醉）健康檢查-標準",
+      "name_en": "Gastroscopy + Colonoscopy (MAC) Packages - standard",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "7,500",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃腸鏡（監察麻醉）健康檢查-標準",
+        "日間操作",
+        "7,500",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO精英版 Gastroscopy (MAC) Packages - PRO Elite",
+      "stay": "1天（不過夜） 1",
+      "price_package": "",
+      "price_standard_risk": "6,300",
+      "price_medium_risk": "5,100",
+      "price_hk_discount": "5,100",
+      "cells": [
+        "無痛胃鏡（監察麻醉）健康檢查-",
+        "1天（不過夜） 1",
+        "6,300",
+        "5,100"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛腸鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO精英版 Colonoscopy (MAC) Packages - PRO Elite",
+      "stay": "1天（不過夜） 1",
+      "price_package": "",
+      "price_standard_risk": "7,000",
+      "price_medium_risk": "5,800",
+      "price_hk_discount": "5,800",
+      "cells": [
+        "無痛腸鏡（監察麻醉）健康檢查-",
+        "1天（不過夜） 1",
+        "7,000",
+        "5,800"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃腸鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO精英版 Gastroscopy + Colonoscopy (MAC) Packages - PRO Elite",
+      "stay": "1天（不過夜） 1",
+      "price_package": "",
+      "price_standard_risk": "9,000",
+      "price_medium_risk": "7,800",
+      "price_hk_discount": "7,800",
+      "cells": [
+        "無痛胃腸鏡（監察麻醉）健康檢查-",
+        "1天（不過夜） 1",
+        "9,000",
+        "7,800"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO休養版 Gastroscopy (MAC) Packages - PRO Recuperation",
+      "stay": "1晚 1",
+      "price_package": "",
+      "price_standard_risk": "7,300",
+      "price_medium_risk": "5,300",
+      "price_hk_discount": "5,300",
+      "cells": [
+        "無痛胃鏡（監察麻醉）健康檢查-",
+        "1晚 1",
+        "7,300",
+        "5,300"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛腸鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO休養版 Colonoscopy (MAC) Packages - PRO Recuperation",
+      "stay": "1晚 1",
+      "price_package": "",
+      "price_standard_risk": "8,000",
+      "price_medium_risk": "6,000",
+      "price_hk_discount": "6,000",
+      "cells": [
+        "無痛腸鏡（監察麻醉）健康檢查-",
+        "1晚 1",
+        "8,000",
+        "6,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃腸鏡（監察麻醉）健康檢查-",
+      "name_en": "PRO休養版 Gastroscopy + Colonoscopy (MAC) Packages- PRO Recuperation",
+      "stay": "1晚 1",
+      "price_package": "",
+      "price_standard_risk": "10,000",
+      "price_medium_risk": "8,000",
+      "price_hk_discount": "8,000",
+      "cells": [
+        "無痛胃腸鏡（監察麻醉）健康檢查-",
+        "1晚 1",
+        "10,000",
+        "8,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量<3）",
+      "name_en": "Gastroscopy / Colonoscopy / Combined GI Endoscopy Biopsy Add-on Package (<3 biopsies)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "1,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量<3）",
+        "日間操作",
+        "1,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量3-5）",
+      "name_en": "Gastroscopy / Colonoscopy / Combined GI Endoscopy Biopsy Add-on Package (3-5 biopsies)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "1,500",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量3-5）",
+        "日間操作",
+        "1,500",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量>5）",
+      "name_en": "Gastroscopy / Colonoscopy / Combined GI Endoscopy Biopsy Add-on Package (>5 biopsies)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡/伴活檢加項包（活檢數量>5）",
+        "日間操作",
+        "2,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡/伴息肉切除加項包（息肉數量=1）",
+      "name_en": "Gastroscopy / Colonoscopy / Combined GI Endoscopy Polypectomy Add-on Package (1 polyp)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "1,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡/伴息肉切除加項包（息肉數量=1）",
+        "日間操作",
+        "1,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡/伴息肉切除加項包（息肉數量2-4）",
+      "name_en": "Gastroscopy / Colonoscopy/Combined GI Endoscopy Polypectomy Add-on Package (2-4 polyps)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡/伴息肉切除加項包（息肉數量2-4）",
+        "日間操作",
+        "2,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡/腸鏡/胃腸鏡 /伴息肉切除加項包（息肉數量>4）",
+      "name_en": "Gastroscopy / Colonoscopy Combined GI Endoscopy Polypectomy Add-on Package (>4 polyps)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "3,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡/腸鏡/胃腸鏡 /伴息肉切除加項包（息肉數量>4）",
+        "日間操作",
+        "3,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃鏡",
+      "name_en": "EMR加項包 Gastroscopy EMR Add-on Package",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "6,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃鏡",
+        "日間操作",
+        "6,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛腸鏡",
+      "name_en": "EMR加項包 Colonoscopy EMR Add-on Package",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "8,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛腸鏡",
+        "日間操作",
+        "8,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛胃腸鏡",
+      "name_en": "EMR加項包 Gastroscopy + Colonoscopy EMR Add-on Package",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "10,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛胃腸鏡",
+        "日間操作",
+        "10,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price",
+        "香港居民優惠價 HK Residents Discount Price"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛（胃）腸鏡同台加項 - 痔切除術 - 傳統",
+      "name_en": "Same-Session Add-on with Gastroscopy / Colonoscopy Conventional Hemorrhoidectomy",
+      "stay": "1晚 1",
+      "price_package": "",
+      "price_standard_risk": "12,000",
+      "price_medium_risk": "20,000",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛（胃）腸鏡同台加項 - 痔切除術 - 傳統",
+        "1晚 1",
+        "12,000",
+        "20,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價格 一般风险",
+        "套餐價格 中等风险"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛（胃）腸鏡同台加項痔瘡膠圈套扎",
+      "name_en": "RBL - 標準 Same-Session Add-on with Gastroscopy / Colonoscopy Rubber Band Ligation (RBL) for Hemorrhoids - Standard",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,500",
+      "price_medium_risk": "3,125",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛（胃）腸鏡同台加項痔瘡膠圈套扎",
+        "日間操作",
+        "2,500",
+        "3,125"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價格 一般风险",
+        "套餐價格 中等风险"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛（胃）腸鏡同台加項 - 痔瘡膠圈套扎",
+      "name_en": "RBL 庫克一次性套扎器 Same-Session Add-on with Gastroscopy / Colonoscopy Rubber Band Ligation (RBL) for Hemorrhoids - Cook Disposable Ligator",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "5,000",
+      "price_medium_risk": "6,250",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛（胃）腸鏡同台加項 - 痔瘡膠圈套扎",
+        "日間操作",
+        "5,000",
+        "6,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價格 一般风险",
+        "套餐價格 中等风险"
+      ]
+    },
+    {
+      "page_key": "gi-endoscopy",
+      "page_label": "消化内镜",
+      "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+      "section": "無痛胃腸鏡檢查",
+      "name_zh": "無痛（胃）腸鏡同台加項 - 痔瘡硬化劑注射",
+      "name_en": "Same-Session Add-on with Gastroscopy / Colonoscopy Hemorrhoid Sclerotherapy Injection",
+      "stay": "1天（不過夜） 1",
+      "price_package": "",
+      "price_standard_risk": "3,500",
+      "price_medium_risk": "4,375",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛（胃）腸鏡同台加項 - 痔瘡硬化劑注射",
+        "1天（不過夜） 1",
+        "3,500",
+        "4,375"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價格 一般风险",
+        "套餐價格 中等风险"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "陰道窺鏡檢查（局部麻醉）",
+      "name_en": "Colposcopy (LA)",
+      "stay": "日間操作",
+      "price_package": "2,500",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "陰道窺鏡檢查（局部麻醉）",
+        "日間操作",
+        "2,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "陰道窺鏡及活組織檢查（局部麻醉）",
+      "name_en": "Colposcopy with Biopsy (LA)",
+      "stay": "日間操作",
+      "price_package": "3,500",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "陰道窺鏡及活組織檢查（局部麻醉）",
+        "日間操作",
+        "3,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮頸錐形切除術",
+      "name_en": "Cervical Cone Biopsy / Conization",
+      "stay": "日間操作",
+      "price_package": "18,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮頸錐形切除術",
+        "日間操作",
+        "18,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮頸電環切除術（",
+      "name_en": "LEEP） Loop Electrosurgical Excision Procedure (LEEP)",
+      "stay": "日間操作",
+      "price_package": "15,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮頸電環切除術（",
+        "日間操作",
+        "15,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "預防性子宮頸環紮術",
+      "name_en": "Prophylactic Cervical Cerclage",
+      "stay": "日間操作",
+      "price_package": "35,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "預防性子宮頸環紮術",
+        "日間操作",
+        "35,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮頸病變射頻治療（局部麻醉）",
+      "name_en": "Radiofrequency Treatment of Cervical Lesions (LA)",
+      "stay": "日間操作",
+      "price_package": "6,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮頸病變射頻治療（局部麻醉）",
+        "日間操作",
+        "6,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮頸病變射頻治療（監測麻醉）",
+      "name_en": "Radiofrequency Treatment of Cervical Lesions (MAC)",
+      "stay": "日間操作",
+      "price_package": "18,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮頸病變射頻治療（監測麻醉）",
+        "日間操作",
+        "18,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Pricee"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮鏡診治手術 （活組織檢查/息肉切除/縱隔切除/黏連分離/異物取出）",
+      "name_en": "Hysteroscopy with Biopsy / Polypectomy / Septum Resection / Adhesiolysis / Foreign Body Removal",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "20,000",
+      "price_medium_risk": "25,000",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮鏡診治手術 （活組織檢查/息肉切除/縱隔切除/黏連分離/異物取出）",
+        "日間操作",
+        "20,000",
+        "25,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "子宮鏡子宮肌瘤切除術",
+      "name_en": "Hysteroscopic Myomectomy",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "28,000",
+      "price_medium_risk": "35,000",
+      "price_hk_discount": "",
+      "cells": [
+        "子宮鏡子宮肌瘤切除術",
+        "日間操作",
+        "28,000",
+        "35,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡子宮肌瘤切除術",
+      "name_en": "Laparoscopic Myomectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "60,000",
+      "price_medium_risk": "75,000",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡子宮肌瘤切除術",
+        "3晚",
+        "60,000",
+        "75,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "開放式子宮肌瘤切除術",
+      "name_en": "Open Myomectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "55,000",
+      "price_medium_risk": "68,750",
+      "price_hk_discount": "",
+      "cells": [
+        "開放式子宮肌瘤切除術",
+        "3晚",
+        "55,000",
+        "68,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡子宮切除術",
+      "name_en": "Laparoscopic Hysterectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "75,000",
+      "price_medium_risk": "93,750",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡子宮切除術",
+        "3晚",
+        "75,000",
+        "93,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡輔助陰式子宮切除術（",
+      "name_en": "LAVH） Laparoscopic Assisted Vaginal Hysterectomy (LAVH)",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "78,000",
+      "price_medium_risk": "97,500",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡輔助陰式子宮切除術（",
+        "3晚",
+        "78,000",
+        "97,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "開放式子宮切除術",
+      "name_en": "Open Hysterectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "65,000",
+      "price_medium_risk": "81,250",
+      "price_hk_discount": "",
+      "cells": [
+        "開放式子宮切除術",
+        "3晚",
+        "65,000",
+        "81,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "超聲波引導下子宮輸卵管造影",
+      "name_en": "Ultrasound-guided Hysterosalpingo-contrast Sonography",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "4,800",
+      "price_medium_risk": "6,000",
+      "price_hk_discount": "",
+      "cells": [
+        "超聲波引導下子宮輸卵管造影",
+        "日間操作",
+        "4,800",
+        "6,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡輸卵管結紮術",
+      "name_en": "Laparoscopic Tubal Ligation",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "34,800",
+      "price_medium_risk": "43,500",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡輸卵管結紮術",
+        "日間操作",
+        "34,800",
+        "43,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡輸卵管切開取胚術",
+      "name_en": "Laparoscopic Salpingostomy for Ectopic Pregnancy",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "40,000",
+      "price_medium_risk": "50,000",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡輸卵管切開取胚術",
+        "日間操作",
+        "40,000",
+        "50,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡宮外孕切除術",
+      "name_en": "Laparoscopic Removal of Ectopic Pregnancy",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "50,000",
+      "price_medium_risk": "62,500",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡宮外孕切除術",
+        "1晚",
+        "50,000",
+        "62,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡卵巢囊腫切除術 - 單側",
+      "name_en": "Laparoscopic Ovarian Cystectomy - Unilateral",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "50,000",
+      "price_medium_risk": "62,500",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡卵巢囊腫切除術 - 單側",
+        "3晚",
+        "50,000",
+        "62,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "腹腔鏡卵巢囊腫切除術 - 雙側",
+      "name_en": "Laparoscopic Ovarian Cystectomy - Bilateral",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "55,000",
+      "price_medium_risk": "68,750",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡卵巢囊腫切除術 - 雙側",
+        "3晚",
+        "55,000",
+        "68,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "開放式卵巢囊腫切除術",
+      "name_en": "Open Ovarian Cystectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "50,000",
+      "price_medium_risk": "62,500",
+      "price_hk_discount": "",
+      "cells": [
+        "開放式卵巢囊腫切除術",
+        "3晚",
+        "50,000",
+        "62,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "門診子宮環置入 - 普通子宮環",
+      "name_en": "IUD Insertion - Standard IUD",
+      "stay": "日間操作",
+      "price_package": "4,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "門診子宮環置入 - 普通子宮環",
+        "日間操作",
+        "4,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "門診子宮環置入 -",
+      "name_en": "Mirena&reg; 子宮環 IUD Insertion - Mirena&reg;",
+      "stay": "日間操作",
+      "price_package": "6,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "門診子宮環置入 -",
+        "日間操作",
+        "6,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "門診子宮環取出",
+      "name_en": "IUD Removal",
+      "stay": "日間操作",
+      "price_package": "2,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "門診子宮環取出",
+        "日間操作",
+        "2,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "皮下避孕植入劑置入",
+      "name_en": "Contraceptive Implant Insertion",
+      "stay": "日間操作",
+      "price_package": "4,600",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "皮下避孕植入劑置入",
+        "日間操作",
+        "4,600"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "皮下避孕植入劑取出",
+      "name_en": "Contraceptive Implant Removal",
+      "stay": "日間操作",
+      "price_package": "3,700",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "皮下避孕植入劑取出",
+        "日間操作",
+        "3,700"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "gynecology",
+      "page_label": "妇科",
+      "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+      "section": "陰道窺鏡",
+      "name_zh": "終止妊娠 / 子宮擴刮術",
+      "name_en": "Termination of Pregnancy / Dilatation and Curettage (D&C)",
+      "stay": "日間操作",
+      "price_package": "18,000",
+      "price_standard_risk": "",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "終止妊娠 / 子宮擴刮術",
+        "日間操作",
+        "18,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "套餐價 Package Price"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "經會陰MRI-超聲融合引導下前列腺組織活檢（Carbon Venus）",
+      "name_en": "Transperineal MRI-Ultrasound Fusion-Guided Prostate Biopsy (Carbon Venus)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "25,000",
+      "price_medium_risk": "31,250",
+      "price_hk_discount": "",
+      "cells": [
+        "經會陰MRI-超聲融合引導下前列腺組織活檢（Carbon Venus）",
+        "日間手術",
+        "25,000",
+        "31,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "前列腺增生熱蒸汽消融術（Rezum）",
+      "name_en": "Rezum Water Vapor Therapy for Benign Prostatic Hyperplasia",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "60,000",
+      "price_medium_risk": "75,000",
+      "price_hk_discount": "",
+      "cells": [
+        "前列腺增生熱蒸汽消融術（Rezum）",
+        "日間手術",
+        "60,000",
+        "75,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "經尿道前列腺懸擴術（Urolift）",
+      "name_en": "UroLift Transprostatic Implant Procedure",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "65,000",
+      "price_medium_risk": "81,250",
+      "price_hk_discount": "",
+      "cells": [
+        "經尿道前列腺懸擴術（Urolift）",
+        "日間手術",
+        "65,000",
+        "81,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "前列腺電切術（TURP）",
+      "name_en": "Transurethral Resection of the Prostate (TURP)",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "60,000",
+      "price_medium_risk": "75,000",
+      "price_hk_discount": "",
+      "cells": [
+        "前列腺電切術（TURP）",
+        "3晚",
+        "60,000",
+        "75,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "前列腺鈥激光剝離剜除術（HoLEP）",
+      "name_en": "Holmium Laser Enucleation of the Prostate (HoLEP)",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "65,000",
+      "price_medium_risk": "81,250",
+      "price_hk_discount": "",
+      "cells": [
+        "前列腺鈥激光剝離剜除術（HoLEP）",
+        "3晚",
+        "65,000",
+        "81,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "輸尿管鏡鈥激光碎石術 - 硬鏡（URSL）",
+      "name_en": "Ureteroscopic Holmium Laser Lithotripsy - Rigid URSL",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "37,000",
+      "price_medium_risk": "46,250",
+      "price_hk_discount": "",
+      "cells": [
+        "輸尿管鏡鈥激光碎石術 - 硬鏡（URSL）",
+        "日間手術",
+        "37,000",
+        "46,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "輸尿管鏡鈥激光碎石術 -軟鏡（Flexible URSL）",
+      "name_en": "Ureteroscopic Holmium Laser Lithotripsy - Flexible URSL",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "58,000",
+      "price_medium_risk": "72,500",
+      "price_hk_discount": "",
+      "cells": [
+        "輸尿管鏡鈥激光碎石術 -軟鏡（Flexible URSL）",
+        "日間手術",
+        "58,000",
+        "72,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "膀胱鏡下雙J管支架移除 - 硬鏡",
+      "name_en": "Cystoscopic Double-J Stent Removal Rigid Scope",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "10,000",
+      "price_medium_risk": "12,500",
+      "price_hk_discount": "",
+      "cells": [
+        "膀胱鏡下雙J管支架移除 - 硬鏡",
+        "日間手術",
+        "10,000",
+        "12,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "膀胱鏡下雙J管支架移除 - 軟鏡",
+      "name_en": "Cystoscopic Double-J Stent Removal - Flexible Scope",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "13,000",
+      "price_medium_risk": "16,250",
+      "price_hk_discount": "",
+      "cells": [
+        "膀胱鏡下雙J管支架移除 - 軟鏡",
+        "日間手術",
+        "13,000",
+        "16,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "尿動力檢查套餐",
+      "name_en": "Urodynamic Study Package",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "7,500",
+      "price_medium_risk": "9,375",
+      "price_hk_discount": "",
+      "cells": [
+        "尿動力檢查套餐",
+        "日間操作",
+        "7,500",
+        "9,375"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "膀胱尿道鏡（伴或不伴活檢）",
+      "name_en": "Cystourethroscopy (With or Without Biopsy)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "12,000",
+      "price_medium_risk": "15,000",
+      "price_hk_discount": "",
+      "cells": [
+        "膀胱尿道鏡（伴或不伴活檢）",
+        "日間操作",
+        "12,000",
+        "15,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "輸精管切除術（結紮）",
+      "name_en": "Vasectomy",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "16,000",
+      "price_medium_risk": "20,000",
+      "price_hk_discount": "",
+      "cells": [
+        "輸精管切除術（結紮）",
+        "日間手術",
+        "16,000",
+        "20,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "新生兒包皮環切（&le;28天）- 局麻",
+      "name_en": "Neonatal Circumcision (&le;28 Days) , LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "5,000",
+      "price_medium_risk": "6,250",
+      "price_hk_discount": "",
+      "cells": [
+        "新生兒包皮環切（&le;28天）- 局麻",
+        "日間手術",
+        "5,000",
+        "6,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "新生兒包皮環切（&le;28天）- 局麻",
+      "name_en": "Neonatal Circumcision (&le;28 Days), LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "5,000",
+      "price_medium_risk": "6,250",
+      "price_hk_discount": "",
+      "cells": [
+        "新生兒包皮環切（&le;28天）- 局麻",
+        "日間手術",
+        "5,000",
+        "6,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環切術（傳統）兒童>28天/成人，局麻",
+      "name_en": "Conventional Circumcision Child >28 Days / Adult, LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "8,000",
+      "price_medium_risk": "10,000",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環切術（傳統）兒童>28天/成人，局麻",
+        "日間手術",
+        "8,000",
+        "10,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環切術（傳統）兒童>28天/成人，全麻",
+      "name_en": "Conventional Circumcision Child >28 Days / Adult, GA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "15,000",
+      "price_medium_risk": "18,750",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環切術（傳統）兒童>28天/成人，全麻",
+        "日間手術",
+        "15,000",
+        "18,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環扎術（套環）兒童>28天/成人，局麻",
+      "name_en": "Ring Circumcision Child >28 Days / Adult, LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "6,500",
+      "price_medium_risk": "8,125",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環扎術（套環）兒童>28天/成人，局麻",
+        "日間手術",
+        "6,500",
+        "8,125"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環扎術（套環）兒童>28天/成人，全麻",
+      "name_en": "Ring Circumcision Child >28 Days / Adult, GA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "12,000",
+      "price_medium_risk": "15,000",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環扎術（套環）兒童>28天/成人，全麻",
+        "日間手術",
+        "12,000",
+        "15,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環切術（吻合器/包皮槍）兒童>28天/成人，局麻",
+      "name_en": "Stapler Circumcision Child >28 Days / Adult, LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "8,000",
+      "price_medium_risk": "10,000",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環切術（吻合器/包皮槍）兒童>28天/成人，局麻",
+        "日間手術",
+        "8,000",
+        "10,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "urology",
+      "page_label": "泌尿外科",
+      "url": "https://www.szufh.hk/urology-surgery-fees.html",
+      "section": "前列腺",
+      "name_zh": "包皮環切術（吻合器/包皮槍）兒童>28天/成人，全麻",
+      "name_en": "Stapler Circumcision Child >28 Days / Adult, GA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "15,000",
+      "price_medium_risk": "18,750",
+      "price_hk_discount": "",
+      "cells": [
+        "包皮環切術（吻合器/包皮槍）兒童>28天/成人，全麻",
+        "日間手術",
+        "15,000",
+        "18,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "colorectal",
+      "page_label": "肛肠外科",
+      "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+      "section": "肛腸手術",
+      "name_zh": "痔切除術 - 傳統",
+      "name_en": "Conventional Hemorrhoidectomy",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "16,000",
+      "price_medium_risk": "20,000",
+      "price_hk_discount": "",
+      "cells": [
+        "痔切除術 - 傳統",
+        "1晚",
+        "16,000",
+        "20,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "colorectal",
+      "page_label": "肛肠外科",
+      "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+      "section": "肛腸手術",
+      "name_zh": "痔瘡膠圈套扎術(RBL) - 標準",
+      "name_en": "Rubber Band Ligation (RBL) for Hemorrhoids - Standard",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "5,800",
+      "price_medium_risk": "7,250",
+      "price_hk_discount": "",
+      "cells": [
+        "痔瘡膠圈套扎術(RBL) - 標準",
+        "日間操作",
+        "5,800",
+        "7,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "colorectal",
+      "page_label": "肛肠外科",
+      "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+      "section": "肛腸手術",
+      "name_zh": "痔瘡膠圈套扎術(RBL) - 庫克一次性套扎器",
+      "name_en": "Rubber Band Ligation (RBL) for Hemorrhoids - Cook Disposable Ligator",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "8,300",
+      "price_medium_risk": "10,375",
+      "price_hk_discount": "",
+      "cells": [
+        "痔瘡膠圈套扎術(RBL) - 庫克一次性套扎器",
+        "日間操作",
+        "8,300",
+        "10,375"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "colorectal",
+      "page_label": "肛肠外科",
+      "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+      "section": "肛腸手術",
+      "name_zh": "痔瘡硬化劑注射",
+      "name_en": "Hemorrhoid Sclerotherapy Injection",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "6,800",
+      "price_medium_risk": "8,500",
+      "price_hk_discount": "",
+      "cells": [
+        "痔瘡硬化劑注射",
+        "日間操作",
+        "6,800",
+        "8,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "腹腔鏡膽囊切除術（含超聲刀）",
+      "name_en": "Laparoscopic Cholecystectomy (Ultrasonic Scalpel)",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "55,000",
+      "price_medium_risk": "68,750",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡膽囊切除術（含超聲刀）",
+        "2晚",
+        "55,000",
+        "68,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "開放式膽囊切除術",
+      "name_en": "Open Cholecystectomy",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "55,000",
+      "price_medium_risk": "68,750",
+      "price_hk_discount": "",
+      "cells": [
+        "開放式膽囊切除術",
+        "2晚",
+        "55,000",
+        "68,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "腹腔鏡闌尾切除術",
+      "name_en": "Laparoscopic Appendectomy",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "49,800",
+      "price_medium_risk": "62,250",
+      "price_hk_discount": "",
+      "cells": [
+        "腹腔鏡闌尾切除術",
+        "1晚",
+        "49,800",
+        "62,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "開放式闌尾切除術",
+      "name_en": "Open Appendectomy",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "58,000",
+      "price_medium_risk": "72,500",
+      "price_hk_discount": "",
+      "cells": [
+        "開放式闌尾切除術",
+        "1晚",
+        "58,000",
+        "72,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "成人腹腔鏡腹股溝疝修補術 （不含補片）-單側",
+      "name_en": "Adult Laparoscopic Inguinal Hernia Repair (Excluding Mesh) - Unilateral",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "33,000",
+      "price_medium_risk": "41,250",
+      "price_hk_discount": "",
+      "cells": [
+        "成人腹腔鏡腹股溝疝修補術 （不含補片）-單側",
+        "2晚",
+        "33,000",
+        "41,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "成人腹腔鏡腹股溝疝修補術 （不含補片）-雙側",
+      "name_en": "Adult Laparoscopic Inguinal Hernia Repair (Excluding Mesh) - Bilateral",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "47,000",
+      "price_medium_risk": "58,750",
+      "price_hk_discount": "",
+      "cells": [
+        "成人腹腔鏡腹股溝疝修補術 （不含補片）-雙側",
+        "2晚",
+        "47,000",
+        "58,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "成人腹腔鏡腹股溝疝修補術 （柯惠補片 TEM1509G）-單側",
+      "name_en": "Adult Laparoscopic Inguinal Hernia Repair (Covidien Mesh TEM1509G) - Unilateral",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "39,000",
+      "price_medium_risk": "48,750",
+      "price_hk_discount": "",
+      "cells": [
+        "成人腹腔鏡腹股溝疝修補術 （柯惠補片 TEM1509G）-單側",
+        "2晚",
+        "39,000",
+        "48,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "成人腹腔鏡腹股溝疝修補術 （柯惠補片 TEM1509G）-雙側",
+      "name_en": "Adult Laparoscopic Inguinal Hernia Repair (Covidien Mesh TEM1509G) - Bilateral",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "59,000",
+      "price_medium_risk": "73,750",
+      "price_hk_discount": "",
+      "cells": [
+        "成人腹腔鏡腹股溝疝修補術 （柯惠補片 TEM1509G）-雙側",
+        "2晚",
+        "59,000",
+        "73,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "超聲引導下甲狀腺穿刺活檢",
+      "name_en": "Ultrasound-Guided Thyroid Biopsy",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "3,800",
+      "price_medium_risk": "4,750",
+      "price_hk_discount": "",
+      "cells": [
+        "超聲引導下甲狀腺穿刺活檢",
+        "日間操作",
+        "3,800",
+        "4,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "甲狀腺全切術",
+      "name_en": "Total Thyroidectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "70,000",
+      "price_medium_risk": "87,500",
+      "price_hk_discount": "",
+      "cells": [
+        "甲狀腺全切術",
+        "3晚",
+        "70,000",
+        "87,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "甲狀腺次全切術",
+      "name_en": "Subtotal Thyroidectomy",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "60,000",
+      "price_medium_risk": "75,000",
+      "price_hk_discount": "",
+      "cells": [
+        "甲狀腺次全切術",
+        "3晚",
+        "60,000",
+        "75,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "局麻下輸液港置入（巴德）",
+      "name_en": "Bard Power Port Insertion（LA）",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "20,000",
+      "price_medium_risk": "25,000",
+      "price_hk_discount": "",
+      "cells": [
+        "局麻下輸液港置入（巴德）",
+        "日間手術",
+        "20,000",
+        "25,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "監測麻醉/全麻下輸液港置入（巴德）",
+      "name_en": "Bard Power Port Insertion（MAC/GA）",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "30,000",
+      "price_medium_risk": "37,500",
+      "price_hk_discount": "",
+      "cells": [
+        "監測麻醉/全麻下輸液港置入（巴德）",
+        "日間手術",
+        "30,000",
+        "37,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "general-surgery",
+      "page_label": "普通外科",
+      "url": "https://www.szufh.hk/general-surgery-fees.html",
+      "section": "膽囊",
+      "name_zh": "輸液港取出術",
+      "name_en": "Implantable Port Removal",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "9,800",
+      "price_medium_risk": "12,250",
+      "price_hk_discount": "",
+      "cells": [
+        "輸液港取出術",
+        "日間手術",
+        "9,800",
+        "12,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房幼針穿刺細胞檢查（",
+      "name_en": "FNA） Fine Needle Aspiration of Breast (FNA)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,800",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房幼針穿刺細胞檢查（",
+        "日間操作",
+        "2,800",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房粗針活組織檢查（",
+      "name_en": "CNB）/ 超聲波引導乳房粗針活組織檢查 Core Needle Biopsy of Breast (CNB) / Ultrasound-guided Core Biopsy of Breast",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "4,500",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房粗針活組織檢查（",
+        "日間操作",
+        "4,500",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "CNB 加項：每增加一個穿刺部位 / 更換活檢針 CNB Add-on: Each Additional Puncture Site / Replacement Biopsy Needle",
+      "name_en": "",
+      "stay": "/",
+      "price_package": "",
+      "price_standard_risk": "3,000 / 每點位 3,000 /",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "CNB 加項：每增加一個穿刺部位 / 更換活檢針 CNB Add-on: Each Additional Puncture Site / Replacement Biopsy Needle",
+        "/",
+        "3,000 / 每點位 3,000 /",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房真空輔助活組織檢查（",
+      "name_en": "VAB），單側，局部麻醉 Vacuum-assisted Breast Biopsy (VAB), Unilateral, Local Anaesthesia",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "18,000",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房真空輔助活組織檢查（",
+        "日間操作",
+        "18,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房真空輔助活組織檢查（",
+      "name_en": "VAB），雙側，局部麻醉 Vacuum-assisted Breast Biopsy (VAB), Bilateral, Local Anaesthesia",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "23,000",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房真空輔助活組織檢查（",
+        "日間操作",
+        "23,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房真空輔助活組織檢查（",
+      "name_en": "VAB），單側，監測麻醉 Vacuum-assisted Breast Biopsy (VAB), Unilateral, MAC",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "23,000",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房真空輔助活組織檢查（",
+        "日間操作",
+        "23,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房真空輔助活組織檢查（",
+      "name_en": "VAB），雙側，監測麻醉 Vacuum-assisted Breast Biopsy (VAB), Bilateral, MAC",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "28,000",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房真空輔助活組織檢查（",
+        "日間操作",
+        "28,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "VAB 加項：同側每增加一個進刀口 / 更換一把活檢槍 VAB Add-on: Each Additional Incision Site on the Same Side / Replacement Biopsy Gun",
+      "name_en": "",
+      "stay": "/",
+      "price_package": "",
+      "price_standard_risk": "4,000 / 每點位 4,000 /",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "VAB 加項：同側每增加一個進刀口 / 更換一把活檢槍 VAB Add-on: Each Additional Incision Site on the Same Side / Replacement Biopsy Gun",
+        "/",
+        "4,000 / 每點位 4,000 /",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "VAB 加項：同進刀口內第二個及以上結節 VAB Add-on: Second and Subsequent Lesions through the Same Incision Site",
+      "name_en": "",
+      "stay": "/",
+      "price_package": "",
+      "price_standard_risk": "2,000 / 每結節 2,000 /",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "VAB 加項：同進刀口內第二個及以上結節 VAB Add-on: Second and Subsequent Lesions through the Same Incision Site",
+        "/",
+        "2,000 / 每結節 2,000 /",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房腫塊切除術（單側）",
+      "name_en": "Breast Lump Excision (Unilateral)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "28,000",
+      "price_medium_risk": "35,000",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房腫塊切除術（單側）",
+        "日間手術",
+        "28,000",
+        "35,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "乳房腫塊切除術（雙側）",
+      "name_en": "Breast Lump Excision (Bilateral)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "35,000",
+      "price_medium_risk": "43,750",
+      "price_hk_discount": "",
+      "cells": [
+        "乳房腫塊切除術（雙側）",
+        "日間手術",
+        "35,000",
+        "43,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "單側部分乳房切除+前哨淋巴結活檢伴或不伴腋窩淋巴結清掃術",
+      "name_en": "Unilateral Partial Mastectomy + Sentinel Lymph Node Biopsy With or Without Axillary Lymph Node Dissection",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "70,000",
+      "price_medium_risk": "87,500",
+      "price_hk_discount": "",
+      "cells": [
+        "單側部分乳房切除+前哨淋巴結活檢伴或不伴腋窩淋巴結清掃術",
+        "3晚",
+        "70,000",
+        "87,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "單側乳腺癌根治術+前哨淋巴結活檢術伴或不伴腋窩淋巴結清掃術",
+      "name_en": "Unilateral Radical Mastectomy + Sentinel Lymph Node Biopsy With or Without Axillary Lymph Node Dissection",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "80,000",
+      "price_medium_risk": "100,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側乳腺癌根治術+前哨淋巴結活檢術伴或不伴腋窩淋巴結清掃術",
+        "5晚",
+        "80,000",
+        "100,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "超聲波引導乳房囊腫抽吸",
+      "name_en": "Ultrasound-guided Breast Cyst Aspiration",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "3,000",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "超聲波引導乳房囊腫抽吸",
+        "日間操作",
+        "3,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "breast",
+      "page_label": "乳腺外科",
+      "url": "https://www.szufh.hk/breast-surgery-fees.html",
+      "section": "乳腺抽針活檢",
+      "name_zh": "囊腫抽吸加項：每增加一個囊腫",
+      "name_en": "Cyst Aspiration Add-on: Each Additional Cyst",
+      "stay": "/",
+      "price_package": "",
+      "price_standard_risk": "600",
+      "price_medium_risk": "/",
+      "price_hk_discount": "",
+      "cells": [
+        "囊腫抽吸加項：每增加一個囊腫",
+        "/",
+        "600",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全膝關節置換術 - 指定植入物選項 （史賽克、捷邁邦美PS）",
+      "name_en": "Unilateral Total Knee Replacement (TKR) Stryker, Zimmer Biomet PS",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "42,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全膝關節置換術 - 指定植入物選項 （史賽克、捷邁邦美PS）",
+        "5晚",
+        "42,000",
+        ""
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全膝關節置換術 - 指定植入物選項 （強生、捷邁邦美CR）",
+      "name_en": "Unilateral Total Knee Replacement (TKR) Johnson & Johnson, Zimmer Biomet CR",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "88,000",
+      "price_medium_risk": "110,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全膝關節置換術 - 指定植入物選項 （強生、捷邁邦美CR）",
+        "5晚",
+        "88,000",
+        "110,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側單髁關節置換術（部份膝關節置換術） 指定植入物選項 （力達康、捷邁邦美）",
+      "name_en": "Unilateral Unicompartmental Knee Arthroplasty (UKA) / Partial Knee Replacement - LDK, Zimmer Biomet",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "42,000",
+      "price_medium_risk": "52,500",
+      "price_hk_discount": "",
+      "cells": [
+        "單側單髁關節置換術（部份膝關節置換術） 指定植入物選項 （力達康、捷邁邦美）",
+        "5晚",
+        "42,000",
+        "52,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全膝關節置換術 - 機械臂輔助CORI 指定植入物選項 （施乐辉）",
+      "name_en": "Unilateral Total Knee Replacement (TKR) Robotic-arm Assisted CORI - Smith & Nephew",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "68,000",
+      "price_medium_risk": "85,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全膝關節置換術 - 機械臂輔助CORI 指定植入物選項 （施乐辉）",
+        "5晚",
+        "68,000",
+        "85,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全膝關節置換術 - 機械臂輔助CORI 指定植入物選項 （施乐辉黑晶）",
+      "name_en": "Unilateral Total Knee Replacement (TKR) Robotic-arm Assisted CORI - Smith & Nephew Oxinium",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "108,000",
+      "price_medium_risk": "135,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全膝關節置換術 - 機械臂輔助CORI 指定植入物選項 （施乐辉黑晶）",
+        "5晚",
+        "108,000",
+        "135,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全髖關節置換術 - 陶瓷對陶瓷 指定植入物選項 （大博、力達康、蒙太因）",
+      "name_en": "Unilateral Total Hip Replacement (THR) Ceramic-on-Ceramic (Double Medical, LDK, Montagne)",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "83,000",
+      "price_medium_risk": "103,750",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全髖關節置換術 - 陶瓷對陶瓷 指定植入物選項 （大博、力達康、蒙太因）",
+        "6晚",
+        "83,000",
+        "103,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全髖關節置換術 - 陶瓷對陶瓷 指定植入物選項 （捷邁、史賽克）",
+      "name_en": "Unilateral Total Hip Replacement (THR) Ceramic-on-Ceramic Zimmer, Stryker)",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "95,000",
+      "price_medium_risk": "118,750",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全髖關節置換術 - 陶瓷對陶瓷 指定植入物選項 （捷邁、史賽克）",
+        "6晚",
+        "95,000",
+        "118,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全髖關節置換術 - 陶瓷對聚乙烯 指定植入物選項 （大博、力達康、蒙太因）",
+      "name_en": "Unilateral Total Hip Replacement (THR) Ceramic-on-Polyethylene (Double Medical, LDK, Montagne)",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "76,000",
+      "price_medium_risk": "95,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全髖關節置換術 - 陶瓷對聚乙烯 指定植入物選項 （大博、力達康、蒙太因）",
+        "6晚",
+        "76,000",
+        "95,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側全髖關節置換術 - 陶瓷對聚乙烯 指定植入物選項 （捷邁、史賽克）",
+      "name_en": "Unilateral Total Hip Replacement (THR) Ceramic-on-Polyethylene (Zimmer, Stryker)",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "88,000",
+      "price_medium_risk": "110,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側全髖關節置換術 - 陶瓷對聚乙烯 指定植入物選項 （捷邁、史賽克）",
+        "6晚",
+        "88,000",
+        "110,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【集採】腰椎減壓融合內固定術 (",
+      "name_en": "PLIF/TLIF) - 首個節段 [Centralized Procurement] Lumbar Decompression and Fusion with Internal Fixation (PLIF/TLIF) - First Level",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "108,000",
+      "price_medium_risk": "135,000",
+      "price_hk_discount": "",
+      "cells": [
+        "【集採】腰椎減壓融合內固定術 (",
+        "6晚",
+        "108,000",
+        "135,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【非集採】腰椎減壓融合內固定術 (",
+      "name_en": "PLIF/TLIF) - 首個節段 [Non-Centralized Procurement] Lumbar Decompression and Fusion with Internal Fixation (PLIF/TLIF) - First Level",
+      "stay": "6晚",
+      "price_package": "",
+      "price_standard_risk": "168,000",
+      "price_medium_risk": "210,000",
+      "price_hk_discount": "",
+      "cells": [
+        "【非集採】腰椎減壓融合內固定術 (",
+        "6晚",
+        "168,000",
+        "210,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【集採】頸椎前路椎間盤切除及融合術 (",
+      "name_en": "ACDF) - 首個節段 [Centralized Procurement] Anterior Cervical Discectomy and Fusion (ACDF) - First Level",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "128,000",
+      "price_medium_risk": "160,000",
+      "price_hk_discount": "",
+      "cells": [
+        "【集採】頸椎前路椎間盤切除及融合術 (",
+        "3晚",
+        "128,000",
+        "160,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【非集採】頸椎前路椎間盤切除及融合術 (",
+      "name_en": "ACDF) - 首個節段 [Non-Centralized Procurement] Anterior Cervical Discectomy and Fusion (ACDF) - First Level",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "170,000",
+      "price_medium_risk": "212,500",
+      "price_hk_discount": "",
+      "cells": [
+        "【非集採】頸椎前路椎間盤切除及融合術 (",
+        "3晚",
+        "170,000",
+        "212,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【集採】頸椎前路人工椎間盤置換術 (",
+      "name_en": "ADR) - 首個節段 [Centralized Procurement] Anterior Cervical Artificial Disc Replacement (ADR) - First Level",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "140,000",
+      "price_medium_risk": "175,000",
+      "price_hk_discount": "",
+      "cells": [
+        "【集採】頸椎前路人工椎間盤置換術 (",
+        "3晚",
+        "140,000",
+        "175,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "【集採】頸椎後路單開門椎管擴大成形術及內固定術 - 三個節段 [",
+      "name_en": "Centralized Procurement] Posterior Cervical Single-door Laminoplasty with Internal Fixation - Three Levels",
+      "stay": "4晚",
+      "price_package": "",
+      "price_standard_risk": "140,000",
+      "price_medium_risk": "175,000",
+      "price_hk_discount": "",
+      "cells": [
+        "【集採】頸椎後路單開門椎管擴大成形術及內固定術 - 三個節段 [",
+        "4晚",
+        "140,000",
+        "175,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "單側雙通道脊柱內鏡下（",
+      "name_en": "UBE）椎管神經減壓術 - 首個節段 Unilateral Biportal Endoscopic (UBE) Spinal Canal Nerve Decompression - First Level",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "140,000",
+      "price_medium_risk": "175,000",
+      "price_hk_discount": "",
+      "cells": [
+        "單側雙通道脊柱內鏡下（",
+        "3晚",
+        "140,000",
+        "175,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "骨科 - 腫塊切除術（5厘米以下）",
+      "name_en": "Excision of Lump (<5cm)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "12,000",
+      "price_medium_risk": "15,000",
+      "price_hk_discount": "",
+      "cells": [
+        "骨科 - 腫塊切除術（5厘米以下）",
+        "日間手術",
+        "12,000",
+        "15,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "骨科 - 腫塊切除術（5厘米以上）",
+      "name_en": "Excision of Lump (&ge;5cm)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "17,000",
+      "price_medium_risk": "21,250",
+      "price_hk_discount": "",
+      "cells": [
+        "骨科 - 腫塊切除術（5厘米以上）",
+        "日間手術",
+        "17,000",
+        "21,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "骨科 - 腱鞘囊腫切除術（簡單）",
+      "name_en": "Excision of Ganglion Cyst (Simple)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "11,000",
+      "price_medium_risk": "13,750",
+      "price_hk_discount": "",
+      "cells": [
+        "骨科 - 腱鞘囊腫切除術（簡單）",
+        "日間手術",
+        "11,000",
+        "13,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "骨科 - 腱鞘囊腫切除術（複雜）",
+      "name_en": "Excision of Ganglion Cyst (Complex)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "16,000",
+      "price_medium_risk": "20,000",
+      "price_hk_discount": "",
+      "cells": [
+        "骨科 - 腱鞘囊腫切除術（複雜）",
+        "日間手術",
+        "16,000",
+        "20,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "無痛肩周炎（冰凍肩）鬆解術",
+      "name_en": "Painless Frozen Shoulder (Adhesive Capsulitis) Release",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "9,800",
+      "price_medium_risk": "12,250",
+      "price_hk_discount": "",
+      "cells": [
+        "無痛肩周炎（冰凍肩）鬆解術",
+        "日間手術",
+        "9,800",
+        "12,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡前十字韌帶重建術 / 關節鏡後十字韌帶重建術",
+      "name_en": "Arthroscopic Anterior Cruciate Ligament (ACL) Reconstruction / Arthroscopic Posterior Cruciate Ligament (PCL) Reconstruction",
+      "stay": "4晚",
+      "price_package": "",
+      "price_standard_risk": "68,000",
+      "price_medium_risk": "85,000",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡前十字韌帶重建術 / 關節鏡後十字韌帶重建術",
+        "4晚",
+        "68,000",
+        "85,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡半月板成形術",
+      "name_en": "Arthroscopic Meniscal Meniscoplasty",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "49,000",
+      "price_medium_risk": "61,250",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡半月板成形術",
+        "2晚",
+        "49,000",
+        "61,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡前／後十字韌帶重建合併半月板修補／成形術",
+      "name_en": "ACL / PCL Reconstruction with Meniscal Repair / Meniscectomy",
+      "stay": "4晚",
+      "price_package": "",
+      "price_standard_risk": "90,000",
+      "price_medium_risk": "112,500",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡前／後十字韌帶重建合併半月板修補／成形術",
+        "4晚",
+        "90,000",
+        "112,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡滑膜切除術",
+      "name_en": "Arthroscopic Synovectomy",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "35,000",
+      "price_medium_risk": "43,750",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡滑膜切除術",
+        "2晚",
+        "35,000",
+        "43,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡軟骨成形術",
+      "name_en": "Arthroscopic Chondroplasty",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "38,000",
+      "price_medium_risk": "47,500",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡軟骨成形術",
+        "2晚",
+        "38,000",
+        "47,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡下踝關節韌帶修補術",
+      "name_en": "Arthroscopic Ankle Ligament Repair",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "53,000",
+      "price_medium_risk": "66,250",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡下踝關節韌帶修補術",
+        "2晚",
+        "53,000",
+        "66,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "orthopedic",
+      "page_label": "骨科",
+      "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+      "section": "膝關節置換",
+      "name_zh": "關節鏡下臀肌攣縮鬆解術",
+      "name_en": "Arthroscopic Gluteal Muscle Contracture Release",
+      "stay": "4晚",
+      "price_package": "",
+      "price_standard_risk": "36,000",
+      "price_medium_risk": "45,000",
+      "price_hk_discount": "",
+      "cells": [
+        "關節鏡下臀肌攣縮鬆解術",
+        "4晚",
+        "36,000",
+        "45,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "神經阻滯套餐（超聲引導下）",
+      "name_en": "Nerve Block Package (Ultrasound-Guided)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "3,600",
+      "price_medium_risk": "4,500",
+      "price_hk_discount": "",
+      "cells": [
+        "神經阻滯套餐（超聲引導下）",
+        "日間操作",
+        "3,600",
+        "4,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "神經造影+神經阻滯（手術室）",
+      "name_en": "Neurography + Nerve Block (OR)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "5,000",
+      "price_medium_risk": "6,250",
+      "price_hk_discount": "",
+      "cells": [
+        "神經造影+神經阻滯（手術室）",
+        "日間操作",
+        "5,000",
+        "6,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "神經射頻+造影+神經阻滯（手術室）",
+      "name_en": "Nerve Radiofrequency + Neurography + Nerve Block (OR)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "17,000",
+      "price_medium_risk": "21,250",
+      "price_hk_discount": "",
+      "cells": [
+        "神經射頻+造影+神經阻滯（手術室）",
+        "日間操作",
+        "17,000",
+        "21,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "三叉神經球囊壓迫術",
+      "name_en": "Balloon Compression for Trigeminal Neuralgia",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "32,000",
+      "price_medium_risk": "40,000",
+      "price_hk_discount": "",
+      "cells": [
+        "三叉神經球囊壓迫術",
+        "3晚",
+        "32,000",
+        "40,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "鞘內鎮痛泵植入術",
+      "name_en": "Intrathecal Analgesic Pump Implantation",
+      "stay": "5晚",
+      "price_package": "",
+      "price_standard_risk": "220,000",
+      "price_medium_risk": "275,000",
+      "price_hk_discount": "",
+      "cells": [
+        "鞘內鎮痛泵植入術",
+        "5晚",
+        "220,000",
+        "275,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "脊柱內鏡 - 腰椎（监测麻醉）",
+      "name_en": "Spinal Endoscopy - Lumbar Spine (MAC)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "40,000",
+      "price_medium_risk": "50,000",
+      "price_hk_discount": "",
+      "cells": [
+        "脊柱內鏡 - 腰椎（监测麻醉）",
+        "日間操作",
+        "40,000",
+        "50,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "脊柱內鏡 - 頸椎（监测麻醉）",
+      "name_en": "Spinal Endoscopy - Cervical Spine (MAC)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "40,000",
+      "price_medium_risk": "50,000",
+      "price_hk_discount": "",
+      "cells": [
+        "脊柱內鏡 - 頸椎（监测麻醉）",
+        "日間操作",
+        "40,000",
+        "50,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "脊髓電刺激植入術 - 第一期（測試階段）",
+      "name_en": "Spinal Cord Stimulator (SCS) Implantation - Stage 1 (Trial)",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "30,000",
+      "price_medium_risk": "37,500",
+      "price_hk_discount": "",
+      "cells": [
+        "脊髓電刺激植入術 - 第一期（測試階段）",
+        "3晚",
+        "30,000",
+        "37,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "pain",
+      "page_label": "疼痛科",
+      "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+      "section": "疼痛管理",
+      "name_zh": "脊髓電刺激植入術 - 第二期（永久植入）",
+      "name_en": "Spinal Cord Stimulator (SCS) Implantation - Stage 2 (Permanent Implant)",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "38,000",
+      "price_medium_risk": "47,500",
+      "price_hk_discount": "",
+      "cells": [
+        "脊髓電刺激植入術 - 第二期（永久植入）",
+        "1晚",
+        "38,000",
+        "47,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "內窺鏡腺樣增殖體切除手術",
+      "name_en": "Endoscopic Assisted Adenoidectomy",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "24,800",
+      "price_medium_risk": "31,000",
+      "price_hk_discount": "",
+      "cells": [
+        "內窺鏡腺樣增殖體切除手術",
+        "日間手術",
+        "24,800",
+        "31,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "扁桃體切除術",
+      "name_en": "Tonsillectomy",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "29,800",
+      "price_medium_risk": "37,250",
+      "price_hk_discount": "",
+      "cells": [
+        "扁桃體切除術",
+        "日間手術",
+        "29,800",
+        "37,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "內窺鏡扁桃體及腺樣增殖體切除手術",
+      "name_en": "Endoscopic Assisted Tonsillectomy and Adenoidectomy",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "32,800",
+      "price_medium_risk": "41,000",
+      "price_hk_discount": "",
+      "cells": [
+        "內窺鏡扁桃體及腺樣增殖體切除手術",
+        "日間手術",
+        "32,800",
+        "41,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "功能性內窺鏡鼻竇手術（不伴鼻瘜肉）",
+      "name_en": "Functional Endoscopic Sinus Surgery (FESS) without Nasal Polyps",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "50,000",
+      "price_medium_risk": "62,500",
+      "price_hk_discount": "",
+      "cells": [
+        "功能性內窺鏡鼻竇手術（不伴鼻瘜肉）",
+        "3晚",
+        "50,000",
+        "62,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "功能性內窺鏡鼻竇手術（伴有鼻瘜肉切除）",
+      "name_en": "Functional Endoscopic Sinus Surgery (FESS) with Nasal Polyps",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "55,000",
+      "price_medium_risk": "68,750",
+      "price_hk_discount": "",
+      "cells": [
+        "功能性內窺鏡鼻竇手術（伴有鼻瘜肉切除）",
+        "3晚",
+        "55,000",
+        "68,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "內窺鏡鼻中隔矯正 及 鼻甲骨切除術",
+      "name_en": "Endoscopic Septoplasty and Turbinectomy",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "35,000",
+      "price_medium_risk": "43,750",
+      "price_hk_discount": "",
+      "cells": [
+        "內窺鏡鼻中隔矯正 及 鼻甲骨切除術",
+        "2晚",
+        "35,000",
+        "43,750"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "功能性內窺鏡鼻竇手術 及 鼻中隔矯正術",
+      "name_en": "Functional Endoscopic Sinus Surgery (FESS) and Septoplasty",
+      "stay": "3晚",
+      "price_package": "",
+      "price_standard_risk": "70,000",
+      "price_medium_risk": "87,500",
+      "price_hk_discount": "",
+      "cells": [
+        "功能性內窺鏡鼻竇手術 及 鼻中隔矯正術",
+        "3晚",
+        "70,000",
+        "87,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "鼓膜修補術",
+      "name_en": "Myringoplasty",
+      "stay": "日间手术",
+      "price_package": "",
+      "price_standard_risk": "22,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "鼓膜修補術",
+        "日间手术",
+        "22,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中风险"
+      ]
+    },
+    {
+      "page_key": "ent",
+      "page_label": "耳鼻喉科",
+      "url": "https://www.szufh.hk/ent-surgery-fees.html",
+      "section": "腺樣體/扁桃體",
+      "name_zh": "顯微喉鏡+/-活組織檢查",
+      "name_en": "Micro Laryngoscopy+/-Biopsy",
+      "stay": "日间手术",
+      "price_package": "",
+      "price_standard_risk": "30,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "顯微喉鏡+/-活組織檢查",
+        "日间手术",
+        "30,000",
+        "/"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中风险"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "玻璃體注藥術（羅維視法瑞西單抗）",
+      "name_en": "Intravitreal Injection (Vabysmo / Faricimab)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "7,200",
+      "price_medium_risk": "9,000",
+      "price_hk_discount": "",
+      "cells": [
+        "玻璃體注藥術（羅維視法瑞西單抗）",
+        "日間手術",
+        "7,200",
+        "9,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "白內障超聲波晶體乳化術及植入人工晶體 (單焦距非散光) -單眼/ 局部麻醉",
+      "name_en": "Phacoemulsification (Phaco) Cataract Surgery and Insertion of Intraocular Lens (MONOFOCAL Non-Toric) - Unilateral/ LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "8,000",
+      "price_medium_risk": "10,000",
+      "price_hk_discount": "",
+      "cells": [
+        "白內障超聲波晶體乳化術及植入人工晶體 (單焦距非散光) -單眼/ 局部麻醉",
+        "日間手術",
+        "8,000",
+        "10,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "白內障超聲波晶體乳化術及植入人工晶體 (双焦距非散光) -單眼/ 局部麻醉",
+      "name_en": "Phacoemulsification (Phaco) Cataract Surgery and Insertion of Intraocular Lens (BIFOCAL Non-Toric) - Unilateral/ LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "10,600",
+      "price_medium_risk": "13,250",
+      "price_hk_discount": "",
+      "cells": [
+        "白內障超聲波晶體乳化術及植入人工晶體 (双焦距非散光) -單眼/ 局部麻醉",
+        "日間手術",
+        "10,600",
+        "13,250"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "白內障超聲波晶體乳化術及植入人工晶體 (",
+      "name_en": "EDOF) -單眼/ 局部麻醉 Phacoemulsification (Phaco) Cataract Surgery and Insertion of Intraocular Lens (EDOF) - Unilateral/ LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "16,000",
+      "price_medium_risk": "20,000",
+      "price_hk_discount": "",
+      "cells": [
+        "白內障超聲波晶體乳化術及植入人工晶體 (",
+        "日間手術",
+        "16,000",
+        "20,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "白內障超聲波晶體乳化術及植入人工晶體 (三焦距非散光) -單眼/ 局部麻醉",
+      "name_en": "Phacoemulsification (Phaco) Cataract Surgery and Insertion of Intraocular Lens (TRIFOCAL Non-Toric) - Unilateral/ LA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "26,000",
+      "price_medium_risk": "32,500",
+      "price_hk_discount": "",
+      "cells": [
+        "白內障超聲波晶體乳化術及植入人工晶體 (三焦距非散光) -單眼/ 局部麻醉",
+        "日間手術",
+        "26,000",
+        "32,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "斜視手術（1條水平肌）/全身麻醉",
+      "name_en": "Strabismus Surgery (1 Horizontal Muscle) / GA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "20,000",
+      "price_medium_risk": "25,000",
+      "price_hk_discount": "",
+      "cells": [
+        "斜視手術（1條水平肌）/全身麻醉",
+        "日間手術",
+        "20,000",
+        "25,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "ophthalmic",
+      "page_label": "眼科",
+      "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+      "section": "玻璃體",
+      "name_zh": "斜視手術（2條水平肌）/全身麻醉",
+      "name_en": "Strabismus Surgery (2 Horizontal Muscles) / GA",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "22,000",
+      "price_medium_risk": "27,500",
+      "price_hk_discount": "",
+      "cells": [
+        "斜視手術（2條水平肌）/全身麻醉",
+        "日間手術",
+        "22,000",
+        "27,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "emergency-plastic",
+      "page_label": "急诊整形外科",
+      "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+      "section": "美容縫合",
+      "name_zh": "急症/整形外科美容縫合套餐（4厘米以內）- 組織膠水縫合",
+      "name_en": "Emergency / Plastic Surgery Cosmetic Suture Package (&le;4cm) - Tissue Glue Closure",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,500",
+      "price_medium_risk": "3,125",
+      "price_hk_discount": "",
+      "cells": [
+        "急症/整形外科美容縫合套餐（4厘米以內）- 組織膠水縫合",
+        "日間操作",
+        "2,500",
+        "3,125"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "emergency-plastic",
+      "page_label": "急诊整形外科",
+      "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+      "section": "美容縫合",
+      "name_zh": "急症/整形外科美容縫合套餐（小於2厘米）",
+      "name_en": "Emergency / Plastic Surgery Cosmetic Suture Package (<2cm)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "2,400",
+      "price_medium_risk": "3,000",
+      "price_hk_discount": "",
+      "cells": [
+        "急症/整形外科美容縫合套餐（小於2厘米）",
+        "日間操作",
+        "2,400",
+        "3,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "emergency-plastic",
+      "page_label": "急诊整形外科",
+      "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+      "section": "美容縫合",
+      "name_zh": "急症/整形外科美容縫合套餐（2至4厘米）",
+      "name_en": "Emergency / Plastic Surgery Cosmetic Suture Package (2-4cm)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "3,200",
+      "price_medium_risk": "4,000",
+      "price_hk_discount": "",
+      "cells": [
+        "急症/整形外科美容縫合套餐（2至4厘米）",
+        "日間操作",
+        "3,200",
+        "4,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "emergency-plastic",
+      "page_label": "急诊整形外科",
+      "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+      "section": "美容縫合",
+      "name_zh": "急症/整形外科美容縫合套餐（4至8厘米）",
+      "name_en": "Emergency / Plastic Surgery Cosmetic Suture Package (4-8cm)",
+      "stay": "日間操作",
+      "price_package": "",
+      "price_standard_risk": "4,000",
+      "price_medium_risk": "5,000",
+      "price_hk_discount": "",
+      "cells": [
+        "急症/整形外科美容縫合套餐（4至8厘米）",
+        "日間操作",
+        "4,000",
+        "5,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險",
+        "手術價格 中等風險"
+      ]
+    },
+    {
+      "page_key": "cardiology",
+      "page_label": "心内科",
+      "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+      "section": "冠狀動脈",
+      "name_zh": "冠狀動脈造影（日間手術）",
+      "name_en": "Coronary Angiogram Package (Day Surgery)",
+      "stay": "日間手術",
+      "price_package": "",
+      "price_standard_risk": "22,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "冠狀動脈造影（日間手術）",
+        "日間手術",
+        "22,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險"
+      ]
+    },
+    {
+      "page_key": "cardiology",
+      "page_label": "心内科",
+      "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+      "section": "冠狀動脈",
+      "name_zh": "冠狀動脈造影（住院1晚）",
+      "name_en": "Coronary Angiogram Package (1-Night Inpatient)",
+      "stay": "1晚",
+      "price_package": "",
+      "price_standard_risk": "24,500",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "冠狀動脈造影（住院1晚）",
+        "1晚",
+        "24,500"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險"
+      ]
+    },
+    {
+      "page_key": "cardiology",
+      "page_label": "心内科",
+      "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+      "section": "冠狀動脈",
+      "name_zh": "冠狀動脈造影 + 冠狀動脈支架置入",
+      "name_en": "Coronary Angiogram + Percutaneous Coronary Intervention (PCI) Package",
+      "stay": "2晚",
+      "price_package": "",
+      "price_standard_risk": "58,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "冠狀動脈造影 + 冠狀動脈支架置入",
+        "2晚",
+        "58,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險"
+      ]
+    },
+    {
+      "page_key": "cardiology",
+      "page_label": "心内科",
+      "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+      "section": "冠狀動脈",
+      "name_zh": "冠狀動脈造影 + 冠狀動脈支架置入 每增加一個支架",
+      "name_en": "Coronary Angiogram + Percutaneous Coronary Intervention (PCI) Package - Each Additional Stent",
+      "stay": "/",
+      "price_package": "",
+      "price_standard_risk": "16,000",
+      "price_medium_risk": "",
+      "price_hk_discount": "",
+      "cells": [
+        "冠狀動脈造影 + 冠狀動脈支架置入 每增加一個支架",
+        "/",
+        "16,000"
+      ],
+      "headers": [
+        "套餐名稱 Package Option",
+        "標準住院天數 Standard Length of Stay",
+        "手術價格 一般風險"
+      ]
+    }
+  ]
+}
