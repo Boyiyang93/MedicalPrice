@@ -1,0 +1,19 @@
+Reference Charges for Common Procedures in Pilot Scheme
+Historical bill sizes statistics (2025 data, General Ward)
+Source: images/historical-page1.jpg – historical-page8.jpg
+
+Major Surgery — 50th percentile (median) total charges (HK$):
+  Anal Fistula / Fistulectomy: 56,302
+  Appendicectomy (Laparoscopic): 129,749
+  Breast lump excision: 96,693
+  Cholecystectomy (Laparoscopic): 116,362
+  Cholecystectomy (Open): 130,498
+  Colectomy (Laparoscopic): 213,039
+  Colectomy (Open): 267,691
+  Haemorrhoidectomy: 58,136
+  Hepatectomy: 323,106
+  Herniotomy: 71,524
+  Mastectomy: 225,091
+
+Each procedure shows 10th / 50th / 90th percentile for doctor fees, hospital charges, and total.
+Based on actual bill sizes for General Ward patients without complications.

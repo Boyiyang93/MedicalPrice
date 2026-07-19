@@ -1,0 +1,50 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+$260
+$338
+$416
+$210
+$273
+$336
+$280
+$364
+$448
+$330
+$429
+$528
+Remarks 備註:
+1.
+2.
+3.
+Urine & Stool Examination 尿液及糞便檢驗
+Enquiries 查詢: 2339 8921
+Rate for services provided in normal hours
+正常時段收費
+Pregnancy Test (EIA)
+妊娠試驗 (EIA)
+Routine Urinalysis
+小便常規檢測
+Fecal Immunochemical Test
+糞便免疫化學檢測 (大便潛血)
+Stool-Routine (ova & cysts)
+大便常規檢測
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+The above table only shows the common items of Urine & Stool Examination for reference. Please contact the
+Pathology Department for further details.
+此收費表只列出常見之尿液及糞便檢驗項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：22/08/2025

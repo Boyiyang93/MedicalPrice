@@ -1,0 +1,153 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+HEAD and Neck  頭頸部
+Plain 掃描
+$6,740
+$8,425
+$10,110
+Plain + Contrast 掃描 + 顯影
+$10,200
+$12,750
+$15,300
+Plain 掃描
+$6,740
+$8,425
+$10,110
+Plain + Contrast 掃描 + 顯影
+$10,910
+$13,638
+$16,365
+Plain 掃描
+$7,000
+$8,750
+$10,500
+Plain + Contrast 掃描 + 顯影
+$10,600
+$13,250
+$15,900
+VASCULAR  血管
+Plain 掃描
+$5,990
+$7,488
+$8,985
+Plain 掃描
+$10,020
+$12,525
+$15,030
+Contrast 顯影
+$9,810
+$12,263
+$14,715
+Plain + Contrast 掃描 + 顯影
+$10,600
+$13,250
+$15,900
+BODY  軀幹
+Plain + Contrast 掃描 + 顯影
+$15,810
+$19,423
+$23,035
+Plain + Contrast 掃描 + 顯影
+$12,250
+$15,313
+$18,375
+Plain 掃描
+$7,100
+$8,875
+$10,650
+Plain 掃描
+$7,580
+$9,475
+$11,370
+Plain + Contrast 掃描 + 顯影
+$11,450
+$14,313
+$17,175
+Plain 掃描
+$7,580
+$9,475
+$11,370
+Plain + Contrast 掃描 + 顯影
+$11,450
+$14,313
+$17,175
+Plain 掃描
+$7,580
+$9,475
+$11,370
+Plain + Contrast 掃描 + 顯影
+$11,450
+$14,313
+$17,175
+MUSCULOSKELETON  肌肉骨骼
+Plain 掃描
+$6,740
+$8,425
+$10,110
+Plain + Contrast 掃描 + 顯影
+$10,910
+$13,638
+$16,365
+Plain 掃描
+$6,740
+$8,425
+$10,110
+Plain + Contrast 掃描 + 顯影
+$10,710
+$13,388
+$16,065
+Remarks 備註:
+1.
+2.
+3.
+4.
+Enquiries 查詢: 2339 8560 / 61
+One Joint (Shoulder/Elbow/Wrist/Hip/Knee/Ankle)
+一邊關節 (肩/肘/手腕/髖/膝蓋/腳踝)
+50% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+During off-hours, Radiologist will be called back for radiological services, and an additional charge of 30% of the examination
+fee or HK$2000, whichever is higher, will be levied.
+如果要求放射科醫生在非正常時段內提供放射科服務，額外收費為該項檢查費用之百份之三十或HK$2000，以較高
+The above table only shows the common items of Magnetic Resonance Imaging for reference. Please contact the Radiology
+Department for further details.
+此收費表只列出常見之磁力共振掃描項目以作參考。如有需要，請向放射診斷部查詢詳情。
+ 
+Cervical / Thoracic / Lumbar Spine 頸椎 / 胸椎 / 腰椎
+Brain Angiogram (Circle of Willis) 腦動脈
+Brain (Plain ) & Brain Angiogram (Down to bifurcation)
+腦及腦動脈
+Thoracic / Abdominal Aorta 胸 ／腹大動脈
+ 
+Peripheral (Lower Limbs) Arteries 周邊 (下肢) 動脈
+Cardiac (Stress, Perfusion and Viability)
+心臟 (負荷,血流灌注及存活檢查)
+Breasts 乳房
+MRCP 膽胰管造影
+Upper Abdomen 上腹
+Lower Abdomen / Pelvis 下腹  / 盆腔
+Prostate 前列腺
+Pituitary Gland 腦下垂體
+Magnetic Resonance Imaging 磁力共振掃描
+Rate for services provided in normal hours
+正常時段收費
+Brain 腦
+Nasopharynx / Neck 鼻咽 / 頸
+Normal Hours 正常時段
+Off-Hours 非正常時段
+Mon – Fri 星期一至五
+08:30 - 18:00
+18:00 - 08:30
+Sat 星期六
+08:30 - 14:00
+14:00 - 08:30
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：17/12/2025

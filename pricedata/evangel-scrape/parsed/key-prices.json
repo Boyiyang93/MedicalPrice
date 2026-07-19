@@ -1,0 +1,152 @@
+{
+  "hospital_id": "evangel",
+  "name": "播道醫院",
+  "name_en": "Evangel Hospital",
+  "scraped": "2026-07-19",
+  "sources": {
+    "price_list": "https://www.evangel.org.hk/zh-hant/charges/price_list/",
+    "charges_2026": "https://evangel.org.hk/zh-hant/charges/charges_2026/",
+    "inpatient_pdf": "https://www.evangel.org.hk/images/charges/list_inpatient.pdf"
+  },
+  "effective": {
+    "ward_ot_outpatient": "2025-01-02",
+    "ct_mri": "2026-03-02",
+    "historical_surgery_year": 2025
+  },
+  "ward_daily": {
+    "effective": "2025-01-02",
+    "general_ward_min": 830,
+    "general_ward_max": 1020,
+    "semi_private_double": 1280,
+    "semi_private_single": 1920,
+    "private": 2350,
+    "day_bed_la_ivs_mac_le6h": 470,
+    "day_bed_over6h": 830,
+    "day_bed_ga_le8h": 830,
+    "deposit_hk_resident_general": {
+      "min": 900,
+      "max": 3500
+    },
+    "deposit_hk_resident_semi": 10000,
+    "deposit_hk_resident_private": 15000,
+    "deposit_non_hk_resident": 30000
+  },
+  "ot": {
+    "effective": "2025-01-02",
+    "ga_mac": {
+      "first_30min": {
+        "general": 2455,
+        "semi": 2985,
+        "private": 3690
+      },
+      "each_15min": {
+        "general": 815,
+        "semi": 985,
+        "private": 1225
+      }
+    },
+    "la_light_sedation": {
+      "first_15min": {
+        "general": 1170,
+        "semi": 1465,
+        "private": 1760
+      },
+      "each_15min": {
+        "general": 700,
+        "semi": 875,
+        "private": 1055
+      }
+    },
+    "surcharge_non_office_hours_pct": 100
+  },
+  "outpatient": {
+    "effective": "2025-01-02",
+    "gp_weekday": 285,
+    "gp_sunday_holiday_storm": 395,
+    "gp_senior_discount_pct": 10,
+    "specialist_followup": 675,
+    "specialist_first": 1010,
+    "specialist_groups": [
+      "心臟科、皮膚科、內分泌及糖尿科、耳鼻喉科、腸胃肝臟科、婦產科、內科、眼科、骨科、呼吸系統科、外科、泌尿科",
+      "心胸肺外科、臨床腫瘤科、減重及糖尿外科、腦神經科、神經外科、整形整容外科、精神科、痛症治療"
+    ]
+  },
+  "imaging": {
+    "mri": {
+      "effective": "2026-03-02",
+      "brain_plain": {
+        "general": 6200,
+        "semi": 7700,
+        "private": 9300,
+        "outpatient": 5500
+      },
+      "brain_contrast": {
+        "general": 10000,
+        "semi": 12000,
+        "private": 15000,
+        "outpatient": 9000
+      }
+    },
+    "ct": {
+      "effective": "2026-03-02",
+      "brain_plain": {
+        "general": 2300,
+        "semi": 2700,
+        "private": 3400,
+        "outpatient": 2000
+      },
+      "brain_contrast": {
+        "general": 4000,
+        "semi": 4800,
+        "private": 5800,
+        "outpatient": 3500
+      }
+    }
+  },
+  "packages": {
+    "outpatient_hospital_only": {
+      "colonoscopy": 4100,
+      "ogd": 3100,
+      "colonoscopy_ogd": 6100
+    },
+    "day_case_total_care": {
+      "ogd": 13000,
+      "colonoscopy": 15500,
+      "colonoscopy_ogd": 26500,
+      "source": "list_endo_day.pdf (includes surgeon + anaesthesia)"
+    },
+    "cataract_one_eye": {
+      "list": 22800,
+      "promo": 21800
+    },
+    "haemorrhoidectomy_class_c": {
+      "open_2d1n": 37000,
+      "stapled_2d1n": 55000
+    },
+    "total_knee_replacement_5d4n_general": 133000,
+    "flexible_cystoscopy_day": {
+      "no_mac": 14000,
+      "with_mac": 16500
+    },
+    "colposcopy_biopsy_la_day_class_c": 17900,
+    "hysteroscopy_d_c_class_c": 30900,
+    "blepharoplasty_class_c": 22000,
+    "breast_augmentation_class_c_2d1n": 120000
+  },
+  "historical_highlights_p50_total_general_ward": {
+    "lap_cholecystectomy": 37347,
+    "haemorrhoidectomy": 172255,
+    "colonoscopy_polypectomy": 77260,
+    "gastroscopy_polypectomy": 17087,
+    "gastro_colonoscopy": 23116,
+    "tonsillectomy": 18484,
+    "knee_arthroscopy": 112556,
+    "phaco_iol": 33653
+  },
+  "notes": [
+    "病房/手術室/門診診金 PDF 生效 2025-01-02；CT/MRI 生效 2026-03-02",
+    "常見手術統計為 2025 年普通房單一手術之中位總收費（含醫生費）",
+    "門診內窺鏡套餐僅含醫院費；日間手術套餐含醫生及麻醉",
+    "db.js 未回写"
+  ]
+}

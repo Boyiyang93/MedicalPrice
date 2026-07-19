@@ -1,0 +1,280 @@
+{
+  "hospital_id": "twah",
+  "name": "荃灣港安醫院",
+  "scraped": "2026-07-19",
+  "sources": {
+    "fees_pages": [
+      "https://www.twah.org.hk/tc/fees-and-charges",
+      "https://www.twah.org.hk/en/fees-and-charges"
+    ],
+    "domain": "https://www.twah.org.hk"
+  },
+  "effective": {
+    "opd_pdf": "2026-06-29",
+    "operating_theatre": "2026-06-01",
+    "radiology": "2026-06",
+    "surgery_historical": "2025 calendar year data",
+    "ward_html": "current on website"
+  },
+  "pdfs_downloaded": 42,
+  "pdfs": [
+    {
+      "url": "4 OPD_2026_updated on 28 Apr 2026_v1 (003).pdf",
+      "file": "pdfs/4 OPD_2026_updated on 28 Apr 2026_v1 (003).pdf",
+      "text": "parsed/4 OPD_2026_updated on 28 Apr 2026_v1 (003).txt"
+    },
+    {
+      "url": "4 OPD_2026_updated on 29 Jun 2026.pdf",
+      "file": "pdfs/4 OPD_2026_updated on 29 Jun 2026.pdf",
+      "text": "parsed/4 OPD_2026_updated on 29 Jun 2026.txt"
+    },
+    {
+      "url": "5c Physiotherapy_June 2026__.pdf",
+      "file": "pdfs/5c Physiotherapy_June 2026__.pdf",
+      "text": "parsed/5c Physiotherapy_June 2026__.txt"
+    },
+    {
+      "url": "Budget_estimate_form.pdf",
+      "file": "pdfs/Budget_estimate_form.pdf",
+      "text": "parsed/Budget_estimate_form.txt"
+    },
+    {
+      "url": "Charge for Common Surgery 2026 - for year 2025.pdf",
+      "file": "pdfs/Charge for Common Surgery 2026 - for year 2025.pdf",
+      "text": "parsed/Charge for Common Surgery 2026 - for year 2025.txt"
+    },
+    {
+      "url": "Copy of 2 Operating Theatre_June 2026.pdf",
+      "file": "pdfs/Copy of 2 Operating Theatre_June 2026.pdf",
+      "text": "parsed/Copy of 2 Operating Theatre_June 2026.txt"
+    },
+    {
+      "url": "Copy of 3 Nursing Procedures_June 2026.pdf",
+      "file": "pdfs/Copy of 3 Nursing Procedures_June 2026.pdf",
+      "text": "parsed/Copy of 3 Nursing Procedures_June 2026.txt"
+    },
+    {
+      "url": "Copy of 5d Other Services_June 2026.pdf",
+      "file": "pdfs/Copy of 5d Other Services_June 2026.pdf",
+      "text": "parsed/Copy of 5d Other Services_June 2026.txt"
+    },
+    {
+      "url": "Copy of 5e Blood Tranfusion_June 2026.pdf",
+      "file": "pdfs/Copy of 5e Blood Tranfusion_June 2026.pdf",
+      "text": "parsed/Copy of 5e Blood Tranfusion_June 2026.txt"
+    },
+    {
+      "url": "Copy of 6 Medical Record_April 2025.pdf",
+      "file": "pdfs/Copy of 6 Medical Record_April 2025.pdf",
+      "text": "parsed/Copy of 6 Medical Record_April 2025.txt"
+    },
+    {
+      "url": "HKAH LMC Leaflet_02_web.pdf",
+      "file": "pdfs/HKAH LMC Leaflet_02_web.pdf",
+      "text": "parsed/HKAH LMC Leaflet_02_web.txt"
+    },
+    {
+      "url": "Low charge bed conditions - 6.2026.pdf",
+      "file": "pdfs/Low charge bed conditions - 6.2026.pdf",
+      "text": "parsed/Low charge bed conditions - 6.2026.txt"
+    },
+    {
+      "url": "Special Offer for Referrals from HA 2026.pdf",
+      "file": "pdfs/Special Offer for Referrals from HA 2026.pdf",
+      "text": "parsed/Special Offer for Referrals from HA 2026.txt"
+    },
+    {
+      "url": "TWAH Breast Health Booklet_04_web-2.pdf",
+      "file": "pdfs/TWAH Breast Health Booklet_04_web-2.pdf",
+      "text": "parsed/TWAH Breast Health Booklet_04_web-2.txt"
+    },
+    {
+      "url": "TWAH CCIC-Booklet_03_web-2.pdf",
+      "file": "pdfs/TWAH CCIC-Booklet_03_web-2.pdf",
+      "text": "parsed/TWAH CCIC-Booklet_03_web-2.txt"
+    },
+    {
+      "url": "TWAH Cataract Extraction leaflet_01_web-2.pdf",
+      "file": "pdfs/TWAH Cataract Extraction leaflet_01_web-2.pdf",
+      "text": "parsed/TWAH Cataract Extraction leaflet_01_web-2.txt"
+    },
+    {
+      "url": "TWAH Cognitive Impairment Screening leaflet_03_web-2.pdf",
+      "file": "pdfs/TWAH Cognitive Impairment Screening leaflet_03_web-2.pdf",
+      "text": "parsed/TWAH Cognitive Impairment Screening leaflet_03_web-2.txt"
+    },
+    {
+      "url": "TWAH Cognitive Impairment Screening leaflet_03_web.pdf",
+      "file": "pdfs/TWAH Cognitive Impairment Screening leaflet_03_web.pdf",
+      "text": "parsed/TWAH Cognitive Impairment Screening leaflet_03_web.txt"
+    },
+    {
+      "url": "TWAH Dietitian Services Leaflet_01 web.pdf",
+      "file": "pdfs/TWAH Dietitian Services Leaflet_01 web.pdf",
+      "text": "parsed/TWAH Dietitian Services Leaflet_01 web.txt"
+    },
+    {
+      "url": "TWAH Extracorporeal Shock Wave Lithotripsy leaflet__web.pdf",
+      "file": "pdfs/TWAH Extracorporeal Shock Wave Lithotripsy leaflet__web.pdf",
+      "text": "parsed/TWAH Extracorporeal Shock Wave Lithotripsy leaflet__web.txt"
+    },
+    {
+      "url": "TWAH Gerneral dental leaflet_01.pdf",
+      "file": "pdfs/TWAH Gerneral dental leaflet_01.pdf",
+      "text": "parsed/TWAH Gerneral dental leaflet_01.txt"
+    },
+    {
+      "url": "TWAH Laser dental leaflet_01.pdf",
+      "file": "pdfs/TWAH Laser dental leaflet_01.pdf",
+      "text": "parsed/TWAH Laser dental leaflet_01.txt"
+    },
+    {
+      "url": "TWAH Lung Assessment Program Leaflet 01_web.pdf",
+      "file": "pdfs/TWAH Lung Assessment Program Leaflet 01_web.pdf",
+      "text": "parsed/TWAH Lung Assessment Program Leaflet 01_web.txt"
+    },
+    {
+      "url": "TWAH Maternal Fetal Medicine Clinic Leaflet_26.5_merge.pdf",
+      "file": "pdfs/TWAH Maternal Fetal Medicine Clinic Leaflet_26.5_merge.pdf",
+      "text": "parsed/TWAH Maternal Fetal Medicine Clinic Leaflet_26.5_merge.txt"
+    },
+    {
+      "url": "TWAH Medical Skin Treatment Leaflet_01_web.pdf",
+      "file": "pdfs/TWAH Medical Skin Treatment Leaflet_01_web.pdf",
+      "text": "parsed/TWAH Medical Skin Treatment Leaflet_01_web.txt"
+    },
+    {
+      "url": "TWAH Minimally Invasive Surgery Booklet_01_web.pdf",
+      "file": "pdfs/TWAH Minimally Invasive Surgery Booklet_01_web.pdf",
+      "text": "parsed/TWAH Minimally Invasive Surgery Booklet_01_web.txt"
+    },
+    {
+      "url": "TWAH Oncology Services Leaflet_01.pdf",
+      "file": "pdfs/TWAH Oncology Services Leaflet_01.pdf",
+      "text": "parsed/TWAH Oncology Services Leaflet_01.txt"
+    },
+    {
+      "url": "TWAH Orthopedic _ Traumatology Service Leaflet_01.pdf",
+      "file": "pdfs/TWAH Orthopedic _ Traumatology Service Leaflet_01.pdf",
+      "text": "parsed/TWAH Orthopedic _ Traumatology Service Leaflet_01.txt"
+    },
+    {
+      "url": "TWAH Plastic Surgery leaflet_01.pdf",
+      "file": "pdfs/TWAH Plastic Surgery leaflet_01.pdf",
+      "text": "parsed/TWAH Plastic Surgery leaflet_01.txt"
+    },
+    {
+      "url": "TWAH Pre stroke Risk Assessment Program Leaflet_02_web-2.pdf",
+      "file": "pdfs/TWAH Pre stroke Risk Assessment Program Leaflet_02_web-2.pdf",
+      "text": "parsed/TWAH Pre stroke Risk Assessment Program Leaflet_02_web-2.txt"
+    },
+    {
+      "url": "TWAH Pre stroke Risk Assessment Program Leaflet_02_web-3.pdf",
+      "file": "pdfs/TWAH Pre stroke Risk Assessment Program Leaflet_02_web-3.pdf",
+      "text": "parsed/TWAH Pre stroke Risk Assessment Program Leaflet_02_web-3.txt"
+    },
+    {
+      "url": "TWAH-Men_s Health leaflet _ insert web-2.pdf",
+      "file": "pdfs/TWAH-Men_s Health leaflet _ insert web-2.pdf",
+      "text": "parsed/TWAH-Men_s Health leaflet _ insert web-2.txt"
+    },
+    {
+      "url": "TWAH-OB Booklet_01_web.pdf",
+      "file": "pdfs/TWAH-OB Booklet_01_web.pdf",
+      "text": "parsed/TWAH-OB Booklet_01_web.txt"
+    },
+    {
+      "url": "TWAH-Physical Examination Booklet-A5_01_web.pdf",
+      "file": "pdfs/TWAH-Physical Examination Booklet-A5_01_web.pdf",
+      "text": "parsed/TWAH-Physical Examination Booklet-A5_01_web.txt"
+    },
+    {
+      "url": "TWAH-Skin Clinic leaflet_01_web.pdf",
+      "file": "pdfs/TWAH-Skin Clinic leaflet_01_web.pdf",
+      "text": "parsed/TWAH-Skin Clinic leaflet_01_web.txt"
+    },
+    {
+      "url": "TWAH-Sleep Apnoea Leaflet_01_web_update.pdf",
+      "file": "pdfs/TWAH-Sleep Apnoea Leaflet_01_web_update.pdf",
+      "text": "parsed/TWAH-Sleep Apnoea Leaflet_01_web_update.txt"
+    },
+    {
+      "url": "TWAH-Well Baby Leaflet_01_web.pdf",
+      "file": "pdfs/TWAH-Well Baby Leaflet_01_web.pdf",
+      "text": "parsed/TWAH-Well Baby Leaflet_01_web.txt"
+    },
+    {
+      "url": "低收費病床乳房手術套餐 Poster-2.pdf",
+      "file": "pdfs/低收費病床乳房手術套餐 Poster-2.pdf",
+      "text": "parsed/低收費病床乳房手術套餐 Poster-2.txt"
+    },
+    {
+      "url": "低收費病床手術套餐_ 14.5.2026.pdf",
+      "file": "pdfs/低收費病床手術套餐_ 14.5.2026.pdf",
+      "text": "parsed/低收費病床手術套餐_ 14.5.2026.txt"
+    },
+    {
+      "url": "低收費病床日間手術套餐 _ 14.5.2026.pdf",
+      "file": "pdfs/低收費病床日間手術套餐 _ 14.5.2026.pdf",
+      "text": "parsed/低收費病床日間手術套餐 _ 14.5.2026.txt"
+    },
+    {
+      "url": "複本 Pathology_2025 (Revised).pdf",
+      "file": "pdfs/複本 Pathology_2025 (Revised).pdf",
+      "text": "parsed/複本 Pathology_2025 (Revised).txt"
+    },
+    {
+      "url": "複本 Radiology_June 2026.pdf",
+      "file": "pdfs/複本 Radiology_June 2026.pdf",
+      "text": "parsed/複本 Radiology_June 2026.txt"
+    }
+  ],
+  "outpatient": {
+    "general_gp_weekday": 270,
+    "urgent_care_weekday_08_20": 480,
+    "urgent_care_night_20_24": 800,
+    "urgent_care_night_0_8": 950,
+    "urgent_care_weekend_holiday_08_24": 800,
+    "specialist_examples": {
+      "general_surgery": 600,
+      "cardiology": "800-1200",
+      "dermatology_ent": 650
+    },
+    "note": "4 OPD_2026 PDF; facility fee HK$500/30min + HK$1500 procedure from site policy"
+  },
+  "ward_daily_general_ward": {
+    "standard_3_beds": 1000,
+    "semi_private_2_beds": 1250,
+    "semi_private_single": 2200,
+    "premium_private_single": 3500,
+    "day_bed_standard": 700,
+    "deposit_standard": 10000
+  },
+  "operating_theatre_first_30min": {
+    "standard": 3000,
+    "semi_private": 4500,
+    "premium_private": 5100,
+    "low_charge_bed": 2250
+  },
+  "imaging_standard_ward": {
+    "ct_brain_plain": 2900,
+    "ct_brain_contrast": 3900,
+    "ct_brain_plain_contrast": 4800,
+    "mri_brain_plain": 6900,
+    "mri_brain_contrast": 10700,
+    "opd_ct_brain_plain": 2500,
+    "opd_mri_brain_plain": 6400
+  },
+  "surgery_historical_p50_total": {
+    "note": "2025 standard-room statistics; includes doctor + hospital",
+    "cholecystectomy_lap": 50325,
+    "colonoscopy_day": 46678,
+    "gastro_colonoscopy_day": 57452,
+    "caesarean": 130111,
+    "haemorrhoidectomy": 70732
+  },
+  "notes": [
+    "Hospital fee PDFs exclude doctor fees unless package/total",
+    "Not written to data/db.js"
+  ]
+}

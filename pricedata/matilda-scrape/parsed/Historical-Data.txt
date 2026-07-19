@@ -1,0 +1,593 @@
+Matilda & War Memorial Hospital
+01 Jan 2025 - 31 Dec 2025
+*Points to note: please refer to the "Remarks" worksheet
+Record 
+No.
+Code
+Elective Procedures
+Provision of 
+Procedure (Yes 
+/ No)
+Annual Number of 
+Discharges (In 
+Range)
+Average Length of 
+Stay (No. of Day)
+Percentile
+Doctor's Fees (HK$)
+Hospital Charges (HK$)
+Total Charges (HK$)
+Remarks
+50th percentile
+$32,536
+$28,531
+$61,067
+90th percentile
+$43,260
+$57,209
+$100,469
+50th percentile
+$35,153
+$46,444
+$81,597
+90th percentile
+$43,511
+$55,435
+$98,946
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$71,000
+$36,722
+$107,722
+90th percentile
+$93,600
+$55,089
+$148,689
+50th percentile
+$20,478
+$21,967
+$42,445
+90th percentile
+$20,478
+$21,967
+$42,445
+50th percentile
+$14,685
+$24,824
+$39,509
+90th percentile
+$17,360
+$30,635
+$47,995
+50th percentile
+$73,700
+$79,093
+$152,793
+90th percentile
+$98,040
+$88,542
+$186,582
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$25,500
+$21,452
+$46,952
+90th percentile
+$25,500
+$21,452
+$46,952
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$22,765
+$32,069
+$54,834
+90th percentile
+$31,967
+$39,073
+$71,040
+50th percentile
+$11,540
+$12,767
+$24,307
+90th percentile
+$20,980
+$24,975
+$45,955
+50th percentile
+90th percentile
+50th percentile
+$8,000
+$6,616
+$14,616
+90th percentile
+$11,900
+$8,039
+$19,939
+50th percentile
+90th percentile
+50th percentile
+$7,800
+$13,092
+$20,892
+90th percentile
+$17,370
+$18,437
+$35,807
+50th percentile
+90th percentile
+50th percentile
+$25,500
+$19,603
+$45,103
+90th percentile
+$39,500
+$23,337
+$62,837
+50th percentile
+90th percentile
+50th percentile
+$14,049
+$29,892
+$43,941
+90th percentile
+$14,049
+$29,892
+$43,941
+50th percentile
+$25,800
+$35,053
+$60,853
+90th percentile
+$30,453
+$49,048
+$79,501
+50th percentile
+$20,808
+$21,968
+$42,776
+90th percentile
+$34,314
+$31,327
+$65,641
+50th percentile
+$28,141
+$44,166
+$72,307
+90th percentile
+$29,117
+$44,282
+$73,399
+50th percentile
+$17,952
+$24,326
+$42,278
+90th percentile
+$27,179
+$39,351
+$66,530
+50th percentile
+$22,849
+$36,610
+$59,459
+90th percentile
+$29,920
+$39,801
+$69,721
+50th percentile
+$34,189
+$28,502
+$62,691
+90th percentile
+$36,874
+$29,888
+$66,762
+50th percentile
+$31,129
+$44,083
+$75,212
+90th percentile
+$53,586
+$55,773
+$109,359
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$54,154
+$55,639
+$109,793
+90th percentile
+$67,684
+$57,417
+$125,101
+50th percentile
+$41,201
+$27,000
+$68,201
+90th percentile
+$109,966
+$34,681
+$144,647
+50th percentile
+$49,273
+$32,659
+$81,932
+90th percentile
+$55,931
+$38,712
+$94,643
+50th percentile
+$93,250
+$75,454
+$168,704
+90th percentile
+$140,650
+$96,243
+$236,893
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$14,049
+$29,892
+$43,941
+90th percentile
+$14,049
+$29,892
+$43,941
+50th percentile
+$55,750
+$76,322
+$132,072
+90th percentile
+$88,413
+$104,882
+$193,295
+50th percentile
+90th percentile
+50th percentile
+$76,440
+$75,683
+$152,123
+90th percentile
+$85,764
+$108,061
+$193,825
+50th percentile
+$61,500
+$58,797
+$120,297
+90th percentile
+$61,500
+$58,797
+$120,297
+50th percentile
+$52,236
+$65,482
+$117,718
+90th percentile
+$75,250
+$67,888
+$143,138
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+90th percentile
+50th percentile
+$321,000
+$250,065
+$571,065
+90th percentile
+$326,000
+$270,038
+$596,038
+50th percentile
+$115,000
+$92,813
+$207,813
+90th percentile
+$115,000
+$92,813
+$207,813
+50th percentile
+$173,000
+$155,231
+$328,231
+90th percentile
+$200,600
+$180,333
+$380,933
+50th percentile
+$76,300
+$39,978
+$116,278
+90th percentile
+$82,460
+$43,574
+$126,034
+50th percentile
+90th percentile
+50th percentile
+$10,787
+$16,512
+$27,299
+90th percentile
+$27,322
+$24,088
+$51,410
+50th percentile
+$54,270
+$35,648
+$89,918
+90th percentile
+$72,400
+$42,040
+$114,440
+30
+Trigger finger release
+OS006
+29
+3.0
+30 - 100
+Yes
+Vaginal delivery
+No
+2.9
+<30
+Yes
+Day Surgery
+<30
+Yes
+OG006
+28
+0.7
+<30
+Yes
+26
+4.2
+<30
+Yes
+Spine fusion
+OS005
+Tonsillectomy
+OT003
+Thyroidectomy (Total)
+SU009-02
+27
+6.0
+<30
+Yes
+Thyroidectomy (Hemi)
+SU009-01
+Ovarian cystectomy (Open)
+OG005-02
+24
+No
+Ovarian cystectomy (Laparoscopic)
+OG005-01
+Phacoemulsification and intraocular lens implantation
+OP002
+25
+Day Surgery
+No
+No
+1.2
+<30
+Yes
+2.0
+<30
+Yes
+Open reduction and internal fixation of various fractures (Upper 
+Limb)
+OS004-01
+Day Surgery
+No
+Knee arthroscopy
+OS002
+19
+1.7
+<30
+Yes
+Open reduction and internal fixation of various fractures (Lower 
+Limb)
+OS004-02
+23
+Day Surgery
+<30
+Yes
+Laminectomy
+OS003
+20
+1.3
+<30
+Yes
+LASIK
+OP001
+21
+Day Surgery
+No
+No
+22
+Day Surgery
+<30
+Yes
+No
+Micro-laryngoscopy
+OT002
+Herniotomy
+SU008
+17
+Day Surgery
+No
+No
+Hysterectomy (Open)
+OG004-02
+18
+2.6
+<30
+Yes
+Hysterectomy (Laparoscopic)
+OG004-01
+No
+Day Surgery
+<30
+Yes
+1.8
+<30
+Yes
+Day Surgery
+<30
+Yes
+1.1
+<30
+No
+1.4
+<30
+Yes
+Hernia repair (Open)
+Yes
+Haemorrhoidectomy
+SU007-02
+16
+Day Surgery
+No
+No
+Hernia repair (Laparoscopic)
+SU007-01
+Day Surgery
+12
+Day Surgery
+<30
+Yes
+Gastroscopy and colonoscopy with or without polypectomy
+ED003
+13
+Day Surgery
+101 - 200
+Yes
+1.1
+<30
+Yes
+Gastroscopy with or without polypectomy
+ED004
+14
+Day Surgery
+30 - 100
+Yes
+1.0
+<30
+Yes
+SU006
+15
+Colposcopy
+OG002
+9
+Day Surgery
+30 - 100
+Cystoscopy with or without biopsy
+SU005
+10
+Day Surgery
+<30
+Yes
+No
+11
+Day Surgery
+<30
+Yes
+No
+No
+Dilation and curettage
+OG003
+Direct laryngoscopy with or without vocal cord polyp biopsy
+OT001
+Colectomy (Open)
+SU004-02
+7
+No
+Colectomy (Laparoscopic)
+SU004-01
+No
+Colonoscopy with or without polypectomy
+ED002
+8
+Day Surgery
+101 - 200
+Yes
+1.0
+<30
+Yes
+Yes
+No
+Day Surgery
+<30
+Yes
+No
+1.4
+<30
+Yes
+4.6
+30 - 100
+Yes
+1.8
+Day Surgery
+<30
+Yes
+6
+Day Surgery
+<30
+Yes
+No
+Circumcision
+SU003
+Cholecystectomy (Open)
+SU002-02
+5
+Day Surgery
+No
+No
+Cholecystectomy (Laparoscopic)
+SU002-01
+1.5
+<30
+Yes
+Historical Bill Sizes
+Name of hospital:
+Reporting Period:
+<30
+Yes
+Caesarean section
+OG001
+3
+ED001
+2
+Breast lump excision
+SU001
+1
+Carpal tunnel release
+OS001
+4
+Bronchoscopy with or without biopsy

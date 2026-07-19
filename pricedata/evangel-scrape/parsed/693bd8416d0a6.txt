@@ -1,0 +1,209 @@
+Effective Date 生效日期: 2/1/2026
+Laboratory Examination 病理化驗
+General Ward/
+Day Bed
+普通房/
+日間病床
+HK$
+Semi-Private/
+Semi-Private
+Single Room
+雙人房/
+半私家單人房
+HK$
+Private
+Room
+單人房
+HK$
+Outpatient
+門診
+HK$
+Biochemistry 生化學
+LFT, Liver Function Tests
+肝功能
+$710
+$930
+$1,115
+$665
+  Albumin
+  白蛋白
+  Alkaline Phosphatase
+  鹼性磷酸
+  AST
+  谷草胺酸轉氨酶
+  GGT
+  丙種谷氨轉肽酶
+  Protein
+  總蛋白
+  SGPT
+  谷丙轉氨酶
+  Total Bilirubin
+  總膽紅素
+RFT, Renal Function Tests
+腎功能
+$680
+$890
+$1,070
+$610
+  Bicarbonate
+  重碳酸鹽
+  Creatinine
+  肌酸肝
+  Chloride
+  氯
+  K
+  鉀
+  Na
+  鈉
+  Urea
+  尿素
+Lipid Profile
+血脂肪檢查
+$935
+$1,220
+$1,465
+$885
+  Total Cholesterol
+  總膽固醇
+  HDL Cholesterol
+  高密度膽固醇
+  LDL Cholesterol
+  低密度膽固醇
+  Triglycerides
+  三酸甘油脂
+Fasting Blood Glucose
+禁食血糖
+$185
+$235
+$290
+$170
+Endocrinology 內分泌學
+Thyroid Function Profile
+甲狀腺功能檢查
+$1,030
+$1,315
+$1,595
+$940
+  Free T4
+  游離四碘甲狀腺氨酸
+  TSH
+  促甲狀腺激素
+Prolactin
+催乳激素
+$795
+$1,005
+$1,215
+$720
+Vitamin B12
+維生素B12
+$765
+$975
+$1,180
+$700
+Histology & Cytology 組織病理及細胞學
+Frozen Section (Every 5 Blocks)
+急凍切片法檢驗
+$2,625
+$3,415
+$3,950
+$2,625
+Pap Smear
+柏氏單層細胞塗片
+$490
+$635
+$750
+$490
+Routine Histology of Large Surgical
+Specimen
+組織病理常規化驗 (大)
+$3,475
+$4,550
+$5,350
+$3,475
+Routine Histology of Small Surgical
+Specimen
+組織病理常規化驗 (細)
+$2,175
+$2,865
+$3,350
+$2,175
+Routine Histology of Small Biopsy
+活組織(每個樣本)
+$1,725
+$2,275
+$2,625
+$1,725
+Hepatitis A Antibody
+甲型肝炎抗體
+$820
+$1,035
+$1,255
+$745
+Hepatitis B Antibody
+乙型肝炎抗體
+$635
+$790
+$955
+$530
+Hepatitis B Antigen
+乙型肝炎抗原
+$540
+$670
+$810
+$450
+Microbiology  微生物學
+Acid-Fast Bacilli Smear, Culture
+and Sensitivity
+結核桿菌抹片，培養及藥物抗
+菌測試
+$1,990
+$2,130
+$2,395
+$1,730
+Blood Culture & Sensitivity
+血細菌培養及藥物抗菌測試
+$865
+$1,095
+$1,330
+$785
+Culture & Sensitivity
+細菌培養及藥物抗菌測試
+$545
+$700
+$845
+$500
+Influenza A & B, RSV and
+COVID19 RNA by PCR
+甲及乙型流感 , 呼吸道合胞病
+毒及
+新型冠狀病毒基因測試
+$960
+$1,355
+$1,615
+$960
+Urine, Stool and Other Examination 尿液、糞便及其他檢驗
+Stool Occult Blood
+糞便隱血
+$235
+$300
+$360
+$215
+Stool Ova and Parasite
+糞便寄生蟲檢查
+$200
+$245
+$310
+$170
+Urine Analysis (Routine)
+尿液常規分析
+$190
+$235
+$290
+$160
+Laboratory Department:
+Enquiry - Tel: 2760 3442
+Remarks 備註:
+ • Surcharge would be levied on all urgent tests.
+ • 所有緊急化驗項目，將會額外收取附加費。
+Immunology Test 免疫學
+ACD-Price-017aLAB(14)(2025.12.12)

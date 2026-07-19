@@ -1,0 +1,19 @@
+id="charges-detail" class="inner-section-div v-20">
+營養及膳食部
+項目
+私家房收費 (HK$)
+半私家房收費 (HK$)
+標準房收費 (HK$)
+門診收費 (HK$)
+營養師會診費用
+$780
+$680
+$580
+$580
+營養師跟進費用
+$480
+$450
+$420
+$420
+前往營養及膳食部
+<div id="charges-detail-other"

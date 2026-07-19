@@ -1,0 +1,84 @@
+PATHOLOGY SERVICE  病理學服務
+DESCRIPTION  項目
+Standard
+普通 房
+Semi-Private
+半私家房
+Premium & Deluxe
+Private
+優質及尊貴私家房
+Low Charge Bed
+低收費病床
+OPD 門診
+HK$
+HK$
+HK$
+HK$
+HK$
+BLOOD GROUP 血型
+ $                         205  $                         308  $                         349  $                         154  $                         158
+CANCER SCREENING 癌症指標組合
+  FEMALE CANCER SCREENING 女性
+ $                      5,460  $                      8,190  $                      9,282  $                      4,095  $                      4,200
+  MALE CANCER SCREENING 男性
+ $                      5,460  $                      8,190  $                      9,282  $                      4,095  $                      4,200
+COAGULATION PROFILE 凝血功能測試檢測
+ $                      1,170  $                      1,755  $                      1,989  $                         877  $                         900
+COMPLETE BLOOD COUNT 全套血球計算
+ $                         390  $                         585  $                         663  $                         292  $                         300
+ELECTROLYTES 電解質檢測
+ $                         615  $                         922  $                      1,045  $                         461  $                         473
+ESR 紅血球沉降率
+ $                         260  $                         390  $                         442  $                         195  $                         200
+GLUCOSE FASTING 空腹血糖值
+ $                         221  $                         332  $                         376  $                         166  $                         170
+HIV AG/AB  人類免疫缺乏病毒
+ $                         683  $                      1,024  $                      1,160  $                         512  $                         525
+INFLUENZA 流感測試
+    INFLUENZA A & B by PCR
+    甲型及乙型流感檢測
+ $                      1,040  $                      1,560  $                      1,768  $                         780  $                         800
+   INFLUENZA A & B ANTIGEN
+    甲型及乙型流感快速檢測
+ $                         683  $                      1,024  $                      1,160  $                         512  $                         525
+    INFLUENZA A VIRAL ANTIGEN
+    甲型流感抗原
+ $                         683  $                      1,024  $                      1,160  $                         512  $                         525
+   INFLUENZA B ANTIGEN
+   乙型流感抗原
+ $                         683  $                      1,024  $                      1,160  $                         512  $                         525
+LIPID 血脂測試
+ $                         845  $                      1,268  $                      1,437  $                         634  $                         650
+LIVER FUNCTION 肝臟功能測試
+ $                         917  $                      1,375  $                      1,558  $                         687  $                         705
+TOTAL PROTEIN 總蛋白質
+ $                         212  $                         318  $                         360  $                         159  $                         163
+RENAL FUNCTION 腎功能測試
+ $                         917  $                      1,375  $                      1,558  $                         687  $                         705
+RESPIRATORY VIRUS 呼吸系統病毒測試
+ $                      2,990  $                      4,485  $                      5,083  $                      2,242  $                      2,300
+STOOL ROUTINE 糞便常規檢查
+ $                         273  $                         410  $                         464  $                         205  $                         210
+THYROID (T4) 甲狀腺素
+ $                         494  $                         741  $                         840  $                         370  $                         380
+UREA BREATH TEST 幽門螺旋菌吹氣檢測
+ $                      1,161  $                      1,741  $                      1,974  $                         870  $                         893
+URIC ACID 尿酸
+ $                         212  $                         318  $                         360  $                         159  $                         163
+URINE PH 尿液酸鹼度測試
+ $                         170  $                         255  $                         290  $                         127  $                         131
+VDRL (RPR) 梅毒
+ $                         273  $                         410  $                         464  $                         205  $                         210
+Remarks 備註：
+Effective January 1, 2025. 自二零二五年一月一日起生效
+Tel: 2275 6688
+www.twah.org.hk
+Hong Kong Adventist Hospital – Tsuen Wan
+ 香港港安醫院–荃灣
+1) The above prices are for your reference.  There may be further details that are not included here.  Please re-confirm the prices with our staff prior to receiving treatments or
+examinations.
+    上述資料謹供參考，詳情未能盡錄，務請於接受檢查或治療前查詢有關詳情。
+2) Doctor's fee and medication fee are excluded (except when otherwise specified).
+    上述收費不包括藥費和醫生費（特別註明除外）。
+3) Charges will be adjusted for urgent care service and services provided during non-office and non-clinic hours.
+    非門診或辦公時間，及急診服務的收費會有所調整。

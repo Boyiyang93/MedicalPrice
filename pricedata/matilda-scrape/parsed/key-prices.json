@@ -1,0 +1,62 @@
+{
+  "source": "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees",
+  "effective": "2026-02-01",
+  "ward_daily": {
+    "standard": 1100,
+    "twin": 2300,
+    "private": 4500,
+    "vip": 6500,
+    "day_standard": 550,
+    "day_twin": 1150,
+    "day_private": 2250,
+    "observation_4h_standard": 550
+  },
+  "ot_per_hour": {
+    "standard": 6000,
+    "twin": 7200,
+    "private": 8200
+  },
+  "outpatient_gp": {
+    "regular_8_20": 590,
+    "sunday_holiday_8_20": 800,
+    "night_20_24": 900,
+    "night_0_8": 1000
+  },
+  "outpatient_specialist": {
+    "first": {
+      "min": 2500,
+      "max": 3000
+    },
+    "followup": {
+      "min": 1800,
+      "max": 2200
+    }
+  },
+  "imaging": {
+    "mri_brain_plain": {
+      "standard": 6930,
+      "twin": 8730,
+      "private": 10400
+    },
+    "mri_brain_contrast": {
+      "standard": 10260,
+      "twin": 12860,
+      "private": 15460
+    },
+    "ct_brain_plain": {
+      "standard": 2800,
+      "twin": 3510,
+      "private": 4200
+    },
+    "ct_brain_contrast": {
+      "standard": 5900,
+      "twin": 7400,
+      "private": 8900
+    }
+  },
+  "notes": [
+    "医院费用不含医生费（全面护理套餐除外）",
+    "病房现价标准房 $1,100/日（db.js 旧值为 $900–$1,100）",
+    "门诊普通科日间 $590（db 仍为 Coming Soon）"
+  ]
+}

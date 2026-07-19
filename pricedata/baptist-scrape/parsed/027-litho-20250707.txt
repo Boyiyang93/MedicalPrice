@@ -1,0 +1,39 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+$15,250
+$19,825
+$24,400
+Remarks 備註:
+1.
+2.
+3.
+Lithotripsy 碎石治療
+Enquiries 查詢: 2339 8992
+Rate for services provided in normal hours
+正常時段收費
+30% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之三十。
+The above table only shows the common items of Lithotripsy for reference. It does not include doctor's fee,
+Anaesthetist's fee, medication, hospital bed charges and consumables etc. Please contact the
+department / the attending doctor for further details.
+此收費表只列出常見之碎石治療項目以作參考，但不包括醫生收費、麻醉科醫生收費、藥物、病
+房收費及雜費等等。如有需要請向本部門 / 主診醫生查詢詳情。
+One Side Treatment 單側治療
+Normal Hours 正常時段
+Off-Hours 非正常時段
+Mon – Fri 星期一至五
+08:00 - 17:00
+17:00 - 08:00
+Sat 星期六
+08:00 - 13:00
+13:00 - 08:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：07/07/2025

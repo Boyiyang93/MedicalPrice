@@ -1,0 +1,62 @@
+[
+  {
+    "group": "住院服務及套餐",
+    "title": "病房收費",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/room-charges"
+  },
+  {
+    "group": "外科手術",
+    "title": "常見手術收費",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
+  },
+  {
+    "group": "急症門診中心",
+    "title": "醫生診金及一般收費",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/emergency-medicine-centre"
+  },
+  {
+    "group": "一般門診",
+    "title": "一般門診程序收費",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/outpatient-services"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "泌尿外科",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/urology-price-list"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "耳鼻喉科",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/ent-price-list"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "腸胃肝臟科",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/gastroenterology-and-hepatology-price-list"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "普通外科",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/general-surgery"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "白內障摘除術套餐計劃",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/cataract-surgery-package-plan"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "骨科服務",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/orthopaedics-traumatology-services"
+  },
+  {
+    "group": "專科服務及套餐",
+    "title": "產科分娩優惠計劃",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/maternity-packages"
+  },
+  {
+    "group": "醫療診斷",
+    "title": "放射科 / 醫療造影",
+    "uri": "https://www.union.org/tc/charges-promotion/charges/diagnostic-tests-medical-imaging"
+  }
+]

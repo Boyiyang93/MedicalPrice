@@ -1,0 +1,172 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Renal Function Test 腎功能檢查
+$800
+$1,040
+$1,280
+  Sodium 鈉
+$220
+$286
+$352
+  Potassium 鉀
+$220
+$286
+$352
+  Chloride 氯
+$270
+$351
+$432
+  Uric Acid 尿酸
+$220
+$286
+$352
+  BUN 尿素
+$220
+$286
+$352
+  Creatinine 肌酸酐
+$220
+$286
+$352
+Liver Function Test 肝功能檢查
+$820
+$1,066
+$1,312
+  Alkaline Phosphatase 鹼性磷酸酶
+$220
+$286
+$352
+  Aspartate Aminotransferase 谷草胺酸轉胺酶
+$220
+$286
+$352
+  Alanine Aminotransferase 谷丙胺酸轉胺酶
+$220
+$286
+$352
+  Gamma-Glutamyl Transpeptidase 丙麩胺酸轉肽酶
+$290
+$377
+$464
+  Bilirubin Panel
+       Bilirubin, Indirect (unconjugated) 間接膽紅素 (未共軛結合)
+       Total Bilirubin 總膽紅素
+$220
+$286
+$352
+       Bilirubin, Direct (conjugated) 直接膽紅素 (共軛結合)
+$220
+$286
+$352
+  A/G Ratio Panel
+       Albumin/Globulin ratio (A/G) 白蛋白/球蛋白比例
+       Globulin 球蛋白
+       Total Protein 總蛋白質
+$220
+$286
+$352
+       Albumin 白蛋白
+$220
+$286
+$352
+Lipid Profile 血脂測試
+  Non-HDL Cholesterol (calculated)非高密度膽固醇(計算)
+  Cholesterol 總膽固醇
+$220
+$286
+$352
+  HDL - Cholesterol  高密度膽固醇
+$390
+$507
+$624
+  LDL – Cholesterol 低密度膽固醇
+$420
+$546
+$672
+  Triglyceride 三酸甘油脂
+$330
+$429
+$528
+  Creatine Kinase MB肌酸激酶同工酶MB
+$600
+$780
+$960
+  High sensitive Troponin-I 高靈敏度心肌鈣蛋白-I
+$950
+$1,235
+$1,520
+  NT-proBNP N端B型利鈉肽前體
+$1,100
+$1,430
+$1,760
+  Troponin-T 心肌鈣蛋白-T
+$950
+$1,235
+$1,520
+  Beta-hCG 人絨毛膜促性腺激素-Beta
+$790
+$1,027
+$1,264
+  C-Reactive Protein 丙種反應蛋白
+$370
+$481
+$592
+  Creatine Phosphokinase  肌酸激酶
+$330
+$429
+$528
+  Calcium 鈣
+$220
+$286
+$352
+  Glucose 血糖值
+$220
+$286
+$352
+  Inorganic Phosphate 無機磷酸鹽
+$220
+$286
+$352
+  Procalcitonin 前降鈣素原
+$900
+$1,170
+$1,440
+Remarks 備註:
+1.
+2.
+3.
+Biochemistry 生化學
+Rate for services provided in normal hours
+正常時段收費
+$1,070
+$1,391
+$1,712
+$440
+$572
+$704
+$440
+$572
+$704
+Enquiries 查詢: 2339 8921
+Cardiac Markers
+Other Tests:
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+The above table only shows the common items of Biochemistry for reference. Please contact the Pathology
+Department for further details.
+此收費表只列出常見之生化學項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+                                         Revision Date/更新日期：17/07/2026

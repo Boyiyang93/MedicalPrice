@@ -1,0 +1,57 @@
+{
+  "hospital_id": "canossa",
+  "name": "嘉諾撒醫院",
+  "scraped": "2026-07-19",
+  "sources": {
+    "price_list": "https://www.canossahospital.org.hk/tc/fee/price_list/",
+    "accommodation": "https://canossahospital.org.hk/tc/fee/accommodation_charges/",
+    "opd": "https://www.canossahospital.org.hk/tc/service/24_hours_out_patient_services/fees_and_charges/",
+    "historical": "https://www.canossahospital.org.hk/upload/template_page/50/self/69ccbcad2ee3c.pdf"
+  },
+  "outpatient_gp": {
+    "weekday_08_18": 388,
+    "weekday_18_24": 500,
+    "night_00_08": 800,
+    "saturday_08_13": 388,
+    "saturday_13_24": 500,
+    "sunday_holiday_08_24": 500,
+    "sunday_holiday_night": 800,
+    "note": "官网 HTML；部分第三方称夜间为700，以官网$800为准"
+  },
+  "specialist_opd": {
+    "doctor_fee": {
+      "min": 1200,
+      "max": 2000
+    },
+    "facility_fee": {
+      "weekday_08_18": 200,
+      "weekday_18_24": 330,
+      "night_00_08": 400,
+      "sunday_holiday": 400
+    }
+  },
+  "ward_daily": {
+    "standard_8bed": 800,
+    "standard_6bed": 900,
+    "standard_4bed": 1100,
+    "semi_private": 2600,
+    "private": 4200,
+    "isolation": 2800,
+    "icu": 6800,
+    "window_surcharge": 200
+  },
+  "historical_2025_p50_total_standard": {
+    "circumcision": 48060,
+    "hernia_lap": 118319,
+    "hernia_open": 58144,
+    "haemorrhoidectomy": 61892,
+    "thyroid_hemi": 119448,
+    "thyroid_total": 165481,
+    "cholecystectomy_lap": 122704,
+    "colectomy_lap": 191002
+  },
+  "notes": [
+    "历史账单 PDF 已存；程序与数字按官网表格校对",
+    "诊断造影价目多为独立 HTML（angliatech 镜像），未完整镜像"
+  ]
+}

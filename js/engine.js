@@ -24,6 +24,12 @@
 
   var FAVORITES_STORAGE_KEY = 'mp_procedure_favorites_v1';
 
+  var OWNERSHIP_LABELS = {
+    private: '私立',
+    public: '公立',
+    nonprofit: '公益'
+  };
+
   var MODULE_PAGES = {
     imaging: { href: 'imaging.html', title: '內窺鏡與影像', emoji: '🔬' },
     gynecology: { href: 'gyn.html', title: '婦產科', emoji: '👩' },
@@ -226,6 +232,32 @@
     );
   }
 
+  function getOwnershipLabel(ownership) {
+    return OWNERSHIP_LABELS[ownership] || '';
+  }
+
+  function renderOwnershipBadgeHtml(ownership) {
+    var label = getOwnershipLabel(ownership);
+    if (!label) return '';
+    return '<span class="ownership-badge ownership-badge--' + escapeAttr(ownership) + '">' + escapeHtml(label) + '</span>';
+  }
+
+  function renderHospitalNameHtml(h, options) {
+    options = options || {};
+    var name = escapeHtml(h.name || '');
+    var badge = renderOwnershipBadgeHtml(h.ownership);
+    if (options.asLink && h.link && h.link !== '#') {
+      var arrow = options.arrow === false ? '' : ' ↗';
+      return (
+        '<span class="hospital-name-wrap">' +
+        '<a href="' + h.link + '" target="_blank" class="hospital-link">' + name + arrow + '</a>' +
+        badge +
+        '</span>'
+      );
+    }
+    return '<span class="hospital-name-wrap">' + name + badge + '</span>';
+  }
+
   function renderTagsHtml(tags) {
     if (!tags || !tags.length) return '';
     return tags.map(function (tag, idx) {
@@ -237,7 +269,7 @@
   function renderCardTopHtml(h, tagHtml) {
     return (
       '<div class="hospital-box__top">' +
-      '<a href="' + (h.link || '#') + '" target="_blank" class="hospital-link">' + escapeHtml(h.name) + ' ↗</a>' +
+      renderHospitalNameHtml(h, { asLink: true }) +
       (tagHtml ? '<div class="hospital-box__tags">' + tagHtml + '</div>' : '') +
       '</div>'
     );
@@ -704,7 +736,7 @@
       return (
         '<label class="flex items-center gap-2.5 text-xs ' + labelClass + ' cursor-pointer">' +
         '<input type="checkbox" value="' + h.id + '" checked class="w-4 h-4 rounded text-[#1D4E89]"> ' +
-        escapeHtml(h.name) +
+        renderHospitalNameHtml(h) +
         '</label>'
       );
     }).join('');
@@ -732,9 +764,10 @@
       var isSoon = h.prices.standard >= PLACEHOLDER_PRICE;
       var nameClass = isSoon ? 'font-bold text-gray-400' : 'font-bold text-gray-800';
       var cellClass = isSoon ? 'text-gray-400 italic font-normal' : 'font-medium text-gray-700';
-      var linkHtml = h.link && h.link !== '#'
-        ? '<a href="' + h.link + '" target="_blank" class="hospital-link">' + escapeHtml(h.name) + '</a>'
-        : escapeHtml(h.name);
+      var linkHtml = renderHospitalNameHtml(h, {
+        asLink: !!(h.link && h.link !== '#'),
+        arrow: false
+      });
 
       return (
         '<tr data-hospital="' + h.id + '" data-standard="' + h.prices.standard + '" ' +
@@ -1074,6 +1107,7 @@
   window.updateView = updateView;
   window.goBackHome = goBackHome;
   window.renderOutpatientCardHtml = renderOutpatientCardHtml;
+  window.renderHospitalNameHtml = renderHospitalNameHtml;
   window.toggleProcedureFavorite = toggleProcedureFavorite;
   window.readProcedureFavorites = readFavorites;
 

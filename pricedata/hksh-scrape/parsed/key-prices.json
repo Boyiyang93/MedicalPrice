@@ -1,0 +1,106 @@
+{
+  "hospital_id": "hksh",
+  "name": "香港養和醫院",
+  "name_en": "Hong Kong Sanatorium & Hospital",
+  "scraped": "2026-07-19",
+  "sources": {
+    "fees_pages": [
+      "https://www.hksh-hospital.com/zh-hk/fees-and-charges",
+      "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list",
+      "https://hksh-hospital.com/en/fees-charges/fee-schedules",
+      "https://www.hksh-hospital.com/zh-hk/fees-charges/historical-bill-sizes-statistics",
+      "https://www.hksh-hospital.com/en/fees-and-charges/service-packages"
+    ],
+    "domain": "https://www.hksh-hospital.com",
+    "pricelist_cdn": "http://www.hksh.com/global/pricelist/"
+  },
+  "effective": {
+    "ward": "2026-08-01",
+    "imaging": "2026-08-01",
+    "operating_theatre": "2024-08-01",
+    "outpatient_gp": "2023-08-01",
+    "historical_bills": "2025 pilot scheme data"
+  },
+  "pages_downloaded": 23,
+  "images_downloaded": 19,
+  "pdfs_downloaded": 4,
+  "pdfs": [
+    {
+      "url": "https://www.hksh-hospital.com/sites/default/files/publications/en/1c59704ec4d00157a3ccd4ab5365a3d5.pdf",
+      "file": "pdfs/1c59704ec4d00157a3ccd4ab5365a3d5.pdf",
+      "text": "parsed/1c59704ec4d00157a3ccd4ab5365a3d5.txt",
+      "description": "Well Women Screening Programmes (Women's Health Clinic)"
+    },
+    {
+      "url": "https://www.hksh-hospital.com/sites/default/files/publications/zh-hant/2e0739bb741a71728f595b3fa36ef386.pdf",
+      "file": "pdfs/2e0739bb741a71728f595b3fa36ef386.pdf",
+      "text": "parsed/2e0739bb741a71728f595b3fa36ef386.txt",
+      "description": "Breast Care Centre screening leaflet (zh)"
+    },
+    {
+      "url": "https://www.hksh-hospital.com/sites/default/files/publications/en/b65e0166a5572f3b68e75be541367c4c.pdf",
+      "file": "pdfs/service-package-en-2.pdf",
+      "text": "parsed/service-package-en-2.txt",
+      "description": "Service package leaflet (image PDF, no text layer)"
+    },
+    {
+      "url": "https://www.hksh-hospital.com/sites/default/files/publications/zh-hant/4f4414a7820093c5aba16bb761d087cd.pdf",
+      "file": "pdfs/service-package-zh-2.pdf",
+      "text": null,
+      "description": "Service package leaflet (zh, pending download)"
+    }
+  ],
+  "outpatient_gp_24h_happy_valley": {
+    "weekday_9am_7pm": 400,
+    "weekday_7pm_midnight": 600,
+    "saturday_8am_9am": 600,
+    "saturday_9am_1pm": 400,
+    "saturday_1pm_midnight": 600,
+    "sunday_ph_8am_midnight": 600,
+    "every_day_midnight_8am": 800,
+    "other_centres_first_followup": 400,
+    "note": "Family Medicine pricelist; +20% surcharge outside normal hours for procedures"
+  },
+  "ward_daily": {
+    "general_ward_range": "1400-2020",
+    "general_ward_min": 1400,
+    "general_ward_max": 2020,
+    "semi_private_range": "3030-4030",
+    "semi_private_min": 3030,
+    "semi_private_max": 4030,
+    "private_type_b_range": "4850-5050",
+    "private_type_a_range": "6150-6950",
+    "suite_36f": 13800,
+    "suite_37f": 23000,
+    "day_care_first_5h": 660,
+    "day_care_subsequent_hour": 300
+  },
+  "operating_theatre_highlights_general_ward": {
+    "level_1_15min": 1950,
+    "level_4_60min": 8510,
+    "level_7_240min": 51240,
+    "recovery_per_30min_after_1h": 230,
+    "note": "Tiered by procedure complexity and duration; semi/private higher"
+  },
+  "imaging_outpatient_general_ward": {
+    "ct_brain_plain": 3690,
+    "ct_brain_with_contrast": 6630,
+    "mri_brain_plain": 9990,
+    "mri_brain_with_contrast": 15970
+  },
+  "surgery_historical_p50_general_ward": {
+    "appendicectomy_laparoscopic": 129749,
+    "cholecystectomy_laparoscopic": 116362,
+    "breast_lump_excision": 96693,
+    "mastectomy": 225091,
+    "colectomy_laparoscopic": 213039,
+    "hepatectomy": 323106,
+    "anal_fistula_fistulectomy": 56302,
+    "note": "Median total bill (doctor + hospital); 2025 pilot scheme statistics"
+  },
+  "notes": [
+    "Most official fee schedules are JPG images on hksh.com/global/pricelist, not PDF tables",
+    "Hospital fees exclude doctor fees unless package or historical total stated",
+    "Not written to data/db.js"
+  ]
+}

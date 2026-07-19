@@ -1,0 +1,117 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+  Alpha Fetal Protein 甲胎蛋白
+$650
+$845
+$1,040
+  Cancer Antigen 125 癌抗原125
+$970
+$1,261
+$1,552
+  Cancer Antigen 15.3 癌抗原15-3
+$970
+$1,261
+$1,552
+  Cancer Antigen 19.9 癌抗原19-9
+$970
+$1,261
+$1,552
+  Cancer Antigen 72.4 癌抗原72-4
+$740
+$962
+$1,184
+  Carcinoembryonic Antigen (CEA) 癌胚抗原
+$980
+$1,274
+$1,568
+  SCC Antigen 磷狀細胞癌瘤抗原
+$750
+$975
+$1,200
+  Total Prostate Specific Antigen 總前列腺特殊抗原
+$950
+$1,235
+$1,520
+  Cortisol 腎上腺皮質素
+$830
+$1,079
+$1,328
+  Estradiol 雌二醇
+$770
+$1,001
+$1,232
+  Follicle Stimulating Hormone 卵泡刺激素
+$750
+$975
+$1,200
+  Luteinizing Hormone 黃體生成激素
+$750
+$975
+$1,200
+  Prolactin 催乳激素
+$930
+$1,209
+$1,488
+  Testosterone 促甲狀腺激素
+$790
+$1,027
+$1,264
+  Thyroid Function Profile
+$1,350
+$1,755
+$2,160
+  Thyroid Stimulating Hormone 促甲狀腺激素
+$670
+$871
+$1,072
+  Free Thyroxine 游離甲狀腺素
+$600
+$780
+$960
+  Free Tri-Iodothyronine 游離三碘甲狀腺氨酸
+$600
+$780
+$960
+  Folate 葉酸
+$1,000
+$1,300
+$1,600
+  Vitamin B12 維生素B12
+$860
+$1,118
+$1,376
+  Vitamin D, 25-hydroxy Total  25-羥基維生素D
+$1,130
+$1,469
+$1,808
+Remarks 備註:
+1.
+2.
+3.
+The above table only shows the common items of Endocrinology for reference. Please contact the Pathology
+Department for further details.
+此收費表只列出常見之內分泌學項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Enquiries 查詢: 2339 8921
+Endocrinology 內分泌學
+Rate for services provided in normal hours
+正常時段收費
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+Vitamines
+Cancer Markers
+Hormones
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：22/08/2025

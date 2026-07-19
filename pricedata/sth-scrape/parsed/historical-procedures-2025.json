@@ -1,0 +1,913 @@
+{
+  "source": "https://www.sth.org.hk/download/zh/ccssp.pdf",
+  "year": 2025,
+  "ward": "standard wards or day surgery",
+  "currency": "HKD",
+  "procedures": [
+    {
+      "name_zh": "乳房腫塊切除術",
+      "name_en": "Breast lump excision",
+      "discharges": ">200",
+      "alos": 1.3,
+      "inpatient": {
+        "p50": {
+          "doctor": 39000,
+          "hospital": 20651,
+          "total": 59651
+        },
+        "p90": {
+          "doctor": 51600,
+          "hospital": 30758,
+          "total": 82358
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 34800,
+          "hospital": 13201,
+          "total": 48001
+        },
+        "p90": {
+          "doctor": 41200,
+          "hospital": 22296,
+          "total": 63496
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "支氣管鏡檢查 +/- 取活組織",
+      "name_en": "Bronchoscopy with or without biopsy",
+      "discharges": "30-100",
+      "alos": 2.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 14000,
+          "hospital": 23318,
+          "total": 37318
+        },
+        "p90": {
+          "doctor": 27100,
+          "hospital": 34954,
+          "total": 62054
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 13000,
+          "hospital": 14066,
+          "total": 27066
+        },
+        "p90": {
+          "doctor": 13000,
+          "hospital": 21117,
+          "total": 34117
+        },
+        "discharges": "30-100"
+      }
+    },
+    {
+      "name_zh": "剖腹產嬰術",
+      "name_en": "Caesarean section",
+      "discharges": ">200",
+      "alos": 3.5,
+      "inpatient": {
+        "p50": {
+          "doctor": 53000,
+          "hospital": 29086,
+          "total": 82086
+        },
+        "p90": {
+          "doctor": 55600,
+          "hospital": 37595,
+          "total": 93195
+        }
+      }
+    },
+    {
+      "name_zh": "腕管鬆解術",
+      "name_en": "Carpal tunnel release",
+      "discharges": "30-100",
+      "alos": 1.2,
+      "inpatient": {
+        "p50": {
+          "doctor": 22400,
+          "hospital": 14733,
+          "total": 37133
+        },
+        "p90": {
+          "doctor": 34000,
+          "hospital": 20778,
+          "total": 54778
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 17000,
+          "hospital": 6512,
+          "total": 23512
+        },
+        "p90": {
+          "doctor": 22000,
+          "hospital": 11536,
+          "total": 33536
+        },
+        "discharges": "30-100"
+      }
+    },
+    {
+      "name_zh": "腹腔鏡膽囊切除術",
+      "name_en": "Cholecystectomy (Laparoscopic)",
+      "discharges": ">200",
+      "alos": 2.2,
+      "inpatient": {
+        "p50": {
+          "doctor": 56700,
+          "hospital": 35980,
+          "total": 92680
+        },
+        "p90": {
+          "doctor": 72500,
+          "hospital": 43225,
+          "total": 115725
+        }
+      }
+    },
+    {
+      "name_zh": "膽囊切除術",
+      "name_en": "Cholecystectomy (Open)",
+      "discharges": "<30",
+      "alos": 5.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 82000,
+          "hospital": 46245,
+          "total": 128245
+        },
+        "p90": {
+          "doctor": 88400,
+          "hospital": 53959,
+          "total": 142359
+        }
+      }
+    },
+    {
+      "name_zh": "包皮環切術",
+      "name_en": "Circumcision",
+      "discharges": ">200",
+      "alos": 1.1,
+      "inpatient": {
+        "p50": {
+          "doctor": 20500,
+          "hospital": 11462,
+          "total": 31962
+        },
+        "p90": {
+          "doctor": 22200,
+          "hospital": 17558,
+          "total": 39758
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 22800,
+          "hospital": 8135,
+          "total": 30935
+        },
+        "p90": {
+          "doctor": 25600,
+          "hospital": 9425,
+          "total": 35025
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "腹腔鏡結腸切除術",
+      "name_en": "Colectomy (Laparoscopic)",
+      "discharges": "<30",
+      "alos": 7.1,
+      "inpatient": {
+        "p50": {
+          "doctor": 112000,
+          "hospital": 81341,
+          "total": 193341
+        },
+        "p90": {
+          "doctor": 146400,
+          "hospital": 81437,
+          "total": 227837
+        }
+      }
+    },
+    {
+      "name_zh": "結腸切除術",
+      "name_en": "Colectomy (Open)",
+      "discharges": "<30",
+      "alos": 8.3,
+      "inpatient": {
+        "p50": {
+          "doctor": 79800,
+          "hospital": 69632,
+          "total": 149432
+        },
+        "p90": {
+          "doctor": 73670,
+          "hospital": 94523,
+          "total": 168193
+        }
+      }
+    },
+    {
+      "name_zh": "大腸內窺鏡 +/- 瘜肉切除術",
+      "name_en": "Colonoscopy with or without polypectomy",
+      "discharges": ">200",
+      "alos": 1.1,
+      "inpatient": {
+        "p50": {
+          "doctor": 17300,
+          "hospital": 10009,
+          "total": 27309
+        },
+        "p90": {
+          "doctor": 19500,
+          "hospital": 18723,
+          "total": 38223
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 11200,
+          "hospital": 7773,
+          "total": 18973
+        },
+        "p90": {
+          "doctor": 11500,
+          "hospital": 15203,
+          "total": 26703
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "陰道窺鏡檢查 +/- 活組織檢查",
+      "name_en": "Colposcopy +/- biopsy",
+      "discharges": "<30",
+      "alos": 1.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 14800,
+          "hospital": 11433,
+          "total": 26233
+        },
+        "p90": {
+          "doctor": 33700,
+          "hospital": 13244,
+          "total": 46944
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 6714,
+          "hospital": 7821,
+          "total": 14535
+        },
+        "p90": {
+          "doctor": 10000,
+          "hospital": 10205,
+          "total": 20205
+        },
+        "discharges": "30-100"
+      }
+    },
+    {
+      "name_zh": "膀胱窺鏡檢查 +/- 取活組織",
+      "name_en": "Cystoscopy with or without biopsy",
+      "discharges": "101-200",
+      "alos": 1.4,
+      "inpatient": {
+        "p50": {
+          "doctor": 12500,
+          "hospital": 13633,
+          "total": 26133
+        },
+        "p90": {
+          "doctor": 23000,
+          "hospital": 14177,
+          "total": 37177
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 8000,
+          "hospital": 4692,
+          "total": 12692
+        },
+        "p90": {
+          "doctor": 14400,
+          "hospital": 8971,
+          "total": 23371
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "子宮擴刮術",
+      "name_en": "Dilatation and Curettage of uterus",
+      "discharges": "<30",
+      "alos": 1.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 21000,
+          "hospital": 9200,
+          "total": 30200
+        },
+        "p90": {
+          "doctor": 25600,
+          "hospital": 13852,
+          "total": 39452
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 15800,
+          "hospital": 8606,
+          "total": 24406
+        },
+        "p90": {
+          "doctor": 17500,
+          "hospital": 12053,
+          "total": 29553
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "直接喉鏡檢查術 +/- 取聲帶瘜肉活組織",
+      "name_en": "Direct laryngoscopy with or without vocal cord polyp biopsy",
+      "discharges": null,
+      "alos": null,
+      "inpatient": null,
+      "day_surgery": null,
+      "note": "無足夠數據"
+    },
+    {
+      "name_zh": "胃窺鏡與大腸內窺鏡 +/- 瘜肉切除術",
+      "name_en": "Gastroscopy and colonoscopy with or without polypectomy",
+      "discharges": ">200",
+      "alos": 1.1,
+      "inpatient": {
+        "p50": {
+          "doctor": 24800,
+          "hospital": 22843,
+          "total": 47643
+        },
+        "p90": {
+          "doctor": 31400,
+          "hospital": 30254,
+          "total": 61654
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 21100,
+          "hospital": 15094,
+          "total": 36194
+        },
+        "p90": {
+          "doctor": 27200,
+          "hospital": 19965,
+          "total": 47165
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "胃窺鏡 +/- 瘜肉切除術",
+      "name_en": "Gastroscopy with or without polypectomy",
+      "discharges": ">200",
+      "alos": 1.4,
+      "inpatient": {
+        "p50": {
+          "doctor": 18100,
+          "hospital": 16354,
+          "total": 34454
+        },
+        "p90": {
+          "doctor": 26800,
+          "hospital": 21950,
+          "total": 48750
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 12600,
+          "hospital": 7270,
+          "total": 19870
+        },
+        "p90": {
+          "doctor": 15200,
+          "hospital": 13854,
+          "total": 29054
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "痔瘡切除術",
+      "name_en": "Haemorrhoidectomy",
+      "discharges": ">200",
+      "alos": 1.5,
+      "inpatient": {
+        "p50": {
+          "doctor": 25000,
+          "hospital": 17417,
+          "total": 42417
+        },
+        "p90": {
+          "doctor": 37400,
+          "hospital": 19361,
+          "total": 56761
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 22250,
+          "hospital": 18685,
+          "total": 40935
+        },
+        "p90": {
+          "doctor": 31200,
+          "hospital": 21532,
+          "total": 52732
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "腹腔鏡疝氣修補術",
+      "name_en": "Hernia repair (Laparoscopic)",
+      "discharges": "101-200",
+      "alos": 1.5,
+      "inpatient": {
+        "p50": {
+          "doctor": 49250,
+          "hospital": 32976,
+          "total": 82226
+        },
+        "p90": {
+          "doctor": 59443,
+          "hospital": 45116,
+          "total": 104559
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 25000,
+          "hospital": 34187,
+          "total": 59187
+        },
+        "p90": {
+          "doctor": 46300,
+          "hospital": 32516,
+          "total": 78816
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "疝修補術",
+      "name_en": "Hernia repair (Open)",
+      "discharges": ">200",
+      "alos": 1.8,
+      "inpatient": {
+        "p50": {
+          "doctor": 36600,
+          "hospital": 13683,
+          "total": 50283
+        },
+        "p90": {
+          "doctor": 47500,
+          "hospital": 20783,
+          "total": 68283
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 22750,
+          "hospital": 19375,
+          "total": 42125
+        },
+        "p90": {
+          "doctor": 41500,
+          "hospital": 22163,
+          "total": 63663
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "疝氣切除術",
+      "name_en": "Herniotomy",
+      "discharges": "<30",
+      "alos": 1.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 28600,
+          "hospital": 12345,
+          "total": 40945
+        },
+        "p90": {
+          "doctor": 40000,
+          "hospital": 13586,
+          "total": 53586
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 28160,
+          "hospital": 10355,
+          "total": 38515
+        },
+        "p90": {
+          "doctor": 28160,
+          "hospital": 13377,
+          "total": 41537
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "腹腔鏡輔助子宮切除術",
+      "name_en": "Hysterectomy (Laparoscopic)",
+      "discharges": "<30",
+      "alos": 2.9,
+      "inpatient": {
+        "p50": {
+          "doctor": 70500,
+          "hospital": 54361,
+          "total": 124861
+        },
+        "p90": {
+          "doctor": 114600,
+          "hospital": 60899,
+          "total": 175499
+        }
+      }
+    },
+    {
+      "name_zh": "子宮切除術",
+      "name_en": "Hysterectomy (Open)",
+      "discharges": "30-100",
+      "alos": 4.4,
+      "inpatient": {
+        "p50": {
+          "doctor": 84000,
+          "hospital": 39645,
+          "total": 123645
+        },
+        "p90": {
+          "doctor": 110000,
+          "hospital": 42705,
+          "total": 152705
+        }
+      }
+    },
+    {
+      "name_zh": "膝關節腔內窺鏡術",
+      "name_en": "Knee arthroscopy",
+      "discharges": ">200",
+      "alos": 1.7,
+      "inpatient": {
+        "p50": {
+          "doctor": 40800,
+          "hospital": 36411,
+          "total": 77211
+        },
+        "p90": {
+          "doctor": 56300,
+          "hospital": 42434,
+          "total": 98734
+        }
+      }
+    },
+    {
+      "name_zh": "椎板切除術",
+      "name_en": "Laminectomy",
+      "discharges": ">200",
+      "alos": 3.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 88000,
+          "hospital": 54963,
+          "total": 142963
+        },
+        "p90": {
+          "doctor": 122720,
+          "hospital": 70916,
+          "total": 193636
+        }
+      }
+    },
+    {
+      "name_zh": "激光矯視",
+      "name_en": "LASIK",
+      "discharges": "<30",
+      "alos": "Day Surgery",
+      "day_surgery": {
+        "p50": {
+          "doctor": 10100,
+          "hospital": 9900,
+          "total": 20000
+        },
+        "p90": {
+          "doctor": 10100,
+          "hospital": 9900,
+          "total": 20000
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "顯微喉鏡 +/- 瘜肉切除術",
+      "name_en": "Micro-laryngoscopy for removal vocal cord polyp",
+      "discharges": "30-100",
+      "alos": 1.2,
+      "inpatient": {
+        "p50": {
+          "doctor": 30800,
+          "hospital": 19272,
+          "total": 50072
+        },
+        "p90": {
+          "doctor": 38500,
+          "hospital": 24133,
+          "total": 62633
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 17800,
+          "hospital": 15749,
+          "total": 33549
+        },
+        "p90": {
+          "doctor": 41500,
+          "hospital": 15854,
+          "total": 57354
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "上肢不同部位之開放性復位及內固定術",
+      "name_en": "ORIF various fractures (Upper Limb)",
+      "discharges": ">200",
+      "alos": 1.9,
+      "inpatient": {
+        "p50": {
+          "doctor": 65700,
+          "hospital": 31615,
+          "total": 97315
+        },
+        "p90": {
+          "doctor": 82400,
+          "hospital": 53721,
+          "total": 136121
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 40680,
+          "hospital": 30496,
+          "total": 71176
+        },
+        "p90": {
+          "doctor": 40630,
+          "hospital": 39445,
+          "total": 80075
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "下肢不同部位之開放性復位及內固定術",
+      "name_en": "ORIF various fractures (Lower Limb)",
+      "discharges": "101-200",
+      "alos": 4.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 58720,
+          "hospital": 49235,
+          "total": 107955
+        },
+        "p90": {
+          "doctor": 100800,
+          "hospital": 55484,
+          "total": 156284
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 37000,
+          "hospital": 13458,
+          "total": 50458
+        },
+        "p90": {
+          "doctor": 32800,
+          "hospital": 18255,
+          "total": 51055
+        },
+        "discharges": "<30"
+      }
+    },
+    {
+      "name_zh": "腹腔鏡卵巢囊腫切除術",
+      "name_en": "Ovarian cystectomy (Laparoscopic)",
+      "discharges": "30-100",
+      "alos": 2.4,
+      "inpatient": {
+        "p50": {
+          "doctor": 57000,
+          "hospital": 36988,
+          "total": 93988
+        },
+        "p90": {
+          "doctor": 76900,
+          "hospital": 46844,
+          "total": 123744
+        }
+      }
+    },
+    {
+      "name_zh": "卵巢囊腫切除術",
+      "name_en": "Ovarian cystectomy (Open)",
+      "discharges": "<30",
+      "alos": 4.3,
+      "inpatient": {
+        "p50": {
+          "doctor": 63760,
+          "hospital": 35651,
+          "total": 99411
+        },
+        "p90": {
+          "doctor": 74000,
+          "hospital": 43400,
+          "total": 117400
+        }
+      }
+    },
+    {
+      "name_zh": "晶體乳化法 + 人工晶體植入手術",
+      "name_en": "Phacoemulsification and intraocular lens implantation",
+      "discharges": "101-200",
+      "alos": 1.2,
+      "inpatient": {
+        "p50": {
+          "doctor": 38633,
+          "hospital": 15135,
+          "total": 53768
+        },
+        "p90": {
+          "doctor": 52000,
+          "hospital": 17848,
+          "total": 69848
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 18000,
+          "hospital": 7693,
+          "total": 25693
+        },
+        "p90": {
+          "doctor": 25520,
+          "hospital": 9382,
+          "total": 34902
+        },
+        "discharges": ">200"
+      }
+    },
+    {
+      "name_zh": "脊髓骨溶合術",
+      "name_en": "Spine fusion",
+      "discharges": "<30",
+      "alos": 3.9,
+      "inpatient": {
+        "p50": {
+          "doctor": 136000,
+          "hospital": 96252,
+          "total": 232252
+        },
+        "p90": {
+          "doctor": 206000,
+          "hospital": 152944,
+          "total": 358944
+        }
+      }
+    },
+    {
+      "name_zh": "甲狀腺切除術",
+      "name_en": "Thyroidectomy (Hemi)",
+      "discharges": ">200",
+      "alos": 2.1,
+      "inpatient": {
+        "p50": {
+          "doctor": 67000,
+          "hospital": 32275,
+          "total": 99275
+        },
+        "p90": {
+          "doctor": 82400,
+          "hospital": 41582,
+          "total": 123982
+        }
+      }
+    },
+    {
+      "name_zh": "全甲狀腺切除術",
+      "name_en": "Thyroidectomy (Total)",
+      "discharges": ">200",
+      "alos": 3.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 94200,
+          "hospital": 51240,
+          "total": 145440
+        },
+        "p90": {
+          "doctor": 108200,
+          "hospital": 55505,
+          "total": 163705
+        }
+      }
+    },
+    {
+      "name_zh": "扁桃腺切除術",
+      "name_en": "Tonsillectomy",
+      "discharges": "30-100",
+      "alos": 1.3,
+      "inpatient": {
+        "p50": {
+          "doctor": 41220,
+          "hospital": 21257,
+          "total": 62477
+        },
+        "p90": {
+          "doctor": 42340,
+          "hospital": 26022,
+          "total": 68362
+        }
+      }
+    },
+    {
+      "name_zh": "板機狀指鬆解術 (彈弓指)",
+      "name_en": "Trigger finger release",
+      "discharges": "<30",
+      "alos": 1.0,
+      "inpatient": {
+        "p50": {
+          "doctor": 20400,
+          "hospital": 7489,
+          "total": 27889
+        },
+        "p90": {
+          "doctor": 35000,
+          "hospital": 10503,
+          "total": 45503
+        }
+      },
+      "day_surgery": {
+        "p50": {
+          "doctor": 10000,
+          "hospital": 4174,
+          "total": 14174
+        },
+        "p90": {
+          "doctor": 17380,
+          "hospital": 4765,
+          "total": 22145
+        },
+        "discharges": "101-200"
+      }
+    },
+    {
+      "name_zh": "陰道分娩",
+      "name_en": "Vaginal delivery",
+      "discharges": ">200",
+      "alos": 2.8,
+      "inpatient": {
+        "p50": {
+          "doctor": 47540,
+          "hospital": 31269,
+          "total": 78809
+        },
+        "p90": {
+          "doctor": 49450,
+          "hospital": 37570,
+          "total": 87020
+        }
+      }
+    }
+  ]
+}

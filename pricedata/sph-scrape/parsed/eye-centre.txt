@@ -1,0 +1,22 @@
+id="charges-detail" class="inner-section-div v-20">
+激光矯視服務
+項目
+服務
+單眼 (HK$)
+雙眼 (HK$)
+1
+激光矯視手術前檢查
+$800
+$800
+2
+無刀全激光矯視手術(IntraLASIK)
+$10,500
+$21,000
+眼科
+服務
+收費 (HK$)
+診金*
+$680
+* 不包括藥費
+前往眼科中心
+<div id="charges-detail-other"

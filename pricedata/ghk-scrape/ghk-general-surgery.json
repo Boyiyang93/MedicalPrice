@@ -1,0 +1,647 @@
+{
+  "source": "https://gleneagles.hk/tc/fee-charges/general-surgery",
+  "note": "URL serves PDF 2026GES03 (7 pages). Prices in HKD.",
+  "item_count": 64,
+  "items": [
+    {
+      "code": "GES20",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "開放式乳房活組織切片檢查",
+      "name_en": "Biopsy of Breast; Open, Incisional",
+      "stay": "日間",
+      "price_normal": 28900,
+      "price_intermediate": 37570,
+      "raw_tail": "開放式乳房活組織切片檢查 | Day Case | 日間治療 | 28,900 37,570"
+    },
+    {
+      "code": "GES21A",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 單一腫塊",
+      "name_en": "Excision of Breast Lesion – Single",
+      "stay": "",
+      "price_normal": 48200,
+      "price_intermediate": 62660,
+      "raw_tail": "Excision of Breast Lesion – Single | 乳房腫塊切除術 - 單一腫塊 48,200 62,660"
+    },
+    {
+      "code": "GES21F",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 兩個腫塊",
+      "name_en": "Excision of Breast Lesion - 2 Areas",
+      "stay": "",
+      "price_normal": 59600,
+      "price_intermediate": 77480,
+      "raw_tail": "Excision of Breast Lesion - 2 Areas | 乳房腫塊切除術 - 兩個腫塊 59,600 77,480"
+    },
+    {
+      "code": "GES21G",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 三至五個腫塊",
+      "name_en": "Excision of Breast Lesion - 3-5 Areas",
+      "stay": "",
+      "price_normal": 71000,
+      "price_intermediate": 92300,
+      "raw_tail": "Excision of Breast Lesion - 3-5 Areas | 乳房腫塊切除術 - 三至五個腫塊 71,000 92,300"
+    },
+    {
+      "code": "GES21C",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 單一腫塊",
+      "name_en": "Excision of Breast Lesion – Single",
+      "stay": "2日",
+      "price_normal": 53200,
+      "price_intermediate": 69160,
+      "raw_tail": "乳房腫塊切除術 - 單一腫塊 | 2 Days | 2 日 | 53,200 69,160"
+    },
+    {
+      "code": "GES21D",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 兩個腫塊",
+      "name_en": "Excision of Breast Lesion - 2 Areas",
+      "stay": "",
+      "price_normal": 64600,
+      "price_intermediate": 83980,
+      "raw_tail": "Excision of Breast Lesion - 2 Areas | 乳房腫塊切除術 - 兩個腫塊 64,600 83,980"
+    },
+    {
+      "code": "GES21E",
+      "section": "Breast Lesion Packages 乳房腫塊手術套餐",
+      "name_zh": "乳房腫塊切除術 - 三至五個腫塊",
+      "name_en": "Excision of Breast Lesion - 3-5 Areas",
+      "stay": "",
+      "price_normal": 76000,
+      "price_intermediate": 98800,
+      "raw_tail": "Excision of Breast Lesion - 3-5 Areas | 乳房腫塊切除術 - 三至五個腫塊 76,000 98,800 | Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐"
+    },
+    {
+      "code": "GES22A",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "乳房腫瘤切除術 +/- 冷凍切片 - 單邊",
+      "name_en": "Wide Excision Lumpectomy +/- Frozen Section of Margins -",
+      "stay": "2日",
+      "price_normal": 81000,
+      "price_intermediate": 105300,
+      "raw_tail": "乳房腫瘤切除術 +/- 冷凍切片 - 單邊 | 2 Days | 2 日 | 81,000 105,300"
+    },
+    {
+      "code": "GES22C",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "乳房腫瘤切除術 + 冷凍切片 + 腋下淋巴廓清術 - 單邊",
+      "name_en": "Wide Excision Lumpectomy + Frozen Section of Margins +",
+      "stay": "",
+      "price_normal": 115800,
+      "price_intermediate": 150540,
+      "raw_tail": "Wide Excision Lumpectomy + Frozen Section of Margins + | Axillary Dissection - Unilateral | 乳房腫瘤切除術 + 冷凍切片 + 腋下淋巴廓清術 - 單邊 | 115,800 150,540"
+    },
+    {
+      "code": "GES22B",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "乳房腫瘤切除術 + 冷凍切片 + 前哨結活組織檢查 (Sentimag /",
+      "name_en": "Wide Excision Lumpectomy + Frozen Section of Margins +",
+      "stay": "",
+      "price_normal": 134300,
+      "price_intermediate": 174590,
+      "raw_tail": "Frozen Section +/- Axillary Dissection - Unilateral | 乳房腫瘤切除術 + 冷凍切片 + 前哨結活組織檢查 (Sentimag / | Gamma Probe) + 冷凍切片 +/- 腋下淋巴廓清術 - 單邊 | 134,300 174,590"
+    },
+    {
+      "code": "GES23A",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "乳房腫塊 / 乳房部分切除術 - 單邊",
+      "name_en": "Lumpectomy / Partial Mastectomy - Unilateral",
+      "stay": "",
+      "price_normal": 69000,
+      "price_intermediate": 89700,
+      "raw_tail": "Lumpectomy / Partial Mastectomy - Unilateral | 乳房腫塊 / 乳房部分切除術 - 單邊 69,000 89,700"
+    },
+    {
+      "code": "GES23B",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "全乳切除術 - 單邊",
+      "name_en": "Mastectomy (Simple) - Unilateral",
+      "stay": "",
+      "price_normal": 87000,
+      "price_intermediate": 113100,
+      "raw_tail": "Mastectomy (Simple) - Unilateral | 全乳切除術 - 單邊 87,000 113,100"
+    },
+    {
+      "code": "GES24A",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "根治性乳房切除術 + 腋下淋巴廓清術 - 單邊",
+      "name_en": "Mastectomy (Radical) + Axillary Dissection - Unilateral",
+      "stay": "4日",
+      "price_normal": 131100,
+      "price_intermediate": 170430,
+      "raw_tail": "根治性乳房切除術 + 腋下淋巴廓清術 - 單邊 | 4 Days | 4 日 | 131,100 170,430"
+    },
+    {
+      "code": "GES24B",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "根治性乳房切除術 + 前哨結活組織檢查(Sentimag / Gamma",
+      "name_en": "Mastectomy (Radical) + Sentinel Lymph Node Biopsy",
+      "stay": "",
+      "price_normal": 150800,
+      "price_intermediate": 196040,
+      "raw_tail": "Dissection - Unilateral | 根治性乳房切除術 + 前哨結活組織檢查(Sentimag / Gamma | Probe)+ 冷凍切片 +/- 腋下淋巴廓清術 - 單邊 | 150,800 196,040"
+    },
+    {
+      "code": "GES25",
+      "section": "Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐",
+      "name_zh": "乳房切除術 - 雙邊",
+      "name_en": "Mastectomy - Bilateral",
+      "stay": "2日",
+      "price_normal": 117800,
+      "price_intermediate": 153140,
+      "raw_tail": "乳房切除術 - 雙邊 | 2 Days | 2 日 117,800  153,140 | Thyroidectomy Packages 甲狀腺切除術套餐"
+    },
+    {
+      "code": "GES03A",
+      "section": "Thyroidectomy Packages 甲狀腺切除術套餐",
+      "name_zh": "半邊甲狀腺切除術（雙極刀／超聲刀或同等） 3 Days",
+      "name_en": "Hemi-Thyroidectomy (Bipolar Forceps / Harmonic Scalpel or",
+      "stay": "3日",
+      "price_normal": 89000,
+      "price_intermediate": 115700,
+      "raw_tail": "Equivalent) | 半邊甲狀腺切除術（雙極刀／超聲刀或同等） 3 Days | 3 日 | 89,000 115,700"
+    },
+    {
+      "code": "GES03N",
+      "section": "Thyroidectomy Packages 甲狀腺切除術套餐",
+      "name_zh": "半邊甲狀腺切除術併神經監測",
+      "name_en": "Hemi-Thyroidectomy (Bipolar Forceps / Harmonic Scalpel or",
+      "stay": "",
+      "price_normal": 101100,
+      "price_intermediate": 131430,
+      "raw_tail": "Hemi-Thyroidectomy (Bipolar Forceps / Harmonic Scalpel or | Equivalent - With nerve monitoring | 半邊甲狀腺切除術併神經監測 | 101,100 131,430"
+    },
+    {
+      "code": "GES05A",
+      "section": "Thyroidectomy Packages 甲狀腺切除術套餐",
+      "name_zh": "全邊甲狀腺切除術（雙極刀／超聲刀或同等） 4 Days",
+      "name_en": "Equivalent)",
+      "stay": "4日",
+      "price_normal": 124300,
+      "price_intermediate": 161590,
+      "raw_tail": "Equivalent) | 全邊甲狀腺切除術（雙極刀／超聲刀或同等） 4 Days | 4 日 | 124,300 161,590"
+    },
+    {
+      "code": "GES05N",
+      "section": "Thyroidectomy Packages 甲狀腺切除術套餐",
+      "name_zh": "全邊甲狀腺切除術併神經監測",
+      "name_en": "Equivalent)-  With nerve monitoring",
+      "stay": "",
+      "price_normal": 136400,
+      "price_intermediate": 177320,
+      "raw_tail": "Equivalent)-  With nerve monitoring | 全邊甲狀腺切除術併神經監測 | 136,400 177,320 | Submandibulectomy Packages 頷下腺手術套餐"
+    },
+    {
+      "code": "GES37",
+      "section": "Submandibulectomy Packages 頷下腺手術套餐",
+      "name_zh": "頷下腺切除術",
+      "name_en": "Submandibulectomy",
+      "stay": "2日",
+      "price_normal": 59000,
+      "price_intermediate": 76700,
+      "raw_tail": "頷下腺切除術 | 2 Days | 2 日 59,000 76,700 | Gastrectomy Packages 胃切除術套餐"
+    },
+    {
+      "code": "GES34B",
+      "section": "Gastrectomy Packages 胃切除術套餐",
+      "name_zh": "腹腔鏡 / 開放式全胃切除術 ± 連食道造口術（雙極刀／超聲刀",
+      "name_en": "Laparoscopic / Open Total Gastrectomy ±",
+      "stay": "10日",
+      "price_normal": 288000,
+      "price_intermediate": 374400,
+      "raw_tail": "腹腔鏡 / 開放式全胃切除術 ± 連食道造口術（雙極刀／超聲刀 | 或同等） | 10 Days | 10 日 288,000 374,400"
+    },
+    {
+      "code": "GES35B",
+      "section": "Gastrectomy Packages 胃切除術套餐",
+      "name_zh": "腹腔鏡 / 開放式遠端部分胃切除 +/- 連十二指腸造口術",
+      "name_en": "Laparoscopic / Open Partial, Distal Gastrectomy +/-",
+      "stay": "7日",
+      "price_normal": 269000,
+      "price_intermediate": 349700,
+      "raw_tail": "（雙極刀／超聲刀或同等） | 7 Days | 7 日 269,000 349,700 | Sleeve Gastrectomy Packages 縮胃手術套餐"
+    },
+    {
+      "code": "GES42A",
+      "section": "Sleeve Gastrectomy Packages 縮胃手術套餐",
+      "name_zh": "腹腔鏡縮胃手術（５個縫合釘） + 胃鏡檢查",
+      "name_en": "Laparoscopic Sleeve Gastrectomy (5 reloads) + OGD",
+      "stay": "5日",
+      "price_normal": 193000,
+      "price_intermediate": 250900,
+      "raw_tail": "腹腔鏡縮胃手術（５個縫合釘） + 胃鏡檢查 | 5 Days | 5 日 | 193,000 250,900"
+    },
+    {
+      "code": "GES42B",
+      "section": "Sleeve Gastrectomy Packages 縮胃手術套餐",
+      "name_zh": "腹腔鏡縮胃手術（６個縫合釘） + 胃鏡檢查",
+      "name_en": "Laparoscopic Sleeve Gastrectomy (6 reloads) + OGD",
+      "stay": "",
+      "price_normal": 197000,
+      "price_intermediate": 256100,
+      "raw_tail": "Laparoscopic Sleeve Gastrectomy (6 reloads) + OGD | 腹腔鏡縮胃手術（６個縫合釘） + 胃鏡檢查 197,000 256,100"
+    },
+    {
+      "code": "GES42C",
+      "section": "Sleeve Gastrectomy Packages 縮胃手術套餐",
+      "name_zh": "腹腔鏡縮胃手術（７個縫合釘） + 胃鏡檢查",
+      "name_en": "Laparoscopic Sleeve Gastrectomy (7 reloads) + OGD",
+      "stay": "",
+      "price_normal": 200000,
+      "price_intermediate": 260000,
+      "raw_tail": "Laparoscopic Sleeve Gastrectomy (7 reloads) + OGD | 腹腔鏡縮胃手術（７個縫合釘） + 胃鏡檢查 200,000 260,000 | Cholecystectomy Packages 膽囊切除術套餐"
+    },
+    {
+      "code": "GES08A",
+      "section": "Cholecystectomy Packages 膽囊切除術套餐",
+      "name_zh": "腹腔鏡膽囊切除術（超聲刀或同等）",
+      "name_en": "Laparoscopic Cholecystectomy (Harmonic Scalpel or",
+      "stay": "3日",
+      "price_normal": 100400,
+      "price_intermediate": 130520,
+      "raw_tail": "腹腔鏡膽囊切除術（超聲刀或同等） | 3 Days | 3 日 | 100,400 130,520"
+    },
+    {
+      "code": "GES08B",
+      "section": "Cholecystectomy Packages 膽囊切除術套餐",
+      "name_zh": "腹腔鏡膽囊切除術（雙極刀）",
+      "name_en": "Laparoscopic Cholecystectomy (Bipolar Forceps)",
+      "stay": "",
+      "price_normal": 99900,
+      "price_intermediate": 129870,
+      "raw_tail": "Laparoscopic Cholecystectomy (Bipolar Forceps) | 腹腔鏡膽囊切除術（雙極刀） 99,900 129,870"
+    },
+    {
+      "code": "GES39A",
+      "section": "Cholecystectomy Packages 膽囊切除術套餐",
+      "name_zh": "（單孔）腹腔鏡膽囊切除術（超聲刀或同等）",
+      "name_en": "(Single Port) Laparoscopic Cholecystectomy (Harmonic",
+      "stay": "",
+      "price_normal": 100400,
+      "price_intermediate": 130520,
+      "raw_tail": "(Single Port) Laparoscopic Cholecystectomy (Harmonic | Scalpel or Equivalent) | （單孔）腹腔鏡膽囊切除術（超聲刀或同等） | 100,400 130,520"
+    },
+    {
+      "code": "GES39B",
+      "section": "Cholecystectomy Packages 膽囊切除術套餐",
+      "name_zh": "（單孔）腹腔鏡膽囊切除術（雙極刀）",
+      "name_en": "(Single Port) Laparoscopic Cholecystectomy (Bipolar Forceps)",
+      "stay": "",
+      "price_normal": 99900,
+      "price_intermediate": 129870,
+      "raw_tail": "(Single Port) Laparoscopic Cholecystectomy (Bipolar Forceps) | （單孔）腹腔鏡膽囊切除術（雙極刀） 99,900 129,870"
+    },
+    {
+      "code": "GES07",
+      "section": "Cholecystectomy Packages 膽囊切除術套餐",
+      "name_zh": "開放式膽囊切除術",
+      "name_en": "Open Cholecystectomy",
+      "stay": "4日",
+      "price_normal": 109400,
+      "price_intermediate": 142220,
+      "raw_tail": "開放式膽囊切除術 | 4 Days | 4 日 109,400 142,220 | Haemorrhoidectomy Packages 痔瘡切除術套餐"
+    },
+    {
+      "code": "GES10",
+      "section": "Haemorrhoidectomy Packages 痔瘡切除術套餐",
+      "name_zh": "傳統痔瘡切除術 3 Days",
+      "name_en": "Conventional Haemorrhoidectomy",
+      "stay": "3日",
+      "price_normal": 42700,
+      "price_intermediate": 55510,
+      "raw_tail": "Conventional Haemorrhoidectomy | 傳統痔瘡切除術 3 Days | 3 日 | 42,700 55,510"
+    },
+    {
+      "code": "GES10B",
+      "section": "Haemorrhoidectomy Packages 痔瘡切除術套餐",
+      "name_zh": "傳統痔瘡切除術 (使用 Ligasure)",
+      "name_en": "Conventional Haemorrhoidectomy (Using Ligasure)",
+      "stay": "",
+      "price_normal": 54700,
+      "price_intermediate": 71110,
+      "raw_tail": "Conventional Haemorrhoidectomy (Using Ligasure) | 傳統痔瘡切除術 (使用 Ligasure) 54,700 71,110"
+    },
+    {
+      "code": "GES11",
+      "section": "Haemorrhoidectomy Packages 痔瘡切除術套餐",
+      "name_zh": "環狀痔瘡切除術",
+      "name_en": "Stapled Haemorrhoidectomy",
+      "stay": "2日",
+      "price_normal": 56000,
+      "price_intermediate": 72800,
+      "raw_tail": "環狀痔瘡切除術 | 2 Days | 2 日 56,000 72,800 | Hernia Packages 疝氣手術套餐"
+    },
+    {
+      "code": "GES12A",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "腹腔鏡腹股溝疝氣修補術 - 單邊",
+      "name_en": "Laparoscopic Inguinal Hernia Repair - Unilateral",
+      "stay": "2日",
+      "price_normal": 78500,
+      "price_intermediate": 102050,
+      "raw_tail": "腹腔鏡腹股溝疝氣修補術 - 單邊 | 2 Days | 2 日 | 78,500 102,050"
+    },
+    {
+      "code": "GES12P",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "腹腔鏡腹股溝疝氣修補術（兒童） - 單邊",
+      "name_en": "Laparoscopic Inguinal Hernia Repair (Child) - Unilateral",
+      "stay": "",
+      "price_normal": 68000,
+      "price_intermediate": 88400,
+      "raw_tail": "Laparoscopic Inguinal Hernia Repair (Child) - Unilateral | 腹腔鏡腹股溝疝氣修補術（兒童） - 單邊 68,000 88,400"
+    },
+    {
+      "code": "GES13A",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "開放式腹股溝疝氣修補術 - 單邊",
+      "name_en": "Open Inguinal Hernia Repair - Unilateral",
+      "stay": "",
+      "price_normal": 59700,
+      "price_intermediate": 77610,
+      "raw_tail": "Open Inguinal Hernia Repair - Unilateral | 開放式腹股溝疝氣修補術 - 單邊 59,700 77,610"
+    },
+    {
+      "code": "GES14",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "腹股溝疝切開術（兒童）- 單邊",
+      "name_en": "Inguinal Herniotomy (Child) - Unilateral",
+      "stay": "",
+      "price_normal": 42800,
+      "price_intermediate": 55640,
+      "raw_tail": "Inguinal Herniotomy (Child) - Unilateral | 腹股溝疝切開術（兒童）- 單邊 42,800 55,640"
+    },
+    {
+      "code": "GES38A",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "腹腔鏡腹股溝疝氣修補術 - 雙邊",
+      "name_en": "Laparoscopic Inguinal Hernia Repair - Bilateral",
+      "stay": "",
+      "price_normal": 104100,
+      "price_intermediate": 135330,
+      "raw_tail": "Laparoscopic Inguinal Hernia Repair - Bilateral | 腹腔鏡腹股溝疝氣修補術 - 雙邊 104,100 135,330"
+    },
+    {
+      "code": "GES38P",
+      "section": "Hernia Packages 疝氣手術套餐",
+      "name_zh": "腹腔鏡腹股溝疝氣修補術（兒童）- 雙邊",
+      "name_en": "Laparoscopic Inguinal Hernia Repair (Child)- Bilateral",
+      "stay": "",
+      "price_normal": 92300,
+      "price_intermediate": 119990,
+      "raw_tail": "Laparoscopic Inguinal Hernia Repair (Child)- Bilateral | 腹腔鏡腹股溝疝氣修補術（兒童）- 雙邊 92,300 119,990 | Appendectomy Packages 闌尾 (盲腸）切除術套餐"
+    },
+    {
+      "code": "GES33A",
+      "section": "Appendectomy Packages 闌尾 (盲腸）切除術套餐",
+      "name_zh": "腹腔鏡闌尾（盲腸）切除術 - 簡單",
+      "name_en": "Laparoscopic Appendectomy - Simple",
+      "stay": "2日",
+      "price_normal": 93400,
+      "price_intermediate": 121420,
+      "raw_tail": "Laparoscopic Appendectomy - Simple | 腹腔鏡闌尾（盲腸）切除術 - 簡單 | 2 Days | 2 日 93,400 121,420"
+    },
+    {
+      "code": "GES33B",
+      "section": "Appendectomy Packages 闌尾 (盲腸）切除術套餐",
+      "name_zh": "腹腔鏡闌尾（盲腸）切除術 - 複雜 3 Days",
+      "name_en": "Laparoscopic Appendectomy - Complex",
+      "stay": "3日",
+      "price_normal": 107300,
+      "price_intermediate": 139490,
+      "raw_tail": "Laparoscopic Appendectomy - Complex | 腹腔鏡闌尾（盲腸）切除術 - 複雜 3 Days | 3 日 | 107,300  139,490"
+    },
+    {
+      "code": "GES33C",
+      "section": "Appendectomy Packages 闌尾 (盲腸）切除術套餐",
+      "name_zh": "開放式闌尾（盲腸）切除術",
+      "name_en": "Open Appendectomy",
+      "stay": "",
+      "price_normal": 98900,
+      "price_intermediate": 128570,
+      "raw_tail": "Open Appendectomy | 開放式闌尾（盲腸）切除術 98,900  128,570 | Hemi-Colectomy Packages 半結腸切除術套餐"
+    },
+    {
+      "code": "GES16A",
+      "section": "Hemi-Colectomy Packages 半結腸切除術套餐",
+      "name_zh": "開放式半結腸切除術",
+      "name_en": "Open Hemi-Colectomy",
+      "stay": "8日",
+      "price_normal": 208700,
+      "price_intermediate": 271310,
+      "raw_tail": "Open Hemi-Colectomy | 開放式半結腸切除術 | 8 Days | 8 日 208,700  271,310"
+    },
+    {
+      "code": "GES18A",
+      "section": "Hemi-Colectomy Packages 半結腸切除術套餐",
+      "name_zh": "腹腔鏡半結腸切除術",
+      "name_en": "Laparoscopic Hemi-Colectomy",
+      "stay": "7日",
+      "price_normal": 209000,
+      "price_intermediate": 271700,
+      "raw_tail": "腹腔鏡半結腸切除術 | 7 Days | 7 日 209,000  271,700 | Anterior Resection Packages 直腸前位切除術套餐"
+    },
+    {
+      "code": "GES43A",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "開放式直腸前位切除術",
+      "name_en": "Open Anterior Resection",
+      "stay": "8日",
+      "price_normal": 232800,
+      "price_intermediate": 302640,
+      "raw_tail": "Open Anterior Resection | 開放式直腸前位切除術 | 8 Days | 8 日 232,800 302,640"
+    },
+    {
+      "code": "GES44A",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "腹腔鏡直腸前位切除術",
+      "name_en": "Laparoscopic Anterior Resection",
+      "stay": "7日",
+      "price_normal": 240800,
+      "price_intermediate": 313040,
+      "raw_tail": "腹腔鏡直腸前位切除術 | 7 Days | 7 日 240,800 313,040 | Lower Anterior Resection 直腸低前位切除術套餐"
+    },
+    {
+      "code": "GES45A",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "開放式直腸低前位切除術",
+      "name_en": "Open Lower Anterior Resection",
+      "stay": "8日",
+      "price_normal": 240000,
+      "price_intermediate": 312000,
+      "raw_tail": "Open Lower Anterior Resection | 開放式直腸低前位切除術 | 8 Days | 8 日 240,000 312,000"
+    },
+    {
+      "code": "GES46A",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "腹腔鏡直腸低前位切除術",
+      "name_en": "Laparoscopic Lower Anterior Resection",
+      "stay": "7日",
+      "price_normal": 249000,
+      "price_intermediate": 323700,
+      "raw_tail": "腹腔鏡直腸低前位切除術 | 7 Days | 7 日 | 249,000  323,700"
+    },
+    {
+      "code": "GES48A",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "腹腔鏡直腸低前位切除術 + 經肛門全直腸系膜切除術",
+      "name_en": "Laparoscopic Lower Anterior Resection + Transanal total",
+      "stay": "",
+      "price_normal": 329400,
+      "price_intermediate": 428220,
+      "raw_tail": "mesorectal excision (TaTME) | 腹腔鏡直腸低前位切除術 + 經肛門全直腸系膜切除術 | 329,400  428,220 | Closure of ileostomy 廻腸造口閉合術套餐"
+    },
+    {
+      "code": "GES47",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "廻腸造口閉合術 (縫線閉合方式) 4 Days",
+      "name_en": "Closure of ileostomy (Handsewn Approach)",
+      "stay": "4日",
+      "price_normal": 85800,
+      "price_intermediate": 111540,
+      "raw_tail": "Closure of ileostomy (Handsewn Approach) | 廻腸造口閉合術 (縫線閉合方式) 4 Days | 4 日 | 85,800  111,540"
+    },
+    {
+      "code": "GES47B",
+      "section": "Anterior Resection Packages 直腸前位切除術套餐",
+      "name_zh": "廻腸造口閉合術 （外科缝合器閉合方式）",
+      "name_en": "Closure of Ileostomy (Stapler Approach)",
+      "stay": "",
+      "price_normal": 96200,
+      "price_intermediate": 125060,
+      "raw_tail": "Closure of Ileostomy (Stapler Approach) | 廻腸造口閉合術 （外科缝合器閉合方式） 96,200  125,060 | Varicose Veins Packages 靜脈曲張手術套餐"
+    },
+    {
+      "code": "GES15",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "靜脈結紮抽除及勾脫術 - 單腿 2 Days",
+      "name_en": "Trendelenburg Stripping & Avulsion of Varicose Veins -",
+      "stay": "2日",
+      "price_normal": 65900,
+      "price_intermediate": 85670,
+      "raw_tail": "Unilateral | 靜脈結紮抽除及勾脫術 - 單腿 2 Days | 2 日 | 65,900  85,670"
+    },
+    {
+      "code": "GES27",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "靜脈結紮抽除及勾脫術 - 雙腿",
+      "name_en": "Trendelenburg Stripping & Avulsion of Varicose Veins -",
+      "stay": "",
+      "price_normal": 90700,
+      "price_intermediate": 117910,
+      "raw_tail": "Trendelenburg Stripping & Avulsion of Varicose Veins - | Bilateral | 靜脈結紮抽除及勾脫術 - 雙腿 | 90,700  117,910"
+    },
+    {
+      "code": "GES28A",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "射頻靜脈曲張消融術 - 單腿",
+      "name_en": "Varicose Veins (RF Ablation) - Unilateral",
+      "stay": "日間",
+      "price_normal": 68300,
+      "price_intermediate": 88790,
+      "raw_tail": "射頻靜脈曲張消融術 - 單腿 | Day Case | 日間治療 | 68,300  88,790"
+    },
+    {
+      "code": "GES28B",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "激光靜脈曲張消融術 - 單腿",
+      "name_en": "Varicose Veins (Endovenous Laser) - Unilateral",
+      "stay": "",
+      "price_normal": 72300,
+      "price_intermediate": 93990,
+      "raw_tail": "Varicose Veins (Endovenous Laser) - Unilateral | 激光靜脈曲張消融術 - 單腿 72,300  93,990"
+    },
+    {
+      "code": "GES29A",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "射頻靜脈曲張消融術 - 雙腿",
+      "name_en": "Varicose Veins (RF Ablation) - Bilateral",
+      "stay": "",
+      "price_normal": 96200,
+      "price_intermediate": 125060,
+      "raw_tail": "Varicose Veins (RF Ablation) - Bilateral | 射頻靜脈曲張消融術 - 雙腿 96,200  125,060"
+    },
+    {
+      "code": "GES29B",
+      "section": "Varicose Veins Packages 靜脈曲張手術套餐",
+      "name_zh": "激光靜脈曲張消融術 - 雙腿",
+      "name_en": "Varicose Veins (Endovenous Laser) - Bilateral",
+      "stay": "",
+      "price_normal": 99100,
+      "price_intermediate": 128830,
+      "raw_tail": "Varicose Veins (Endovenous Laser) - Bilateral | 激光靜脈曲張消融術 - 雙腿 99,100  128,830 | Circumcision Packages 包皮環切術套餐"
+    },
+    {
+      "code": "GES01A",
+      "section": "Circumcision Packages 包皮環切術套餐",
+      "name_zh": "包皮環切術（出生 28 天或以下） Day Case",
+      "name_en": "Circumcision, 28 days of age or less",
+      "stay": "日間",
+      "price_normal": 28250,
+      "price_intermediate": 36730,
+      "raw_tail": "Circumcision, 28 days of age or less | 包皮環切術（出生 28 天或以下） Day Case | 日間治療 | 28,250 36,730"
+    },
+    {
+      "code": "GES01B",
+      "section": "Circumcision Packages 包皮環切術套餐",
+      "name_zh": "包皮環切術",
+      "name_en": "Circumcision",
+      "stay": "",
+      "price_normal": 30000,
+      "price_intermediate": 39000,
+      "raw_tail": "Circumcision | 包皮環切術 30,000 39,000"
+    },
+    {
+      "code": "GES49",
+      "section": "Circumcision Packages 包皮環切術套餐",
+      "name_zh": "包皮環切術",
+      "name_en": "Circumcision",
+      "stay": "2日",
+      "price_normal": 33500,
+      "price_intermediate": 43550,
+      "raw_tail": "包皮環切術 | 2 Days | 2 日 33,500 43,550 | Minor Ops Packages 小手術套餐"
+    },
+    {
+      "code": "GES30A",
+      "section": "Minor Ops Packages 小手術套餐",
+      "name_zh": "小手術 （如脂肪瘤、嵌甲）（局部麻醉） Day Case",
+      "name_en": "Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (LA)",
+      "stay": "日間",
+      "price_normal": 18300,
+      "price_intermediate": 23790,
+      "raw_tail": "Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (LA) | 小手術 （如脂肪瘤、嵌甲）（局部麻醉） Day Case | 日間治療 | 18,300  23,790"
+    },
+    {
+      "code": "GES30B",
+      "section": "Minor Ops Packages 小手術套餐",
+      "name_zh": "小手術 （如脂肪瘤、嵌甲）（監察麻醉或全身麻醉）",
+      "name_en": "Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (MAC/GA)",
+      "stay": "",
+      "price_normal": 26600,
+      "price_intermediate": 34580,
+      "raw_tail": "Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (MAC/GA) | 小手術 （如脂肪瘤、嵌甲）（監察麻醉或全身麻醉） 26,600  34,580"
+    },
+    {
+      "code": "GES31",
+      "section": "Minor Ops Packages 小手術套餐",
+      "name_zh": "膿腫切開引流術 2 Days",
+      "name_en": "Incision & Drainage of Abscess",
+      "stay": "2日",
+      "price_normal": 31500,
+      "price_intermediate": 40950,
+      "raw_tail": "Incision & Drainage of Abscess | 膿腫切開引流術 2 Days | 2 日 | 31,500  40,950"
+    },
+    {
+      "code": "GES32",
+      "section": "Minor Ops Packages 小手術套餐",
+      "name_zh": "藏毛竇切除術",
+      "name_en": "Excision of Pilonidal Sinus",
+      "stay": "7日",
+      "price_normal": 40700,
+      "price_intermediate": 52910,
+      "raw_tail": "易辦事、信用卡（VISA、萬事達、銀聯、美國運通、JCB）、電子錢包（支付寶、支付寶香港、微信支 | 付、微信支付香港）或銀行本票支付。 | EFFECTIVE DATE 生效日期: |  Price will be effective on 12 Jun 2026 以上收費由 2026 年 6 月 12 日生效"
+    }
+  ]
+}

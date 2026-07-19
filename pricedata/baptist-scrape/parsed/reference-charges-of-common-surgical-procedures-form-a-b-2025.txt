@@ -1,0 +1,813 @@
+--- page 1 ---
+Operation Procedures
+Number of
+Cases
+Average
+Length of
+Stay
+Doctor's
+Fees (HK$)
+Hospital
+Charges
+(HK$)
+Total
+Charges
+(HK$)
+手術程序
+個案數量
+平均住院日數
+醫生費
+(港幣$)
+住院費
+(港幣$)
+ 總收費
+(港幣$)
+General Surgery
+50th Percentile
+第五十百分位
+39,800
+26,971
+66,771
+普通外科手術
+90th Percentile
+第九十百分位
+67,400
+52,654
+120,054
+Day Surgery 50th Percentile
+第五十百分位
+28,000
+18,373
+46,373
+日間手術
+90th Percentile
+第九十百分位
+33,840
+30,172
+64,012
+Laparoscopic Cholecystectomy
+50th Percentile
+第五十百分位
+57,400
+39,693
+97,093
+腹腔內視鏡膽囊切除術
+90th Percentile
+第九十百分位
+111,475
+76,033
+187,508
+Cholecystectomy (Open)
+50th Percentile
+第五十百分位
+118,880
+91,973
+210,853
+膽囊切除術
+90th Percentile
+第九十百分位
+138,176
+183,398
+321,574
+Laparoscopic Colectomy
+50th Percentile
+第五十百分位
+114,050
+128,352
+242,402
+腹腔內視鏡結腸切除術
+90th Percentile
+第九十百分位
+153,360
+231,589
+384,949
+Colectomy (Open)
+50th Percentile
+第五十百分位
+136,000
+129,917
+265,917
+結腸切除術
+90th Percentile
+第九十百分位
+162,720
+262,788
+425,508
+50th Percentile
+第五十百分位
+21,800
+13,149
+34,949
+Circumcision
+90th Percentile
+第九十百分位
+29,720
+19,914
+49,634
+包皮環切術
+Day Surgery 50th Percentile
+第五十百分位
+15,000
+11,447
+26,447
+日間手術
+90th Percentile
+第九十百分位
+17,408
+15,630
+33,038
+50th Percentile
+第五十百分位
+31,250
+18,913
+50,163
+Haemorrhoidectomy
+90th Percentile
+第九十百分位
+51,480
+35,425
+86,905
+痔瘡切除術
+Day Surgery 50th Percentile
+第五十百分位
+21,150
+15,056
+36,206
+日間手術
+90th Percentile
+第九十百分位
+32,540
+20,832
+53,372
+Laparoscopic Herniorrhaphy
+50th Percentile
+第五十百分位
+46,600
+35,678
+82,278
+腹腔鏡疝縫合術
+90th Percentile
+第九十百分位
+68,500
+50,541
+119,041
+Herniorrhaphy
+50th Percentile
+第五十百分位
+35,000
+20,103
+55,103
+疝縫合術
+90th Percentile
+第九十百分位
+45,800
+32,174
+77,974
+Day Surgery 50th Percentile
+第五十百分位
+30,250
+18,119
+48,369
+日間手術
+90th Percentile
+第九十百分位
+39,010
+21,130
+60,140
+Herniotomy
+50th Percentile
+第五十百分位
+37,400
+18,949
+56,349
+疝切開術
+90th Percentile
+第九十百分位
+37,400
+18,949
+56,349
+Total Thyroidectomy
+50th Percentile
+第五十百分位
+87,500
+63,812
+151,312
+全甲狀腺切除術
+90th Percentile
+第九十百分位
+117,660
+99,461
+217,121
+Hemi Thyroidectomy
+50th Percentile
+第五十百分位
+57,350
+46,230
+103,580
+半甲狀腺切除術
+90th Percentile
+第九十百分位
+85,100
+61,241
+146,341
+ENT
+Direct Laryngoscopy ± Vocal Cord Polyp Biopsy
+Day Surgery 50th Percentile
+第五十百分位
+27,150
+14,649
+41,799
+耳鼻喉科
+喉內視鏡  ± 聲帶息肉活組織檢查
+日間手術
+90th Percentile
+第九十百分位
+32,070
+19,101
+51,171
+50th Percentile
+第五十百分位
+32,140
+17,804
+49,944
+Microscopic Laryngoscopy
+90th Percentile
+第九十百分位
+50,000
+26,694
+76,694
+微型喉鏡檢查
+Day Surgery 50th Percentile
+第五十百分位
+20,373
+16,240
+36,613
+日間手術
+90th Percentile
+第九十百分位
+23,595
+17,583
+41,178
+Tonsillectomy
+50th Percentile
+第五十百分位
+40,850
+25,763
+66,613
+扁桃體切除術
+90th Percentile
+第九十百分位
+64,420
+37,005
+101,425
+101 - 200
+1.10
+< 30
+101 - 200
+1.60
+2.50
+< 30
+< 30
+1.00
+30 - 100
+3.60
+30 - 100
+101 - 200
+1.70
+101 - 200
+1.80
+< 30
+101 - 200
+1.30
+< 30
+101 - 200
+2.00
+< 30
+< 30
+8.00
+< 30
+14.40
+乳房腫塊切除術
+< 30
+> 200
+2.80
+< 30
+9.70
+Statistics in total charges of common surgical procedures  2025
+ 二零二五年常見手術總收費統計
+Operation Types
+手術類別
+Statistical
+Ranking
+統計排位
+Excision Of Breast Mass
+> 200
+1.60
+                      Revision Date / 更新日期：20/04/2026
+1 / 3
+
+--- page 2 ---
+Operation Procedures
+Number of
+Cases
+Average
+Length of
+Stay
+Doctor's
+Fees (HK$)
+Hospital
+Charges
+(HK$)
+Total
+Charges
+(HK$)
+手術程序
+個案數量
+平均住院日數
+醫生費
+(港幣$)
+住院費
+(港幣$)
+ 總收費
+(港幣$)
+Statistics in total charges of common surgical procedures  2025
+ 二零二五年常見手術總收費統計
+Operation Types
+手術類別
+Statistical
+Ranking
+統計排位
+Obstetric
+Vaginal Delivery
+50th Percentile
+第五十百分位
+51,200
+38,251
+89,451
+婦產科
+自然分娩
+90th Percentile
+第九十百分位
+63,200
+49,652
+112,852
+Caesarean Section
+50th Percentile
+第五十百分位
+61,125
+38,802
+99,927
+剖腹分娩
+90th Percentile
+第九十百分位
+75,000
+54,960
+129,960
+Gynecology
+50th Percentile
+第五十百分位
+20,000
+14,303
+34,303
+婦科手術
+Colposcopy
+90th Percentile
+第九十百分位
+24,450
+25,268
+49,718
+陰道鏡檢查
+Day Surgery 50th Percentile
+第五十百分位
+10,800
+11,461
+22,261
+日間手術
+90th Percentile
+第九十百分位
+20,500
+16,333
+36,833
+50th Percentile
+第五十百分位
+20,500
+10,102
+30,602
+Dilation & Curettage
+90th Percentile
+第九十百分位
+28,180
+33,150
+61,330
+擴張子宮頸及刮除子宮內膜術
+Day Surgery 50th Percentile
+第五十百分位
+17,500
+9,193
+26,693
+日間手術
+90th Percentile
+第九十百分位
+19,800
+12,446
+32,246
+Hysterectomy (Open)
+50th Percentile
+第五十百分位
+104,000
+44,499
+148,499
+子宮切除術
+90th Percentile
+第九十百分位
+133,660
+64,337
+197,997
+Laparoscopic Ovarian Cystectomy
+50th Percentile
+第五十百分位
+63,000
+40,376
+103,376
+腹腔鏡卵巢切除術
+90th Percentile
+第九十百分位
+89,000
+61,233
+150,233
+Ovarian Cystectomy (Open)
+50th Percentile
+第五十百分位
+73,750
+36,838
+110,588
+卵巢切除術
+90th Percentile
+第九十百分位
+139,910
+60,606
+200,516
+Endoscopy
+50th Percentile
+第五十百分位
+26,100
+46,650
+72,750
+內視鏡檢查
+Bronchoscopy
+90th Percentile
+第九十百分位
+45,100
+134,788
+179,888
+支氣管鏡檢查
+Day Surgery 50th Percentile
+第五十百分位
+10,707
+18,417
+29,124
+日間手術
+90th Percentile
+第九十百分位
+17,030
+31,862
+48,892
+50th Percentile
+第五十百分位
+14,050
+19,730
+33,780
+Cystoscopy
+90th Percentile
+第九十百分位
+25,300
+34,622
+59,922
+膀胱鏡檢查
+Day Surgery 50th Percentile
+第五十百分位
+9,650
+5,822
+15,472
+日間手術
+90th Percentile
+第九十百分位
+12,780
+17,383
+30,163
+50th Percentile
+第五十百分位
+14,000
+23,969
+37,969
+Gastroscopy ± Polypectomy
+90th Percentile
+第九十百分位
+22,780
+48,958
+71,738
+胃鏡檢查 ± 息肉切除術
+Day Surgery 50th Percentile
+第五十百分位
+10,450
+8,471
+18,921
+日間手術
+90th Percentile
+第九十百分位
+14,300
+25,618
+39,918
+50th Percentile
+第五十百分位
+13,200
+13,722
+26,922
+Colonoscopy ± Polypectomy
+90th Percentile
+第九十百分位
+20,680
+39,089
+59,769
+大腸鏡檢查 ± 息肉切除術
+Day Surgery 50th Percentile
+第五十百分位
+11,600
+9,019
+20,619
+日間手術
+90th Percentile
+第九十百分位
+14,300
+21,060
+35,360
+50th Percentile
+第五十百分位
+23,400
+26,623
+50,023
+Gastroscopy and Colonoscopy ± Polypectomy
+90th Percentile
+第九十百分位
+32,100
+46,642
+78,742
+胃鏡及大腸鏡檢查 ± 息肉切除術
+Day Surgery 50th Percentile
+第五十百分位
+21,300
+18,466
+39,766
+日間手術
+90th Percentile
+第九十百分位
+27,000
+34,844
+61,844
+> 200
+1.20
+> 200
+> 200
+1.50
+> 200
+> 200
+1.30
+> 200
+> 200
+4.90
+101 - 200
+< 30
+1.20
+< 30
+101 - 200
+2.70
+30 - 100
+4.00
+101 - 200
+4.30
+30 - 100
+1.00
+30 - 100
+< 30
+1.30
+< 30
+101 - 200
+2.30
+> 200
+3.50
+                      Revision Date / 更新日期：20/04/2026
+2 / 3
+
+--- page 3 ---
+Operation Procedures
+Number of
+Cases
+Average
+Length of
+Stay
+Doctor's
+Fees (HK$)
+Hospital
+Charges
+(HK$)
+Total
+Charges
+(HK$)
+手術程序
+個案數量
+平均住院日數
+醫生費
+(港幣$)
+住院費
+(港幣$)
+ 總收費
+(港幣$)
+Statistics in total charges of common surgical procedures  2025
+ 二零二五年常見手術總收費統計
+Operation Types
+手術類別
+Statistical
+Ranking
+統計排位
+Eye
+50th Percentile
+第五十百分位
+34,400
+28,035
+62,435
+眼科手術
+Phacoemulsification + IOL
+90th Percentile
+第九十百分位
+48,200
+35,481
+83,681
+超聲波乳化晶狀體摘出術+人工晶體植入
+Day Surgery 50th Percentile
+第五十百分位
+13,300
+10,500
+23,800
+日間手術
+90th Percentile
+第九十百分位
+13,300
+10,500
+23,800
+50th Percentile
+第五十百分位
+25,800
+13,458
+39,258
+Carpal Tunnel Release
+90th Percentile
+第九十百分位
+48,000
+21,889
+69,889
+創傷及骨科手術
+腕管鬆解術
+Day Surgery 50th Percentile
+第五十百分位
+24,000
+8,799
+32,799
+日間手術
+90th Percentile
+第九十百分位
+32,480
+14,348
+46,828
+50th Percentile
+第五十百分位
+18,150
+15,942
+34,092
+Trigger Finger Release
+90th Percentile
+第九十百分位
+30,560
+28,208
+58,768
+扳機指（彈弓指）鬆解術
+Day Surgery 50th Percentile
+第五十百分位
+13,175
+8,967
+22,142
+日間手術
+90th Percentile
+第九十百分位
+18,450
+12,673
+31,123
+Knee Arthroscopy
+50th Percentile
+第五十百分位
+48,350
+35,794
+84,144
+膝關節內視鏡
+90th Percentile
+第九十百分位
+71,980
+52,169
+124,149
+Laminectomy
+50th Percentile
+第五十百分位
+122,500
+80,921
+203,421
+椎板切除
+90th Percentile
+第九十百分位
+228,500
+139,650
+368,150
+Spine fusion
+50th Percentile
+第五十百分位
+167,750
+156,511
+324,261
+脊柱融合術
+90th Percentile
+第九十百分位
+221,338
+255,062
+476,400
+Open Reduction And Internal Fixation (Upper Limb)
+50th Percentile
+第五十百分位
+55,600
+53,545
+109,145
+骨科切開內固定復位術 (上肢骨折)
+90th Percentile
+第九十百分位
+88,620
+79,578
+168,198
+Day Surgery 50th Percentile
+第五十百分位
+21,000
+23,994
+44,994
+日間手術
+90th Percentile
+第九十百分位
+21,000
+23,994
+44,994
+Open Reduction And Internal Fixation (Lower Limb)
+50th Percentile
+第五十百分位
+63,800
+46,662
+110,462
+骨科切開內固定復位術 (下肢骨折)
+90th Percentile
+第九十百分位
+105,720
+116,105
+221,825
+(3)
+Hospital charges included bed charges, operation and associated materials, nursing procedures, investigation and examination fees,
+medication, meals and beverage, sundries, etc.
+住院費包含病房費、手術室及相關物料、護理程序、化驗及檢查、藥物、膳食、雜項等。
+(4)
+Information above is for reference only. Charges will vary according to the complexity of each individual case.
+以上統計資料只供參考，收費會因應個別情况之複雜性有所差異。
+Remarks 註:
+(1)
+The information provided above is based on data from patients accommodating in standard wards and undergoing a single
+procedure. Data from patients undergoing multiple procedures are excluded.
+以上統計只參考入住標準房個案, 如同一次入院有多於一項手術程序之個案不被納入統計中。
+(2)
+Doctor's fees includes fees for anaesthetist, operating surgeon and ward round.
+醫生費包含外科醫生手術費、巡房費及麻醉醫生費。
+101 - 200
+2.00
+< 30
+30 - 100
+4.70
+30 - 100
+4.50
+30 - 100
+5.30
+< 30
+1.30
+< 30
+30 - 100
+2.10
+Orthopaedics &
+Traumatology
+< 30
+1.10
+< 30
+< 30
+1.20
+> 200
+                      Revision Date / 更新日期：20/04/2026
+3 / 3

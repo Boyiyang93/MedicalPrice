@@ -1,0 +1,110 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診/ 標準
+Semi-Private
+半私家房
+Private
+私家房
+HEAD 頭部
+Nasal Bone 鼻骨
+$560
+$840
+$1,120
+Sinuses 鼻竇
+$840
+$1,260
+$1,680
+Skull 頭顱骨
+$560
+$840
+$1,120
+BODY 軀幹
+Chest 胸
+$280
+$420
+$560
+Sternum 胸骨
+$560
+$840
+$1,120
+Abdomen 腹部
+$280
+$420
+$560
+KUB 腎輸尿管膀胱
+$280
+$420
+$560
+SPINE  脊柱
+Cervical Spine 脊柱頸段
+$560
+$840
+$1,120
+Thoracic Spine 脊柱胸段
+$560
+$840
+$1,120
+Lumber Spine 脊柱腰段
+$560
+$840
+$1,120
+Sacro-Iliac Joints 骶髂關節
+$840
+$1,260
+$1,680
+LIMBS 四肢
+Humerus (Each Side) 肱骨 (每邊)
+$560
+$840
+$1,120
+Elbow (Each Side) 肘 (每邊)
+$560
+$840
+$1,120
+Femur (Each Side) 股骨 (每邊)
+$560
+$840
+$1,120
+Knee (Each Side) 膝 (每邊)
+$560
+$840
+$1,120
+Ankle (Each Side) 踝 (每邊)
+$560
+$840
+$1,120
+OTHERS
+Bone Age (Each Part) 骨骼齡 (每部)
+$280
+$420
+$560
+HSG 子宮輸卵管造影術
+$4,220
+$6,330
+$8,440
+Voiding Cystogram 排尿膀胱造影術
+$5,160
+$7,740
+$10,320
+Remarks 備註:
+1.
+2.
+3.
+4.
+此收費表只列出常見之一般及特別X光項目以作參考。如有需要，請向放射診斷部查詢詳情。
+Enquiries 查詢: 2339 8981
+General X-Ray Examination  一般X光檢查
+ Special X-Ray Examination  特別X光檢查
+50% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+During off-hours, Radiologist will be called back for radiological services, and an additional charge of 30%
+of the examination fee or HK$2000, whichever is higher, will be levied.
+如果要求放射科醫生在非正常時段內提供放射科服務，額外收費為該項檢查費用之百份之三十或
+HK$2000，以較高者為準。
+The above table only shows the common items of General and Special X-Ray for reference. Please contact
+the Radiology Department for further details.
+General and Special X-Ray Examination  一般及特別X光檢查
+Rate for services provided in normal hours
+正常時段收費
+Revision Date/更新日期：01/01/2026

@@ -10,7 +10,7 @@
  */
 const globalMedicalData = {
   version: "2.0",
-  lastUpdated: "2026-07",
+  lastUpdated: "2026-07-19",
   hospitalOrder: [
     "szufh",
     "cuhk",
@@ -28,87 +28,102 @@ const globalMedicalData = {
     "hkah"
   ],
   hospitals: {
+    // ownership: private=私立 | public=公立 | nonprofit=公益
     szufh: {
       name: "深圳新風和睦家",
+      ownership: "private",
       link: "https://www.szufh.hk/",
       tag: "高透明度",
       alert: false
     },
     cuhk: {
       name: "香港中文大學醫院",
+      ownership: "private",
       link: "https://www.cuhkmc.hk/",
       tag: "",
       alert: false
     },
     hksh: {
       name: "養和醫院 (HKSH)",
+      ownership: "private",
       link: "https://www.hksh-hospital.com/",
       tag: "",
       alert: false
     },
     ghk: {
       name: "港怡醫院 (GHK)",
+      ownership: "private",
       link: "https://gleneagles.hk/",
       tag: "",
       alert: false
     },
     matilda: {
       name: "明德國際醫院",
+      ownership: "nonprofit",
       link: "https://www.matilda.org/",
       tag: "",
       alert: false
     },
     sth: {
       name: "聖德肋撒醫院 (法國)",
+      ownership: "nonprofit",
       link: "http://www.sth.org.hk/",
       tag: "",
       alert: false
     },
     baptist: {
       name: "香港浸信會醫院",
+      ownership: "nonprofit",
       link: "https://www.hkbh.org.hk/",
       tag: "",
       alert: false
     },
     union: {
       name: "仁安醫院",
-      link: "https://www.union.org/",
+      ownership: "private",
+      link: "https://www.union.org/tc/charges-promotion/charges",
       tag: "",
       alert: false
     },
     canossa: {
       name: "嘉諾撒醫院",
-      link: "#",
+      ownership: "nonprofit",
+      link: "https://www.canossahospital.org.hk/",
       tag: "",
       alert: false
     },
     sph: {
       name: "聖保祿醫院 (SPH)",
+      ownership: "nonprofit",
       link: "https://www.stpaul.org.hk/",
       tag: "",
       alert: false
     },
     pbh: {
       name: "寶血醫院 (PBH)",
+      ownership: "nonprofit",
       link: "https://www.pbh.hk/",
       tag: "",
       alert: false
     },
     evangel: {
       name: "播道醫院",
-      link: "#",
+      ownership: "nonprofit",
+      link: "https://www.evangel.org.hk/",
       tag: "",
       alert: false
     },
     twah: {
       name: "荃灣港安醫院",
-      link: "#",
+      ownership: "nonprofit",
+      link: "https://www.twah.org.hk/",
       tag: "",
       alert: false
     },
     hkah: {
       name: "香港港安–司徒拔道",
-      link: "#",
+      ownership: "nonprofit",
+      link: "https://www.hkah.org.hk/",
       tag: "",
       alert: false
     }
@@ -154,22 +169,23 @@ const globalMedicalData = {
         remarks: "診金不包括小手術費、藥費及化驗費等。"
       },
       hksh: {
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list",
         prices: {
           regular: 400,
-          night: 600,
-          holiday: 500
+          night: 800,
+          holiday: 600
         },
         displayPrices: {
           regular: "$400",
-          night: "$500 – $700",
-          holiday: "$500"
+          night: "$600 – $800",
+          holiday: "$600"
         },
         timeSlots: {
-          regular: "星期一至五 09:00-19:00；星期六 09:00-13:00",
-          night: "星期一至五 08:00-09:00及19:00-00:00；星期六 08:00-09:00及13:00-00:00；每日 00:00-08:00",
-          holiday: "星期日及公眾假期 08:00-00:00"
+          regular: "一至五 09:00-19:00；周六 09:00-13:00",
+          night: "平日夜間及每日 00:00-08:00",
+          holiday: "周日及公眾假期 08:00-00:00"
         },
-        remarks: "診金收費以病人取票時間為準。"
+        remarks: "Happy Valley 24小時普通科診金（價目表）。診金以取票時間為準。不含藥費及程序費。"
       },
       ghk: {
         prices: {
@@ -190,84 +206,194 @@ const globalMedicalData = {
         remarks: "診金不包括小手術費、藥費及化驗費等。分流為「第一類危急」個案均收費$1,500（急救服務費用另計）。農曆新年長假期常規收費為$1,100。本院接受使用醫療券。"
       },
       matilda: {
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees",
         prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
+          regular: 590,
+          night: 900,
+          holiday: 800
         },
-        remarks: "資料整理中。"
+        displayPrices: {
+          regular: "$590",
+          night: "$900 – $1,000",
+          holiday: "$800"
+        },
+        timeSlots: {
+          regular: "每日 08:00-20:00（周日及公眾假期除外）",
+          night: "每日 20:00-08:00",
+          holiday: "周日及公眾假期 08:00-20:00"
+        },
+        remarks: "24小時門診普通科診金（2026-02-01起）。不含藥費、化驗及程序費。"
       },
       sth: {
-        prices: {
-          regular: 230,
-          night: 340,
-          holiday: 340
-        },
-        remarks: "備註：常規時間段按08:00-19:59計，夜間及公眾假期加收附加費。"
-      },
-      baptist: {
-        prices: {
-          regular: 400,
-          night: 850,
-          holiday: 850
-        },
-        remarks: "備註：夜診/假日區間為 $700-$1,000，取中間值。遇惡劣天氣收費同假日。"
-      },
-      union: {
-        prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
-        },
-        remarks: "資料整理中。"
-      },
-      canossa: {
-        prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
-        },
-        remarks: "資料整理中。"
-      },
-      sph: {
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh",
         prices: {
           regular: 280,
           night: 430,
-          holiday: 410
+          holiday: 350
         },
-        remarks: "注意：非當值專科醫生回院應診外加收 $1,000。"
+        displayPrices: {
+          regular: "$280",
+          night: "$430",
+          holiday: "$350 – $470"
+        },
+        timeSlots: {
+          regular: "一至六 08:00-19:59",
+          night: "一至六 20:00-07:59",
+          holiday: "周日及公眾假期 08:00-19:59（夜間 $470）"
+        },
+        remarks: "門診部駐院醫生診金（FeeSchedule 2026-07-01起）。不含特別檢查/手術、藥費及物料。"
+      },
+      baptist: {
+        link: "https://www.hkbh.org.hk/fees-charges/general-services-charges/",
+        prices: {
+          regular: 400,
+          night: 900,
+          holiday: 600
+        },
+        displayPrices: {
+          regular: "$400",
+          night: "$600 – $900",
+          holiday: "$600 – $900"
+        },
+        timeSlots: {
+          regular: "一至五 08:00-18:00；周六 08:00-13:00",
+          night: "平日 18:00-08:00；周六 13:00-08:00",
+          holiday: "周日及公眾假期全日"
+        },
+        remarks: "24小時門診醫院診金（2026-07-01起）。不含藥費、化驗及程序費。"
+      },
+      union: {
+        link: "https://www.union.org/tc/charges-promotion/charges/emergency-medicine-centre",
+        prices: {
+          regular: 420,
+          night: 900,
+          holiday: 600
+        },
+        displayPrices: {
+          regular: "$420 – $700",
+          night: "$900 – $1,500",
+          holiday: "$600 – $1,500"
+        },
+        timeSlots: {
+          regular: "星期一至五 09:00-17:59（08:00-08:59 $700）",
+          night: "18:00-21:59 $900；22:00-01:59 $1,100；02:00-07:59 $1,500",
+          holiday: "星期日及公眾假期 09:00-17:59 $600；夜間同平日"
+        },
+        remarks: "急症門診中心診金（2026-02-01起）。年滿60歲長者有優惠價。不含藥費、化驗及程序費。"
+      },
+      canossa: {
+        link: "https://www.canossahospital.org.hk/tc/service/24_hours_out_patient_services/fees_and_charges/",
+        prices: {
+          regular: 388,
+          night: 800,
+          holiday: 500
+        },
+        displayPrices: {
+          regular: "$388",
+          night: "$500 – $800",
+          holiday: "$500 – $800"
+        },
+        timeSlots: {
+          regular: "一至五 08:00-17:59；周六 08:00-12:59",
+          night: "平日 18:00-07:59；周六 13:00-07:59",
+          holiday: "周日及公眾假期 08:00-23:59（夜間 $800）"
+        },
+        remarks: "24小時門診普通科診金（官网价目）。不含藥費、化驗及特別治療。"
+      },
+      sph: {
+        link: "https://www.stpaul.org.hk/tc/charges",
+        prices: {
+          regular: 280,
+          night: 430,
+          holiday: 350
+        },
+        displayPrices: {
+          regular: "$280",
+          night: "$430 – $470",
+          holiday: "$350 – $470"
+        },
+        timeSlots: {
+          regular: "一至六 08:00-20:00",
+          night: "每日 20:00-08:00",
+          holiday: "周日及公眾假期 08:00-20:00"
+        },
+        remarks: "24小時門診普通科診金（服務收費 2026-07-16通告）。非當值專科回院另計。"
       },
       pbh: {
+        link: "https://www.pbh.hk/service-fee-adjustment/",
         prices: {
           regular: 280,
           night: 390,
           holiday: 390
         },
-        remarks: "備註：週六20:00起及假日計入附加費。"
+        displayPrices: {
+          regular: "$280",
+          night: "$390",
+          holiday: "$390"
+        },
+        timeSlots: {
+          regular: "一至六 08:00-19:59",
+          night: "一至六 20:00-22:00",
+          holiday: "周日、公眾假期、八號風球及黑色暴雨"
+        },
+        remarks: "門診部駐院醫生診金（2025-01-01起）。65歲以上減$20。不含藥費、化驗及程序費。"
       },
       evangel: {
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/",
         prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
+          regular: 285,
+          night: 9999,
+          holiday: 395
         },
-        remarks: "資料整理中。"
+        displayPrices: {
+          regular: "$285",
+          night: "時段不設全科門診",
+          holiday: "$395"
+        },
+        timeSlots: {
+          regular: "一至六日間（約07:00-21:00）",
+          night: "不設夜間門診",
+          holiday: "周日、公眾假期及惡劣天氣"
+        },
+        remarks: "全科門診診金（2025-01-02起）。不設通宵急症。65歲以上診金及藥費九折。不含藥費及化驗。"
       },
       twah: {
+        link: "https://www.twah.org.hk/tc/fees-and-charges",
         prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
+          regular: 270,
+          night: 950,
+          holiday: 800
         },
-        remarks: "資料整理中。"
+        displayPrices: {
+          regular: "$270 – $480",
+          night: "$800 – $950",
+          holiday: "$800"
+        },
+        timeSlots: {
+          regular: "平日全科/急症日間",
+          night: "急症 20:00-08:00",
+          holiday: "周末及公眾假期急症"
+        },
+        remarks: "門診/急症診金（OPD PDF 2026-06）。急症夜間較高。不含藥費、化驗及程序費。"
       },
       hkah: {
+        link: "https://www.hkah.org.hk/en/fees-and-charges/out-patient-consultation-fee/out-patient-consultation-fee-2",
         prices: {
-          regular: 9999999,
-          night: 9999999,
-          holiday: 9999999
+          regular: 980,
+          night: 1200,
+          holiday: 1200
         },
-        remarks: "資料整理中。"
+        displayPrices: {
+          regular: "$980",
+          night: "$1,200",
+          holiday: "$1,200"
+        },
+        timeSlots: {
+          regular: "普通科門診辦公時間",
+          night: "24小時急症服務",
+          holiday: "急症服務全日"
+        },
+        remarks: "普通科初診$980／覆診$780；24小時急症診金$1,200（2025-10-17起）。特別診症另收設施費。"
       }
     },
     outpatientSpecialty: {
@@ -348,6 +474,26 @@ const globalMedicalData = {
         },
         scopes: ["普通科", "行為健康", "內科", "外科", "婦腫瘤", "神經", "骨科", "兒科", "整外"],
         remarks: "覆診收費範圍$600–$2,000，視乎所選醫生收費。診金為醫生診金，其他費用另計。"
+      },
+      union: {
+        link: "https://www.union.org/tc/charges-promotion/charges/general-surgery",
+        prices: {
+          regular: 760,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$760 – $3,500",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "微創中心專科門診（具體專科時間請查詢）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間收費將有所調整"
+        },
+        scopes: ["外科", "腸胃肝臟", "骨科", "耳鼻喉", "泌尿"],
+        remarks: "專科門診登記及診症費 $760–$3,500。不含藥費、化驗及程序費。"
       }
     },
     ward: {
@@ -376,15 +522,16 @@ const globalMedicalData = {
         }
       },
       hksh: {
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list",
         prices: {
-          standard: 1300,
-          semiPrivate: 2800,
-          private: 4600
+          standard: 1400,
+          semiPrivate: 3030,
+          private: 4850
         },
         ranges: {
-          standard: "$1,300 – $1,960",
-          semiPrivate: "$2,800 – $3,950",
-          private: "$4,600 – $23,000"
+          standard: "$1,400 – $2,020",
+          semiPrivate: "$3,030 – $4,030",
+          private: "$4,850 – $6,950"
         }
       },
       ghk: {
@@ -400,18 +547,20 @@ const globalMedicalData = {
         }
       },
       matilda: {
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees",
         prices: {
-          standard: 900,
-          semiPrivate: 1990,
-          private: 3300
+          standard: 1100,
+          semiPrivate: 2300,
+          private: 4500
         },
         ranges: {
-          standard: "$900 – $1,100",
-          semiPrivate: "$1,990 – $2,300",
-          private: "$3,300 – $4,500"
+          standard: "$1,100",
+          semiPrivate: "$2,300",
+          private: "$4,500 – $6,500"
         }
       },
       sth: {
+        link: "https://www.sth.org.hk/download/RoomCharges.pdf",
         prices: {
           standard: 610,
           semiPrivate: 1000,
@@ -420,22 +569,24 @@ const globalMedicalData = {
         ranges: {
           standard: "$610 – $800",
           semiPrivate: "$1,000 – $1,750",
-          private: "$2,100 – $15,300"
+          private: "$2,100 – $4,100"
         }
       },
       baptist: {
+        link: "https://www.hkbh.org.hk/fees-charges/room-types-rates/",
         prices: {
-          standard: 820,
-          semiPrivate: 1810,
-          private: 3500
+          standard: 850,
+          semiPrivate: 1900,
+          private: 3880
         },
         ranges: {
-          standard: "$820 – $1,240",
-          semiPrivate: "$1,810 – $2,320",
-          private: "$3,500 – $4,780"
+          standard: "$850 – $1,200",
+          semiPrivate: "$1,900 – $2,800",
+          private: "$3,880 – $4,880"
         }
       },
       union: {
+        link: "https://www.union.org/tc/charges-promotion/charges/room-charges",
         prices: {
           standard: 600,
           semiPrivate: 1080,
@@ -448,6 +599,7 @@ const globalMedicalData = {
         }
       },
       canossa: {
+        link: "https://canossahospital.org.hk/tc/fee/accommodation_charges/",
         prices: {
           standard: 800,
           semiPrivate: 2600,
@@ -460,63 +612,68 @@ const globalMedicalData = {
         }
       },
       sph: {
+        link: "https://www.stpaul.org.hk/tc/charges/room-charge",
         prices: {
-          standard: 9999999,
-          semiPrivate: 9999999,
-          private: 9999999
+          standard: 760,
+          semiPrivate: 1380,
+          private: 3800
         },
         ranges: {
-          standard: "Coming Soon",
-          semiPrivate: "Coming Soon",
-          private: "Coming Soon"
+          standard: "$760 – $900",
+          semiPrivate: "$1,380 – $1,480",
+          private: "$3,800 – $4,880"
         }
       },
       pbh: {
+        link: "https://www.pbh.hk/service-fee-adjustment/",
         prices: {
-          standard: 9999999,
-          semiPrivate: 9999999,
-          private: 9999999
+          standard: 850,
+          semiPrivate: 1280,
+          private: 2350
         },
         ranges: {
-          standard: "Coming Soon",
-          semiPrivate: "Coming Soon",
-          private: "Coming Soon"
+          standard: "$850",
+          semiPrivate: "$1,280 – $1,850",
+          private: "$2,350"
         }
       },
       evangel: {
+        link: "https://www.evangel.org.hk/images/charges/list_inpatient.pdf",
         prices: {
-          standard: 9999999,
-          semiPrivate: 9999999,
-          private: 9999999
+          standard: 830,
+          semiPrivate: 1280,
+          private: 2350
         },
         ranges: {
-          standard: "Coming Soon",
-          semiPrivate: "Coming Soon",
-          private: "Coming Soon"
+          standard: "$830 – $1,020",
+          semiPrivate: "$1,280 – $1,920",
+          private: "$2,350"
         }
       },
       twah: {
+        link: "https://www.twah.org.hk/tc/fees-and-charges",
         prices: {
-          standard: 9999999,
-          semiPrivate: 9999999,
-          private: 9999999
+          standard: 1000,
+          semiPrivate: 1250,
+          private: 3500
         },
         ranges: {
-          standard: "Coming Soon",
-          semiPrivate: "Coming Soon",
-          private: "Coming Soon"
+          standard: "$1,000",
+          semiPrivate: "$1,250 – $2,200",
+          private: "$3,500"
         }
       },
       hkah: {
+        link: "https://www.hkah.org.hk/tc/fees-and-charges",
         prices: {
-          standard: 9999999,
-          semiPrivate: 9999999,
-          private: 9999999
+          standard: 900,
+          semiPrivate: 2300,
+          private: 3900
         },
         ranges: {
-          standard: "Coming Soon",
-          semiPrivate: "Coming Soon",
-          private: "Coming Soon"
+          standard: "$900",
+          semiPrivate: "$2,300 – $2,800",
+          private: "$3,900 – $9,000"
         }
       }
     },
@@ -539,11 +696,11 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 97500,
+        price: 116362,
         priceLabel: "腹腔鏡膽囊切除術",
-        displayPrice: "HK$85,000 – $110,000",
-        remarks: "⚠️ 視乎病房級別（普通房/半私家房/私家房）。醫生費需另計。",
-        link: "https://www.hksh-hospital.com/tc_chi/services/service_general_surgery.aspx"
+        displayPrice: "HK$116,362",
+        remarks: "⚠️ 2025年先導計劃歷史賬目中位數（普通房）。總收費=醫生費+醫院費。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-charges/historical-bill-sizes-statistics"
       },
 
       ghk: {
@@ -551,7 +708,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡膽囊切除術",
         displayPrice: "HK$99,900 – $142,220",
         remarks: "⚠️ 手術路徑(常規腹腔鏡/單孔腹腔鏡/開放式)、能量設備(超聲刀/雙極刀)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -560,45 +717,67 @@ const globalMedicalData = {
       },
 
       sth: {
-        price: 20250,
-        priceLabel: "日間普通房基準套餐",
-        displayPrice: "HK$18,500 – $22,000",
-        remarks: "⚠️ 雜費風險：病理化驗與耗材可能另計。"
+        price: 92680,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$92,680 – $115,725",
+        remarks: "⚠️ 2025年歷史統計（標準房）。總收費=醫生費+醫院費。平均住院約2.2日。",
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 97093,
+        priceLabel: "腹腔內視鏡膽囊切除術",
+        displayPrice: "HK$97,093 – $187,508",
+        remarks: "⚠️ 2025年歷史統計（標準房）。總收費=醫生費+醫院費。平均住院約2.8日。",
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 110660,
+        priceLabel: "腹腔鏡內膽囊切除術",
+        displayPrice: "HK$74,300 – $232,740",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.2日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 122704,
+        priceLabel: "膽囊切除術（腹腔鏡）",
+        displayPrice: "HK$122,704 – $210,661",
+        remarks: "⚠️ 2025年常見程序參考費用（普通病房）。總收費=醫生費+醫院費。",
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 91039,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$91,039",
+        remarks: "⚠️ 2025年歷史賬目（標準房）。總收費=醫生費+醫院費。平均住院約2.0日。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 102843,
+        priceLabel: "膽囊切除術",
+        displayPrice: "HK$102,843 – $124,200",
+        remarks: "⚠️ 2025年常見手術參考（標準房）。總收費統計；實際視病情及醫生收費而定。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 37347,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$37,347",
+        remarks: "⚠️ 2025年歷史統計（普通房）五十分位總收費。另有日間/套餐價目請查官网。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 50325,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$50,325",
+        remarks: "⚠️ 2025年常見手術統計（標準房）。總收費含醫生費及醫院費。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -629,8 +808,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 73500,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$48,200 – $98,800",
+        remarks: "⚠️ 腫塊數目(單一／兩個／三至五個)與日間／住院2日及手術風險等級。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -649,8 +831,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 64130,
+        priceLabel: "超聲波導引乳房腫塊切除術",
+        displayPrice: "HK$35,480 – $157,600",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約2.2日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -706,11 +891,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 73565,
+        price: 35900,
         priceLabel: "包皮環切術",
-        displayPrice: "HK$18,300 – $128,830",
-        remarks: "⚠️ 手術項目(包皮/膿腫/藏毛竇/激光靜脈曲張/脂肪瘤)、麻醉方式與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        displayPrice: "HK$28,250 – $43,550",
+        remarks: "⚠️ 年齡(出生28天或以下／一般)、日間或住院2日與手術風險等級。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -863,8 +1048,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 110215,
+        priceLabel: "半邊甲狀腺切除術",
+        displayPrice: "HK$89,000 – $131,430",
+        remarks: "⚠️ 是否併用神經監測與手術風險等級；標準住院約3日。均使用能量設備。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -940,11 +1128,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 133160,
-        priceLabel: "甲狀腺切除術",
-        displayPrice: "HK$89,000 – $177,320",
-        remarks: "⚠️ 切除範圍(半邊/全邊)、是否併用神經監測，與手術風險等級。均使用能量設備。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        price: 150810,
+        priceLabel: "全邊甲狀腺切除術",
+        displayPrice: "HK$124,300 – $177,320",
+        remarks: "⚠️ 是否併用神經監測與手術風險等級；標準住院約4日。均使用能量設備。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1094,11 +1282,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 89065,
-        priceLabel: "腹股溝疝氣修補術",
-        displayPrice: "HK$42,800 – $135,330",
-        remarks: "⚠️ 手術路徑(開放式/腹腔鏡)、單雙邊、患者年齡(成人/兒童)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        price: 72425,
+        priceLabel: "單側腹股溝疝氣修補術",
+        displayPrice: "HK$42,800 – $102,050",
+        remarks: "⚠️ 手術路徑(開放式／腹腔鏡)、患者年齡(成人／兒童)與手術風險等級；單邊。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1174,8 +1362,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 113815,
+        priceLabel: "雙側腹股溝疝氣修補術",
+        displayPrice: "HK$92,300 – $135,330",
+        remarks: "⚠️ 腹腔鏡雙邊修補、患者年齡(成人／兒童)與手術風險等級。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1255,7 +1446,7 @@ const globalMedicalData = {
         priceLabel: "闌尾切除術",
         displayPrice: "HK$93,400 – $139,490",
         remarks: "⚠️ 手術路徑(開放/腹腔鏡)、病症複雜程度(簡單/複雜)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1332,7 +1523,7 @@ const globalMedicalData = {
         priceLabel: "痔瘡切除術",
         displayPrice: "HK$42,700 – $72,800",
         remarks: "⚠️ 手術方式(傳統/環狀切除/使用Ligasure)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1351,8 +1542,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 46540,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$30,910 – $83,420",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約2.2日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -1405,8 +1599,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 133160,
+        priceLabel: "甲狀腺處置手術",
+        displayPrice: "HK$89,000 – $177,320",
+        remarks: "⚠️ 半邊／全邊切除、是否併用神經監測與手術風險等級。均使用能量設備。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1553,8 +1750,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 33235,
+        priceLabel: "開放式乳房活組織切片檢查",
+        displayPrice: "HK$28,900 – $37,570",
+        remarks: "⚠️ 日間治療；普通／中等風險。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1627,11 +1827,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 122120,
-        priceLabel: "乳房腫塊/腫瘤切除術",
-        displayPrice: "HK$48,200 – $196,040",
-        remarks: "⚠️ 切除範圍(單個或多個腫塊/部分/全乳/根治性)、單雙邊、是否附加冷凍切片/前哨結活檢/腋下淋巴廓清術，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/general-surgery"
+        price: 132520,
+        priceLabel: "乳房腫瘤／全乳切除術",
+        displayPrice: "HK$69,000 – $196,040",
+        remarks: "⚠️ 術式(部分／全乳／根治)、單雙邊、是否附加冷凍切片／前哨結活檢／腋下淋巴廓清，與手術風險等級。",
+        link: "https://gleneagles.hk/tc/fee-charges/general-surgery"
       },
 
       matilda: {
@@ -1650,8 +1850,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 126660,
+        priceLabel: "乳房切除術",
+        displayPrice: "HK$107,930 – $147,540",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約4.3日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -1722,16 +1925,19 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 9300,
+        priceLabel: "胃鏡檢查 - 睡眠監察麻醉",
+        displayPrice: "HK$9,300 – $13,700",
+        remarks: "✓ 醫院套餐（不含醫生費，2026价目）。標準/雙人/私家房。全面護理套餐另計。",
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages"
       },
 
       sth: {
-        price: 6950,
-        priceLabel: "日間程序普通房常規區間",
-        displayPrice: "HK$6,100 – $7,800",
-        remarks: "⚠️ 雜費風險：人流量大，切除活檢費與耗材另計。",
-        tags: ["九龍核心"]
+        price: 19870,
+        priceLabel: "胃窺鏡 +/- 瘜肉切除術",
+        displayPrice: "HK$19,870 – $29,054",
+        remarks: "⚠️ 2025年歷史統計日間手術五十分位總收費（標準房基準）。",
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -1755,16 +1961,19 @@ const globalMedicalData = {
       },
 
       pbh: {
-        price: 5800,
-        priceLabel: "日間大房基準套餐價",
-        displayPrice: "HK$5,800",
-        remarks: "✓ 全港最低參考價：性價比極高，標準計劃基本全覆蓋。",
-        tags: ["常規體檢首選"]
+        price: 8075,
+        priceLabel: "胃鏡檢查",
+        displayPrice: "HK$8,075 – $24,711",
+        remarks: "⚠️ 2025年歷史統計五十分位總收費（標準房）。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 3100,
+        priceLabel: "門診胃鏡（醫院收費）",
+        displayPrice: "HK$3,100 – $13,000",
+        remarks: "✓ 門診醫院收費約 $3,100；日間全面護理套餐約 $13,000（含醫生及麻醉）。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -2043,67 +2252,82 @@ const globalMedicalData = {
           remarks: "CT 腦部掃描資料整理中。"
         },
         hksh: {
-          price: 4500,
-          priceLabel: "常規專科高級影像收費",
-          displayPrice: "HK$4,500",
-          remarks: "⭐ 診斷權威：費用較高，但放射醫學專家團隊實力冠絕全港。",
-          tags: [
-            "名醫聯合診斷"
-          ]
+          price: 3690,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$3,690 – $6,630",
+          remarks: "✓ 價目表（門診/普通房級，2026-08）。 加顯影約 $6,630。",
+          link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list"
         },
         ghk: {
           price: 9999999,
           remarks: "CT 腦部掃描資料整理中。"
         },
         matilda: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2800,
+          priceLabel: "CT 腦部平掃（標準房）",
+          displayPrice: "$2,800 – $5,900",
+          remarks: "✓ 醫院收費表（2026-02-01）。標準房/基本收費。 加顯影約 $5,900。",
+          link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees"
         },
         sth: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2100,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$2,100 – $3,900",
+          remarks: "✓ 掃描部基本收費（標準房/門診，2024-07-01／FeeSchedule 2026-07-01）。 加顯影約 $3,900。",
+          link: "https://www.sthscan.com/hk/charges/"
         },
         baptist: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2380,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$2,380 – $4,450",
+          remarks: "✓ 放射診斷收費（標準房/門診，2026-01-01）。 加顯影約 $4,450。",
+          link: "https://www.hkbh.org.hk/fees-charges/general-services-charges/"
         },
         union: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 3450,
+          priceLabel: "CT 腦部掃描",
+          displayPrice: "HK$2,400 – $4,500",
+          remarks: "✓ 掃描 $2,400；掃描+顯影劑 $4,500。醫療造影部價目（2026-06-10起）。",
+          link: "https://www.union.org/tc/charges-promotion/charges/diagnostic-tests-medical-imaging"
         },
         canossa: {
           price: 9999999,
           remarks: "CT 腦部掃描資料整理中。"
         },
         sph: {
-          price: 2900,
-          priceLabel: "常規腦部電腦斷層掃描",
-          displayPrice: "HK$2,900",
-          remarks: "⚠️ 顯影劑另計：注意若臨床需增強掃描，造影藥費需外加。",
-          tags: [
-            "地段方便"
-          ]
+          price: 2400,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$2,400 – $4,300",
+          remarks: "✓ 放射部收費（標準房/門診）。 加顯影約 $4,300。",
+          link: "https://www.stpaul.org.hk/tc/charges"
         },
         pbh: {
-          price: 2500,
-          priceLabel: "無顯影劑平掃基準價",
-          displayPrice: "HK$2,500",
-          remarks: "✓ 全港私院最低：適合常規體檢或急性病因初步排查。",
-          tags: [
-            "影像窪地"
-          ]
+          price: 2275,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$2,275 – $3,950",
+          remarks: "✓ 影像診斷服務收費（2025-06-10）。 加顯影約 $3,950。",
+          link: "https://www.pbh.hk/service-fee-adjustment/"
         },
         evangel: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2300,
+          priceLabel: "CT 腦部平掃（普通房）",
+          displayPrice: "$2,300 – $4,000",
+          remarks: "✓ 掃描服務收費（2026-03-02）。門診平掃約 $2,000。 加顯影約 $4,000。",
+          link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
         },
         twah: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2900,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$2,900 – $3,900",
+          remarks: "✓ 放射診斷收費（標準房，2026-06）。 加顯影約 $3,900。",
+          link: "https://www.twah.org.hk/tc/fees-and-charges"
         },
         hkah: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 3450,
+          priceLabel: "CT 腦部平掃",
+          displayPrice: "$3,450 – $6,220",
+          remarks: "✓ 影像收費（標準房，2026-01-01）。門診平掃約 $2,833。 加顯影約 $6,220。",
+          link: "https://www.hkah.org.hk/tc/fees-and-charges"
         }
       },
     mri_brain: {
@@ -2127,62 +2351,82 @@ const globalMedicalData = {
           ]
         },
         hksh: {
-          price: 8800,
-          priceLabel: "神經影像磁力共振底價",
-          displayPrice: "HK$8,800",
-          remarks: "⭐ 診斷標桿：針對腦神經血管、微小病變的臨床診斷實力極強。",
-          tags: [
-            "權威神經影像"
-          ]
+          price: 9990,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$9,990 – $15,970",
+          remarks: "✓ 價目表（門診/普通房級，2026-08）。 加顯影約 $15,970。",
+          link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list"
         },
         ghk: {
           price: 9999999,
           remarks: "MRI 腦部掃描資料整理中。"
         },
         matilda: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6930,
+          priceLabel: "MRI 腦部平掃（標準房）",
+          displayPrice: "$6,930 – $10,260",
+          remarks: "✓ 醫院收費表（2026-02-01）。 加顯影約 $10,260。",
+          link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees"
         },
         sth: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6260,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$6,260 – $10,100",
+          remarks: "✓ 掃描部基本收費（標準房/門診）。 加顯影約 $10,100。",
+          link: "https://www.sthscan.com/hk/charges/"
         },
         baptist: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6740,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$6,740 – $10,200",
+          remarks: "✓ 放射診斷收費（標準房/門診）。 加顯影約 $10,200。",
+          link: "https://www.hkbh.org.hk/fees-charges/general-services-charges/"
         },
         union: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 8600,
+          priceLabel: "MRI 腦部掃描",
+          displayPrice: "HK$6,600 – $10,600",
+          remarks: "✓ 腦部掃描 $6,600；掃描+顯影劑 $10,600。腦部及腦動脈另計 $10,000–$14,000。",
+          link: "https://www.union.org/tc/charges-promotion/charges/diagnostic-tests-medical-imaging"
         },
         canossa: {
           price: 9999999,
           remarks: "MRI 腦部掃描資料整理中。"
         },
         sph: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6430,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$6,430 – $9,940",
+          remarks: "✓ 放射部收費（標準房/門診）。 加顯影約 $9,940。",
+          link: "https://www.stpaul.org.hk/tc/charges"
         },
         pbh: {
-          price: 5100,
-          priceLabel: "常規無造影劑 MRI 基準價",
-          displayPrice: "HK$5,100",
-          remarks: "✓ 門檻低：香港本地磁力共振最實惠方案，適合定期隨訪。",
-          tags: [
-            "複查首選"
-          ]
+          price: 5730,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$5,730 – $9,245",
+          remarks: "✓ 影像診斷服務收費（2025-06-10）。 加顯影約 $9,245。",
+          link: "https://www.pbh.hk/service-fee-adjustment/"
         },
         evangel: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6200,
+          priceLabel: "MRI 腦部平掃（普通房）",
+          displayPrice: "$6,200 – $10,000",
+          remarks: "✓ 磁力共振收費（2026-03-02）。門診平掃約 $5,500。 加顯影約 $10,000。",
+          link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
         },
         twah: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 6900,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$6,900 – $10,700",
+          remarks: "✓ 放射診斷收費（標準房）。 加顯影約 $10,700。",
+          link: "https://www.twah.org.hk/tc/fees-and-charges"
         },
         hkah: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 9320,
+          priceLabel: "MRI 腦部平掃",
+          displayPrice: "$9,320 – $14,560",
+          remarks: "✓ 影像收費（標準房，2026-01-01）。門診平掃約 $7,644。 加顯影約 $14,560。",
+          link: "https://www.hkah.org.hk/tc/fees-and-charges"
         }
       }
     },
@@ -2461,8 +2705,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        price: 39370,
+        priceLabel: "宮腔鏡檢查 + 刮宮術",
+        displayPrice: "HK$19,670 – $78,450",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約1.5日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2538,8 +2785,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        price: 121810,
+        priceLabel: "肌瘤切除術",
+        displayPrice: "HK$91,990 – $185,050",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約4.9日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2615,8 +2865,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        price: 162930,
+        priceLabel: "腹腔鏡輔助子宮切除術",
+        displayPrice: "HK$100,420 – $397,250",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約4.6日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2769,8 +3022,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        price: 103550,
+        priceLabel: "腹腔鏡卵巢囊腫切除術",
+        displayPrice: "HK$69,740 – $159,300",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.3日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2846,8 +3102,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        price: 29650,
+        priceLabel: "刮宮術",
+        displayPrice: "HK$16,240 – $44,200",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約1.4日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2924,8 +3183,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 173980,
+        priceLabel: "全膝關節置換術",
+        displayPrice: "HK$129,180 – $282,320",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約5.6日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -3143,8 +3405,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 89530,
+        priceLabel: "開放性復位及內固定術",
+        displayPrice: "HK$36,870 – $227,720",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.1日。 收費因病情複雜性及個別醫生收費而異。 統計未分上下肢。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -3365,8 +3630,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 89110,
+        priceLabel: "膝關節內窺鏡檢查",
+        displayPrice: "HK$69,000 – $108,980",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.0日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -3438,8 +3706,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 89530,
+        priceLabel: "開放性復位及內固定術",
+        displayPrice: "HK$36,870 – $227,720",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.1日。 收費因病情複雜性及個別醫生收費而異。 統計未分上下肢。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -3809,8 +4080,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 134470,
+        priceLabel: "膝前十字韌帶重建術",
+        displayPrice: "HK$110,260 – $159,810",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約3.5日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -4041,8 +4315,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 20100,
+        priceLabel: "白內障摘除及人工晶體植入（單眼／日間）",
+        displayPrice: "HK$20,100",
+        remarks: "✓ 套餐含專科醫生手術費及局麻、術前測度、日間手術室、單焦距透明晶體、術後兩週內1次覆診及術後藥物。非住院。",
+        link: "https://www.union.org/tc/charges-promotion/charges/cataract-surgery-package-plan"
       },
 
       canossa: {
@@ -4194,8 +4471,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 71290,
+        priceLabel: "扁桃體切除術",
+        displayPrice: "HK$28,770 – $129,900",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約2.1日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -4274,8 +4554,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 59790,
+        priceLabel: "顯微喉內視鏡檢查",
+        displayPrice: "HK$34,580 – $144,740",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約2.0日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -4428,8 +4711,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 140700,
+        priceLabel: "功能性內視鏡鼻竇手術",
+        displayPrice: "HK$56,520 – $384,600",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約2.8日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -4942,8 +5228,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
+        price: 111675,
+        priceLabel: "前列腺手術（電刮／等離子氣化）",
+        displayPrice: "HK$69,430 – $186,140",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 收費因病情複雜性及個別醫生收費而異。 含經尿道電刮與等離子氣化統計區間。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -5096,8 +5385,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
+        price: 3800,
+        priceLabel: "尿動力測試（成人）",
+        displayPrice: "HK$3,800 – $4,000",
+        remarks: "✓ 微創中心門診價；成人 $3,800／兒童 $4,000。不含醫生診症費。",
+        link: "https://www.union.org/tc/charges-promotion/charges/urology-price-list"
       },
 
       canossa: {
@@ -5173,8 +5465,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "泌尿外科手術資料整理中。"
+        price: 69660,
+        priceLabel: "睾丸固定術",
+        displayPrice: "HK$46,390 – $92,970",
+        remarks: "⚠️ 2025年7–12月統計（標準房）。總收費含手術室費、醫生費、麻醉科醫生費及醫院費。 平均住院約1.5日。 收費因病情複雜性及個別醫生收費而異。",
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {

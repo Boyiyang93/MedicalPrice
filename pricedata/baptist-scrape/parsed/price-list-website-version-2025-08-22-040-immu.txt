@@ -1,0 +1,100 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+  Hepatitis A Antibody IgG 甲型肝炎抗體IgG
+$950
+$1,235
+$1,520
+  Hepatitis A Antibody IgM 甲型肝炎抗體IgM
+$950
+$1,235
+$1,520
+  Hepatitis B Core Antibody Total 總乙型肝炎核心抗體
+$950
+$1,235
+$1,520
+  Hepatitis B e Antibody 乙型肝炎e抗體
+$950
+$1,235
+$1,520
+  Hepatitis B e Antigen 乙型肝炎e抗原
+$950
+$1,235
+$1,520
+  Hepatitis B Surface Antibody 乙型肝炎表面抗體
+$650
+$845
+$1,040
+  Hepatitis B Surface Antigen 乙型肝炎表面抗原
+$550
+$715
+$880
+  Hepatitis C Antibody 丙型肝炎抗體
+$1,190
+$1,547
+$1,904
+  ANCA, Anti-neutrophil Cytoplasmic Antibodies 抗中性白血球粒細胞胞質抗體
+$990
+$1,287
+$1,584
+  Anti-cyclic citrullinated peptide Antibodies 抗環瓜氨酸基肽抗體
+$770
+$1,001
+$1,232
+  Anti-dsDNA 脫氧核糖核酸抗體
+$690
+$897
+$1,104
+  Anti-ENA 抗可提取核抗原組合
+$860
+$1,118
+$1,376
+  Antinuclear Factor (ANF/ANA) 抗核因子
+$620
+$806
+$992
+  Anti-Thyroglobulin antibody 抗甲狀腺球蛋白抗體
+$750
+$975
+$1,200
+  Anti-TPO 甲狀腺過氧化酶抗體
+$750
+$975
+$1,200
+  Anti-TSHR 甲促素結合體抗體
+$1,340
+$1,742
+$2,144
+  Rheumatoid Factor 類風濕性關節炎因子
+$410
+$533
+$656
+Remarks 備註:
+1.
+2.
+3.
+Immunology 免疫學
+Enquiries 查詢: 2339 8921
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+The above table only shows the common items of Immunology for reference. Please contact the Pathology Department for
+further details.
+此收費表只列出常見之免疫學項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Hepatitis Markers
+Autoimmune 
+Rate for services provided in normal hours
+正常時段收費
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：22/08/2025

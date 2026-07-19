@@ -1,0 +1,54 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+$1,780
+$2,670
+$3,560
+$3,040
+$4,560
+$6,080
+$3,300
+$4,950
+$6,600
+$4,290
+$6,435
+$8,580
+Remarks 備註:
+1.
+2.
+3.
+4.
+如果要求放射科醫生在非正常時段內提供放射科服務，額外收費為該項檢查費用之百份之三十或
+HK$2000，以較高者為準。
+The above table only shows the common items of Mammography for reference. Please contact the Radiology
+Department for further details.
+此收費表只列出常見之乳腺造影項目以作參考。如有需要，請向放射診斷部查詢詳情。
+Enquiries 查詢: 2339 8981
+50% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+During off-hours, Radiologist will be called back for radiological services, and an additional charge of 30%
+of the examination fee or HK$2000, whichever is higher, will be levied.
+Mammography 乳腺造影
+3D Mammogram  三維乳房造影術
+3D Mammogram + Ultrasound Breast
+三維乳房造影 及 超聲波乳房掃描
+2D Mammogram  二維乳房造影術
+2D Mammogram + Ultrasound Breast
+二維乳房造影 及 超聲波乳房掃描
+Normal Hours 正常時段
+Off-Hours 非正常時段
+Mon – Fri 星期一至五
+09:00 - 17:00
+17:00 - 09:00
+Sat 星期六
+09:00 - 13:00
+13:00 - 09:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：01/01/2026

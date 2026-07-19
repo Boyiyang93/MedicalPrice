@@ -1,0 +1,65 @@
+﻿code,section,name_zh,name_en,stay,price_normal,price_intermediate
+GES20,Breast Lesion Packages 乳房腫塊手術套餐,開放式乳房活組織切片檢查,"Biopsy of Breast; Open, Incisional",日間,28900,37570
+GES21A,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 單一腫塊,Excision of Breast Lesion – Single,,48200,62660
+GES21F,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 兩個腫塊,Excision of Breast Lesion - 2 Areas,,59600,77480
+GES21G,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 三至五個腫塊,Excision of Breast Lesion - 3-5 Areas,,71000,92300
+GES21C,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 單一腫塊,Excision of Breast Lesion – Single,2日,53200,69160
+GES21D,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 兩個腫塊,Excision of Breast Lesion - 2 Areas,,64600,83980
+GES21E,Breast Lesion Packages 乳房腫塊手術套餐,乳房腫塊切除術 - 三至五個腫塊,Excision of Breast Lesion - 3-5 Areas,,76000,98800
+GES22A,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,乳房腫瘤切除術 +/- 冷凍切片 - 單邊,Wide Excision Lumpectomy +/- Frozen Section of Margins -,2日,81000,105300
+GES22C,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,乳房腫瘤切除術 + 冷凍切片 + 腋下淋巴廓清術 - 單邊,Wide Excision Lumpectomy + Frozen Section of Margins +,,115800,150540
+GES22B,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,乳房腫瘤切除術 + 冷凍切片 + 前哨結活組織檢查 (Sentimag /,Wide Excision Lumpectomy + Frozen Section of Margins +,,134300,174590
+GES23A,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,乳房腫塊 / 乳房部分切除術 - 單邊,Lumpectomy / Partial Mastectomy - Unilateral,,69000,89700
+GES23B,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,全乳切除術 - 單邊,Mastectomy (Simple) - Unilateral,,87000,113100
+GES24A,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,根治性乳房切除術 + 腋下淋巴廓清術 - 單邊,Mastectomy (Radical) + Axillary Dissection - Unilateral,4日,131100,170430
+GES24B,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,根治性乳房切除術 + 前哨結活組織檢查(Sentimag / Gamma,Mastectomy (Radical) + Sentinel Lymph Node Biopsy,,150800,196040
+GES25,Lumpectomy and Mastectomy Packages 乳房腫瘤手術套餐,乳房切除術 - 雙邊,Mastectomy - Bilateral,2日,117800,153140
+GES03A,Thyroidectomy Packages 甲狀腺切除術套餐,半邊甲狀腺切除術（雙極刀／超聲刀或同等） 3 Days,Hemi-Thyroidectomy (Bipolar Forceps / Harmonic Scalpel or,3日,89000,115700
+GES03N,Thyroidectomy Packages 甲狀腺切除術套餐,半邊甲狀腺切除術併神經監測,Hemi-Thyroidectomy (Bipolar Forceps / Harmonic Scalpel or,,101100,131430
+GES05A,Thyroidectomy Packages 甲狀腺切除術套餐,全邊甲狀腺切除術（雙極刀／超聲刀或同等） 4 Days,Equivalent),4日,124300,161590
+GES05N,Thyroidectomy Packages 甲狀腺切除術套餐,全邊甲狀腺切除術併神經監測,Equivalent)-  With nerve monitoring,,136400,177320
+GES37,Submandibulectomy Packages 頷下腺手術套餐,頷下腺切除術,Submandibulectomy,2日,59000,76700
+GES34B,Gastrectomy Packages 胃切除術套餐,腹腔鏡 / 開放式全胃切除術 ± 連食道造口術（雙極刀／超聲刀,Laparoscopic / Open Total Gastrectomy ±,10日,288000,374400
+GES35B,Gastrectomy Packages 胃切除術套餐,腹腔鏡 / 開放式遠端部分胃切除 +/- 連十二指腸造口術,"Laparoscopic / Open Partial, Distal Gastrectomy +/-",7日,269000,349700
+GES42A,Sleeve Gastrectomy Packages 縮胃手術套餐,腹腔鏡縮胃手術（５個縫合釘） + 胃鏡檢查,Laparoscopic Sleeve Gastrectomy (5 reloads) + OGD,5日,193000,250900
+GES42B,Sleeve Gastrectomy Packages 縮胃手術套餐,腹腔鏡縮胃手術（６個縫合釘） + 胃鏡檢查,Laparoscopic Sleeve Gastrectomy (6 reloads) + OGD,,197000,256100
+GES42C,Sleeve Gastrectomy Packages 縮胃手術套餐,腹腔鏡縮胃手術（７個縫合釘） + 胃鏡檢查,Laparoscopic Sleeve Gastrectomy (7 reloads) + OGD,,200000,260000
+GES08A,Cholecystectomy Packages 膽囊切除術套餐,腹腔鏡膽囊切除術（超聲刀或同等）,Laparoscopic Cholecystectomy (Harmonic Scalpel or,3日,100400,130520
+GES08B,Cholecystectomy Packages 膽囊切除術套餐,腹腔鏡膽囊切除術（雙極刀）,Laparoscopic Cholecystectomy (Bipolar Forceps),,99900,129870
+GES39A,Cholecystectomy Packages 膽囊切除術套餐,（單孔）腹腔鏡膽囊切除術（超聲刀或同等）,(Single Port) Laparoscopic Cholecystectomy (Harmonic,,100400,130520
+GES39B,Cholecystectomy Packages 膽囊切除術套餐,（單孔）腹腔鏡膽囊切除術（雙極刀）,(Single Port) Laparoscopic Cholecystectomy (Bipolar Forceps),,99900,129870
+GES07,Cholecystectomy Packages 膽囊切除術套餐,開放式膽囊切除術,Open Cholecystectomy,4日,109400,142220
+GES10,Haemorrhoidectomy Packages 痔瘡切除術套餐,傳統痔瘡切除術 3 Days,Conventional Haemorrhoidectomy,3日,42700,55510
+GES10B,Haemorrhoidectomy Packages 痔瘡切除術套餐,傳統痔瘡切除術 (使用 Ligasure),Conventional Haemorrhoidectomy (Using Ligasure),,54700,71110
+GES11,Haemorrhoidectomy Packages 痔瘡切除術套餐,環狀痔瘡切除術,Stapled Haemorrhoidectomy,2日,56000,72800
+GES12A,Hernia Packages 疝氣手術套餐,腹腔鏡腹股溝疝氣修補術 - 單邊,Laparoscopic Inguinal Hernia Repair - Unilateral,2日,78500,102050
+GES12P,Hernia Packages 疝氣手術套餐,腹腔鏡腹股溝疝氣修補術（兒童） - 單邊,Laparoscopic Inguinal Hernia Repair (Child) - Unilateral,,68000,88400
+GES13A,Hernia Packages 疝氣手術套餐,開放式腹股溝疝氣修補術 - 單邊,Open Inguinal Hernia Repair - Unilateral,,59700,77610
+GES14,Hernia Packages 疝氣手術套餐,腹股溝疝切開術（兒童）- 單邊,Inguinal Herniotomy (Child) - Unilateral,,42800,55640
+GES38A,Hernia Packages 疝氣手術套餐,腹腔鏡腹股溝疝氣修補術 - 雙邊,Laparoscopic Inguinal Hernia Repair - Bilateral,,104100,135330
+GES38P,Hernia Packages 疝氣手術套餐,腹腔鏡腹股溝疝氣修補術（兒童）- 雙邊,Laparoscopic Inguinal Hernia Repair (Child)- Bilateral,,92300,119990
+GES33A,Appendectomy Packages 闌尾 (盲腸）切除術套餐,腹腔鏡闌尾（盲腸）切除術 - 簡單,Laparoscopic Appendectomy - Simple,2日,93400,121420
+GES33B,Appendectomy Packages 闌尾 (盲腸）切除術套餐,腹腔鏡闌尾（盲腸）切除術 - 複雜 3 Days,Laparoscopic Appendectomy - Complex,3日,107300,139490
+GES33C,Appendectomy Packages 闌尾 (盲腸）切除術套餐,開放式闌尾（盲腸）切除術,Open Appendectomy,,98900,128570
+GES16A,Hemi-Colectomy Packages 半結腸切除術套餐,開放式半結腸切除術,Open Hemi-Colectomy,8日,208700,271310
+GES18A,Hemi-Colectomy Packages 半結腸切除術套餐,腹腔鏡半結腸切除術,Laparoscopic Hemi-Colectomy,7日,209000,271700
+GES43A,Anterior Resection Packages 直腸前位切除術套餐,開放式直腸前位切除術,Open Anterior Resection,8日,232800,302640
+GES44A,Anterior Resection Packages 直腸前位切除術套餐,腹腔鏡直腸前位切除術,Laparoscopic Anterior Resection,7日,240800,313040
+GES45A,Anterior Resection Packages 直腸前位切除術套餐,開放式直腸低前位切除術,Open Lower Anterior Resection,8日,240000,312000
+GES46A,Anterior Resection Packages 直腸前位切除術套餐,腹腔鏡直腸低前位切除術,Laparoscopic Lower Anterior Resection,7日,249000,323700
+GES48A,Anterior Resection Packages 直腸前位切除術套餐,腹腔鏡直腸低前位切除術 + 經肛門全直腸系膜切除術,Laparoscopic Lower Anterior Resection + Transanal total,,329400,428220
+GES47,Anterior Resection Packages 直腸前位切除術套餐,廻腸造口閉合術 (縫線閉合方式) 4 Days,Closure of ileostomy (Handsewn Approach),4日,85800,111540
+GES47B,Anterior Resection Packages 直腸前位切除術套餐,廻腸造口閉合術 （外科缝合器閉合方式）,Closure of Ileostomy (Stapler Approach),,96200,125060
+GES15,Varicose Veins Packages 靜脈曲張手術套餐,靜脈結紮抽除及勾脫術 - 單腿 2 Days,Trendelenburg Stripping & Avulsion of Varicose Veins -,2日,65900,85670
+GES27,Varicose Veins Packages 靜脈曲張手術套餐,靜脈結紮抽除及勾脫術 - 雙腿,Trendelenburg Stripping & Avulsion of Varicose Veins -,,90700,117910
+GES28A,Varicose Veins Packages 靜脈曲張手術套餐,射頻靜脈曲張消融術 - 單腿,Varicose Veins (RF Ablation) - Unilateral,日間,68300,88790
+GES28B,Varicose Veins Packages 靜脈曲張手術套餐,激光靜脈曲張消融術 - 單腿,Varicose Veins (Endovenous Laser) - Unilateral,,72300,93990
+GES29A,Varicose Veins Packages 靜脈曲張手術套餐,射頻靜脈曲張消融術 - 雙腿,Varicose Veins (RF Ablation) - Bilateral,,96200,125060
+GES29B,Varicose Veins Packages 靜脈曲張手術套餐,激光靜脈曲張消融術 - 雙腿,Varicose Veins (Endovenous Laser) - Bilateral,,99100,128830
+GES01A,Circumcision Packages 包皮環切術套餐,包皮環切術（出生 28 天或以下） Day Case,"Circumcision, 28 days of age or less",日間,28250,36730
+GES01B,Circumcision Packages 包皮環切術套餐,包皮環切術,Circumcision,,30000,39000
+GES49,Circumcision Packages 包皮環切術套餐,包皮環切術,Circumcision,2日,33500,43550
+GES30A,Minor Ops Packages 小手術套餐,小手術 （如脂肪瘤、嵌甲）（局部麻醉） Day Case,"Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (LA)",日間,18300,23790
+GES30B,Minor Ops Packages 小手術套餐,小手術 （如脂肪瘤、嵌甲）（監察麻醉或全身麻醉）,"Minor Operations (e.g. Lipoma, Ingrown Toe Nail) (MAC/GA)",,26600,34580
+GES31,Minor Ops Packages 小手術套餐,膿腫切開引流術 2 Days,Incision & Drainage of Abscess,2日,31500,40950
+GES32,Minor Ops Packages 小手術套餐,藏毛竇切除術,Excision of Pilonidal Sinus,7日,40700,52910

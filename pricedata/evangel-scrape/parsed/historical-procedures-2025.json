@@ -1,0 +1,230 @@
+[
+  {
+    "operation": "Breast lump excision",
+    "doctor_p50": 38533,
+    "hospital_p50": 16739,
+    "total_p50": 55272
+  },
+  {
+    "operation": "Cholecystectomy (Laparoscopic)",
+    "doctor_p50": 24300,
+    "hospital_p50": 13047,
+    "total_p50": 37347
+  },
+  {
+    "operation": "Cholecystectomy (Open)",
+    "doctor_p50": 54000,
+    "hospital_p50": 33800,
+    "total_p50": 87800
+  },
+  {
+    "operation": "Circumcision",
+    "doctor_p50": 88500,
+    "hospital_p50": 82097,
+    "total_p50": 170597
+  },
+  {
+    "operation": "Colectomy (Laparoscopic)",
+    "doctor_p50": 15650,
+    "hospital_p50": 13221,
+    "total_p50": 28871
+  },
+  {
+    "operation": "Colectomy (Open)",
+    "doctor_p50": 17900,
+    "hospital_p50": 13572,
+    "total_p50": 31472
+  },
+  {
+    "operation": "Haemorrhoidectomy",
+    "doctor_p50": 92350,
+    "hospital_p50": 79905,
+    "total_p50": 172255
+  },
+  {
+    "operation": "Hernia repair (Laparoscopic)",
+    "doctor_p50": 23800,
+    "hospital_p50": 18698,
+    "total_p50": 42498
+  },
+  {
+    "operation": "Herniotomy",
+    "doctor_p50": 40650,
+    "hospital_p50": 36985,
+    "total_p50": 77635
+  },
+  {
+    "operation": "Hernia repair (Open)",
+    "doctor_p50": 26700,
+    "hospital_p50": 19475,
+    "total_p50": 46175
+  },
+  {
+    "operation": "Colposcopy",
+    "doctor_p50": 45242,
+    "hospital_p50": 31401,
+    "total_p50": 76643
+  },
+  {
+    "operation": "Thyroidectomy (Hemi)",
+    "doctor_p50": 88850,
+    "hospital_p50": 47271,
+    "total_p50": 136121
+  },
+  {
+    "operation": "Thyroidectomy (Total)",
+    "doctor_p50": 17265,
+    "hospital_p50": 11976,
+    "total_p50": 29241
+  },
+  {
+    "operation": "Dilation and curettage",
+    "doctor_p50": 10000,
+    "hospital_p50": 7798,
+    "total_p50": 17798
+  },
+  {
+    "operation": "Hysterectomy (Laparoscopic)",
+    "doctor_p50": 25000,
+    "hospital_p50": 16064,
+    "total_p50": 41064
+  },
+  {
+    "operation": "Hysterectomy (Open)",
+    "doctor_p50": 21919,
+    "hospital_p50": 12596,
+    "total_p50": 34515
+  },
+  {
+    "operation": "Ovarian cystectomy (Laparoscopic)",
+    "doctor_p50": 70500,
+    "hospital_p50": 51939,
+    "total_p50": 122439
+  },
+  {
+    "operation": "Colonoscopy +/- polypectomy",
+    "doctor_p50": 44000,
+    "hospital_p50": 33260,
+    "total_p50": 77260
+  },
+  {
+    "operation": "Ovarian cystectomy (Open)",
+    "doctor_p50": 63495,
+    "hospital_p50": 39042,
+    "total_p50": 102537
+  },
+  {
+    "operation": "Bronchoscopy +/- biopsy",
+    "doctor_p50": 57100,
+    "hospital_p50": 36224,
+    "total_p50": 93324
+  },
+  {
+    "operation": "Gastroscopy +/- polypectomy",
+    "doctor_p50": 10400,
+    "hospital_p50": 6687,
+    "total_p50": 17087
+  },
+  {
+    "operation": "Cystoscopy +/- biopsy",
+    "doctor_p50": 12800,
+    "hospital_p50": 8298,
+    "total_p50": 21098
+  },
+  {
+    "operation": "Direct laryngoscopy +/- vocal cord polyp biopsy",
+    "doctor_p50": 10400,
+    "hospital_p50": 5844,
+    "total_p50": 16244
+  },
+  {
+    "operation": "Gastroscopy and Colonoscopy +/- polypectomy",
+    "doctor_p50": 15150,
+    "hospital_p50": 7966,
+    "total_p50": 23116
+  },
+  {
+    "operation": "Micro-laryngoscopy",
+    "doctor_p50": 9950,
+    "hospital_p50": 5132,
+    "total_p50": 15082
+  },
+  {
+    "operation": "Tonsillectomy",
+    "doctor_p50": 11450,
+    "hospital_p50": 7034,
+    "total_p50": 18484
+  },
+  {
+    "operation": "LASIK",
+    "doctor_p50": 8800,
+    "hospital_p50": 5125,
+    "total_p50": 13925
+  },
+  {
+    "operation": "Phacoemulsification + IOL",
+    "doctor_p50": 22800,
+    "hospital_p50": 10853,
+    "total_p50": 33653
+  },
+  {
+    "operation": "Caesarean section",
+    "doctor_p50": 18200,
+    "hospital_p50": 8700,
+    "total_p50": 26900
+  },
+  {
+    "operation": "Knee arthroscopy",
+    "doctor_p50": 85310,
+    "hospital_p50": 27246,
+    "total_p50": 112556
+  },
+  {
+    "operation": "Vaginal delivery",
+    "doctor_p50": 69666,
+    "hospital_p50": 33278,
+    "total_p50": 102944
+  },
+  {
+    "operation": "Carpal tunnel release",
+    "doctor_p50": 12200,
+    "hospital_p50": 10800,
+    "total_p50": 23000
+  },
+  {
+    "operation": "Laminectomy",
+    "doctor_p50": 30000,
+    "hospital_p50": 15225,
+    "total_p50": 45225
+  },
+  {
+    "operation": "ORIF fractures (Upper Limb)",
+    "doctor_p50": 20000,
+    "hospital_p50": 11843,
+    "total_p50": 31843
+  },
+  {
+    "operation": "Trigger finger release",
+    "doctor_p50": 49800,
+    "hospital_p50": 32037,
+    "total_p50": 81837
+  },
+  {
+    "operation": "ORIF fractures (Lower Limb)",
+    "doctor_p50": 52400,
+    "hospital_p50": 40415,
+    "total_p50": 92815
+  },
+  {
+    "operation": "Spine fusion",
+    "doctor_p50": 47000,
+    "hospital_p50": 42488,
+    "total_p50": 89488
+  },
+  {
+    "operation": "procedure_38",
+    "doctor_p50": 9000,
+    "hospital_p50": 6807,
+    "total_p50": 15807
+  }
+]

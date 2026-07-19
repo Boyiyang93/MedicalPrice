@@ -1,0 +1,13 @@
+id="charges-detail" class="inner-section-div v-20">
+腎科透析中心
+項目
+門診收費 (HK$)
+血液透析 或 線上血液透析
+• $3,100 - $5,456
+詳情由電郵或電話回覆
+備註︰
+不包括醫生費及藥費。
+查詢 : 2808-0813 ( 腎科透析中心 )
+電郵 : sph.renal@stpaul.org.hk
+前往腎科透析中心
+<div id="charges-detail-other"

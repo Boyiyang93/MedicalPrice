@@ -1,0 +1,541 @@
+OPERATION TYPE
+程序/手術類型
+PROCEDURE 程序/手術
+ANNUAL NUMBER 
+OF DISCHARGES
+每年出院人數
+AVERAGE LENTH 
+OF STAY (DAY)
+平均住院日數
+PERCENTILE
+百分位數
+Doctor's Fees
+醫生收費 
+(HK$)
+HOSPITAL 
+CHARGES
+醫院收費
+(HK$)
+TOTAL 
+CHARGES
+總收費 (HK$)
+50%
+26,300
+21,760
+48,060
+90%
+35,000
+26,948
+61,948
+50%
+63,000
+55,319
+118,319
+90%
+96,000
+47,891
+143,891
+50%
+31,000
+27,144
+58,144
+90%
+64,388
+40,337
+104,725
+50%
+35,400
+26,492
+61,892
+90%
+41,400
+38,670
+80,070
+50%
+61,200
+58,248
+119,448
+90%
+118,000
+51,557
+169,557
+50%
+84,800
+80,681
+165,481
+90%
+136,300
+62,569
+198,869
+50%
+83,000
+39,704
+122,704
+90%
+114,300
+96,361
+210,661
+50%
+106,000
+85,002
+191,002
+90%
+132,300
+127,545
+259,845
+50%
+35,800
+26,852
+62,652
+90%
+96,400
+72,116
+168,516
+50%
+56,300
+37,926
+94,226
+90%
+66,500
+46,868
+113,368
+50%
+56,250
+49,289
+105,539
+90%
+94,200
+50,965
+145,165
+50%
+15,535
+17,495
+33,030
+90%
+34,330
+23,155
+57,485
+50%
+135,400
+72,071
+207,471
+90%
+200,000
+77,568
+277,568
+50%
+90,480
+42,833
+133,313
+90%
+139,000
+60,094
+199,094
+50%
+21,000
+19,184
+40,184
+90%
+31,000
+22,362
+53,362
+50%
+52,000
+46,057
+98,057
+90%
+72,000
+56,957
+128,957
+50%
+28,570
+42,106
+70,676
+90%
+44,920
+64,369
+109,289
+50%
+10,600
+8,030
+18,630
+90%
+10,750
+18,957
+29,707
+50%
+15,300
+24,847
+40,147
+90%
+29,400
+41,880
+71,280
+50%
+8,840
+12,059
+20,899
+90%
+22,500
+10,480
+32,980
+50%
+13,100
+18,985
+32,085
+90%
+18,200
+43,819
+62,019
+50%
+20,000
+16,860
+36,860
+90%
+36,900
+17,923
+54,823
+50%
+23,400
+32,145
+55,545
+90%
+29,300
+52,636
+81,936
+50%
+17,500
+9,739
+27,239
+90%
+33,500
+10,257
+43,757
+50%
+9,174
+15,925
+25,099
+90%
+21,500
+37,701
+59,201
+50%
+35,350
+19,919
+55,269
+90%
+28,000
+68,653
+96,653
+Bronchoscopy +/‐ biopsy 支氣管鏡檢查 +/- 活組織檢查
+Below 30
+30 以下
+1.2
+Endoscopy 內窺鏡
+Cystoscopy +/‐ biopsy 膀胱鏡檢查 +/- 活組織檢查
+Below 100
+100 以下
+Day Surgery
+日間治療
+Below 30
+30 以下
+Gastroscopy +/‐ polypectomy 胃鏡檢查 +/- 息肉切除術
+Below 200
+200 以下
+Day Surgery
+日間治療
+Below 100
+100 以下
+1.1
+1.0
+Gastroscopy and colonoscopy +/‐ polypectomy 胃鏡及大腸鏡檢查 +/-
+息肉切除術
+Above 200
+200 以上
+Day Surgery
+日間治療
+Below 100
+100 以下
+1.0
+Colonoscopy +/‐ polypectomy 大腸鏡檢查 +/- 息肉切除術
+Above 200
+200 以上
+Day Surgery
+日間治療
+Below 30
+30 以下
+1.1
+Dilation and curettage 擴張子宮頸及刮除子宮內膜術
+Above 200
+200 以上
+1.0
+Ovarian cystectomy (Laparoscopic) 卵巢囊腫切除術(腹腔鏡)
+Below 100
+100 以下
+2.1
+Gynecology 婦科
+Colposcopy 陰道鏡檢查
+Below 100
+100 以下
+1.0
+Hysterectomy (Laparoscopic) 子宮切除術(腹腔鏡)
+Below 100
+100 以下
+1.8
+Hysterectomy (Open) 子宮切除術(開腹)
+Below 30
+30 以下
+3.0
+Ovarian cystectomy (Open) 卵巢囊腫切除術(開腹)
+Below 30
+30 以下
+3.4
+Obstetric 產科
+Vaginal delivery Package *(3 days 2 nights) 自然分娩套餐*(3日2夜)
+Below 30
+30 以下
+2.7
+Caesarean section Package *(5 days 4 nights) 剖腹分娩套餐*(5日4夜)
+Below 100
+100 以下
+4.5
+Colectomy (Laparoscopic) 結腸切除術(腹腔鏡)
+Below 30
+30 以下
+4.8
+Breast lump excision 乳房腫塊切除術
+Below 100
+100 以下
+1.0
+Reference charges for common procedures/operations (Accommodation in General Ward)
+For the year 1st January 2025 to 31st December 2025
+All the prices and statistical figures listed below are for reference only.
+All charges are subject to change according to different factors, for examples, patient's condition, situation during operations/procedures and individual doctor's charges etc.
+常見程序/手術參考費用（普通病房住宿）
+2025年1月1日至2025年12月31日
+以下所有價格及統計數據僅供參考。
+所有收費均會因應不同因素而有所變動，例如患者的情況、程序/手術期間的情況及個別醫生的收費等。
+General Surgery
+一般手術
+Circumcision 包皮環切術
+Below 30
+30 以下
+1.0
+Hernia repair (Lap.) 疝氣(小腸氣)修補術(腹腔鏡)
+Below 30
+30 以下
+1.3
+Hernia repair (Open) 疝氣(小腸氣)修補術(開腹)
+Below 30
+30 以下
+Thyroidectomy (Total) 甲狀腺切除術(全部)
+Below 30
+30 以下
+3.1
+Cholecystectomy (Laparoscopic) 膽囊切除術(腹腔鏡)
+Below 30
+30 以下
+2.2
+1.4
+Haemorrhoidectomy 痔瘡切除術
+Below 100
+100 以下
+1.3
+Thyroidectomy (Hemi) 甲狀腺切除術(局部)
+Below 30
+30 以下
+1.9
+P.1/2
+
+
+===== PAGE =====
+
+OPERATION TYPE
+程序/手術類型
+PROCEDURE 程序/手術
+ANNUAL NUMBER 
+OF DISCHARGES
+每年出院人數
+AVERAGE LENTH 
+OF STAY (DAY)
+平均住院日數
+PERCENTILE
+百分位數
+Doctor's Fees
+醫生收費 
+(HK$)
+HOSPITAL 
+CHARGES
+醫院收費
+(HK$)
+TOTAL 
+CHARGES
+總收費 (HK$)
+Reference charges for common procedures/operations (Accommodation in General Ward)
+For the year 1st January 2025 to 31st December 2025
+All the prices and statistical figures listed below are for reference only.
+All charges are subject to change according to different factors, for examples, patient's condition, situation during operations/procedures and individual doctor's charges etc.
+常見程序/手術參考費用（普通病房住宿）
+2025年1月1日至2025年12月31日
+以下所有價格及統計數據僅供參考。
+所有收費均會因應不同因素而有所變動，例如患者的情況、程序/手術期間的情況及個別醫生的收費等。
+50%
+43,700
+32,975
+76,675
+90%
+69,500
+49,757
+119,257
+50%
+13,900
+8,473
+22,373
+90%
+13,900
+8,473
+22,373
+50%
+28,200
+23,919
+52,119
+90%
+43,450
+25,213
+68,663
+50%
+55,500
+33,130
+88,630
+90%
+74,000
+75,335
+149,335
+50%
+89,000
+103,142
+192,142
+90%
+143,500
+69,912
+213,412
+50%
+160,080
+160,604
+320,684
+90%
+247,500
+206,016
+453,516
+50%
+8,000
+8,901
+16,901
+90%
+20,000
+7,900
+27,900
+50%
+16,000
+9,622
+25,622
+90%
+24,892
+20,982
+45,874
+50%
+55,300
+61,658
+116,958
+90%
+85,566
+72,447
+158,013
+50%
+63,000
+67,035
+130,035
+90%
+71,467
+93,388
+164,855
+50%
+15,000
+10,031
+25,031
+90%
+15,000
+10,031
+25,031
+50%
+23,273
+18,138
+41,411
+90%
+38,250
+17,107
+55,357
+Remarks:
+1. The information listed above is based on data from patients accommodation in general ward and undergoing a single procedure only.
+2. All information provided are for the reference only. The charges may vary from the reference figures.
+3. Doctor's fee include fees from operating surgeon, anesthetist and ward round charges.
+4. Hospital charges include admission fee, room charge, operation threatre, medical & nursing procedures, medication, investigation & examination fees, materials & equipment, meals and beverage, etc.
+備注：
+1. 以上資料為普通病房患者單次程序/手術數據。
+2. 所有資料只供參考。 實際收費可能與參考數字不同。
+3. 醫生費用包括外科醫生，麻醉科醫生和巡房費用。
+4. 醫院費用包括入院、住房、手術室、醫療護理程序、藥物、檢查、材料/儀器、膳食和飲料等。
+Open reduction and Internal Fixation (ORIF) of various fractures (Lower
+Limb) 不同骨折的開放性復位及內固定術(下肢)
+Below 30
+30 以下
+2.8
+Carpal tunnel release 腕管鬆解術
+Below 30
+30 以下
+Day Surgery
+日間治療
+Ortho 骨科
+Knee arthroscopy 膝關節內窺鏡檢查
+Below 100
+100 以下
+1.4
+Laminectomy 椎板切除術
+Below 30
+30 以下
+2.8
+Below 30
+30 以下
+1.0
+Open reduction and Internal Fixation (ORIF) of various fractures (Upper
+Limb) 不同骨折的開放性復位及內固定術(上肢)
+Below 100
+100 以下
+1.3
+Spine fusion 脊柱融合術
+Below 100
+100 以下
+4.0
+Trigger finger release 扳機指(彈弓指)鬆解術
+Below 30
+30 以下
+Day Surgery
+日間治療
+Below 30
+30 以下
+1.0
+ENT 耳鼻喉
+Tonsillectomy 扁桃體切除術
+Below 100
+100 以下
+1.2
+Direct laryngoscopy +/‐ vocal cord polyp biopsy 直接喉鏡檢查 +/-
+聲帶息肉活組織檢查
+Below 30
+30 以下
+1.0
+Micro‐laryngoscopy 顯微喉鏡檢查
+Below 30
+30 以下
+1.0
+P.2/2

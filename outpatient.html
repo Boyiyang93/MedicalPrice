@@ -102,7 +102,7 @@
             const container = document.getElementById('filter-container');
             container.innerHTML = hospitalDatabase.map(h => `
                 <label class="flex items-center gap-2.5 text-xs ${h.id === 'szufh' ? 'text-[#1D4E89] font-bold' : 'text-gray-600 font-medium'} cursor-pointer">
-                    <input type="checkbox" value="${h.id}" checked class="w-4 h-4 rounded text-[#1D4E89]"> ${h.name}
+                    <input type="checkbox" value="${h.id}" checked class="w-4 h-4 rounded text-[#1D4E89]"> ${typeof renderHospitalNameHtml === 'function' ? renderHospitalNameHtml(h) : h.name}
                 </label>
             `).join('');
         }

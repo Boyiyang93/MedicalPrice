@@ -1,0 +1,56 @@
+name_zh,name_en,setting,discharges,alos,p50_doctor,p50_hospital,p50_total,p90_doctor,p90_hospital,p90_total
+乳房腫塊切除術,Breast lump excision,inpatient,>200,1.3,39000,20651,59651,51600,30758,82358
+乳房腫塊切除術,Breast lump excision,day_surgery,<30,日間手術,34800,13201,48001,41200,22296,63496
+支氣管鏡檢查 +/- 取活組織,Bronchoscopy with or without biopsy,inpatient,30-100,2.0,14000,23318,37318,27100,34954,62054
+支氣管鏡檢查 +/- 取活組織,Bronchoscopy with or without biopsy,day_surgery,30-100,日間手術,13000,14066,27066,13000,21117,34117
+剖腹產嬰術,Caesarean section,inpatient,>200,3.5,53000,29086,82086,55600,37595,93195
+腕管鬆解術,Carpal tunnel release,inpatient,30-100,1.2,22400,14733,37133,34000,20778,54778
+腕管鬆解術,Carpal tunnel release,day_surgery,30-100,日間手術,17000,6512,23512,22000,11536,33536
+腹腔鏡膽囊切除術,Cholecystectomy (Laparoscopic),inpatient,>200,2.2,56700,35980,92680,72500,43225,115725
+膽囊切除術,Cholecystectomy (Open),inpatient,<30,5.0,82000,46245,128245,88400,53959,142359
+包皮環切術,Circumcision,inpatient,>200,1.1,20500,11462,31962,22200,17558,39758
+包皮環切術,Circumcision,day_surgery,>200,日間手術,22800,8135,30935,25600,9425,35025
+腹腔鏡結腸切除術,Colectomy (Laparoscopic),inpatient,<30,7.1,112000,81341,193341,146400,81437,227837
+結腸切除術,Colectomy (Open),inpatient,<30,8.3,79800,69632,149432,73670,94523,168193
+大腸內窺鏡 +/- 瘜肉切除術,Colonoscopy with or without polypectomy,inpatient,>200,1.1,17300,10009,27309,19500,18723,38223
+大腸內窺鏡 +/- 瘜肉切除術,Colonoscopy with or without polypectomy,day_surgery,>200,日間手術,11200,7773,18973,11500,15203,26703
+陰道窺鏡檢查 +/- 活組織檢查,Colposcopy +/- biopsy,inpatient,<30,1.0,14800,11433,26233,33700,13244,46944
+陰道窺鏡檢查 +/- 活組織檢查,Colposcopy +/- biopsy,day_surgery,30-100,日間手術,6714,7821,14535,10000,10205,20205
+膀胱窺鏡檢查 +/- 取活組織,Cystoscopy with or without biopsy,inpatient,101-200,1.4,12500,13633,26133,23000,14177,37177
+膀胱窺鏡檢查 +/- 取活組織,Cystoscopy with or without biopsy,day_surgery,>200,日間手術,8000,4692,12692,14400,8971,23371
+子宮擴刮術,Dilatation and Curettage of uterus,inpatient,<30,1.0,21000,9200,30200,25600,13852,39452
+子宮擴刮術,Dilatation and Curettage of uterus,day_surgery,<30,日間手術,15800,8606,24406,17500,12053,29553
+胃窺鏡與大腸內窺鏡 +/- 瘜肉切除術,Gastroscopy and colonoscopy with or without polypectomy,inpatient,>200,1.1,24800,22843,47643,31400,30254,61654
+胃窺鏡與大腸內窺鏡 +/- 瘜肉切除術,Gastroscopy and colonoscopy with or without polypectomy,day_surgery,>200,日間手術,21100,15094,36194,27200,19965,47165
+胃窺鏡 +/- 瘜肉切除術,Gastroscopy with or without polypectomy,inpatient,>200,1.4,18100,16354,34454,26800,21950,48750
+胃窺鏡 +/- 瘜肉切除術,Gastroscopy with or without polypectomy,day_surgery,>200,日間手術,12600,7270,19870,15200,13854,29054
+痔瘡切除術,Haemorrhoidectomy,inpatient,>200,1.5,25000,17417,42417,37400,19361,56761
+痔瘡切除術,Haemorrhoidectomy,day_surgery,<30,日間手術,22250,18685,40935,31200,21532,52732
+腹腔鏡疝氣修補術,Hernia repair (Laparoscopic),inpatient,101-200,1.5,49250,32976,82226,59443,45116,104559
+腹腔鏡疝氣修補術,Hernia repair (Laparoscopic),day_surgery,<30,日間手術,25000,34187,59187,46300,32516,78816
+疝修補術,Hernia repair (Open),inpatient,>200,1.8,36600,13683,50283,47500,20783,68283
+疝修補術,Hernia repair (Open),day_surgery,<30,日間手術,22750,19375,42125,41500,22163,63663
+疝氣切除術,Herniotomy,inpatient,<30,1.0,28600,12345,40945,40000,13586,53586
+疝氣切除術,Herniotomy,day_surgery,<30,日間手術,28160,10355,38515,28160,13377,41537
+腹腔鏡輔助子宮切除術,Hysterectomy (Laparoscopic),inpatient,<30,2.9,70500,54361,124861,114600,60899,175499
+子宮切除術,Hysterectomy (Open),inpatient,30-100,4.4,84000,39645,123645,110000,42705,152705
+膝關節腔內窺鏡術,Knee arthroscopy,inpatient,>200,1.7,40800,36411,77211,56300,42434,98734
+椎板切除術,Laminectomy,inpatient,>200,3.0,88000,54963,142963,122720,70916,193636
+激光矯視,LASIK,day_surgery,<30,日間手術,10100,9900,20000,10100,9900,20000
+顯微喉鏡 +/- 瘜肉切除術,Micro-laryngoscopy for removal vocal cord polyp,inpatient,30-100,1.2,30800,19272,50072,38500,24133,62633
+顯微喉鏡 +/- 瘜肉切除術,Micro-laryngoscopy for removal vocal cord polyp,day_surgery,<30,日間手術,17800,15749,33549,41500,15854,57354
+上肢不同部位之開放性復位及內固定術,ORIF various fractures (Upper Limb),inpatient,>200,1.9,65700,31615,97315,82400,53721,136121
+上肢不同部位之開放性復位及內固定術,ORIF various fractures (Upper Limb),day_surgery,<30,日間手術,40680,30496,71176,40630,39445,80075
+下肢不同部位之開放性復位及內固定術,ORIF various fractures (Lower Limb),inpatient,101-200,4.0,58720,49235,107955,100800,55484,156284
+下肢不同部位之開放性復位及內固定術,ORIF various fractures (Lower Limb),day_surgery,<30,日間手術,37000,13458,50458,32800,18255,51055
+腹腔鏡卵巢囊腫切除術,Ovarian cystectomy (Laparoscopic),inpatient,30-100,2.4,57000,36988,93988,76900,46844,123744
+卵巢囊腫切除術,Ovarian cystectomy (Open),inpatient,<30,4.3,63760,35651,99411,74000,43400,117400
+晶體乳化法 + 人工晶體植入手術,Phacoemulsification and intraocular lens implantation,inpatient,101-200,1.2,38633,15135,53768,52000,17848,69848
+晶體乳化法 + 人工晶體植入手術,Phacoemulsification and intraocular lens implantation,day_surgery,>200,日間手術,18000,7693,25693,25520,9382,34902
+脊髓骨溶合術,Spine fusion,inpatient,<30,3.9,136000,96252,232252,206000,152944,358944
+甲狀腺切除術,Thyroidectomy (Hemi),inpatient,>200,2.1,67000,32275,99275,82400,41582,123982
+全甲狀腺切除術,Thyroidectomy (Total),inpatient,>200,3.0,94200,51240,145440,108200,55505,163705
+扁桃腺切除術,Tonsillectomy,inpatient,30-100,1.3,41220,21257,62477,42340,26022,68362
+板機狀指鬆解術 (彈弓指),Trigger finger release,inpatient,<30,1.0,20400,7489,27889,35000,10503,45503
+板機狀指鬆解術 (彈弓指),Trigger finger release,day_surgery,101-200,日間手術,10000,4174,14174,17380,4765,22145
+陰道分娩,Vaginal delivery,inpatient,>200,2.8,47540,31269,78809,49450,37570,87020

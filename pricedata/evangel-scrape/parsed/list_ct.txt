@@ -1,0 +1,426 @@
+$2,300
+$2,700
+$3,400
+$2,000
+$4,000
+$4,800
+$5,800
+$3,500
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$4,800
+$5,700
+$6,900
+$4,300
+Upper Jaw 上顎
+$2,900
+$3,400
+$4,200
+$2,600
+Lower Jaw 下顎
+$2,900
+$3,400
+$4,200
+$2,600
+Both Jaw 上下顎
+$4,800
+$5,700
+$6,900
+$4,300
+HEAD & NECK 頭及頸
+Effective Date 生效日期: 2/3/2026
+CT Scanning 電腦掃描
+Region  部位
+General Ward/
+Day Bed
+普通房/
+日間病床
+HK$
+Semi-Private/
+Semi-Private
+Single Room
+雙人房/ 半私家
+單人房
+HK$
+Private
+Room
+單人房
+HK$
+Outpatient
+門診
+HK$
+Brain
+腦部
+Plain
+Plain+ Contrast
+Orbit/ Paranasal Sinuses/ Facial Bone
+眼眶/ 鼻竇/ 面部骨骼
+Plain
+Plain+ Contrast
+IAM/ Mandible
+內耳道/ 下顎骨
+Plain
+Plain+ Contrast
+Parotid Gland/ Nasopharynx
+腮腺/ 鼻咽
+Plain
+Plain+ Contrast
+Oropharynx
+口咽
+Plain
+Plain+ Contrast
+Larynx
+喉
+Plain
+Plain+ Contrast
+DENTASCAN 上下顎 ( 牙科)
+Plain
+Plain
+Plain
+Thyroid
+甲狀腺
+Plain
+Plain+ Contrast
+Neck
+頸
+Plain
+Plain+ Contrast
+ Page 1 of 3
+ACD-Price-004CTS(11)(2026.02.12)
+
+Effective Date 生效日期: 2/3/2026
+CT Scanning 電腦掃描
+Region  部位
+General Ward/
+Day Bed
+普通房/
+日間病床
+HK$
+Semi-Private/
+Semi-Private
+Single Room
+雙人房/ 半私家
+單人房
+HK$
+Private
+Room
+單人房
+HK$
+Outpatient
+門診
+HK$
+CT Triple Rule Out (Pulmonary+ Coronary)
+急性胸痛 (肺動脈+ 冠狀動脈)
+$11,300
+$13,900
+$17,000
+$10,100
+Circle of Willis Angiogram 顱內血管造影
+$7,900
+$9,400
+$11,500
+$7,000
+Carotid/ Vertebral Angiogram 頸項血管造影
+$7,900
+$9,400
+$11,500
+$7,000
+Coronary Angiogram 冠狀動脈造影
+$7,900
+$9,400
+$11,500
+$7,000
+Pulmonary Angiogram 肺動脈血管造影
+$7,900
+$9,400
+$11,500
+$7,000
+Thoracic Aortogram 胸腔動脈造影
+$7,900
+$9,400
+$11,500
+$7,000
+Abdominal Angiogram
+(Hepatic/ Ceoliac/ SMA/ Renal)
+腹部血管造影
+$7,900
+$9,400
+$11,500
+$7,200
+Hypertensive Package
+(Renal Arteries, Adrendals, Kidneys)
+高血壓套式檢查 (腎血管、腎上腺、腎臟 )
+$7,900
+$9,400
+$11,500
+$7,000
+Arch of Aorta+ Upper Limb Angiogram
+主動脈及上肢血管造影
+$7,900
+$9,400
+$11,500
+$7,200
+Iliac+ Lower Limb Angiogram
+髂動脈及下肢血管造影
+$7,900
+$9,400
+$11,500
+$7,000
+Peripheral Venogram (Upper or Lower Limb)
+週邊(上/下肢)靜脈造影
+$7,900
+$9,400
+$11,500
+$7,000
+CARDIOVASCULAR 心血管
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+Plain+ Contrast
+ Page 2 of 3
+ACD-Price-004CTS(11)(2026.02.12)
+
+Effective Date 生效日期: 2/3/2026
+CT Scanning 電腦掃描
+Region  部位
+General Ward/
+Day Bed
+普通房/
+日間病床
+HK$
+Semi-Private/
+Semi-Private
+Single Room
+雙人房/ 半私家
+單人房
+HK$
+Private
+Room
+單人房
+HK$
+Outpatient
+門診
+HK$
+$3,500
+$4,200
+$5,100
+$3,100
+$6,200
+$7,300
+$8,900
+$5,500
+$4,300
+$5,100
+$6,100
+$3,800
+$6,900
+$8,400
+$10,300
+$6,200
+Thorax (Lower Dose Screening)
+低放射劑量胸腔檢查
+$2,100
+$2,500
+$3,100
+$1,900
+$3,400
+$3,900
+$4,900
+$3,100
+$6,200
+$7,300
+$8,900
+$5,500
+$5,900
+$7,000
+$8,600
+$5,300
+$8,700
+$10,400
+$12,600
+$7,800
+$6,100
+$7,300
+$8,900
+$5,500
+$8,300
+$10,100
+$12,400
+$7,500
+$3,500
+$4,200
+$5,100
+$3,100
+$6,200
+$7,300
+$8,900
+$5,500
+$8,000
+$9,600
+$11,700
+$7,200
+$11,500
+$13,900
+$16,600
+$10,000
+$3,800
+$4,700
+$5,700
+$3,400
+$7,000
+$8,500
+$10,500
+$6,300
+Virtual Colonoscopy 大腸模擬窺鏡
+$7,900
+$9,400
+$11,500
+$7,000
+Cervical Spine (C1-C7) 頸椎
+$3,500
+$4,200
+$5,100
+$3,200
+Thoracic Spine (T1-T12) 胸椎
+$3,500
+$4,200
+$5,100
+$3,200
+Lumbar Spine (L1-L5) 腰椎
+$3,500
+$4,200
+$5,100
+$3,200
+Vertebrae (Per Vertebrae) 椎骨(每節)
+$1,300
+$1,500
+$1,800
+$1,100
+$2,900
+$3,400
+$4,200
+$2,500
+$4,800
+$5,700
+$6,900
+$4,300
+$2,900
+$3,400
+$4,200
+$2,600
+$5,200
+$6,500
+$7,800
+$4,700
+Radiology and Imaging Department:
+Enquiry and Appointment - Tel: 2760 3415   WhatsApp: 9741 3032
+Request Form - Fax: 2760 3416
+Remarks 備註:
+ • Surcharge would be levied on non-office hours.
+• 非辦公時間，將會額外收取附加費。
+BODY 身體
+Thorax
+胸腔
+Plain
+Plain+ Contrast
+Thorax + Upper Abdomen
+胸部及上腹部
+Plain
+Plain+ Contrast
+Whole Abdomen (Uppder Abdomen + Pelvis)
+全腹部 (上腹部及盤腔)
+Plain
+Plain+ Contrast
+Thorax+ HRCT
+高解像度胸腔檢查
+Plain
+Plain+ Contrast
+Plain
+Upper Abdomen
+上腹部
+Plain
+Plain+ Contrast
+CT Urogram 泌尿系統造影
+Plain
+Plain+ Contrast
+Plain
+MUSCULO-SKELETAL AND EXTREMITY 肌肉骨骼及四肢
+Plain
+Pelvis
+盤腔
+Plain
+Plain+ Contrast
+Thorax + Whole Abdomen
+胸部及全腹部
+Plain
+Plain+ Contrast
+Joints
+關節
+Plain
+Plain+ Contrast
+Plain
+Plain
+Plain
+Extremity
+四肢
+Plain
+Plain+ Contrast
+ Page 3 of 3
+ACD-Price-004CTS(11)(2026.02.12)

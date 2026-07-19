@@ -1,0 +1,83 @@
+{
+  "hospital_id": "pbh",
+  "name": "寶血醫院（明愛）",
+  "scraped": "2026-07-19",
+  "sources": {
+    "fees_index": "https://www.pbh.hk/service-fee-adjustment/",
+    "outpatient": "pdfs/outpatient-2025.pdf",
+    "room": "pdfs/room-2025-09.pdf",
+    "imaging": "pdfs/imaging-2025-06.pdf",
+    "historical": "pdfs/historical-2025.pdf"
+  },
+  "effective": {
+    "outpatient": "2025-01-01",
+    "room": "2025-09-01",
+    "imaging": "2025-06-10"
+  },
+  "outpatient_gp": {
+    "weekday_08_20": 280,
+    "weekday_20_22": 390,
+    "sunday_holiday_typhoon_blackrain": 390,
+    "elderly_discount": 20
+  },
+  "specialist_examples": {
+    "general_surgery": 650,
+    "cardiology": {
+      "min": 650,
+      "max": 900
+    },
+    "ent": {
+      "min": 650,
+      "max": 800
+    }
+  },
+  "ward_daily": {
+    "standard_4_6": 850,
+    "semi_twin": 1280,
+    "semi_single": 1850,
+    "private": 2350,
+    "day_standard": 460,
+    "day_private": 1300,
+    "admission_fee": 220
+  },
+  "ot_per_15min": {
+    "standard": 1000,
+    "semi": 1250,
+    "private": 1500,
+    "recovery_per_15min_standard": 280
+  },
+  "imaging_brain": {
+    "ct_plain": {
+      "outpatient": 2275,
+      "standard": 2275,
+      "semi": 2840,
+      "private": 3410
+    },
+    "ct_contrast": {
+      "outpatient": 3950,
+      "standard": 3950,
+      "semi": 4940,
+      "private": 5925
+    },
+    "mri_plain": {
+      "outpatient": 5730,
+      "standard": 5730,
+      "semi": 7160,
+      "private": 8595
+    },
+    "mri_contrast": {
+      "outpatient": 9245,
+      "standard": 9245,
+      "semi": 11555,
+      "private": 13865
+    },
+    "effective": "2025-06-10"
+  },
+  "historical_2025_p50_total": {
+    "colonoscopy": 11714.5,
+    "gastroscopy": 8075,
+    "breast_mass_excision": 37242,
+    "cholecystectomy": 102842.5,
+    "note": "历史 PDF 为符号字体，数字已从文本流提取；部分程序需对照原 PDF"
+  }
+}

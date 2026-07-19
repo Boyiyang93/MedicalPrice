@@ -1,0 +1,799 @@
+Charges for Common Surgical Procedures
+Revision Date 更新日期：31/3/2026
+For the year ended 31 December 2025
+二零二五年度常見手術之有關費用
+The statistical figures listed below are for reference only.  All charges are subject to change according to patient's condition, case
+complexity and individual doctor's charge incurred, etc.
+以下數據僅為統計資料，並只作參考用途。各項目的實際收費會根據病人的情況、手術的複雜性及個別醫生之收費等
+而有所改變。
+Operation types
+手術種類
+Operation
+手術名稱
+ Number
+of Cases
+個案數量
+ Average
+length of stay
+(day)
+平均住院
+日數
+Percentile
+百分位數
+ Doctor's
+Fees
+醫生費
+HK$
+ Hospital
+Charges
+醫院費
+HK$
+ Total
+Charges
+總收費
+HK$
+50th
+    38,533
+    16,739
+            55,272
+90th
+    54,920
+    20,337
+            75,257
+50th
+     24,300
+     13,047              37,347
+90th
+    35,980
+    16,886
+            52,866
+50th
+    54,000
+    33,800
+            87,800
+90th
+    76,450
+    43,691
+          120,141
+50th
+    88,500
+    82,097
+          170,597
+90th
+  123,300
+    87,336
+          210,636
+50th
+    15,650
+    13,221
+            28,871
+90th
+    26,065
+    14,422
+            40,487
+50th
+     17,900
+     13,572              31,472
+90th
+    19,580
+    19,213
+            38,793
+50th
+    92,350
+    79,905
+          172,255
+90th
+  127,400
+    92,863
+          220,263
+50th
+ -
+ -
+ -
+90th
+ -
+ -
+ -
+50th
+    23,800
+    18,698
+            42,498
+90th
+    36,750
+    22,860
+            59,610
+50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    40,650
+    36,985
+            77,635
+90th
+    73,270
+    44,560
+          117,830
+50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    26,700
+    19,475
+            46,175
+90th
+    45,560
+    24,989
+            70,549
+50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+ -
+ -
+ -
+90th
+ -
+ -
+ -
+50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    45,242
+    31,401
+            76,643
+90th
+  101,080
+    58,601
+          159,681
+50th
+    88,850
+    47,271
+          136,121
+90th
+  128,400
+    65,106
+          193,506
+50th
+    17,265
+    11,976
+            29,241
+90th
+    36,213
+    19,057
+            55,270
+50th
+     10,000         7,798              17,798
+90th
+    21,430
+    11,524
+            32,954
+General Surgery
+一般外科手術
+Breast lump excision
+乳房腫塊切除術
+101 - 200
+1.1
+<30
+Day Surgery
+日間手術
+Cholecystectomy (Laparoscopic)
+膽囊切除術 (腹腔鏡)
+30 - 100
+1.8
+Cholecystectomy (Open)
+膽囊切除術 (開放式)
+ <30
+6
+Circumcision
+包皮環切術
+<30
+1
+<30
+Day Surgery
+日間手術
+Colectomy (Laparoscopic)
+結腸切除術 (腹腔鏡)
+<30
+8.1
+Colectomy (Open)
+結腸切除術 (開放式)
+  -
+  -
+Haemorrhoidectomy
+痔瘡切除術
+101 - 200
+1.3
+  -
+Day Surgery
+日間手術
+Hernia repair (Laparoscopic)
+疝修補術 (腹腔鏡)
+30 - 100
+1.4
+  -
+Herniotomy
+疝切開術
+  -
+  -
+  -
+Day Surgery
+日間手術
+Day Surgery
+日間手術
+Hernia repair (Open)
+疝修補術 (開放式)
+30 - 100
+1.4
+  -
+Day Surgery
+日間手術
+Gynaecology
+婦科手術
+Colposcopy
+陰道鏡檢查
+30 - 100
+1
+30 - 100
+Day Surgery
+日間手術
+Thyroidectomy (Hemi)
+甲狀腺切除術 (半邊)
+30 - 100
+2.4
+Thyroidectomy (Total)
+甲狀腺切除術 (全個)
+<30
+3.1
+Page 1 of 4
+
+Charges for Common Surgical Procedures
+Revision Date 更新日期：31/3/2026
+For the year ended 31 December 2025
+二零二五年度常見手術之有關費用
+The statistical figures listed below are for reference only.  All charges are subject to change according to patient's condition, case
+complexity and individual doctor's charge incurred, etc.
+以下數據僅為統計資料，並只作參考用途。各項目的實際收費會根據病人的情況、手術的複雜性及個別醫生之收費等
+而有所改變。
+Operation types
+手術種類
+Operation
+手術名稱
+ Number
+of Cases
+個案數量
+ Average
+length of stay
+(day)
+平均住院
+日數
+Percentile
+百分位數
+ Doctor's
+Fees
+醫生費
+HK$
+ Hospital
+Charges
+醫院費
+HK$
+ Total
+Charges
+總收費
+HK$
+50th
+     25,000
+     16,064              41,064
+90th
+     35,000
+     22,993              57,993
+50th
+     21,919
+     12,596              34,515
+90th
+     30,520
+     21,032              51,552
+50th
+     70,500
+     51,939            122,439
+90th
+     70,500
+     51,939            122,439
+50th
+     44,000
+     33,260              77,260
+90th
+     44,000
+     33,260              77,260
+50th
+     63,495
+     39,042            102,537
+90th
+     74,985
+     44,942            119,927
+50th
+     57,100
+     36,224              93,324
+90th
+     58,780
+     37,552              96,332
+50th
+  -
+  -
+  -
+90th
+  -
+  -
+  -
+50th
+     10,400         6,687              17,087
+90th
+     10,400         6,687              17,087
+50th
+     12,800         8,298              21,098
+90th
+     29,930
+     13,834              43,764
+50th
+     10,400         5,844              16,244
+90th
+     13,000         7,756              20,756
+50th
+     15,150         7,966              23,116
+90th
+     19,534
+     12,273              31,807
+50th
+        9,950         5,132              15,082
+90th
+     14,880         6,817              21,697
+50th
+     11,450         7,034              18,484
+90th
+     13,900
+     10,361              24,261
+50th
+        8,800         5,125              13,925
+90th
+     11,100         6,886              17,986
+50th
+     22,800
+     10,853              33,653
+90th
+     28,453
+     14,063              42,516
+50th
+     18,200         8,700              26,900
+90th
+     22,560
+     11,157              33,717
+50th
+  -
+  -
+  -
+90th
+  -
+  -
+  -
+50th
+  -
+  -
+  -
+90th
+  -
+  -
+  -
+Gynaecology
+婦科手術
+Dilation and curettage (刮宮)
+擴張子宮頸及刮除子宮內膜術
+ >200
+1
+ 30 - 100
+ Day Surgery
+日間手術
+Hysterectomy (Laparoscopic)
+子宮切除術 (腹腔鏡)
+<30
+2
+Hysterectomy (Open)
+子宮切除術 (開放式)
+<30
+3
+Ovarian cystectomy (Laparoscopic)
+腹腔鏡卵巢囊腫切除術 (腹腔鏡)
+<30
+3
+ Day Surgery
+日間手術
+Colonoscopy +/- polypectomy
+結腸內窺鏡 +/- 瘜肉
+30 - 100
+1.1
+>200
+ Day Surgery
+日間手術
+Ovarian cystectomy (Open)
+腹腔鏡卵巢囊腫切除術 (開放式)
+ <30
+4
+Endoscopy
+內視鏡檢查
+Bronchoscopy +/- biopsy
+支氣管內窺鏡
+  -
+  -
+ <30
+Gastroscopy +/- polypectomy
+胃內窺鏡 +/- 瘜肉
+30 - 100
+1.1
+>200
+ Day Surgery
+日間手術
+Cystoscopy +/- biopsy
+膀胱內視鏡
+<30
+1.2
+30 - 100
+ Day Surgery
+日間手術
+ENT
+耳鼻喉科手術
+Direct laryngoscopy
++/- vocal cord polyp biopsy
+直接喉鏡檢查
+帶或不帶聲帶息肉活檢
+  -
+  -
+  -
+ Day Surgery
+日間手術
+Gastroscopy and Colonoscopy
++/- polypectomy
+胃及結腸內窺鏡 +/- 瘜肉
+>200
+1.1
+>200
+ Day Surgery
+日間手術
+Page 2 of 4
+
+Charges for Common Surgical Procedures
+Revision Date 更新日期：31/3/2026
+For the year ended 31 December 2025
+二零二五年度常見手術之有關費用
+The statistical figures listed below are for reference only.  All charges are subject to change according to patient's condition, case
+complexity and individual doctor's charge incurred, etc.
+以下數據僅為統計資料，並只作參考用途。各項目的實際收費會根據病人的情況、手術的複雜性及個別醫生之收費等
+而有所改變。
+Operation types
+手術種類
+Operation
+手術名稱
+ Number
+of Cases
+個案數量
+Average
+length of stay
+(day)
+平均住院
+日數
+Percentile
+百分位數
+ Doctor's
+Fees
+醫生費
+HK$
+ Hospital
+Charges
+醫院費
+HK$
+ Total
+Charges
+總收費
+HK$
+50th
+ -
+ -
+ -
+90th
+ -
+ -
+ -
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    85,310
+    27,246
+          112,556
+90th
+    85,310
+    27,246
+          112,556
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    69,666
+    33,278
+          102,944
+90th
+    77,266
+    42,257
+          119,523
+ 50th
+     12,200
+     10,800              23,000
+90th
+    24,400
+    21,200
+            45,600
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    30,000
+    15,225
+            45,225
+90th
+    30,240
+    20,269
+            50,509
+ 50th
+     20,000
+     11,843              31,843
+90th
+    26,462
+    18,447
+            44,909
+50th
+    49,800
+    32,037
+            81,837
+90th
+    82,120
+    46,320
+          128,440
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    52,400
+    40,415
+            92,815
+90th
+    72,400
+    44,850
+          117,250
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+    47,000
+    42,488
+            89,488
+90th
+    61,040
+    47,904
+          108,944
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+ 50th
+  -
+  -
+  -
+90th
+ -
+ -
+ -
+50th
+ -
+ -
+ -
+90th
+ -
+ -
+ -
+ 50th
+        9,000         6,807              15,807
+90th
+    16,000
+       7,430
+            23,430
+ENT
+耳鼻喉科手術
+Micro-laryngoscopy
+微型喉鏡檢查
+  -
+  -
+  -
+ Day Surgery
+日間手術
+Tonsillectomy
+扁桃體切除術
+ <30
+2
+Eye
+眼科手術
+LASIK
+激光矯視
+ Note (5)
+備註 (5)
+  -
+ Note (5)
+備註 (5)
+ Day Surgery
+日間手術
+Phacoemulsification + Intraocular lens
+implantation 白內障手術 - 晶狀體乳化
++ 人工晶體植入術
+ <30
+ >200
+ Day Surgery
+日間手術
+1.3
+Obstetric
+婦產科
+Caesarean section
+剖腹分娩
+ Note (5)
+備註 (5)
+  -
+ Day Surgery
+日間手術
+Knee arthroscopy
+膝關節鏡
+ <30
+1.3
+  -
+ Day Surgery
+日間手術
+Vaginal delivery
+自然分娩
+ Note (5)
+備註 (5)
+  -
+O&T
+骨科手術
+Carpal tunnel release
+腕管鬆解術
+ <30
+1
+ <30
+Laminectomy
+椎板切除術
+ Note (5)
+備註 (5)
+  -
+Open reduction and internal fixation of
+various fractures (Upper Limb)
+開放性復位及骨折內固定術(上肢)
+ <30
+1.2
+  -
+ Day Surgery
+日間手術
+Trigger finger release
+扳機指鬆解術
+  -
+  -
+ <30
+ Day Surgery
+日間手術
+Open reduction and internal fixation of
+various fractures (Lower Limb)
+開放性復位及骨折內固定術(下肢)
+ <30
+1.6
+  -
+ Day Surgery
+日間手術
+Spine fusion
+脊柱融合術
+ Note (5)
+備註 (5)
+  -
+Page 3 of 4
+
+Charges for Common Surgical Procedures
+Revision Date 更新日期：31/3/2026
+For the year ended 31 December 2025
+二零二五年度常見手術之有關費用
+Remarks:
+(1) The above information is based on the data from patients accommodating in general ward and undergoing a single procedure. 
+      Data from patients undergoing multiple procedures are excluded.  Some other minor treatments with endoscopy may be included.
+(2) Doctor's fee includes fees for anaesthetist, operating surgeon and ward round, etc.
+(3) Hospital charges include admission fee, room charge, operating theatre charge, treatment and associated material charges, 
+      nursing procedure fees, investigation and examination fees, medication and injection fees, meal and beverage charges, sundries 
+      charges, etc.
+(4) Information above is for reference only. The exact charges would be subject to change in accordance with patient’s 
+      condition, case complexity and individual doctor’s charge incurred.
+(5) We do not provide such services.
+(6) The number of services of certain procedures were minimal that it may not reveal the clear picture of charging fees.
+備註:
+(1) 上述資料只包括入住普通病房及接受單一項手術的統計數字，並不包括同時進行多項手術的資料。在有關內視鏡的資料中
+     會包括一些額外治療的收費。
+(2) 醫生費內包含麻醉師費，醫生手術費及巡房費等。
+(3) 醫院費內包括入院費、病房租金、手術室租金、治療及有關物料費、護理程序、化驗及檢查費、藥費及藥物注射費
+      、膳食及雜項收費等。
+(4) 以上統計資料只供參考。各項目的實際收費會根據病人的情況、手術的複雜性及個別醫生之收費等而有所改變。
+(5) 本院暫時未有提供該項服務。
+(6) 部分手術個案因宗數太少，未必能反映的實際情況。
+Page 4 of 4

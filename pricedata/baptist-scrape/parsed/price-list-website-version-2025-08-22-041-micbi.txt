@@ -1,0 +1,60 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+$830
+$1,079
+$1,328
+$1,080
+$1,404
+$1,728
+$2,130
+$2,769
+$3,408
+$3,660
+$4,758
+$5,856
+$4,050
+$5,265
+$6,480
+$1,320
+$1,716
+$2,112
+Remarks 備註:
+1.
+2.
+3.
+The above table only shows the common items of Microbiology for reference. Please contact the Pathology Department
+for further details.
+此收費表只列出常見之微生物學項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Microbiology 微生物學
+Enquiries 查詢: 2339 8921
+Rate for services provided in normal hours
+正常時段收費
+Upper Respiratory PCR Panel
+上呼吸道病毒核酸測試
+Gastrointestinal PCR Panel
+胃腸炎病原體核酸測試
+Blood Culture & Drug Sensitivity Test
+血細菌培養及藥物抗菌測試
+Bacterial Culture and Susceptibility Test
+細菌培養及藥物抗菌測試
+TB PCR with Rifampin resistant mutation
+结核分枝杆菌核酸測試
+COVID-19, Influenza A&B, RSV Viral RNA (by PCR)
+2019冠狀病毒病，甲、乙型流感，呼吸道合胞病毒核酸檢測
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：22/08/2025

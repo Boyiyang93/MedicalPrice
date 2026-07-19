@@ -1,0 +1,237 @@
+{
+  "hospital_id": "hkah",
+  "name": "香港港安醫院–司徒拔道",
+  "scraped": "2026-07-19",
+  "sources": {
+    "fees_pages": [
+      "https://www.hkah.org.hk/tc/fees-and-charges",
+      "https://www.hkah.org.hk/en/fees-and-charges",
+      "https://www.hkah.org.hk/en/fees-and-charges/out-patient-consultation-fee/out-patient-consultation-fee-2"
+    ],
+    "domain": "https://www.hkah.org.hk"
+  },
+  "effective": {
+    "imaging": "2026-01-01",
+    "ward_html": "current on website",
+    "surgery_historical_pdf": "2025 Historical Bill Size"
+  },
+  "pdfs_downloaded": 35,
+  "pdfs": [
+    {
+      "url": "(New) Fee Schedule for Sleep Study (1).pdf",
+      "file": "pdfs/(New) Fee Schedule for Sleep Study (1).pdf",
+      "text": "parsed/(New) Fee Schedule for Sleep Study (1).txt"
+    },
+    {
+      "url": "(Print) A32622-HKAH Cardiac Catheterization _ Interventional Center Insert_SR-CAR-CCIC-2025001_edit_rgb.pdf",
+      "file": "pdfs/(Print) A32622-HKAH Cardiac Catheterization _ Interventional Center Insert_SR-CAR-CCIC-2025001_edit_rgb.pdf",
+      "text": "parsed/(Print) A32622-HKAH Cardiac Catheterization _ Interventional Center Insert_SR-CAR-CCIC-2025001_edit_rgb.txt"
+    },
+    {
+      "url": "(Print) A33626-Lifestyle Medicine Clinic Leaflet_SR-LMC-LMC2025001_newedit_ol_rgb_250714-2.pdf",
+      "file": "pdfs/(Print) A33626-Lifestyle Medicine Clinic Leaflet_SR-LMC-LMC2025001_newedit_ol_rgb_250714-2.pdf",
+      "text": "parsed/(Print) A33626-Lifestyle Medicine Clinic Leaflet_SR-LMC-LMC2025001_newedit_ol_rgb_250714-2.txt"
+    },
+    {
+      "url": "(Print) Hospital Care Packages for Gynecological Surgeries_SR-GYN-HCPFGS-2025001_edit_rgb250714-2.pdf",
+      "file": "pdfs/(Print) Hospital Care Packages for Gynecological Surgeries_SR-GYN-HCPFGS-2025001_edit_rgb250714-2.pdf",
+      "text": "parsed/(Print) Hospital Care Packages for Gynecological Surgeries_SR-GYN-HCPFGS-2025001_edit_rgb250714-2.txt"
+    },
+    {
+      "url": "(Print) Robotic knee replacement leaflet with insert_merged_Coded_ph3_260629online-4.pdf",
+      "file": "pdfs/(Print) Robotic knee replacement leaflet with insert_merged_Coded_ph3_260629online-4.pdf",
+      "text": "parsed/(Print) Robotic knee replacement leaflet with insert_merged_Coded_ph3_260629online-4.txt"
+    },
+    {
+      "url": "(Print) Shoulder Care Packages_SR-ORTH-SCP-2025001_newedit_rgb_250715.pdf",
+      "file": "pdfs/(Print) Shoulder Care Packages_SR-ORTH-SCP-2025001_newedit_rgb_250715.pdf",
+      "text": "parsed/(Print) Shoulder Care Packages_SR-ORTH-SCP-2025001_newedit_rgb_250715.txt"
+    },
+    {
+      "url": "(Print) Urology Package A5 leaflets_SR-URO-UOPSP-2025001_newedit_rgb_250714-2.pdf",
+      "file": "pdfs/(Print) Urology Package A5 leaflets_SR-URO-UOPSP-2025001_newedit_rgb_250714-2.pdf",
+      "text": "parsed/(Print) Urology Package A5 leaflets_SR-URO-UOPSP-2025001_newedit_rgb_250714-2.txt"
+    },
+    {
+      "url": "20230309_SR_UK Testing service_A4_op.pdf.pdf (2).pdf.pdf-2.pdf (2).pdf",
+      "file": "pdfs/20230309_SR_UK Testing service_A4_op.pdf.pdf (2).pdf.pdf-2.pdf (2).pdf",
+      "text": "parsed/20230309_SR_UK Testing service_A4_op.pdf.pdf (2).pdf.pdf-2.pdf (2).txt"
+    },
+    {
+      "url": "2025 Historical Bill Szie_v4 (4)_.pdf",
+      "file": "pdfs/2025 Historical Bill Szie_v4 (4)_.pdf",
+      "text": "parsed/2025 Historical Bill Szie_v4 (4)_.txt"
+    },
+    {
+      "url": "A31990-HKAH-Chest Pain Leaflet _ Insert_SR-CAR-RACPC-20250714_edit_rgb-2.pdf",
+      "file": "pdfs/A31990-HKAH-Chest Pain Leaflet _ Insert_SR-CAR-RACPC-20250714_edit_rgb-2.pdf",
+      "text": "parsed/A31990-HKAH-Chest Pain Leaflet _ Insert_SR-CAR-RACPC-20250714_edit_rgb-2.txt"
+    },
+    {
+      "url": "A32622-HKAH Breast CIinic Leaflet  Insert_SR-GSBC-BC_260122-2.pdf",
+      "file": "pdfs/A32622-HKAH Breast CIinic Leaflet  Insert_SR-GSBC-BC_260122-2.pdf",
+      "text": "parsed/A32622-HKAH Breast CIinic Leaflet  Insert_SR-GSBC-BC_260122-2.txt"
+    },
+    {
+      "url": "A32622-HKAH Breast CIinic Leaflet _ Insert_SR-GSBC-BC-2025001_edit_rgb_250715-2 (1).pdf",
+      "file": "pdfs/A32622-HKAH Breast CIinic Leaflet _ Insert_SR-GSBC-BC-2025001_edit_rgb_250715-2 (1).pdf",
+      "text": "parsed/A32622-HKAH Breast CIinic Leaflet _ Insert_SR-GSBC-BC-2025001_edit_rgb_250715-2 (1).txt"
+    },
+    {
+      "url": "A32706-HKAH Cardiac Assessment Program Leaflet _ Insert_SR-HA-CA-2025001_edit_rgb_250715-2.pdf",
+      "file": "pdfs/A32706-HKAH Cardiac Assessment Program Leaflet _ Insert_SR-HA-CA-2025001_edit_rgb_250715-2.pdf",
+      "text": "parsed/A32706-HKAH Cardiac Assessment Program Leaflet _ Insert_SR-HA-CA-2025001_edit_rgb_250715-2.txt"
+    },
+    {
+      "url": "A329xx-HKAH Laparoscopic Groin Hernia Repair Surgery Leaflet_01 OP_20220914_Web_edit_rgb_0718-3.pdf",
+      "file": "pdfs/A329xx-HKAH Laparoscopic Groin Hernia Repair Surgery Leaflet_01 OP_20220914_Web_edit_rgb_0718-3.pdf",
+      "text": "parsed/A329xx-HKAH Laparoscopic Groin Hernia Repair Surgery Leaflet_01 OP_20220914_Web_edit_rgb_0718-3.txt"
+    },
+    {
+      "url": "A33147-HKAH Haemodialysis Center Leaflet (with insert)_SR-HEMO-HT-2025001_rgb251015e-2.pdf",
+      "file": "pdfs/A33147-HKAH Haemodialysis Center Leaflet (with insert)_SR-HEMO-HT-2025001_rgb251015e-2.pdf",
+      "text": "parsed/A33147-HKAH Haemodialysis Center Leaflet (with insert)_SR-HEMO-HT-2025001_rgb251015e-2.txt"
+    },
+    {
+      "url": "A33225-HKAH Comprehensive Health Assessment Plan_SR-HA-CHAP-2025001_edit_rgb-3.pdf",
+      "file": "pdfs/A33225-HKAH Comprehensive Health Assessment Plan_SR-HA-CHAP-2025001_edit_rgb-3.pdf",
+      "text": "parsed/A33225-HKAH Comprehensive Health Assessment Plan_SR-HA-CHAP-2025001_edit_rgb-3.txt"
+    },
+    {
+      "url": "A33395-Bunion Clinic Insert_SR-ORTH-BCP-2025001_edit_rgb_250715-2.pdf",
+      "file": "pdfs/A33395-Bunion Clinic Insert_SR-ORTH-BCP-2025001_edit_rgb_250715-2.pdf",
+      "text": "parsed/A33395-Bunion Clinic Insert_SR-ORTH-BCP-2025001_edit_rgb_250715-2.txt"
+    },
+    {
+      "url": "A33626-HKAH Dietitian Services Leaflet_SR-FS-DS-2025001_edit_rgb_250715-2.pdf",
+      "file": "pdfs/A33626-HKAH Dietitian Services Leaflet_SR-FS-DS-2025001_edit_rgb_250715-2.pdf",
+      "text": "parsed/A33626-HKAH Dietitian Services Leaflet_SR-FS-DS-2025001_edit_rgb_250715-2.txt"
+    },
+    {
+      "url": "A33705-1HKAH 18 months Well Baby Package Insert_SR-PEDI-18MWBP-2025001_edit_rgb-2.pdf",
+      "file": "pdfs/A33705-1HKAH 18 months Well Baby Package Insert_SR-PEDI-18MWBP-2025001_edit_rgb-2.pdf",
+      "text": "parsed/A33705-1HKAH 18 months Well Baby Package Insert_SR-PEDI-18MWBP-2025001_edit_rgb-2.txt"
+    },
+    {
+      "url": "A33705-Pediatric Surgical Hospital Care Packages_Coded_edit_rgb260602b.pdf",
+      "file": "pdfs/A33705-Pediatric Surgical Hospital Care Packages_Coded_edit_rgb260602b.pdf",
+      "text": "parsed/A33705-Pediatric Surgical Hospital Care Packages_Coded_edit_rgb260602b.txt"
+    },
+    {
+      "url": "A33xxxx-HKAH Men_s Health Examination Plan Leaflet_SR-HA-MHE-2025001_edit_rgb_0718-2.pdf",
+      "file": "pdfs/A33xxxx-HKAH Men_s Health Examination Plan Leaflet_SR-HA-MHE-2025001_edit_rgb_0718-2.pdf",
+      "text": "parsed/A33xxxx-HKAH Men_s Health Examination Plan Leaflet_SR-HA-MHE-2025001_edit_rgb_0718-2.txt"
+    },
+    {
+      "url": "Brain-health-assessment-leaflet _ insert_SR-HA-BHSP-2025001_edit_rgb_0718-2.pdf",
+      "file": "pdfs/Brain-health-assessment-leaflet _ insert_SR-HA-BHSP-2025001_edit_rgb_0718-2.pdf",
+      "text": "parsed/Brain-health-assessment-leaflet _ insert_SR-HA-BHSP-2025001_edit_rgb_0718-2.txt"
+    },
+    {
+      "url": "Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-3.pdf",
+      "file": "pdfs/Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-3.pdf",
+      "text": "parsed/Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-3.txt"
+    },
+    {
+      "url": "Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-4.pdf",
+      "file": "pdfs/Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-4.pdf",
+      "text": "parsed/Common Surgical Procedure Packages_SR-GS-CSPP-2025001_edit_rgb250715-4.txt"
+    },
+    {
+      "url": "Done_(Print) A33050-HKAH Special Endoscopy Packages for Health Assessment_SR-HA-SEPFHA-2025001_edit_rgb-2.pdf",
+      "file": "pdfs/Done_(Print) A33050-HKAH Special Endoscopy Packages for Health Assessment_SR-HA-SEPFHA-2025001_edit_rgb-2.pdf",
+      "text": "parsed/Done_(Print) A33050-HKAH Special Endoscopy Packages for Health Assessment_SR-HA-SEPFHA-2025001_edit_rgb-2.txt"
+    },
+    {
+      "url": "Done_A33050-HKAH Cancer Screening_SR-HA-CSP-2025001_edit_rgb-2.pdf",
+      "file": "pdfs/Done_A33050-HKAH Cancer Screening_SR-HA-CSP-2025001_edit_rgb-2.pdf",
+      "text": "parsed/Done_A33050-HKAH Cancer Screening_SR-HA-CSP-2025001_edit_rgb-2.txt"
+    },
+    {
+      "url": "Done_A33225-HKAH Well Women Packages_SR-HA-WWP-2025001_edit_rgb-2.pdf",
+      "file": "pdfs/Done_A33225-HKAH Well Women Packages_SR-HA-WWP-2025001_edit_rgb-2.pdf",
+      "text": "parsed/Done_A33225-HKAH Well Women Packages_SR-HA-WWP-2025001_edit_rgb-2.txt"
+    },
+    {
+      "url": "HKAH Comprehensive Stroke Program Leaflet  Insert_SR-NEURO-CSP-250714_edit_rgb-2.pdf",
+      "file": "pdfs/HKAH Comprehensive Stroke Program Leaflet  Insert_SR-NEURO-CSP-250714_edit_rgb-2.pdf",
+      "text": "parsed/HKAH Comprehensive Stroke Program Leaflet  Insert_SR-NEURO-CSP-250714_edit_rgb-2.txt"
+    },
+    {
+      "url": "Health Care Advisory 202203 EN Chi.pdf",
+      "file": "pdfs/Health Care Advisory 202203 EN Chi.pdf",
+      "text": "parsed/Health Care Advisory 202203 EN Chi.txt"
+    },
+    {
+      "url": "Information sheet - Patient_s Records Request - 20230328 CH.pdf",
+      "file": "pdfs/Information sheet - Patient_s Records Request - 20230328 CH.pdf",
+      "text": "parsed/Information sheet - Patient_s Records Request - 20230328 CH.txt"
+    },
+    {
+      "url": "Information sheet - Patient_s Records Request - 20230328 EN.pdf",
+      "file": "pdfs/Information sheet - Patient_s Records Request - 20230328 EN.pdf",
+      "text": "parsed/Information sheet - Patient_s Records Request - 20230328 EN.txt"
+    },
+    {
+      "url": "Lung Health Screening Package_Coded_edit_rgb_0717.pdf",
+      "file": "pdfs/Lung Health Screening Package_Coded_edit_rgb_0717.pdf",
+      "text": "parsed/Lung Health Screening Package_Coded_edit_rgb_0717.txt"
+    },
+    {
+      "url": "NNJ Paedietic_SR-PEDI-PNJP-2025001_edit_rgb-2.pdf",
+      "file": "pdfs/NNJ Paedietic_SR-PEDI-PNJP-2025001_edit_rgb-2.pdf",
+      "text": "parsed/NNJ Paedietic_SR-PEDI-PNJP-2025001_edit_rgb-2.txt"
+    },
+    {
+      "url": "Robotic Hip Leaflet_ph3_260629_online-2.pdf",
+      "file": "pdfs/Robotic Hip Leaflet_ph3_260629_online-2.pdf",
+      "text": "parsed/Robotic Hip Leaflet_ph3_260629_online-2.txt"
+    },
+    {
+      "url": "insert_APS_online_260616-2.pdf",
+      "file": "pdfs/insert_APS_online_260616-2.pdf",
+      "text": "parsed/insert_APS_online_260616-2.txt"
+    }
+  ],
+  "outpatient": {
+    "urgent_care_24h": 1200,
+    "facility_fee_30min": 500,
+    "facility_procedure": 1500,
+    "general_practice_initial": 980,
+    "general_practice_followup": 780,
+    "specialist_initial_range": {
+      "min": 800,
+      "max": 2800
+    },
+    "note": "OPD consultation HTML table + facility fees from Oct 2021"
+  },
+  "ward_daily_general_ward": {
+    "standard_3_4_beds": 900,
+    "semi_private_single": 2300,
+    "semi_private_range": "2300-2800",
+    "private_single": 3900,
+    "vip_private": 9000,
+    "day_bed_standard": 500
+  },
+  "operating_theatre_first_hour_standard": {
+    "major_or": 3570,
+    "minor_or": 950,
+    "note": "Operating Rooms HTML; first-hour tier for standard ward"
+  },
+  "imaging_standard_ward_effective_2026_01_01": {
+    "ct_brain_plain": 3450,
+    "ct_brain_with_contrast": 6220,
+    "mri_brain_plain": 9320,
+    "mri_brain_with_contrast": 14560,
+    "opd_ct_brain_plain": 2833,
+    "opd_mri_brain_plain": 7644
+  },
+  "surgery_historical": {
+    "note": "2025 Historical Bill Size PDF on reference surgical procedures page",
+    "source_pdf": "2025 Historical Bill Szie_v4 (4)_.pdf"
+  },
+  "notes": [
+    "Hospital fees exclude doctor fees unless package stated",
+    "Not written to data/db.js"
+  ]
+}

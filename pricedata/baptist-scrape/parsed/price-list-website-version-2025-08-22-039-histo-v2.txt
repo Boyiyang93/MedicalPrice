@@ -1,0 +1,65 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Frozen Section (basic) 冷凍切片檢驗 (基本)
+$4,330
+$5,629
+$6,928
+Surgical Specimen (basic) 組織病理化驗 (基本)
+$2,390
+$3,107
+$3,824
+Surgical Specimen (complex) 組織病理化驗 (複雜)
+$6,290
+$8,177
+$10,064
+Core Needle Biopsy 粗針穿刺活組織檢查
+$3,580
+$4,654
+$5,728
+Respiratory Tract Biopsy 呼吸道活組織檢查
+$4,520
+$5,876
+$7,232
+Liver/ Lymph Node Biopsy 肝臟/ 淋巴結 活組織檢查
+$4,700
+$6,110
+$7,520
+Gynaecological Cytology 婦科抹片檢查
+$680
+$884
+$1,088
+Non-gynaecological Cytology 非婦科抹片檢查
+$1,220
+$1,586
+$1,952
+Fine Needle Aspiration Cytology (per site) 微針抽取細胞學檢查
+$1,270
+$1,651
+$2,032
+Remarks 備註:
+1.
+2.
+3.
+緊急報告，收取附加費為正常收費之百份之五十。
+Histopathology & Cytology 組織病理及細胞學
+Enquiries 查詢: 2339 8921
+Rate for services provided in normal hours
+正常時段收費
+Price is for reference only and actual charge will vary according to complexity of the case. 50% of normal rate will
+be applied as surcharge for frozen section with specimens received in the laboratory at off-hour as tabled below.
+價目僅供參考，實際收費會根據該化驗項目的複雜程度而有所不同。以下非正常時段化驗室收到之冷凍切
+片標本，收取附加費為正常收費之百份之五十。
+Histopathology – Routine Service 組織病理 – 常規化驗 # 3
+Cytology Service 細胞學化驗 # 3
+Doctor’s fee shall be charged for frozen section reported at non-doctor’s office hours and please contact laboratory
+for further enquires.
+在非醫生辦公時段做的冷凍切片報告需收取醫生費，如有查詢請與化驗室聯絡。
+50% of normal rate will be applied as surcharge for urgent reporting.
+Histopathology – Frozen Section Service 組織病理 – 冷凍切片檢驗 # 1, 2
+Revision Date/更新日期：22/08/2025

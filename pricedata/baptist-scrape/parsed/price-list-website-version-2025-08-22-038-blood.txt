@@ -1,0 +1,55 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Blood Group Test 血型測檢
+$360
+$468
+$576
+Cryoprecipitate 冷凍沉澱物
+$260
+$338
+$416
+Frozen Plasma 冰凍血漿
+$260
+$338
+$416
+Platelet 全血濃縮血小板
+$260
+$338
+$416
+Cross Matching 配血測試程序
+$300
+$390
+$480
+Type & Screen 血型及抗體篩檢
+$1,020
+$1,326
+$1,632
+Remarks 備註:
+1.
+2.
+3.
+Blood Bank 血庫
+Enquiries 查詢: 2339 8921
+Rate for services provided in normal hours
+正常時段收費
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+The above table only shows the common items of Blood Bank for reference. Blood and Blood Products are free of
+charge supplied by Red Cross. Please contact the Pathology Department for further details.
+此收費表只列出常見之血庫項目以作參考。血液及血液製品由紅十字會免費提供。如有需要，請向病理化
+驗部查詢詳情。
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：22/08/2025

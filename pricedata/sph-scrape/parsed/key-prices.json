@@ -1,0 +1,123 @@
+{
+  "hospital_id": "sph",
+  "hospital_name": "聖保祿醫院",
+  "source": "https://www.stpaul.org.hk/tc/charges",
+  "effective": {
+    "room_charges": "2025-12-11",
+    "service_charges": "2026-07-16",
+    "historical_bill": "2025"
+  },
+  "ward_daily": {
+    "standard": {
+      "min": 760,
+      "max": 900,
+      "note": "標準房三至四人"
+    },
+    "semi_private": {
+      "min": 1380,
+      "max": 1480,
+      "note": "半私家房二人"
+    },
+    "private": {
+      "min": 3800,
+      "max": 4880,
+      "note": "私家房"
+    },
+    "day_standard": 400,
+    "day_private": 2000
+  },
+  "outpatient_gp": {
+    "regular_8_20": 280,
+    "sunday_holiday_8_20": 350,
+    "night_20_8": 430,
+    "night_sunday_holiday_20_8": 470
+  },
+  "imaging": {
+    "ct_brain_plain": {
+      "standard": 2400,
+      "semi_private": 3000,
+      "private": 3900,
+      "outpatient": 2400
+    },
+    "ct_brain_contrast": {
+      "standard": 4300,
+      "semi_private": 5400,
+      "private": 7000,
+      "outpatient": 4300
+    },
+    "mri_brain_plain": {
+      "standard": 6430,
+      "semi_private": 8040,
+      "private": 10290,
+      "outpatient": 6430
+    },
+    "mri_brain_contrast": {
+      "standard": 9940,
+      "semi_private": 12430,
+      "private": 15910,
+      "outpatient": 9940
+    }
+  },
+  "historical_surgery_highlights": [
+    {
+      "procedure": "乳房腫塊切除術",
+      "avg_los": "1.0",
+      "total_p50": 76746,
+      "hospital_p50": 21246,
+      "doctor_p50": 55500,
+      "mode": "inpatient"
+    },
+    {
+      "procedure": "剖腹取嬰術",
+      "avg_los": "4.0",
+      "total_p50": 93962,
+      "hospital_p50": 33112,
+      "doctor_p50": 60850,
+      "mode": "inpatient"
+    },
+    {
+      "procedure": "腹腔鏡膽囊切除術",
+      "avg_los": "2.0",
+      "total_p50": 91039,
+      "hospital_p50": 45639,
+      "doctor_p50": 45400,
+      "mode": "inpatient"
+    },
+    {
+      "procedure": "痔瘡切除術",
+      "avg_los": "1.0",
+      "total_p50": 49935,
+      "hospital_p50": 26735,
+      "doctor_p50": 23200,
+      "mode": "inpatient"
+    },
+    {
+      "procedure": "腹腔鏡疝氣修補術",
+      "avg_los": "1.0",
+      "total_p50": 81323,
+      "hospital_p50": 30723,
+      "doctor_p50": 50600,
+      "mode": "inpatient"
+    },
+    {
+      "procedure": "疝氣修補術",
+      "avg_los": "-",
+      "total_p50": null,
+      "hospital_p50": null,
+      "doctor_p50": null,
+      "mode": "day_surgery"
+    }
+  ],
+  "pdfs": {
+    "Health Checkup Plans for Female_020625.pdf": "https://www.stpaul.org.hk/storage/media/Charges/Health Centre/Health%20Checkup%20Plans%20for%20Female_020625.pdf",
+    "Health Checkup Plans for Male_020625.pdf": "https://www.stpaul.org.hk/storage/media/Charges/Health Centre/Health%20Checkup%20Plans%20for%20Male_020625.pdf",
+    "Health Checkup Plans for Preemployment_020625.pdf": "https://www.stpaul.org.hk/storage/media/Charges/Health Centre/Health%20Checkup%20Plans%20for%20Preemployment_020625.pdf",
+    "Health Checkup Plans for Premarital_020625.pdf": "https://www.stpaul.org.hk/storage/media/Charges/Health Centre/Health%20Checkup%20Plans%20for%20Premarital_020625.pdf",
+    "HistoricalBill2025CHT.pdf": "https://www.stpaul.org.hk/storage/media/Charges/Reference Charges For Common Procedures Page/HistoricalBill2025CHT.pdf"
+  },
+  "notes": [
+    "病房/門診/放射等主要收费以官网 HTML 表格发布（非 PDF）；已存 pages/ 与 parsed/*.txt",
+    "CT 腦部私家房原页 $7,000/$3,900 疑似平扫/显影列颠倒，key-prices 已按价阶校正",
+    "医生费、麻醉费另计；历史账单为 2025 标准房总收费统计"
+  ]
+}

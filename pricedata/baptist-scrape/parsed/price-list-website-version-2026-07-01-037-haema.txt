@@ -1,0 +1,62 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+$250
+$325
+$400
+$850
+$1,105
+$1,360
+$160
+$208
+$256
+$380
+$494
+$608
+Haemoglobin A1C糖化血色素
+$570
+$741
+$912
+$1,300
+$1,690
+$2,080
+$320
+$416
+$512
+$290
+$377
+$464
+Remarks 備註:
+1.
+2.
+3.
+Enquiries 查詢: 2339 8921
+50% of normal rate will be applied as surcharge for services provided in off-hour.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+The above table only shows the common items of Haematology & Serology for reference. Please contact the Pathology
+Department for further details.
+此收費表只列出常見之血液及血清學項目以作參考。如有需要，請向病理化驗部查詢詳情。
+Haematology & Serology 血液及血清學
+Rate for services provided in normal hours
+正常時段收費
+Complete Blood Count (CBC) 全血計數
+D-Dimer D-二聚體
+Erythrocyte Sedimentation Rate 紅血球沉降速率
+Fibrinogen 纖維蛋白原
+Haemoglobin Pattern 血紅蛋白分析
+Prothrombin Time 凝血酶原時間
+Activated Partial Thromboplastin Time 部份凝血素時間
+Normal-Hour 正常時段
+Off-Hour 非正常時段
+Mon – Sat 星期一至六
+07:00 - 22:00
+22:00 - 07:00
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：01/07/2026

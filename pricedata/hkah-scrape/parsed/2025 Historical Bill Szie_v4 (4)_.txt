@@ -1,0 +1,762 @@
+常見手術收費參考資料
+Reference Charges for Common Surgical Procedures
+The information listed below is derived from the data of standard room charges of the hospital in the year of 2025. The information on this list are for reference only and will be updated regularly. Prices are subject to change 
+based on the complexity of each individual case and the corresponding fees charged by the doctor. 
+以下資料取自本院普通病房2025年的收費紀錄，所有數據只作參考用途，實際費用須視乎病情複雜性及個別醫生收費而定。此列表會定期更新。
+1. The information provided above is based on data for standard ward accomodation and individual procedure. Data for multiple procedures are excluded. 
+2. Doctor's fees include fees for anaesthesiologist, operating surgeon and ward round. 
+3. Hospital charges include the cost of accommodation, admission, surgical supplies, nursing care, investigation and examination, medication, meals, sundries, etc. No admission fee is charged. 
+Remarks
+1.以上為病人進行單一手術及入住普通房間費用的統計資料。同時進行兩項或以上手術的有關資料並未納入統計範圍。
+2.醫生費包括相關程序的醫生費、麻醉科專科醫生費，及醫生巡房費。
+3.醫院費包括登記入住費、住宿費、手術消耗品及相關物料、護理費、檢驗和檢查費，及藥物、餐膳、飲料和一般雜項的費用。本院不設入院費。
+#Day Surgery: operations/procedures for which patients are discharged on the same calendar day (also includes procedures conducted in the OPD)
+#日間手術即病人為門診部病人並於同一天接受手術或程序，然後出院。
+備註:
+手術種類
+Operation Types
+檢查 / 手術名稱
+Treatments / Procedures
+百分位數
+Percentile
+醫生費 (HK$)
+Doctor's Fees
+醫院費 (HK$)
+Hospital Charges
+總收費 (HK$)
+Total Charges
+全年出院人數
+Annual Number
+of Discharges
+平均住院日數
+Average Length of
+Stay (Days)
+Breast Lump Excision
+乳房腫瘤切除術
+Cholecystectomy (Laparoscopic) 
+膽囊切除術（腹腔鏡）
+Cholecystectomy (Open)
+膽囊切除術（開放式）
+Circumcision
+包皮環切術
+General Surgery
+外科
+Orthopedic and
+Traumatology 
+骨科
+Obstetrics
+產科
+Gynecology
+婦科
+Endoscopy
+內視鏡
+Ophthalmology (Eye)
+眼科
+ENT
+耳鼻喉科
+Urology
+泌尿科
+Colectomy (Laparoscopic)
+結腸切除術（腹腔鏡）
+Haemorrhoidectomy
+痔瘡切除術
+Hernia repair (Laparoscopic)
+疝氣（小腸氣）修補術（腹腔鏡）
+Hernia repair (Open)
+疝氣（小腸氣）修補術（開放式）
+Dilation and Curettage
+子宮內膜刮除手術
+Bronchoscopy with or without Biopsy
+支氣管鏡檢查（包括或不包括活檢）
+Colonoscopy with or without Polypectomy 
+大腸鏡檢查（包括或不包括瘜肉切除術）
+LASIK
+雷射原位角膜磨鑲術
+Micro-laryngoscopy
+顯微喉鏡檢查
+Direct Laryngoscopy with or without 
+Vocal Cord Polyp Biopsy
+直接喉鏡（包括或不包括聲帶瘜肉活檢）
+Phacoemulsification and Intraocular 
+Lens Implantation
+超聲乳化術及人工晶體植入術
+Cystoscopy with or without Biopsy
+膀胱鏡檢查（包括或不包括活檢）
+Colectomy (Open) 
+結腸切除術（開放式）
+<30
+<30
+30 - 100
+0
+<30
+30 - 100
+<30
+0
+<30
+<30
+<30
+<30
+<30
+0
+0
+0
+NA
+NA
+0
+0
+<30
+0
+<30
+30 - 100
+30 - 100
+0
+0
+<30
+<30
+<30
+<30
+<30
+<30
+0
+<30
+101 - 200
+<30
+<30
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+$80,600
+$97,940
+$41,500
+$49,380
+$84,000
+$126,500
+$0
+$0
+$40,000
+$68,100
+$29,500
+$36,224
+$144,500
+$158,120
+$0
+$0
+$45,850
+$62,520
+$35,750
+$48,900
+$68,500
+$104,600
+$31,500
+$57,800
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$27,200
+$32,900
+$145,100
+$250,840
+$118,070
+$154,880
+$85,300
+$109,700
+$0
+$0
+$25,000
+$25,880
+$16,500
+$17,800
+$27,000
+$55,120
+$20,400
+$27,500
+$0
+$0
+$0
+$0
+ 
+ 
+ 
+ 
+$36,000
+$36,570
+$0
+$0
+$40,580
+$60,680
+$0
+$0
+$0
+$0
+$42,500
+$86,700
+$21,750
+$33,060
+$51,680
+$71,299
+$27,800
+$38,325
+$69,794
+$82,338
+$0
+$0
+$13,488
+$16,390
+$14,410
+$19,238
+$113,492
+$156,557
+$0
+$0
+$34,137
+$45,002
+$25,687
+$27,828
+$50,717
+$57,785
+$28,980
+$51,080
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$21,282
+$29,147
+$78,899
+$87,653
+$69,436
+$81,728
+$57,901
+$62,283
+$0
+$0
+$70,945
+$73,858
+$22,921
+$33,546
+$35,449
+$42,030
+$10,920
+$13,962
+$0
+$0
+$0
+$0
+ 
+ 
+ 
+ 
+$24,902
+$26,467
+$0
+$0
+$29,054
+$38,312
+$0
+$0
+$0
+$0
+$33,080
+$42,508
+$17,193
+$25,486
+$132,280
+$169,239
+$69,300
+$87,705
+$153,794
+$208,838
+$0
+$0
+$53,488
+$84,490
+$43,910
+$55,462
+$257,992
+$314,677
+$0
+$0
+$79,987
+$107,522
+$61,437
+$76,728
+$119,217
+$162,385
+$60,480
+$108,880
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$48,482
+$62,047
+$223,999
+$338,493
+$187,506
+$236,608
+$143,201
+$171,983
+$0
+$0
+$95,945
+$99,738
+$39,421
+$51,346
+$62,449
+$97,150
+$31,320
+$41,462
+$0
+$0
+$0
+$0
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+NA
+$60,902
+$63,037
+$0
+$0
+$69,634
+$98,992
+$0
+$0
+$0
+$0
+$75,580
+$129,208
+$38,943
+$58,546
+1.4
+1.7
+0.0
+ 
+1.4
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+8.0
+ 
+1.5
+1.2
+1.2
+Thyroidectomy (Hemi)
+甲狀腺切除術（半邊切除）
+Thyroidectomy (Total)
+甲狀腺切除術（全部切除）
+<30
+0
+50th
+90th
+50th
+90th
+$54,267
+$58,306
+$0
+$0
+$42,817
+$43,445
+$0
+$0
+$97,084
+$101,751
+$0
+$0
+2.3
+ 
+ 
+ 
+ 
+1.1
+NA
+0.0
+1.4
+2.3
+Herniotomy
+疝氣（小腸氣）手術
+<30
+<30
+50th
+90th
+50th
+90th
+$43,000
+$43,372
+$43,974
+$48,742
+$23,800
+$26,700
+$24,504
+$27,259
+$66,800
+$70,072
+$68,478
+$76,001
+日間手術#
+Day Surgery#
+1.2
+Carpal Tunnel Release
+腕管鬆解術
+0
+<30
+50th
+90th
+50th
+90th
+$0
+$0
+$49,380
+$75,235
+$0
+$0
+$28,450
+$30,905
+$0
+$0
+$77,830
+$106,140
+日間手術#
+Day Surgery#
+ 
+ 
+ 
+1.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.6
+4.3
+1.7
+3.1
+1.2
+Gastroscopy and Colonoscopy with 
+or without Polypectomy
+胃鏡檢查 + 大腸鏡檢查（包括或
+不包括瘜肉切除術）
+101 - 200
+>200
+50th
+90th
+50th
+90th
+$34,550
+$48,000
+$32,200
+$41,500
+$35,865
+$54,685
+$16,755
+$20,851
+$70,415
+$102,685
+$48,955
+$62,351
+日間手術#
+Day Surgery#
+1.1
+Gastroscopy with or without Polypectomy
+胃鏡檢查（包括或不包括瘜肉切除術）
+30 - 100
+101 - 200
+50th
+90th
+50th
+90th
+$25,900
+$28,940
+$16,100
+$22,000
+$27,978
+$44,669
+$11,665
+$20,871
+$53,878
+$73,609
+$27,765
+$42,871
+日間手術#
+Day Surgery#
+3.4
+1.7
+Caesarean Section
+剖腹分娩
+Hysterectomy (Laparoscopic)
+子宮切除術（腹腔鏡）
+Hysterectomy (Open)
+子宮切除術（開放式）
+Ovarian Cystectomy (Laparoscopic)
+卵巢囊腫切除術（腹腔鏡）
+Tonsillectomy
+扁桃腺切除術
+0
+0
+50th
+90th
+50th
+90th
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+$0
+日間手術#
+Day Surgery#
+ 
+Colposcopy
+陰道鏡檢查
+Ovarian Cystectomy (Open)
+卵巢囊腫切除術（開放式）
+Vaginal Delivery
+陰道分娩
+Spine Fusion
+脊椎融合術
+Knee Arthroscopy
+膝關節內視鏡檢查
+Trigger Finger Release
+板機（彈弓）手指鬆解
+Open Reduction and Internal Fixation of 
+Various Fractures (Upper Limb) 
+（骨折）開復位內固定術（上肢）
+Open Reduction and Internal Fixation of 
+Various Fractures (Lower Limb)
+（骨折）開復位內固定術（下肢）
+<30
+<30
+<30
+<30
+<30
+<30
+<30
+<30
+0
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+50th
+90th
+$98,033
+$139,646
+$68,500
+$117,386
+$240,000
+$257,980
+$58,410
+$104,600
+$41,800
+$68,720
+$68,500
+$117,380
+$0
+$0
+$0
+$0
+$21,500
+$54,399
+$52,690
+$66,180
+$44,187
+$50,268
+$103,775
+$158,555
+$68,877
+$89,692
+$36,137
+$44,432
+$56,159
+$66,230
+$0
+$0
+$0
+$0
+$16,785
+$21,530
+$150,723
+$205,826
+$112,687
+$167,654
+$343,775
+$416,535
+$127,287
+$194,292
+$77,937
+$113,152
+$124,659
+$183,610
+$0
+$0
+$0
+$0
+$38,285
+$75,929
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+日間手術#
+Day Surgery#
+ 
+3.1
+0.0
+0.0
+0.0
+1.5
+1.6
+1.0
+ 
+Laminectomy
+椎板切除術

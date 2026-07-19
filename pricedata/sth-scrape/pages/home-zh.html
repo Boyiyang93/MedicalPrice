@@ -1,0 +1,807 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>St. Teresa's Hospital</title>
+<link rel="icon" type="image/x-icon" href="STHLogo.png">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="design.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./include/jquery-1.3.2.min.js"></script>
+<script>
+	$(document).ready(function() {
+	window.dialog.show();
+	
+		$(".div_news").bind('mouseover', function() {
+  			//alert('User clicked on "foo."');
+			//$(this).addClass("arial_pink_12");
+			$(this).attr("class", "arial_pink_12");
+			//$(this).append('<img src="images/zh/add.png" class="ten_icon" //style="margin-left:10px"/>');
+			//$(this).css("background-color", "#df8c91");
+			//$(this).css("color", "#FFFFFF");
+		});
+
+		$(".div_news").bind('mouseout', function() {
+  			$(this).attr("class", "arial_gary_12");
+			$('.ten_icon').remove();
+			//alert('User clicked on "foo."');
+			//$(this).addClass("arial_gray_12");
+			//$(this).css("background-color", "#FFFFFF");
+			//$(this).css("color", "#000000");
+			
+		});	
+		
+		move_left();
+		
+		$('.small_image').bind("mouseover", function() {
+			stop_move();
+		});	
+
+		
+		$('.small_image').bind("mouseout", function() {
+			re_move_left();
+		});								
+	});
+	
+	var g_timer;
+	var is_block = 0;
+	function move_right(){
+		if(is_block == 0 && $("#div_med_banner").css("left") != "auto" && $("#div_med_banner").css("left") != "0px"){
+			is_block = 1;
+			$("#div_med_banner").animate({"left": "+=86px"}, "slow", function(){ is_block = 0;}); // , function(){g_timer = setTimeout('move_right()', 500); is_block = 0;});
+			//g_timer = setTimeout('move_right()', 1000);
+		}
+	}
+	
+	function move_left() {
+		if(is_block == 0){
+			if($("#div_med_banner").css("left") != "-2302px"){
+				//is_block = 1;
+				$("#temptxt").val($("#div_med_banner").css("left"));		
+				$("#div_med_banner").animate({"left": "-=1px"}, 1, 'linear', function(){g_timer = setTimeout('move_left()', 2);}); //function(){move_left();});
+				//is_block = 1;
+			}else{
+				//is_block = 1;
+				$("#temptxt").val($("#div_med_banner").css("left"));
+				$("#div_med_banner").css("left", "0px");
+				$("#div_med_banner").animate({"left": "-=1px"}, 1, 'linear', function(){g_timer = setTimeout('move_left()', 2);}); 	//function(){move_left();});
+				//is_block = 1;			
+			}
+		}
+	}
+	
+	function stop_move(){
+		is_block = 1;
+		clearInterval(g_timer);
+	}
+	
+	function re_move_left(){
+		is_block = 0;
+		move_left();
+		//$("#div_med_banner").animate({"left": "-=1px"}, 1, 'linear', function(){move_left();});  //function(){g_timer = setTimeout('move_left()', 2);}
+	}
+	
+	function test(){
+		alert($("#div_med_banner").css("left"));
+		if($("#div_med_banner").css("left") != "-946px"){
+			alert('d');
+		}
+	}
+	
+		function closePopupDialog() {
+		document.getElementById("overlay").remove();
+		window.dialog.close();
+	}
+	
+	
+</script>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+-->
+a, a:visited, a:hover, a:active {
+    color: inherit; /* Keeps the link color the same as surrounding text */
+    text-decoration: none; /* Removes the underline */
+}
+.hover-cursor:hover {
+  cursor: pointer; /* Changes to hand pointer */
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="overlay" >
+
+<div onclick="closePopupDialog()" aria-label="close" id="dialogClose" style="right: 60px; top: 40px;" class="hover-cursor" >❌</div>	
+<dialog id="dialog" style="height:454px; width:800px;" >
+
+<a style="outline-width:0px" target="_blank" href="adscreen.html"><img src="images/slogan_button.jpg"  style=" position: absolute; bottom: 5px;left: 3px;"/></a>
+
+	
+</dialog>
+</div>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td align="center" background="images/zh/inner_bg.jpg">
+		<link rel="stylesheet" type="text/css" href="./include/chromestyle.css" />
+		<script type="text/javascript" src="./include/chrome.js"></script>
+		<script type="text/JavaScript">
+		<!--
+		function MM_swapImgRestore() { //v3.0
+		  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+			var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+			if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+		
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+			d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+		
+		function MM_swapImage() { //v3.0
+		  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+		//-->
+		</script>	
+		<table border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td>
+
+<div style="width:957px; height:95px;  background-image: url('images/zh/menu_01.jpg'); ">
+					   <a href="./index.asp?lang_code=zh"><img src="images/zh/menu_01_logo.jpg"></a>
+						<table border=0 cellspacing="0" cellpadding="0" style="float: right; margin:0px " >
+							<tr>
+								<td><a href="/index.asp?lang_code=en"><img src="images/zh/menu_01_lang_1.jpg" ></a><a href="/index.asp?lang_code=sc"><img src="images/zh/menu_01_lang_2.jpg"></a> </td>
+							</tr>
+							<tr>
+								<td>   
+								<a href="https://sthappointment.sth.org.hk/new-booking?lang_code=zh" target="_blank">
+								<table cellspacing="0" cellpadding="0" style=" float: right; margin:3px 18px 0px 5px;background:white;  border: 1px solid;  border-color: #d9767b;">
+									<tr>
+										<td><img src="images/en/clock.gif" width="50" height="50" >  </td>
+										<td style="padding-right: 10px">							
+											
+											門診網上預約								
+																		
+										</td>
+									</tr>					
+								</table>
+								</a>
+								</td>
+							</tr>
+						</table>			
+					</div>
+      <!--
+     <a href="./index.asp?lang_code=zh"><img src="images/zh/menu_01.jpg" alt="" width="957" height="95" border="0" usemap="#Map"></a>
+      -->
+</td>
+		  </tr>
+		  <tr>
+			<td align="left" class="chromestyle" id="chromemenu"><table border="0" cellspacing="0" cellpadding="0" >
+				<tr>
+					<div class="nav-bar">
+						<div class="nav-col">
+							<a href="./index.asp?lang_code=zh">
+								
+								<div class="nav-col-text">主頁</div>
+								
+								
+							</a>
+						</div>
+
+						<div class="nav-col">
+							<a href="./news_list.asp?lang_code=zh">
+								
+								<div class="nav-col-text">最新消息</div>
+								
+								
+							</a>
+						</div>
+						
+						<div class="nav-col">
+							<div>
+								<a href="./background.asp?lang_code=zh">
+									
+									<div class="nav-col-text">醫院簡介</div>
+									
+									
+								</a>
+							</div>
+							
+							<div class="submenu-row vertical-div">
+								<div>
+									<a href="./background.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">背景</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./mission.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">宗旨</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./montage.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">成長歷程圖片剪輯</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./nursing_school_mission.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">護士學校</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./sister_hospital.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">姊妹醫院</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./location_map.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">醫院位置圖</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./newsletter.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">院訊</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./accreditation_and_award.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">認證與獎項</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+								<div>
+									<a href="./health_information.asp?lang_code=zh">
+										<div class="submenu horizontal-div align-vertical">
+											<div>
+												<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+											</div>
+											
+											<div class="submenu-text">健康資訊</div>
+											
+											
+										</div>
+									</a>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="nav-col">
+							<a href="./medical_service_cat.asp?lang_code=zh">
+								
+								<div class="nav-col-text">服務</div>
+								
+								
+							</a>
+						</div>
+
+						<div class="nav-col">
+							<a href="./charge.asp?lang_code=zh">
+								
+								<div class="nav-col-text">服務收費</div>
+								
+								
+							</a>
+						</div>
+
+						<!-- <div class="nav-col">
+							<a href="./online_booking.asp?lang_code=zh">
+								<div class="nav-col-text">Healthcare info</div>
+							</a>
+						</div> -->
+
+						<div class="nav-col">
+							<a href="./consent_form_login.asp?lang_code=zh">
+								
+								<div class="nav-col-text">醫生資訊</div>
+								
+								
+							</a>
+						</div>
+
+						<div class="nav-col">
+							<a href="./recrultment.asp?lang_code=zh">
+								
+								<div class="nav-col-text">職位空缺</div>
+								
+								
+							</a>
+						</div>
+					<!--	
+						<div class="nav-col">
+							<div>
+								<a href="./covid_ChineseMedicine.asp?lang_code=zh">
+									
+									<div class="nav-col-text">中醫網上視診</div>
+									
+									
+								</a>
+							</div>
+						</div>
+						<span class="blink">Booking</span>
+					-->
+						<div class="nav-col">
+							<div>
+								<a href="https://sthappointment.sth.org.hk/new-booking?lang_code=zh" target="_blank">
+									
+									<div class="nav-col-text">預約</div>
+									
+									
+								</a>
+							</div>
+								<div class="submenu-row vertical-div">
+									<div>
+										<a href="https://sthappointment.sth.org.hk/new-booking?lang_code=zh" target="_blank">
+										
+											<div class="submenu horizontal-div align-vertical">
+												<div>
+													<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+												</div>
+												
+												<div class="submenu-text">門診預約</div>
+												
+												
+											</div>	
+								
+										</a>
+									</div>
+									<div>
+										<a href="./covid_ChineseMedicine.asp?lang_code=zh">
+										
+											<div class="submenu horizontal-div align-vertical">
+												<div>
+													<img class="submenu-arrow" src="images/submenu_arrow.png"/>
+												</div>
+												
+												<div class="submenu-text">中醫網上視診</div>
+												
+												
+											</div>	
+								
+										</a>
+									</div>									
+								
+								</div>
+						</div>
+
+
+
+						<div class="nav-col">
+							<a href="./contact_us.asp?lang_code=zh">
+								
+								<div class="nav-col-text">聯絡我們</div>
+								
+								
+							</a>
+						</div>
+
+						<div class="nav-col">
+							<div>
+								<a href="./service_directory.asp?lang_code=zh">
+									
+									<div class="nav-col-text">部門指南</div>
+									
+									
+								</a>
+							</div>
+						</div>
+					
+						<div class="nav-col">
+							<a href="./sitemap.asp?lang_code=zh">
+								
+								<div class="nav-col-text">網頁指南</div>
+								
+								
+							</a>
+						</div>
+						
+					</div>
+				</tr>
+			</table>
+<script type="text/javascript">
+
+cssdropdown.startchrome("chromemenu")
+
+</script>
+			</td>
+		  </tr>
+		</table>
+	</td>
+  </tr>
+<map name="Map" id="Map">
+<area shape="rect" coords="801,0,865,19" href="/index.asp?lang_code=en" /><area shape="rect" coords="868,1,930,19" href="/index.asp?lang_code=sc" />
+<area shape="rect" coords="2,-2,629,94"  href="./index.asp?lang_code=zh" />
+</map>
+<link rel="Icon" href="STHLogo.png" type="image/png"/>
+<style>
+
+	.horizontal-div {
+		display: flex; flex-direction: row;
+	}
+
+	.vertical-div {
+		display: flex; flex-direction: column;
+	}
+
+	.align-vertical {
+		align-items: center;
+	}
+
+	.align-horizontal {
+		justify-content: center;
+	}
+
+	.nav-bar {
+		width: 100%;
+		display: flex;
+	}
+
+	.nav-col {
+		/* width: fit-content; */
+		color: #FFFFFF;
+		/* border-left: 1px solid #fafafa57; */
+	}
+	.nav-col a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.nav-col-text {
+		padding: 8px 8px;
+	}
+	.nav-col:hover {
+		background-color: #d2495e6c;
+	}
+	.nav-col:hover .submenu-row {
+		display: flex;
+	}
+
+	.submenu-row {
+		display: none;
+		position: absolute;
+		width: fit-content;
+		height: fit-content;
+		background-color: #d0636d;
+	}
+	.submenu {
+		height: 25px;
+		padding-right: 8px;
+		background-color: #d0636d;
+	}
+	.submenu:hover {
+		background-color: #d2495e;
+	}
+
+	.submenu-arrow {
+		width: 4px;
+		height: 5px;
+		padding: 8px;
+	}
+
+	.submenu-text {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	body,td,th {
+		font-family: Arial, Helvetica, sans-serif; font-size: 12px; 
+	}
+	
+</style>
+  <tr>
+    <td height="295" align="center" background="images/zh/main_page_bg.jpg"><table width="949" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="224" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="./news_list.asp?lang_code=zh"><img src="images/zh/main_page_news_01.jpg" width="234" height="42" border="0"/></a></td>
+          </tr>
+          <tr>
+            <td>
+				<table>
+					<tr>
+						<td width="234" height="111" valign="top" background="images/zh/main_page_news_02.jpg">
+							<div style="width:224; height:81; padding:10px 10px">
+								<div class="div_news arial_gary_12" style="width:224; float:left;cursor:pointer" onclick="window.location='./news_detail.asp?lang_code=zh&id=156'">價格調整              ...</div><div style="padding:2px 0px; clear:left"><img src="images/zh/main_news_ml.png" height="5"/></div><div class="div_news arial_gary_12" style="width:224; float:left;cursor:pointer" onclick="window.location='./news_detail.asp?lang_code=zh&id=150'">訪客及病人注意事項         ...</div><div style="padding:2px 0px; clear:left"><img src="images/zh/main_news_ml.png" height="5"/></div>
+							</div>
+						</td>	
+					</tr>
+					<tr>
+						<td width="234" height="80" valign="top" background="images/zh/main_page_news_02.jpg">
+						<div style="width:224; height:70; padding:10px 10px 10px">
+								<div class="div_news arial_gary_12" style="width:224; float:left;cursor:pointer;" >
+									<a href="adscreen.html" target="_blank">
+										
+										認知健康篩查計劃
+										
+									</a>
+								</div>
+							</div>
+						<div style="width:224; height:70; padding:10px 10px 10px">
+								<div class="div_news arial_gary_12" style="width:224; float:left;cursor:pointer;">
+								<a href="./charge.asp?lang_code=zh">
+									
+									提高私家醫院收費透明度的先導計劃
+									
+									</a>
+								</div>
+							</div>
+						</td>	
+					</tr>
+				</table>
+			</td>
+          </tr>
+          <tr>
+            <td><img src="images/zh/main_page_news_03.jpg" width="234" height="36" /></td>
+          </tr>
+          <tr>
+            <td>
+			<form enctype="post" method="get" action="./search.asp">
+				<table border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+					<td width="175" height="33" style="padding-left:10px"><input type="text" name="keyword" id="keyword" /></td>
+					<td><input type="image"  value="Go" src="images/zh/search_02.jpg"  /></td>
+				  </tr>
+				</table>
+			<input type="hidden" name="is_search" value="Y"/>
+			<input type="hidden" name="lang_code" value="zh"/>
+			</form>
+			</td>
+          </tr>
+
+        </table></td>
+        <td width="725" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding-top:2px">
+			<!--object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="725" height="260" id="flash_banner" align="middle">
+              <param name="allowScriptAccess" value="sameDomain" />
+              <param name="movie" value="images/zh/flash_banner.swf" />
+              <param name="quality" value="high" />
+              <param name="wmode" value="transparent" />
+              <param name="bgcolor" value="#ffffff" />
+               embed src="images/zh/flash_banner.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="725" height="260" name="flash_banner" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />            
+			</object-->
+				<!--at 10-02-2021 !-->
+				<img src="images/zh/banner.gif" bgcolor="#ffffff" width="725" height="260" name="flash_banner" align="middle" />
+		    </td>
+          </tr>
+          <tr>
+            <td style="padding-top:5px">
+			<div style="width:17px; float:left" ><img src="images/zh/arrow_1.png" style="cursor:pointer" width="17" height="67"/></div>
+			<div style="position:relative; float:left; width:691px; height:66px; overflow:hidden;" align="left">
+				<div id="div_med_banner" style="position:absolute; white-space:nowrap;" align="left">
+					<a href="./medical_service.asp?lang_code=zh&dept_code=CBC"><img class="small_image" src="images/zh/banner/CBC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=CMC"><img class="small_image" src="images/zh/banner/CMC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=DENT"><img class="small_image" src="images/zh/banner/DENT.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=DIET"><img class="small_image" src="images/zh/banner/DIET.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EEC"><img class="small_image" src="images/zh/banner/EEC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EHL"><img class="small_image" src="images/zh/banner/EHL.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EHU"><img class="small_image" src="images/zh/banner/EHU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=ENDO"><img class="small_image" src="images/zh/banner/ENDO.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=ESC"><img class="small_image" src="images/zh/banner/ESC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=HSC"><img class="small_image" src="images/zh/banner/HSC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=MCC"><img class="small_image" src="images/zh/banner/MCC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=MCU"><img class="small_image" src="images/zh/banner/MCU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NKS"><img class="small_image" src="images/zh/banner/NKS.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NPH"><img class="small_image" src="images/zh/banner/NPH.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NXR"><img class="small_image" src="images/zh/banner/NXR.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=OGC"><img class="small_image" src="images/zh/banner/OGC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=OTT"><img class="small_image" src="images/zh/banner/OTT.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=REHAB"><img class="small_image" src="images/zh/banner/REHAB.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SCU"><img class="small_image" src="images/zh/banner/SCU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SHC"><img class="small_image" src="images/zh/banner/SHC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SLC"><img class="small_image" src="images/zh/banner/SLC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=CBC"><img class="small_image" src="images/zh/banner/CBC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=CMC"><img class="small_image" src="images/zh/banner/CMC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=DENT"><img class="small_image" src="images/zh/banner/DENT.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=DIET"><img class="small_image" src="images/zh/banner/DIET.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EEC"><img class="small_image" src="images/zh/banner/EEC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EHL"><img class="small_image" src="images/zh/banner/EHL.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=EHU"><img class="small_image" src="images/zh/banner/EHU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=ENDO"><img class="small_image" src="images/zh/banner/ENDO.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=ESC"><img class="small_image" src="images/zh/banner/ESC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=HSC"><img class="small_image" src="images/zh/banner/HSC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=MCC"><img class="small_image" src="images/zh/banner/MCC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=MCU"><img class="small_image" src="images/zh/banner/MCU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NKS"><img class="small_image" src="images/zh/banner/NKS.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NPH"><img class="small_image" src="images/zh/banner/NPH.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=NXR"><img class="small_image" src="images/zh/banner/NXR.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=OGC"><img class="small_image" src="images/zh/banner/OGC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=OTT"><img class="small_image" src="images/zh/banner/OTT.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=REHAB"><img class="small_image" src="images/zh/banner/REHAB.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SCU"><img class="small_image" src="images/zh/banner/SCU.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SHC"><img class="small_image" src="images/zh/banner/SHC.jpg" border="0"/> </a><a href="./medical_service.asp?lang_code=zh&dept_code=SLC"><img class="small_image" src="images/zh/banner/SLC.jpg" border="0"/> </a>
+				</div>
+			</div>
+			<div style="width:17px; float:left" ><img src="images/zh/arrow_2.png" style="cursor:pointer" width="17" height="67"/></div>
+			<input type="hidden"  id="temptxt" name="temptxt"/>
+			</td>
+          </tr>
+        </table>
+          </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" style="padding-top:10px; padding-bottom:10px"><table width="900" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="487" rowspan="2" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3"><a href="./medical_service_cat.asp?lang_code=zh#1"><img src="images/zh/mainpage_tb_01.jpg" width="487" height="37" border="0"/></a></td>
+            </tr>
+          <tr>
+            <td width="8" background="images/zh/mainpage_tb_02.jpg">&nbsp;</td>
+            <td width="471" valign="top" style="padding-top:10px">
+			<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="471" align="center" valign="top">
+				<!--
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+					<div style="width:231px; float:left;"> 12dsf fds fadsf adsasf </div>
+				-->
+					<div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=CMC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>中醫保健中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=EHL  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>臨床病理檢驗部(化驗室)</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=CBC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>乳腺診斷治療中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=DENT '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>牙科部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=DIET '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>營養部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=ENDO '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>內視鏡檢查中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=EHU  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>血液透析室</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=MCU  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>體檢及診斷中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=HSC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>聽覺及言語治療中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=HISL '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>組織病理化驗室</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=SLC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>體外碎石暨泌尿外科中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=OGC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>婦產科部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=MCC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>腫瘤科中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=OTT  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>手術室</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=NPH  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>藥劑部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=REHAB'" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>復康中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=NKS  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>掃描部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=SHC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>邵逸夫心臟及診斷中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=ESC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>皮膚激光及整形外科中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=SCU  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>特別治療部</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; background-color:#E0E0E0;"><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=EEC  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>聖德肋撒醫院眼科中心</div></div><div style="padding-top:5px; width: 235px; height: 30px; float:left; "><div class="arial_gray_11" style="width 200px;float:left;cursor:pointer" onclick="window.location='./medical_service.asp?lang_code=zh&dept_code=NXR  '" align="left"><img src="images/zh/point2.gif" width="2" height="2" style="float:left; padding:7px;vertical-align:middle"/>X光部</div></div>
+				</td>
+              </tr>
+            </table></td>
+            <td width="8" background="images/zh/mainpage_tb_04.jpg">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="images/zh/mainpage_tb_05.jpg" width="487" height="15" /></td>
+            </tr>
+        </table></td>
+        <td width="401" background="images/zh/mainpage_bg1.jpg" style="padding:0px 0px 10px 10px; background-position:bottom; background-repeat:repeat-x"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="56" colspan="2"><a href="./medical_service_cat.asp?lang_code=zh#2"><img src="images/zh/main_t1.jpg" width="462" height="40" border="0"/></a></td>
+          </tr>
+          <tr>
+		  	
+		  <!-- for english -->
+            <td width="323" align="left" valign="top"><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="21" height="22" align="left" valign="top"><img src="images/en/arrow_3.png" width="12" height="12" /></td>
+                <td width="302" align="left" valign="top" class="arial_gray_12"><strong>病房分類</strong></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="left" valign="top"><span class="arial_gray_11">設有套房、私家房、雙人房、普通病房及全面資助護養病房。</span></td>
+                </tr>
+            </table>
+              <br />
+              <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="21" height="22" align="left" valign="top"><img src="images/en/arrow_3.png" width="12" height="12" /></td>
+                  <td width="302" align="left" valign="top" class="arial_gray_12"><strong>預訂房間</strong></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="left" valign="top"><span class="arial_gray_11">須由病人之客席主診醫生或本院門診駐院醫生代病人申請。</span></td>
+                </tr>
+              </table></td>
+            <!-- end for english -->
+			 	  
+            <td width="139" valign="top"><img src="images/zh/main_pic1.png" width="129" height="99" /></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td width="401" background="images/zh/mainpage_bg1.jpg" style="padding:0px 0px 10px 10px; background-position:bottom; background-repeat:repeat-x" align="left"><table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="56" colspan="2"><a href="./medical_service_cat.asp?lang_code=zh#3"><img src="images/zh/main_t2.jpg" border="0" /></a></td>
+            </tr>
+        </table>
+		
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="21" height="22" align="left" valign="top"><img src="images/en/arrow_3.png" width="12" height="12" /></td>
+              <td width="441" align="left" valign="top" class="arial_gray_12"><strong>專科門診: </strong></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left" valign="top"><span class="arial_gray_11">普通內外科、耳鼻喉科、骨科、心臟科、神經內科、腦外科、腸胃及肝膽內科、婦產科、整形外科、皮膚激光及皮膚科、泌尿科、胸肺內科、家庭醫學科、精神科、兒童內外科、腎科、風濕病科、血科、內分泌科、老人科、疼痛控制科、腫瘤科、牙科、眼科、綜合乳腺護理及傳統中醫</span></td>
+            </tr>
+          </table>
+          <br />
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="21" height="22" align="left" valign="top"><img src="images/en/arrow_3.png" width="12" height="12" /></td>
+              <td width="302" align="left" valign="top" class="arial_gray_12"><strong>普通科門診</strong></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left" valign="top"><span class="arial_gray_11">24小時門診服務 (包括星期日及公眾假期)</span></td>
+            </tr>
+          </table>
+		  
+		  </td>
+        </tr>
+    </table></td>
+  </tr>
+
+  <tr valign="bottom">
+    <td align="center" bgcolor="#E7E7E7"><br>
+	<script>
+		function popUp_disclaimer(URL) 
+		{
+			day = new Date();
+			id = day.getTime();
+			
+			var popupweight = 800;
+			var popupheight = 460;
+			var popupleft = (screen.width/2)-(popupweight/2);
+			var popuptop = (screen.height/2)-(popupheight/2);
+			var popupscript = 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=' + popupweight + ',height=' + popupheight + ',left = ' + popupleft + ',top = ' + popuptop;
+			
+			eval("page" + id + " = window.open(URL, '" + id + "', '" + popupscript + "');");
+		}
+		
+		function popUp_privacypolicy(URL) 
+		{
+			day = new Date();
+			id = day.getTime();
+			
+			var popupweight = 1000;
+			var popupheight = 600;
+			var popupleft = (screen.width/2)-(popupweight/2);
+			var popuptop = (screen.height/2)-(popupheight/2);
+			var popupscript = 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=' + popupweight + ',height=' + popupheight + ',left = ' + popupleft + ',top = ' + popuptop;
+			
+			eval("page" + id + " = window.open(URL, '" + id + "', '" + popupscript + "');");
+		}
+	</script>
+	
+    <img src="images/zh/footer.jpg" width="961" height="95" border="0" usemap="#Map_dis" />
+	<map name="Map_dis" id="Map_dis">
+		<area shape="rect" coords="794,14,861,29" href="javascript:popUp_privacypolicy('./privacypolicy.asp?lang_code=zh');" />
+		<area shape="rect" coords="874,14,929,29" href="javascript:popUp_disclaimer('./disclaimer.asp?lang_code=zh');" />
+	</map>
+
+	</td>
+  </tr>
+
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>

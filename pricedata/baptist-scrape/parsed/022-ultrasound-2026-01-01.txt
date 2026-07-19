@@ -1,0 +1,87 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Head and Neck  頭頸部
+Thyroid 甲狀腺
+$1,250
+$1,875
+$2,500
+Neck (include Thyroid)  頸部 (包括甲狀腺)
+$1,860
+$2,790
+$3,720
+Salivary Gland (唾液腺)
+$1,190
+$1,785
+$2,380
+Body  軀幹
+Breast 乳房
+$1,580
+$2,370
+$3,160
+Upper Abdomen 上腹
+$2,840
+$4,260
+$5,680
+Pelvis 下腹
+$1,340
+$2,010
+$2,680
+Liver / Gallbladder 肝臟/膽囊
+$1,560
+$2,340
+$3,120
+Kidneys 腎臟
+$1,190
+$1,785
+$2,380
+Renal System (Kidney and Bladder) 泌尿系統 (腎臟及膀胱)
+$2,050
+$3,075
+$4,100
+Prostate (Trans-abdominal) 前列腺超聲波掃描(經腹部)
+$1,280
+$1,920
+$2,560
+Doppler Vessel Analysis 多普勒血管動態檢查
+Carotid Arteries 頸動脈血管超聲波掃描
+$4,010
+$6,015
+$8,020
+$3,950
+$5,925
+$7,900
+Remarks 備註:
+1.
+2.
+3.
+4.
+如果要求放射科醫生在非正常時段內提供放射科服務，額外收費為該項檢查費用之百份之三十或HK$2000
+，以較高者為準。
+The above table only shows the common items of Ultrasound for reference. Please contact the Radiology
+Department for further details.
+此收費表只列出常見之超聲波掃描項目以作參考。如有需要，請向放射診斷部查詢詳情。
+Enquiries 查詢: 2339 8980
+50% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+During off-hours, Radiologist will be called back for radiological services, and an additional charge of 30% of the
+examination fee or HK$2000, whichever is higher, will be levied.
+Ultrasound 超聲波掃描
+Rate for services provided in normal hours
+正常時段收費
+Upper or Lower Limb Arteries or Veins (One Side)
+上或下肢動脈或靜脈血管超聲波掃描 (一邊)
+Normal Hours 正常時段
+Off-Hours 非正常時段
+Mon – Sat 星期一至六
+08:30 - 17:00
+17:00 - 08:30
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+Revision Date/更新日期：01/01/2026

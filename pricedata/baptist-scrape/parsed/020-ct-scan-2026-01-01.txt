@@ -1,0 +1,127 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+HEAD  頭部
+Plain 掃描
+$2,380
+$2,975
+$3,570
+Plain + Contrast 掃描 + 顯影
+$4,450
+$5,563
+$6,675
+Plain 掃描
+$3,330
+$4,163
+$4,995
+Plain + Contrast 掃描 + 顯影
+$6,210
+$7,763
+$9,315
+Plain 掃描
+$3,510
+$4,388
+$5,265
+Plain + Contrast 掃描 + 顯影
+$6,500
+$8,125
+$9,750
+CARDIAC 心臟
+Plain + Contrast 掃描 + 顯影
+$8,220
+$10,275
+$12,330
+VASCULAR  血管
+Plain + Contrast 掃描 + 顯影
+$8,340
+$10,425
+$12,510
+Plain + Contrast 掃描 + 顯影
+$8,420
+$10,525
+$12,630
+BODY  軀幹
+Plain 掃描
+$4,110
+$5,138
+$6,165
+Plain + Contrast 掃描 + 顯影
+$7,320
+$9,150
+$10,980
+Plain 掃描
+$2,470
+$3,088
+$3,705
+Plain 掃描
+$3,530
+$4,413
+$5,295
+Plain + Contrast 掃描 + 顯影
+$6,820
+$8,525
+$10,230
+Plain 掃描
+$3,530
+$4,413
+$5,295
+Plain + Contrast 掃描 + 顯影
+$6,370
+$7,963
+$9,555
+Plain 掃描
+$4,100
+$5,125
+$6,150
+Plain + Contrast 掃描 + 顯影
+$8,060
+$10,075
+$12,090
+Remarks 備註:
+1.
+2.
+3.
+4.
+The above table only shows the common items of CT Scanning for reference. Please contact the Radiology Department for
+further details.
+此收費表只列出常見之電腦斷層掃描項目以作參考。如有需要，請向放射診斷部查詢詳情。
+Enquiries 查詢: 2339 8982
+50% of normal rate will be applied as surcharge for services provided in off-hours.
+非正常時段提供之服務，收取附加費為正常收費之百份之五十。
+During off-hours, Radiologist will be called back for radiological services, and an additional charge of 30% of the
+examination fee or HK$2000, whichever is higher, will be levied.
+如果要求放射科醫生在非正常時段內提供放射科服務，額外收費為該項檢查費用之百份之三十或HK$2000，以較高
+者為準。
+Coronary Angiogram and Calcium Scoring
+冠狀動脈造影及鈣化評分
+Carotid / Vertebral Angiogram 頸 / 脊椎動脈造影
+Abdominal Angiogram 腹部血管造影
+Thorax 胸
+ 
+Low Dose Cancer Screening 低輻射量胸肺腫瘤篩檢
+Upper Abdomen 上腹
+Lower Abdomen / Pelvis 下腹  / 盆腔
+Urogram 尿路造影
+Neck 頸
+CT Scanning 電腦斷層掃描
+Rate for services provided in normal hours
+正常時段收費
+Brain 腦部
+Paranasal Sinuses 副鼻竇
+Normal Hours 正常時段
+Off-Hours 非正常時段
+Mon – Fri 星期一至五
+08:30 - 17:00
+17:00 - 08:30
+Sat 星期六
+08:30 - 13:00
+13:00 - 08:30
+Sun & Public Holidays 星期日及公眾假期
+--
+All Day 全日
+      Revision Date/更新日期：01/01/2026

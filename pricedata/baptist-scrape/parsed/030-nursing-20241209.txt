@@ -1,0 +1,56 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Admission Nursing Assessment 入院護理評估
+$340
+$510
+$680
+Blood And Blood Component Transfusion 輸血護理
+$480
+$720
+$960
+Dressing (Large) 清洗傷口(大)
+$640
+$960
+$1,280
+Dressing (Medium) 清洗傷口(中)
+$500
+$750
+$1,000
+Dressing (Small) 清洗傷口(小)
+$250
+$375
+$500
+Nasogastric Tube Insertion 插入鼻胃管
+$470
+$705
+$940
+Foley Catheterization Package 插入導尿管
+$600
+$900
+$1,200
+Gastric Tube feeding 胃管飼食
+$520
+$780
+$1,040
+Basic Stoma Care 基本造口護理
+$350
+$525
+$700
+Handling Fee for Injectable Medication Refund per
+Transaction per Item 每次每項針劑藥物退款手續費
+$90
+$90
+$90
+Nursing Procedures 護理程序
+The above table only shows the common items of Nursing for reference. For outpatient cases, surcharge will be levied
+on services provided outside normal operating hours. Please contact the department for further details.
+此收費表只列出常見之護理項目以作參考。非正常營運時間提供之門診服務將會收取附加費。如有需要請向
+本部門查詢詳情。
+Enquiries 查詢: 2339 8808
+Revision Date/更新日期：09/12/2024

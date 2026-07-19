@@ -1,0 +1,395 @@
+Platinum Male
+男性尊貴
+Platinum
+Female
+女性尊貴
+Supreme
+優越計劃
+Crystal
+晶緻計劃
+Basic
+基本計劃
+Basic Women A
+基本婦女 A
+ Basic Women B
+基本婦女 B
+Pre- Marriage
+Female
+婚前檢查-女
+Pre- Marriage
+Male
+婚前檢查-男
+Basic Men
+基本男性
+Cardiovascular
+心臟檢查
+Hep.B Surveillance
+乙肝檢查
+Osteoporosis
+Sreening
+骨質疏鬆
+全身體格檢查 General Physical Examination
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+體重指標 Body Mass Index
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+血壓量度, 體重及身高  Blood Pressure, Body Weight and Height
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+肺部 Chest
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+乳腺X光 或 超聲波檢查 Mammogram or US Breast (女 Female)
+✓
+✓
+✓
+腎、輸尿管及膀胱檢查 Kidney, Ureter & Bladder
+✓
+✓
+✓
+✓
+肝臟, 膽囊 Liver, Gall Bladder
+✓
+✓
+✓
+✓
+前列腺 Prostate (男 Male)
+✓
+✓
+盤腔 Pelvis (女 Female)
+✓
+✓
+✓
+✓
+全血全數 Complete Blood Count
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+血型/Rh(D)因子 Blood Grouping /Rh(D) Factor
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+腎功能 Renal Function Test (Urea, Creatinine)
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+肝功能 Liver Function Test (Alk. Phosphate, AST, ALT, Total Bilirubin, GGT)
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+蛋白質 Protein ( Total Protein, Albumin, Globulin, A/G ratio)
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+電解質 : 鉀, 鈉 Electrolyte: Potassium, Sodium
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+糖尿-空腹血糖 Fasting Blood Glucose
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+糖化血紅素HbA1C
+✓
+✓
+✓
+✓
+全血脂肪 Lipid Profile (Total Cholesterol, Triglyceride, HDL, LDL)
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+痛風-尿酸Uric Acid
+✓
+✓
+✓
+✓
+✓
+鈣測試 Calcium
+✓
+✓
+✓
+✓
+✓
+燐測試 Inorganic Phosphorus (PO4)
+✓
+✓
+✓
+✓
+✓
+甲狀腺功能 - 促甲狀腺激素 Thyroid Function -TSH
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+總甲型肝炎抗體 HAV Ab-IgG
+✓
+乙型肝炎表面抗原及抗體 Hepatitis B Screening-HBsAg & HBsAb
+✓
+✓
+✓
+✓
+✓
+✓
+乙型肝炎e抗原及e抗體 Hepatitis B Screening-HBeAg & HBeAb
+✓
+乙肝病毒載量測試 Hepatitis B Virus DNA 
+✓
+維他命D Vitamin D
+✓
+梅毒血清 Syphilis (RPR Card Test)
+✓
+✓
+✓
+✓
+✓
+✓
+愛滋病毒抗體篩檢 HIV Ag/Ab Combo
+✓
+✓
+✓
+✓
+✓
+✓
+德國麻疹抗體 Rubella Ab-IgG
+✓
+幽門螺旋菌吹氣測試 Urea Breath Test
+✓
+✓
+✓
+精液分析 Semen Analysis
+✓
+小便常規檢查 Urine - Routine & Microscopy
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+妊娠試驗(小便) Urine-Pregnancy Test
+大便隱血檢查 Stool - Occult Blood
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+大便常規檢查 Stool- Routine
+✓
+✓
+✓
+✓
+甲種胎兒蛋白 - AFP (肝癌指標)
+✓
+✓
+✓
+EB病毒DNA測試 EBV DNA RT PCR (鼻咽癌指標)
+✓
+✓
+癌胚抗原 CEA (胃癌, 腸癌指標)
+✓
+✓
+癌抗原125 - CA125 (女 Female)(卵巢癌指標)
+✓
+✓
+總前列腺特殊抗原- Total PSA (男 male) (前列腺癌指標)
+✓
+✓
+心電圖(ECG)
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+尿流量速度測試 Uroflowmetry (男 Male)
+✓
+✓
+子宮頸細胞塗片檢驗及高危人類乳頭瘤狀病毒
+ThinPrep Pap Test & High Risk HPV Test (女 Female)
+✓
+✓
+✓
+心臟超聲波檢查 Echocardiogram
+✓
+運動心電圖 Treadmill (Stress Test)
+✓
+✓
+✓
+✓
+骨質密度測量 Bone Mineral Densitometry
+✓
+✓
+✓
+醫生跟進及報告分析 Medical Consultation and Report Analysis
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+✓
+原價 Original Price : 
+$17,875
+$20,955
+$13,720
+$8,160
+$5,545
+$11,210
+$7,145
+$4,565
+$3,470
+$7,225
+$12,050
+$5,690
+$5,205
+$2,980
+$2,880
+凡惠顧本中心之顧客可享有其他優惠詳情如下 Clients of our medical check-up centre are entitled to other special offer detail as below : 
+生效日期 Effective Date : 01-07-2026
+1. 牙醫檢查及口腔牙齒清潔 $500 Dental Consultation / Scaling and Prophylaxis
+2. 聽覺保健諮詢及純音聽力檢查 $540 Hearing Conservation Consultation and Pure Tone Audiometry
+3. 營養師專業指導 $420 Dietitian Consultation
+如有查詢, 歡迎致電 Enquiry : 22003118, What apps: 55919031 (只限訊息/Message only)
+體檢及診斷中心Health Screening & Diagnostic Centre
+男女健康檢查計劃
+女性檢查計劃
+男性檢查計劃
+其他檢查計劃
+General Health Check-up
+Women Health Check-up
+Men Health Check-up
+Others
+[ 檢查內容 EXAMINATION DETAILS  ]
+健康評估 Health Assessment
+X光檢查 X-Ray
+超聲波檢查 Ultrasound
+化驗室檢驗
+Laboratory Investigation
+其他 Others
+(不能與其他優惠同時使用
+Cannot be used in conjunction with any
+$8,280
+$9,680
+$5,980
+$3,080
+$2,080
+$5,180
+套餐優惠價 Package Offer : 
+$3,880
+$1,980
+$1,580
+$3,180
+$5,780

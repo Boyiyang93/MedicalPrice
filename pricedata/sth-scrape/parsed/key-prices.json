@@ -1,0 +1,79 @@
+{
+  "hospital_id": "sth",
+  "name": "聖德肋撒醫院",
+  "scraped": "2026-07-19",
+  "sources": {
+    "charges_page": "https://www.sth.org.hk/charge.asp?lang_code=zh",
+    "fee_schedule": "https://www.sth.org.hk/download/FeeSchedule.pdf",
+    "room_charges": "https://www.sth.org.hk/download/RoomCharges.pdf",
+    "historical": "https://www.sth.org.hk/download/zh/ccssp.pdf",
+    "ct_mri": "https://www.sthscan.com/hk/charges/"
+  },
+  "effective": {
+    "fee_schedule": "2026-07-01",
+    "room_charges": "2024-07-01",
+    "ct_mri_list": "2024-07-01",
+    "historical_year": 2025
+  },
+  "outpatient_opd_resident": {
+    "note": "門診部駐院醫生診金（FeeSchedule 2026-07-01）",
+    "weekday_08_20": 280,
+    "weekday_night_20_08": 430,
+    "sunday_holiday_08_20": 350,
+    "sunday_holiday_night_20_08": 470
+  },
+  "ward_daily_ranges": {
+    "standard": {
+      "min": 610,
+      "max": 800,
+      "examples": "東座3-4人房 $730–800；大樓8-11人房 $630–680；日間病床 $500"
+    },
+    "semi_private": {
+      "min": 1000,
+      "max": 1750,
+      "examples": "標準雙人 $1,000–1,180；半私家單人東座 $1,750"
+    },
+    "private": {
+      "min": 2100,
+      "max": 4100,
+      "examples": "大樓 $2,100–4,100"
+    }
+  },
+  "endoscopy_basic_hospital_fee": {
+    "note": "內視鏡中心基本醫院費（不含醫生/病理/物料），FeeSchedule 2026-07-01",
+    "colonoscopy": {
+      "standard": 3400,
+      "semi": 4760,
+      "private": 5270,
+      "outpatient": 2380
+    },
+    "gastroscopy": {
+      "standard": 2550,
+      "semi": 3570,
+      "private": 3950,
+      "outpatient": 1785
+    }
+  },
+  "imaging_basic_standard_or_opd": {
+    "ct_brain_plain": 2100,
+    "ct_brain_contrast": 3900,
+    "mri_brain_plain": 6260,
+    "mri_brain_contrast": 10100
+  },
+  "historical_highlights_p50_total": {
+    "lap_cholecystectomy": 92680,
+    "haemorrhoidectomy": 42417,
+    "colonoscopy_day": 18973,
+    "gastroscopy_day": 19870,
+    "gastro_colon_day": 36194,
+    "knee_arthroscopy": 77211,
+    "tonsillectomy": 62477,
+    "vaginal_delivery": 78809,
+    "caesarean": 82086
+  },
+  "db_notes": [
+    "db.js outpatient 现为 230/340/340，官网门診部已更新为 280/430/350（2026-07-01）",
+    "db.js ward 610/1000/2100 与 RoomCharges 区间下限一致",
+    "db.js generalSurgery 20250 为旧套餐估算；历史统计腹腔镜胆囊 p50 总收费 92,680"
+  ]
+}

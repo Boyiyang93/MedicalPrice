@@ -1,0 +1,57 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診/ 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Physiotherapy Assessment 物理治療檢查
+$370
+$555
+$740
+Hot and Cold Therapy 熱及冰敷
+$380
+$570
+$760
+Bedside Traction 床邊牽引治療
+$390
+$585
+$780
+Chest Physiotherapy 胸肺物理治療
+$420 - $970
+$630 - $1,455
+$840 - $1,940
+Continuous Passive Movement
+持續被動式運動
+$1,250
+$1,875
+$2,500
+Electrotherapy Modality 電療
+$400
+$600
+$800
+Exercise 運動治療
+$400 - $1,320
+$600 - $1,980
+$800 - $2,640
+Neuro-rehabilitation 腦神經科復康治療
+$1,730
+$2,595
+$3,460
+Intermittent Traction 牽引治療
+$400
+$600
+$800
+Shockwave 體外衝擊波
+$980
+$1,470
+$1,960
+Physiotherapy 物理治療
+The above table only shows the common items of Physiotherapy for reference. Surcharge will be
+levied on services provided outside normal operating hours. Please contact the department for further
+details.
+此收費表只列出常見之物理治療項目以作參考。非正常營運時間提供之服務將會收取附加費。
+如有需要請向本部門查詢詳情。
+Enquiries 查詢: 2339 8481
+       Revision Date/更新日期：01/01/2026

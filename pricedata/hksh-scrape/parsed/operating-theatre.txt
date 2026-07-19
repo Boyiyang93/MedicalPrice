@@ -1,0 +1,21 @@
+Operating Theatre Room Charge — Hong Kong Sanatorium & Hospital
+Effective from 1 August 2024
+Source: images/ot-charges.jpg
+
+Level 1 (up to 15 mins):
+  Outpatient/General Ward: HK$1,950 (extra 15m HK$1,180)
+  Semi-Private: HK$2,540 (extra 15m HK$1,530)
+  Private/Suite: HK$3,120 (extra 15m HK$1,890)
+
+Level 4 (up to 60 mins):
+  Outpatient/General Ward: HK$8,510 (extra 15m HK$1,380)
+  Semi-Private: HK$11,060 (extra 15m HK$1,790)
+  Private/Suite: HK$13,620 (extra 15m HK$2,210)
+
+Level 7 (up to 240 mins):
+  Outpatient/General Ward: HK$51,240
+  Semi-Private: HK$66,610
+  Private/Suite: HK$81,980
+
+Recovery Care (after 1st hour): General HK$230 / Semi HK$340 / Private HK$460 per 30 mins.
+Charges exclude equipment, instruments, medications, consumables.

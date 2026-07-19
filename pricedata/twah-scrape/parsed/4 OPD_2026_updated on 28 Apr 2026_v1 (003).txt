@@ -1,0 +1,138 @@
+Out-patient Charges 門診收費
+Consultation Per Visit
+每次診症收費
+HK$
+General 一般門診
+(except Saturday &   
+Hospital  Holiday 
+星期六及醫院假期除外）
+Mon to Thu 星期一至四
+09:00 - 20:30
+$
+270 
+Fri 星期五
+09:00 - 17:00
+Sun 星期日
+09:00 - 16:30
+Urgent Care Center 
+急診中心
+Mon to Fri 星期一至五
+08:00 - 19:59
+$
+480
+20:00 - 23:59
+$
+800
+00:00 - 07:59
+$
+950
+Saturday, Sunday and Public 
+Holiday 星期六、日及公眾假期
+08:00 - 23:59
+$
+800 
+00:00 - 07:59
+$
+950
+Specialties & Services
+專科及服務
+(By appointment 預約掛號) 
+Breast Health Clinic 乳健科
+$
+600
+Cardiology 心臟科
+$
+800 – 1,200 
+Cardio-thoracic Surgery 心肺外科
+$
+550 
+Dermatology 皮膚科
+$
+650 
+E.N.T. 耳鼻喉科
+$
+650 
+Endocrinology, Diabetes & Metabolism 內分泌及糖尿科
+$
+850 – 1,200 
+General Surgery 普通外科
+$
+600 
+Geriatric 老人科
+$
+750 – 1,000 
+Gynaecological Oncology 婦科腫瘤科
+$
+800
+Haematology & Haematological Oncology 血液及血液腫瘤科
+$
+1,250 
+Hepatology 肝臟科
+$
+650 – 800
+Hepatobiliary Pancreatic 肝膽胰科
+$
+1,000
+Internal Medicine 內科
+$
+600 – 800 
+Mental Health  心理健康科
+$
+800 – 1,500
+Minimally Invasive Spine Surgery Consultation 脊椎微創手術門診
+$
+800 
+Nephrology 腎科
+$
+1,000 – 1,500 
+Neurology 腦神經科
+$
+1,000 – 1,500
+Neurosurgery 腦外科
+$
+1,000 – 1,500 
+Obstetric & Gynecology 婦產科
+$
+600 
+Oncology 腫瘤科
+$
+1,200 – 2,000 
+Ophthalmology 眼科
+$
+800 
+Orthopaedics & Traumatology 骨科
+$
+500 – 800 
+Orthopaedics & Traumatology / Robotic Surgery (Joint Replacement)
+骨科/機械臂外科手術系統(關節置換) 
+$
+800 – 1,000
+Paediatric 兒科
+$
+750 
+Paediatric Respiratory Medicine 兒童呼吸科
+$
+800 – 1,200
+Paediatric Surgery 小兒外科
+$
+700
+Plastic Surgery 整形外科
+$
+900 
+Rehabilitation 復康科
+$
+750 – 1,000 
+Respiratory, Sleep, Allergy 呼吸內科/睡眠健康/敏感症
+$
+700 – 1,000
+Rheumatology 風濕科
+$
+800 – 1,300
+Urology 泌尿科
+$
+800 
+• Above charges excluding doctor procedures, drugs, supplies, investigations, etc.
+• 以上費用不包括醫生治療費、藥費、物料、化驗等費用。
+• You may contact our Registration Office for the list of hospital holidays and a list of charges on different services, or you may call 2275 6888 for inquiry.
+•本院登記處及病房備有詳細價目表及醫院假期列表，以供閣下參考。如有疑問，請與本院登記處聯絡，電話：2275 6888
+Effective Date 生效日期：18/5/2026

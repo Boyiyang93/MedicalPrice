@@ -1,0 +1,795 @@
+[
+  {
+    "procedure": "乳房腫塊切除術",
+    "discharges": "101 - 200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 55500,
+        "hospital": 21246,
+        "total": 76746
+      },
+      "p90": {
+        "doctor": 35000,
+        "hospital": 25141,
+        "total": 60141
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 32589,
+        "hospital": 18344,
+        "total": 50933
+      }
+    }
+  },
+  {
+    "procedure": "支氣管內窺鏡檢查 + / - 取活組織",
+    "discharges": "30 - 100",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 22500,
+        "hospital": 28127,
+        "total": 50627
+      },
+      "p90": {
+        "doctor": 22900,
+        "hospital": 23290,
+        "total": 46190
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 14000,
+        "hospital": 18906,
+        "total": 32906
+      }
+    }
+  },
+  {
+    "procedure": "剖腹取嬰術",
+    "discharges": ">200",
+    "avg_los": "4.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 60850,
+        "hospital": 33112,
+        "total": 93962
+      },
+      "p90": {
+        "doctor": 71000,
+        "hospital": 36689,
+        "total": 107689
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "腕管鬆解術",
+    "discharges": "-",
+    "avg_los": "-",
+    "inpatient": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p90": {
+        "doctor": 27800,
+        "hospital": 18401,
+        "total": 46201
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 27800,
+        "hospital": 18401,
+        "total": 46201
+      }
+    }
+  },
+  {
+    "procedure": "腹腔鏡膽囊切除術",
+    "discharges": ">200",
+    "avg_los": "2.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 45400,
+        "hospital": 45639,
+        "total": 91039
+      },
+      "p90": {
+        "doctor": 56000,
+        "hospital": 70136,
+        "total": 126136
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "膽囊切除術",
+    "discharges": "-",
+    "avg_los": "-",
+    "inpatient": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p90": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "包皮環切術",
+    "discharges": "30 - 100",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 19500,
+        "hospital": 13518,
+        "total": 33018
+      },
+      "p90": {
+        "doctor": 21000,
+        "hospital": 11517,
+        "total": 32517
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 21000,
+        "hospital": 7767,
+        "total": 28767
+      }
+    }
+  },
+  {
+    "procedure": "腹腔鏡結腸切除術",
+    "discharges": "<30",
+    "avg_los": "7.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 101500,
+        "hospital": 122591,
+        "total": 224091
+      },
+      "p90": {
+        "doctor": 172000,
+        "hospital": 115968,
+        "total": 287968
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "結腸切除術",
+    "discharges": "<30",
+    "avg_los": "8.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 126400,
+        "hospital": 145097,
+        "total": 271497
+      },
+      "p90": {
+        "doctor": 130500,
+        "hospital": 152596,
+        "total": 283096
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "大腸內窺鏡 + / - 瘜肉切除術",
+    "discharges": ">200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 17300,
+        "hospital": 9873,
+        "total": 27173
+      },
+      "p90": {
+        "doctor": 14300,
+        "hospital": 13298,
+        "total": 27598
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 9400,
+        "hospital": 12136,
+        "total": 21536
+      }
+    }
+  },
+  {
+    "procedure": "陰道窺鏡",
+    "discharges": "<30",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 19000,
+        "hospital": 13352,
+        "total": 32352
+      },
+      "p90": {
+        "doctor": 17200,
+        "hospital": 17155,
+        "total": 34355
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 14300,
+        "hospital": 11676,
+        "total": 25976
+      }
+    }
+  },
+  {
+    "procedure": "膀胱窺鏡檢查 + / - 取活組織",
+    "discharges": "<30",
+    "avg_los": "2.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 24400,
+        "hospital": 38169,
+        "total": 62569
+      },
+      "p90": {
+        "doctor": 22000,
+        "hospital": 13622,
+        "total": 35622
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 15300,
+        "hospital": 6900,
+        "total": 22200
+      }
+    }
+  },
+  {
+    "procedure": "擴張子宮頸及刮除子宮內膜術 (刮官)",
+    "discharges": "<30",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 22600,
+        "hospital": 8983,
+        "total": 31583
+      },
+      "p90": {
+        "doctor": 18200,
+        "hospital": 13856,
+        "total": 32056
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 17600,
+        "hospital": 10433,
+        "total": 28033
+      }
+    }
+  },
+  {
+    "procedure": "直接喉鏡檢查術 + / - 取聲帶瘜肉活組織",
+    "discharges": "-",
+    "avg_los": "-",
+    "inpatient": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p90": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    }
+  },
+  {
+    "procedure": "胃窺鏡與大腸內窺鏡 + / - 瘜肉切除術",
+    "discharges": ">200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 23800,
+        "hospital": 24243,
+        "total": 48043
+      },
+      "p90": {
+        "doctor": 21400,
+        "hospital": 26741,
+        "total": 48141
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 21000,
+        "hospital": 15782,
+        "total": 36782
+      }
+    }
+  },
+  {
+    "procedure": "胃窺鏡 + / - 瘜肉切除術",
+    "discharges": ">200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 11400,
+        "hospital": 26209,
+        "total": 37609
+      },
+      "p90": {
+        "doctor": 10150,
+        "hospital": 18265,
+        "total": 28415
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 8400,
+        "hospital": 10115,
+        "total": 18515
+      }
+    }
+  },
+  {
+    "procedure": "痔瘡切除術",
+    "discharges": "101 - 200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 23200,
+        "hospital": 26735,
+        "total": 49935
+      },
+      "p90": {
+        "doctor": 15895,
+        "hospital": 25811,
+        "total": 41706
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 15405,
+        "hospital": 24118,
+        "total": 39523
+      }
+    }
+  },
+  {
+    "procedure": "腹腔鏡疝氣修補術",
+    "discharges": "101 - 200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 50600,
+        "hospital": 30723,
+        "total": 81323
+      },
+      "p90": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    }
+  },
+  {
+    "procedure": "疝修補術",
+    "discharges": "101 - 200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 35400,
+        "hospital": 18767,
+        "total": 54167
+      },
+      "p90": {
+        "doctor": 27300,
+        "hospital": 20546,
+        "total": 47846
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 27300,
+        "hospital": 20546,
+        "total": 47846
+      }
+    }
+  },
+  {
+    "procedure": "疝氣修補術",
+    "discharges": "-",
+    "avg_los": "-",
+    "inpatient": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p90": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    }
+  },
+  {
+    "procedure": "腹腔鏡輔助子宮切除術",
+    "discharges": "101 - 200",
+    "avg_los": "3.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 82800,
+        "hospital": 100834,
+        "total": 183634
+      },
+      "p90": {
+        "doctor": 147500,
+        "hospital": 84633,
+        "total": 232133
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "子宮切除術",
+    "discharges": "101 - 200",
+    "avg_los": "4.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 102600,
+        "hospital": 48411,
+        "total": 151011
+      },
+      "p90": {
+        "doctor": 132000,
+        "hospital": 77974,
+        "total": 209974
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "膝關節腔內窺鏡術",
+    "discharges": ">200",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 56000,
+        "hospital": 25011,
+        "total": 81011
+      },
+      "p90": {
+        "doctor": 45500,
+        "hospital": 39780,
+        "total": 85280
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 36900,
+        "hospital": 26131,
+        "total": 63031
+      }
+    }
+  },
+  {
+    "procedure": "椎板切除術",
+    "discharges": "30 - 100",
+    "avg_los": "3.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 119000,
+        "hospital": 80536,
+        "total": 199536
+      },
+      "p90": {
+        "doctor": 90450,
+        "hospital": 188301,
+        "total": 278751
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "激光矯視",
+    "discharges": "-",
+    "avg_los": "-",
+    "inpatient": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p90": {
+        "doctor": 10000,
+        "hospital": 11005,
+        "total": 21005
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 10000,
+        "hospital": 11000,
+        "total": 21000
+      }
+    }
+  },
+  {
+    "procedure": "顯微鏡下(微型)喉鏡檢查術",
+    "discharges": "30 - 100",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 62677,
+        "hospital": 57056,
+        "total": 119733
+      },
+      "p90": {
+        "doctor": 83000,
+        "hospital": 81306,
+        "total": 164306
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 18605,
+        "hospital": 17601,
+        "total": 36206
+      }
+    }
+  },
+  {
+    "procedure": "上肢不同部位之開放性復位及內固定術",
+    "discharges": "-",
+    "avg_los": "日間手術",
+    "inpatient": {
+      "p90": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      },
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": null,
+        "hospital": null,
+        "total": null
+      }
+    }
+  },
+  {
+    "procedure": "下肢不同部位之開放性復位及內固定術",
+    "discharges": "<30",
+    "avg_los": "日間手術",
+    "inpatient": {
+      "p90": {
+        "doctor": 73800,
+        "hospital": 45492,
+        "total": 119292
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 45800,
+        "hospital": 50739,
+        "total": 96539
+      }
+    }
+  },
+  {
+    "procedure": "腹腔鏡卵巢囊腫切除術",
+    "discharges": "30 - 100",
+    "avg_los": "2.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 71500,
+        "hospital": 46524,
+        "total": 118024
+      },
+      "p90": {
+        "doctor": 63300,
+        "hospital": 77517,
+        "total": 140817
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "卵巢囊腫切除術",
+    "discharges": "<30",
+    "avg_los": "4.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 98400,
+        "hospital": 52698,
+        "total": 151098
+      },
+      "p90": {
+        "doctor": 99700,
+        "hospital": 66678,
+        "total": 166378
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "晶狀體乳化法 + 人工晶體植入手術",
+    "discharges": "30 - 100",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 72000,
+        "hospital": 35493,
+        "total": 107493
+      },
+      "p90": {
+        "doctor": 27190,
+        "hospital": 9310,
+        "total": 36500
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 23400,
+        "hospital": 6850,
+        "total": 30250
+      }
+    }
+  },
+  {
+    "procedure": "脊髓骨溶合術",
+    "discharges": "<30",
+    "avg_los": "5.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 166500,
+        "hospital": 162624,
+        "total": 329124
+      },
+      "p90": {
+        "doctor": 188607,
+        "hospital": 246352,
+        "total": 434959
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "甲狀腺切除術",
+    "discharges": "30 - 100",
+    "avg_los": "2.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 52000,
+        "hospital": 49840,
+        "total": 101840
+      },
+      "p90": {
+        "doctor": 71100,
+        "hospital": 58623,
+        "total": 129723
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "全甲狀腺切除術",
+    "discharges": "30 - 100",
+    "avg_los": "3.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 108000,
+        "hospital": 48009,
+        "total": 156009
+      },
+      "p90": {
+        "doctor": 124000,
+        "hospital": 56997,
+        "total": 180997
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "扁桃腺切除術",
+    "discharges": "30 - 100",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 35800,
+        "hospital": 27614,
+        "total": 63414
+      },
+      "p90": {
+        "doctor": 60600,
+        "hospital": 23145,
+        "total": 83745
+      }
+    },
+    "day_surgery": {}
+  },
+  {
+    "procedure": "板機狀指鬆解術 (彈弓指)",
+    "discharges": "<30",
+    "avg_los": "1.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 27000,
+        "hospital": 16307,
+        "total": 43307
+      },
+      "p90": {
+        "doctor": 28000,
+        "hospital": 14594,
+        "total": 42594
+      }
+    },
+    "day_surgery": {
+      "p50": {
+        "doctor": 18000,
+        "hospital": 9715,
+        "total": 27715
+      }
+    }
+  },
+  {
+    "procedure": "陰道分娩",
+    "discharges": "101 - 200",
+    "avg_los": "2.0",
+    "inpatient": {
+      "p50": {
+        "doctor": 47100,
+        "hospital": 38709,
+        "total": 85809
+      },
+      "p90": {
+        "doctor": 57000,
+        "hospital": 39645,
+        "total": 96645
+      }
+    },
+    "day_surgery": {}
+  }
+]

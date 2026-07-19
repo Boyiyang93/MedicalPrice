@@ -1,0 +1,65 @@
+{
+  "price-room-tc.pdf": {
+    "url": "https://www.union.org/appassets/Charges/price-room-tc.pdf?v=1760430335",
+    "pages": [
+      "room-charges",
+      "room-charges"
+    ]
+  },
+  "union_hospital_general_surgery_charges_tc.pdf": {
+    "url": "https://www.union.org/appassets/Charges/union_hospital_general_surgery_charges_tc.pdf?v=1771582630",
+    "pages": [
+      "charges-of-common-surgery-in-union-hospital",
+      "charges-of-common-surgery-in-union-hospital"
+    ]
+  },
+  "MIC_TCHI.pdf": {
+    "url": "https://www.union.org/appassets/Charges/MIC_TCHI.pdf?v=1760404254",
+    "pages": [
+      "urology-price-list",
+      "urology-price-list",
+      "orthopaedics-traumatology-services",
+      "orthopaedics-traumatology-services",
+      "gastroenterology-and-hepatology-price-list",
+      "gastroenterology-and-hepatology-price-list",
+      "ent-price-list",
+      "ent-price-list",
+      "general-surgery",
+      "general-surgery"
+    ]
+  },
+  "outpatient-service_TCHI.pdf": {
+    "url": "https://www.union.org/appassets/Charges/outpatient-service_TCHI.pdf?v=1759718330",
+    "pages": [
+      "outpatient-services",
+      "outpatient-services"
+    ]
+  },
+  "EMC-TCHI.pdf": {
+    "url": "https://www.union.org/appassets/Charges/EMC-TCHI.pdf?v=1769756825",
+    "pages": [
+      "emergency-medicine-centre",
+      "emergency-medicine-centre"
+    ]
+  },
+  "Cataract-Surgery-Package-Plan-tc.pdf": {
+    "url": "https://www.union.org/appassets/Charges/Cataract-Surgery-Package-Plan-tc.pdf?v=1751077013",
+    "pages": [
+      "cataract-surgery-package-plan",
+      "cataract-surgery-package-plan"
+    ]
+  },
+  "MEI-charge-tc.pdf": {
+    "url": "https://www.union.org/appassets/Charges/MEI-charge-tc.pdf?v=1781169677",
+    "pages": [
+      "diagnostic-tests-medical-imaging",
+      "diagnostic-tests-medical-imaging"
+    ]
+  },
+  "Maternity-pkg.pdf": {
+    "url": "https://www.union.org/appassets/Pamphlets/Maternity-Services/Maternity-pkg.pdf?v=1764562662",
+    "pages": [
+      "maternity-packages"
+    ]
+  }
+}

@@ -1,0 +1,622 @@
+{
+  "hospital_id": "baptist",
+  "name": "香港浸信會醫院",
+  "name_en": "Hong Kong Baptist Hospital",
+  "scraped": "2026-07-19",
+  "sources": [
+    "https://www.hkbh.org.hk/fees-charges/room-types-rates/",
+    "https://www.hkbh.org.hk/fees-charges/general-services-charges/",
+    "https://www.hkbh.org.hk/fees-charges/charges-payment-details/",
+    "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
+  ],
+  "effective_notes": {
+    "general_ward": "2026年7月1日",
+    "opc_pdf": "2026-07-01",
+    "imaging_pdfs": "2026-01-01"
+  },
+  "ward_daily": {
+    "effective_general": "2026年7月1日",
+    "standard_3_5_bed_range": {
+      "min": 1020,
+      "max": 1200
+    },
+    "standard_6_7_bed": 910,
+    "standard_8_9_bed": 850,
+    "semi_private_single_shared_bath": 2320,
+    "semi_private_single_no_window": 2800,
+    "semi_private_twin": 1900,
+    "private": {
+      "min": 3880,
+      "max": 4880
+    },
+    "icu": 6780,
+    "intensive_care": 10700,
+    "isolation_single": 3880,
+    "isolation_twin": 1900,
+    "day_ward_6h": 680,
+    "paediatric_twin": 1350,
+    "paediatric_3_6_bed": 990,
+    "paediatric_semi_private": 1590,
+    "paediatric_private": 3330
+  },
+  "outpatient_gp": {
+    "weekday_08_18": 400,
+    "weekday_18_20": 600,
+    "weekday_20_22": 600,
+    "weekday_22_08": 900,
+    "saturday_08_13": 400,
+    "saturday_13_22": 600,
+    "saturday_22_08": 900,
+    "sunday_holiday_08_22": 600,
+    "sunday_holiday_22_08": 900
+  },
+  "outpatient_specialist": {
+    "by_specialty": {
+      "Geriatric Medicine 老人科": {
+        "min": 1200,
+        "max": 1500
+      },
+      "Memory Clinic 記憶診所": {
+        "min": 1200,
+        "max": 1800
+      },
+      "Nephrology 腎科": {
+        "min": 800,
+        "max": 1500
+      },
+      "Neurology 腦神經科": {
+        "min": 700,
+        "max": 900
+      },
+      "Orthopaedics and Traumatology 骨科": {
+        "min": 800,
+        "max": 800
+      },
+      "Respiratory 呼吸系統科": {
+        "min": 700,
+        "max": 900
+      },
+      "Surgery - General 外科": {
+        "min": 800,
+        "max": 800
+      }
+    },
+    "initial_range": {
+      "min": 700,
+      "max": 1800
+    }
+  },
+  "imaging": {
+    "ct_brain": {
+      "plain": {
+        "standard_or_outpatient": 2380,
+        "semi_private": 2975,
+        "private": 3570
+      },
+      "contrast": {
+        "standard_or_outpatient": 4450,
+        "semi_private": 5563,
+        "private": 6675
+      }
+    },
+    "mri_brain": {
+      "plain": {
+        "standard_or_outpatient": 6740,
+        "semi_private": 8425,
+        "private": 10110
+      },
+      "contrast": {
+        "standard_or_outpatient": 10200,
+        "semi_private": 12750,
+        "private": 15300
+      }
+    }
+  },
+  "operating_theatre": {
+    "note": "Procedure hospital charges; hourly OT room fee not published in this PDF",
+    "sample_procedures": {
+      "private": {
+        "name": "Private / 私家房 / ACL Reconstruction 前十字韌帶重組術",
+        "standard": 24260,
+        "semi_private": 36390,
+        "private": 48520
+      },
+      "open_reduction_and_internal_fixation_upper_or_lower_limb_fra": {
+        "name": "Open Reduction And Internal Fixation (Upper or Lower Limb Fracture) / 骨科切開內固定復位術 (上 / 下肢骨折)",
+        "standard": 15780,
+        "semi_private": 23670,
+        "private": 31560
+      },
+      "appendectomy_闌尾切除術": {
+        "name": "Appendectomy  闌尾切除術",
+        "standard": 7540,
+        "semi_private": 11310,
+        "private": 15080
+      },
+      "arthroscopy_knee_膝關節內視鏡檢查": {
+        "name": "Arthroscopy - Knee 膝關節內視鏡檢查",
+        "standard": 12130,
+        "semi_private": 18195,
+        "private": 24260
+      },
+      "laminectomy_椎板切除術": {
+        "name": "Laminectomy 椎板切除術",
+        "standard": 22020,
+        "semi_private": 33030,
+        "private": 44040
+      },
+      "fess_功能性內視鏡鼻竇手術": {
+        "name": "FESS 功能性內視鏡鼻竇手術",
+        "standard": 14610,
+        "semi_private": 21915,
+        "private": 29220
+      },
+      "circumcision_包皮環切術": {
+        "name": "Circumcision  包皮環切術",
+        "standard": 5510,
+        "semi_private": 8265,
+        "private": 11020
+      },
+      "cystoscopy_膀胱內視鏡檢查": {
+        "name": "Cystoscopy  膀胱內視鏡檢查",
+        "standard": 5490,
+        "semi_private": 8235,
+        "private": 10980
+      },
+      "retinal_detachment_視網膜脫離手術": {
+        "name": "Retinal Detachment  視網膜脫離手術",
+        "standard": 27780,
+        "semi_private": 41670,
+        "private": 55560
+      },
+      "ex_sinus_lipoma_mass_seb_cyst_l_n_皮脂囊腫切除術": {
+        "name": "Ex.-Sinus/Lipoma/Mass/Seb.Cyst/L.N.  皮脂囊腫切除術",
+        "standard": 5510,
+        "semi_private": 8265,
+        "private": 11020
+      },
+      "excision_of_breast_mass_乳房腫塊切除術": {
+        "name": "Excision Of Breast Mass  乳房腫塊切除術",
+        "standard": 5510,
+        "semi_private": 8265,
+        "private": 11020
+      },
+      "hemi_thyroidectomy_半甲狀腺切除術": {
+        "name": "Hemi -Thyroidectomy 半甲狀腺切除術",
+        "standard": 10480,
+        "semi_private": 15720,
+        "private": 20960
+      },
+      "herniorrhaphy_疝切開術": {
+        "name": "Herniorrhaphy 疝切開術",
+        "standard": 6840,
+        "semi_private": 10260,
+        "private": 13680
+      },
+      "laparoscopic_appendectomy_腹腔內視鏡闌尾切除術": {
+        "name": "Laparoscopic Appendectomy  腹腔內視鏡闌尾切除術",
+        "standard": 15880,
+        "semi_private": 23820,
+        "private": 31760
+      },
+      "laparoscopic_assisted_vaginal_hysterectomy_腹腔內視鏡協助經陰道子宮切除術": {
+        "name": "Laparoscopic Assisted Vaginal Hysterectomy 腹腔內視鏡協助經陰道子宮切除術",
+        "standard": 21850,
+        "semi_private": 32775,
+        "private": 43700
+      },
+      "laparoscopic_cholecystectomy_腹腔內視鏡膽囊切除術": {
+        "name": "Laparoscopic Cholecystectomy  腹腔內視鏡膽囊切除術",
+        "standard": 18450,
+        "semi_private": 27675,
+        "private": 36900
+      },
+      "laparoscopic_colectomy_腹腔內視鏡部份結腸切除術": {
+        "name": "Laparoscopic Colectomy 腹腔內視鏡部份結腸切除術",
+        "standard": 31560,
+        "semi_private": 47340,
+        "private": 63120
+      },
+      "laparoscopic_herniorrhaphy_腹腔內視鏡疝縫補術": {
+        "name": "Laparoscopic Herniorrhaphy 腹腔內視鏡疝縫補術",
+        "standard": 18450,
+        "semi_private": 27675,
+        "private": 36900
+      },
+      "laparoscopic_ovarian_cystectomy_腹腔內視鏡卵巢瘤切除術": {
+        "name": "Laparoscopic Ovarian Cystectomy  腹腔內視鏡卵巢瘤切除術",
+        "standard": 18170,
+        "semi_private": 27255,
+        "private": 36340
+      },
+      "leep_宮下段環形電外科切除法": {
+        "name": "LEEP 宮下段環形電外科切除法",
+        "standard": 6620,
+        "semi_private": 9930,
+        "private": 13240
+      },
+      "microscopic_laryngoscopy_顯微喉鏡檢查": {
+        "name": "Microscopic Laryngoscopy  顯微喉鏡檢查",
+        "standard": 6170,
+        "semi_private": 9255,
+        "private": 12340
+      },
+      "ovarian_cystectomy_salpingo_oophrectomy_卵巢切除術": {
+        "name": "Ovarian Cystectomy / Salpingo-oophrectomy 卵巢切除術",
+        "standard": 9920,
+        "semi_private": 14880,
+        "private": 19840
+      },
+      "phacoemulsification_iol_白內障超音波晶體乳化_人工水晶體植入術": {
+        "name": "Phacoemulsification + IOL 白內障超音波晶體乳化 + 人工水晶體植入術",
+        "standard": 13380,
+        "semi_private": 20070,
+        "private": 26760
+      },
+      "stapled_haemorrhoidectomy_縫合槍痔切除術": {
+        "name": "Stapled Haemorrhoidectomy 縫合槍痔切除術",
+        "standard": 7230,
+        "semi_private": 10845,
+        "private": 14460
+      },
+      "t_u_r_p_經尿道前列腺切除術": {
+        "name": "T.U.R.P.  經尿道前列腺切除術",
+        "standard": 13230,
+        "semi_private": 19845,
+        "private": 26460
+      },
+      "tonsillectomy_扁桃體切除術": {
+        "name": "Tonsillectomy 扁桃體切除術",
+        "standard": 6840,
+        "semi_private": 10260,
+        "private": 13680
+      },
+      "total_hysterectomy_全宮切除術": {
+        "name": "Total Hysterectomy  全宮切除術",
+        "standard": 14240,
+        "semi_private": 21360,
+        "private": 28480
+      },
+      "tympanoplasty_鼓室修補術": {
+        "name": "Tympanoplasty 鼓室修補術",
+        "standard": 9920,
+        "semi_private": 14880,
+        "private": 19840
+      },
+      "ureterorenoscopy_輸尿管腎臟鏡檢查": {
+        "name": "Ureterorenoscopy 輸尿管腎臟鏡檢查",
+        "standard": 6800,
+        "semi_private": 10200,
+        "private": 13600
+      },
+      "video_assisted_lobectomy_視像系統協助肺葉切除術": {
+        "name": "Video Assisted Lobectomy 視像系統協助肺葉切除術",
+        "standard": 34960,
+        "semi_private": 52440,
+        "private": 69920
+      },
+      "video_assisted_pleurodesis_視像系統協助胸膜固定術": {
+        "name": "Video Assisted Pleurodesis 視像系統協助胸膜固定術",
+        "standard": 18760,
+        "semi_private": 28140,
+        "private": 37520
+      }
+    }
+  },
+  "surgery_historical_highlights": [
+    {
+      "procedure": "Laparoscopic Cholecystectomy / 腹腔內視鏡膽囊切除術",
+      "cases": "> 200",
+      "avg_los": "2.80",
+      "inpatient_p50": {
+        "doctor": 57400,
+        "hospital": 39693,
+        "total": 97093
+      },
+      "inpatient_p90": {
+        "doctor": 111475,
+        "hospital": 76033,
+        "total": 187508
+      },
+      "day_surgery_p50": null
+    },
+    {
+      "procedure": "Haemorrhoidectomy / 痔瘡切除術",
+      "cases": "101 - 200",
+      "avg_los": "2.00",
+      "inpatient_p50": {
+        "doctor": 31250,
+        "hospital": 18913,
+        "total": 50163
+      },
+      "inpatient_p90": {
+        "doctor": 32540,
+        "hospital": 20832,
+        "total": 53372
+      },
+      "day_surgery_p50": {
+        "doctor": 21150,
+        "hospital": 15056,
+        "total": 36206
+      }
+    },
+    {
+      "procedure": "Tonsillectomy / 扁桃體切除術",
+      "cases": "101 - 200",
+      "avg_los": "1.60",
+      "inpatient_p50": {
+        "doctor": 40850,
+        "hospital": 25763,
+        "total": 66613
+      },
+      "inpatient_p90": {
+        "doctor": 64420,
+        "hospital": 37005,
+        "total": 101425
+      },
+      "day_surgery_p50": null
+    },
+    {
+      "procedure": "Vaginal Delivery / 自然分娩",
+      "cases": "101 - 200",
+      "avg_los": "2.30",
+      "inpatient_p50": {
+        "doctor": 51200,
+        "hospital": 38251,
+        "total": 89451
+      },
+      "inpatient_p90": {
+        "doctor": 63200,
+        "hospital": 49652,
+        "total": 112852
+      },
+      "day_surgery_p50": null
+    },
+    {
+      "procedure": "Caesarean Section / 剖腹分娩",
+      "cases": "> 200",
+      "avg_los": "3.50",
+      "inpatient_p50": {
+        "doctor": 61125,
+        "hospital": 38802,
+        "total": 99927
+      },
+      "inpatient_p90": {
+        "doctor": 75000,
+        "hospital": 54960,
+        "total": 129960
+      },
+      "day_surgery_p50": null
+    },
+    {
+      "procedure": "Gastroscopy ± Polypectomy / 胃鏡檢查 ± 息肉切除術",
+      "cases": "> 200",
+      "avg_los": "1.50",
+      "inpatient_p50": {
+        "doctor": 14000,
+        "hospital": 23969,
+        "total": 37969
+      },
+      "inpatient_p90": {
+        "doctor": 14300,
+        "hospital": 25618,
+        "total": 39918
+      },
+      "day_surgery_p50": {
+        "doctor": 10450,
+        "hospital": 8471,
+        "total": 18921
+      }
+    },
+    {
+      "procedure": "Colonoscopy ± Polypectomy / 大腸鏡檢查 ± 息肉切除術",
+      "cases": "> 200",
+      "avg_los": "1.30",
+      "inpatient_p50": {
+        "doctor": 13200,
+        "hospital": 13722,
+        "total": 26922
+      },
+      "inpatient_p90": {
+        "doctor": 14300,
+        "hospital": 21060,
+        "total": 35360
+      },
+      "day_surgery_p50": {
+        "doctor": 11600,
+        "hospital": 9019,
+        "total": 20619
+      }
+    },
+    {
+      "procedure": "Gastroscopy and Colonoscopy ± Polypectomy / 胃鏡及大腸鏡檢查 ± 息肉切除術",
+      "cases": "> 200",
+      "avg_los": "1.20",
+      "inpatient_p50": {
+        "doctor": 23400,
+        "hospital": 26623,
+        "total": 50023
+      },
+      "inpatient_p90": {
+        "doctor": 27000,
+        "hospital": 34844,
+        "total": 61844
+      },
+      "day_surgery_p50": {
+        "doctor": 21300,
+        "hospital": 18466,
+        "total": 39766
+      }
+    },
+    {
+      "procedure": "Phacoemulsification + IOL / 超聲波乳化晶狀體摘出術+人工晶體植入",
+      "cases": "< 30",
+      "avg_los": "1.20",
+      "inpatient_p50": {
+        "doctor": 34400,
+        "hospital": 28035,
+        "total": 62435
+      },
+      "inpatient_p90": {
+        "doctor": 13300,
+        "hospital": 10500,
+        "total": 23800
+      },
+      "day_surgery_p50": {
+        "doctor": 13300,
+        "hospital": 10500,
+        "total": 23800
+      }
+    }
+  ],
+  "notes": [
+    "Hospital fees exclude doctor fees unless stated otherwise",
+    "Not written to data/db.js",
+    "Standard ward 3-5 bed: $1,020-$1,200/day (updated 2026-07-01)"
+  ],
+  "pdfs_downloaded": 35,
+  "pages_saved_count": 4,
+  "pdfs": [
+    {
+      "file": "pdfs/003-breast-care-ctr-20240601-version-2.pdf",
+      "text": "parsed/003-breast-care-ctr-20240601-version-2.txt"
+    },
+    {
+      "file": "pdfs/005-oncology-centre-20250818.pdf",
+      "text": "parsed/005-oncology-centre-20250818.txt"
+    },
+    {
+      "file": "pdfs/010-gastro-ctr-20240601-version-2.pdf",
+      "text": "parsed/010-gastro-ctr-20240601-version-2.txt"
+    },
+    {
+      "file": "pdfs/011-mis-ctr-20240601-version-2.pdf",
+      "text": "parsed/011-mis-ctr-20240601-version-2.txt"
+    },
+    {
+      "file": "pdfs/016-uro-ctr-2026-01-01.pdf",
+      "text": "parsed/016-uro-ctr-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/018-general-and-contrast-x-ray-2026-01-01.pdf",
+      "text": "parsed/018-general-and-contrast-x-ray-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/020-ct-scan-2026-01-01.pdf",
+      "text": "parsed/020-ct-scan-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/021-mri-2025-12-17.pdf",
+      "text": "parsed/021-mri-2025-12-17.txt"
+    },
+    {
+      "file": "pdfs/022-ultrasound-2026-01-01.pdf",
+      "text": "parsed/022-ultrasound-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/026-endo-2026-05-05.pdf",
+      "text": "parsed/026-endo-2026-05-05.txt"
+    },
+    {
+      "file": "pdfs/027-litho-20250707.pdf",
+      "text": "parsed/027-litho-20250707.txt"
+    },
+    {
+      "file": "pdfs/028-mammo-2026-01-01.pdf",
+      "text": "parsed/028-mammo-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/029-nuclear-2026-01-01.pdf",
+      "text": "parsed/029-nuclear-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/030-nursing-20241209.pdf",
+      "text": "parsed/030-nursing-20241209.txt"
+    },
+    {
+      "file": "pdfs/031-maternity-unit-2026-01-15.pdf",
+      "text": "parsed/031-maternity-unit-2026-01-15.txt"
+    },
+    {
+      "file": "pdfs/032-pet-ct-2026-01-01.pdf",
+      "text": "parsed/032-pet-ct-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/034-physio-2026-01-01.pdf",
+      "text": "parsed/034-physio-2026-01-01.txt"
+    },
+    {
+      "file": "pdfs/acaomr012v03-x03-hkbh-combined-budget-estimate-form-budget-estimate-formab.pdf",
+      "text": "parsed/acaomr012v03-x03-hkbh-combined-budget-estimate-form-budget-estimate-formab.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-036-endocrin.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-036-endocrin.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-038-blood.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-038-blood.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-039-histo-v2.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-039-histo-v2.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-040-immu.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-040-immu.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-041-micbi.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-041-micbi.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-08-22-042-urinestool.pdf",
+      "text": "parsed/price-list-website-version-2025-08-22-042-urinestool.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-10-01-012-og-ctr.pdf",
+      "text": "parsed/price-list-website-version-2025-10-01-012-og-ctr.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2025-11-12-017-renal-ctr.pdf",
+      "text": "parsed/price-list-website-version-2025-11-12-017-renal-ctr.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-001-opc.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-001-opc.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-002-specialist-clinic.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-002-specialist-clinic.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-006-heart-ctr.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-006-heart-ctr.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-007-de-ctr.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-007-de-ctr.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-023-ot.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-023-ot.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-025-edc.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-025-edc.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-01-037-haema.pdf",
+      "text": "parsed/price-list-website-version-2026-07-01-037-haema.txt"
+    },
+    {
+      "file": "pdfs/price-list-website-version-2026-07-17-035-biochem.pdf",
+      "text": "parsed/price-list-website-version-2026-07-17-035-biochem.txt"
+    },
+    {
+      "file": "pdfs/reference-charges-of-common-surgical-procedures-form-a-b-2025.pdf",
+      "text": "parsed/reference-charges-of-common-surgical-procedures-form-a-b-2025.txt"
+    }
+  ],
+  "linked_pages": []
+}

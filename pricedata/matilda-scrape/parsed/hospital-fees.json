@@ -1,0 +1,3313 @@
+[
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "標準房",
+    "prices": [
+      {
+        "raw": "$1,100",
+        "value": 1100,
+        "label": null,
+        "line": "每日費用 $1,100"
+      },
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "留院觀察（4小時內） $550"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "雙人房",
+    "prices": [
+      {
+        "raw": "$2,300",
+        "value": 2300,
+        "label": null,
+        "line": "每日費用 $2,300"
+      },
+      {
+        "raw": "$1,150",
+        "value": 1150,
+        "label": null,
+        "line": "留院觀察（4小時內） $1,150"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "私家房（露台房視乎供應）",
+    "prices": [
+      {
+        "raw": "$4,500",
+        "value": 4500,
+        "label": null,
+        "line": "每日費用 $4,500"
+      },
+      {
+        "raw": "$2,250",
+        "value": 2250,
+        "label": null,
+        "line": "留院觀察（4小時內） $2,250"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "貴賓房",
+    "prices": [
+      {
+        "raw": "$6,500",
+        "value": 6500,
+        "label": null,
+        "line": "每日費用 $6,500"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "隔離病房",
+    "prices": [
+      {
+        "raw": "$5,400",
+        "value": 5400,
+        "label": null,
+        "line": "每日費用 $5,400"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "加護病房 (HDU)",
+    "prices": [
+      {
+        "raw": "$9,000",
+        "value": 9000,
+        "label": null,
+        "line": "每日費用 $9,000"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "加護病房隔離",
+    "prices": [
+      {
+        "raw": "$4,000",
+        "value": 4000,
+        "label": null,
+        "line": "每日費用 $4,000"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "嬰兒加護治療部 (SCBU)",
+    "prices": [
+      {
+        "raw": "$9,000",
+        "value": 9000,
+        "label": null,
+        "line": "每日費用 $9,000"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "嬰兒特別治療部 - 四小時內",
+    "prices": [
+      {
+        "raw": "$4,500",
+        "value": 4500,
+        "label": null,
+        "line": "每日費用 $4,500"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "嬰兒特別治療部 - 雙胞胎之每一名嬰兒",
+    "prices": [
+      {
+        "raw": "$7,500",
+        "value": 7500,
+        "label": null,
+        "line": "每日費用 $7,500"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "嬰兒特別治療部 - 雙胞胎之每一名嬰兒, 及四小時以內",
+    "prices": [
+      {
+        "raw": "$3,750",
+        "value": 3750,
+        "label": null,
+        "line": "每日費用 $3,750"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "內外科部病房",
+    "name": "急症室",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "留院觀察（4小時內） $550"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "日間醫療部",
+    "name": "標準房",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "$550"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "日間醫療部",
+    "name": "雙人房",
+    "prices": [
+      {
+        "raw": "$1,150",
+        "value": 1150,
+        "label": null,
+        "line": "$1,150"
+      }
+    ]
+  },
+  {
+    "section": "房間收費及按金",
+    "subsection": "日間醫療部",
+    "name": "私家房",
+    "prices": [
+      {
+        "raw": "$2,250",
+        "value": 2250,
+        "label": null,
+        "line": "$2,250"
+      }
+    ]
+  },
+  {
+    "section": "手術室",
+    "subsection": "手術室收費",
+    "name": "手術室收費（每小時）",
+    "prices": [
+      {
+        "raw": "$6,000",
+        "value": 6000,
+        "label": null,
+        "line": "$6,000"
+      },
+      {
+        "raw": "$7,200",
+        "value": 7200,
+        "label": null,
+        "line": "$7,200"
+      },
+      {
+        "raw": "$8,200",
+        "value": 8200,
+        "label": null,
+        "line": "$8,200"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "傷口處理（簡單）",
+    "prices": [
+      {
+        "raw": "$440",
+        "value": 440,
+        "label": null,
+        "line": "$440"
+      },
+      {
+        "raw": "$570",
+        "value": 570,
+        "label": null,
+        "line": "$570"
+      },
+      {
+        "raw": "$750",
+        "value": 750,
+        "label": null,
+        "line": "$750"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "傷口處理（複雜）",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "$550"
+      },
+      {
+        "raw": "$715",
+        "value": 715,
+        "label": null,
+        "line": "$715"
+      },
+      {
+        "raw": "$935",
+        "value": 935,
+        "label": null,
+        "line": "$935"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "注射程序（每針）",
+    "prices": [
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": null,
+        "line": "$150"
+      },
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": null,
+        "line": "$150"
+      },
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": null,
+        "line": "$150"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "插入或移除鼻胃管",
+    "prices": [
+      {
+        "raw": "$400",
+        "value": 400,
+        "label": null,
+        "line": "$400"
+      },
+      {
+        "raw": "$520",
+        "value": 520,
+        "label": null,
+        "line": "$520"
+      },
+      {
+        "raw": "$680",
+        "value": 680,
+        "label": null,
+        "line": "$680"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "插入或移除尿喉",
+    "prices": [
+      {
+        "raw": "$830",
+        "value": 830,
+        "label": null,
+        "line": "$830"
+      },
+      {
+        "raw": "$950",
+        "value": 950,
+        "label": null,
+        "line": "$950"
+      },
+      {
+        "raw": "$1,160",
+        "value": 1160,
+        "label": null,
+        "line": "$1,160"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "餵食喉餵食",
+    "prices": [
+      {
+        "raw": "$840",
+        "value": 840,
+        "label": null,
+        "line": "$840"
+      },
+      {
+        "raw": "$1,090",
+        "value": 1090,
+        "label": null,
+        "line": "$1,090"
+      },
+      {
+        "raw": "$1,430",
+        "value": 1430,
+        "label": null,
+        "line": "$1,430"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "一般縫線",
+    "prices": [
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": null,
+        "line": "$1,200"
+      },
+      {
+        "raw": "$1,560",
+        "value": 1560,
+        "label": null,
+        "line": "$1,560"
+      },
+      {
+        "raw": "$2,040",
+        "value": 2040,
+        "label": null,
+        "line": "$2,040"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "移除縫線",
+    "prices": [
+      {
+        "raw": "$450",
+        "value": 450,
+        "label": null,
+        "line": "$450"
+      },
+      {
+        "raw": "$585",
+        "value": 585,
+        "label": null,
+        "line": "$585"
+      },
+      {
+        "raw": "$765",
+        "value": 765,
+        "label": null,
+        "line": "$765"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "灌腸服務",
+    "prices": [
+      {
+        "raw": "$400",
+        "value": 400,
+        "label": null,
+        "line": "$400"
+      },
+      {
+        "raw": "$440",
+        "value": 440,
+        "label": null,
+        "line": "$440"
+      },
+      {
+        "raw": "$480",
+        "value": 480,
+        "label": null,
+        "line": "$480"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "移除引流",
+    "prices": [
+      {
+        "raw": "$450",
+        "value": 450,
+        "label": null,
+        "line": "$450"
+      },
+      {
+        "raw": "$585",
+        "value": 585,
+        "label": null,
+        "line": "$585"
+      },
+      {
+        "raw": "$765",
+        "value": 765,
+        "label": null,
+        "line": "$765"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "一般護理程序",
+    "name": "抽吸分泌物（每次）",
+    "prices": [
+      {
+        "raw": "$430",
+        "value": 430,
+        "label": null,
+        "line": "$430"
+      },
+      {
+        "raw": "$560",
+        "value": 560,
+        "label": null,
+        "line": "$560"
+      },
+      {
+        "raw": "$730",
+        "value": 730,
+        "label": null,
+        "line": "$730"
+      }
+    ]
+  },
+  {
+    "section": "護理程序及輸血",
+    "subsection": "輸血",
+    "name": "輸血（設置及首單位）",
+    "prices": [
+      {
+        "raw": "$1,270",
+        "value": 1270,
+        "label": null,
+        "line": "$1,270"
+      },
+      {
+        "raw": "$1,460",
+        "value": 1460,
+        "label": null,
+        "line": "$1,460"
+      },
+      {
+        "raw": "$2,140",
+        "value": 2140,
+        "label": null,
+        "line": "$2,140"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "普通科門診診症",
+    "name": "普通科 — 早上8時至晚上8時（星期日及公眾假期除外）",
+    "prices": [
+      {
+        "raw": "$590",
+        "value": 590,
+        "label": null,
+        "line": "$590"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "普通科門診診症",
+    "name": "普通科 — 星期日及公眾假期早上8時至晚上8時",
+    "prices": [
+      {
+        "raw": "$800",
+        "value": 800,
+        "label": null,
+        "line": "$800"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "普通科門診診症",
+    "name": "夜間普通科 — 任何日子晚上8時至凌晨0時",
+    "prices": [
+      {
+        "raw": "$900",
+        "value": 900,
+        "label": null,
+        "line": "$900"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "普通科門診診症",
+    "name": "夜間普通科 — 任何日子凌晨0時至上午8時",
+    "prices": [
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": null,
+        "line": "$1,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "駐院兒科門診診症",
+    "name": "兒科 — 星期一至五早上8時至晚上6時（公眾假期除外）",
+    "prices": [
+      {
+        "raw": "$1,600",
+        "value": 1600,
+        "label": null,
+        "line": "$1,600"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "駐院兒科門診診症",
+    "name": "兒科 — 星期一至五晚上6時至凌晨0時（公眾假期除外）",
+    "prices": [
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": null,
+        "line": "$2,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "駐院兒科門診診症",
+    "name": "兒科 — 星期六、日及公眾假期早上8時至凌晨0時",
+    "prices": [
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": null,
+        "line": "$2,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "駐院兒科門診診症",
+    "name": "兒科 — 任何日子凌晨0時至早上8時",
+    "prices": [
+      {
+        "raw": "$3,000",
+        "value": 3000,
+        "label": null,
+        "line": "$3,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "專科門診診症",
+    "name": "專科診症",
+    "prices": [
+      {
+        "raw": "$2,500 - $3,000",
+        "value": {
+          "min": 2500,
+          "max": 3000,
+          "raw": "$2,500 - $3,000"
+        },
+        "label": null,
+        "line": "$2,500 - $3,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "專科門診診症",
+    "name": "專科診症（複診跟進）",
+    "prices": [
+      {
+        "raw": "$1,800 - $2,200",
+        "value": {
+          "min": 1800,
+          "max": 2200,
+          "raw": "$1,800 - $2,200"
+        },
+        "label": null,
+        "line": "$1,800 - $2,200"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "專科門診診症",
+    "name": "臨床心理諮詢",
+    "prices": [
+      {
+        "raw": "$2,000+",
+        "value": {
+          "min": 2000,
+          "raw": "$2,000+"
+        },
+        "label": null,
+        "line": "$2,000+"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "專科門診診症",
+    "name": "聽力測試",
+    "prices": [
+      {
+        "raw": "$280",
+        "value": 280,
+        "label": null,
+        "line": "$280"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "一般縫線",
+    "prices": [
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": "hospital",
+        "line": "醫院費用 $1,200"
+      },
+      {
+        "raw": "$4,500",
+        "value": 4500,
+        "label": "doctor",
+        "line": "醫生費用 $4,500"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "移除縫線",
+    "prices": [
+      {
+        "raw": "$450",
+        "value": 450,
+        "label": "hospital",
+        "line": "醫院費用 $450"
+      },
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": "doctor",
+        "line": "醫生費用 $1,200"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "上石膏",
+    "prices": [
+      {
+        "raw": "$1,500",
+        "value": 1500,
+        "label": "hospital",
+        "line": "醫院費用 $1,500"
+      },
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": "doctor",
+        "line": "醫生費用 $2,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "移除石膏",
+    "prices": [
+      {
+        "raw": "$800",
+        "value": 800,
+        "label": "hospital",
+        "line": "醫院費用 $800"
+      },
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": "doctor",
+        "line": "醫生費用 $2,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "切開引流",
+    "prices": [
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": "hospital",
+        "line": "醫院費用 $1,200"
+      },
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": "doctor",
+        "line": "醫生費用 $1,200"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "冲洗耳道",
+    "prices": [
+      {
+        "raw": "$510",
+        "value": 510,
+        "label": "hospital",
+        "line": "醫院費用 $510"
+      },
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": "doctor",
+        "line": "醫生費用 $1,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "液態氮冷凍療法",
+    "prices": [
+      {
+        "raw": "$1,300",
+        "value": 1300,
+        "label": "hospital",
+        "line": "醫院費用 $1,300"
+      },
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": "doctor",
+        "line": "醫生費用 $1,200"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "基本護理（每15分鐘）",
+    "prices": [
+      {
+        "raw": "$300",
+        "value": 300,
+        "label": "hospital",
+        "line": "醫院費用 $300"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "採集拭子樣本（鼻腔/眼/咽喉/傷口）",
+    "prices": [
+      {
+        "raw": "$230",
+        "value": 230,
+        "label": "hospital",
+        "line": "醫院費用 $230"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "傷口處理（簡單）",
+    "prices": [
+      {
+        "raw": "$440",
+        "value": 440,
+        "label": "hospital",
+        "line": "醫院費用 $440"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "傷口處理（複雜）",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": "hospital",
+        "line": "醫院費用 $550"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "關節穿刺 /注射",
+    "prices": [
+      {
+        "raw": "$1,240",
+        "value": 1240,
+        "label": "hospital",
+        "line": "醫院費用 $1,240"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "門診護理程序",
+    "name": "注射程序（每針）",
+    "prices": [
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": "hospital",
+        "line": "醫院費用 $150"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "小手術（每30分鐘）",
+    "prices": [
+      {
+        "raw": "$1,650",
+        "value": 1650,
+        "label": "hospital",
+        "line": "醫院費用 $1,650"
+      },
+      {
+        "raw": "$4,500",
+        "value": 4500,
+        "label": "doctor",
+        "line": "醫生費用 $4,500"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "包皮環切術（僅限少於28日大的初生嬰兒)",
+    "prices": [
+      {
+        "raw": "$4,200",
+        "value": 4200,
+        "label": "hospital",
+        "line": "醫院費用 $4,200"
+      },
+      {
+        "raw": "$9,000 - $15,000",
+        "value": {
+          "min": 9000,
+          "max": 15000,
+          "raw": "$9,000 - $15,000"
+        },
+        "label": "doctor",
+        "line": "醫生費用 $9,000 - $15,000 (專科醫生)"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "尿流測試＋膀胱掃描",
+    "prices": [
+      {
+        "raw": "$700",
+        "value": 700,
+        "label": "hospital",
+        "line": "醫院費用 $700"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "跑步心電圖",
+    "prices": [
+      {
+        "raw": "$2,800",
+        "value": 2800,
+        "label": "hospital",
+        "line": "醫院費用 $2,800"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "心電圖（ECG）— 12導聯",
+    "prices": [
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": "hospital",
+        "line": "醫院費用 $600"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "24 小時血壓監測",
+    "prices": [
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": "hospital",
+        "line": "醫院費用 $2,000"
+      }
+    ]
+  },
+  {
+    "section": "24小時門診服務",
+    "subsection": "其他醫院門診服務",
+    "name": "急救（每30分鐘）",
+    "prices": [
+      {
+        "raw": "$8,250",
+        "value": 8250,
+        "label": "hospital",
+        "line": "醫院費用 $8,250"
+      },
+      {
+        "raw": "$4,500",
+        "value": 4500,
+        "label": "doctor",
+        "line": "醫生費用 $4,500"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "MRI 組合",
+    "name": "全面心臟評估",
+    "prices": [
+      {
+        "raw": "$17,580",
+        "value": 17580,
+        "label": null,
+        "line": "$17,580"
+      },
+      {
+        "raw": "$22,040",
+        "value": 22040,
+        "label": null,
+        "line": "$22,040"
+      },
+      {
+        "raw": "$26,370",
+        "value": 26370,
+        "label": null,
+        "line": "$26,370"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "MRI 組合",
+    "name": "高血壓評估",
+    "prices": [
+      {
+        "raw": "$12,250",
+        "value": 12250,
+        "label": null,
+        "line": "$12,250"
+      },
+      {
+        "raw": "$15,390",
+        "value": 15390,
+        "label": null,
+        "line": "$15,390"
+      },
+      {
+        "raw": "$18,380",
+        "value": 18380,
+        "label": null,
+        "line": "$18,380"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "MRI 組合",
+    "name": "中風評估",
+    "prices": [
+      {
+        "raw": "$16,250",
+        "value": 16250,
+        "label": null,
+        "line": "$16,250"
+      },
+      {
+        "raw": "$20,310",
+        "value": 20310,
+        "label": null,
+        "line": "$20,310"
+      },
+      {
+        "raw": "$24,370",
+        "value": 24370,
+        "label": null,
+        "line": "$24,370"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "電腦掃描組合",
+    "name": "高血壓評估",
+    "prices": [
+      {
+        "raw": "$8,930",
+        "value": 8930,
+        "label": null,
+        "line": "$8,930"
+      },
+      {
+        "raw": "$11,130",
+        "value": 11130,
+        "label": null,
+        "line": "$11,130"
+      },
+      {
+        "raw": "$13,450",
+        "value": 13450,
+        "label": null,
+        "line": "$13,450"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "電腦掃描組合",
+    "name": "中風評估",
+    "prices": [
+      {
+        "raw": "$13,590",
+        "value": 13590,
+        "label": null,
+        "line": "$13,590"
+      },
+      {
+        "raw": "$16,980",
+        "value": 16980,
+        "label": null,
+        "line": "$16,980"
+      },
+      {
+        "raw": "$20,370",
+        "value": 20370,
+        "label": null,
+        "line": "$20,370"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "乳房",
+    "prices": [
+      {
+        "raw": "$2,780",
+        "value": 2780,
+        "label": null,
+        "line": "$2,780"
+      },
+      {
+        "raw": "$3,010",
+        "value": 3010,
+        "label": null,
+        "line": "$3,010"
+      },
+      {
+        "raw": "$3,600",
+        "value": 3600,
+        "label": null,
+        "line": "$3,600"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "頸動脈",
+    "prices": [
+      {
+        "raw": "$4,860",
+        "value": 4860,
+        "label": null,
+        "line": "$4,860"
+      },
+      {
+        "raw": "$5,210",
+        "value": 5210,
+        "label": null,
+        "line": "$5,210"
+      },
+      {
+        "raw": "$6,250",
+        "value": 6250,
+        "label": null,
+        "line": "$6,250"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "髖關節",
+    "prices": [
+      {
+        "raw": "$3,040",
+        "value": 3040,
+        "label": null,
+        "line": "$3,040"
+      },
+      {
+        "raw": "$3,290",
+        "value": 3290,
+        "label": null,
+        "line": "$3,290"
+      },
+      {
+        "raw": "$3,920",
+        "value": 3920,
+        "label": null,
+        "line": "$3,920"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "上腹",
+    "prices": [
+      {
+        "raw": "$2,780",
+        "value": 2780,
+        "label": null,
+        "line": "$2,780"
+      },
+      {
+        "raw": "$3,010",
+        "value": 3010,
+        "label": null,
+        "line": "$3,010"
+      },
+      {
+        "raw": "$3,600",
+        "value": 3600,
+        "label": null,
+        "line": "$3,600"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "盆腔",
+    "prices": [
+      {
+        "raw": "$2,730",
+        "value": 2730,
+        "label": null,
+        "line": "$2,730"
+      },
+      {
+        "raw": "$2,960",
+        "value": 2960,
+        "label": null,
+        "line": "$2,960"
+      },
+      {
+        "raw": "$3,530",
+        "value": 3530,
+        "label": null,
+        "line": "$3,530"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "前列腺",
+    "prices": [
+      {
+        "raw": "$2,660",
+        "value": 2660,
+        "label": null,
+        "line": "$2,660"
+      },
+      {
+        "raw": "$2,880",
+        "value": 2880,
+        "label": null,
+        "line": "$2,880"
+      },
+      {
+        "raw": "$3,430",
+        "value": 3430,
+        "label": null,
+        "line": "$3,430"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "腎部血管",
+    "prices": [
+      {
+        "raw": "$4,950",
+        "value": 4950,
+        "label": null,
+        "line": "$4,950"
+      },
+      {
+        "raw": "$5,300",
+        "value": 5300,
+        "label": null,
+        "line": "$5,300"
+      },
+      {
+        "raw": "$6,370",
+        "value": 6370,
+        "label": null,
+        "line": "$6,370"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "泌尿系統",
+    "prices": [
+      {
+        "raw": "$2,700",
+        "value": 2700,
+        "label": null,
+        "line": "$2,700"
+      },
+      {
+        "raw": "$2,890",
+        "value": 2890,
+        "label": null,
+        "line": "$2,890"
+      },
+      {
+        "raw": "$3,470",
+        "value": 3470,
+        "label": null,
+        "line": "$3,470"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "陰囊",
+    "prices": [
+      {
+        "raw": "$2,780",
+        "value": 2780,
+        "label": null,
+        "line": "$2,780"
+      },
+      {
+        "raw": "$3,010",
+        "value": 3010,
+        "label": null,
+        "line": "$3,010"
+      },
+      {
+        "raw": "$3,600",
+        "value": 3600,
+        "label": null,
+        "line": "$3,600"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "甲狀腺",
+    "prices": [
+      {
+        "raw": "$2,780",
+        "value": 2780,
+        "label": null,
+        "line": "$2,780"
+      },
+      {
+        "raw": "$3,010",
+        "value": 3010,
+        "label": null,
+        "line": "$3,010"
+      },
+      {
+        "raw": "$3,600",
+        "value": 3600,
+        "label": null,
+        "line": "$3,600"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "超聲波",
+    "name": "下腹 (闌尾)",
+    "prices": [
+      {
+        "raw": "$4,730",
+        "value": 4730,
+        "label": null,
+        "line": "$4,730"
+      },
+      {
+        "raw": "$5,060",
+        "value": 5060,
+        "label": null,
+        "line": "$5,060"
+      },
+      {
+        "raw": "$6,080",
+        "value": 6080,
+        "label": null,
+        "line": "$6,080"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "子宮輸卵管造影",
+    "prices": [
+      {
+        "raw": "$3,700",
+        "value": 3700,
+        "label": null,
+        "line": "$3,700"
+      },
+      {
+        "raw": "$3,960",
+        "value": 3960,
+        "label": null,
+        "line": "$3,960"
+      },
+      {
+        "raw": "$4,760",
+        "value": 4760,
+        "label": null,
+        "line": "$4,760"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "骨質密度檢查",
+    "prices": [
+      {
+        "raw": "$1,210",
+        "value": 1210,
+        "label": null,
+        "line": "$1,210"
+      },
+      {
+        "raw": "$1,530",
+        "value": 1530,
+        "label": null,
+        "line": "$1,530"
+      },
+      {
+        "raw": "$1,820",
+        "value": 1820,
+        "label": null,
+        "line": "$1,820"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "乳房X光像檢查",
+    "prices": [
+      {
+        "raw": "$1,910",
+        "value": 1910,
+        "label": null,
+        "line": "$1,910"
+      },
+      {
+        "raw": "$2,400",
+        "value": 2400,
+        "label": null,
+        "line": "$2,400"
+      },
+      {
+        "raw": "$2,870",
+        "value": 2870,
+        "label": null,
+        "line": "$2,870"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "鋇餐上消化道檢查",
+    "prices": [
+      {
+        "raw": "$2,870",
+        "value": 2870,
+        "label": null,
+        "line": "$2,870"
+      },
+      {
+        "raw": "$3,090",
+        "value": 3090,
+        "label": null,
+        "line": "$3,090"
+      },
+      {
+        "raw": "$3,700",
+        "value": 3700,
+        "label": null,
+        "line": "$3,700"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "食道及上消化道檢查",
+    "prices": [
+      {
+        "raw": "$3,390",
+        "value": 3390,
+        "label": null,
+        "line": "$3,390"
+      },
+      {
+        "raw": "$3,660",
+        "value": 3660,
+        "label": null,
+        "line": "$3,660"
+      },
+      {
+        "raw": "$4,380",
+        "value": 4380,
+        "label": null,
+        "line": "$4,380"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "特殊X光檢查",
+    "name": "小腸灌注法",
+    "prices": [
+      {
+        "raw": "$4,320",
+        "value": 4320,
+        "label": null,
+        "line": "$4,320"
+      },
+      {
+        "raw": "$4,660",
+        "value": 4660,
+        "label": null,
+        "line": "$4,660"
+      },
+      {
+        "raw": "$5,590",
+        "value": 5590,
+        "label": null,
+        "line": "$5,590"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "X光檢查",
+    "name": "胸部 (一張)",
+    "prices": [
+      {
+        "raw": "$560",
+        "value": 560,
+        "label": null,
+        "line": "$560"
+      },
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": null,
+        "line": "$600"
+      },
+      {
+        "raw": "$720",
+        "value": 720,
+        "label": null,
+        "line": "$720"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "X光檢查",
+    "name": "腹部 (一張)",
+    "prices": [
+      {
+        "raw": "$560",
+        "value": 560,
+        "label": null,
+        "line": "$560"
+      },
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": null,
+        "line": "$600"
+      },
+      {
+        "raw": "$720",
+        "value": 720,
+        "label": null,
+        "line": "$720"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "X光檢查",
+    "name": "頭顱骨 (兩張)",
+    "prices": [
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": null,
+        "line": "$1,000"
+      },
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      },
+      {
+        "raw": "$1,270",
+        "value": 1270,
+        "label": null,
+        "line": "$1,270"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "X光檢查",
+    "name": "前臂 (兩張)",
+    "prices": [
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": null,
+        "line": "$1,000"
+      },
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      },
+      {
+        "raw": "$1,270",
+        "value": 1270,
+        "label": null,
+        "line": "$1,270"
+      }
+    ]
+  },
+  {
+    "section": "放射及影像服務",
+    "subsection": "X光檢查",
+    "name": "膝關節 (兩張)",
+    "prices": [
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": null,
+        "line": "$1,000"
+      },
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      },
+      {
+        "raw": "$1,270",
+        "value": 1270,
+        "label": null,
+        "line": "$1,270"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "鈉",
+    "prices": [
+      {
+        "raw": "$200",
+        "value": 200,
+        "label": null,
+        "line": "$200"
+      },
+      {
+        "raw": "$320",
+        "value": 320,
+        "label": null,
+        "line": "$320"
+      },
+      {
+        "raw": "$400",
+        "value": 400,
+        "label": null,
+        "line": "$400"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "新生兒膽紅素",
+    "prices": [
+      {
+        "raw": "$200",
+        "value": 200,
+        "label": null,
+        "line": "$200"
+      },
+      {
+        "raw": "$320",
+        "value": 320,
+        "label": null,
+        "line": "$320"
+      },
+      {
+        "raw": "$400",
+        "value": 400,
+        "label": null,
+        "line": "$400"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "心臟功能檢查（AST、LDH、CPK、CK-MB）",
+    "prices": [
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      },
+      {
+        "raw": "$1,380",
+        "value": 1380,
+        "label": null,
+        "line": "$1,380"
+      },
+      {
+        "raw": "$1,700",
+        "value": 1700,
+        "label": null,
+        "line": "$1,700"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "糖尿病指標（血糖、糖化血紅素）",
+    "prices": [
+      {
+        "raw": "$740",
+        "value": 740,
+        "label": null,
+        "line": "$740"
+      },
+      {
+        "raw": "$950",
+        "value": 950,
+        "label": null,
+        "line": "$950"
+      },
+      {
+        "raw": "$1,160",
+        "value": 1160,
+        "label": null,
+        "line": "$1,160"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "鐵質分析組合",
+    "prices": [
+      {
+        "raw": "$840",
+        "value": 840,
+        "label": null,
+        "line": "$840"
+      },
+      {
+        "raw": "$1,080",
+        "value": 1080,
+        "label": null,
+        "line": "$1,080"
+      },
+      {
+        "raw": "$1,310",
+        "value": 1310,
+        "label": null,
+        "line": "$1,310"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "血脂分析",
+    "prices": [
+      {
+        "raw": "$800",
+        "value": 800,
+        "label": null,
+        "line": "$800"
+      },
+      {
+        "raw": "$1,040",
+        "value": 1040,
+        "label": null,
+        "line": "$1,040"
+      },
+      {
+        "raw": "$1,290",
+        "value": 1290,
+        "label": null,
+        "line": "$1,290"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床化學",
+    "name": "腎功能檢查",
+    "prices": [
+      {
+        "raw": "$790",
+        "value": 790,
+        "label": null,
+        "line": "$790"
+      },
+      {
+        "raw": "$1,030",
+        "value": 1030,
+        "label": null,
+        "line": "$1,030"
+      },
+      {
+        "raw": "$1,260",
+        "value": 1260,
+        "label": null,
+        "line": "$1,260"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床微生物學",
+    "name": "精液分析",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "$550"
+      },
+      {
+        "raw": "$710",
+        "value": 710,
+        "label": null,
+        "line": "$710"
+      },
+      {
+        "raw": "$880",
+        "value": 880,
+        "label": null,
+        "line": "$880"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "臨床微生物學",
+    "name": "尿液常規檢查",
+    "prices": [
+      {
+        "raw": "$210",
+        "value": 210,
+        "label": null,
+        "line": "$210"
+      },
+      {
+        "raw": "$340",
+        "value": 340,
+        "label": null,
+        "line": "$340"
+      },
+      {
+        "raw": "$440",
+        "value": 440,
+        "label": null,
+        "line": "$440"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "血液學及血庫",
+    "name": "血型鑑定—ABO 及 Rh(D)",
+    "prices": [
+      {
+        "raw": "$280",
+        "value": 280,
+        "label": null,
+        "line": "$280"
+      },
+      {
+        "raw": "$400",
+        "value": 400,
+        "label": null,
+        "line": "$400"
+      },
+      {
+        "raw": "$460",
+        "value": 460,
+        "label": null,
+        "line": "$460"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "血液學及血庫",
+    "name": "凝血功能檢查（APTT 和 PT/INR）",
+    "prices": [
+      {
+        "raw": "$840",
+        "value": 840,
+        "label": null,
+        "line": "$840"
+      },
+      {
+        "raw": "$1,100",
+        "value": 1100,
+        "label": null,
+        "line": "$1,100"
+      },
+      {
+        "raw": "$1,350",
+        "value": 1350,
+        "label": null,
+        "line": "$1,350"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "血液學及血庫",
+    "name": "全面血球統計",
+    "prices": [
+      {
+        "raw": "$300",
+        "value": 300,
+        "label": null,
+        "line": "$300"
+      },
+      {
+        "raw": "$450",
+        "value": 450,
+        "label": null,
+        "line": "$450"
+      },
+      {
+        "raw": "$530",
+        "value": 530,
+        "label": null,
+        "line": "$530"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "甲種胚胎蛋白（AFP）",
+    "prices": [
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": null,
+        "line": "$600"
+      },
+      {
+        "raw": "$980",
+        "value": 980,
+        "label": null,
+        "line": "$980"
+      },
+      {
+        "raw": "$1,250",
+        "value": 1250,
+        "label": null,
+        "line": "$1,250"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "定量人絨毛膜促性腺激素（β-hCG）",
+    "prices": [
+      {
+        "raw": "$730",
+        "value": 730,
+        "label": null,
+        "line": "$730"
+      },
+      {
+        "raw": "$1,160",
+        "value": 1160,
+        "label": null,
+        "line": "$1,160"
+      },
+      {
+        "raw": "$1,490",
+        "value": 1490,
+        "label": null,
+        "line": "$1,490"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "促卵泡激素 (FSH)",
+    "prices": [
+      {
+        "raw": "$530",
+        "value": 530,
+        "label": null,
+        "line": "$530"
+      },
+      {
+        "raw": "$850",
+        "value": 850,
+        "label": null,
+        "line": "$850"
+      },
+      {
+        "raw": "$1,080",
+        "value": 1080,
+        "label": null,
+        "line": "$1,080"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "甲型肝炎抗體-IgG",
+    "prices": [
+      {
+        "raw": "$530",
+        "value": 530,
+        "label": null,
+        "line": "$530"
+      },
+      {
+        "raw": "$850",
+        "value": 850,
+        "label": null,
+        "line": "$850"
+      },
+      {
+        "raw": "$1,080",
+        "value": 1080,
+        "label": null,
+        "line": "$1,080"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "乙型肝炎表面抗體",
+    "prices": [
+      {
+        "raw": "$530",
+        "value": 530,
+        "label": null,
+        "line": "$530"
+      },
+      {
+        "raw": "$840",
+        "value": 840,
+        "label": null,
+        "line": "$840"
+      },
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "乙型肝炎表面抗原",
+    "prices": [
+      {
+        "raw": "$340",
+        "value": 340,
+        "label": null,
+        "line": "$340"
+      },
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "$550"
+      },
+      {
+        "raw": "$710",
+        "value": 710,
+        "label": null,
+        "line": "$710"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "丙型肝炎抗體",
+    "prices": [
+      {
+        "raw": "$670",
+        "value": 670,
+        "label": null,
+        "line": "$670"
+      },
+      {
+        "raw": "$1,070",
+        "value": 1070,
+        "label": null,
+        "line": "$1,070"
+      },
+      {
+        "raw": "$1,370",
+        "value": 1370,
+        "label": null,
+        "line": "$1,370"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "HIV人類免疫缺乏病毒（1+2抗體，p24抗原）",
+    "prices": [
+      {
+        "raw": "$630",
+        "value": 630,
+        "label": null,
+        "line": "$630"
+      },
+      {
+        "raw": "$1,020",
+        "value": 1020,
+        "label": null,
+        "line": "$1,020"
+      },
+      {
+        "raw": "$1,290",
+        "value": 1290,
+        "label": null,
+        "line": "$1,290"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "免疫學",
+    "name": "黃體生成素（LH）",
+    "prices": [
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": null,
+        "line": "$600"
+      },
+      {
+        "raw": "$980",
+        "value": 980,
+        "label": null,
+        "line": "$980"
+      },
+      {
+        "raw": "$1,250",
+        "value": 1250,
+        "label": null,
+        "line": "$1,250"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "分子診斷",
+    "name": "胃腸道病原體檢測",
+    "prices": [
+      {
+        "raw": "$2,840",
+        "value": 2840,
+        "label": null,
+        "line": "$2,840"
+      },
+      {
+        "raw": "$3,680",
+        "value": 3680,
+        "label": null,
+        "line": "$3,680"
+      },
+      {
+        "raw": "$4,520",
+        "value": 4520,
+        "label": null,
+        "line": "$4,520"
+      }
+    ]
+  },
+  {
+    "section": "病理學及化驗服務",
+    "subsection": "分子診斷",
+    "name": "乙型鏈球菌（GBS）DNA篩查",
+    "prices": [
+      {
+        "raw": "$1,260",
+        "value": 1260,
+        "label": null,
+        "line": "$1,260"
+      },
+      {
+        "raw": "$1,640",
+        "value": 1640,
+        "label": null,
+        "line": "$1,640"
+      },
+      {
+        "raw": "$2,020",
+        "value": 2020,
+        "label": null,
+        "line": "$2,020"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（住院）",
+    "name": "一般物理治療",
+    "prices": [
+      {
+        "raw": "$1,400",
+        "value": 1400,
+        "label": null,
+        "line": "$1,400"
+      },
+      {
+        "raw": "$1,820",
+        "value": 1820,
+        "label": null,
+        "line": "$1,820"
+      },
+      {
+        "raw": "$2,230",
+        "value": 2230,
+        "label": null,
+        "line": "$2,230"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（住院）",
+    "name": "後續延伸治療",
+    "prices": [
+      {
+        "raw": "$1,710",
+        "value": 1710,
+        "label": null,
+        "line": "$1,710"
+      },
+      {
+        "raw": "$2,220",
+        "value": 2220,
+        "label": null,
+        "line": "$2,220"
+      },
+      {
+        "raw": "$2,740",
+        "value": 2740,
+        "label": null,
+        "line": "$2,740"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（住院）",
+    "name": "產後物理治療（每次）",
+    "prices": [
+      {
+        "raw": "$1,230",
+        "value": 1230,
+        "label": null,
+        "line": "$1,230"
+      },
+      {
+        "raw": "$1,600",
+        "value": 1600,
+        "label": null,
+        "line": "$1,600"
+      },
+      {
+        "raw": "$1,960",
+        "value": 1960,
+        "label": null,
+        "line": "$1,960"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（住院）",
+    "name": "衝擊波治療（於治療期間使用）",
+    "prices": [
+      {
+        "raw": "$250",
+        "value": 250,
+        "label": null,
+        "line": "$250"
+      },
+      {
+        "raw": "$250",
+        "value": 250,
+        "label": null,
+        "line": "$250"
+      },
+      {
+        "raw": "$250",
+        "value": 250,
+        "label": null,
+        "line": "$250"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "首次評估及治療",
+    "prices": [
+      {
+        "raw": "$1,370",
+        "value": 1370,
+        "label": null,
+        "line": "$1,370"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "簡短物理治療",
+    "prices": [
+      {
+        "raw": "$870",
+        "value": 870,
+        "label": null,
+        "line": "$870"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "一般物理治療",
+    "prices": [
+      {
+        "raw": "$1,260",
+        "value": 1260,
+        "label": null,
+        "line": "$1,260"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "衝擊波治療（於治療期間使用）",
+    "prices": [
+      {
+        "raw": "$250",
+        "value": 250,
+        "label": null,
+        "line": "$250"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "普拉提首次治療",
+    "prices": [
+      {
+        "raw": "$1,220",
+        "value": 1220,
+        "label": null,
+        "line": "$1,220"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "物理治療（門診）",
+    "name": "普拉提後續延伸治療",
+    "prices": [
+      {
+        "raw": "$1,140",
+        "value": 1140,
+        "label": null,
+        "line": "$1,140"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "營養師指導 (住院)",
+    "name": "營養師首次諮詢",
+    "prices": [
+      {
+        "raw": "$650",
+        "value": 650,
+        "label": null,
+        "line": "$650"
+      },
+      {
+        "raw": "$850",
+        "value": 850,
+        "label": null,
+        "line": "$850"
+      },
+      {
+        "raw": "$1,040",
+        "value": 1040,
+        "label": null,
+        "line": "$1,040"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "營養師指導 (住院)",
+    "name": "營養師跟進指導",
+    "prices": [
+      {
+        "raw": "$450",
+        "value": 450,
+        "label": null,
+        "line": "$450"
+      },
+      {
+        "raw": "$590",
+        "value": 590,
+        "label": null,
+        "line": "$590"
+      },
+      {
+        "raw": "$720",
+        "value": 720,
+        "label": null,
+        "line": "$720"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "營養師指導 (門診)",
+    "name": "營養師首次諮詢",
+    "prices": [
+      {
+        "raw": "$850",
+        "value": 850,
+        "label": null,
+        "line": "$850"
+      }
+    ]
+  },
+  {
+    "section": "專職醫療服務",
+    "subsection": "營養師指導 (門診)",
+    "name": "營養師跟進指導",
+    "prices": [
+      {
+        "raw": "$500",
+        "value": 500,
+        "label": null,
+        "line": "$500"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "醫療紀錄副本 (住院 / 檢驗報告)",
+    "prices": [
+      {
+        "raw": "$300",
+        "value": 300,
+        "label": null,
+        "line": "$300"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "醫療紀錄副本 - 額外紀錄*",
+    "prices": [
+      {
+        "raw": "$200",
+        "value": 200,
+        "label": null,
+        "line": "$200"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "醫療紀錄副本 - 印刷硬複本 (每頁)",
+    "prices": [
+      {
+        "raw": "$5",
+        "value": 5,
+        "label": null,
+        "line": "$5"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "數碼影像副本 (安全下載)",
+    "prices": [
+      {
+        "raw": "$300",
+        "value": 300,
+        "label": null,
+        "line": "$300"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "數碼影像副本 (安全下載及 USB 隨身碟)",
+    "prices": [
+      {
+        "raw": "$350",
+        "value": 350,
+        "label": null,
+        "line": "$350"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "疫苗接種紀錄",
+    "prices": [
+      {
+        "raw": "$500",
+        "value": 500,
+        "label": null,
+        "line": "$500"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "賬單核證副本 (住院)*",
+    "prices": [
+      {
+        "raw": "$200",
+        "value": 200,
+        "label": null,
+        "line": "$200"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "賬單核證副本 (門診)*",
+    "prices": [
+      {
+        "raw": "$100",
+        "value": 100,
+        "label": null,
+        "line": "$100"
+      }
+    ]
+  },
+  {
+    "section": "醫療紀錄及其他",
+    "subsection": "醫療記錄及其他",
+    "name": "* 紀錄超過3年之附加費 (按年計算)",
+    "prices": [
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": null,
+        "line": "$150"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "普通科",
+    "prices": [
+      {
+        "raw": "$590",
+        "value": 590,
+        "label": null,
+        "line": "$590"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "心臟科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "皮膚科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "內分泌科",
+    "prices": [
+      {
+        "raw": "$1,200-$3,000",
+        "value": {
+          "min": 1200,
+          "max": 3000,
+          "raw": "$1,200-$3,000"
+        },
+        "label": null,
+        "line": "$1,200-$3,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "腸胃肝臟科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "外科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "老人科",
+    "prices": [
+      {
+        "raw": "$800-$1,200",
+        "value": {
+          "min": 800,
+          "max": 1200,
+          "raw": "$800-$1,200"
+        },
+        "label": null,
+        "line": "$800-$1,200"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "婦科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "血液科",
+    "prices": [
+      {
+        "raw": "$1,500-$,2000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$,2000"
+        },
+        "label": null,
+        "line": "$1,500-$,2000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "腦神經科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "腎科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "眼科",
+    "prices": [
+      {
+        "raw": "$1,200-$1,800",
+        "value": {
+          "min": 1200,
+          "max": 1800,
+          "raw": "$1,200-$1,800"
+        },
+        "label": null,
+        "line": "$1,200-$1,800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "骨科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "耳鼻喉科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,500",
+        "value": {
+          "min": 1500,
+          "max": 2500,
+          "raw": "$1,500-$2,500"
+        },
+        "label": null,
+        "line": "$1,500-$2,500"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "兒科",
+    "prices": [
+      {
+        "raw": "$1,800",
+        "value": 1800,
+        "label": null,
+        "line": "$1,800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "整形外科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "精神科",
+    "prices": [
+      {
+        "raw": "$3,200",
+        "value": 3200,
+        "label": null,
+        "line": "$3,200"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "呼吸系統科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "風濕病科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,500",
+        "value": {
+          "min": 1500,
+          "max": 2500,
+          "raw": "$1,500-$2,500"
+        },
+        "label": null,
+        "line": "$1,500-$2,500"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "醫生診症",
+    "name": "泌尿外科",
+    "prices": [
+      {
+        "raw": "$1,500-$2,000",
+        "value": {
+          "min": 1500,
+          "max": 2000,
+          "raw": "$1,500-$2,000"
+        },
+        "label": null,
+        "line": "$1,500-$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "護理程序",
+    "name": "傷口處理（簡單）",
+    "prices": [
+      {
+        "raw": "$440",
+        "value": 440,
+        "label": null,
+        "line": "$440"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "護理程序",
+    "name": "傷口處理（複雜）",
+    "prices": [
+      {
+        "raw": "$550",
+        "value": 550,
+        "label": null,
+        "line": "$550"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "護理程序",
+    "name": "注射程序（每針）",
+    "prices": [
+      {
+        "raw": "$150",
+        "value": 150,
+        "label": null,
+        "line": "$150"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "護理程序",
+    "name": "24小時血壓監測",
+    "prices": [
+      {
+        "raw": "$2,000",
+        "value": 2000,
+        "label": null,
+        "line": "$2,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "護理程序",
+    "name": "24小時動態心電圖",
+    "prices": [
+      {
+        "raw": "$3,200",
+        "value": 3200,
+        "label": null,
+        "line": "$3,200"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "上石膏",
+    "prices": [
+      {
+        "raw": "$1,500",
+        "value": 1500,
+        "label": null,
+        "line": "$1,500"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "拆除石膏",
+    "prices": [
+      {
+        "raw": "$800",
+        "value": 800,
+        "label": null,
+        "line": "$800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "二氧化碳激光治療",
+    "prices": [
+      {
+        "raw": "$3,400-$4,100",
+        "value": {
+          "min": 3400,
+          "max": 4100,
+          "raw": "$3,400-$4,100"
+        },
+        "label": null,
+        "line": "$3,400-$4,100"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "冷凍治療",
+    "prices": [
+      {
+        "raw": "$1,760",
+        "value": 1760,
+        "label": null,
+        "line": "$1,760"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "耳道顯微吸垢術",
+    "prices": [
+      {
+        "raw": "$1,200",
+        "value": 1200,
+        "label": null,
+        "line": "$1,200"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "置入子宮環",
+    "prices": [
+      {
+        "raw": "$990",
+        "value": 990,
+        "label": null,
+        "line": "$990"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "移除子宮環",
+    "prices": [
+      {
+        "raw": "$1,000",
+        "value": 1000,
+        "label": null,
+        "line": "$1,000"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "腫塊/病灶切除術",
+    "prices": [
+      {
+        "raw": "$4,800",
+        "value": 4800,
+        "label": null,
+        "line": "$4,800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "小手術",
+    "prices": [
+      {
+        "raw": "$1,650",
+        "value": 1650,
+        "label": null,
+        "line": "$1,650"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "鼻內視鏡檢查",
+    "prices": [
+      {
+        "raw": "$1,500",
+        "value": 1500,
+        "label": null,
+        "line": "$1,500"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "拆線",
+    "prices": [
+      {
+        "raw": "$510",
+        "value": 510,
+        "label": null,
+        "line": "$510"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "治療程序",
+    "name": "急救處理 (每30分鐘計)",
+    "prices": [
+      {
+        "raw": "$8,250",
+        "value": 8250,
+        "label": null,
+        "line": "$8,250"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "2D 乳房 X 光造影",
+    "prices": [
+      {
+        "raw": "$1,910",
+        "value": 1910,
+        "label": null,
+        "line": "$1,910"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "3D 乳房 X 光造影",
+    "prices": [
+      {
+        "raw": "$3,800",
+        "value": 3800,
+        "label": null,
+        "line": "$3,800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "心臟超聲波檢查",
+    "prices": [
+      {
+        "raw": "$2,090",
+        "value": 2090,
+        "label": null,
+        "line": "$2,090"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "超聲波檢查 (單一部位)",
+    "prices": [
+      {
+        "raw": "$2,530-$2,730",
+        "value": {
+          "min": 2530,
+          "max": 2730,
+          "raw": "$2,530-$2,730"
+        },
+        "label": null,
+        "line": "$2,530-$2,730"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "X 光檢查 (單一影像)",
+    "prices": [
+      {
+        "raw": "$560",
+        "value": 560,
+        "label": null,
+        "line": "$560"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "心電圖",
+    "prices": [
+      {
+        "raw": "$600",
+        "value": 600,
+        "label": null,
+        "line": "$600"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "運動心電圖 (踏板測試)",
+    "prices": [
+      {
+        "raw": "$2,800",
+        "value": 2800,
+        "label": null,
+        "line": "$2,800"
+      }
+    ]
+  },
+  {
+    "section": "明德醫療中心（中環）",
+    "subsection": "診斷服務",
+    "name": "肝纖維化掃描",
+    "prices": [
+      {
+        "raw": "$1,680",
+        "value": 1680,
+        "label": null,
+        "line": "$1,680"
+      }
+    ]
+  }
+]

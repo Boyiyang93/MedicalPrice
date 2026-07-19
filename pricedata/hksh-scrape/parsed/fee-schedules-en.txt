@@ -1,0 +1,8 @@
+Fee Schedules
+Charges on Ward Accommodation
+Operating Theatre Charges
+Charges for Common Nursing Procedures
+Charges for Outpatient and/or Specialist Clinics Consultations
+Charges for Investigative and Treatment Procedures
+Charges for Medical Reports and Photocopies of Medical Records
+<ul class="links inline"

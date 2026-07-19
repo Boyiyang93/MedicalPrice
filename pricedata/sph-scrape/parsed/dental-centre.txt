@@ -1,0 +1,5 @@
+id="charges-detail" class="inner-section-div v-20">
+牙科中心服務收費 (成人 – 18歲以上)
+牙科中心服務收費 (兒童 – 18歲以下)
+前往牙科中心
+<div id="charges-detail-other"

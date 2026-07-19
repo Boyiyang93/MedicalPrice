@@ -1,0 +1,8 @@
+Price List
+Department of Diagnostic & Interventional Radiology
+Computed Tomography (CT Scan)
+General Radiography
+Lithotripsy
+Magnetic Resonance Imaging (MRI)
+Ultrasound
+<ul class="links inline"

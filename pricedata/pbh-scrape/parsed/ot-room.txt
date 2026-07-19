@@ -1,0 +1,47 @@
+Item 項目
+Standard Room / 
+Day Ward
+標準房 / 
+日間病房
+HK$
+Semi-Private Twin Room /
+Semi-Private Single Room
+半私家雙人房 /
+半私家單人房
+HK$
+Private
+Room
+單人房
+HK$
+Outpatient
+門診
+HK$
+Every 15 mins 
+每15分鐘
+1,000
+1,250
+1,500
+-
+Every 15 mins 
+每15分鐘
+280
+350
+420
+-
+Remarks
+(1) All special instrument, equipment, medication and consumable for operation are NOT included.
+(2) A 100% surcharge would be levied on non-office hours.
+(3) Non-office hours are defined as 10pm to 8am daily, and for the whole day on Sundays and public holidays.
+(4) Surcharge would be levied when a patient undertakes multiple surgical procedures.
+備註:
+(1) 上述收費不包括所需用的手術儀器、物品、藥費和物料等費用。
+(2) 非辦公時間，將會額外收取100%附加費。
+(3) 非辦公時間為每日晚上十時至翌日八時、星期日及公眾假期全日。
+(4) 如病人同時進行多項手術程序，將會額外收取附加費用。
+ADM/INFO/009/V2/MAY2025
+Operation Theatre Charges
+手術室費用
+Recovery Care 
+復甦護理
+Operating Theatre Room Charges
+手術室費用

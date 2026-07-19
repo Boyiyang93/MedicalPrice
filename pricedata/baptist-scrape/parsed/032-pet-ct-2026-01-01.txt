@@ -1,0 +1,25 @@
+--- page 1 ---
+Outpatient /
+Standard
+門診 / 標準房
+Semi-Private
+半私家房
+Private
+私家房
+Whole Body (Plain)
+全身軀幹 (掃描)
+$16,815
+$21,019
+$25,223
+Whole Body (Contrast)
+全身驅幹 (掃描 + 顯影)
+$19,325
+$24,156
+$28,988
+Enquiries 查詢: 2339 7428-9
+PET-CT Scanning 正電子及電腦雙融掃描
+The above table only shows the common items of PET-CT Scanning for reference. Please contact the
+department for further details.
+此收費表只列出常見之正電子及電腦雙融掃描項目以作參考。如有需要請向本部門查詢詳
+情。
+       Revision Date/更新日期：01/01/2026
