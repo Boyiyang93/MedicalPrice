@@ -1,0 +1,38 @@
+{
+  "policy": "hospital scrape > Bowtie; only filled 9999999",
+  "fetched": 37,
+  "failed_fetch": [
+    "中大醫院-pet-正電子掃描-收費",
+    "深圳和睦家醫院-手術費"
+  ],
+  "applied": [
+    "ct_brain.ghk",
+    "mri_brain.ghk",
+    "gastroscopy.baptist",
+    "gastroscopy.canossa",
+    "gastroscopy.sph",
+    "gastroscopy.twah",
+    "colonoscopy.sth",
+    "colonoscopy.union",
+    "colonoscopy.canossa",
+    "colonoscopy.sph",
+    "colonoscopy.evangel",
+    "colonoscopy.twah",
+    "colonoscopy.hkah",
+    "dual_scope.sth",
+    "dual_scope.baptist",
+    "dual_scope.canossa",
+    "dual_scope.sph",
+    "dual_scope.evangel",
+    "dual_scope.twah",
+    "dual_scope.hkah"
+  ],
+  "n": 20,
+  "notes": [
+    "A 醫院總覽：門診/病房已有一手 scrape，僅归档 pricedata/bowtie-encyclopedia-2026/",
+    "B 内镜：缺口已补；union/hkah gastro、hksh/matilda colon 仍 Coming Soon",
+    "C 影像：港怡 CT/MRI 脑部已补；cuhk CT、canossa CT/MRI 仍缺",
+    "E 手术：仍为既有 13院×7术式（已重跑 bowtie-surgery）；无额外新术式可写 db",
+    "union dual_scope 仅设施费，未写入"
+  ]
+}

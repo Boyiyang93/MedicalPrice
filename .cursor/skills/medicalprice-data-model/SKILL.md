@@ -7,7 +7,7 @@ description: MedicalPrice db.js data schema conventions, hospital IDs, placehold
 
 ## Hospital IDs (required in spreadsheet `hospital_id` column)
 
-szufh, cuhk, hksh, ghk, matilda, sth, baptist, union, canossa, sph, pbh, evangel, twah, hkah
+szufh, cuhk, hksh, ghk, matilda, sth, baptist, union, canossa, sph, pbh, evangel, twah, hkah, sysu7, donghua
 
 ## Hospital ownership (`ownership` on each hospital meta)
 
@@ -63,4 +63,8 @@ User provides tables per specialty: start with 2 hospitals, then add one hospita
 - Evangel (播道): `pricedata/evangel-scrape/`
 - TWAH (荃湾港安): `pricedata/twah-scrape/`
 - HKAH (港安司徒拔道): `pricedata/hkah-scrape/`
+- SYSU7 (中山七院深圳): `pricedata/sysu7-scrape/`
+- Donghua (东莞东华): `pricedata/donghua-scrape/`
+- Bowtie 13院手术比价对冲/补填: `pricedata/bowtie-surgery-2026/`（COMPARE.md；二手汇总，非一手官网）
+- Bowtie 私家醫院百科 A/B/C/E 归档与补洞: `pricedata/bowtie-encyclopedia-2026/`（raw/text + COMPARE.md；一手 scrape 优先）
 - See also `references/ghk-general-surgery-scrape.md`

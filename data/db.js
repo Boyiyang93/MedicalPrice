@@ -712,8 +712,11 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 169295,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$157,309 – $181,281",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
@@ -781,8 +784,11 @@ const globalMedicalData = {
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 121520,
+        priceLabel: "腹腔鏡膽囊切除術",
+        displayPrice: "HK$91,000 – $152,040",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       breast_lump: {
@@ -803,8 +809,11 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 96693,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$96,693",
+        remarks: "⚠️ 2025年先導計劃歷史賬目中位數（普通房）。總收費=醫生費+醫院費。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-charges/historical-bill-sizes-statistics"
       },
 
       ghk: {
@@ -816,18 +825,27 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 68262,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$46,967 – $89,556",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 69825,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$59,930 – $79,720",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 90634,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$64,955 – $116,314",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -839,33 +857,51 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 104181,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$62,349 – $146,013",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.canossahospital.org.hk/tc/fee/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 76746,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$76,746",
+        remarks: "⚠️ 2025年歷史賬目（標準房）五十分位總收費。總收費=醫生費+醫院費。平均住院約1.0日。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 37242,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$37,242",
+        remarks: "⚠️ 2025年常見手術參考（標準房）五十分位總收費。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 64058,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$51,954 – $76,162",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 89381,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$64,350 – $114,412",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 93026,
+        priceLabel: "乳房腫塊切除術",
+        displayPrice: "HK$79,395 – $106,658",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       circumcision: {
@@ -886,8 +922,11 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 51242,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$42,814 – $59,669",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -899,53 +938,83 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 34090,
+        priceLabel: "包皮環切術（全面護理套餐）",
+        displayPrice: "HK$34,090 – $57,230",
+        remarks: "✓ 明德全面護理套餐（含醫生費，標準/雙人/私家房）。",
+        link: "https://www.matilda.org/fees-and-packages/general-survery/circumcision-package?hsLang=zh-hk"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 31748,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$30,823 – $32,672",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 31358,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$27,624 – $35,092",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 13000,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$13,000",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.union.org/tc/charges-promotion/charges"
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 48060,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$48,060",
+        remarks: "⚠️ 2025年常見程序參考費用（普通病房）五十分位總收費。總收費=醫生費+醫院費。",
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 32229,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$27,507 – $36,951",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 26241,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$25,114 – $27,368",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 23524,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$21,240 – $25,807",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 45089,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$41,798 – $48,380",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 45612,
+        priceLabel: "包皮環切術",
+        displayPrice: "HK$41,056 – $50,167",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       thyroid_fna: {
@@ -1277,8 +1346,11 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 118083,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$102,575 – $133,591",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -1290,48 +1362,75 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 81980,
+        priceLabel: "腹股溝疝氣切除術（腹腔鏡單邊）",
+        displayPrice: "HK$81,980 – $141,670",
+        remarks: "✓ 明德全面護理套餐（含醫生費；不含人工網膜）。標準/雙人/私家房。",
+        link: "https://www.matilda.org/fees-and-packages/general-survery/inguinal-hernia-repair-package?hsLang=zh-hk"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 91463,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$80,987 – $101,939",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 98178,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$78,214 – $118,141",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 82490,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$72,510 – $92,470",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.union.org/tc/charges-promotion/charges"
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 118319,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$118,319",
+        remarks: "⚠️ 2025年常見程序參考費用（普通病房）腹腔鏡疝修補五十分位總收費。",
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 81323,
+        priceLabel: "腹腔鏡腹股溝疝修補術",
+        displayPrice: "HK$81,323",
+        remarks: "⚠️ 2025年歷史賬目（標準房）五十分位總收費。總收費=醫生費+醫院費。平均住院約1.0日。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 55272,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$55,272",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 92132,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$71,734 – $112,531",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 65454,
+        priceLabel: "腹腔鏡腹股溝疝修補術（單側）",
+        displayPrice: "HK$65,454",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -1509,13 +1608,19 @@ const globalMedicalData = {
       },
 
       cuhk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 61747,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$58,962 – $64,532",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.cuhkmc.hk/"
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 66988,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$56,723 – $77,252",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -1527,18 +1632,27 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 44000,
+        priceLabel: "痔瘡切除術（傳統・全面護理套餐）",
+        displayPrice: "HK$44,000 – $75,850",
+        remarks: "✓ 明德全面護理套餐（含醫生費，標準/雙人/私家房）。痔瘡槍套餐另計。",
+        link: "https://www.matilda.org/fees-and-packages/general-survery/haemorrhoidectomy-package?hsLang=zh-hk"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 42417,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$42,417",
+        remarks: "⚠️ 2025年歷史統計（標準房）五十分位總收費。總收費=醫生費+醫院費。平均住院約1.5日。",
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 50163,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$50,163 – $53,372",
+        remarks: "⚠️ 2025年歷史統計（標準房）。總收費=醫生費+醫院費。日間手術五十分位約 HK$36,206。",
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -1550,33 +1664,51 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 61892,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$61,892",
+        remarks: "⚠️ 2025年常見程序參考費用（普通病房）五十分位總收費。總收費=醫生費+醫院費。",
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 49935,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$49,935",
+        remarks: "⚠️ 2025年歷史賬目（標準房）五十分位總收費。總收費=醫生費+醫院費。平均住院約1.0日。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 38932,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$33,058 – $44,807",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 37000,
+        priceLabel: "痔瘡切除術（普通房套餐）",
+        displayPrice: "HK$37,000 – $55,000",
+        remarks: "✓ 播道套餐（普通房，傳統約$37,000／痔瘡槍約$55,000，約2日1夜）。歷史統計五十分位另有偏高紀錄，以套餐口徑為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 70732,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$70,732",
+        remarks: "⚠️ 2025年常見手術統計（標準房）五十分位總收費。總收費含醫生費及醫院費。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 69823,
+        priceLabel: "痔瘡切除術",
+        displayPrice: "HK$48,335 – $91,311",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       thyroid_surgery: {
@@ -1941,8 +2073,11 @@ const globalMedicalData = {
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 18921,
+        priceLabel: "日間胃鏡 ± 瘜肉切除（歷史中位）",
+        displayPrice: "HK$18,921",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2024–2025 日間手術五十分位總收費（醫生+醫院）。套餐參考另見 Bowtie：AMC 約 HK$7,600 – $9,400。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -1951,13 +2086,19 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 10480,
+        priceLabel: "日間淨胃鏡（鎮靜麻醉）",
+        displayPrice: "HK$10,480 – $12,800",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 門診／普通房套餐；監測麻醉約 HK$12,800。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 14000,
+        priceLabel: "日間胃鏡總收費中位（連醫生費）",
+        displayPrice: "HK$14,000 – $15,000",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間門診總收費中位數；醫院基本設施費另見官價約 HK$2,300。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       pbh: {
@@ -1977,8 +2118,11 @@ const globalMedicalData = {
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 11588,
+        priceLabel: "日間手術中心胃內窺鏡套餐",
+        displayPrice: "HK$11,588 – $15,100",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間套餐起價；瘜肉／化驗另計。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%8D%83%E7%81%A3%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       hkah: {
@@ -2024,8 +2168,11 @@ const globalMedicalData = {
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 18973,
+        priceLabel: "日間腸鏡（歷史中位總收費）",
+        displayPrice: "HK$18,973",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計日間總收費五十分位（標準房）。Bowtie 日間套餐另列約 HK$10,070 起。",
+        link: "https://www.sth.org.hk/"
       },
 
       baptist: {
@@ -2037,18 +2184,27 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 21490,
+        priceLabel: "日間腸鏡總收費中位",
+        displayPrice: "HK$21,490 – $24,800",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間手術中心第50/90百分位總收費；設施費另約 HK$4,600（不含醫生費）。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E4%BB%81%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 12610,
+        priceLabel: "日間大腸鏡（鎮靜麻醉・不連瘜肉）",
+        displayPrice: "HK$12,610 – $15,520",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 定額日間套餐；監測麻醉約 HK$15,520。連≤3粒瘜肉另計。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 20449,
+        priceLabel: "日間大腸鏡總收費中位",
+        displayPrice: "HK$20,449",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間手術總費用中位數；門診／標準房基本設施費約 HK$5,688（不含醫生費）。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       pbh: {
@@ -2060,18 +2216,27 @@ const globalMedicalData = {
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 15500,
+        priceLabel: "日間全面護理套餐（大腸鏡）",
+        displayPrice: "HK$15,500",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 日間全面護理套餐（含醫生及麻醉）；門診醫院收費約 HK$4,100。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 46678,
+        priceLabel: "日間大腸鏡（歷史中位總收費）",
+        displayPrice: "HK$46,678",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計日間總收費五十分位。Bowtie 日間套餐另列約 HK$12,940 – $15,850。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 31838,
+        priceLabel: "大腸鏡檢查（含／不含瘜肉）參考區間",
+        displayPrice: "HK$31,838 – $41,702",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 預估區間（含或不含瘜肉）；實際以醫院書面估價為準。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E9%A6%99%E6%B8%AF%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       }
       },
       dual_scope: {
@@ -2112,13 +2277,19 @@ const globalMedicalData = {
       },
 
       sth: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 36194,
+        priceLabel: "日間胃腸鏡聯查（歷史中位）",
+        displayPrice: "HK$36,194",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計日間雙鏡總收費五十分位。Bowtie 套餐另列約 HK$18,160 起。",
+        link: "https://www.sth.org.hk/"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 39766,
+        priceLabel: "日間胃鏡＋腸鏡（歷史中位）",
+        displayPrice: "HK$39,766",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 日間手術五十分位總收費。Bowtie AMC 組合套餐另列約 HK$16,700 – $20,000。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -2127,13 +2298,19 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 17990,
+        priceLabel: "日間淨胃鏡＋大腸鏡（鎮靜）",
+        displayPrice: "HK$17,990",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 門診／普通房鎮靜麻醉合併套餐。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 35000,
+        priceLabel: "日間腸胃鏡同照總收費中位",
+        displayPrice: "HK$35,000",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間門診總收費中位數約 HK$35,000。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       },
 
       pbh: {
@@ -2145,18 +2322,27 @@ const globalMedicalData = {
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 26500,
+        priceLabel: "日間全面護理套餐（胃＋腸）",
+        displayPrice: "HK$26,500",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 日間全面護理合併套餐；門診醫院收費約 HK$6,100。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 57452,
+        priceLabel: "日間胃＋腸鏡（歷史中位總收費）",
+        displayPrice: "HK$57,452",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計日間雙鏡總收費五十分位。Bowtie 組合約 HK$26,130 起。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額內窺鏡資料整理中。"
+        price: 48907,
+        priceLabel: "胃鏡＋大腸鏡合併套餐參考",
+        displayPrice: "HK$48,907 – $56,918",
+        remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 合併套餐預估區間。",
+        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E9%A6%99%E6%B8%AF%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
       }
       },
       bronchoscopy: {
@@ -2259,8 +2445,11 @@ const globalMedicalData = {
           link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list"
         },
         ghk: {
-          price: 9999999,
-          remarks: "CT 腦部掃描資料整理中。"
+          price: 2200,
+          priceLabel: "CT 腦部平掃（門診／普通房）",
+          displayPrice: "HK$2,200 – $2,970",
+          remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 加顯影約 HK$3,690 – $5,220。",
+          link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E6%B8%AF%E6%80%A1%E9%86%AB%E9%99%A2-ct-%E9%9B%BB%E8%85%A6%E6%8E%83%E6%8F%8F-%E6%94%B6%E8%B2%BB/"
         },
         matilda: {
           price: 2800,
@@ -2358,8 +2547,11 @@ const globalMedicalData = {
           link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list"
         },
         ghk: {
-          price: 9999999,
-          remarks: "MRI 腦部掃描資料整理中。"
+          price: 8460,
+          priceLabel: "MRI 腦部平掃（門診／標準房）",
+          displayPrice: "HK$8,460 – $13,590",
+          remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 平掃 HK$8,460；加顯影約 HK$13,590。",
+          link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E6%B8%AF%E6%80%A1%E9%86%AB%E9%99%A2-mri-%E7%A3%81%E5%8A%9B%E5%85%B1%E6%8C%AF-%E6%94%B6%E8%B2%BB/"
         },
         matilda: {
           price: 6930,
@@ -3380,28 +3572,43 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 201626,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$166,314 – $236,938",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 127050,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$104,133 – $149,966",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://gleneagles.hk/tc/fee-charges/"
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 209560,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$173,262 – $245,859",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 110426,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$94,685 – $126,168",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 142690,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$113,371 – $172,008",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -3413,33 +3620,51 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 165084,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$123,299 – $206,870",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.canossahospital.org.hk/tc/fee/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 132970,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$107,343 – $158,596",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 82562,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$74,420 – $90,704",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 109597,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$93,149 – $126,045",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 137469,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$120,487 – $154,451",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 135258,
+        priceLabel: "切開復位內固定術（上肢）",
+        displayPrice: "HK$124,786 – $145,730",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       carpal_tunnel: {
@@ -3681,28 +3906,43 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 185814,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$170,666 – $200,963",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 119110,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$100,300 – $137,919",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://gleneagles.hk/tc/fee-charges/"
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 224570,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$187,686 – $261,455",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 117353,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$98,395 – $136,311",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh"
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 155102,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$119,558 – $190,646",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -3714,33 +3954,51 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 183856,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$139,411 – $228,301",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.canossahospital.org.hk/tc/fee/"
       },
 
       sph: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 132970,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$107,343 – $158,596",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 96889,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$83,974 – $109,804",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 114275,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$106,735 – $121,815",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 144068,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$128,211 – $159,926",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 136843,
+        priceLabel: "切開復位內固定術（下肢）",
+        displayPrice: "HK$125,386 – $148,300",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       hip_replacement: {
@@ -4287,8 +4545,11 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 30225,
+        priceLabel: "白內障超聲乳化+人工晶體植入",
+        displayPrice: "HK$25,230 – $35,220",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -4310,8 +4571,11 @@ const globalMedicalData = {
       },
 
       baptist: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 23800,
+        priceLabel: "白內障超聲乳化+人工晶體植入",
+        displayPrice: "HK$23,800",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.hkbh.org.hk/fees-charges/"
       },
 
       union: {
@@ -4328,23 +4592,35 @@ const globalMedicalData = {
       },
 
       sph: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 31510,
+        priceLabel: "白內障超聲乳化+人工晶體植入",
+        displayPrice: "HK$28,250 – $34,770",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 21492,
+        priceLabel: "白內障超聲乳化+人工晶體植入",
+        displayPrice: "HK$20,599 – $22,384",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 21800,
+        priceLabel: "白內障超聲乳化+人工晶體植入（單眼套餐）",
+        displayPrice: "HK$21,800 – $22,800",
+        remarks: "✓ 播道套餐價（列表價約$22,800；推廣約$21,800）。實際晶體級別與是否日間依估價單為準。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
-        price: 9999999,
-        remarks: "眼科手術資料整理中。"
+        price: 21362,
+        priceLabel: "白內障超聲乳化+人工晶體植入",
+        displayPrice: "HK$18,093 – $24,631",
+        remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
