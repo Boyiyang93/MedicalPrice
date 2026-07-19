@@ -1,0 +1,79 @@
+{
+  "hospital_id": "donghua",
+  "name": "东莞东华医院",
+  "scraped_at": "2026-07-19",
+  "currency": "CNY",
+  "ownership": "nonprofit",
+  "notes": [
+    "非公立非营利三级医院；官网写明参照东莞市医保局一档价格执行，并依法可自主定价",
+    "东莞市与松山湖东华医院医疗服务价格公示页内容实质相同",
+    "官网 HTML 公示表仍含旧版 CT/MRI 条目（平扫 270/788）；立项指南新价（一档）已于 2026-03-30 更新至目录 —— key-prices 以新目录一档为主，并保留官网旧表对照",
+    "胆囊切除术 1820 仅为手术项目费，非住院总账单"
+  ],
+  "sources": {
+    "home": "https://www.dgtungwah.com/home.html",
+    "price_notice": "https://www.dgtungwah.com/openview/1969.html",
+    "ssl_price_notice": "https://www.dgssltungwah.com/openview/1648.html",
+    "dg_catalog": "https://www.dg.gov.cn/attachment/0/423/423336/4259839.xlsx"
+  },
+  "outpatient": {
+    "regular": 14,
+    "night": 19,
+    "holiday": 19,
+    "display": {
+      "regular": "￥14（普通）+职称加收 ￥5/￥11/￥66",
+      "night": "￥19（急诊诊查费·普通）",
+      "holiday": "￥19（急诊）"
+    },
+    "tiers_tier1": {
+      "普通门诊": 14,
+      "加副主任": 5,
+      "加主任": 11,
+      "加知名专家": 66,
+      "急诊普通": 19
+    },
+    "remarks": "东莞立项指南综合诊查类一档（2026-03-30）。职称加收叠加。不含药费及检查。"
+  },
+  "ward": {
+    "standard": 69,
+    "semiPrivate": 87,
+    "private": null,
+    "ranges": {
+      "standard": "￥56 – ￥69（多人/三人）",
+      "semiPrivate": "￥87（二人间）",
+      "private": "单人间市场调节价（医院自定，官网未列）"
+    },
+    "beds_tier1": {
+      "多人间": 56,
+      "三人间": 69,
+      "二人间": 87,
+      "单人间": "市场调节价"
+    },
+    "remarks": "立项指南床位费一档。单人间自主定价，本档未抓到院内标价。"
+  },
+  "ct_brain": {
+    "plain": 231,
+    "contrast": 305,
+    "unit": "部位",
+    "official_html_old": {"plain": 270, "contrast": 390},
+    "remarks": "目录一档 CT 平扫￥231 / 增强￥305。官网旧表曾列平扫￥270 / 增强￥390。"
+  },
+  "mri_brain": {
+    "plain": 505,
+    "contrast": 550,
+    "unit": "部位",
+    "official_html_old": {"plain_1_5T_plus": 788, "contrast_1_5T_plus": 864},
+    "remarks": "目录一档 MR 平扫￥505 / 增强￥550。官网旧表曾列 1.5T 以上平扫￥788 / 增强￥864。"
+  },
+  "gastroscopy": {
+    "price": 260,
+    "label": "电子胃十二指肠镜检查（含活检刷检）",
+    "colonoscopy": 353,
+    "remarks": "基本项目一档；经胃镜特殊治疗另计￥400 起。"
+  },
+  "cholecystectomy": {
+    "price": 1820,
+    "label": "胆囊切除术（手术项目费）",
+    "remarks": "仅手术操作项目费，不含床位/麻醉/耗材/总住院费。"
+  }
+}

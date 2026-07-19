@@ -52,10 +52,17 @@
             </div>
         </section>
 
-        <!-- 專科模組 -->
+        <!-- 專科手術／檢查套餐 -->
         <section id="specialties" class="space-y-4">
-            <div class="section-heading">按專科查看套餐價格</div>
+            <div class="section-heading">按專科查看手術及檢查套餐</div>
             <div class="specialty-grid" id="module-grid"></div>
+        </section>
+
+        <!-- 門診及床位費（基礎住院前收費） -->
+        <section id="baseline-fees" class="space-y-4">
+            <div class="section-heading">門診診金及病房床位費</div>
+            <p class="text-sm text-gray-500 -mt-1">入院前常見的兩項基礎收費：門診診金與各級病房日租，方便先估算住院以外的日常開支。</p>
+            <div class="specialty-grid" id="baseline-grid"></div>
         </section>
 
         <!-- 文章 -->
@@ -175,9 +182,7 @@
     </footer>
 
     <script>
-        var MODULES = [
-            { key: 'outpatient', emoji: '🏥', title: '門診費用', desc: '全港全科及專科門診登記費、診金及常見藥費比較。', accent: '#2563EB', bg: '#EFF6FF', wide: true },
-            { key: 'ward', emoji: '🛏️', title: '私家醫院', desc: '全港主要私家醫院各級病房日租比較（普通／半私家／私家房）。', accent: '#2563EB', bg: '#EFF6FF', wide: true },
+        var SPECIALTY_MODULES = [
             { key: 'imaging', emoji: '🔬', title: '內窺鏡與影像掃描', desc: '胃鏡、大腸鏡、CT 及 MRI 等檢查套餐價格。', accent: '#7C3AED', bg: '#F5F3FF' },
             { key: 'gyn', emoji: '👩', title: '婦產科', desc: '順產與剖腹產套餐價格比較。', accent: '#DB2777', bg: '#FDF2F8' },
             { key: 'general-surgery', emoji: '✂️', title: '外科', desc: '腹腔鏡膽囊切除等日間手術套餐價格。', accent: '#1E40AF', bg: '#DBEAFE' },
@@ -190,9 +195,15 @@
             { key: 'urology', emoji: '💧', title: '泌尿外科', desc: '前列腺、泌尿結石及膀胱鏡檢查套餐價格。', accent: '#0284C7', bg: '#E0F2FE' }
         ];
 
-        function renderModules() {
-            var grid = document.getElementById('module-grid');
-            grid.innerHTML = MODULES.map(function (m) {
+        var BASELINE_MODULES = [
+            { key: 'outpatient', emoji: '🏥', title: '門診費用', desc: '全港全科及專科門診登記費、診金及常見藥費比較。', accent: '#2563EB', bg: '#EFF6FF', wide: true },
+            { key: 'ward', emoji: '🛏️', title: '私家醫院病房', desc: '全港主要私家醫院各級病房日租比較（普通／半私家／私家房）。', accent: '#2563EB', bg: '#EFF6FF', wide: true }
+        ];
+
+        function renderModuleCards(containerId, modules) {
+            var grid = document.getElementById(containerId);
+            if (!grid) return;
+            grid.innerHTML = modules.map(function (m) {
                 var cls = 'specialty-card' + (m.wide ? ' specialty-card-span-2' : '');
                 return '<button type="button" class="' + cls + '" style="--card-accent:' + m.accent + ';--card-bg:' + m.bg + '" onclick="navigateTo(\'' + m.key + '\')" aria-label="查看' + m.title + '收費比較">' +
                     '<div class="specialty-card-icon" aria-hidden="true">' + m.emoji + '</div>' +
@@ -201,6 +212,11 @@
                     '<div class="specialty-card-cta">查看收費比較 →</div>' +
                     '</button>';
             }).join('');
+        }
+
+        function renderModules() {
+            renderModuleCards('module-grid', SPECIALTY_MODULES);
+            renderModuleCards('baseline-grid', BASELINE_MODULES);
         }
 
         function getFilterParams() {

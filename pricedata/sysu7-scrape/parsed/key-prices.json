@@ -1,0 +1,82 @@
+{
+  "hospital_id": "sysu7",
+  "name": "中山大学附属第七医院（深圳）",
+  "scraped_at": "2026-07-19",
+  "currency": "CNY",
+  "ownership": "public",
+  "notes": [
+    "公立三级，执行深圳市一档政府指导价",
+    "院内物价查询系统 wjgs.sysush.com 前端可开但接口暂无数据返回",
+    "CT/MRI 本院未单独网页公示；采用广东省放射检查类全省最高限价（粤医保发〔2025〕5号，2025-04-30起），深圳市三级医院一档通常按此落地；入院以窗口/缴费清单为准",
+    "手术无香港式「全包总账单」历史统计；胆囊等仅有项目费层级需另查"
+  ],
+  "sources": {
+    "home": "https://www.sysush.com/",
+    "outpatient_guide": "https://www.sysush.com/content/707f1b1a-0a95-42b1-b6cd-fcccb03981de",
+    "inpatient_guide": "https://www.sysush.com/content/694216d1-5001-4f54-b555-9f6b8784d473",
+    "price_index": "https://www.sysush.com/content/05b02725-ef96-45ea-b88e-5157096e95b3",
+    "wjgs": "https://wjgs.sysush.com/",
+    "special_need": "https://www.sysush.com/content/70d85e28-460f-4e44-a0be-241a205ec51c",
+    "gd_radiology_xlsx": "http://hsa.gd.gov.cn/attachment/0/577/577904/4698270.xlsx"
+  },
+  "outpatient": {
+    "regular": 25,
+    "night": 25,
+    "holiday": 25,
+    "display": {
+      "regular": "￥25（普通）/ ￥33（副高）/ ￥50（正高）",
+      "night": "￥25 起（24h急诊；特需另计）",
+      "holiday": "￥25 起"
+    },
+    "tiers": {
+      "普通门诊": 25,
+      "副主任医师": 33,
+      "主任医师": 50,
+      "名专家门诊": 100,
+      "特需副主任": 500,
+      "特需主任": 800,
+      "特需名专家": 1000
+    },
+    "remarks": "门诊须知诊查费。不含药费、化验及检查。特需一口价见特需公示表。"
+  },
+  "ward": {
+    "standard": 60,
+    "semiPrivate": 1500,
+    "private": 2500,
+    "ranges": {
+      "standard": "￥60（医保床位标准参考）",
+      "semiPrivate": "￥1,500（特需高端单人间）",
+      "private": "￥1,500 – ￥5,000（特需单人/套间）"
+    },
+    "special_beds": {
+      "高端单人间": 1500,
+      "高端套间": 2500,
+      "特需高端套间": 5000,
+      "新生儿特需": 160
+    },
+    "remarks": "普通床位费以住院须知医保报销标准￥60/日为参考；特需A级单人病房床位一口价见特需公示表。"
+  },
+  "ct_brain": {
+    "plain": 231,
+    "contrast": 305,
+    "unit": "部位",
+    "remarks": "参考省最高限价 CT 平扫￥231 / 增强￥305（同部位平扫后立即增强按50%）。对比剂另计。"
+  },
+  "mri_brain": {
+    "plain": 505,
+    "contrast": 550,
+    "unit": "部位",
+    "remarks": "参考省最高限价 MR 平扫￥505 / 增强￥550（同部位平扫后立即增强按50%）。对比剂另计。"
+  },
+  "gastroscopy_special": {
+    "price": 983,
+    "label": "电子胃十二指肠镜检查（特需）",
+    "remarks": "特需一口价（公示表），耗材口径见 PDF。"
+  },
+  "nursing_special": {
+    "grade1": 330,
+    "grade2": 280,
+    "grade3": 210,
+    "unit": "日"
+  }
+}
