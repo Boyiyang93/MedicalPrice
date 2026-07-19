@@ -732,6 +732,97 @@ section.is-favorited > .lane-container {
   border-top: 4px solid var(--mp-brand-title);
 }
 
+/* Homepage macro-data: auto-scrolling top surgery costs */
+.cost-ticker {
+  position: relative;
+  flex: 1;
+  min-height: 220px;
+  max-height: 240px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);
+}
+
+.cost-ticker-track {
+  display: flex;
+  flex-direction: column;
+  animation: cost-ticker-scroll 36s linear infinite;
+  will-change: transform;
+}
+
+.cost-ticker:hover .cost-ticker-track,
+.cost-ticker:focus-within .cost-ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes cost-ticker-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cost-ticker {
+    mask-image: none;
+    -webkit-mask-image: none;
+    max-height: none;
+    overflow: visible;
+  }
+  .cost-ticker-track {
+    animation: none;
+  }
+}
+
+.cost-ticker-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 10px 2px 12px;
+  border-bottom: 1px solid var(--mp-hairline-soft);
+  font-size: 14px;
+}
+
+.cost-ticker-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.cost-ticker-rank {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--mp-ink-muted);
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+.cost-ticker-name {
+  display: block;
+  font-weight: 700;
+  color: var(--mp-ink);
+  line-height: 1.3;
+}
+
+.cost-ticker-detail {
+  display: block;
+  font-size: 10px;
+  color: var(--mp-ink-muted);
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.cost-ticker-price {
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 900;
+  color: var(--mp-brand-primary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
 /* ── Surgery module cross-navigation ── */
 .surgery-module-nav--chips {
   margin-bottom: 1.5rem;

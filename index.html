@@ -33,10 +33,11 @@
                 <button type="button" onclick="handleSearch()" class="bg-[#2B579A] text-white px-8 rounded-lg font-bold hover:bg-[#1D4E89] transition-colors cursor-pointer">搜尋</button>
             </div>
 
-            <div class="filter-box grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+            <!-- 首页筛选栏暂隐藏；保留 DOM 供专页跳转默认参数 -->
+            <div class="filter-box grid grid-cols-1 sm:grid-cols-2 gap-4 text-left hidden" aria-hidden="true">
                 <div>
                     <label for="insurance-select" class="block text-xs font-bold text-gray-500 mb-1">🛡️ 您的醫療保險計劃</label>
-                    <select id="insurance-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]">
+                    <select id="insurance-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]" tabindex="-1">
                         <option value="none">沒有醫療保險（全額自付）</option>
                         <option value="vhis-std" selected>VHIS 標準計劃</option>
                         <option value="vhis-adv">VHIS 靈活／高端計劃</option>
@@ -44,7 +45,7 @@
                 </div>
                 <div>
                     <label for="time-select" class="block text-xs font-bold text-gray-500 mb-1">⏱️ 預計就診時間</label>
-                    <select id="time-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]">
+                    <select id="time-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]" tabindex="-1">
                         <option value="regular" selected>平日辦公時間</option>
                         <option value="holiday">非辦公時間及公眾假期（急症附加費）</option>
                     </select>
@@ -112,7 +113,7 @@
 
         <!-- 醫療基準數據 -->
         <section id="macro-data" class="space-y-4">
-            <div class="section-heading">公營醫院收費參考及常見重病治療開支</div>
+            <div class="section-heading">公營醫院收費參考及常見手術開支</div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="stat-panel stat-panel-public flex flex-col">
@@ -122,7 +123,7 @@
                             <div class="text-xs font-bold text-gray-400 mb-2 border-b pb-1">符合資格人士 (香港居民)</div>
                             <div class="flex justify-between mb-1"><span>急症室診症：</span><span class="font-bold text-red-600">HK$ 400</span></div>
                             <div class="flex justify-between mb-1"><span>急症住院（每日）：</span><span class="font-bold text-red-600">HK$ 300</span></div>
-                            <div class="flex justify-between"><span>專科門診（首次）：</span><span class="font-bold text-red-600">HK$ 250</span></div>
+                            <div class="flex justify-between"><span>專科門診（每次）：</span><span class="font-bold text-red-600">HK$ 250</span></div>
                         </div>
                         <div>
                             <div class="text-xs font-bold text-gray-400 mb-2 border-b pb-1">非符合資格人士 (非居民)</div>
@@ -133,22 +134,11 @@
                 </div>
 
                 <div class="stat-panel stat-panel-private flex flex-col">
-                    <h4 class="font-bold text-[#2B579A] mb-4 flex items-center gap-2">📊 常見嚴重疾病治療總開支參考</h4>
-                    <div class="space-y-4 text-sm flex-1">
-                        <div class="flex justify-between items-end pb-2 border-b border-gray-100">
-                            <div><span class="font-bold">乳癌</span><br><span class="text-[10px] text-gray-400">切除、重建、化療及電療</span></div>
-                            <div class="text-base font-black text-[#1D4E89]">HK$ 799,978</div>
-                        </div>
-                        <div class="flex justify-between items-end pb-2 border-b border-gray-100">
-                            <div><span class="font-bold">肺癌</span><br><span class="text-[10px] text-gray-400">肺葉切除術</span></div>
-                            <div class="text-base font-black text-[#1D4E89]">HK$ 275,158</div>
-                        </div>
-                        <div class="flex justify-between items-end">
-                            <div><span class="font-bold">心臟通波仔</span><br><span class="text-[10px] text-gray-400">連植入支架</span></div>
-                            <div class="text-base font-black text-[#1D4E89]">HK$ 217,813</div>
-                        </div>
-                        <div class="text-[9px] text-gray-400 mt-2">註：資料來源為市場醫療保險理賠個案（中位數），僅供預算參考。</div>
+                    <h4 class="font-bold text-[#2B579A] mb-3 flex items-center gap-2">📊 需求最多手術開支參考</h4>
+                    <div class="cost-ticker" aria-label="需求最多手術開支自動滾動列表">
+                        <div class="cost-ticker-track" id="cost-ticker-track"></div>
                     </div>
+                    <div class="text-[9px] text-gray-400 mt-3">註：市場常見理賠個案中位數（日間術取日間價，住院術取普通房），僅供預算參考。滑鼠移入可暫停。</div>
                 </div>
             </div>
         </section>
@@ -219,6 +209,44 @@
             renderModuleCards('baseline-grid', BASELINE_MODULES);
         }
 
+        /* Top-10 demand surgeries — ordinary/day medians from VHISGuide claim estimator */
+        var TOP_SURGERY_COSTS = [
+            { name: '白內障手術', detail: '日間 · 超聲乳化連人工晶體', amount: 25899 },
+            { name: '腸胃鏡＋瘜肉切除', detail: '日間 · 胃鏡／大腸鏡', amount: 36194 },
+            { name: '痔瘡手術', detail: '普通房中位數', amount: 50163 },
+            { name: '疝氣（小腸氣）修補', detail: '普通房中位數', amount: 38000 },
+            { name: '乳房腫塊切除術', detail: '良性 · 普通房中位數', amount: 66771 },
+            { name: '膽囊切除術（腹腔鏡）', detail: '普通房中位數', amount: 96090 },
+            { name: '闌尾炎（腹腔鏡切除）', detail: '普通房中位數', amount: 100525 },
+            { name: '通波仔（PCI）', detail: '連植入支架 · 普通房', amount: 182625 },
+            { name: '子宮肌瘤切除', detail: '普通房中位數', amount: 167100 },
+            { name: '全膝關節置換', detail: '普通房中位數', amount: 252950 }
+        ];
+
+        function formatHk(amount) {
+            return 'HK$ ' + amount.toLocaleString('en-HK');
+        }
+
+        function renderCostTicker() {
+            var track = document.getElementById('cost-ticker-track');
+            if (!track) return;
+            function rowHtml(item, rank) {
+                return '<div class="cost-ticker-row">' +
+                    '<div class="cost-ticker-left">' +
+                    '<span class="cost-ticker-rank">' + String(rank).padStart(2, '0') + '</span>' +
+                    '<div><span class="cost-ticker-name">' + item.name + '</span>' +
+                    '<span class="cost-ticker-detail">' + item.detail + '</span></div>' +
+                    '</div>' +
+                    '<div class="cost-ticker-price">' + formatHk(item.amount) + '</div>' +
+                    '</div>';
+            }
+            var once = TOP_SURGERY_COSTS.map(function (item, i) {
+                return rowHtml(item, i + 1);
+            }).join('');
+            /* Duplicate list for seamless vertical loop */
+            track.innerHTML = once + once;
+        }
+
         function getFilterParams() {
             return '?insurance=' + document.getElementById('insurance-select').value + '&time=' + document.getElementById('time-select').value;
         }
@@ -238,6 +266,7 @@
         });
 
         renderModules();
+        renderCostTicker();
     </script>
     <script src="js/engine.js"></script>
 </body>

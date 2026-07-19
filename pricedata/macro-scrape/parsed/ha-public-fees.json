@@ -1,0 +1,17 @@
+{
+  "scrapedAt": "2026-07-19",
+  "source": "醫院管理局 — 醫療收費",
+  "sourceUrl": "https://www.ha.org.hk/visitor/fees_and_charges.asp?lang=CHIB5",
+  "effectiveFrom": "2026-01-01",
+  "eligiblePersons": {
+    "emergencyDepartment": { "amount": 400, "unit": "per visit", "label": "急症室診症" },
+    "acuteInpatient": { "amount": 300, "unit": "per day", "label": "急症住院（每日）" },
+    "specialistOutpatient": { "amount": 250, "unit": "per visit", "label": "專科門診（每次）", "drugPerItem": 20 }
+  },
+  "nonEligiblePersons": {
+    "generalInpatient": { "amount": 7400, "unit": "per day", "label": "普通科住院" },
+    "icu": { "amount": 35600, "unit": "per day", "label": "深切治療部（ICU）" }
+  },
+  "homepageMatch": true,
+  "note": "首頁左側五項數字與醫管局 2026-01-01 起生效收費一致。"
+}

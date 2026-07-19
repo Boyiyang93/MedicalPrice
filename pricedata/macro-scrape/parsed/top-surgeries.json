@@ -1,0 +1,78 @@
+{
+  "scrapedAt": "2026-07-19",
+  "source": "VHISGuide claim estimator (ordinary ward / day surgery medians)",
+  "sourceUrl": "https://vhisguide.com/claim-estimator",
+  "note": "市場常見理賠／需求較高手術開支參考（中位數）。日間術優先取日間價；住院術取普通房。僅供預算參考。",
+  "items": [
+    {
+      "rank": 1,
+      "name": "白內障手術",
+      "detail": "日間手術 · 超聲乳化連人工晶體",
+      "setting": "day",
+      "amount": 25899
+    },
+    {
+      "rank": 2,
+      "name": "腸胃鏡＋瘜肉切除",
+      "detail": "日間手術 · 胃鏡／大腸鏡",
+      "setting": "day",
+      "amount": 36194
+    },
+    {
+      "rank": 3,
+      "name": "痔瘡手術",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 50163
+    },
+    {
+      "rank": 4,
+      "name": "疝氣（小腸氣）修補",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 38000
+    },
+    {
+      "rank": 5,
+      "name": "乳房腫塊切除術",
+      "detail": "良性 · 普通房中位數",
+      "setting": "ordinary",
+      "amount": 66771
+    },
+    {
+      "rank": 6,
+      "name": "膽囊切除術（腹腔鏡）",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 96090
+    },
+    {
+      "rank": 7,
+      "name": "闌尾炎（腹腔鏡切除）",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 100525
+    },
+    {
+      "rank": 8,
+      "name": "通波仔（PCI）",
+      "detail": "連植入支架 · 普通房",
+      "setting": "ordinary",
+      "amount": 182625
+    },
+    {
+      "rank": 9,
+      "name": "子宮肌瘤切除",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 167100
+    },
+    {
+      "rank": 10,
+      "name": "全膝關節置換",
+      "detail": "普通房中位數",
+      "setting": "ordinary",
+      "amount": 252950
+    }
+  ]
+}
