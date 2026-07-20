@@ -1,0 +1,52 @@
+# Gap fill 2026-07
+
+Filled 48 Coming Soon slots from hospital scrapes + published maternity packages.
+
+- `normal_delivery.baptist=89451`
+- `c_section.baptist=99927`
+- `normal_delivery.sth=78809`
+- `c_section.sth=82086`
+- `c_section.sph=93962`
+- `normal_delivery.sph=22000`
+- `c_section.twah=130111`
+- `normal_delivery.twah=22800`
+- `normal_delivery.evangel=102944`
+- `c_section.evangel=26900`
+- `normal_delivery.matilda=64800`
+- `c_section.matilda=108600`
+- `normal_delivery.ghk=23900`
+- `normal_delivery.canossa=21600`
+- `normal_delivery.hkah=22000`
+- `normal_delivery.union=22500`
+- `c_section.ghk=33300`
+- `c_section.canossa=29800`
+- `c_section.hkah=31300`
+- `c_section.union=26000`
+- `appendectomy.hksh=129749`
+- `adenoid_tonsil.evangel=18484`
+- `adenoid_tonsil.sth=62477`
+- `adenoid_tonsil.baptist=66613`
+- `adenoid_tonsil.matilda=67200`
+- `prostate.matilda=106300`
+- `prostate.hkah=122000`
+- `bronchoscopy.evangel=93324`
+- `bronchoscopy.baptist=60606`
+- `bronchoscopy.canossa=55269`
+- `hemithyroidectomy.canossa=119448`
+- `thyroidectomy.canossa=165481`
+- `hemithyroidectomy.matilda=35600`
+- `thyroidectomy.matilda=45800`
+- `hysteroscopy.matilda=38050`
+- `hysteroscopy.evangel=30900`
+- `myomectomy.matilda=106050`
+- `hysterectomy.matilda=126680`
+- `hysterectomy.evangel=41064`
+- `ovarian_cyst.matilda=90100`
+- `ovarian_cyst.evangel=122439`
+- `sports_ortho.evangel=112556`
+- `sports_ortho.sth=77211`
+- `joint_replacement.evangel=133000`
+- `joint_replacement.matilda=191800`
+- `hip_replacement.hkah=129200`
+- `colonoscopy.matilda=19880`
+- `dual_scope.matilda=30900`

@@ -11,6 +11,7 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 - **Density:** Information-rich but breathable. Comparison grids show 3 hospitals per row on desktop; sidebar filters on module pages.
 - **Philosophy:** Numbers are the hero. Price displays use tabular, bold numerics. Accent mint green highlights "best value" without feeling playful.
 - **Language:** Traditional Chinese (`zh-HK`). Use PingFang SC / Microsoft YaHei — never Latin-only display fonts for body copy.
+- **Product flow:** 搜項目 → 比醫院 → 看自付參考. Every surface should reinforce that path.
 
 ## 2. Color Palette & Roles
 
@@ -35,6 +36,13 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 | `footer-bg` | `#1F2937` | Footer dark region (gray-800) |
 | `footer-deep` | `#111827` | Disclaimer bar (gray-900) |
 
+### Ownership badges
+| Key | Label | Use |
+|-----|-------|-----|
+| `private` | 私立（商業） | Commercial private hospitals |
+| `nonprofit` | 私立（非牟利） | Nonprofit private hospitals (仍屬私家醫院) |
+| `public` | 公立 | HA / public hospitals (reserved) |
+
 ### Do not use
 - Purple, neon, or gradient-heavy palettes from other brands in awesome-design-md
 - Pure black `#000` for body text
@@ -46,40 +54,64 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 
 | Level | Size | Weight | Line Height | Use |
 |-------|------|--------|-------------|-----|
-| Display | 36px (md: 48px) | 900 | 1.1 | Homepage hero only |
+| Display | 36px (md: 48px) | 900 | 1.1 | Homepage brand / hero only |
 | Heading 1 | 28px–32px | 900 | 1.2 | Module page titles |
 | Heading 2 | 22px–24px | 700 | 1.3 | Section headers with accent bar |
 | Heading 3 | 18px | 700 | 1.4 | Specialty card titles |
 | Body | 14px–16px | 400 | 1.5 | Descriptions, article prose |
 | Caption | 11px–13px | 400–600 | 1.4 | Timestamps, remarks, filter labels |
-| Price display | 20px | 900 | 1.0 | Hospital price numerics (tabular) |
+| Price display | 28px–32px | 900 | 1.0 | Hospital price numerics (tabular) |
+| Price currency | 12px–13px | 600 | 1.2 | `HK$` / unit secondary |
 | Micro tag | 9px–10px | 700 | 1.15 | VHIS tags, procedure badges |
 
-**Price numerics:** Always `font-black` / weight 900. Use `brand-primary` for emphasized totals.
+**Price numerics:** Always weight 900 + `font-variant-numeric: tabular-nums`. Use `brand-primary` for emphasized totals. Currency and unit sit secondary above or beside the number.
 
 ## 4. Component Stylings
 
+### Logo mark (`logo-mark`)
+- 28×28px SVG mark (cross + price tick), mint fill on primary header
+- Never replace with a solid color square
+- Header brand wordmark: `MedicalPrice` bold; subtitle light, opacity 60%
+
 ### Header (`site-header`)
 - Fixed top, height 64px, `brand-primary` background, white text
-- Logo mark: 28×28px square, `brand-accent` fill, 4px radius
 - Active nav link: `brand-accent` color + bold
 - Inactive nav: white, hover → `brand-accent`
+- Scroll state: stronger shadow via `.is-scrolled`
 
-### Search bar (`search-bar`)
-- White container, 12px radius, 1px `hairline` border, shadow `0 4px 6px -1px rgba(0,0,0,0.05)`
+### Hero (`home-hero`)
+- Brand name is the dominant first-viewport signal (Display size)
+- One value line + search + hot keyword chips
+- No cards, stats strips, or overlays in the hero
+
+### TrustStrip (`trust-strip`)
+- Horizontal trust facts: hospital count · official packages · last update · non-insurance sales
+- Soft mint/blue surface, hairline border, 12px radius
+- Compact on mobile (2×2 wrap)
+
+### How it works (`how-steps`)
+- Three numbered steps: 搜項目 → 比醫院 → 看自付參考
+- One job per step; no decorative cards beyond numbered markers
+
+### Search bar (`search-bar` / `hero-search-box`)
+- White container, 12–14px radius, 1px `hairline` border, soft blue shadow
 - Input: no border, 16px text, focus ring `brand-accent`
 - Button: `brand-title` bg → hover `brand-primary`, white text, 8px radius, bold
 
-### Specialty module card (`module-card`)
-- White bg, 12px radius, 1px `hairline` border
-- Hover: shadow-md + border `brand-accent`
+### Specialty module card (`specialty-card` / `module-card`)
+- White bg, 14px radius, 1px `hairline` border, 4px top accent from specialty color
+- Hover: shadow + border accent + slight lift
 - Title hover: `brand-primary`
-- CTA line: 11px bold `brand-title`
+- CTA line: 11px bold specialty accent
+
+### BaselineCard
+- Same shell as specialty card; may span 2 columns on `sm+` for outpatient / ward
 
 ### Hospital comparison box (`hospital-box`)
 - 8px radius, 16px padding, 1px `hairline-soft` border, white bg
-- **best-value:** 2px `brand-accent` border, `brand-accent-soft` bg
-- **coming-soon:** `surface-muted` bg, muted border
+- **Hierarchy:** hospital name + ownership badge → price (hero) → remarks → tags
+- **best-value:** 2px `brand-accent` border, soft bg, corner badge「最低套餐價」
+- **coming-soon:** muted surface, dashed border, calm empty copy (not a gray void)
 - Link: `brand-title` bold, underline on hover via `brand-accent`
 
 ### Lane container (`lane-container`)
@@ -87,17 +119,23 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 - 12px radius, 20px padding, subtle shadow, 1px `hairline` border
 - Lane header: 4px left bar in `brand-primary`
 
-### Section header (`section-header`)
+### Section header (`section-header` / `section-heading`)
 - 4px left bar in `brand-accent`, 18px bold `brand-title`
 
 ### Sidebar (`sidebar-fixed`)
 - 280px fixed width, white bg, right border `hairline`
 - Filter label: 10px uppercase tracking-widest, gray-400
 - Active module chip: `brand-primary` text on blue-50 bg
+- **Mobile:** off-canvas drawer + backdrop; toggle「篩選醫院」in main
+
+### Empty / ComingSoon (`coming-soon-card`, `.mp-empty-state`)
+- Muted surface, clear Traditional Chinese copy
+- Avoid large empty gray slabs; keep price slot structured
 
 ### Footer (`site-footer`)
 - Two-column CTA grid on `footer-bg`, disclaimer on `footer-deep`
 - Primary CTA button: `brand-title` → hover `brand-primary`
+- Link to 資料來源與更新 where relevant
 
 ### Buttons
 | Variant | Background | Text | Radius |
@@ -124,8 +162,16 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 | Card | `0 4px 6px -1px rgba(0,0,0,0.05)` | Module cards, lane containers |
 | Hover | `0 4px 6px -1px rgba(0,0,0,0.10)` | Interactive cards |
 | Header | `0 1px 3px rgba(0,0,0,0.1)` | Fixed nav |
+| Header scrolled | `0 4px 12px rgba(15,23,42,0.18)` | After scroll |
 
-## 7. Do's and Don'ts
+## 7. Motion
+
+- Section reveal: IntersectionObserver fade/slide (`.mp-reveal`)
+- Header gains `.is-scrolled` shadow
+- Card stagger via `--stagger` on hospital boxes
+- **Always** respect `prefers-reduced-motion: reduce` (no forced animation)
+
+## 8. Do's and Don'ts
 
 **Do**
 - Use CSS variables from `css/design-system.css` for all brand colors
@@ -138,19 +184,21 @@ MedicalPrice is a Hong Kong private-hospital price transparency portal. The visu
 - Use emoji as the only visual anchor (pair with structured cards)
 - Apply dark-mode inversion (site is light-mode only)
 - Mix English marketing fonts (Inter, Geist) for Chinese body copy
+- Put cards, stats, or promo chips in the homepage hero
 
-## 8. Responsive Behavior
+## 9. Responsive Behavior
 
 | Breakpoint | Behavior |
 |------------|----------|
-| `< 768px` | Single column grids; hide sidebar (filters collapse) |
+| `< 768px` | Single column grids; filter drawer on module pages |
 | `≥ 768px` | 2-column specialty grid |
 | `≥ 1024px` | Show fixed sidebar; 3-column hospital grid; 4-column specialty grid |
 
 - Touch targets: minimum 44px height for buttons and checkboxes
 - Header nav hidden on mobile (`hidden md:flex`)
+- 375 / 768 / 1280: user must complete 搜→點→看價
 
-## 9. Agent Prompt Guide
+## 10. Agent Prompt Guide
 
 ```
 Build [component/page] for MedicalPrice. Follow DESIGN.md strictly.
@@ -170,3 +218,4 @@ Language: Traditional Chinese (zh-HK).
 - Design tokens & components: `css/design-system.css`
 - Render engine (hospital cards): `js/engine.js`
 - Data layer: `data/db.js`
+- Motion / polish helpers: `js/site-polish.js`

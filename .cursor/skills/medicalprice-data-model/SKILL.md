@@ -67,4 +67,5 @@ User provides tables per specialty: start with 2 hospitals, then add one hospita
 - Donghua (东莞东华): `pricedata/donghua-scrape/`
 - Bowtie 13院手术比价对冲/补填: `pricedata/bowtie-surgery-2026/`（COMPARE.md；二手汇总，非一手官网）
 - Bowtie 私家醫院百科 A/B/C/E 归档与补洞: `pricedata/bowtie-encyclopedia-2026/`（raw/text + COMPARE.md；一手 scrape 优先）
+- Hong Kong Card 2026 常見手術費匯總: `pricedata/hongkongcard-surgery-2026/`（tables.json + COMPARE.md；2025 各院歷史五十分位，二手）
 - See also `references/ghk-general-surgery-scrape.md`

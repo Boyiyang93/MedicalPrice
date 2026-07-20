@@ -25,10 +25,16 @@
   var FAVORITES_STORAGE_KEY = 'mp_procedure_favorites_v1';
 
   var OWNERSHIP_LABELS = {
-    private: '私立',
+    private: '私立（商業）',
     public: '公立',
-    nonprofit: '公益'
+    nonprofit: '私立（非牟利）'
   };
+
+  var LOGO_MARK_SVG =
+    '<svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+    '<path d="M14 5v18M5 14h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>' +
+    '<path d="M18.5 9.5l2 2 3.5-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</svg>';
 
   var MODULE_PAGES = {
     imaging: { href: 'imaging.html', title: '內窺鏡與影像', emoji: '🔬' },
@@ -227,8 +233,69 @@
 
   function renderComingSoonPriceHtml() {
     return (
-      '<div class="text-xl font-bold text-gray-400">資料整理中</div>' +
-      '<div class="text-[10px] text-gray-400 mt-1">暫無套餐資料</div>'
+      '<div class="price-stack price-stack--muted">' +
+      '<div class="price-stack__amount">資料整理中</div>' +
+      '<div class="price-stack__unit">暫無套餐資料 · 稍後更新</div>' +
+      '</div>'
+    );
+  }
+
+  function splitPriceDisplay(display) {
+    var text = String(display || '').trim();
+    var match = text.match(/^((?:HK\s*)?\$)\s*([\d,]+(?:\.\d+)?)(.*)$/i);
+    if (match) {
+      return {
+        currency: match[1].replace(/\s+/g, ''),
+        amount: match[2],
+        suffix: (match[3] || '').trim(),
+        plain: false
+      };
+    }
+    return { currency: '', amount: text, suffix: '', plain: true };
+  }
+
+  function renderPriceStackHtml(options) {
+    options = options || {};
+    if (options.comingSoon) return renderComingSoonPriceHtml();
+
+    var parts = splitPriceDisplay(options.display || '');
+    var labelHtml = options.label
+      ? '<div class="price-stack__label">' + escapeHtml(options.label) + '</div>'
+      : '';
+    var strikeHtml = options.strike
+      ? '<div class="price-stack__strike">' + escapeHtml(options.strike) + '</div>'
+      : '';
+    var alertHtml = options.alert
+      ? '<div class="price-stack__alert">' + escapeHtml(options.alert) + '</div>'
+      : '';
+    var unitHtml = options.unit
+      ? '<div class="price-stack__unit">' + escapeHtml(options.unit) + '</div>'
+      : (parts.suffix ? '<div class="price-stack__unit">' + escapeHtml(parts.suffix) + '</div>' : '');
+    var stackClass = 'price-stack' + (options.alertClass ? ' price-stack--alert' : '');
+
+    if (parts.plain || !parts.currency) {
+      return (
+        '<div class="' + stackClass + '">' +
+        strikeHtml +
+        labelHtml +
+        '<div class="price-stack__amount">' + escapeHtml(parts.amount) + '</div>' +
+        unitHtml +
+        alertHtml +
+        '</div>'
+      );
+    }
+
+    return (
+      '<div class="' + stackClass + '">' +
+      strikeHtml +
+      labelHtml +
+      '<div>' +
+      '<span class="price-stack__currency">' + escapeHtml(parts.currency) + '</span>' +
+      '<span class="price-stack__amount">' + escapeHtml(parts.amount) + '</span>' +
+      '</div>' +
+      unitHtml +
+      alertHtml +
+      '</div>'
     );
   }
 
@@ -400,6 +467,7 @@
     document.querySelectorAll('.compare-group[data-module][data-procedure]').forEach(function (group) {
       var section = group.closest('section');
       if (!section || section.querySelector('.procedure-fav-btn')) return;
+      if (section.getAttribute('data-mp-hidden') === '1') return;
 
       var header = section.querySelector('.lane-header, h2.lane-header');
       if (!header) return;
@@ -538,14 +606,17 @@
 
     if (isComingSoonPrice(price)) {
       priceDisplayDiv.innerHTML = renderComingSoonPriceHtml();
+      box.classList.add('coming-soon-card');
       return;
     }
 
+    box.classList.remove('coming-soon-card');
     var label = box.getAttribute('data-price-label') || '';
     var display = box.getAttribute('data-display-price') || formatCurrency(price);
-    priceDisplayDiv.innerHTML =
-      (label ? '<div class="text-xs text-gray-400 block mb-0.5">' + escapeHtml(label) + '</div>' : '') +
-      '<span class="text-2xl font-black text-gray-800 tracking-tight">' + escapeHtml(display) + '</span>';
+    priceDisplayDiv.innerHTML = renderPriceStackHtml({
+      label: label,
+      display: display.indexOf('$') === 0 ? 'HK' + display : display
+    });
   }
 
   function updateOutpatientCardDisplay(box, timeMode, insMode) {
@@ -565,24 +636,38 @@
     if (!priceDisplayDiv) return;
 
     if (isComingSoonPrice(currentPrice) && isCustomUnavailableDisplay(displayText)) {
+      box.classList.add('coming-soon-card');
       priceDisplayDiv.innerHTML =
-        '<div class="text-xl font-bold text-gray-500">' + escapeHtml(displayText) + '</div>' +
-        '<div class="text-[10px] text-gray-400 mt-0.5">' + escapeHtml(priceLabel) + '</div>';
+        '<div class="price-stack price-stack--muted">' +
+        '<div class="price-stack__amount">' + escapeHtml(displayText) + '</div>' +
+        '<div class="price-stack__unit">' + escapeHtml(priceLabel) + '</div>' +
+        '</div>';
     } else if (isComingSoonPrice(currentPrice)) {
+      box.classList.add('coming-soon-card');
       priceDisplayDiv.innerHTML = renderComingSoonPriceHtml();
     } else if (!isSpecialty && currentPrice >= OUTPATIENT_UNAVAILABLE) {
+      box.classList.remove('coming-soon-card');
       priceDisplayDiv.innerHTML =
-        '<div class="text-xl font-bold text-gray-300">-</div>' +
-        '<div class="text-[10px] text-gray-400 mt-1">醫院當前時段不設全科門診</div>';
+        '<div class="price-stack price-stack--muted">' +
+        '<div class="price-stack__amount">—</div>' +
+        '<div class="price-stack__unit">醫院當前時段不設全科門診</div>' +
+        '</div>';
     } else if (currentPrice > normalPrice) {
-      priceDisplayDiv.innerHTML =
-        '<div class="text-[10px] text-red-400 line-through">原日常診金: ' + escapeHtml(normalDisplay) + '</div>' +
-        '<div class="text-2xl font-black text-red-600 tracking-tight">' + escapeHtml(displayText) + '</div>' +
-        '<div class="text-[9px] text-red-500 font-bold mt-0.5">⚡ 觸發時段附加費 (' + escapeHtml(priceLabel) + ')</div>';
+      box.classList.remove('coming-soon-card');
+      var surgeDisplay = displayText.indexOf('$') === 0 ? 'HK' + displayText : displayText;
+      priceDisplayDiv.innerHTML = renderPriceStackHtml({
+        display: surgeDisplay,
+        strike: '原日常診金: ' + normalDisplay,
+        alert: '觸發時段附加費（' + priceLabel + '）',
+        alertClass: true
+      });
     } else {
-      priceDisplayDiv.innerHTML =
-        '<div class="text-2xl font-bold text-gray-700 tracking-tight">' + escapeHtml(displayText) + '</div>' +
-        '<div class="text-[10px] text-gray-400 mt-0.5">' + escapeHtml(priceLabel) + '</div>';
+      box.classList.remove('coming-soon-card');
+      var normalDisplayText = displayText.indexOf('$') === 0 ? 'HK' + displayText : displayText;
+      priceDisplayDiv.innerHTML = renderPriceStackHtml({
+        display: normalDisplayText,
+        unit: priceLabel
+      });
     }
 
     var insBox = box.querySelector('.insurance-box');
@@ -618,7 +703,7 @@
       ? '<span class="' + tagClass + ' text-[10px] px-1.5 py-0.5 rounded font-bold">' + escapeHtml(h.tag) + '</span>'
       : '';
     var scopeTagsHtml = renderTagsHtml(h.scopes);
-    var remarksClass = h.alert ? 'text-red-500 font-medium' : 'text-gray-400';
+    var remarksClass = h.alert ? 'hospital-box__remarks hospital-box__remarks--alert' : 'hospital-box__remarks';
     var insuranceBoxHtml = options.hideInsurance
       ? ''
       : '<div class="insurance-box mt-4 bg-gray-50 p-3 rounded-lg border border-gray-200"></div>';
@@ -641,26 +726,17 @@
     }
 
     var tagsCombined = hospitalTagHtml + scopeTagsHtml;
-    var tagsRowClass = options.type === 'specialty'
-      ? 'card-tags flex flex-wrap gap-1 mt-1.5'
-      : 'flex flex-wrap gap-1 mt-1.5';
     var tagsRowHtml = tagsCombined
-      ? '<div class="' + tagsRowClass + '">' + tagsCombined + '</div>'
-      : (options.type === 'specialty'
-        ? '<div class="' + tagsRowClass + '"></div>'
-        : '');
-    var headerHtml =
-      '<div class="card-header mb-1">' +
-      renderCardTopHtml(h, '') +
-      tagsRowHtml +
-      '</div>';
+      ? '<div class="hospital-box__tags mt-2">' + tagsCombined + '</div>'
+      : '';
 
     return (
       '<div class="hospital-box animate-fadeIn" ' + attrs + '>' +
-      headerHtml +
-      '<div class="text-[10px] text-gray-400 mb-3 leading-relaxed outpatient-slot outpatient-slot--empty"><span aria-hidden="true">&nbsp;</span></div>' +
-      '<div class="price-display min-h-[50px]"></div>' +
-      '<div class="text-[10px] ' + remarksClass + ' mt-2 block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
+      '<div class="card-header">' + renderCardTopHtml(h, '') + '</div>' +
+      '<div class="text-[10px] text-gray-400 mb-2 leading-relaxed outpatient-slot outpatient-slot--empty"><span aria-hidden="true">&nbsp;</span></div>' +
+      '<div class="price-display"></div>' +
+      '<div class="' + remarksClass + ' block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
+      tagsRowHtml +
       insuranceBoxHtml +
       '</div>'
     );
@@ -676,8 +752,12 @@
       : '';
     var procedureTagsHtml = renderTagsHtml(h.tags);
     var remarksClass = (h.alert || (h.remarks && h.remarks.indexOf('⚠️') !== -1))
-      ? 'text-red-500 font-medium'
-      : 'text-gray-400';
+      ? 'hospital-box__remarks hospital-box__remarks--alert'
+      : 'hospital-box__remarks';
+    var tagsCombined = hospitalTagHtml + procedureTagsHtml;
+    var tagsRowHtml = tagsCombined
+      ? '<div class="hospital-box__tags mt-2" style="justify-content:flex-start">' + tagsCombined + '</div>'
+      : '';
 
     var attrs = 'data-hospital="' + h.id + '" data-price="' + price + '"';
     if (h.priceLabel) attrs += ' data-price-label="' + escapeAttr(h.priceLabel) + '"';
@@ -685,9 +765,10 @@
 
     return (
       '<div class="hospital-box animate-fadeIn" ' + attrs + '>' +
-      renderCardTopHtml(h, hospitalTagHtml + procedureTagsHtml) +
-      '<div class="price-display min-h-[50px]"></div>' +
-      '<div class="text-[10px] ' + remarksClass + ' mt-2 block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
+      renderCardTopHtml(h, '') +
+      '<div class="price-display"></div>' +
+      '<div class="' + remarksClass + ' block-remarks">' + escapeHtml(h.remarks || '') + '</div>' +
+      tagsRowHtml +
       '</div>'
     );
   }
@@ -746,6 +827,9 @@
     document.querySelectorAll('.compare-group[data-module]').forEach(function (group) {
       if (group.children.length > 0) return;
       if (typeof getModuleHospitalList !== 'function') return;
+
+      var section = group.closest('section');
+      if (section && section.getAttribute('data-mp-hidden') === '1') return;
 
       var moduleName = group.getAttribute('data-module');
       var procedureId = group.getAttribute('data-procedure');
@@ -841,7 +925,7 @@
     });
 
     available.slice(0, 3).forEach(function (box, idx) {
-      box.classList.remove('price-hidden');
+      box.classList.remove('price-hidden', 'coming-soon-card');
       if (idx === 0) {
         box.classList.add('best-value');
         if (insMode === 'wemed') {
@@ -851,9 +935,16 @@
       }
     });
 
-    comingSoon.forEach(function (box) {
-      box.classList.add('price-hidden');
-      box.classList.remove('coming-soon-card', 'opacity-50');
+    var shownAvailable = Math.min(available.length, 3);
+    var fillCount = Math.max(0, 3 - shownAvailable);
+    comingSoon.forEach(function (box, idx) {
+      if (idx < fillCount) {
+        box.classList.remove('price-hidden');
+        box.classList.add('coming-soon-card');
+      } else {
+        box.classList.add('price-hidden');
+        box.classList.remove('coming-soon-card', 'opacity-50');
+      }
     });
 
     detailOnly.forEach(function (box) {
@@ -909,6 +1000,12 @@
     document.querySelectorAll('.compare-group[data-module]').forEach(function (group) {
       var section = group.closest('section');
       if (!section) return;
+      if (section.getAttribute('data-mp-hidden') === '1') {
+        section.classList.add('hidden');
+        section.setAttribute('hidden', '');
+        section.setAttribute('aria-hidden', 'true');
+        return;
+      }
       var visibleCount = group.querySelectorAll(
         '.hospital-box:not(.price-hidden):not(.user-hidden)'
       ).length;
@@ -1111,6 +1208,14 @@
   window.toggleProcedureFavorite = toggleProcedureFavorite;
   window.readProcedureFavorites = readFavorites;
 
+  function loadSitePolish() {
+    if (document.querySelector('script[src*="site-polish.js"]')) return;
+    var s = document.createElement('script');
+    s.src = 'js/site-polish.js';
+    s.defer = true;
+    document.body.appendChild(s);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     applyUrlParams();
     bindNavigation();
@@ -1163,5 +1268,6 @@
     }
 
     scrollToHash();
+    loadSitePolish();
   });
 })();

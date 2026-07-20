@@ -27,17 +27,44 @@ var ARTICLES = [
         id: 'vhis-smm',
         category: '理賠解析',
         title: 'VHIS「附加醫療保障（SMM）」理賠比例實測及案例分析',
-        summary: '標準計劃與靈活計劃在日間手術、病房升級時的自付差異顯著。使用首頁保險設定進入各專科頁面，可同步您的 VHIS 計劃設定。',
-        date: '2026-05',
+        summary: '解釋 SMM 何時啟動、常見 80% 超額賠償邏輯，以及標準計劃與靈活計劃差異。配合專科頁套餐價估算自付差（非理賠承諾）。',
+        date: '2026年7月',
         featured: false,
-        href: '#'
+        href: 'articles/vhis-smm.html'
+    },
+    {
+        id: 'ha-fee-reform-2026',
+        category: '政策動態',
+        title: '2026 公營醫療收費改革解讀：急症 $400 之後，公私院怎麼比？',
+        summary: '整理醫管局 2026 年 1 月 1 日起生效的急症室、專科門診、住院日費與全年收費上限，並與私院量級對照。',
+        date: '2026年7月',
+        featured: false,
+        href: 'articles/ha-fee-reform-2026.html'
+    },
+    {
+        id: 'day-surgery-budget',
+        category: '費用須知',
+        title: '日間手術套餐怎麼讀？已含、另計與住院差在哪',
+        summary: '教您拆解日間套餐的包含項目、常見另計費用，以及與住院路徑、公營日間程序基準的預算差異。',
+        date: '2026年7月',
+        featured: false,
+        href: 'articles/day-surgery-budget.html'
+    },
+    {
+        id: 'cataract-cost-guide',
+        category: '費用須知',
+        title: '白內障手術預算指南：私院套餐價、晶體級別與自付估算',
+        summary: '整理各院日間白內障公開套餐區間與市場中位數量級，說明晶體升級如何拉高價錢，並連結眼科比價頁。',
+        date: '2026年7月',
+        featured: false,
+        href: 'articles/cataract-cost-guide.html'
     },
     {
         id: 'cross-border-elderly',
         category: '跨境醫療',
         title: '長者醫療券深圳新風和睦家醫院落地指南：如何扣減香港 VHIS 自付額？',
         summary: '深圳新風和睦家在內窺鏡與影像專線提供跨境定額套餐，可在影像專頁與香港私院直接對比。',
-        date: '2026-05',
+        date: '2026年5月',
         featured: false,
         href: 'articles/cross-border-elderly.html'
     }
@@ -124,7 +151,7 @@ function renderArticles() {
 
     countEl.textContent = filtered.length + ' 篇';
 
-    if (rest.length === 0 && !featured) {
+    if (rest.length === 0 && !(activeCategory === '全部' && featured)) {
         listEl.innerHTML = '';
         listEl.classList.add('hidden');
         emptyEl.classList.remove('hidden');
