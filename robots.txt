@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /card-explorer.html
+Disallow: /articles/_template.html
+
+Sitemap: https://boyiyang93.github.io/MedicalPrice/sitemap.xml

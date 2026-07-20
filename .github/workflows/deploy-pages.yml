@@ -20,11 +20,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare slim publish directory
+        run: bash scripts/prepare-publish.sh
+
       - name: Publish to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: dist
           publish_branch: gh-pages
           force_orphan: true
-          exclude_assets: '.github .git .cursor .codegraph scripts pricedata'

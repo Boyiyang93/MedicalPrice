@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>香港私家醫院收費比較 | MedicalPrice</title>
     <meta name="description" content="比較全港私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://boyiyang93.github.io/MedicalPrice/index.html">
     <meta property="og:title" content="香港私家醫院收費比較 | MedicalPrice">
-    <meta property="og:description" content="搜手術、比醫院、看自付參考。14 間醫院官方套餐基準一站比較。">
+    <meta property="og:description" content="比較全港私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyiyang93.github.io/MedicalPrice/index.html">
     <meta property="og:locale" content="zh_HK">
-    <meta name="twitter:card" content="summary">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="香港私家醫院收費比較 | MedicalPrice">
+    <meta name="twitter:description" content="比較全港私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
+    <meta name="twitter:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/design-system.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "MedicalPrice",
+      "url": "https://boyiyang93.github.io/MedicalPrice/",
+      "inLanguage": "zh-HK",
+      "description": "比較全港私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://boyiyang93.github.io/MedicalPrice/search.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "MedicalPrice",
+      "url": "https://boyiyang93.github.io/MedicalPrice/"
+    }
+  ]
+}
+    </script>
 </head>
 <body class="home-hero-bg">
 
@@ -28,7 +59,6 @@
         <nav class="hidden md:flex gap-6 text-sm">
             <a href="#" class="nav-active">首頁</a>
             <a href="#specialties" class="nav-link hover:text-[#99D6D1] transition-colors">專科收費</a>
-            <a href="sources.html" class="nav-link hover:text-[#99D6D1] transition-colors">資料來源</a>
             <a href="intelligence.html" class="nav-link hover:text-[#99D6D1] transition-colors">醫療情報</a>
         </nav>
     </header>
@@ -84,7 +114,7 @@
                 <span class="trust-strip__label">整理自各院公開價目</span>
             </li>
             <li class="trust-strip__item">
-                <span class="trust-strip__value">2026 年 5 月</span>
+                <span class="trust-strip__value">2026 年 7 月</span>
                 <span class="trust-strip__label">資料庫最後更新</span>
             </li>
             <li class="trust-strip__item">
@@ -235,7 +265,7 @@
                 <h5 class="font-bold text-gray-300 text-sm">免責聲明 (Legal Disclaimer)</h5>
                 <div class="flex flex-wrap gap-2 items-center">
                     <a href="sources.html" class="text-[#99D6D1] hover:underline font-medium">資料來源與更新 →</a>
-                    <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">資料庫最後更新：2026年5月</span>
+                    <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">資料庫最後更新：2026年7月</span>
                 </div>
             </div>
             <p class="leading-relaxed">本平台提供的所有醫療收費、保險自付額預估及服務資料，均由系統整理自各醫療機構官方網站、香港衛生署公開資訊及權威市場報告。本平台與各醫療機構及保險公司並無商業合作關係，獨立整理公開資料。所有資料僅供預算參考，<strong>不構成任何具約束力的報價、醫療診斷或理賠承諾</strong>。實際收費會因患者具體病況、醫生獨立定價、房型升級及突發併發症而有所不同。請務必於入院或接受治療前，直接向相關醫療機構或您的保險顧問索取最終報價。</p>
@@ -348,7 +378,7 @@
         renderModules();
         renderCostTicker();
     </script>
-    <script src="js/engine.js"></script>
-    <script src="js/site-polish.js"></script>
+    <script src="js/engine.js" defer></script>
+    <script src="js/site-polish.js" defer></script>
 </body>
 </html>

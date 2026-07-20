@@ -240,18 +240,41 @@
     );
   }
 
+  function normalizeCurrencySymbol(sym) {
+    var s = String(sym || '').replace(/\s+/g, '');
+    if (!s) return '';
+    if (/^HK\$?$/i.test(s) || s === '$') return 'HK$';
+    if (s === '￥' || s === '¥') return '¥';
+    return s;
+  }
+
   function splitPriceDisplay(display) {
     var text = String(display || '').trim();
-    var match = text.match(/^((?:HK\s*)?\$)\s*([\d,]+(?:\.\d+)?)(.*)$/i);
-    if (match) {
+    // Range: HK$12,000 – $45,000 / ¥7,200 – ¥32,500
+    // One normalized currency prefix + number range (keeps one line on cards).
+    var rangeMatch = text.match(
+      /^((?:HK\s*)?\$|￥|¥)\s*([\d,]+(?:\.\d+)?)\s*[–\-\u2013\u2014—]\s*((?:HK\s*)?\$|￥|¥)?\s*([\d,]+(?:\.\d+)?)(.*)$/i
+    );
+    if (rangeMatch) {
       return {
-        currency: match[1].replace(/\s+/g, ''),
-        amount: match[2],
-        suffix: (match[3] || '').trim(),
-        plain: false
+        currency: normalizeCurrencySymbol(rangeMatch[1] || rangeMatch[3]),
+        amount: rangeMatch[2] + ' – ' + rangeMatch[4],
+        suffix: (rangeMatch[5] || '').trim(),
+        plain: false,
+        isRange: true
       };
     }
-    return { currency: '', amount: text, suffix: '', plain: true };
+    var match = text.match(/^((?:HK\s*)?\$|￥|¥)\s*([\d,]+(?:\.\d+)?)(.*)$/i);
+    if (match) {
+      return {
+        currency: normalizeCurrencySymbol(match[1]),
+        amount: match[2],
+        suffix: (match[3] || '').trim(),
+        plain: false,
+        isRange: false
+      };
+    }
+    return { currency: '', amount: text, suffix: '', plain: true, isRange: false };
   }
 
   function renderPriceStackHtml(options) {
@@ -259,6 +282,17 @@
     if (options.comingSoon) return renderComingSoonPriceHtml();
 
     var parts = splitPriceDisplay(options.display || '');
+    // Fold range leftovers: keep one currency, numbers only in amount
+    if (parts.suffix && /^[–\-\u2013\u2014—]\s*((?:HK\s*)?\$|￥|¥)?\s*([\d,]+(?:\.\d+)?)/i.test(parts.suffix)) {
+      var rem = parts.suffix.match(/^[–\-\u2013\u2014—]\s*((?:HK\s*)?\$|￥|¥)?\s*([\d,]+(?:\.\d+)?)(.*)$/i);
+      if (rem) {
+        parts.currency = parts.currency || normalizeCurrencySymbol(rem[1]) || 'HK$';
+        parts.amount = parts.amount.replace(/^((?:HK\s*)?\$|￥|¥)/i, '') + ' – ' + rem[2];
+        parts.plain = false;
+        parts.isRange = true;
+        parts.suffix = (rem[3] || '').trim();
+      }
+    }
     var labelHtml = options.label
       ? '<div class="price-stack__label">' + escapeHtml(options.label) + '</div>'
       : '';
@@ -272,13 +306,14 @@
       ? '<div class="price-stack__unit">' + escapeHtml(options.unit) + '</div>'
       : (parts.suffix ? '<div class="price-stack__unit">' + escapeHtml(parts.suffix) + '</div>' : '');
     var stackClass = 'price-stack' + (options.alertClass ? ' price-stack--alert' : '');
+    var amountClass = 'price-stack__amount' + (parts.isRange ? ' price-stack__amount--range' : '');
 
     if (parts.plain || !parts.currency) {
       return (
         '<div class="' + stackClass + '">' +
         strikeHtml +
         labelHtml +
-        '<div class="price-stack__amount">' + escapeHtml(parts.amount) + '</div>' +
+        '<div class="' + amountClass + '">' + escapeHtml(parts.amount) + '</div>' +
         unitHtml +
         alertHtml +
         '</div>'
@@ -289,9 +324,9 @@
       '<div class="' + stackClass + '">' +
       strikeHtml +
       labelHtml +
-      '<div>' +
+      '<div class="price-stack__row' + (parts.isRange ? ' price-stack__row--range' : '') + '">' +
       '<span class="price-stack__currency">' + escapeHtml(parts.currency) + '</span>' +
-      '<span class="price-stack__amount">' + escapeHtml(parts.amount) + '</span>' +
+      '<span class="' + amountClass + '">' + escapeHtml(parts.amount) + '</span>' +
       '</div>' +
       unitHtml +
       alertHtml +
@@ -365,10 +400,20 @@
     });
   }
 
+  function setFavoritesPanelOpen(open) {
+    var toggle = document.getElementById('mp-favorites-toggle');
+    var panel = document.getElementById('mp-favorites-panel');
+    if (!panel) return;
+    panel.classList.toggle('is-open', !!open);
+    panel.classList.toggle('hidden', !open);
+    if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
   function toggleProcedureFavorite(moduleName, procedureId, label) {
     var id = getProcedureFavoriteId(moduleName, procedureId);
     var list = readFavorites();
     var idx = list.findIndex(function (item) { return item.id === id; });
+    var added = false;
     if (idx !== -1) {
       list.splice(idx, 1);
     } else {
@@ -383,11 +428,14 @@
         pageHref: meta.href,
         savedAt: Date.now()
       });
+      added = true;
     }
     writeFavorites(list);
     syncFavoritesUI();
     applyFavoritesFilter();
-    return idx === -1;
+    // Only show the favorites popup when adding — never leave it open by default
+    setFavoritesPanelOpen(added);
+    return added;
   }
 
   function buildFavoriteHref(item) {
@@ -522,20 +570,16 @@
     var toggle = document.getElementById('mp-favorites-toggle');
     var panel = document.getElementById('mp-favorites-panel');
 
+    // Start closed (CSS display:none); do not auto-open on load
+    setFavoritesPanelOpen(false);
+
     toggle.addEventListener('click', function (e) {
       e.stopPropagation();
-      var isHidden = panel.classList.toggle('hidden');
-      var isOpen = !isHidden;
-      panel.classList.toggle('is-open', isOpen);
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      setFavoritesPanelOpen(!panel.classList.contains('is-open'));
     });
 
     document.addEventListener('click', function (e) {
-      if (!wrap.contains(e.target)) {
-        panel.classList.add('hidden');
-        panel.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
+      if (!wrap.contains(e.target)) setFavoritesPanelOpen(false);
     });
   }
 

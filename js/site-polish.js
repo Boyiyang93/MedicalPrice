@@ -140,16 +140,59 @@
     backdrop.addEventListener('click', function () { setOpen(false); });
   }
 
-  function injectSourcesNavLink() {
-    document.querySelectorAll('header nav').forEach(function (nav) {
-      if (nav.querySelector('a[href="sources.html"]')) return;
-      var intel = nav.querySelector('a[href="intelligence.html"]');
+  function stripSourcesFromHeaderNav() {
+    document.querySelectorAll('header nav a[href="sources.html"], header nav a[href="../sources.html"]').forEach(function (a) {
+      a.remove();
+    });
+  }
+
+  function injectSourcesFooterLink() {
+    var inArticles = /\/articles\//.test(window.location.pathname);
+    var href = inArticles ? '../sources.html' : 'sources.html';
+
+    if (!document.querySelector('footer') && document.querySelector('main.main-content, main')) {
+      var host = document.querySelector('main .max-w-6xl') || document.querySelector('main');
+      if (host) {
+        var footer = document.createElement('footer');
+        footer.className = 'mt-16 mb-8 text-xs text-gray-500';
+        footer.setAttribute('role', 'contentinfo');
+        footer.innerHTML =
+          '<p class="leading-relaxed">⚖️ 免責聲明：所有資料僅供預算參考，不構成醫療診斷或理賠承諾。</p>' +
+          '<p class="mt-3"><a href="' + href + '" class="text-[#2B579A] hover:underline font-medium">資料來源與更新 →</a></p>';
+        host.appendChild(footer);
+      }
+    }
+
+    document.querySelectorAll('footer').forEach(function (footer) {
+      if (footer.querySelector('a[href$="sources.html"]')) return;
+
+      var bar = footer.querySelector('.bg-gray-900') || footer;
       var link = document.createElement('a');
-      link.href = 'sources.html';
-      link.className = 'hover:text-[#99D6D1]';
-      link.textContent = '資料來源';
-      if (intel) nav.insertBefore(link, intel);
-      else nav.appendChild(link);
+      link.href = href;
+      link.className = 'text-[#99D6D1] hover:underline font-medium';
+      link.textContent = '資料來源與更新 →';
+
+      if (bar !== footer && bar.querySelector('p')) {
+        var wrap = document.createElement('div');
+        wrap.className = 'mt-3';
+        wrap.appendChild(link);
+        bar.appendChild(wrap);
+        return;
+      }
+
+      var p = document.createElement('p');
+      p.className = 'mt-2';
+      p.appendChild(link);
+      footer.appendChild(p);
+    });
+
+    document.querySelectorAll('.article-footer-nav').forEach(function (nav) {
+      if (nav.querySelector('a[href$="sources.html"]')) return;
+      var link = document.createElement('a');
+      link.href = href;
+      link.className = 'text-sm text-gray-400 hover:text-[#2B579A]';
+      link.textContent = '資料來源與更新';
+      nav.insertBefore(link, nav.firstChild);
     });
   }
 
@@ -159,7 +202,8 @@
     initReveal();
     initSeoDefaults();
     injectMobileFilterDrawer();
-    injectSourcesNavLink();
+    stripSourcesFromHeaderNav();
+    injectSourcesFooterLink();
   }
 
   if (document.readyState === 'loading') {

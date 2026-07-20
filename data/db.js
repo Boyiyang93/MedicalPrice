@@ -6283,174 +6283,838 @@ const globalMedicalData = {
   },
   searchIndex: [
     {
-      keywords: [
+      "keywords": [
         "胃鏡",
         "gastroscopy",
-        "OGD"
+        "OGD",
+        "日間胃鏡檢查套餐價格比較 (Gastroscopy)",
+        "無痛胃鏡健康檢查 (監察麻醉)",
+        "日間胃鏡 (鎮靜麻醉)",
+        "日間中心程序起步底價",
+        "日間定額醫療程序套餐",
+        "胃鏡檢查 - 睡眠監察麻醉",
+        "胃窺鏡 +/- 瘜肉切除術",
+        "日間胃鏡 ± 瘜肉切除（歷史中位）",
+        "日間淨胃鏡（鎮靜麻醉）",
+        "日間胃鏡總收費中位（連醫生費）",
+        "胃鏡檢查",
+        "門診胃鏡（醫院收費）",
+        "日間手術中心胃內窺鏡套餐",
+        "胃鏡 ± 瘜肉（歷史中位）"
       ],
-      page: "imaging.html",
-      hash: "#gastroscopy",
-      label: "胃鏡檢查"
+      "page": "imaging.html",
+      "hash": "#gastroscopy",
+      "label": "日間胃鏡檢查套餐價格比較 (Gastroscopy)"
     },
     {
-      keywords: [
+      "keywords": [
         "結腸鏡",
         "肠镜",
         "colonoscopy",
-        "大腸鏡"
+        "大腸鏡",
+        "日間大腸鏡檢查套餐價格比較 (Colonoscopy)",
+        "無痛腸鏡健康檢查 (監察麻醉)",
+        "日間結腸鏡 (鎮靜麻醉)",
+        "大腸鏡 ± 瘜肉（歷史中位）",
+        "日間定額全包區間",
+        "結腸鏡檢查（睡眠監察麻醉）",
+        "日間腸鏡（歷史中位總收費）",
+        "日間常規程序基準",
+        "日間腸鏡總收費中位",
+        "日間大腸鏡（鎮靜麻醉・不連瘜肉）",
+        "日間大腸鏡總收費中位",
+        "日間大房基準套餐價",
+        "日間全面護理套餐（大腸鏡）",
+        "日間大腸鏡（歷史中位總收費）",
+        "大腸鏡檢查（含／不含瘜肉）參考區間"
       ],
-      page: "imaging.html",
-      hash: "#colonoscopy",
-      label: "結腸鏡檢查"
+      "page": "imaging.html",
+      "hash": "#colonoscopy",
+      "label": "日間大腸鏡檢查套餐價格比較 (Colonoscopy)"
     },
     {
-      keywords: [
+      "keywords": [
         "雙鏡",
         "dual",
-        "胃鏡+大腸鏡"
+        "胃鏡+大腸鏡",
+        "胃鏡加大腸鏡聯合檢查",
+        "dual scope",
+        "無痛胃腸鏡健康檢查 (雙鏡聯合)",
+        "日間胃鏡及大腸鏡聯查",
+        "胃鏡+大腸鏡（歷史中位）",
+        "日間全包雙鏡定額套餐",
+        "結腸鏡及胃鏡（睡眠監察麻醉）",
+        "日間胃腸鏡聯查（歷史中位）",
+        "日間胃鏡＋腸鏡（歷史中位）",
+        "日間淨胃鏡＋大腸鏡（鎮靜）",
+        "日間腸胃鏡同照總收費中位",
+        "常規兩項程序大房加總底價",
+        "日間全面護理套餐（胃＋腸）",
+        "日間胃＋腸鏡（歷史中位總收費）",
+        "胃鏡＋大腸鏡合併套餐參考"
       ],
-      page: "imaging.html",
-      hash: "#dual_scope",
-      label: "雙鏡聯查"
+      "page": "imaging.html",
+      "hash": "#dual_scope",
+      "label": "胃鏡加大腸鏡聯合檢查"
     },
     {
-      keywords: [
+      "keywords": [
         "CT",
         "電腦斷層",
-        "ct brain"
+        "ct brain",
+        "CT 腦部掃描套餐價格比較",
+        "無造影劑掃描",
+        "CT 腦部平掃（門診）",
+        "CT 腦部平掃",
+        "CT 腦部平掃（門診／普通房）",
+        "CT 腦部平掃（標準房）",
+        "CT 腦部掃描",
+        "CT 腦部掃描（門診參考）",
+        "CT 腦部平掃（普通房）"
       ],
-      page: "imaging.html",
-      hash: "#ct_brain",
-      label: "CT 腦部掃描"
+      "page": "imaging.html",
+      "hash": "#ct_brain",
+      "label": "CT 腦部掃描套餐價格比較"
     },
     {
-      keywords: [
+      "keywords": [
         "MRI",
         "磁力共振",
-        "mri brain"
+        "mri brain",
+        "MRI 腦部掃描套餐價格比較",
+        "無造影劑 MRI",
+        "腦部磁力共振套餐",
+        "MRI 腦部平掃",
+        "MRI 腦部平掃（門診／標準房）",
+        "MRI 腦部平掃（標準房）",
+        "MRI 腦部掃描",
+        "MRI 腦部平掃（普通房）"
       ],
-      page: "imaging.html",
-      hash: "#mri_brain",
-      label: "MRI 腦部掃描"
+      "page": "imaging.html",
+      "hash": "#mri_brain",
+      "label": "MRI 腦部掃描套餐價格比較"
     },
     {
-      keywords: [
+      "keywords": [
         "膽囊",
         "cholecystectomy",
         "腹腔鏡"
       ],
-      page: "general-surgery.html",
-      hash: "",
-      label: "腹腔鏡膽囊切除術"
+      "page": "general-surgery.html",
+      "hash": "",
+      "label": "腹腔鏡膽囊切除術"
     },
     {
-      keywords: [
+      "keywords": [
         "門診",
         "診金",
-        "outpatient"
+        "outpatient",
+        "門診診金"
       ],
-      page: "outpatient.html",
-      hash: "",
-      label: "門診診金"
+      "page": "outpatient.html",
+      "hash": "",
+      "label": "門診診金"
     },
     {
-      keywords: [
+      "keywords": [
         "專科門診",
         "專科診金",
-        "specialist outpatient"
+        "specialist outpatient",
+        "outpatientSpecialty"
       ],
-      page: "outpatient.html",
-      hash: "#specialty-outpatient",
-      label: "專科門診"
+      "page": "outpatient.html",
+      "hash": "#specialty-outpatient",
+      "label": "專科門診"
     },
     {
-      keywords: [
+      "keywords": [
         "病房",
         "ward",
-        "住院"
+        "住院",
+        "病房收費"
       ],
-      page: "ward.html",
-      hash: "",
-      label: "病房收費"
+      "page": "ward.html",
+      "hash": "",
+      "label": "病房收費"
     },
     {
-      keywords: [
+      "keywords": [
         "婦產",
         "子宮肌瘤",
         "子宮鏡",
-        "婦科"
+        "婦科",
+        "子宮肌瘤切除術",
+        "myomectomy",
+        "子宮肌瘤切除術（傳統）套餐",
+        "肌瘤切除術"
       ],
-      page: "gyn.html",
-      hash: "#myomectomy",
-      label: "婦產科套餐"
+      "page": "gyn.html",
+      "hash": "#myomectomy",
+      "label": "myomectomy"
     },
     {
-      keywords: [
+      "keywords": [
         "膝關節",
         "骨科",
         "orthopedics"
       ],
-      page: "orthopedics.html",
-      hash: "",
-      label: "骨科手術"
+      "page": "orthopedics.html",
+      "hash": "",
+      "label": "骨科手術"
     },
     {
-      keywords: [
+      "keywords": [
         "心臟",
         "通波仔",
         "cardiology"
       ],
-      page: "cardiology.html",
-      hash: "",
-      label: "心臟科"
+      "page": "cardiology.html",
+      "hash": "",
+      "label": "心臟科"
     },
     {
-      keywords: [
+      "keywords": [
         "白內障",
         "眼科",
         "ophthalmology"
       ],
-      page: "ophthalmology.html",
-      hash: "",
-      label: "眼科手術"
+      "page": "ophthalmology.html",
+      "hash": "",
+      "label": "眼科手術"
     },
     {
-      keywords: [
+      "keywords": [
         "耳鼻喉",
         "ent"
       ],
-      page: "ent.html",
-      hash: "",
-      label: "耳鼻喉科"
+      "page": "ent.html",
+      "hash": "",
+      "label": "耳鼻喉科"
     },
     {
-      keywords: [
+      "keywords": [
         "支氣管鏡",
-        "bronchoscopy"
+        "bronchoscopy",
+        "支氣管鏡檢查",
+        "支氣管鏡檢查 (日間)",
+        "支氣管鏡 ± 活檢（歷史中位）",
+        "支氣管內視鏡檢查",
+        "支氣管鏡（歷史中位總收費）"
       ],
-      page: "imaging.html",
-      hash: "#bronchoscopy",
-      label: "支氣管鏡檢查"
+      "page": "imaging.html",
+      "hash": "#bronchoscopy",
+      "label": "bronchoscopy"
     },
     {
-      keywords: [
+      "keywords": [
         "泌尿外科",
         "前列腺",
-        "urology"
+        "urology",
+        "前列腺診療手術",
+        "prostate",
+        "前列腺及膀胱腫瘤手術",
+        "經尿道前列腺切除術（全面護理套餐）",
+        "前列腺手術（電刮／等離子氣化）",
+        "經尿道前列腺切除術（TURP）套餐"
       ],
-      page: "urology.html",
-      hash: "#prostate",
-      label: "泌尿外科手術"
+      "page": "urology.html",
+      "hash": "#prostate",
+      "label": "prostate"
     },
     {
-      keywords: [
+      "keywords": [
         "一般外科",
         "闌尾",
-        "疝氣"
+        "疝氣",
+        "闌尾切除術",
+        "appendectomy",
+        "腹腔鏡闌尾切除（歷史中位）"
       ],
-      page: "general-surgery.html",
-      hash: "#appendectomy",
-      label: "一般外科手術"
+      "page": "general-surgery.html",
+      "hash": "#appendectomy",
+      "label": "appendectomy"
+    },
+    {
+      "keywords": [
+        "现状 · 生产环境",
+        "baseline"
+      ],
+      "page": "card-explorer.html",
+      "hash": "#baseline",
+      "label": "现状 · 生产环境"
+    },
+    {
+      "keywords": [
+        "建议方案 v2",
+        "proposed"
+      ],
+      "page": "card-explorer.html",
+      "hash": "#proposed",
+      "label": "建议方案 v2"
+    },
+    {
+      "keywords": [
+        "冠狀動脈造影及支架置入 (PCI)",
+        "pci"
+      ],
+      "page": "cardiology.html",
+      "hash": "#pci",
+      "label": "冠狀動脈造影及支架置入 (PCI)"
+    },
+    {
+      "keywords": [
+        "扁桃體切除術",
+        "tonsillectomy",
+        "扁桃腺切除術（歷史中位）"
+      ],
+      "page": "ent.html",
+      "hash": "#tonsillectomy",
+      "label": "tonsillectomy"
+    },
+    {
+      "keywords": [
+        "微型喉鏡檢查",
+        "micro laryngoscopy",
+        "顯微喉鏡檢查",
+        "顯微喉內視鏡檢查"
+      ],
+      "page": "ent.html",
+      "hash": "#micro_laryngoscopy",
+      "label": "micro laryngoscopy"
+    },
+    {
+      "keywords": [
+        "腺樣體及扁桃體手術",
+        "adenoid tonsil",
+        "扁桃腺切除術（歷史中位）",
+        "扁桃腺切除術套餐（標準房）",
+        "扁桃體切除術（歷史中位）"
+      ],
+      "page": "ent.html",
+      "hash": "#adenoid_tonsil",
+      "label": "adenoid tonsil"
+    },
+    {
+      "keywords": [
+        "鼻竇炎及鼻中隔手術",
+        "sinus surgery",
+        "功能性內視鏡鼻竇手術"
+      ],
+      "page": "ent.html",
+      "hash": "#sinus_surgery",
+      "label": "sinus surgery"
+    },
+    {
+      "keywords": [
+        "鼓膜修補及顯微喉鏡",
+        "tympanoplasty"
+      ],
+      "page": "ent.html",
+      "hash": "#tympanoplasty",
+      "label": "tympanoplasty"
+    },
+    {
+      "keywords": [
+        "腹腔鏡膽囊切除術",
+        "cholecystectomy",
+        "腹腔內視鏡膽囊切除術",
+        "腹腔鏡內膽囊切除術",
+        "膽囊切除術（腹腔鏡）",
+        "膽囊切除術"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#cholecystectomy",
+      "label": "cholecystectomy"
+    },
+    {
+      "keywords": [
+        "乳房腫塊切除術",
+        "breast lump",
+        "超聲波導引乳房腫塊切除術"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_lump",
+      "label": "breast lump"
+    },
+    {
+      "keywords": [
+        "包皮環切術",
+        "circumcision",
+        "包皮環切術（全面護理套餐）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#circumcision",
+      "label": "circumcision"
+    },
+    {
+      "keywords": [
+        "甲狀腺細針穿刺檢查",
+        "thyroid fna",
+        "超聲波導引甲狀腺細針穿刺"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroid_fna",
+      "label": "thyroid fna"
+    },
+    {
+      "keywords": [
+        "偏側甲狀腺切除術",
+        "hemithyroidectomy",
+        "甲狀腺次全切術",
+        "半甲狀腺切除（歷史中位）",
+        "半邊甲狀腺切除術",
+        "半甲狀腺切除術套餐（標準房）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hemithyroidectomy",
+      "label": "hemithyroidectomy"
+    },
+    {
+      "keywords": [
+        "甲狀腺/副甲狀腺切除術",
+        "thyroidectomy",
+        "甲狀腺全切術",
+        "全甲狀腺切除（歷史中位）",
+        "全邊甲狀腺切除術",
+        "全甲狀腺切除術套餐（標準房）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroidectomy",
+      "label": "thyroidectomy"
+    },
+    {
+      "keywords": [
+        "腹腔疝氣修補術",
+        "hernia abdominal",
+        "開放式疝氣手術（歷史中位）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_abdominal",
+      "label": "hernia abdominal"
+    },
+    {
+      "keywords": [
+        "單側腹股溝疝氣修補術",
+        "hernia unilateral",
+        "腹腔鏡腹股溝疝修補術（單側）",
+        "腹股溝疝氣切除術（腹腔鏡單邊）",
+        "腹腔鏡腹股溝疝修補術",
+        "腹腔鏡疝氣修補（歷史中位）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_unilateral",
+      "label": "hernia unilateral"
+    },
+    {
+      "keywords": [
+        "雙側腹股溝疝氣修補術",
+        "hernia bilateral"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_bilateral",
+      "label": "hernia bilateral"
+    },
+    {
+      "keywords": [
+        "痔瘡專項處置",
+        "hemorrhoid",
+        "痔瘡切除術",
+        "痔瘡切除術（傳統・全面護理套餐）",
+        "痔瘡切除術（普通房套餐）"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hemorrhoid",
+      "label": "hemorrhoid"
+    },
+    {
+      "keywords": [
+        "甲狀腺處置手術",
+        "thyroid surgery"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroid_surgery",
+      "label": "thyroid surgery"
+    },
+    {
+      "keywords": [
+        "輸液港手術",
+        "port a cath"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#port_a_cath",
+      "label": "port a cath"
+    },
+    {
+      "keywords": [
+        "乳腺抽針及旋切活檢",
+        "breast biopsy",
+        "開放式乳房活組織切片檢查"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_biopsy",
+      "label": "breast biopsy"
+    },
+    {
+      "keywords": [
+        "乳腺外科手術",
+        "breast surgery",
+        "乳房腫瘤／全乳切除術",
+        "乳房切除術"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_surgery",
+      "label": "breast surgery"
+    },
+    {
+      "keywords": [
+        "自然分娩套餐",
+        "normal delivery",
+        "自然分娩套餐 (二人房/一人房)",
+        "自然分娩套餐（標準房 3日2夜）",
+        "自然分娩套餐（兩晚・含產鉗／真空）",
+        "陰道分娩（歷史中位總收費）",
+        "自然分娩（歷史中位總收費）",
+        "自然分娩計劃（標準房 4日3夜）",
+        "自然分娩套餐（普通房 3日2夜）",
+        "自然分娩計劃（2人房 3日2夜）"
+      ],
+      "page": "gyn.html",
+      "hash": "#normal_delivery",
+      "label": "normal delivery"
+    },
+    {
+      "keywords": [
+        "剖腹產套餐",
+        "c section",
+        "剖腹分娩套餐 (二人房/一人房)",
+        "剖腹分娩套餐（標準房 5日4夜）",
+        "剖腹分娩套餐（4晚）",
+        "剖腹分娩（歷史中位總收費）",
+        "剖腹分娩計劃（標準房 5日4夜）",
+        "剖腹分娩套餐（普通房 5日4夜）",
+        "剖腹取嬰術（歷史中位總收費）"
+      ],
+      "page": "gyn.html",
+      "hash": "#c_section",
+      "label": "c section"
+    },
+    {
+      "keywords": [
+        "子宮頸病變治療手術",
+        "cervical treatment",
+        "陰道窺鏡檢查"
+      ],
+      "page": "gyn.html",
+      "hash": "#cervical_treatment",
+      "label": "cervical treatment"
+    },
+    {
+      "keywords": [
+        "子宮鏡診治手術",
+        "hysteroscopy",
+        "子宮腔鏡（診斷）+ 擴刮套餐",
+        "宮腔鏡檢查 + 刮宮術",
+        "宮腔鏡 + 刮宮（C級套餐）"
+      ],
+      "page": "gyn.html",
+      "hash": "#hysteroscopy",
+      "label": "hysteroscopy"
+    },
+    {
+      "keywords": [
+        "子宮切除術",
+        "hysterectomy",
+        "子宮切除術（歷史中位）",
+        "子宮切除術（經腹腔）套餐",
+        "腹腔鏡輔助子宮切除術",
+        "腹腔鏡子宮切除（歷史中位）"
+      ],
+      "page": "gyn.html",
+      "hash": "#hysterectomy",
+      "label": "hysterectomy"
+    },
+    {
+      "keywords": [
+        "輸卵管及宮外孕手術",
+        "tubal ectopic"
+      ],
+      "page": "gyn.html",
+      "hash": "#tubal_ectopic",
+      "label": "tubal ectopic"
+    },
+    {
+      "keywords": [
+        "卵巢囊腫切除術",
+        "ovarian cyst",
+        "腹腔鏡卵巢囊腫切除（歷史中位）",
+        "卵巢囊腫切除（傳統）套餐",
+        "腹腔鏡卵巢囊腫切除術"
+      ],
+      "page": "gyn.html",
+      "hash": "#ovarian_cyst",
+      "label": "ovarian cyst"
+    },
+    {
+      "keywords": [
+        "避孕及終止妊娠",
+        "contraception",
+        "刮宮術（歷史中位）",
+        "刮宮術"
+      ],
+      "page": "gyn.html",
+      "hash": "#contraception",
+      "label": "contraception"
+    },
+    {
+      "keywords": [
+        "公營醫院收費參考及常見手術開支",
+        "featured-section"
+      ],
+      "page": "intelligence.html",
+      "hash": "#featured-section",
+      "label": "公營醫院收費參考及常見手術開支"
+    },
+    {
+      "keywords": [
+        "白內障超聲乳化手術",
+        "cataract",
+        "白內障超聲乳化晶體植入",
+        "白內障超聲乳化+人工晶體植入",
+        "白內障摘除及人工晶體植入（單眼／日間）",
+        "白內障超聲乳化+人工晶體植入（單眼套餐）"
+      ],
+      "page": "ophthalmology.html",
+      "hash": "#cataract",
+      "label": "白內障超聲乳化手術"
+    },
+    {
+      "keywords": [
+        "斜視手術",
+        "strabismus"
+      ],
+      "page": "ophthalmology.html",
+      "hash": "#strabismus",
+      "label": "strabismus"
+    },
+    {
+      "keywords": [
+        "全人工膝關節置換術",
+        "knee replacement",
+        "單側全膝關節置換術",
+        "全膝關節置換術"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#knee_replacement",
+      "label": "knee replacement"
+    },
+    {
+      "keywords": [
+        "髖關節全關節置換",
+        "hip replacement",
+        "單側全髖關節置換術",
+        "機械臂輔助髖關節置換套餐"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#hip_replacement",
+      "label": "hip replacement"
+    },
+    {
+      "keywords": [
+        "人工關節置換術 (全膝/單髁/全髖)",
+        "joint replacement",
+        "人工關節置換術",
+        "全膝關節置換術（單側）套餐",
+        "全膝關節置換（5日4夜普通房）"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#joint_replacement",
+      "label": "人工關節置換術 (全膝/單髁/全髖)"
+    },
+    {
+      "keywords": [
+        "肩關節鏡手術",
+        "shoulder arthroscopy"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#shoulder_arthroscopy",
+      "label": "shoulder arthroscopy"
+    },
+    {
+      "keywords": [
+        "全肩關節置換術",
+        "shoulder replacement"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#shoulder_replacement",
+      "label": "shoulder replacement"
+    },
+    {
+      "keywords": [
+        "膝關節鏡手術",
+        "knee arthroscopy",
+        "膝關節內視鏡（歷史中位）",
+        "膝關節內窺鏡檢查"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#knee_arthroscopy",
+      "label": "knee arthroscopy"
+    },
+    {
+      "keywords": [
+        "骨科小手術及運動醫學",
+        "sports ortho",
+        "膝關節內視鏡（歷史中位）",
+        "膝關節腔內窺鏡（歷史中位）",
+        "膝前十字韌帶重建術"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#sports_ortho",
+      "label": "sports ortho"
+    },
+    {
+      "keywords": [
+        "脊柱手術",
+        "spine surgery",
+        "椎板切除術（歷史中位）"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#spine_surgery",
+      "label": "spine surgery"
+    },
+    {
+      "keywords": [
+        "ORIF (鎖骨/橈骨遠端骨折)",
+        "orif upper limb",
+        "ORIF (鎖骨/橈骨遠端)",
+        "切開復位內固定術（上肢）",
+        "開放性復位及內固定術"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#orif_upper_limb",
+      "label": "ORIF (鎖骨/橈骨遠端骨折)"
+    },
+    {
+      "keywords": [
+        "ORIF (髕骨/足踝骨折)",
+        "orif lower limb",
+        "切開復位內固定術（下肢）",
+        "開放性復位及內固定術"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#orif_lower_limb",
+      "label": "orif lower limb"
+    },
+    {
+      "keywords": [
+        "內視鏡腕管解除術",
+        "carpal tunnel",
+        "腕管鬆解術（歷史中位）"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#carpal_tunnel",
+      "label": "carpal tunnel"
+    },
+    {
+      "keywords": [
+        "板機狀指鬆解術",
+        "trigger finger",
+        "板機指鬆解術（歷史中位）"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#trigger_finger",
+      "label": "trigger finger"
+    },
+    {
+      "keywords": [
+        "跟腱修補/踝關節鏡韌帶修補",
+        "achilles ankle"
+      ],
+      "page": "orthopedics.html",
+      "hash": "#achilles_ankle",
+      "label": "achilles ankle"
+    },
+    {
+      "keywords": [
+        "疼痛管理 (神經阻滯/射頻等)",
+        "nerve block"
+      ],
+      "page": "pain-management.html",
+      "hash": "#nerve_block",
+      "label": "疼痛管理 (神經阻滯/射頻等)"
+    },
+    {
+      "keywords": [
+        "脊柱內鏡診療手術",
+        "spine endoscopy"
+      ],
+      "page": "pain-management.html",
+      "hash": "#spine_endoscopy",
+      "label": "spine endoscopy"
+    },
+    {
+      "keywords": [
+        "脊髓電刺激植入術",
+        "scs implant"
+      ],
+      "page": "pain-management.html",
+      "hash": "#scs_implant",
+      "label": "scs implant"
+    },
+    {
+      "keywords": [
+        "急症/整形外科縫合套餐",
+        "laceration repair"
+      ],
+      "page": "plastics.html",
+      "hash": "#laceration_repair",
+      "label": "laceration repair"
+    },
+    {
+      "keywords": [
+        "泌尿系結石碎石手術",
+        "kidney stone"
+      ],
+      "page": "urology.html",
+      "hash": "#kidney_stone",
+      "label": "kidney stone"
+    },
+    {
+      "keywords": [
+        "尿動力及膀胱鏡檢查",
+        "urodynamics",
+        "膀胱鏡檢查",
+        "尿動力測試（成人）"
+      ],
+      "page": "urology.html",
+      "hash": "#urodynamics",
+      "label": "urodynamics"
+    },
+    {
+      "keywords": [
+        "男科處置手術",
+        "andrology",
+        "睾丸固定術"
+      ],
+      "page": "urology.html",
+      "hash": "#andrology",
+      "label": "andrology"
+    },
+    {
+      "keywords": [
+        "angiography",
+        "冠狀動脈造影"
+      ],
+      "page": "cardiology.html",
+      "hash": "#angiography",
+      "label": "angiography"
+    },
+    {
+      "keywords": [
+        "rhinoplasty"
+      ],
+      "page": "plastics.html",
+      "hash": "#rhinoplasty",
+      "label": "rhinoplasty"
     }
   ]
 };
@@ -6477,11 +7141,44 @@ function getModuleHospitalList(moduleName, procedureId) {
     });
 }
 
-/** 全局搜尋索引查詢 */
+/** 全局搜尋索引查詢（只回傳繁中標籤結果） */
 function searchMedicalIndex(query) {
   var q = String(query || '').toLowerCase().trim();
   if (!q) return [];
-  return (globalMedicalData.searchIndex || []).filter(function (item) {
-    return item.keywords.some(function (kw) { return q.indexOf(kw.toLowerCase()) !== -1 || kw.toLowerCase().indexOf(q) !== -1; });
+
+  function hasCjk(s) {
+    return /[\u3400-\u9FFF]/.test(String(s || ''));
+  }
+
+  function withZhLabel(item) {
+    if (hasCjk(item.label)) return item;
+    var kws = item.keywords || [];
+    for (var i = 0; i < kws.length; i++) {
+      if (hasCjk(kws[i])) {
+        return Object.assign({}, item, { label: kws[i], hash: item.hash || '' });
+      }
+    }
+    return null;
+  }
+
+  var matched = (globalMedicalData.searchIndex || []).filter(function (item) {
+    return item.keywords.some(function (kw) {
+      return q.indexOf(kw.toLowerCase()) !== -1 || kw.toLowerCase().indexOf(q) !== -1;
+    });
   });
+
+  var byKey = {};
+  matched.forEach(function (item) {
+    var zh = withZhLabel(item);
+    if (!zh) return;
+    var key = zh.page + '|' + zh.label;
+    var prev = byKey[key];
+    if (!prev) {
+      byKey[key] = zh;
+      return;
+    }
+    if (!(prev.hash) && zh.hash) byKey[key] = zh;
+  });
+
+  return Object.keys(byKey).map(function (k) { return byKey[k]; });
 }

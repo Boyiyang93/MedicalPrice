@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="搜尋香港私家醫院手術、檢查及病房收費">
     <title>搜尋結果 - MedicalPrice</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://boyiyang93.github.io/MedicalPrice/search.html">
+    <meta property="og:title" content="搜尋結果 - MedicalPrice">
+    <meta property="og:description" content="搜尋香港私家醫院手術、檢查及病房收費">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyiyang93.github.io/MedicalPrice/search.html">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="搜尋結果 - MedicalPrice">
+    <meta name="twitter:description" content="搜尋香港私家醫院手術、檢查及病房收費">
+    <meta name="twitter:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+<link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/design-system.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "搜尋結果 - MedicalPrice",
+  "description": "搜尋香港私家醫院手術、檢查及病房收費",
+  "url": "https://boyiyang93.github.io/MedicalPrice/search.html",
+  "inLanguage": "zh-HK",
+  "dateModified": "2026-07-19",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MedicalPrice",
+    "url": "https://boyiyang93.github.io/MedicalPrice/"
+  }
+}
+    </script>
 </head>
 <body>
     <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-50 flex items-center px-6 shadow-md" role="banner">
@@ -23,7 +51,7 @@
         <p id="search-empty" class="hidden text-center text-gray-400 py-12">找不到相關項目，請嘗試其他關鍵字（例如：大腸鏡、病房、膽囊）。</p>
     </main>
 
-    <script src="data/db.js"></script>
+    <script src="data/search-index.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var params = new URLSearchParams(window.location.search);

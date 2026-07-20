@@ -1,2 +1,14 @@
 node_modules/
 .DS_Store
+dist/
+
+# Scrape tooling / heavy archives (keep parsed JSON + README tracked)
+**/_pydeps/
+**/*.so
+pricedata/**/pdfs/
+pricedata/**/pages/
+
+# Local Python / tooling caches
+__pycache__/
+*.pyc
+.venv/
