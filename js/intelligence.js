@@ -72,6 +72,18 @@ var ARTICLES = [
 
 var activeCategory = '全部';
 
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+}
+
+function escapeAttr(str) {
+    return escapeHtml(str).replace(/'/g, '&#39;');
+}
+
 function renderCategoryTabs() {
     var container = document.getElementById('category-tabs');
     container.innerHTML = CATEGORIES.map(function (cat) {
@@ -79,7 +91,7 @@ function renderCategoryTabs() {
         var cls = active
             ? 'bg-[#2B579A] text-white'
             : 'bg-white text-[#2B579A] border border-gray-200 hover:border-[#99D6D1]';
-        return '<button type="button" class="category-tab text-xs font-bold px-4 py-2 rounded-full transition-colors cursor-pointer ' + cls + '" data-category="' + cat + '">' + cat + '</button>';
+        return '<button type="button" class="category-tab text-xs font-bold px-4 py-2 rounded-full transition-colors cursor-pointer ' + cls + '" data-category="' + escapeAttr(cat) + '">' + escapeHtml(cat) + '</button>';
     }).join('');
 
     container.querySelectorAll('.category-tab').forEach(function (btn) {
@@ -97,35 +109,40 @@ function filterArticles() {
 }
 
 function articleCardHtml(article, large) {
-    var tag = '#' + article.category;
-    var href = article.href && article.href !== '#' ? article.href : '#';
-    var clickable = href !== '#';
-    var onclick = clickable ? ' onclick="window.location.href=\'' + href + '\'"' : '';
-    var cursor = clickable ? ' cursor-pointer' : ' cursor-default';
+    var tag = '#' + escapeHtml(article.category);
+    var href = article.href && article.href !== '#' ? article.href : '';
+    var clickable = !!href;
+    var title = escapeHtml(article.title);
+    var summary = escapeHtml(article.summary);
+    var date = escapeHtml(article.date);
+    var openTag = clickable
+        ? '<a href="' + escapeAttr(href) + '" class="block no-underline text-inherit'
+        : '<article class="';
+    var closeTag = clickable ? '</a>' : '</article>';
 
     if (large) {
-        return '<article class="article-feature lg:col-span-2 flex flex-col justify-between group' + cursor + '"' + onclick + '>' +
+        return openTag + ' article-feature lg:col-span-2 flex flex-col justify-between group">' +
             '<div class="space-y-3">' +
             '<span class="inline-block bg-[#99D6D1]/40 text-[#1D4E89] text-[10px] font-bold px-2 py-1 rounded">' + tag + '</span>' +
-            '<h2 class="text-lg font-bold text-gray-800 group-hover:text-[#1D4E89] transition-colors leading-snug">' + article.title + '</h2>' +
-            '<p class="text-xs text-gray-500 leading-relaxed">' + article.summary + '</p>' +
+            '<h2 class="text-lg font-bold text-gray-800 group-hover:text-[#1D4E89] transition-colors leading-snug">' + title + '</h2>' +
+            '<p class="text-xs text-gray-500 leading-relaxed">' + summary + '</p>' +
             '</div>' +
             '<div class="flex justify-between items-center pt-6 border-t border-gray-100 mt-4 text-[11px] text-gray-400">' +
-            '<span>發佈時間：' + article.date + '</span>' +
+            '<span>發佈時間：' + date + '</span>' +
             (clickable ? '<span class="text-[#2B579A] font-bold group-hover:translate-x-1 transition-transform inline-block">閱讀全文 →</span>' : '<span class="text-gray-300">即將上線</span>') +
-            '</div></article>';
+            '</div>' + closeTag;
     }
 
-    return '<article class="article-side group flex flex-col justify-between h-full' + cursor + '"' + onclick + '>' +
+    return openTag + ' article-side group flex flex-col justify-between h-full">' +
         '<div class="space-y-2">' +
         '<span class="text-[9px] text-[#2B579A] font-bold">' + tag + '</span>' +
-        '<h3 class="text-sm font-bold text-gray-700 group-hover:text-[#1D4E89] line-clamp-3 transition-colors">' + article.title + '</h3>' +
-        '<p class="text-[11px] text-gray-500 line-clamp-2">' + article.summary + '</p>' +
+        '<h3 class="text-sm font-bold text-gray-700 group-hover:text-[#1D4E89] line-clamp-3 transition-colors">' + title + '</h3>' +
+        '<p class="text-[11px] text-gray-500 line-clamp-2">' + summary + '</p>' +
         '</div>' +
         '<div class="text-[10px] text-gray-400 pt-3 border-t border-gray-50 mt-3 flex justify-between">' +
-        '<span>' + article.date + '</span>' +
+        '<span>' + date + '</span>' +
         (clickable ? '<span class="text-[#2B579A] font-semibold">閱讀 →</span>' : '<span class="text-gray-300">即將上線</span>') +
-        '</div></article>';
+        '</div>' + closeTag;
 }
 
 function renderArticles() {

@@ -152,7 +152,7 @@ const ROW_MAP = [
 
 const PLACEHOLDER_REMARKS = {
   imaging: '定額內窺鏡數據核對中。',
-  gynecology: '婦產科套餐數據核對中。',
+  gynecology: '婦科套餐數據核對中。',
   generalSurgery: '定額一般外科手術數據核對中。',
   orthopedics: '骨科手術數據核對中。',
   ent: '耳鼻喉科手術數據核對中。',

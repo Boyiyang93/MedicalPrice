@@ -11,15 +11,16 @@
 const globalMedicalData = {
   version: "2.0",
   lastUpdated: "2026-07-19",
+  // 商業私立在前、非牟利在後（同組內保持既有相對順序）
   hospitalOrder: [
     "szufh",
     "cuhk",
     "hksh",
     "ghk",
+    "union",
     "matilda",
     "sth",
     "baptist",
-    "union",
     "canossa",
     "sph",
     "pbh",
@@ -28,7 +29,7 @@ const globalMedicalData = {
     "hkah"
   ],
   hospitals: {
-    // ownership: private=私立 | public=公立 | nonprofit=公益
+    // ownership: private=商業私立 | public=公立 | nonprofit=非牟利私立
     szufh: {
       name: "深圳新風和睦家",
       ownership: "private",
@@ -67,7 +68,7 @@ const globalMedicalData = {
     sth: {
       name: "聖德肋撒醫院 (法國)",
       ownership: "nonprofit",
-      link: "http://www.sth.org.hk/",
+      link: "https://www.sth.org.hk/",
       tag: "",
       alert: false
     },
@@ -298,7 +299,7 @@ const globalMedicalData = {
           night: "平日 18:00-07:59；周六 13:00-07:59",
           holiday: "周日及公眾假期 08:00-23:59（夜間 $800）"
         },
-        remarks: "24小時門診普通科診金（官网价目）。不含藥費、化驗及特別治療。"
+        remarks: "24小時門診普通科診金（官網價目）。不含藥費、化驗及特別治療。"
       },
       sph: {
         link: "https://www.stpaul.org.hk/tc/charges",
@@ -494,6 +495,186 @@ const globalMedicalData = {
         },
         scopes: ["外科", "腸胃肝臟", "骨科", "耳鼻喉", "泌尿"],
         remarks: "專科門診登記及診症費 $760–$3,500。不含藥費、化驗及程序費。"
+      },
+      matilda: {
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees",
+        prices: {
+          regular: 2500,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$2,500 – $3,000",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診辦公時間（請查詢所屬專科）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["專科初診"],
+        remarks: "專科初診 $2,500–$3,000；覆診 $1,800–$2,200（2026-02-01起）。不含藥費、化驗及程序費。"
+      },
+      sth: {
+        link: "https://www.sth.org.hk/charge.asp?lang_code=zh",
+        prices: {
+          regular: 600,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$600 – $830+",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "各專科中心日間診症（請查詢所屬中心）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["皮膚整外", "乳腺", "眼科", "血管外科"],
+        remarks: "專科中心駐院醫生診金參考（FeeSchedule 2026-07-01）：皮膚／乳腺 $600；眼科 $800；血管外科 $830。客席醫生及特別檢查另計。不含藥費、物料及治療。"
+      },
+      baptist: {
+        link: "https://www.hkbh.org.hk/fees-charges/general-services-charges/",
+        prices: {
+          regular: 700,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$700 – $1,800",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診辦公時間（請查詢所屬專科）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["腦神經", "呼吸", "腎科", "骨科", "外科", "老人科", "記憶診所"],
+        remarks: "專科初診參考區間 $700–$1,800（OPC 價目 2026-07-01）。各科收費不同；不含藥費、化驗及程序費。"
+      },
+      canossa: {
+        link: "https://www.canossahospital.org.hk/tc/fee/price_list/",
+        prices: {
+          regular: 1400,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$1,400 – $2,200",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "一至五日間專科門診（請查詢所屬專科）",
+          night: "晚間設施費較高",
+          holiday: "假日設施費較高"
+        },
+        scopes: ["專科醫生", "設施費另計"],
+        remarks: "日間參考：醫生費 $1,200–$2,000 + 設施費 $200（合共約 $1,400–$2,200）。晚間／假日設施費 $330–$400。不含藥費、化驗及特別治療。"
+      },
+      sph: {
+        link: "https://www.stpaul.org.hk/tc/charges",
+        prices: {
+          regular: 680,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$680 – $1,000+",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科中心日間診症（請查詢所屬中心）",
+          night: "非當值駐院專科回院另計",
+          holiday: "非當值駐院專科回院另計"
+        },
+        scopes: ["眼科", "耳鼻喉", "綜合專科", "外科"],
+        remarks: "專科中心駐院醫生診金多為 $680；客席／指定科別約 $800–$1,000 起。專科門診部駐院醫生另有較低時段收費。不含檢查、藥物及儀器用品。"
+      },
+      pbh: {
+        link: "https://www.pbh.hk/service-fee-adjustment/",
+        prices: {
+          regular: 650,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$650 – $900",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診辦公時間（請查詢所屬專科）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["外科", "心臟科", "耳鼻喉"],
+        remarks: "專科診金參考例子：外科 $650；心臟科 $650–$900；耳鼻喉 $650–$800（門診價目 2025-01-01起）。不含藥費、化驗及程序費。"
+      },
+      evangel: {
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/",
+        prices: {
+          regular: 1010,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$675 – $1,010",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診日間（請查詢所屬專科）",
+          night: "不設夜間專科門診",
+          holiday: "請查詢所屬專科開診安排"
+        },
+        scopes: ["心臟", "皮膚", "耳鼻喉", "腸胃", "婦產", "眼科", "骨科", "外科", "泌尿"],
+        remarks: "專科初診 $1,010；覆診 $675（2025-01-02起）。涵蓋多個專科組別。不含藥費、化驗及程序費。"
+      },
+      twah: {
+        link: "https://www.twah.org.hk/tc/fees-and-charges",
+        prices: {
+          regular: 600,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$600 – $1,200",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診辦公時間（OPD 價目）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["外科", "心臟科", "皮膚", "耳鼻喉"],
+        remarks: "專科診金參考例子：外科 $600；皮膚／耳鼻喉 $650；心臟科 $800–$1,200（OPD PDF 2026-06）。另或收取設施費。不含藥費、化驗及程序費。"
+      },
+      hkah: {
+        link: "https://www.hkah.org.hk/en/fees-and-charges/out-patient-consultation-fee/out-patient-consultation-fee-2",
+        prices: {
+          regular: 800,
+          night: 9999999,
+          holiday: 9999999
+        },
+        displayPrices: {
+          regular: "$800 – $2,800",
+          night: "詳情查看",
+          holiday: "詳情查看"
+        },
+        timeSlots: {
+          regular: "專科門診辦公時間（請查詢所屬專科）",
+          night: "非辦公時間收費將有所調整",
+          holiday: "非辦公時間、星期日及公眾假期收費將有所調整"
+        },
+        scopes: ["專科初診"],
+        remarks: "專科初診參考區間 $800–$2,800。特別診症或另收設施費。不含藥費、化驗及程序費。"
       }
     },
     ward: {
@@ -771,7 +952,7 @@ const globalMedicalData = {
         price: 37347,
         priceLabel: "腹腔鏡膽囊切除術",
         displayPrice: "HK$37,347",
-        remarks: "⚠️ 2025年歷史統計（普通房）五十分位總收費。另有日間/套餐價目請查官网。",
+        remarks: "⚠️ 2025年歷史統計（普通房）五十分位總收費。另有日間/套餐價目請查官網。",
         link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
@@ -1030,7 +1211,7 @@ const globalMedicalData = {
         price: 17245,
         priceLabel: "超聲波導引甲狀腺細針穿刺",
         displayPrice: "HK$14,960 – $19,530",
-        remarks: "✓ 麻醉級別与住院形式。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 麻醉級別與住院形式。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
       },
 
@@ -1217,7 +1398,7 @@ const globalMedicalData = {
         price: 171580,
         priceLabel: "甲狀腺/副甲狀腺切除術",
         displayPrice: "HK$94,360 – $248,800",
-        remarks: "✓ 切除范围（局部/次全/全/副甲状腺）、是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 切除範圍（局部/次全/全/副甲狀腺）、是否使用能量設備及住院級別。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
       },
 
@@ -1425,7 +1606,7 @@ const globalMedicalData = {
         price: 64700,
         priceLabel: "單側腹股溝疝氣修補術",
         displayPrice: "HK$40,800 – $88,600",
-        remarks: "✓ 手術形式（開放式/腹腔鏡）、麻醉与形式（全身/局部/鎮靜麻醉）、是否使用人工網膜補片。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 手術形式（開放式/腹腔鏡）、麻醉與形式（全身/局部/鎮靜麻醉）、是否使用人工網膜補片。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
       },
 
@@ -1618,7 +1799,7 @@ const globalMedicalData = {
         price: 130645,
         priceLabel: "闌尾切除術",
         displayPrice: "HK$91,290 – $170,000",
-        remarks: "✓ 慢阑尾炎病症复杂程度（非複雜性/複雜性）。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 慢闌尾炎病症複雜程度（非複雜性/複雜性）。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
       },
 
@@ -2125,7 +2306,7 @@ const globalMedicalData = {
         price: 14990,
         priceLabel: "日間胃鏡 (鎮靜麻醉)",
         displayPrice: "HK$10,550 – $19,430",
-        remarks: "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 檢查複雜程度及活組織切片樽數（0-3樽）。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
       },
 
@@ -2142,7 +2323,7 @@ const globalMedicalData = {
         priceLabel: "日間定額醫療程序套餐",
         displayPrice: "HK$7,820",
         remarks: "✓ 定額保障：已包含基礎用藥與組織化驗雜費。",
-        link: "https://gleneagles.hk/tc/patient-care-services/endoscopy",
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/general-facilities/endoscopy-centre",
         tags: ["100%全包", "港島旗艦"]
       },
 
@@ -2150,7 +2331,7 @@ const globalMedicalData = {
         price: 9300,
         priceLabel: "胃鏡檢查 - 睡眠監察麻醉",
         displayPrice: "HK$9,300 – $13,700",
-        remarks: "✓ 醫院套餐（不含醫生費，2026价目）。標準/雙人/私家房。全面護理套餐另計。",
+        remarks: "✓ 醫院套餐（不含醫生費，2026價目）。標準/雙人/私家房。全面護理套餐另計。",
         link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages"
       },
 
@@ -2237,7 +2418,7 @@ const globalMedicalData = {
         price: 16980,
         priceLabel: "日間結腸鏡 (鎮靜麻醉)",
         displayPrice: "HK$13,250 – $20,710",
-        remarks: "✓ 检查复杂程度及活組織切片樽数（0-3樽）。包括所有醫院收費及所有醫生費用。",
+        remarks: "✓ 檢查複雜程度及活組織切片樽數（0-3樽）。包括所有醫院收費及所有醫生費用。",
         link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees"
       },
 
@@ -2254,7 +2435,7 @@ const globalMedicalData = {
         priceLabel: "日間定額全包區間",
         displayPrice: "HK$10,420 – $13,440",
         remarks: "✓ 結構清晰：已含基礎瘜肉切除與組織活檢化驗費。",
-        link: "https://gleneagles.hk/tc/patient-care-services/endoscopy",
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/general-facilities/endoscopy-centre",
         tags: ["港島推薦"]
       },
 
@@ -2369,7 +2550,7 @@ const globalMedicalData = {
         priceLabel: "日間全包雙鏡定額套餐",
         displayPrice: "HK$16,800",
         remarks: "✓ 醫療團隊強：港島全包雙鏡天花板，放射與內窺鏡安心度高。",
-        link: "https://gleneagles.hk/tc/patient-care-services/endoscopy",
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/general-facilities/endoscopy-centre",
         tags: ["全包保障"]
       },
 
@@ -2477,7 +2658,7 @@ const globalMedicalData = {
         priceLabel: "支氣管內視鏡檢查",
         displayPrice: "HK$39,400 – $222,690",
         remarks: "⚠️ 麻醉方式(監測/全身)、是否附加超音波、活檢結節數量(1至≥3個)以及手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/endoscopy"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/general-facilities/endoscopy-centre"
       },
 
       matilda: {
@@ -2761,7 +2942,7 @@ const globalMedicalData = {
       normal_delivery: {
       szufh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       cuhk: {
@@ -2777,7 +2958,7 @@ const globalMedicalData = {
         priceLabel: "自然分娩套餐 (二人房/一人房)",
         displayPrice: "HK$22,300 – $38,600",
         remarks: "⚠️ 套式收費不包括醫生費用。",
-        link: "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx"
+        link: "https://www.hksh-hospital.com/dwh/zh-hk/obstetrics-and-gynaecology-centre/index.php"
       },
 
       ghk: {
@@ -2838,7 +3019,7 @@ const globalMedicalData = {
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
@@ -2868,7 +3049,7 @@ const globalMedicalData = {
       c_section: {
       szufh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       cuhk: {
@@ -2884,7 +3065,7 @@ const globalMedicalData = {
         priceLabel: "剖腹分娩套餐 (二人房/一人房)",
         displayPrice: "HK$28,800 – $67,200",
         remarks: "⚠️ 套式收費不包括醫生費用。選擇性 HK$28,800–55,200；緊急 HK$35,800–67,200。",
-        link: "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx"
+        link: "https://www.hksh-hospital.com/dwh/zh-hk/obstetrics-and-gynaecology-centre/index.php"
       },
 
       ghk: {
@@ -2945,7 +3126,7 @@ const globalMedicalData = {
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
@@ -2983,12 +3164,12 @@ const globalMedicalData = {
 
       cuhk: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hksh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       ghk: {
@@ -2996,57 +3177,57 @@ const globalMedicalData = {
         priceLabel: "陰道窺鏡檢查",
         displayPrice: "HK$16,000 – $43,940",
         remarks: "⚠️ 麻醉方式(局麻/監測/全身)、是否附加活組織或電環切除(Letz)，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sth: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       baptist: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       union: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       canossa: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sph: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       twah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hkah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       }
       },
       hysteroscopy: {
@@ -3060,12 +3241,12 @@ const globalMedicalData = {
 
       cuhk: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hksh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       ghk: {
@@ -3073,7 +3254,7 @@ const globalMedicalData = {
         priceLabel: "子宮鏡診治手術",
         displayPrice: "HK$39,500 – $80,340",
         remarks: "⚠️ 診斷性或手術性、麻醉方式、是否使用Hysteroscopic Shaver設備，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -3086,12 +3267,12 @@ const globalMedicalData = {
 
       sth: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       baptist: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       union: {
@@ -3104,17 +3285,17 @@ const globalMedicalData = {
 
       canossa: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sph: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
@@ -3127,12 +3308,12 @@ const globalMedicalData = {
 
       twah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hkah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       }
       },
       myomectomy: {
@@ -3146,12 +3327,12 @@ const globalMedicalData = {
 
       cuhk: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hksh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       ghk: {
@@ -3159,7 +3340,7 @@ const globalMedicalData = {
         priceLabel: "子宮肌瘤切除術",
         displayPrice: "HK$115,000 – $196,300",
         remarks: "⚠️ 手術路徑(開放式/腹腔鏡)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -3172,12 +3353,12 @@ const globalMedicalData = {
 
       sth: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       baptist: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       union: {
@@ -3190,32 +3371,32 @@ const globalMedicalData = {
 
       canossa: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sph: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       twah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hkah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       }
       },
       hysterectomy: {
@@ -3248,7 +3429,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術",
         displayPrice: "HK$102,500 – $214,500",
         remarks: "⚠️ 手術路徑(經陰道/開放式/腹腔鏡輔助)及是否連帶雙側輸卵管及卵巢切除，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -3301,7 +3482,7 @@ const globalMedicalData = {
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
@@ -3339,12 +3520,12 @@ const globalMedicalData = {
 
       cuhk: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hksh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       ghk: {
@@ -3352,57 +3533,57 @@ const globalMedicalData = {
         priceLabel: "輸卵管及宮外孕手術",
         displayPrice: "HK$40,800 – $129,350",
         remarks: "⚠️ 手術類別(迷你腹腔結紮/腹腔鏡宮外孕切除/診斷性腹腔鏡)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sth: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       baptist: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       union: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       canossa: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sph: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       pbh: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       evangel: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       twah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hkah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       }
       },
       ovarian_cyst: {
@@ -3435,7 +3616,7 @@ const globalMedicalData = {
         priceLabel: "卵巢囊腫切除術",
         displayPrice: "HK$93,000 – $197,600",
         remarks: "⚠️ 手術路徑、單雙側切除、是否使用Ligasure/Enseal能量設備，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -3529,7 +3710,7 @@ const globalMedicalData = {
 
       cuhk: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hksh: {
@@ -3545,12 +3726,12 @@ const globalMedicalData = {
         priceLabel: "避孕及終止妊娠",
         displayPrice: "HK$25,800 – $41,340",
         remarks: "⚠️ 處置項目(常規擴刮/終止妊娠/產後流產後擴刮)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       sth: {
@@ -3611,12 +3792,12 @@ const globalMedicalData = {
 
       twah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       },
 
       hkah: {
         price: 9999999,
-        remarks: "婦產科套餐資料整理中。"
+        remarks: "婦科套餐資料整理中。"
       }
       }
     },
@@ -3634,7 +3815,7 @@ const globalMedicalData = {
         price: 338950,
         priceLabel: "全人工膝關節置換術",
         displayPrice: "HK$156,900 – $521,000",
-        remarks: "✓ 单侧或双侧置换、使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院級別。包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 單側或双侧置换、使用的品牌植入物（S&N/ZIMMER/STRYKER）及住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -3710,7 +3891,7 @@ const globalMedicalData = {
         price: 181585,
         priceLabel: "肩關節鏡手術",
         displayPrice: "HK$109,370 – $253,800",
-        remarks: "✓ 手術形式（盂唇韌帶/肩袖修復）与住院級別。包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 手術形式（盂唇韌帶/肩袖修復）與住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -3856,7 +4037,7 @@ const globalMedicalData = {
         price: 207750,
         priceLabel: "ORIF (鎖骨/橈骨遠端)",
         displayPrice: "HK$138,500 – $277,000",
-        remarks: "✓ 骨折具体部位（锁骨/桡骨远端）与住院級別.包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 骨折具體部位（鎖骨/橈骨遠端）與住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -3872,7 +4053,7 @@ const globalMedicalData = {
         priceLabel: "切開復位內固定術（上肢）",
         displayPrice: "HK$104,133 – $149,966",
         remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://gleneagles.hk/tc/fee-charges/"
+        link: "https://gleneagles.hk/tc/fee-charges/package-charges"
       },
 
       matilda: {
@@ -4159,7 +4340,7 @@ const globalMedicalData = {
         price: 194310,
         priceLabel: "膝關節鏡手術",
         displayPrice: "HK$63,620 – $325,000",
-        remarks: "✓ 術式复杂性（单侧游离体移除/半月板修復/前或后十字韌帶重建）与住院級別。包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 術式複雜性（單側游離體移除/半月板修復/前或後十字韌帶重建）與住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -4265,7 +4446,7 @@ const globalMedicalData = {
         price: 129985,
         priceLabel: "ORIF (髕骨/足踝骨折)",
         displayPrice: "HK$71,170 – $188,800",
-        remarks: "✓ 骨折具体部位（髌骨/足踝单双踝）与住院級別。包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 骨折具體部位（髕骨/足踝單雙踝）與住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -4281,7 +4462,7 @@ const globalMedicalData = {
         priceLabel: "切開復位內固定術（下肢）",
         displayPrice: "HK$100,300 – $137,919",
         remarks: "⚠️ 參考 Bowtie 2026-03-10 匯總（稱取自醫院官網）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://gleneagles.hk/tc/fee-charges/"
+        link: "https://gleneagles.hk/tc/fee-charges/package-charges"
       },
 
       matilda: {
@@ -4453,7 +4634,7 @@ const globalMedicalData = {
         price: 123760,
         priceLabel: "跟腱修補/踝關節鏡韌帶修補",
         displayPrice: "HK$65,220 – $182,300",
-        remarks: "✓ 術式类型（开放式跟腱/关节镜韌帶修补）与住院級別。包括所有醫院收費及所有醫生費用。"
+        remarks: "✓ 術式類型（開放式跟腱/關節鏡韌帶修補）與住院級別。包括所有醫院收費及所有醫生費用。"
       },
 
       hksh: {
@@ -4989,7 +5170,7 @@ const globalMedicalData = {
         priceLabel: "白內障超聲乳化手術",
         displayPrice: "HK$23,800 – $111,280",
         remarks: "⚠️ 所選擇的人工晶體級別(標準/雙光/三光/多焦點/散光)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/ophthalmology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/eye-clinic"
       },
 
       matilda: {
@@ -5270,7 +5451,7 @@ const globalMedicalData = {
         priceLabel: "顯微喉鏡檢查",
         displayPrice: "HK$70,200 – $86,910",
         remarks: "⚠️ 是否使用激光設備。",
-        link: "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/ent-clinic"
       },
 
       matilda: {
@@ -5356,7 +5537,7 @@ const globalMedicalData = {
         priceLabel: "腺樣體及扁桃體手術",
         displayPrice: "HK$54,000 – $104,000",
         remarks: "⚠️ 手術範圍(扁桃腺/腺體/垂腭咽)、是否合併內窺鏡切除，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/ent-clinic"
       },
 
       matilda: {
@@ -5463,7 +5644,7 @@ const globalMedicalData = {
         priceLabel: "鼻竇炎及鼻中隔手術",
         displayPrice: "HK$42,000 – $155,610",
         remarks: "⚠️ 手術項目(鼻骨閉合復位/內窺鏡鼻甲成形/鼻中膈修補/FESS)、是否附加定位導航，與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/ent-clinic"
       },
 
       matilda: {
@@ -5543,7 +5724,7 @@ const globalMedicalData = {
         priceLabel: "鼓膜修補及顯微喉鏡",
         displayPrice: "HK$39,100 – $100,230",
         remarks: "⚠️ 手術術式(鼓膜切開伴中耳導管植入/鼓膜成型修補術)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/ear-nose-throat"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/ent-clinic"
       },
 
       matilda: {
@@ -5980,7 +6161,7 @@ const globalMedicalData = {
         priceLabel: "前列腺及膀胱腫瘤手術",
         displayPrice: "HK$40,900 – $133,250",
         remarks: "⚠️ 處置項目(經會陰活組織檢查/經尿道前列腺切除/膀胱腫瘤切除)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/urology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/urology-clinic"
       },
 
       matilda: {
@@ -6066,7 +6247,7 @@ const globalMedicalData = {
         priceLabel: "泌尿系結石碎石手術",
         displayPrice: "HK$49,600 – $116,480",
         remarks: "⚠️ 手術方式(體外衝擊波/輸尿管內窺鏡取石/鈥激光/銩激光碎石)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/urology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/urology-clinic"
       },
 
       matilda: {
@@ -6143,7 +6324,7 @@ const globalMedicalData = {
         priceLabel: "膀胱鏡檢查",
         displayPrice: "HK$17,800 – $32,240",
         remarks: "⚠️ 使用硬鏡或軟鏡、麻醉方式(局麻/監察/全身麻醉)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/urology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/urology-clinic"
       },
 
       matilda: {
@@ -6223,7 +6404,7 @@ const globalMedicalData = {
         priceLabel: "男科處置手術",
         displayPrice: "HK$27,000 – $62,400",
         remarks: "⚠️ 手術項目、麻醉方式(局麻/監察/全身麻醉)與手術風險等級。",
-        link: "https://gleneagles.hk/tc/patient-care-services/urology"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/urology-clinic"
       },
 
       matilda: {
@@ -6284,10 +6465,621 @@ const globalMedicalData = {
   searchIndex: [
     {
       "keywords": [
-        "胃鏡",
-        "gastroscopy",
-        "OGD",
+        "冠狀動脈造影及支架置入 (PCI)",
+        "pci",
+        "通波仔",
+        "放支架",
+        "心臟支架",
+        "冠脈支架",
+        "冠心病",
+        "心血管堵塞",
+        "血管塞",
+        "心肌梗塞",
+        "心梗",
+        "胸痛通波仔",
+        "PTCA",
+        "支架置入",
+        "冠狀動脈介入",
+        "通血管",
+        "心臟通波"
+      ],
+      "page": "cardiology.html",
+      "hash": "#pci",
+      "label": "冠狀動脈造影及支架置入 (PCI)"
+    },
+    {
+      "keywords": [
+        "冠狀動脈造影",
+        "angiography",
+        "心導管",
+        "心臟造影",
+        "通波仔檢查",
+        "心導管檢查",
+        "冠脈造影",
+        "心血管造影",
+        "angiogram",
+        "心導管手術"
+      ],
+      "page": "cardiology.html",
+      "hash": "#angiography",
+      "label": "冠狀動脈造影"
+    },
+    {
+      "keywords": [
+        "扁桃體切除術",
+        "tonsillectomy",
+        "扁桃腺切除術（歷史中位）",
+        "割扁桃腺",
+        "扁桃體",
+        "扁桃腺",
+        "經常喉嚨痛",
+        "扁桃腺發炎",
+        "扁桃體切除",
+        "年年喉嚨痛",
+        "tonsil"
+      ],
+      "page": "ent.html",
+      "hash": "#tonsillectomy",
+      "label": "扁桃體切除術"
+    },
+    {
+      "keywords": [
+        "微型喉鏡檢查",
+        "micro laryngoscopy",
+        "顯微喉鏡檢查",
+        "顯微喉內視鏡檢查",
+        "聲帶",
+        "聲嘶",
+        "喉鏡",
+        "聲沙",
+        "失聲",
+        "聲帶息肉",
+        "聲帶結節",
+        "顯微喉鏡",
+        "聲帶手術"
+      ],
+      "page": "ent.html",
+      "hash": "#micro_laryngoscopy",
+      "label": "微型喉鏡檢查"
+    },
+    {
+      "keywords": [
+        "腺樣體及扁桃體手術",
+        "adenoid tonsil",
+        "扁桃腺切除術（歷史中位）",
+        "扁桃腺切除術套餐（標準房）",
+        "扁桃體切除術（歷史中位）",
+        "腺樣體",
+        "小兒鼻塞",
+        "小兒打鼾",
+        "小朋友鼻塞",
+        "腺樣體肥大",
+        "割腺樣體",
+        "小兒睡眠窒息",
+        "口呼吸"
+      ],
+      "page": "ent.html",
+      "hash": "#adenoid_tonsil",
+      "label": "腺樣體及扁桃體手術"
+    },
+    {
+      "keywords": [
+        "鼻竇炎及鼻中隔手術",
+        "sinus surgery",
+        "功能性內視鏡鼻竇手術",
+        "鼻竇",
+        "鼻息肉",
+        "慢性鼻炎",
+        "鼻塞手術",
+        "鼻竇炎",
+        "鼻竇手術",
+        "FESS",
+        "嗅覺差",
+        "鼻塞好耐",
+        "鼻息肉手術"
+      ],
+      "page": "ent.html",
+      "hash": "#sinus_surgery",
+      "label": "鼻竇炎及鼻中隔手術"
+    },
+    {
+      "keywords": [
+        "鼓膜修補及顯微喉鏡",
+        "tympanoplasty",
+        "鼓膜",
+        "耳膜修補",
+        "中耳炎",
+        "耳穿",
+        "耳膜穿",
+        "耳仔穿窿",
+        "長期流耳水",
+        "聽力差",
+        "鼓室成形"
+      ],
+      "page": "ent.html",
+      "hash": "#tympanoplasty",
+      "label": "鼓膜修補及顯微喉鏡"
+    },
+    {
+      "keywords": [
+        "腹腔鏡膽囊切除術",
+        "cholecystectomy",
+        "腹腔內視鏡膽囊切除術",
+        "腹腔鏡內膽囊切除術",
+        "膽囊切除術（腹腔鏡）",
+        "膽囊切除術",
+        "膽石",
+        "膽結石",
+        "割膽",
+        "切膽",
+        "切膽囊",
+        "除膽囊",
+        "膽囊切除",
+        "胆囊",
+        "膽囊",
+        "右上腹痛",
+        "膽痛",
+        "膽絞痛",
+        "食油膩肚痛",
+        "膽固醇石",
+        "泥沙膽",
+        "腹腔鏡割膽",
+        "無創割膽",
+        "gallstone",
+        "gallbladder"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#cholecystectomy",
+      "label": "腹腔鏡膽囊切除術"
+    },
+    {
+      "keywords": [
+        "乳房腫塊切除術",
+        "breast lump",
+        "超聲波導引乳房腫塊切除術",
+        "乳房腫塊",
+        "乳房硬塊",
+        "乳核",
+        "乳房有粒",
+        "摸到粒",
+        "乳房檢查",
+        "乳房腫瘤",
+        "乳腺增生",
+        "乳房囊腫"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_lump",
+      "label": "乳房腫塊切除術"
+    },
+    {
+      "keywords": [
+        "包皮環切術",
+        "circumcision",
+        "包皮環切術（全面護理套餐）",
+        "割包皮",
+        "包皮",
+        "包莖",
+        "包皮過長",
+        "包皮手術",
+        "小兒割包皮"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#circumcision",
+      "label": "包皮環切術"
+    },
+    {
+      "keywords": [
+        "甲狀腺細針穿刺檢查",
+        "thyroid fna",
+        "超聲波導引甲狀腺細針穿刺",
+        "甲狀腺針刺",
+        "甲狀腺穿刺",
+        "甲狀腺結節",
+        "甲狀腺抽針",
+        "甲狀腺 FNA",
+        "頸部結節",
+        "甲狀腺檢查",
+        "甲狀腺細針"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroid_fna",
+      "label": "超聲波導引甲狀腺細針穿刺"
+    },
+    {
+      "keywords": [
+        "偏側甲狀腺切除術",
+        "hemithyroidectomy",
+        "甲狀腺次全切術",
+        "半甲狀腺切除（歷史中位）",
+        "半邊甲狀腺切除術",
+        "半甲狀腺切除術套餐（標準房）",
+        "半甲狀腺",
+        "單側甲狀腺",
+        "甲狀腺半切",
+        "一邊甲狀腺",
+        "甲狀腺葉切除"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hemithyroidectomy",
+      "label": "偏側甲狀腺切除術"
+    },
+    {
+      "keywords": [
+        "甲狀腺/副甲狀腺切除術",
+        "thyroidectomy",
+        "甲狀腺全切術",
+        "全甲狀腺切除（歷史中位）",
+        "全邊甲狀腺切除術",
+        "全甲狀腺切除術套餐（標準房）",
+        "甲狀腺切除",
+        "甲狀腺手術",
+        "甲亢手術",
+        "全甲狀腺切除",
+        "甲狀腺全切",
+        "甲狀腺癌手術"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroidectomy",
+      "label": "甲狀腺/副甲狀腺切除術"
+    },
+    {
+      "keywords": [
+        "腹腔疝氣修補術",
+        "hernia abdominal",
+        "開放式疝氣手術（歷史中位）",
+        "腹壁疝",
+        "切口疝",
+        "肚臍疝",
+        "臍疝",
+        "手術後疝",
+        "腹部凸出",
+        "腹疝"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_abdominal",
+      "label": "腹腔疝氣修補術"
+    },
+    {
+      "keywords": [
+        "單側腹股溝疝氣修補術",
+        "hernia unilateral",
+        "腹腔鏡腹股溝疝修補術（單側）",
+        "腹股溝疝氣切除術（腹腔鏡單邊）",
+        "腹腔鏡腹股溝疝修補術",
+        "腹腔鏡疝氣修補（歷史中位）",
+        "疝氣",
+        "小腸氣",
+        "單側疝",
+        "一邊疝氣",
+        "腹股溝",
+        "腹股溝疝",
+        "鼠蹊",
+        "站久凸出",
+        "下腹凸",
+        "hernia",
+        "inguinal"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_unilateral",
+      "label": "單側腹股溝疝氣修補術"
+    },
+    {
+      "keywords": [
+        "雙側腹股溝疝氣修補術",
+        "hernia bilateral",
+        "雙側疝",
+        "兩邊疝氣",
+        "雙邊疝",
+        "雙側小腸氣",
+        "兩邊小腸氣",
+        "兩側腹股溝疝"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hernia_bilateral",
+      "label": "雙側腹股溝疝氣修補術"
+    },
+    {
+      "keywords": [
+        "闌尾切除術",
+        "appendectomy",
+        "腹腔鏡闌尾切除（歷史中位）",
+        "盲腸",
+        "割盲腸",
+        "闌尾",
+        "阑尾",
+        "闌尾炎",
+        "盲腸炎",
+        "右下腹痛",
+        "急性腹痛",
+        "割闌尾",
+        "闌尾切除",
+        "appendicitis"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#appendectomy",
+      "label": "闌尾切除術"
+    },
+    {
+      "keywords": [
+        "痔瘡專項處置",
+        "hemorrhoid",
+        "痔瘡切除術",
+        "痔瘡切除術（傳統・全面護理套餐）",
+        "痔瘡切除術（普通房套餐）",
+        "痔瘡",
+        "痔核",
+        "痔",
+        "大便流血",
+        "屎血",
+        "肛裂",
+        "肛門痛",
+        "脫肛",
+        "痔瘡手術",
+        "結紮痔瘡",
+        "激光痔瘡",
+        "piles"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#hemorrhoid",
+      "label": "痔瘡專項處置"
+    },
+    {
+      "keywords": [
+        "甲狀腺處置手術",
+        "thyroid surgery",
+        "甲狀腺",
+        "甲狀腺瘤",
+        "甲狀腺腫",
+        "大頸泡",
+        "頸前腫塊",
+        "甲亢"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#thyroid_surgery",
+      "label": "甲狀腺處置手術"
+    },
+    {
+      "keywords": [
+        "輸液港手術",
+        "port a cath",
+        "輸液港",
+        "输液港",
+        "输液埠",
+        "Port-A",
+        "Port A",
+        "portacath",
+        "化療導管",
+        "化療埠",
+        "皮下貯器",
+        "中央靜脈導管",
+        "chemoport"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#port_a_cath",
+      "label": "輸液港手術"
+    },
+    {
+      "keywords": [
+        "乳腺抽針及旋切活檢",
+        "breast biopsy",
+        "開放式乳房活組織切片檢查",
+        "乳房切片",
+        "乳組織檢查",
+        "乳房活檢",
+        "乳房穿刺",
+        "乳房針刺",
+        "乳房活組織"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_biopsy",
+      "label": "乳腺抽針及旋切活檢"
+    },
+    {
+      "keywords": [
+        "乳腺外科手術",
+        "breast surgery",
+        "乳房腫瘤／全乳切除術",
+        "乳房切除術",
+        "乳房手術",
+        "乳癌手術",
+        "乳房切除",
+        "全乳切除",
+        "乳癌",
+        "乳房腫瘤切除",
+        "乳腺手術"
+      ],
+      "page": "general-surgery.html",
+      "hash": "#breast_surgery",
+      "label": "乳腺外科手術"
+    },
+    {
+      "keywords": [
+        "自然分娩套餐",
+        "normal delivery",
+        "自然分娩套餐 (二人房/一人房)",
+        "自然分娩套餐（標準房 3日2夜）",
+        "自然分娩套餐（兩晚・含產鉗／真空）",
+        "陰道分娩（歷史中位總收費）",
+        "自然分娩（歷史中位總收費）",
+        "自然分娩計劃（標準房 4日3夜）",
+        "自然分娩套餐（普通房 3日2夜）",
+        "自然分娩計劃（2人房 3日2夜）",
+        "順產",
+        "自然分娩",
+        "生仔",
+        "產科套餐",
+        "分娩",
+        "自然產",
+        "陰道分娩",
+        "生產套餐",
+        "產子",
+        "生B",
+        "maternity"
+      ],
+      "page": "gyn.html",
+      "hash": "#normal_delivery",
+      "label": "自然分娩套餐 (二人房/一人房)"
+    },
+    {
+      "keywords": [
+        "剖腹產套餐",
+        "c section",
+        "剖腹分娩套餐 (二人房/一人房)",
+        "剖腹分娩套餐（標準房 5日4夜）",
+        "剖腹分娩套餐（4晚）",
+        "剖腹分娩（歷史中位總收費）",
+        "剖腹分娩計劃（標準房 5日4夜）",
+        "剖腹分娩套餐（普通房 5日4夜）",
+        "剖腹取嬰術（歷史中位總收費）",
+        "剖腹產",
+        "剖宮產",
+        "剖腹",
+        "剖腹生产",
+        "剖腹生產",
+        "剖腹生",
+        "剖腹取胎",
+        "C-section",
+        "caesarean",
+        "cesarean"
+      ],
+      "page": "gyn.html",
+      "hash": "#c_section",
+      "label": "剖腹分娩套餐 (二人房/一人房)"
+    },
+    {
+      "keywords": [
+        "子宮頸病變治療手術",
+        "cervical treatment",
+        "陰道窺鏡檢查",
+        "子宮頸",
+        "柏氏塗片異常",
+        "子宮頸治療",
+        "子宮頸炎",
+        "子宮頸瘜肉",
+        "LEEP",
+        "冷療",
+        "錐切",
+        "HPV",
+        "子宮頸癌前"
+      ],
+      "page": "gyn.html",
+      "hash": "#cervical_treatment",
+      "label": "子宮頸病變治療手術"
+    },
+    {
+      "keywords": [
+        "子宮鏡診治手術",
+        "hysteroscopy",
+        "子宮腔鏡（診斷）+ 擴刮套餐",
+        "宮腔鏡檢查 + 刮宮術",
+        "宮腔鏡 + 刮宮（C級套餐）",
+        "子宮鏡",
+        "宮腔鏡",
+        "異常出血",
+        "月經失調",
+        "子宮內膜息肉",
+        "宮腔息肉",
+        "診刮"
+      ],
+      "page": "gyn.html",
+      "hash": "#hysteroscopy",
+      "label": "子宮鏡診治手術"
+    },
+    {
+      "keywords": [
+        "子宮肌瘤切除術",
+        "myomectomy",
+        "子宮肌瘤切除術（傳統）套餐",
+        "肌瘤切除術",
+        "子宮肌瘤",
+        "肌瘤",
+        "子宮瘤",
+        "經痛嚴重",
+        "月經量大",
+        "經血多",
+        "肌瘤切除",
+        "保留子宮",
+        "fibroid",
+        "myoma"
+      ],
+      "page": "gyn.html",
+      "hash": "#myomectomy",
+      "label": "子宮肌瘤切除術"
+    },
+    {
+      "keywords": [
+        "子宮切除術",
+        "hysterectomy",
+        "子宮切除術（歷史中位）",
+        "子宮切除術（經腹腔）套餐",
+        "腹腔鏡輔助子宮切除術",
+        "腹腔鏡子宮切除（歷史中位）",
+        "切除子宮",
+        "全宮切除",
+        "子宮切除",
+        "割子宮",
+        "拿子宮",
+        "子宮全切"
+      ],
+      "page": "gyn.html",
+      "hash": "#hysterectomy",
+      "label": "子宮切除術"
+    },
+    {
+      "keywords": [
+        "輸卵管及宮外孕手術",
+        "tubal ectopic",
+        "宮外孕",
+        "異位妊娠",
+        "輸卵管妊娠",
+        "子宮外孕",
+        "宫外孕",
+        "ectopic"
+      ],
+      "page": "gyn.html",
+      "hash": "#tubal_ectopic",
+      "label": "輸卵管及宮外孕手術"
+    },
+    {
+      "keywords": [
+        "卵巢囊腫切除術",
+        "ovarian cyst",
+        "腹腔鏡卵巢囊腫切除（歷史中位）",
+        "卵巢囊腫切除（傳統）套餐",
+        "腹腔鏡卵巢囊腫切除術",
+        "卵巢囊腫",
+        "卵巢瘤",
+        "盆腔痛",
+        "卵巢水泡",
+        "卵巢手術",
+        "附件腫塊",
+        "卵巢囊肿"
+      ],
+      "page": "gyn.html",
+      "hash": "#ovarian_cyst",
+      "label": "卵巢囊腫切除術"
+    },
+    {
+      "keywords": [
+        "避孕及終止妊娠",
+        "contraception",
+        "刮宮術（歷史中位）",
+        "刮宮術",
+        "結紮",
+        "避孕手術",
+        "輸卵管結紮",
+        "絕育",
+        "女性結紮",
+        "永久避孕"
+      ],
+      "page": "gyn.html",
+      "hash": "#contraception",
+      "label": "避孕及終止妊娠"
+    },
+    {
+      "keywords": [
         "日間胃鏡檢查套餐價格比較 (Gastroscopy)",
+        "gastroscopy",
         "無痛胃鏡健康檢查 (監察麻醉)",
         "日間胃鏡 (鎮靜麻醉)",
         "日間中心程序起步底價",
@@ -6300,7 +7092,41 @@ const globalMedicalData = {
         "胃鏡檢查",
         "門診胃鏡（醫院收費）",
         "日間手術中心胃內窺鏡套餐",
-        "胃鏡 ± 瘜肉（歷史中位）"
+        "胃鏡 ± 瘜肉（歷史中位）",
+        "胃痛",
+        "胃唔舒服",
+        "胃不適",
+        "胃脹",
+        "胃氣脹",
+        "吞嚥困難",
+        "吞嘢困難",
+        "難吞嚥",
+        "反酸",
+        "胃酸倒流",
+        "胃酸反流",
+        "燒心",
+        "心口灼熱",
+        "胃潰瘍",
+        "十二指腸潰瘍",
+        "胃病",
+        "照胃",
+        "照胃鏡",
+        "做胃鏡",
+        "無痛胃鏡",
+        "鎮靜胃鏡",
+        "睡眠胃鏡",
+        "OGD",
+        "EGD",
+        "胃窺鏡",
+        "上消化道",
+        "上消化道內視鏡",
+        "胃出血",
+        "黑便",
+        "柏油便",
+        "幽門螺桿菌",
+        "HP",
+        "胃息肉",
+        "胃瘜肉"
       ],
       "page": "imaging.html",
       "hash": "#gastroscopy",
@@ -6308,11 +7134,8 @@ const globalMedicalData = {
     },
     {
       "keywords": [
-        "結腸鏡",
-        "肠镜",
-        "colonoscopy",
-        "大腸鏡",
         "日間大腸鏡檢查套餐價格比較 (Colonoscopy)",
+        "colonoscopy",
         "無痛腸鏡健康檢查 (監察麻醉)",
         "日間結腸鏡 (鎮靜麻醉)",
         "大腸鏡 ± 瘜肉（歷史中位）",
@@ -6326,7 +7149,41 @@ const globalMedicalData = {
         "日間大房基準套餐價",
         "日間全面護理套餐（大腸鏡）",
         "日間大腸鏡（歷史中位總收費）",
-        "大腸鏡檢查（含／不含瘜肉）參考區間"
+        "大腸鏡檢查（含／不含瘜肉）參考區間",
+        "大便帶血",
+        "便血",
+        "大便有血",
+        "屎有血",
+        "腸癌篩查",
+        "大腸癌篩查",
+        "腸癌檢查",
+        "照腸",
+        "照腸鏡",
+        "做腸鏡",
+        "腸鏡",
+        "肠镜",
+        "大腸鏡",
+        "無痛腸鏡",
+        "鎮靜腸鏡",
+        "便秘",
+        "肚屙",
+        "肚瀉",
+        "腹瀉",
+        "大便潛血",
+        "FIT",
+        "瘜肉",
+        "息肉",
+        "大腸瘜肉",
+        "大腸息肉",
+        "下消化道",
+        "排便習慣改變",
+        "大便習慣改變",
+        "腸絞痛",
+        "左下腹痛",
+        "腸炎症",
+        "潰瘍性結腸炎",
+        "克隆氏",
+        "IBD"
       ],
       "page": "imaging.html",
       "hash": "#colonoscopy",
@@ -6334,9 +7191,6 @@ const globalMedicalData = {
     },
     {
       "keywords": [
-        "雙鏡",
-        "dual",
-        "胃鏡+大腸鏡",
         "胃鏡加大腸鏡聯合檢查",
         "dual scope",
         "無痛胃腸鏡健康檢查 (雙鏡聯合)",
@@ -6351,18 +7205,53 @@ const globalMedicalData = {
         "常規兩項程序大房加總底價",
         "日間全面護理套餐（胃＋腸）",
         "日間胃＋腸鏡（歷史中位總收費）",
-        "胃鏡＋大腸鏡合併套餐參考"
+        "胃鏡＋大腸鏡合併套餐參考",
+        "胃腸鏡",
+        "雙鏡",
+        "兩鏡",
+        "胃加腸",
+        "胃腸聯查",
+        "一次過照",
+        "一次做兩樣",
+        "無痛雙鏡",
+        "胃肠镜",
+        "胃鏡大腸鏡",
+        "上下消化道",
+        "套餐雙鏡"
       ],
       "page": "imaging.html",
       "hash": "#dual_scope",
-      "label": "胃鏡加大腸鏡聯合檢查"
+      "label": "無痛胃腸鏡健康檢查 (雙鏡聯合)"
     },
     {
       "keywords": [
-        "CT",
-        "電腦斷層",
-        "ct brain",
+        "支氣管鏡檢查",
+        "bronchoscopy",
+        "支氣管鏡檢查 (日間)",
+        "支氣管鏡 ± 活檢（歷史中位）",
+        "支氣管內視鏡檢查",
+        "支氣管鏡（歷史中位總收費）",
+        "支氣管鏡",
+        "照肺",
+        "肺鏡",
+        "咳血",
+        "咯血",
+        "痰有血",
+        "氣喘檢查",
+        "長期咳",
+        "慢性咳嗽",
+        "肺檢查",
+        "支氣管檢查",
+        "呼吸科檢查"
+      ],
+      "page": "imaging.html",
+      "hash": "#bronchoscopy",
+      "label": "支氣管鏡檢查 (日間)"
+    },
+    {
+      "keywords": [
         "CT 腦部掃描套餐價格比較",
+        "ct brain",
         "無造影劑掃描",
         "CT 腦部平掃（門診）",
         "CT 腦部平掃",
@@ -6370,7 +7259,21 @@ const globalMedicalData = {
         "CT 腦部平掃（標準房）",
         "CT 腦部掃描",
         "CT 腦部掃描（門診參考）",
-        "CT 腦部平掃（普通房）"
+        "CT 腦部平掃（普通房）",
+        "頭痛 CT",
+        "頭 CT",
+        "腦 CT",
+        "頭部掃描",
+        "腦掃描",
+        "頭顱掃描",
+        "電腦斷層腦",
+        "中風檢查",
+        "中風 CT",
+        "撞頭",
+        "頭部外傷",
+        "頭暈 CT",
+        "腦出血檢查",
+        "CT腦"
       ],
       "page": "imaging.html",
       "hash": "#ct_brain",
@@ -6378,492 +7281,29 @@ const globalMedicalData = {
     },
     {
       "keywords": [
-        "MRI",
-        "磁力共振",
-        "mri brain",
         "MRI 腦部掃描套餐價格比較",
+        "mri brain",
         "無造影劑 MRI",
         "腦部磁力共振套餐",
         "MRI 腦部平掃",
         "MRI 腦部平掃（門診／標準房）",
         "MRI 腦部平掃（標準房）",
         "MRI 腦部掃描",
-        "MRI 腦部平掃（普通房）"
+        "MRI 腦部平掃（普通房）",
+        "頭痛 MRI",
+        "腦 MRI",
+        "頭 MRI",
+        "磁力共振腦",
+        "核磁共振腦",
+        "MRI腦",
+        "腦腫瘤檢查",
+        "多發性硬化",
+        "偏頭痛檢查",
+        "磁力共振頭部"
       ],
       "page": "imaging.html",
       "hash": "#mri_brain",
       "label": "MRI 腦部掃描套餐價格比較"
-    },
-    {
-      "keywords": [
-        "膽囊",
-        "cholecystectomy",
-        "腹腔鏡"
-      ],
-      "page": "general-surgery.html",
-      "hash": "",
-      "label": "腹腔鏡膽囊切除術"
-    },
-    {
-      "keywords": [
-        "門診",
-        "診金",
-        "outpatient",
-        "門診診金"
-      ],
-      "page": "outpatient.html",
-      "hash": "",
-      "label": "門診診金"
-    },
-    {
-      "keywords": [
-        "專科門診",
-        "專科診金",
-        "specialist outpatient",
-        "outpatientSpecialty"
-      ],
-      "page": "outpatient.html",
-      "hash": "#specialty-outpatient",
-      "label": "專科門診"
-    },
-    {
-      "keywords": [
-        "病房",
-        "ward",
-        "住院",
-        "病房收費"
-      ],
-      "page": "ward.html",
-      "hash": "",
-      "label": "病房收費"
-    },
-    {
-      "keywords": [
-        "婦產",
-        "子宮肌瘤",
-        "子宮鏡",
-        "婦科",
-        "子宮肌瘤切除術",
-        "myomectomy",
-        "子宮肌瘤切除術（傳統）套餐",
-        "肌瘤切除術"
-      ],
-      "page": "gyn.html",
-      "hash": "#myomectomy",
-      "label": "myomectomy"
-    },
-    {
-      "keywords": [
-        "膝關節",
-        "骨科",
-        "orthopedics"
-      ],
-      "page": "orthopedics.html",
-      "hash": "",
-      "label": "骨科手術"
-    },
-    {
-      "keywords": [
-        "心臟",
-        "通波仔",
-        "cardiology"
-      ],
-      "page": "cardiology.html",
-      "hash": "",
-      "label": "心臟科"
-    },
-    {
-      "keywords": [
-        "白內障",
-        "眼科",
-        "ophthalmology"
-      ],
-      "page": "ophthalmology.html",
-      "hash": "",
-      "label": "眼科手術"
-    },
-    {
-      "keywords": [
-        "耳鼻喉",
-        "ent"
-      ],
-      "page": "ent.html",
-      "hash": "",
-      "label": "耳鼻喉科"
-    },
-    {
-      "keywords": [
-        "支氣管鏡",
-        "bronchoscopy",
-        "支氣管鏡檢查",
-        "支氣管鏡檢查 (日間)",
-        "支氣管鏡 ± 活檢（歷史中位）",
-        "支氣管內視鏡檢查",
-        "支氣管鏡（歷史中位總收費）"
-      ],
-      "page": "imaging.html",
-      "hash": "#bronchoscopy",
-      "label": "bronchoscopy"
-    },
-    {
-      "keywords": [
-        "泌尿外科",
-        "前列腺",
-        "urology",
-        "前列腺診療手術",
-        "prostate",
-        "前列腺及膀胱腫瘤手術",
-        "經尿道前列腺切除術（全面護理套餐）",
-        "前列腺手術（電刮／等離子氣化）",
-        "經尿道前列腺切除術（TURP）套餐"
-      ],
-      "page": "urology.html",
-      "hash": "#prostate",
-      "label": "prostate"
-    },
-    {
-      "keywords": [
-        "一般外科",
-        "闌尾",
-        "疝氣",
-        "闌尾切除術",
-        "appendectomy",
-        "腹腔鏡闌尾切除（歷史中位）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#appendectomy",
-      "label": "appendectomy"
-    },
-    {
-      "keywords": [
-        "现状 · 生产环境",
-        "baseline"
-      ],
-      "page": "card-explorer.html",
-      "hash": "#baseline",
-      "label": "现状 · 生产环境"
-    },
-    {
-      "keywords": [
-        "建议方案 v2",
-        "proposed"
-      ],
-      "page": "card-explorer.html",
-      "hash": "#proposed",
-      "label": "建议方案 v2"
-    },
-    {
-      "keywords": [
-        "冠狀動脈造影及支架置入 (PCI)",
-        "pci"
-      ],
-      "page": "cardiology.html",
-      "hash": "#pci",
-      "label": "冠狀動脈造影及支架置入 (PCI)"
-    },
-    {
-      "keywords": [
-        "扁桃體切除術",
-        "tonsillectomy",
-        "扁桃腺切除術（歷史中位）"
-      ],
-      "page": "ent.html",
-      "hash": "#tonsillectomy",
-      "label": "tonsillectomy"
-    },
-    {
-      "keywords": [
-        "微型喉鏡檢查",
-        "micro laryngoscopy",
-        "顯微喉鏡檢查",
-        "顯微喉內視鏡檢查"
-      ],
-      "page": "ent.html",
-      "hash": "#micro_laryngoscopy",
-      "label": "micro laryngoscopy"
-    },
-    {
-      "keywords": [
-        "腺樣體及扁桃體手術",
-        "adenoid tonsil",
-        "扁桃腺切除術（歷史中位）",
-        "扁桃腺切除術套餐（標準房）",
-        "扁桃體切除術（歷史中位）"
-      ],
-      "page": "ent.html",
-      "hash": "#adenoid_tonsil",
-      "label": "adenoid tonsil"
-    },
-    {
-      "keywords": [
-        "鼻竇炎及鼻中隔手術",
-        "sinus surgery",
-        "功能性內視鏡鼻竇手術"
-      ],
-      "page": "ent.html",
-      "hash": "#sinus_surgery",
-      "label": "sinus surgery"
-    },
-    {
-      "keywords": [
-        "鼓膜修補及顯微喉鏡",
-        "tympanoplasty"
-      ],
-      "page": "ent.html",
-      "hash": "#tympanoplasty",
-      "label": "tympanoplasty"
-    },
-    {
-      "keywords": [
-        "腹腔鏡膽囊切除術",
-        "cholecystectomy",
-        "腹腔內視鏡膽囊切除術",
-        "腹腔鏡內膽囊切除術",
-        "膽囊切除術（腹腔鏡）",
-        "膽囊切除術"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#cholecystectomy",
-      "label": "cholecystectomy"
-    },
-    {
-      "keywords": [
-        "乳房腫塊切除術",
-        "breast lump",
-        "超聲波導引乳房腫塊切除術"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#breast_lump",
-      "label": "breast lump"
-    },
-    {
-      "keywords": [
-        "包皮環切術",
-        "circumcision",
-        "包皮環切術（全面護理套餐）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#circumcision",
-      "label": "circumcision"
-    },
-    {
-      "keywords": [
-        "甲狀腺細針穿刺檢查",
-        "thyroid fna",
-        "超聲波導引甲狀腺細針穿刺"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#thyroid_fna",
-      "label": "thyroid fna"
-    },
-    {
-      "keywords": [
-        "偏側甲狀腺切除術",
-        "hemithyroidectomy",
-        "甲狀腺次全切術",
-        "半甲狀腺切除（歷史中位）",
-        "半邊甲狀腺切除術",
-        "半甲狀腺切除術套餐（標準房）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#hemithyroidectomy",
-      "label": "hemithyroidectomy"
-    },
-    {
-      "keywords": [
-        "甲狀腺/副甲狀腺切除術",
-        "thyroidectomy",
-        "甲狀腺全切術",
-        "全甲狀腺切除（歷史中位）",
-        "全邊甲狀腺切除術",
-        "全甲狀腺切除術套餐（標準房）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#thyroidectomy",
-      "label": "thyroidectomy"
-    },
-    {
-      "keywords": [
-        "腹腔疝氣修補術",
-        "hernia abdominal",
-        "開放式疝氣手術（歷史中位）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#hernia_abdominal",
-      "label": "hernia abdominal"
-    },
-    {
-      "keywords": [
-        "單側腹股溝疝氣修補術",
-        "hernia unilateral",
-        "腹腔鏡腹股溝疝修補術（單側）",
-        "腹股溝疝氣切除術（腹腔鏡單邊）",
-        "腹腔鏡腹股溝疝修補術",
-        "腹腔鏡疝氣修補（歷史中位）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#hernia_unilateral",
-      "label": "hernia unilateral"
-    },
-    {
-      "keywords": [
-        "雙側腹股溝疝氣修補術",
-        "hernia bilateral"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#hernia_bilateral",
-      "label": "hernia bilateral"
-    },
-    {
-      "keywords": [
-        "痔瘡專項處置",
-        "hemorrhoid",
-        "痔瘡切除術",
-        "痔瘡切除術（傳統・全面護理套餐）",
-        "痔瘡切除術（普通房套餐）"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#hemorrhoid",
-      "label": "hemorrhoid"
-    },
-    {
-      "keywords": [
-        "甲狀腺處置手術",
-        "thyroid surgery"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#thyroid_surgery",
-      "label": "thyroid surgery"
-    },
-    {
-      "keywords": [
-        "輸液港手術",
-        "port a cath"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#port_a_cath",
-      "label": "port a cath"
-    },
-    {
-      "keywords": [
-        "乳腺抽針及旋切活檢",
-        "breast biopsy",
-        "開放式乳房活組織切片檢查"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#breast_biopsy",
-      "label": "breast biopsy"
-    },
-    {
-      "keywords": [
-        "乳腺外科手術",
-        "breast surgery",
-        "乳房腫瘤／全乳切除術",
-        "乳房切除術"
-      ],
-      "page": "general-surgery.html",
-      "hash": "#breast_surgery",
-      "label": "breast surgery"
-    },
-    {
-      "keywords": [
-        "自然分娩套餐",
-        "normal delivery",
-        "自然分娩套餐 (二人房/一人房)",
-        "自然分娩套餐（標準房 3日2夜）",
-        "自然分娩套餐（兩晚・含產鉗／真空）",
-        "陰道分娩（歷史中位總收費）",
-        "自然分娩（歷史中位總收費）",
-        "自然分娩計劃（標準房 4日3夜）",
-        "自然分娩套餐（普通房 3日2夜）",
-        "自然分娩計劃（2人房 3日2夜）"
-      ],
-      "page": "gyn.html",
-      "hash": "#normal_delivery",
-      "label": "normal delivery"
-    },
-    {
-      "keywords": [
-        "剖腹產套餐",
-        "c section",
-        "剖腹分娩套餐 (二人房/一人房)",
-        "剖腹分娩套餐（標準房 5日4夜）",
-        "剖腹分娩套餐（4晚）",
-        "剖腹分娩（歷史中位總收費）",
-        "剖腹分娩計劃（標準房 5日4夜）",
-        "剖腹分娩套餐（普通房 5日4夜）",
-        "剖腹取嬰術（歷史中位總收費）"
-      ],
-      "page": "gyn.html",
-      "hash": "#c_section",
-      "label": "c section"
-    },
-    {
-      "keywords": [
-        "子宮頸病變治療手術",
-        "cervical treatment",
-        "陰道窺鏡檢查"
-      ],
-      "page": "gyn.html",
-      "hash": "#cervical_treatment",
-      "label": "cervical treatment"
-    },
-    {
-      "keywords": [
-        "子宮鏡診治手術",
-        "hysteroscopy",
-        "子宮腔鏡（診斷）+ 擴刮套餐",
-        "宮腔鏡檢查 + 刮宮術",
-        "宮腔鏡 + 刮宮（C級套餐）"
-      ],
-      "page": "gyn.html",
-      "hash": "#hysteroscopy",
-      "label": "hysteroscopy"
-    },
-    {
-      "keywords": [
-        "子宮切除術",
-        "hysterectomy",
-        "子宮切除術（歷史中位）",
-        "子宮切除術（經腹腔）套餐",
-        "腹腔鏡輔助子宮切除術",
-        "腹腔鏡子宮切除（歷史中位）"
-      ],
-      "page": "gyn.html",
-      "hash": "#hysterectomy",
-      "label": "hysterectomy"
-    },
-    {
-      "keywords": [
-        "輸卵管及宮外孕手術",
-        "tubal ectopic"
-      ],
-      "page": "gyn.html",
-      "hash": "#tubal_ectopic",
-      "label": "tubal ectopic"
-    },
-    {
-      "keywords": [
-        "卵巢囊腫切除術",
-        "ovarian cyst",
-        "腹腔鏡卵巢囊腫切除（歷史中位）",
-        "卵巢囊腫切除（傳統）套餐",
-        "腹腔鏡卵巢囊腫切除術"
-      ],
-      "page": "gyn.html",
-      "hash": "#ovarian_cyst",
-      "label": "ovarian cyst"
-    },
-    {
-      "keywords": [
-        "避孕及終止妊娠",
-        "contraception",
-        "刮宮術（歷史中位）",
-        "刮宮術"
-      ],
-      "page": "gyn.html",
-      "hash": "#contraception",
-      "label": "contraception"
     },
     {
       "keywords": [
@@ -6881,42 +7321,81 @@ const globalMedicalData = {
         "白內障超聲乳化晶體植入",
         "白內障超聲乳化+人工晶體植入",
         "白內障摘除及人工晶體植入（單眼／日間）",
-        "白內障超聲乳化+人工晶體植入（單眼套餐）"
+        "白內障超聲乳化+人工晶體植入（單眼套餐）",
+        "白內障",
+        "白内障",
+        "眼睛朦",
+        "眼矇",
+        "視力模糊",
+        "睇嘢矇",
+        "換晶體",
+        "換人工晶體",
+        "超聲乳化",
+        "超聲波乳化",
+        "白內障手術",
+        "IOL"
       ],
       "page": "ophthalmology.html",
       "hash": "#cataract",
-      "label": "白內障超聲乳化手術"
+      "label": "白內障超聲乳化晶體植入"
     },
     {
       "keywords": [
         "斜視手術",
-        "strabismus"
+        "strabismus",
+        "斜視",
+        "鬥雞眼",
+        "眼斜",
+        "對眼",
+        "斜眼",
+        "眼球不正"
       ],
       "page": "ophthalmology.html",
       "hash": "#strabismus",
-      "label": "strabismus"
+      "label": "斜視手術"
     },
     {
       "keywords": [
         "全人工膝關節置換術",
         "knee replacement",
         "單側全膝關節置換術",
-        "全膝關節置換術"
+        "全膝關節置換術",
+        "換膝",
+        "換膝頭",
+        "膝關節置換",
+        "膝痛",
+        "退化性膝關節",
+        "膝骨刺",
+        "膝關節炎",
+        "人工膝",
+        "全膝置換",
+        "TKR",
+        "行路膝痛"
       ],
       "page": "orthopedics.html",
       "hash": "#knee_replacement",
-      "label": "knee replacement"
+      "label": "全人工膝關節置換術"
     },
     {
       "keywords": [
         "髖關節全關節置換",
         "hip replacement",
         "單側全髖關節置換術",
-        "機械臂輔助髖關節置換套餐"
+        "機械臂輔助髖關節置換套餐",
+        "換髖",
+        "換骹",
+        "髖關節置換",
+        "股骨頭",
+        "髋关节",
+        "股骨頭壞死",
+        "髖痛",
+        "人工髖",
+        "THR",
+        "跌倒斷骹"
       ],
       "page": "orthopedics.html",
       "hash": "#hip_replacement",
-      "label": "hip replacement"
+      "label": "單側全髖關節置換術"
     },
     {
       "keywords": [
@@ -6924,7 +7403,12 @@ const globalMedicalData = {
         "joint replacement",
         "人工關節置換術",
         "全膝關節置換術（單側）套餐",
-        "全膝關節置換（5日4夜普通房）"
+        "全膝關節置換（5日4夜普通房）",
+        "換骹",
+        "關節置換",
+        "人工關節",
+        "換關節",
+        "關節退化手術"
       ],
       "page": "orthopedics.html",
       "hash": "#joint_replacement",
@@ -6933,31 +7417,54 @@ const globalMedicalData = {
     {
       "keywords": [
         "肩關節鏡手術",
-        "shoulder arthroscopy"
+        "shoulder arthroscopy",
+        "肩關節鏡",
+        "肩旋轉袖",
+        "旋轉袖",
+        "肩袖",
+        "肩痛",
+        "手臂舉唔到",
+        "肩撞擊",
+        "肩周炎手術",
+        "冰凍肩手術"
       ],
       "page": "orthopedics.html",
       "hash": "#shoulder_arthroscopy",
-      "label": "shoulder arthroscopy"
+      "label": "肩關節鏡手術"
     },
     {
       "keywords": [
         "全肩關節置換術",
-        "shoulder replacement"
+        "shoulder replacement",
+        "換肩",
+        "肩關節置換",
+        "人工肩",
+        "嚴重肩退化"
       ],
       "page": "orthopedics.html",
       "hash": "#shoulder_replacement",
-      "label": "shoulder replacement"
+      "label": "全肩關節置換術"
     },
     {
       "keywords": [
         "膝關節鏡手術",
         "knee arthroscopy",
         "膝關節內視鏡（歷史中位）",
-        "膝關節內窺鏡檢查"
+        "膝關節內窺鏡檢查",
+        "膝關節鏡",
+        "半月板",
+        "半月板撕裂",
+        "十字韌帶",
+        "前十字",
+        "ACL",
+        "膝受傷",
+        "膝扭傷",
+        "膝鎖死",
+        "運動傷膝"
       ],
       "page": "orthopedics.html",
       "hash": "#knee_arthroscopy",
-      "label": "knee arthroscopy"
+      "label": "膝關節鏡手術"
     },
     {
       "keywords": [
@@ -6965,21 +7472,38 @@ const globalMedicalData = {
         "sports ortho",
         "膝關節內視鏡（歷史中位）",
         "膝關節腔內窺鏡（歷史中位）",
-        "膝前十字韌帶重建術"
+        "膝前十字韌帶重建術",
+        "運動創傷",
+        "運動傷科",
+        "運動受傷",
+        "韌帶撕裂",
+        "運動員手術",
+        "sports injury"
       ],
       "page": "orthopedics.html",
       "hash": "#sports_ortho",
-      "label": "sports ortho"
+      "label": "骨科小手術及運動醫學"
     },
     {
       "keywords": [
         "脊柱手術",
         "spine surgery",
-        "椎板切除術（歷史中位）"
+        "椎板切除術（歷史中位）",
+        "脊椎手術",
+        "腰椎",
+        "椎間盤",
+        "坐骨神經",
+        "坐骨神經痛",
+        "腰脫",
+        "椎間盤突出",
+        "脊椎退化",
+        "腰痛腳痺",
+        "頸椎手術",
+        "腰椎手術"
       ],
       "page": "orthopedics.html",
       "hash": "#spine_surgery",
-      "label": "spine surgery"
+      "label": "脊柱手術"
     },
     {
       "keywords": [
@@ -6987,7 +7511,17 @@ const globalMedicalData = {
         "orif upper limb",
         "ORIF (鎖骨/橈骨遠端)",
         "切開復位內固定術（上肢）",
-        "開放性復位及內固定術"
+        "開放性復位及內固定術",
+        "手骨折",
+        "手腕骨折",
+        "鎖骨骨折",
+        "上肢骨折",
+        "手臂骨折",
+        "肘骨折",
+        "打鋼板",
+        "骨折手術",
+        "ORIF 上肢",
+        "橈骨骨折"
       ],
       "page": "orthopedics.html",
       "hash": "#orif_upper_limb",
@@ -6998,45 +7532,83 @@ const globalMedicalData = {
         "ORIF (髕骨/足踝骨折)",
         "orif lower limb",
         "切開復位內固定術（下肢）",
-        "開放性復位及內固定術"
+        "開放性復位及內固定術",
+        "腳骨折",
+        "腳踝骨折",
+        "下肢骨折",
+        "小腿骨折",
+        "脛骨骨折",
+        "足踝骨折",
+        "打鋼釘",
+        "ORIF 下肢"
       ],
       "page": "orthopedics.html",
       "hash": "#orif_lower_limb",
-      "label": "orif lower limb"
+      "label": "ORIF (髕骨/足踝骨折)"
     },
     {
       "keywords": [
         "內視鏡腕管解除術",
         "carpal tunnel",
-        "腕管鬆解術（歷史中位）"
+        "腕管鬆解術（歷史中位）",
+        "腕管",
+        "手腕管",
+        "手麻痺",
+        "手指麻痺",
+        "滑鼠手",
+        "手腕痛",
+        "半夜手痺",
+        "腕隧道",
+        "CTS"
       ],
       "page": "orthopedics.html",
       "hash": "#carpal_tunnel",
-      "label": "carpal tunnel"
+      "label": "內視鏡腕管解除術"
     },
     {
       "keywords": [
         "板機狀指鬆解術",
         "trigger finger",
-        "板機指鬆解術（歷史中位）"
+        "板機指鬆解術（歷史中位）",
+        "彈弓指",
+        "手指卡住",
+        "扳机指",
+        "板機指",
+        "手指彈響",
+        "手指伸唔直"
       ],
       "page": "orthopedics.html",
       "hash": "#trigger_finger",
-      "label": "trigger finger"
+      "label": "板機狀指鬆解術"
     },
     {
       "keywords": [
         "跟腱修補/踝關節鏡韌帶修補",
-        "achilles ankle"
+        "achilles ankle",
+        "跟腱",
+        "腳踝韌帶",
+        "阿基里斯腱",
+        "跟腱斷裂",
+        "腳踝扭傷手術",
+        "踝關節不穩",
+        "Achilles"
       ],
       "page": "orthopedics.html",
       "hash": "#achilles_ankle",
-      "label": "achilles ankle"
+      "label": "跟腱修補/踝關節鏡韌帶修補"
     },
     {
       "keywords": [
         "疼痛管理 (神經阻滯/射頻等)",
-        "nerve block"
+        "nerve block",
+        "神經阻滯",
+        "注射止痛",
+        "慢性痛",
+        "痛症注射",
+        "封閉針",
+        "神經注射",
+        "脊骨注射",
+        "痛症科注射"
       ],
       "page": "pain-management.html",
       "hash": "#nerve_block",
@@ -7045,76 +7617,209 @@ const globalMedicalData = {
     {
       "keywords": [
         "脊柱內鏡診療手術",
-        "spine endoscopy"
+        "spine endoscopy",
+        "脊椎內視鏡",
+        "椎間盤鏡",
+        "腰痛手術",
+        "微創腰痛",
+        "椎間盤微創",
+        "內視鏡腰椎"
       ],
       "page": "pain-management.html",
       "hash": "#spine_endoscopy",
-      "label": "spine endoscopy"
+      "label": "脊柱內鏡診療手術"
     },
     {
       "keywords": [
         "脊髓電刺激植入術",
-        "scs implant"
+        "scs implant",
+        "脊髓刺激",
+        "止痛器",
+        "神經刺激器",
+        "SCS",
+        "慢性痛植入",
+        "脊髓電刺激"
       ],
       "page": "pain-management.html",
       "hash": "#scs_implant",
-      "label": "scs implant"
+      "label": "脊髓電刺激植入術"
     },
     {
       "keywords": [
         "急症/整形外科縫合套餐",
-        "laceration repair"
+        "laceration repair",
+        "傷口縫合",
+        "外傷縫合",
+        "切傷",
+        "缝针",
+        "縫針",
+        "裂傷",
+        "臉部縫合",
+        "急症縫合",
+        "整形縫合",
+        "美容縫合"
       ],
       "page": "plastics.html",
       "hash": "#laceration_repair",
-      "label": "laceration repair"
+      "label": "急症/整形外科縫合套餐"
+    },
+    {
+      "keywords": [
+        "鼻整形手術",
+        "rhinoplasty",
+        "隆鼻",
+        "鼻整形",
+        "改鼻型",
+        "鼻雕",
+        "墊鼻",
+        "鼻頭手術",
+        "nose job"
+      ],
+      "page": "plastics.html",
+      "hash": "#rhinoplasty",
+      "label": "鼻整形手術"
+    },
+    {
+      "keywords": [
+        "前列腺診療手術",
+        "prostate",
+        "前列腺及膀胱腫瘤手術",
+        "經尿道前列腺切除術（全面護理套餐）",
+        "前列腺手術（電刮／等離子氣化）",
+        "經尿道前列腺切除術（TURP）套餐",
+        "前列腺",
+        "小便困難",
+        "夜尿",
+        "攝護腺",
+        "前列腺肥大",
+        "BPH",
+        "尿無力",
+        "尿線幼",
+        "尿頻",
+        "TURP",
+        "前列腺手術",
+        "老人家夜尿"
+      ],
+      "page": "urology.html",
+      "hash": "#prostate",
+      "label": "前列腺診療手術"
     },
     {
       "keywords": [
         "泌尿系結石碎石手術",
-        "kidney stone"
+        "kidney stone",
+        "腎石",
+        "尿石",
+        "腎絞痛",
+        "血尿",
+        "结石",
+        "腎結石",
+        "輸尿管石",
+        "碎石",
+        "ESWL",
+        "尿道石",
+        "小便赤痛",
+        "腰突然劇痛"
       ],
       "page": "urology.html",
       "hash": "#kidney_stone",
-      "label": "kidney stone"
+      "label": "泌尿系結石碎石手術"
     },
     {
       "keywords": [
         "尿動力及膀胱鏡檢查",
         "urodynamics",
         "膀胱鏡檢查",
-        "尿動力測試（成人）"
+        "尿動力測試（成人）",
+        "尿動力學",
+        "小便失禁檢查",
+        "尿失禁",
+        "尿急",
+        "膀胱檢查",
+        "尿控檢查",
+        "壓力性失禁檢查"
       ],
       "page": "urology.html",
       "hash": "#urodynamics",
-      "label": "urodynamics"
+      "label": "尿動力及膀胱鏡檢查"
     },
     {
       "keywords": [
         "男科處置手術",
         "andrology",
-        "睾丸固定術"
+        "睾丸固定術",
+        "男科",
+        "包皮過長",
+        "勃起",
+        "陽痿",
+        "ED",
+        "男性不育",
+        "精索靜脈",
+        "男科手術"
       ],
       "page": "urology.html",
       "hash": "#andrology",
-      "label": "andrology"
+      "label": "男科處置手術"
     },
     {
       "keywords": [
-        "angiography",
-        "冠狀動脈造影"
+        "outpatient",
+        "門診診金",
+        "門診",
+        "睇醫生",
+        "診所",
+        "急症",
+        "挂号",
+        "掛號費",
+        "診金",
+        "普通科",
+        "家庭醫生",
+        "GP",
+        "門診費",
+        "睇症",
+        "掛號睇醫生",
+        "私家門診"
       ],
-      "page": "cardiology.html",
-      "hash": "#angiography",
-      "label": "angiography"
+      "page": "outpatient.html",
+      "hash": "",
+      "label": "門診診金"
     },
     {
       "keywords": [
-        "rhinoplasty"
+        "outpatientSpecialty",
+        "專科門診",
+        "專科診金",
+        "看專科",
+        "專科醫生",
+        "专科门诊",
+        "專科掛號"
       ],
-      "page": "plastics.html",
-      "hash": "#rhinoplasty",
-      "label": "rhinoplasty"
+      "page": "outpatient.html",
+      "hash": "#specialty-outpatient",
+      "label": "專科門診"
+    },
+    {
+      "keywords": [
+        "ward",
+        "病房收費",
+        "病房",
+        "住院",
+        "半私家",
+        "私家房",
+        "普通房",
+        "日租",
+        "病房費",
+        "住院費",
+        "大房",
+        "三人房",
+        "雙人房",
+        "單人房",
+        "私家病房",
+        "醫院住房"
+      ],
+      "page": "ward.html",
+      "hash": "",
+      "label": "病房收費"
     }
   ]
 };
@@ -7141,44 +7846,90 @@ function getModuleHospitalList(moduleName, procedureId) {
     });
 }
 
-/** 全局搜尋索引查詢（只回傳繁中標籤結果） */
+/** 全局搜尋索引查詢（俗稱／症狀別名 + 模糊匹配；回傳繁中標籤） */
 function searchMedicalIndex(query) {
-  var q = String(query || '').toLowerCase().trim();
-  if (!q) return [];
-
-  function hasCjk(s) {
-    return /[\u3400-\u9FFF]/.test(String(s || ''));
+  var raw = String(query || '').trim();
+  if (!raw) return [];
+  var SC_TO_TC = {
+    '肠':'腸','胆':'膽','疗':'療','术':'術','诊':'診','检':'檢','险':'險',
+    '费':'費','价':'價','医':'醫','护':'護','单':'單','与':'與','为':'為',
+    '这':'這','个':'個','产':'產','关':'關','开':'開','门':'門','时':'時',
+    '间':'間','发':'發','现':'現','从':'從','经':'經','长':'長','东':'東',
+    '车':'車','过':'過','还':'還','对':'對','说':'說','国':'國','页':'頁',
+    '网':'網','库':'庫','录':'錄','针':'針','线':'線','头':'頭','风':'風',
+    '湿':'濕','干':'乾','后':'後','里':'裡','准':'準','复':'復','历':'歷',
+    '确':'確','肿':'腫','宫':'宮','颈':'頸','肾':'腎','脏':'臟','脉':'脈',
+    '脑':'腦','髋':'髖','髌':'髕','锁':'鎖','桡':'橈','结':'結','节':'節',
+    '枪':'槍','机':'機','缝':'縫','挂':'掛','号':'號','阑':'闌','疮':'瘡','换':'換','泻':'瀉','瘫':'癱','痹':'痺','肿':'腫','脓':'膿','聋':'聾','肿':'腫','脓':'膿','泻':'瀉','瘫':'癱','痹':'痺','聋':'聾','哑':'啞'
+  };
+  function normalize(s) {
+    s = String(s || '').toLowerCase();
+    s = s.replace(/[\s\u3000·・,，.。!！?？\-_/\\()（）\[\]【】+#]/g, '');
+    var out = "";
+    for (var i = 0; i < s.length; i++) {
+      var ch = s.charAt(i);
+      out += SC_TO_TC[ch] || ch;
+    }
+    return out;
   }
-
+  function hasCjk(s) { return /[\u3400-\u9FFF]/.test(String(s || "")); }
+  function bigrams(s) {
+    if (!s) return [];
+    if (s.length < 2) return [s];
+    var g = [];
+    for (var i = 0; i < s.length - 1; i++) g.push(s.slice(i, i + 2));
+    return g;
+  }
   function withZhLabel(item) {
     if (hasCjk(item.label)) return item;
     var kws = item.keywords || [];
     for (var i = 0; i < kws.length; i++) {
       if (hasCjk(kws[i])) {
-        return Object.assign({}, item, { label: kws[i], hash: item.hash || '' });
+        return { keywords: item.keywords, page: item.page, hash: item.hash || "", label: kws[i] };
       }
     }
     return null;
   }
-
-  var matched = (globalMedicalData.searchIndex || []).filter(function (item) {
-    return item.keywords.some(function (kw) {
-      return q.indexOf(kw.toLowerCase()) !== -1 || kw.toLowerCase().indexOf(q) !== -1;
-    });
-  });
-
-  var byKey = {};
-  matched.forEach(function (item) {
-    var zh = withZhLabel(item);
-    if (!zh) return;
-    var key = zh.page + '|' + zh.label;
-    var prev = byKey[key];
-    if (!prev) {
-      byKey[key] = zh;
-      return;
+  function scoreItem(item, q) {
+    var best = 0;
+    var fields = [item.label].concat(item.keywords || []);
+    for (var i = 0; i < fields.length; i++) {
+      var k = normalize(fields[i]);
+      if (!k) continue;
+      if (k === q) { best = Math.max(best, 100); continue; }
+      if (k.indexOf(q) !== -1) { best = Math.max(best, 78 + Math.min(12, q.length)); continue; }
+      if (q.indexOf(k) !== -1 && k.length >= 2) { best = Math.max(best, 68 + Math.min(10, k.length)); continue; }
+      if (q.length === 1 && hasCjk(q) && k.indexOf(q) !== -1) { best = Math.max(best, 58); continue; }
+      var qb = bigrams(q);
+      var kb = bigrams(k);
+      if (!qb.length || !kb.length) continue;
+      var set = {};
+      for (var j = 0; j < kb.length; j++) set[kb[j]] = 1;
+      var hit = 0;
+      for (var j = 0; j < qb.length; j++) if (set[qb[j]]) hit++;
+      var ratio = hit / qb.length;
+      var need = q.length <= 3 ? 2 : 1;
+      if (hit >= need && ratio >= 0.5) best = Math.max(best, Math.round(38 + ratio * 34));
     }
-    if (!(prev.hash) && zh.hash) byKey[key] = zh;
+    return best;
+  }
+  var q = normalize(raw);
+  if (!q) return [];
+  var scored = [];
+  (globalMedicalData.searchIndex || []).forEach(function (item) {
+    var s = scoreItem(item, q);
+    if (s >= 40) scored.push({ item: item, score: s });
   });
-
-  return Object.keys(byKey).map(function (k) { return byKey[k]; });
+  scored.sort(function (a, b) { return b.score - a.score; });
+  var byKey = {};
+  var ordered = [];
+  scored.forEach(function (row) {
+    var zh = withZhLabel(row.item);
+    if (!zh) return;
+    var key = zh.page + "|" + zh.label;
+    if (byKey[key]) return;
+    byKey[key] = true;
+    ordered.push(zh);
+  });
+  return ordered;
 }

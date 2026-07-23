@@ -22,6 +22,9 @@ rsync -a \
   --exclude 'design-system/' \
   --exclude 'card-explorer.html' \
   --exclude 'css/card-explorer.css' \
+  --exclude 'consulting.html' \
+  --exclude 'articles/_template.html' \
+  --exclude 'docs/' \
   "$ROOT/" "$DIST/"
 
 echo "Prepared publish dir: $DIST"

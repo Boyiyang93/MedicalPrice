@@ -24,10 +24,18 @@
 
   var FAVORITES_STORAGE_KEY = 'mp_procedure_favorites_v1';
 
+  // 本站比對對象皆為私家醫院，標籤不必再寫「私立」
   var OWNERSHIP_LABELS = {
-    private: '私立（商業）',
+    private: '商業',
     public: '公立',
-    nonprofit: '私立（非牟利）'
+    nonprofit: '非牟利'
+  };
+
+  var OWNERSHIP_FILTER_ORDER = ['private', 'nonprofit', 'public'];
+  var OWNERSHIP_GROUP_TITLES = {
+    private: '商業',
+    nonprofit: '非牟利',
+    public: '公立'
   };
 
   var LOGO_MARK_SVG =
@@ -38,7 +46,7 @@
 
   var MODULE_PAGES = {
     imaging: { href: 'imaging.html', title: '內窺鏡與影像', emoji: '🔬' },
-    gynecology: { href: 'gyn.html', title: '婦產科', emoji: '👩' },
+    gynecology: { href: 'gyn.html', title: '婦科', emoji: '👩' },
     generalSurgery: { href: 'general-surgery.html', title: '外科', emoji: '✂️' },
     orthopedics: { href: 'orthopedics.html', title: '骨科', emoji: '🦴' },
     painManagement: { href: 'pain-management.html', title: '疼痛科', emoji: '💉' },
@@ -53,11 +61,40 @@
 
   var favoritesFilterActive = false;
 
+  function getHospitalFilterCheckboxes() {
+    return Array.from(document.querySelectorAll('#filter-container input[type="checkbox"]'));
+  }
+
   function getActiveHospitals() {
-    var checkboxes = document.querySelectorAll('#filter-container input[type="checkbox"]');
-    return Array.from(checkboxes)
+    return getHospitalFilterCheckboxes()
       .filter(function (cb) { return cb.checked; })
       .map(function (cb) { return cb.value; });
+  }
+
+  function syncHospitalFilterToolbar() {
+    var checkboxes = getHospitalFilterCheckboxes();
+    if (!checkboxes.length) return;
+    var checkedCount = checkboxes.filter(function (cb) { return cb.checked; }).length;
+    var all = checkedCount === checkboxes.length;
+    var none = checkedCount === 0;
+    var selectBtn = document.querySelector('#filter-container [data-filter-action="select-all"]');
+    var clearBtn = document.querySelector('#filter-container [data-filter-action="clear-all"]');
+    if (selectBtn) {
+      selectBtn.disabled = all;
+      selectBtn.setAttribute('aria-disabled', all ? 'true' : 'false');
+    }
+    if (clearBtn) {
+      clearBtn.disabled = none;
+      clearBtn.setAttribute('aria-disabled', none ? 'true' : 'false');
+    }
+  }
+
+  function setAllHospitalFilters(checked) {
+    getHospitalFilterCheckboxes().forEach(function (cb) {
+      cb.checked = !!checked;
+    });
+    syncHospitalFilterToolbar();
+    updateView();
   }
 
   function getSelectValue(id, fallback) {
@@ -77,6 +114,16 @@
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;');
+  }
+
+  function isSafeHttpUrl(url) {
+    if (!url || url === '#') return false;
+    try {
+      var parsed = new URL(String(url), window.location.href);
+      return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+    } catch (e) {
+      return false;
+    }
   }
 
   function getPriceThreshold(box) {
@@ -103,6 +150,12 @@
       room: 'room-select'
     };
 
+    function hasOption(select, val) {
+      return Array.prototype.some.call(select.options || [], function (opt) {
+        return opt.value === val;
+      });
+    }
+
     Object.keys(selectMap).forEach(function (paramKey) {
       var el = document.getElementById(selectMap[paramKey]);
       if (!el) return;
@@ -110,14 +163,14 @@
       var value = params.get(paramKey);
       if (!value) return;
 
-      if (el.querySelector('option[value="' + value + '"]')) {
+      if (hasOption(el, value)) {
         el.value = value;
         return;
       }
 
       if (paramKey === 'insurance' && INSURANCE_URL_MAP[value]) {
         var mapped = INSURANCE_URL_MAP[value];
-        if (el.querySelector('option[value="' + mapped + '"]')) {
+        if (hasOption(el, mapped)) {
           el.value = mapped;
         }
       }
@@ -347,17 +400,38 @@
   function renderHospitalNameHtml(h, options) {
     options = options || {};
     var name = escapeHtml(h.name || '');
-    var badge = renderOwnershipBadgeHtml(h.ownership);
-    if (options.asLink && h.link && h.link !== '#') {
+    var badge = options.hideOwnership ? '' : renderOwnershipBadgeHtml(h.ownership);
+    if (options.asLink && isSafeHttpUrl(h.link)) {
       var arrow = options.arrow === false ? '' : ' ↗';
       return (
         '<span class="hospital-name-wrap">' +
-        '<a href="' + h.link + '" target="_blank" class="hospital-link">' + name + arrow + '</a>' +
+        '<a href="' + escapeAttr(h.link) + '" target="_blank" rel="noopener noreferrer" class="hospital-link">' + name + arrow + '</a>' +
         badge +
         '</span>'
       );
     }
     return '<span class="hospital-name-wrap">' + name + badge + '</span>';
+  }
+
+  function groupHospitalsByOwnership(hospitals) {
+    var buckets = {};
+    (hospitals || []).forEach(function (h) {
+      var key = h.ownership || 'private';
+      if (!buckets[key]) buckets[key] = [];
+      buckets[key].push(h);
+    });
+    return OWNERSHIP_FILTER_ORDER
+      .filter(function (key) { return buckets[key] && buckets[key].length; })
+      .concat(Object.keys(buckets).filter(function (key) {
+        return OWNERSHIP_FILTER_ORDER.indexOf(key) === -1 && buckets[key].length;
+      }))
+      .map(function (key) {
+        return {
+          key: key,
+          title: OWNERSHIP_GROUP_TITLES[key] || getOwnershipLabel(key) || key,
+          hospitals: buckets[key]
+        };
+      });
   }
 
   function renderTagsHtml(tags) {
@@ -559,7 +633,7 @@
       '<span aria-hidden="true">♥</span><span>收藏</span>' +
       '<span class="mp-fav-header-btn__count" data-count="0">0</span>' +
       '</button>' +
-      '<div id="mp-favorites-panel" class="mp-fav-panel hidden" role="dialog" aria-label="已收藏的手術">' +
+      '<div id="mp-favorites-panel" class="mp-fav-panel hidden" role="dialog" aria-modal="true" aria-label="已收藏的手術">' +
       '<div class="mp-fav-panel__head">我關注的手術</div>' +
       '<ul id="mp-favorites-list" class="mp-fav-panel__list"></ul>' +
       '</div>';
@@ -580,6 +654,10 @@
 
     document.addEventListener('click', function (e) {
       if (!wrap.contains(e.target)) setFavoritesPanelOpen(false);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setFavoritesPanelOpen(false);
     });
   }
 
@@ -849,22 +927,42 @@
 
   function initFilters() {
     var container = document.getElementById('filter-container');
-    if (!container || container.children.length > 0) return;
+    if (!container || container.querySelector('input[type="checkbox"]')) return;
 
     var hospitals = getPageHospitalList();
     if (!hospitals.length) return;
 
-    container.innerHTML = hospitals.map(function (h) {
-      var labelClass = h.id === 'szufh'
-        ? 'text-[#1D4E89] font-bold'
-        : 'text-gray-600 font-medium';
+    var listHtml = groupHospitalsByOwnership(hospitals).map(function (group) {
+      var items = group.hospitals.map(function (h) {
+        var labelClass = h.id === 'szufh'
+          ? 'text-[#1D4E89] font-bold'
+          : 'text-gray-600 font-medium';
+        return (
+          '<label class="flex items-center gap-2.5 text-xs ' + labelClass + ' cursor-pointer">' +
+          '<input type="checkbox" value="' + h.id + '" checked class="w-4 h-4 rounded text-[#1D4E89]"> ' +
+          renderHospitalNameHtml(h, { hideOwnership: true }) +
+          '</label>'
+        );
+      }).join('');
       return (
-        '<label class="flex items-center gap-2.5 text-xs ' + labelClass + ' cursor-pointer">' +
-        '<input type="checkbox" value="' + h.id + '" checked class="w-4 h-4 rounded text-[#1D4E89]"> ' +
-        renderHospitalNameHtml(h) +
-        '</label>'
+        '<div class="hospital-filter-group" data-ownership-group="' + escapeAttr(group.key) + '">' +
+          '<p class="hospital-filter-group__title">' + escapeHtml(group.title) + '</p>' +
+          '<div class="hospital-filter-group__list">' + items + '</div>' +
+        '</div>'
       );
     }).join('');
+
+    container.innerHTML =
+      '<div class="hospital-filter-toolbar" role="group" aria-label="醫院篩選操作">' +
+        '<span class="hospital-filter-toolbar__title">醫院</span>' +
+        '<div class="hospital-filter-toolbar__actions">' +
+          '<button type="button" class="hospital-filter-action" data-filter-action="select-all">全選</button>' +
+          '<button type="button" class="hospital-filter-action" data-filter-action="clear-all">清除</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="hospital-filter-list">' + listHtml + '</div>';
+
+    syncHospitalFilterToolbar();
   }
 
   function initModuleGroups() {
@@ -1072,7 +1170,7 @@
 
   var SURGERY_MODULE_NAV = [
     { pageModule: 'imaging', href: 'imaging.html', emoji: '🔬', title: '內窺鏡與影像' },
-    { pageModule: 'gynecology', href: 'gyn.html', emoji: '👩', title: '婦產科' },
+    { pageModule: 'gynecology', href: 'gyn.html', emoji: '👩', title: '婦科' },
     { pageModule: 'generalSurgery', href: 'general-surgery.html', emoji: '✂️', title: '外科' },
     { pageModule: 'orthopedics', href: 'orthopedics.html', emoji: '🦴', title: '骨科' },
     { pageModule: 'painManagement', href: 'pain-management.html', emoji: '💉', title: '疼痛科' },
@@ -1238,8 +1336,9 @@
   }
 
   function scrollToHash() {
-    if (!window.location.hash) return;
-    var target = document.querySelector(window.location.hash);
+    var hash = window.location.hash || '';
+    if (!/^#[A-Za-z][\w-]*$/.test(hash)) return;
+    var target = document.getElementById(hash.slice(1));
     if (target) {
       setTimeout(function () { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
     }
@@ -1287,7 +1386,19 @@
     var filterContainer = document.getElementById('filter-container');
     if (filterContainer) {
       filterContainer.addEventListener('change', function (e) {
-        if (e.target && e.target.matches('input[type="checkbox"]')) updateView();
+        if (e.target && e.target.matches('input[type="checkbox"]')) {
+          syncHospitalFilterToolbar();
+          updateView();
+        }
+      });
+      filterContainer.addEventListener('click', function (e) {
+        var btn = e.target && e.target.closest
+          ? e.target.closest('[data-filter-action]')
+          : null;
+        if (!btn || !filterContainer.contains(btn)) return;
+        var action = btn.getAttribute('data-filter-action');
+        if (action === 'select-all') setAllHospitalFilters(true);
+        else if (action === 'clear-all') setAllHospitalFilters(false);
       });
     }
 

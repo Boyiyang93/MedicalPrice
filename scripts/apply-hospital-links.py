@@ -39,6 +39,7 @@ def is_hospital_id(name: str) -> bool:
 # SZUFH: pricedata 链接列为「查看頁面」时，按科室映射至官网套餐页
 SZUFH_DEPT_LINKS = {
     "內視鏡中心": "https://www.szufh.hk/xiaohuaneijing.html",
+    "婦科": "https://www.szufh.hk/shoushusf.html",
     "婦產科": "https://www.szufh.hk/shoushusf.html",
     "泌尿外科": "https://www.szufh.hk/shoushusf.html",
     "普通外科": "https://www.szufh.hk/shoushusf.html",
@@ -54,6 +55,7 @@ CUHK_ENDOSCOPY_PKG = "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-pac
 CUHK_REFERENCE = "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures"
 GHK_DEPT_LINKS = {
     "婦科": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology",
+    "婦產科": "https://gleneagles.hk/tc/patient-care-services/obstetrics-and-gynaecology",
     "普通外科": "https://gleneagles.hk/tc/patient-care-services/general-surgery",
     "內視鏡中心": "https://gleneagles.hk/tc/patient-care-services/endoscopy",
     "呼吸系統科": "https://gleneagles.hk/tc/patient-care-services/endoscopy",
@@ -62,10 +64,12 @@ GHK_DEPT_LINKS = {
     "泌尿外科": "https://gleneagles.hk/tc/patient-care-services/urology",
 }
 HKSH_DEPT_LINKS = {
+    "婦科": "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx",
     "婦產科": "https://www.hksh-hospital.com/tc_chi/services/service_obstetrics_and_gynaecology.aspx",
     "普通外科": "https://www.hksh-hospital.com/tc_chi/services/service_general_surgery.aspx",
 }
 CUHK_DEPT_FALLBACKS = {
+    "婦科": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
     "婦產科": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
     "骨科": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
     "普通外科": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
