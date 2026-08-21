@@ -1,0 +1,312 @@
+/**
+ * MedicalPrice — 醫療情報文章詳情頁樣式
+ * 新文章：複製 articles/_template.html，替換標記區塊即可。
+ */
+
+.article-page {
+  background: linear-gradient(180deg, #f0faf9 0%, var(--mp-canvas-soft) 280px);
+}
+
+.article-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.article-hero {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--mp-hairline);
+  box-shadow: 0 4px 20px rgba(29, 78, 137, 0.08);
+}
+
+.article-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Text-only hero when no PNG asset */
+.article-hero-banner {
+  aspect-ratio: 16 / 9;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px 32px;
+  background:
+    linear-gradient(135deg, rgba(29, 78, 137, 0.92) 0%, rgba(43, 87, 154, 0.88) 55%, rgba(153, 214, 209, 0.75) 100%),
+    radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.18), transparent 50%);
+  color: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--mp-hairline);
+  box-shadow: 0 4px 20px rgba(29, 78, 137, 0.08);
+}
+
+.article-hero-banner__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.article-hero-banner__title {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  font-weight: 900;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 28em;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--mp-ink-muted);
+}
+
+.article-tag {
+  display: inline-block;
+  background: var(--mp-brand-accent-muted);
+  color: var(--mp-brand-primary);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.article-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 900;
+  color: var(--mp-brand-title);
+  line-height: 1.35;
+}
+
+.article-lead {
+  font-size: 15px;
+  color: var(--mp-ink-secondary);
+  line-height: 1.75;
+  border-left: 4px solid var(--mp-brand-accent);
+  padding-left: 16px;
+}
+
+.article-body {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 8px rgba(29, 78, 137, 0.04);
+}
+
+@media (max-width: 640px) {
+  .article-body { padding: 24px 20px; }
+}
+
+.article-body h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--mp-brand-title);
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--mp-brand-accent-muted);
+}
+
+.article-body h2:first-child { margin-top: 0; }
+
+.article-body h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--mp-brand-primary);
+  margin: 1.25rem 0 0.5rem;
+}
+
+.article-body p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--mp-ink-secondary);
+  margin-bottom: 1rem;
+}
+
+.article-body ul,
+.article-body ol {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--mp-ink-secondary);
+  margin: 0 0 1rem 1.25rem;
+}
+
+.article-body li { margin-bottom: 0.35rem; }
+
+.article-body strong { color: var(--mp-ink); }
+
+.article-figure {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--mp-hairline-soft);
+}
+
+.article-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.article-figure figcaption {
+  font-size: 11px;
+  color: var(--mp-ink-muted);
+  padding: 10px 14px;
+  background: var(--mp-surface-muted);
+  line-height: 1.5;
+}
+
+.article-callout {
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 1.25rem 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.article-callout-tip {
+  background: var(--mp-brand-accent-soft);
+  border: 1px solid rgba(153, 214, 209, 0.5);
+  color: var(--mp-brand-primary);
+}
+
+.article-callout-warn {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  color: #991B1B;
+}
+
+.article-callout-tip strong,
+.article-callout-warn strong { display: block; margin-bottom: 4px; font-size: 12px; }
+
+.article-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--mp-hairline);
+}
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.article-table th {
+  background: var(--mp-brand-primary);
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.article-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--mp-hairline-soft);
+  color: var(--mp-ink-secondary);
+  vertical-align: top;
+}
+
+.article-table tr:last-child td { border-bottom: none; }
+
+.article-table tr:nth-child(even) td { background: var(--mp-surface-muted); }
+
+.article-checklist {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.article-checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 0.6rem;
+}
+
+.article-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--mp-brand-accent);
+  color: var(--mp-brand-primary);
+  font-size: 11px;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid var(--mp-hairline);
+}
+
+.article-cta-box {
+  background: white;
+  border: 1px solid var(--mp-hairline);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-cta-box h3 {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--mp-brand-title);
+  margin: 0 0 4px;
+}
+
+.article-cta-box p {
+  font-size: 12px;
+  color: var(--mp-ink-muted);
+  margin: 0;
+}
+
+.article-btn {
+  display: inline-block;
+  background: var(--mp-brand-title);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.article-btn:hover { background: var(--mp-brand-primary); }
+
+.article-disclaimer {
+  font-size: 11px;
+  color: var(--mp-ink-muted);
+  line-height: 1.6;
+  padding: 16px;
+  background: var(--mp-surface-muted);
+  border-radius: 10px;
+  margin-top: 24px;
+}

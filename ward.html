@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="港資私家醫院病房日費基準對比">
+    <title>病房收費比較 | MedicalPrice</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://boyiyang93.github.io/MedicalPrice/ward.html">
+    <meta property="og:title" content="病房收費比較 | MedicalPrice">
+    <meta property="og:description" content="港資私家醫院病房日費基準對比">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyiyang93.github.io/MedicalPrice/ward.html">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="病房收費比較 | MedicalPrice">
+    <meta name="twitter:description" content="港資私家醫院病房日費基準對比">
+    <meta name="twitter:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+<link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/design-system.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "病房收費比較 | MedicalPrice",
+  "description": "港資私家醫院病房日費基準對比",
+  "url": "https://boyiyang93.github.io/MedicalPrice/ward.html",
+  "inLanguage": "zh-HK",
+  "dateModified": "2026-07-19",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MedicalPrice",
+    "url": "https://boyiyang93.github.io/MedicalPrice/"
+  }
+}
+    </script>
+</head>
+<body data-page-module="ward">
+
+    <header class="h-16 bg-[#1D4E89] text-white fixed w-full z-[100] flex items-center px-6 shadow-md" role="banner">
+        <button type="button" data-action="go-back-home" data-hash="#specialties" class="flex items-center gap-3" aria-label="返回首頁">
+            <span class="w-7 h-7 bg-[#99D6D1] rounded-sm flex items-center justify-center text-[#1D4E89] font-bold">←</span>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2">病房收費收費比較</span></span>
+        </button>
+    </header>
+
+    <div class="flex">
+        <aside class="sidebar-fixed p-6 hidden lg:block" aria-label="醫院篩選">
+            <div class="mb-6">
+                <p class="text-xs font-bold text-gray-400 mb-2">📍 當前專科</p>
+                <div class="text-xs font-bold text-[#1D4E89] p-2.5 bg-blue-50 rounded flex items-center gap-2">🛏️ 私家醫院病房收費</div>
+            </div>
+            <div id="filter-container" class="space-y-2.5 px-1 h-[480px] overflow-y-auto"></div>
+        </aside>
+
+        <main class="main-content flex-1 px-4 lg:px-10" role="main">
+            <div class="max-w-6xl mx-auto">
+                <section class="mb-6">
+                    <h1 class="text-2xl font-black text-[#2B579A] mb-2">港資私家醫院病房日租比較</h1>
+                    <p class="text-xs text-gray-500 bg-blue-50/50 inline-block px-3 py-1 rounded">ℹ️ 房費資料定期更新，實際收費以醫院公布為準。</p>
+                </section>
+
+                <div class="comparison-card">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="w-1/4" scope="col">醫院名稱</th>
+                                <th scope="col">普通病房 (HK$)</th>
+                                <th scope="col">半私家房 (HK$)</th>
+                                <th scope="col">私家房 (HK$)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ward-table-body"></tbody>
+                    </table>
+                </div>
+
+                <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8" role="contentinfo">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3">🏥 醫療機構專屬通道</h4>
+                            <p class="text-sm text-gray-300 mb-6">若貴院房費有調整，歡迎聯絡我們更新。</p>
+                            <a href="mailto:data@medicalprice.hk?subject=病房資料糾錯" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded border border-gray-600">官方資料糾錯 →</a>
+                        </div>
+                        <div class="bg-gray-800 p-8">
+                            <h4 class="text-lg font-bold mb-3">💬 聯絡我們</h4>
+                            <p class="text-sm text-gray-300 mb-6">找不到特定房型？歡迎提交需求。</p>
+                            <a href="mailto:contact@medicalprice.hk?subject=病房資料需求" class="inline-block bg-[#2B579A] text-white text-sm font-bold py-2.5 px-5 rounded">聯絡我們 →</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 p-6 text-xs text-gray-400">
+                        <p>⚖️ 免責聲明：資料僅供預算參考，不構成報價承諾。實際收費以醫院帳單為準。</p>
+                        <p class="mt-3"><a href="sources.html" class="text-[#99D6D1] hover:underline font-medium">資料來源與更新 →</a></p>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <script src="data/db.js" defer></script>
+    <script src="js/engine.js" defer></script>
+</body>
+</html>

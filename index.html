@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>港資私家醫院收費比較 | MedicalPrice</title>
+    <meta name="description" content="比較港資私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://boyiyang93.github.io/MedicalPrice/index.html">
+    <meta property="og:title" content="港資私家醫院收費比較 | MedicalPrice">
+    <meta property="og:description" content="比較港資私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boyiyang93.github.io/MedicalPrice/index.html">
+    <meta property="og:locale" content="zh_HK">
+    <meta property="og:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="港資私家醫院收費比較 | MedicalPrice">
+    <meta name="twitter:description" content="比較港資私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。">
+    <meta name="twitter:image" content="https://boyiyang93.github.io/MedicalPrice/assets/og-default.webp">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/design-system.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "MedicalPrice",
+      "url": "https://boyiyang93.github.io/MedicalPrice/",
+      "inLanguage": "zh-HK",
+      "description": "比較港資私家醫院手術、檢查、門診及病房收費。整合官方套餐基準，協助您估算 VHIS 自付額。非保險銷售平台。",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://boyiyang93.github.io/MedicalPrice/search.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "MedicalPrice",
+      "url": "https://boyiyang93.github.io/MedicalPrice/"
+    }
+  ]
+}
+    </script>
+</head>
+<body class="home-hero-bg">
+
+    <header class="site-header h-16 text-white fixed w-full z-50 flex items-center px-6 justify-between">
+        <div class="flex items-center gap-3">
+            <span class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 5v18M5 14h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+                    <path d="M18.5 9.5l2 2 3.5-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            <span class="text-xl font-bold tracking-tighter">MedicalPrice <span class="font-light opacity-60 ml-2 hidden sm:inline">港資私家醫院收費比較</span></span>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm">
+            <a href="index.html" class="nav-active" aria-current="page">首頁</a>
+            <a href="#specialties" class="nav-link hover:text-[#99D6D1] transition-colors">專科收費</a>
+            <a href="intelligence.html" class="nav-link hover:text-[#99D6D1] transition-colors">醫療情報</a>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-16 px-4 max-w-6xl mx-auto space-y-12">
+
+        <!-- Hero：品牌主導 + 搜尋 + 熱門 chip -->
+        <section class="text-center space-y-5 max-w-3xl mx-auto py-2 mp-reveal is-visible" aria-labelledby="home-brand">
+            <h1 id="home-brand" class="home-brand">MedicalPrice</h1>
+            <p class="home-tagline">搜手術、比醫院、看自付參考 — 港資私家醫院官方套餐收費比較</p>
+
+            <div class="hero-search-box flex gap-2">
+                <input type="search" id="global-search" placeholder="搜症狀或手術俗稱（例如：膽石、通波仔、大便帶血）" aria-label="搜尋症狀、手術或檢查" class="flex-1 px-4 py-3 outline-none text-base rounded-lg focus:ring-2 focus:ring-[#99D6D1]">
+                <button type="button" onclick="handleSearch()" class="bg-[#2B579A] text-white px-6 sm:px-8 rounded-lg font-bold hover:bg-[#1D4E89] transition-colors cursor-pointer min-h-[44px]">搜尋</button>
+            </div>
+
+            <div class="hot-chips" aria-label="熱門搜尋">
+                <button type="button" class="hot-chip" data-hot-q="膽石">膽石</button>
+                <button type="button" class="hot-chip" data-hot-q="通波仔">通波仔</button>
+                <button type="button" class="hot-chip" data-hot-q="白內障">白內障</button>
+                <button type="button" class="hot-chip" data-hot-q="大便帶血">大便帶血</button>
+                <button type="button" class="hot-chip" data-hot-q="小腸氣">小腸氣</button>
+                <button type="button" class="hot-chip" data-hot-q="滑鼠手">滑鼠手</button>
+                <button type="button" class="hot-chip" data-hot-q="夜尿">夜尿</button>
+                <button type="button" class="hot-chip" data-hot-q="剖腹生">剖腹生</button>
+            </div>
+
+            <!-- 首頁篩選欄暫隱藏；保留 DOM 供專頁跳轉預設參數 -->
+            <div class="filter-box grid grid-cols-1 sm:grid-cols-2 gap-4 text-left hidden" aria-hidden="true">
+                <div>
+                    <label for="insurance-select" class="block text-xs font-bold text-gray-500 mb-1">您的醫療保險計劃</label>
+                    <select id="insurance-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]" tabindex="-1">
+                        <option value="none">沒有醫療保險（全額自付）</option>
+                        <option value="vhis-std" selected>VHIS 標準計劃</option>
+                        <option value="vhis-adv">VHIS 靈活／高端計劃</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time-select" class="block text-xs font-bold text-gray-500 mb-1">預計就診時間</label>
+                    <select id="time-select" class="w-full p-2.5 border border-gray-200 rounded-lg text-sm bg-[#F0FAF9] outline-none focus:ring-2 focus:ring-[#99D6D1]" tabindex="-1">
+                        <option value="regular" selected>平日辦公時間</option>
+                        <option value="holiday">非辦公時間及公眾假期（急症附加費）</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- TrustStrip -->
+        <ul class="trust-strip mp-reveal is-visible" aria-label="平台可信說明">
+            <li class="trust-strip__item">
+                <span class="trust-strip__value">14 間醫院</span>
+                <span class="trust-strip__label">港資私家醫院對比</span>
+            </li>
+            <li class="trust-strip__item">
+                <span class="trust-strip__value">官方套餐基準</span>
+                <span class="trust-strip__label">整理自各院公開價目</span>
+            </li>
+            <li class="trust-strip__item">
+                <span class="trust-strip__value">2026 年 8 月</span>
+                <span class="trust-strip__label">資料庫最後更新</span>
+            </li>
+            <li class="trust-strip__item">
+                <span class="trust-strip__value">非保險銷售</span>
+                <span class="trust-strip__label">獨立比價，無銷售壓力</span>
+            </li>
+        </ul>
+
+        <!-- How it works -->
+        <section class="space-y-4 mp-reveal" aria-labelledby="how-heading">
+            <div id="how-heading" class="section-heading">如何使用</div>
+            <div class="how-steps">
+                <div class="how-step">
+                    <span class="how-step__num" aria-hidden="true">1</span>
+                    <div>
+                        <div class="how-step__title">搜項目</div>
+                        <p class="how-step__desc">輸入手術或檢查名稱，或從專科入口進入。</p>
+                    </div>
+                </div>
+                <div class="how-step">
+                    <span class="how-step__num" aria-hidden="true">2</span>
+                    <div>
+                        <div class="how-step__title">比醫院</div>
+                        <p class="how-step__desc">並排查看各院套餐價，最低價會標示出來。</p>
+                    </div>
+                </div>
+                <div class="how-step">
+                    <span class="how-step__num" aria-hidden="true">3</span>
+                    <div>
+                        <div class="how-step__title">看自付參考</div>
+                        <p class="how-step__desc">結合 VHIS 計劃，估算可能自付額（僅供參考）。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 專科手術／檢查套餐 -->
+        <section id="specialties" class="space-y-4 mp-reveal">
+            <div class="section-heading">按專科查看手術及檢查套餐</div>
+            <div class="specialty-grid" id="module-grid"></div>
+        </section>
+
+        <!-- 門診及床位費（基礎住院前收費） -->
+        <section id="baseline-fees" class="space-y-4 mp-reveal">
+            <div class="section-heading">門診診金及病房床位費</div>
+            <p class="text-sm text-gray-500 -mt-1">入院前常見的兩項基礎收費：門診診金與各級病房日租，方便先估算住院以外的日常開支。</p>
+            <div class="specialty-grid" id="baseline-grid"></div>
+        </section>
+
+        <!-- 文章 -->
+        <section id="articles-section" class="space-y-4 mp-reveal">
+            <div class="flex justify-between items-center border-l-4 border-[#99D6D1] pl-3">
+                <div class="text-lg font-bold text-[#2B579A]">醫療專題及實用指南</div>
+                <a href="intelligence.html" class="text-xs text-[#2B579A] hover:underline cursor-pointer font-medium">查看全部文章 →</a>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <a href="articles/hidden-fees.html" class="article-feature lg:col-span-2 flex flex-col justify-between group cursor-pointer no-underline">
+                    <div class="space-y-3">
+                        <span class="inline-block bg-[#99D6D1]/40 text-[#1D4E89] text-[10px] font-bold px-2 py-1 rounded">#費用須知</span>
+                        <h3 class="text-lg font-bold text-gray-800 group-hover:text-[#1D4E89] transition-colors leading-snug">私家醫院隱藏收費解析：巡房費、儀器費點樣計？</h3>
+                        <p class="text-xs text-gray-500 leading-relaxed">許多患者誤以為私院套餐已包含所有開支。本文深入解讀各院非套餐項目的額外收費標準，教您如何看懂入院報價單，避免出院時面臨巨額帳單差價。</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-6 border-t border-gray-100 mt-4 text-[11px] text-gray-400">
+                        <span>發佈時間：2026年6月</span>
+                        <span class="text-[#2B579A] font-bold group-hover:translate-x-1 transition-transform inline-block">閱讀全文 →</span>
+                    </div>
+                </a>
+
+                <div class="lg:col-span-1 flex flex-col gap-4">
+                    <a href="articles/vhis-smm.html" class="article-side group flex flex-col justify-between h-full cursor-pointer no-underline">
+                        <div class="space-y-1">
+                            <span class="text-[9px] text-[#2B579A] font-bold">#理賠解析</span>
+                            <h4 class="text-xs font-bold text-gray-700 group-hover:text-[#1D4E89] line-clamp-2 transition-colors">VHIS「附加醫療保障（SMM）」理賠比例實測及案例分析</h4>
+                        </div>
+                        <div class="text-[10px] text-gray-400 pt-3 border-t border-gray-50 mt-2 flex justify-between">
+                            <span>2026-07</span>
+                            <span class="text-[#2B579A] font-semibold">閱讀 →</span>
+                        </div>
+                    </a>
+                    <a href="articles/ha-fee-reform-2026.html" class="article-side group flex flex-col justify-between h-full cursor-pointer no-underline">
+                        <div class="space-y-1">
+                            <span class="text-[9px] text-[#2B579A] font-bold">#政策動態</span>
+                            <h4 class="text-xs font-bold text-gray-700 group-hover:text-[#1D4E89] line-clamp-2 transition-colors">2026 公營醫療收費改革解讀：急症 $400 之後，公私院怎麼比？</h4>
+                        </div>
+                        <div class="text-[10px] text-gray-400 pt-3 border-t border-gray-50 mt-2 flex justify-between">
+                            <span>2026-07</span>
+                            <span class="text-[#2B579A] font-semibold">閱讀 →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 醫療基準數據 -->
+        <section id="macro-data" class="space-y-4 mp-reveal">
+            <div class="section-heading">公營醫院收費參考及常見手術開支</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="stat-panel stat-panel-public flex flex-col">
+                    <h4 class="font-bold text-red-600 mb-4 flex items-center gap-2">醫管局公立醫院最新收費基準</h4>
+                    <div class="space-y-4 text-sm flex-1">
+                        <div>
+                            <div class="text-xs font-bold text-gray-400 mb-2 border-b pb-1">符合資格人士 (香港居民)</div>
+                            <div class="flex justify-between mb-1"><span>急症室診症：</span><span class="font-bold text-red-600">HK$ 400</span></div>
+                            <div class="flex justify-between mb-1"><span>急症住院（每日）：</span><span class="font-bold text-red-600">HK$ 300</span></div>
+                            <div class="flex justify-between"><span>專科門診（每次）：</span><span class="font-bold text-red-600">HK$ 250</span></div>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-gray-400 mb-2 border-b pb-1">非符合資格人士 (非居民)</div>
+                            <div class="flex justify-between mb-1"><span>普通科住院：</span><span class="font-bold">HK$ 7,400 / 日</span></div>
+                            <div class="flex justify-between"><span>深切治療部（ICU）：</span><span class="font-bold text-red-800">HK$ 35,600 / 日</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-panel stat-panel-private flex flex-col">
+                    <h4 class="font-bold text-[#2B579A] mb-3">需求最多手術開支參考</h4>
+                    <div class="cost-ticker" aria-label="需求最多手術開支自動滾動列表">
+                        <div class="cost-ticker-track" id="cost-ticker-track"></div>
+                    </div>
+                    <div class="text-[9px] text-gray-400 mt-3">註：市場常見理賠個案中位數（日間術取日間價，住院術取普通房），僅供預算參考。滑鼠移入可暫停。</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-16 bg-gray-800 text-white rounded-xl overflow-hidden shadow-lg mb-8 max-w-6xl mx-auto mx-4 lg:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-700">
+            <div class="bg-gray-800 p-8 flex flex-col justify-between">
+                <div class="mb-6">
+                    <h4 class="text-lg font-bold mb-3">醫療機構專屬通道</h4>
+                    <p class="text-sm text-gray-300 leading-relaxed">本平台致力於推動醫療收費透明化。若貴院發現平台展示的資料有誤、政策有最新調整，或希望「免費認領」貴院專屬板塊以提供更準確的全包套餐資訊，歡迎隨時與我們聯絡。我們將為官方代表優先處理，於 24 小時內回覆您的更新或下架請求。</p>
+                </div>
+                <a href="mailto:data@medicalprice.hk?subject=官方資料糾錯" class="inline-block bg-gray-700 hover:bg-gray-600 text-white text-sm font-bold py-2.5 px-5 rounded transition-colors border border-gray-600 w-full sm:w-auto text-center">官方資料糾錯 / 認領專屬頁面 →</a>
+            </div>
+            <div class="bg-gray-800 p-8 flex flex-col justify-between">
+                <div class="mb-6">
+                    <h4 class="text-lg font-bold mb-3">找不到想看的手術或醫院？</h4>
+                    <p class="text-sm text-gray-300 leading-relaxed">我們的資料庫正在持續擴充中。如果您在平台上沒有找到特定的專科手術、想對比某家未收錄的醫院（包含海外或跨境機構），或者對網站功能有任何建議，歡迎電郵聯絡我們。您的需求是我們改進平台的最大動力。</p>
+                </div>
+                <a href="mailto:contact@medicalprice.hk?subject=資料需求" class="inline-block bg-[#2B579A] hover:bg-[#1D4E89] text-white text-sm font-bold py-2.5 px-5 rounded transition-colors shadow-md w-full sm:w-auto text-center">提交資料需求 / 聯絡我們 →</a>
+            </div>
+        </div>
+        <div class="bg-gray-900 p-6 text-xs text-gray-400">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4">
+                <h5 class="font-bold text-gray-300 text-sm">免責聲明 (Legal Disclaimer)</h5>
+                <div class="flex flex-wrap gap-2 items-center">
+                    <span class="mp-legal-links inline-flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <a href="sources.html" class="text-[#99D6D1] hover:underline font-medium">資料來源與更新</a>
+                        <span class="mp-legal-sep" aria-hidden="true">·</span>
+                        <a href="privacy.html" class="text-[#99D6D1] hover:underline font-medium">隱私政策</a>
+                        <span class="mp-legal-sep" aria-hidden="true">·</span>
+                        <a href="cookies.html" class="text-[#99D6D1] hover:underline font-medium">Cookie 政策</a>
+                        <span class="mp-legal-sep" aria-hidden="true">·</span>
+                        <a href="terms.html" class="text-[#99D6D1] hover:underline font-medium">使用條款</a>
+                    </span>
+                    <span class="bg-gray-800 px-3 py-1 rounded border border-gray-700">資料庫最後更新：2026年7月</span>
+                </div>
+            </div>
+            <p class="leading-relaxed">本平台提供的所有醫療收費、保險自付額預估及服務資料，均由系統整理自各醫療機構官方網站、香港衛生署公開資訊及權威市場報告。本平台與各醫療機構及保險公司並無商業合作關係，獨立整理公開資料。所有資料僅供預算參考，<strong>不構成任何具約束力的報價、醫療診斷或理賠承諾</strong>。實際收費會因患者具體病況、醫生獨立定價、房型升級及突發併發症而有所不同。請務必於入院或接受治療前，直接向相關醫療機構或您的保險顧問索取最終報價。</p>
+        </div>
+    </footer>
+
+    <script>
+        var SPECIALTY_MODULES = [
+            { key: 'imaging', emoji: '🔬', title: '內窺鏡與影像掃描', desc: '胃鏡、大腸鏡、CT 及 MRI 等檢查套餐價格。', accent: '#7C3AED', bg: '#F5F3FF' },
+            { key: 'gyn', emoji: '👩', title: '婦科', desc: '子宮肌瘤、子宮鏡及婦科手術套餐價格比較。', accent: '#DB2777', bg: '#FDF2F8' },
+            { key: 'general-surgery', emoji: '✂️', title: '外科', desc: '腹腔鏡膽囊切除等日間手術套餐價格。', accent: '#1E40AF', bg: '#DBEAFE' },
+            { key: 'orthopedics', emoji: '🦴', title: '骨科', desc: '全膝關節置換等骨科手術套餐明細。', accent: '#D97706', bg: '#FFFBEB' },
+            { key: 'pain-management', emoji: '💉', title: '疼痛科', desc: '神經阻滯、椎間盤內視鏡及脊髓電刺激等疼痛治療套餐。', accent: '#6366F1', bg: '#EEF2FF' },
+            { key: 'ent', emoji: '👂', title: '耳鼻喉科', desc: '常見耳鼻喉手術及聽力、暈眩檢查收費。', accent: '#0284C7', bg: '#F0F9FF' },
+            { key: 'ophthalmology', emoji: '👁️', title: '眼科', desc: '白內障手術、視網膜治療及激光矯視費用。', accent: '#4F46E5', bg: '#EEF2FF' },
+            { key: 'cardiology', emoji: '❤️', title: '心內科', desc: '心臟造影及通波仔（冠狀動脈支架）自付額估算。', accent: '#DC2626', bg: '#FEF2F2' },
+            { key: 'plastics', emoji: '💄', title: '整形美容', desc: '醫學美容及整形手術收費比較。', accent: '#C026D3', bg: '#FAF5FF' },
+            { key: 'urology', emoji: '💧', title: '泌尿外科', desc: '前列腺、泌尿結石及膀胱鏡檢查套餐價格。', accent: '#0284C7', bg: '#E0F2FE' }
+        ];
+
+        var BASELINE_MODULES = [
+            { key: 'outpatient', emoji: '🏥', title: '門診費用', desc: '港資私家醫院全科及專科門診登記費、診金及常見藥費比較。', accent: '#2563EB', bg: '#EFF6FF', wide: true },
+            { key: 'ward', emoji: '🛏️', title: '私家醫院病房', desc: '主要港資私家醫院各級病房日租比較（普通／半私家／私家房）。', accent: '#2563EB', bg: '#EFF6FF', wide: true }
+        ];
+
+        function renderModuleCards(containerId, modules) {
+            var grid = document.getElementById(containerId);
+            if (!grid) return;
+            grid.innerHTML = modules.map(function (m) {
+                var cls = 'specialty-card' + (m.wide ? ' specialty-card-span-2' : '');
+                return '<button type="button" class="' + cls + '" style="--card-accent:' + m.accent + ';--card-bg:' + m.bg + '" onclick="navigateTo(\'' + m.key + '\')" aria-label="查看' + m.title + '收費比較">' +
+                    '<div class="specialty-card-icon" aria-hidden="true">' + m.emoji + '</div>' +
+                    '<h3 class="specialty-card-title">' + m.title + '</h3>' +
+                    '<p class="specialty-card-desc">' + m.desc + '</p>' +
+                    '<div class="specialty-card-cta">查看收費比較 →</div>' +
+                    '</button>';
+            }).join('');
+        }
+
+        function renderModules() {
+            renderModuleCards('module-grid', SPECIALTY_MODULES);
+            renderModuleCards('baseline-grid', BASELINE_MODULES);
+        }
+
+        var TOP_SURGERY_COSTS = [
+            { name: '白內障手術', detail: '日間 · 超聲乳化連人工晶體', amount: 25899 },
+            { name: '腸胃鏡＋瘜肉切除', detail: '日間 · 胃鏡／大腸鏡', amount: 36194 },
+            { name: '痔瘡手術', detail: '普通房中位數', amount: 50163 },
+            { name: '疝氣（小腸氣）修補', detail: '普通房中位數', amount: 38000 },
+            { name: '乳房腫塊切除術', detail: '良性 · 普通房中位數', amount: 66771 },
+            { name: '膽囊切除術（腹腔鏡）', detail: '普通房中位數', amount: 96090 },
+            { name: '闌尾炎（腹腔鏡切除）', detail: '普通房中位數', amount: 100525 },
+            { name: '通波仔（PCI）', detail: '連植入支架 · 普通房', amount: 182625 },
+            { name: '子宮肌瘤切除', detail: '普通房中位數', amount: 167100 },
+            { name: '全膝關節置換', detail: '普通房中位數', amount: 252950 }
+        ];
+
+        function formatHk(amount) {
+            return 'HK$ ' + amount.toLocaleString('en-HK');
+        }
+
+        function renderCostTicker() {
+            var track = document.getElementById('cost-ticker-track');
+            if (!track) return;
+            function rowHtml(item, rank) {
+                return '<div class="cost-ticker-row">' +
+                    '<div class="cost-ticker-left">' +
+                    '<span class="cost-ticker-rank">' + String(rank).padStart(2, '0') + '</span>' +
+                    '<div><span class="cost-ticker-name">' + item.name + '</span>' +
+                    '<span class="cost-ticker-detail">' + item.detail + '</span></div>' +
+                    '</div>' +
+                    '<div class="cost-ticker-price">' + formatHk(item.amount) + '</div>' +
+                    '</div>';
+            }
+            var once = TOP_SURGERY_COSTS.map(function (item, i) {
+                return rowHtml(item, i + 1);
+            }).join('');
+            track.innerHTML = once + once;
+        }
+
+        function getFilterParams() {
+            return '?insurance=' + document.getElementById('insurance-select').value + '&time=' + document.getElementById('time-select').value;
+        }
+
+        function navigateTo(moduleKey) {
+            window.location.href = moduleKey + '.html' + getFilterParams();
+        }
+
+        function handleSearch() {
+            var query = document.getElementById('global-search').value.trim();
+            if (!query) { alert('請輸入搜尋關鍵字'); return; }
+            window.location.href = 'search.html' + getFilterParams() + '&q=' + encodeURIComponent(query);
+        }
+
+        function searchHot(q) {
+            document.getElementById('global-search').value = q;
+            handleSearch();
+        }
+
+        document.getElementById('global-search').addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') handleSearch();
+        });
+
+        document.querySelectorAll('.hot-chip[data-hot-q]').forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                searchHot(chip.getAttribute('data-hot-q'));
+            });
+        });
+
+        renderModules();
+        renderCostTicker();
+    </script>
+    <script src="js/engine.js" defer></script>
+    <script src="js/site-polish.js" defer></script>
+</body>
+</html>
