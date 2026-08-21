@@ -1,0 +1,659 @@
+[
+  {
+    "url": "https://www.szufh.hk/service-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 17567,
+    "numberCount": 44,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/fees-and-charges/emergency-medicine-centre",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5675,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hksh-hospital.com/zh-hk/fees-and-charges/price-list",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5078,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/fee-charges/package-charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 43259,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/emergency-medicine-centre",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28641,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/zh-hk/fees-and-packages/hospital-fees",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 616680,
+    "numberCount": 218,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.sth.org.hk/charge.asp?lang_code=zh",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 4152,
+    "numberCount": 0,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkbh.org.hk/fees-charges/general-services-charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 6161,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.canossahospital.org.hk/tc/service/24_hours_out_patient_services/fees_and_charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 66064,
+    "numberCount": 22,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.stpaul.org.hk/tc/charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 70037,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.pbh.hk/service-fee-adjustment/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 9175,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.evangel.org.hk/zh-hant/charges/price_list/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 26411,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.twah.org.hk/tc/fees-and-charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 25312,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkah.org.hk/en/fees-and-charges/out-patient-consultation-fee/out-patient-consultation-fee-2",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 25029,
+    "numberCount": 20,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/fees-and-charges/specialist-outpatient-clinic",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5676,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/general-surgery",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28382,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.canossahospital.org.hk/tc/fee/price_list/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 72886,
+    "numberCount": 0,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 16504,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/room-charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28379,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.sth.org.hk/download/RoomCharges.pdf",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5524,
+    "numberCount": 28,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkbh.org.hk/fees-charges/room-types-rates/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 8385,
+    "numberCount": 29,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://canossahospital.org.hk/tc/fee/accommodation_charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 64974,
+    "numberCount": 17,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.stpaul.org.hk/tc/charges/room-charge",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 61287,
+    "numberCount": 28,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.evangel.org.hk/images/charges/list_inpatient.pdf",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 1753,
+    "numberCount": 12,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkah.org.hk/tc/fees-and-charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 24565,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/general-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 13119,
+    "numberCount": 35,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5679,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hksh-hospital.com/zh-hk/fees-charges/historical-bill-sizes-statistics",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 4244,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/fee-charges/general-surgery",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 12962,
+    "numberCount": 122,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28393,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/zh-hk/fees-and-packages/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 31811,
+    "numberCount": 6,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.sth.org.hk/download/zh/ccssp.pdf",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 4039,
+    "numberCount": 221,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5968,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 63361,
+    "numberCount": 0,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/breast-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 13300,
+    "numberCount": 22,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hkbh.org.hk/fees-charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 6161,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.canossahospital.org.hk/tc/fee/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 63361,
+    "numberCount": 0,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/urology-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 14659,
+    "numberCount": 34,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hksh-hospital.com/zh-hk/fees-and-charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 4306,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 33211,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/fees-and-packages/general-survery/circumcision-package?hsLang=zh-hk",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 47087,
+    "numberCount": 12,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 750716,
+    "numberCount": 383,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.canossahospital.org.hk/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 76171,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/fees-and-packages/general-survery/inguinal-hernia-repair-package?hsLang=zh-hk",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 49373,
+    "numberCount": 17,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hksh-hospital.com/zh-hk/fees-and-charges",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 4306,
+    "numberCount": 4,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/colorectal-and-anal-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 10461,
+    "numberCount": 16,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/fees-and-packages/general-survery/haemorrhoidectomy-package?hsLang=zh-hk",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 51413,
+    "numberCount": 24,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/gi-endoscopy-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 14663,
+    "numberCount": 34,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/endoscopy-package-fees",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5682,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/general-facilities/endoscopy-centre",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 43028,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.sth.org.hk/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 8734,
+    "numberCount": 0,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/radiology-imaging-services.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 11710,
+    "numberCount": 8,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/diagnostic-tests-medical-imaging",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28393,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.sthscan.com/hk/charges/",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 3537,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5694,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/fees-and-charges/maternity",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5669,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hksh-hospital.com/dwh/zh-hk/obstetrics-and-gynaecology-centre/index.php",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 3844,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 58370,
+    "numberCount": 8,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/gynecology-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 15658,
+    "numberCount": 36,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 21853,
+    "numberCount": 281,
+    "kind": "hongkongcard"
+  },
+  {
+    "url": "https://www.szufh.hk/orthopedic-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 16565,
+    "numberCount": 51,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 5673,
+    "numberCount": 2,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/cardiology-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 10404,
+    "numberCount": 12,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/ophthalmic-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 12018,
+    "numberCount": 23,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/eye-clinic",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 55692,
+    "numberCount": 7,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/cataract-surgery-package-plan",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28395,
+    "numberCount": 3,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/ent-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 11756,
+    "numberCount": 24,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/ent-clinic",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 49681,
+    "numberCount": 8,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/pain-management-procedure-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 11838,
+    "numberCount": 23,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.szufh.hk/emergency-and-plastic-surgery-fees.html",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 10605,
+    "numberCount": 15,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/urology-clinic",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 51487,
+    "numberCount": 5,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.matilda.org/zh-hk/fees-and-packages/urology/transurethral-resection-of-prostate",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 47588,
+    "numberCount": 12,
+    "kind": "first_party"
+  },
+  {
+    "url": "https://www.union.org/tc/charges-promotion/charges/urology-price-list",
+    "status": 200,
+    "ok": true,
+    "error": null,
+    "textLen": 28384,
+    "numberCount": 3,
+    "kind": "first_party"
+  }
+]

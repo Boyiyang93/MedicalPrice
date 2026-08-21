@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-08-21",
+  "mappingBefore": {
+    "real": 429,
+    "match": 397,
+    "wrong_procedure": 20,
+    "too_broad": 10
+  },
+  "cleared": [
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.hksh", "label": "開放式疝氣／小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.ghk", "label": "港怡小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.sth", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.baptist", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.canossa", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.sph", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.pbh", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.evangel", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.twah", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "generalSurgery.hernia_abdominal.hkah", "label": "小腸氣寫入腹腔疝"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.hksh", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.ghk", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.sth", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.baptist", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.canossa", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.sph", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.pbh", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.evangel", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.twah", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "wrong_procedure", "id": "orthopedics.sports_ortho.hkah", "label": "膝關節鏡寫入運動醫學卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.cuhk", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.hksh", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.union", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.sth", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.baptist", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.canossa", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.sph", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.pbh", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.twah", "label": "扁桃腺價複寫腺樣體卡"},
+    {"verdict": "too_broad", "id": "ent.adenoid_tonsil.hkah", "label": "扁桃腺價複寫腺樣體卡"}
+  ],
+  "after": {
+    "surgeryCards": 61,
+    "realMatch": 399,
+    "comingSoon": 455,
+    "uniqueUrls": 73,
+    "deadLinks": 0,
+    "missingLinks": 0,
+    "okStatic": 90,
+    "okSecondHand": 3,
+    "jsOrNoNumber": 333,
+    "secondHandReplaced": 108,
+    "secondHandKept": 3,
+    "keptSecondHand": [
+      "gynecology.hysterectomy.cuhk",
+      "gynecology.ovarian_cyst.cuhk",
+      "orthopedics.spine_surgery.cuhk"
+    ]
+  }
+}

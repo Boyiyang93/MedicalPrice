@@ -10,7 +10,7 @@
  */
 const globalMedicalData = {
   version: "2.0",
-  lastUpdated: "2026-07-19",
+  lastUpdated: "2026-08-21",
   // 商業私立在前、非牟利在後（同組內保持既有相對順序）
   hospitalOrder: [
     "szufh",
@@ -189,6 +189,7 @@ const globalMedicalData = {
         remarks: "Happy Valley 24小時普通科診金（價目表）。診金以取票時間為準。不含藥費及程序費。"
       },
       ghk: {
+        link: "https://gleneagles.hk/tc/fee-charges/package-charges",
         prices: {
           regular: 420,
           night: 1050,
@@ -679,6 +680,7 @@ const globalMedicalData = {
     },
     ward: {
       szufh: {
+        link: "https://www.szufh.hk/service-fees.html",
         prices: {
           standard: 1558,
           semiPrivate: 2170,
@@ -691,6 +693,7 @@ const globalMedicalData = {
         }
       },
       cuhk: {
+        link: "https://www.cuhkmc.hk/",
         prices: {
           standard: 1000,
           semiPrivate: 1500,
@@ -716,6 +719,7 @@ const globalMedicalData = {
         }
       },
       ghk: {
+        link: "https://gleneagles.hk/tc/fee-charges/package-charges",
         prices: {
           standard: 980,
           semiPrivate: 1800,
@@ -1297,7 +1301,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$145,038",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -1321,7 +1325,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$99,275",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -1329,7 +1333,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$103,580",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -1350,7 +1354,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$101,840",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -1358,7 +1362,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$99,954",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -1366,7 +1370,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$76,643",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -1374,7 +1378,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$80,386",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -1382,7 +1386,7 @@ const globalMedicalData = {
         priceLabel: "半甲狀腺切除（歷史中位）",
         displayPrice: "HK$97,084",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       thyroidectomy: {
@@ -1407,7 +1411,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$221,472",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -1431,7 +1435,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$145,440",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -1439,7 +1443,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$151,312",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -1460,7 +1464,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$156,009",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -1468,7 +1472,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$117,933",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -1476,7 +1480,7 @@ const globalMedicalData = {
         priceLabel: "全甲狀腺切除（歷史中位）",
         displayPrice: "HK$136,121",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -1504,19 +1508,13 @@ const globalMedicalData = {
       },
 
       hksh: {
-        price: 71524,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$71,524",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       ghk: {
-        price: 61797,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$61,797",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       matilda: {
@@ -1525,19 +1523,13 @@ const globalMedicalData = {
       },
 
       sth: {
-        price: 50283,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$50,283",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       baptist: {
-        price: 55103,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$55,103",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       union: {
@@ -1546,52 +1538,34 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 58144,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$58,144",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       sph: {
-        price: 54167,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$54,167",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       pbh: {
-        price: 42778,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$42,778",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       evangel: {
-        price: 46175,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$46,175",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       twah: {
-        price: 44379,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$44,379",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
       },
 
       hkah: {
-        price: 66800,
-        priceLabel: "開放式疝氣手術（歷史中位）",
-        displayPrice: "HK$66,800",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
-      }
+        price: 9999999,
+        remarks: "定額一般外科手術資料整理中。"
+      },
       },
       hernia_unilateral: {
       szufh: {
@@ -1703,7 +1677,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡疝氣修補（歷史中位）",
         displayPrice: "HK$119,217",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       hernia_bilateral: {
@@ -1752,8 +1726,11 @@ const globalMedicalData = {
       },
 
       union: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 82900,
+        priceLabel: "腹腔鏡雙側腹股溝疝修補術（含植入物）",
+        displayPrice: "HK$82,900",
+        remarks: "✓ 仁安外科手術套餐（2026-08-01 起）；標準房 2 日 1 夜，含醫生費、麻醉及植入物。指定醫生。",
+        link: "https://www.union.org/appassets/Charges/Surgical-Operation-Package-V1.pdf"
       },
 
       canossa: {
@@ -1782,9 +1759,12 @@ const globalMedicalData = {
       },
 
       hkah: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
-      }
+        price: 57800,
+        priceLabel: "微創雙側腹股溝疝修補（公立轉介日間套餐）",
+        displayPrice: "HK$57,800",
+        remarks: "✓ 港安司徒拔道公立醫院轉介日間套餐（2025-07-17）；須醫管局轉介信及指定醫生。單側精選價 HK$51,500。",
+        link: "https://www.hkah.org.hk/tc/promotions/package-for-referrals-from-public-hospitals-laparoscopic-groin-hernia-repair-surgery"
+      },
       },
       appendectomy: {
       szufh: {
@@ -1992,8 +1972,11 @@ const globalMedicalData = {
       },
 
       cuhk: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 167380,
+        priceLabel: "甲狀腺切除術（偏側／全切）",
+        displayPrice: "HK$85,960 – $248,800",
+        remarks: "✓ 中大醫院定價收費：偏側至全切（含能量設備選項）；病情級別 1–3。細針穿刺見甲狀腺穿刺卡。",
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
       },
 
       hksh: {
@@ -2311,6 +2294,8 @@ const globalMedicalData = {
       },
 
       hksh: {
+
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/",
         price: 10000,
         priceLabel: "日間中心程序起步底價",
         displayPrice: "HK$9,200 – $10,800",
@@ -2361,7 +2346,7 @@ const globalMedicalData = {
         priceLabel: "日間淨胃鏡（鎮靜麻醉）",
         displayPrice: "HK$10,480 – $12,800",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 門診／普通房套餐；監測麻醉約 HK$12,800。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -2369,7 +2354,7 @@ const globalMedicalData = {
         priceLabel: "日間胃鏡總收費中位（連醫生費）",
         displayPrice: "HK$14,000 – $15,000",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間門診總收費中位數；醫院基本設施費另見官價約 HK$2,300。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -2393,7 +2378,7 @@ const globalMedicalData = {
         priceLabel: "日間手術中心胃內窺鏡套餐",
         displayPrice: "HK$11,588 – $15,100",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間套餐起價；瘜肉／化驗另計。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%8D%83%E7%81%A3%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -2401,7 +2386,7 @@ const globalMedicalData = {
         priceLabel: "胃鏡 ± 瘜肉（歷史中位）",
         displayPrice: "HK$53,878",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       colonoscopy: {
@@ -2427,7 +2412,7 @@ const globalMedicalData = {
         priceLabel: "大腸鏡 ± 瘜肉（歷史中位）",
         displayPrice: "HK$32,109",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -2456,6 +2441,8 @@ const globalMedicalData = {
       },
 
       baptist: {
+
+        link: "https://www.hkbh.org.hk/fees-charges/",
         price: 12250,
         priceLabel: "日間常規程序基準",
         displayPrice: "HK$11,000 – $13,500",
@@ -2468,7 +2455,7 @@ const globalMedicalData = {
         priceLabel: "日間腸鏡總收費中位",
         displayPrice: "HK$21,490 – $24,800",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間手術中心第50/90百分位總收費；設施費另約 HK$4,600（不含醫生費）。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E4%BB%81%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.union.org/tc/charges-promotion/charges/charges-of-common-surgery-in-union-hospital"
       },
 
       canossa: {
@@ -2476,7 +2463,7 @@ const globalMedicalData = {
         priceLabel: "日間大腸鏡（鎮靜麻醉・不連瘜肉）",
         displayPrice: "HK$12,610 – $15,520",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 定額日間套餐；監測麻醉約 HK$15,520。連≤3粒瘜肉另計。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -2484,10 +2471,12 @@ const globalMedicalData = {
         priceLabel: "日間大腸鏡總收費中位",
         displayPrice: "HK$20,449",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間手術總費用中位數；門診／標準房基本設施費約 HK$5,688（不含醫生費）。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
+
+        link: "https://www.pbh.hk/service-fee-adjustment/",
         price: 8200,
         priceLabel: "日間大房基準套餐價",
         displayPrice: "HK$8,200",
@@ -2516,7 +2505,7 @@ const globalMedicalData = {
         priceLabel: "大腸鏡檢查（含／不含瘜肉）參考區間",
         displayPrice: "HK$31,838 – $41,702",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 預估區間（含或不含瘜肉）；實際以醫院書面估價為準。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E9%A6%99%E6%B8%AF%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       dual_scope: {
@@ -2542,7 +2531,7 @@ const globalMedicalData = {
         priceLabel: "胃鏡+大腸鏡（歷史中位）",
         displayPrice: "HK$53,422",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -2588,7 +2577,7 @@ const globalMedicalData = {
         priceLabel: "日間淨胃鏡＋大腸鏡（鎮靜）",
         displayPrice: "HK$17,990",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 門診／普通房鎮靜麻醉合併套餐。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E5%98%89%E8%AB%BE%E6%92%92%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -2596,10 +2585,12 @@ const globalMedicalData = {
         priceLabel: "日間腸胃鏡同照總收費中位",
         displayPrice: "HK$35,000",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 日間門診總收費中位數約 HK$35,000。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E8%81%96%E4%BF%9D%E7%A5%BF%E9%86%AB%E9%99%A2-%E8%83%83%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
+
+        link: "https://www.pbh.hk/service-fee-adjustment/",
         price: 12500,
         priceLabel: "常規兩項程序大房加總底價",
         displayPrice: "HK$12,500",
@@ -2628,7 +2619,7 @@ const globalMedicalData = {
         priceLabel: "胃鏡＋大腸鏡合併套餐參考",
         displayPrice: "HK$48,907 – $56,918",
         remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 合併套餐預估區間。",
-        link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E9%A6%99%E6%B8%AF%E6%B8%AF%E5%AE%89%E9%86%AB%E9%99%A2-%E8%85%B8%E9%8F%A1-%E6%94%B6%E8%B2%BB/"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       bronchoscopy: {
@@ -2650,7 +2641,7 @@ const globalMedicalData = {
         priceLabel: "支氣管鏡 ± 活檢（歷史中位）",
         displayPrice: "HK$64,725",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -2671,7 +2662,7 @@ const globalMedicalData = {
         priceLabel: "支氣管鏡 ± 活檢（歷史中位）",
         displayPrice: "HK$37,318",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -2700,7 +2691,7 @@ const globalMedicalData = {
         priceLabel: "支氣管鏡 ± 活檢（歷史中位）",
         displayPrice: "HK$50,627",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -2721,7 +2712,7 @@ const globalMedicalData = {
         priceLabel: "支氣管鏡 ± 活檢（歷史中位）",
         displayPrice: "HK$92,019",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -2729,11 +2720,12 @@ const globalMedicalData = {
         priceLabel: "支氣管鏡 ± 活檢（歷史中位）",
         displayPrice: "HK$95,945",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
     ct_brain: {
         szufh: {
+          link: "https://www.szufh.hk/radiology-imaging-services.html",
           price: 3500,
           priceLabel: "無造影劑掃描",
           displayPrice: "￥3,500",
@@ -2762,7 +2754,7 @@ const globalMedicalData = {
           priceLabel: "CT 腦部平掃（門診／普通房）",
           displayPrice: "HK$2,200 – $2,970",
           remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 加顯影約 HK$3,690 – $5,220。",
-          link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E6%B8%AF%E6%80%A1%E9%86%AB%E9%99%A2-ct-%E9%9B%BB%E8%85%A6%E6%8E%83%E6%8F%8F-%E6%94%B6%E8%B2%BB/"
+          link: "https://gleneagles.hk/tc/fee-charges/package-charges"
         },
         matilda: {
           price: 2800,
@@ -2837,6 +2829,7 @@ const globalMedicalData = {
       },
     mri_brain: {
         szufh: {
+          link: "https://www.szufh.hk/radiology-imaging-services.html",
           price: 6900,
           priceLabel: "無造影劑 MRI",
           displayPrice: "￥6,900",
@@ -2847,6 +2840,7 @@ const globalMedicalData = {
           ]
         },
         cuhk: {
+          link: "https://www.cuhkmc.hk/sc/fees-and-charges/price-transparency/reference-charges-for-common-surgical-procedures",
           price: 6200,
           priceLabel: "腦部磁力共振套餐",
           displayPrice: "HK$6,200",
@@ -2867,7 +2861,7 @@ const globalMedicalData = {
           priceLabel: "MRI 腦部平掃（門診／標準房）",
           displayPrice: "HK$8,460 – $13,590",
           remarks: "⚠️ 參考 Bowtie 匯總（稱取自醫院官網／統計）。區間僅供參考，實際以醫院書面估價為準。 平掃 HK$8,460；加顯影約 HK$13,590。",
-          link: "https://www.bowtie.com.hk/blog/zh/%e7%a7%81%e5%ae%b6%e9%86%ab%e9%99%a2%e7%99%be%e7%a7%91/%E6%B8%AF%E6%80%A1%E9%86%AB%E9%99%A2-mri-%E7%A3%81%E5%8A%9B%E5%85%B1%E6%8C%AF-%E6%94%B6%E8%B2%BB/"
+          link: "https://gleneagles.hk/tc/fee-charges/package-charges"
         },
         matilda: {
           price: 6930,
@@ -2966,7 +2960,7 @@ const globalMedicalData = {
         priceLabel: "自然分娩套餐（標準房 3日2夜）",
         displayPrice: "HK$23,900 – $53,300",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$23,900。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -2998,7 +2992,7 @@ const globalMedicalData = {
         priceLabel: "自然分娩計劃（標準房 4日3夜）",
         displayPrice: "HK$22,500 – $38,000",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$22,500。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.union.org/tc/charges-promotion/charges"
       },
 
       canossa: {
@@ -3006,7 +3000,7 @@ const globalMedicalData = {
         priceLabel: "自然分娩套餐（普通房 3日2夜）",
         displayPrice: "HK$21,600 – $64,900",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 6人房$21,600。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.canossahospital.org.hk/tc/fee/"
       },
 
       sph: {
@@ -3043,7 +3037,7 @@ const globalMedicalData = {
         priceLabel: "自然分娩套餐（普通房 3日2夜）",
         displayPrice: "HK$22,000 – $41,800",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 3人房$22,000。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       c_section: {
@@ -3073,7 +3067,7 @@ const globalMedicalData = {
         priceLabel: "剖腹分娩套餐（標準房 5日4夜）",
         displayPrice: "HK$33,300 – $73,800",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$33,300。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
       },
 
       matilda: {
@@ -3105,7 +3099,7 @@ const globalMedicalData = {
         priceLabel: "剖腹分娩計劃（標準房 5日4夜）",
         displayPrice: "HK$26,000 – $44,800",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$26,000。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.union.org/tc/charges-promotion/charges"
       },
 
       canossa: {
@@ -3113,7 +3107,7 @@ const globalMedicalData = {
         priceLabel: "剖腹分娩套餐（普通房 5日4夜）",
         displayPrice: "HK$29,800 – $110,700",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 6人房$29,800。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.canossahospital.org.hk/tc/fee/"
       },
 
       sph: {
@@ -3150,7 +3144,7 @@ const globalMedicalData = {
         priceLabel: "剖腹分娩套餐（普通房 5日4夜）",
         displayPrice: "HK$31,300 – $61,500",
         remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 3人房約$31,300。",
-        link: "https://www.shemom.com/motherhood/%E7%A7%81%E9%99%A2%E5%88%86%E5%A8%A9-%E7%A7%81%E5%AE%B6%E9%86%AB%E9%99%A2-%E7%94%9Fb-%E5%88%86%E5%A8%A9-%E6%98%9F%E5%AA%BD-%E5%AD%AB%E6%85%A7%E9%9B%AA/"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       cervical_treatment: {
@@ -3421,7 +3415,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$199,832",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -3445,7 +3439,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$124,861",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -3453,7 +3447,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$148,499",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -3469,7 +3463,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$207,471",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -3477,7 +3471,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$183,634",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -3498,7 +3492,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$169,196",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -3506,7 +3500,7 @@ const globalMedicalData = {
         priceLabel: "子宮切除術（歷史中位）",
         displayPrice: "HK$187,506",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       tubal_ectopic: {
@@ -3608,7 +3602,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$130,609",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -3632,7 +3626,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$93,988",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -3640,7 +3634,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$103,376",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -3656,7 +3650,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$98,057",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -3664,7 +3658,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$118,024",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -3672,7 +3666,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$103,115",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -3688,7 +3682,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$133,843",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -3696,7 +3690,7 @@ const globalMedicalData = {
         priceLabel: "腹腔鏡卵巢囊腫切除（歷史中位）",
         displayPrice: "HK$143,201",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       contraception: {
@@ -3718,7 +3712,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$52,353",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -3739,7 +3733,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$30,200",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -3747,7 +3741,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$30,602",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -3763,7 +3757,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$40,184",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -3771,7 +3765,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$31,583",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -3779,7 +3773,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$37,857",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -3787,7 +3781,7 @@ const globalMedicalData = {
         priceLabel: "刮宮術（歷史中位）",
         displayPrice: "HK$41,064",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -3812,6 +3806,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 338950,
         priceLabel: "全人工膝關節置換術",
         displayPrice: "HK$156,900 – $521,000",
@@ -3824,8 +3820,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 200035,
+        priceLabel: "單膝全膝關節置換術",
+        displayPrice: "HK$167,500 – $232,570",
+        remarks: "✓ 港怡全包套餐 ORT01A–E（視植入物）；普通／中等風險。機械臂輔助及雙膝置換另計。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -3888,6 +3887,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 181585,
         priceLabel: "肩關節鏡手術",
         displayPrice: "HK$109,370 – $253,800",
@@ -3900,8 +3901,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 135800,
+        priceLabel: "肩關節鏡修補／減壓／肩袖修復（單邊）",
+        displayPrice: "HK$100,000 – $171,600",
+        remarks: "✓ 港怡全包套餐 ORT07B/C/D；不含純診斷鏡 ORT07A（$60,000–$78,000）。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -3961,6 +3965,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 297750,
         priceLabel: "全肩關節置換術",
         displayPrice: "HK$198,500 – $397,000",
@@ -4034,6 +4040,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 207750,
         priceLabel: "ORIF (鎖骨/橈骨遠端)",
         displayPrice: "HK$138,500 – $277,000",
@@ -4143,6 +4151,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 91490,
         priceLabel: "內視鏡腕管解除術",
         displayPrice: "HK$49,380 – $133,600",
@@ -4154,7 +4164,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$77,356",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -4167,7 +4177,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$42,445",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
@@ -4175,7 +4185,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$37,133",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -4183,7 +4193,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$39,258",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -4196,7 +4206,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$41,411",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -4204,7 +4214,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$46,201",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -4212,7 +4222,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$29,577",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -4220,7 +4230,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$45,225",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -4228,7 +4238,7 @@ const globalMedicalData = {
         priceLabel: "腕管鬆解術（歷史中位）",
         displayPrice: "HK$53,649",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -4243,6 +4253,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 76600,
         priceLabel: "板機狀指鬆解術",
         displayPrice: "HK$19,600 – $133,600",
@@ -4254,7 +4266,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$58,423",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -4272,7 +4284,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$27,889",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -4280,7 +4292,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$34,092",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -4293,7 +4305,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$25,622",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -4301,7 +4313,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$43,307",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -4309,7 +4321,7 @@ const globalMedicalData = {
         priceLabel: "板機指鬆解術（歷史中位）",
         displayPrice: "HK$14,897",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -4337,10 +4349,11 @@ const globalMedicalData = {
       },
 
       cuhk: {
-        price: 194310,
-        priceLabel: "膝關節鏡手術",
-        displayPrice: "HK$63,620 – $325,000",
-        remarks: "✓ 術式複雜性（單側游離體移除/半月板修復/前或後十字韌帶重建）與住院級別。包括所有醫院收費及所有醫生費用。"
+        price: 117810,
+        priceLabel: "膝關節內視鏡／半月板手術（單側）",
+        displayPrice: "HK$63,620 – $172,000",
+        remarks: "✓ 中大醫院定價收費：游離體／部分半月板切除至半月板修復。十字韌帶重建已拆至運動醫學卡。",
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
       },
 
       hksh: {
@@ -4348,15 +4361,15 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$100,756",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
-        price: 83771,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$83,771",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 86210,
+        priceLabel: "膝關節鏡診斷／半月板手術（單腿）",
+        displayPrice: "HK$57,500 – $114,920",
+        remarks: "✓ 港怡全包套餐 ORT02A/B/C（診斷／半月板切除／修復）；普通／中等風險。十字韌帶重建見運動醫學卡。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -4369,7 +4382,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$77,211",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -4377,7 +4390,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$84,144",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -4393,7 +4406,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$88,630",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -4401,7 +4414,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$81,011",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -4409,7 +4422,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$106,356",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -4417,7 +4430,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$81,837",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -4425,7 +4438,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$97,947",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -4433,7 +4446,7 @@ const globalMedicalData = {
         priceLabel: "膝關節內視鏡（歷史中位）",
         displayPrice: "HK$150,723",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       orif_lower_limb: {
@@ -4443,6 +4456,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 129985,
         priceLabel: "ORIF (髕骨/足踝骨折)",
         displayPrice: "HK$71,170 – $188,800",
@@ -4555,6 +4570,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 247900,
         priceLabel: "髖關節全關節置換",
         displayPrice: "HK$163,800 – $332,000",
@@ -4567,8 +4584,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 212800,
+        priceLabel: "單邊全髖關節置換術",
+        displayPrice: "HK$183,800 – $241,800",
+        remarks: "✓ 港怡全包套餐（S&N／J&J／Zimmer／Stryker 植入物）；普通／中等風險。機械臂輔助約 $229,000–$297,700 另計。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -4631,6 +4651,8 @@ const globalMedicalData = {
       },
 
       cuhk: {
+
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics",
         price: 123760,
         priceLabel: "跟腱修補/踝關節鏡韌帶修補",
         displayPrice: "HK$65,220 – $182,300",
@@ -4643,8 +4665,11 @@ const globalMedicalData = {
       },
 
       ghk: {
-        price: 9999999,
-        remarks: "骨科手術資料整理中。"
+        price: 99270,
+        priceLabel: "跟腱修復／足踝關節鏡韌帶重建",
+        displayPrice: "HK$74,000 – $124,540",
+        remarks: "✓ 港怡全包套餐：跟腱修復（簡單／複雜）及足踝關節鏡+韌帶重建；普通／中等風險。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -4799,7 +4824,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$274,359",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -4812,7 +4837,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$168,704",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.matilda.org/zh-hk/fees-and-packages/"
       },
 
       sth: {
@@ -4820,7 +4845,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$142,963",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -4828,7 +4853,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$203,421",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -4841,7 +4866,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$192,142",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -4849,7 +4874,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$199,536",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -4857,7 +4882,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$121,031",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
@@ -4870,7 +4895,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$185,442",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -4878,7 +4903,7 @@ const globalMedicalData = {
         priceLabel: "椎板切除術（歷史中位）",
         displayPrice: "HK$343,575",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       sports_ortho: {
@@ -4891,24 +4916,24 @@ const globalMedicalData = {
       },
 
       cuhk: {
+        price: 167080,
+        priceLabel: "關節內視鏡前十字韌帶重建術（單側）",
+        displayPrice: "HK$111,360 – $222,800",
+        remarks: "✓ 中大醫院定價收費（CMP）；含醫生費。病情級別 1–3。可合併半月板修復約 $133,800–$267,600。",
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+      },
+
+      hksh: {
         price: 9999999,
         remarks: "骨科手術資料整理中。"
       },
 
-      hksh: {
-        price: 100756,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$100,756",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
-      },
-
       ghk: {
-        price: 83771,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$83,771",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 138000,
+        priceLabel: "關節鏡前十字韌帶重建術（腿後肌腱移植，單腿）",
+        displayPrice: "HK$120,000 – $156,000",
+        remarks: "✓ 港怡全包套餐 ORT05A；普通／中等風險；參考住院約 3 日。含醫生費。",
+        link: "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
       },
 
       matilda: {
@@ -4917,19 +4942,13 @@ const globalMedicalData = {
       },
 
       sth: {
-        price: 77211,
-        priceLabel: "膝關節腔內窺鏡（歷史中位）",
-        displayPrice: "HK$77,211",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.sth.org.hk/"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       baptist: {
-        price: 84144,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$84,144",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       union: {
@@ -4941,52 +4960,34 @@ const globalMedicalData = {
       },
 
       canossa: {
-        price: 88630,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$88,630",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       sph: {
-        price: 81011,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$81,011",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       pbh: {
-        price: 106356,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$106,356",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       evangel: {
-        price: 112556,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$112,556",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年普通房歷史五十分位總收費。",
-        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       twah: {
-        price: 97947,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$97,947",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
       },
 
       hkah: {
-        price: 150723,
-        priceLabel: "膝關節內視鏡（歷史中位）",
-        displayPrice: "HK$150,723",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
-      }
+        price: 9999999,
+        remarks: "骨科手術資料整理中。"
+      },
       }
     },
     cardiology: {
@@ -5339,7 +5340,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$78,513",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hksh-hospital.com/zh-hk/fees-and-charges/"
       },
 
       ghk: {
@@ -5347,12 +5348,15 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$65,551",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://gleneagles.hk/tc/fee-charges/package-charges"
       },
 
       matilda: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 85930,
+        priceLabel: "扁桃腺切除術（全面護理）",
+        displayPrice: "HK$67,200 – $104,660",
+        remarks: "✓ 明德全面護理套餐（含醫生費；標準／雙人／私家房）。同台腺樣體見腺樣體及扁桃體手術卡。",
+        link: "https://www.matilda.org/fees-and-packages/ent/tonsillectomy-and-adenoidectomy-packages?hsLang=zh-hk"
       },
 
       sth: {
@@ -5360,7 +5364,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$62,477",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.sth.org.hk/download/zh/ccssp.pdf"
       },
 
       baptist: {
@@ -5368,7 +5372,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$66,613",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkbh.org.hk/fees-charges/pilot-programme-for-enhancing-price-transparency-for-private-hospitals/"
       },
 
       union: {
@@ -5384,7 +5388,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$76,675",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.canossahospital.org.hk/tc/fee/pilot_programme_for_enhancing_price_transparency_for_private_hospitals/"
       },
 
       sph: {
@@ -5392,7 +5396,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$63,414",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.stpaul.org.hk/tc/charges"
       },
 
       pbh: {
@@ -5400,12 +5404,15 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$69,389",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.pbh.hk/service-fee-adjustment/"
       },
 
       evangel: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 18484,
+        priceLabel: "扁桃體切除術（歷史中位）",
+        displayPrice: "HK$18,484",
+        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。2025 年普通房歷史五十分位總收費。",
+        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
       },
 
       twah: {
@@ -5413,7 +5420,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$106,684",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.twah.org.hk/tc/fees-and-charges"
       },
 
       hkah: {
@@ -5421,7 +5428,7 @@ const globalMedicalData = {
         priceLabel: "扁桃腺切除術（歷史中位）",
         displayPrice: "HK$69,634",
         remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        link: "https://www.hkah.org.hk/tc/fees-and-charges"
       }
       },
       micro_laryngoscopy: {
@@ -5517,19 +5524,16 @@ const globalMedicalData = {
       },
 
       cuhk: {
-        price: 66667,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$66,667",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 93000,
+        priceLabel: "扁桃體切除術及腺樣增殖體切除手術",
+        displayPrice: "HK$65,500 – $120,500",
+        remarks: "✓ 中大醫院定價收費：常規同台 $65,500–$87,300；內視鏡輔助 $91,500–$120,500。日間／住院級別 1–2。",
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/otorhinolaryngology"
       },
 
       hksh: {
-        price: 78513,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$78,513",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       ghk: {
@@ -5541,84 +5545,57 @@ const globalMedicalData = {
       },
 
       matilda: {
-        price: 67200,
-        priceLabel: "扁桃腺切除術套餐（標準房）",
-        displayPrice: "HK$67,200 – $104,660",
-        remarks: "✓ 醫院套餐價目（本地 scrape／官網）。 醫院套餐（標準／雙人／私家）。",
-        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages"
+        price: 111230,
+        priceLabel: "扁桃腺切除術及腺體切除術（全面護理）",
+        displayPrice: "HK$86,100 – $136,360",
+        remarks: "✓ 明德全面護理套餐（含醫生費；標準／雙人／私家房）。單切扁桃腺見扁桃體切除術卡。",
+        link: "https://www.matilda.org/fees-and-packages/ent/tonsillectomy-and-adenoidectomy-packages?hsLang=zh-hk"
       },
 
       sth: {
-        price: 62477,
-        priceLabel: "扁桃體切除術（歷史中位）",
-        displayPrice: "HK$62,477",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.sth.org.hk/"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       baptist: {
-        price: 66613,
-        priceLabel: "扁桃體切除術（歷史中位）",
-        displayPrice: "HK$66,613",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2024–2025 住院五十分位總收費。",
-        link: "https://www.hkbh.org.hk/fees-charges/"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       union: {
-        price: 65790,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$65,790",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       canossa: {
-        price: 76675,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$76,675",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       sph: {
-        price: 63414,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$63,414",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       pbh: {
-        price: 69389,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$69,389",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       evangel: {
-        price: 18484,
-        priceLabel: "扁桃體切除術（歷史中位）",
-        displayPrice: "HK$18,484",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年普通房歷史五十分位總收費。",
-        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。",
       },
 
       twah: {
-        price: 106684,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$106,684",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
       },
 
       hkah: {
-        price: 69634,
-        priceLabel: "扁桃腺切除術（歷史中位）",
-        displayPrice: "HK$69,634",
-        remarks: "⚠️ 參考 Hong Kong Card 2026-05 匯總（稱取自各院 2025 常見手術統計五十分位總收費）。區間僅供參考，實際以醫院書面估價為準。",
-        link: "https://www.hongkongcard.com/blogs/hong-kong-private-hospital-surgery-fees-2026"
-      }
+        price: 9999999,
+        remarks: "耳鼻喉科手術資料整理中。"
+      },
       },
       sinus_surgery: {
       szufh: {
@@ -5630,8 +5607,11 @@ const globalMedicalData = {
       },
 
       cuhk: {
-        price: 9999999,
-        remarks: "耳鼻喉科手術資料整理中。"
+        price: 156000,
+        priceLabel: "功能性內視鏡鼻竇手術（FESS）",
+        displayPrice: "HK$99,200 – $212,800",
+        remarks: "✓ 中大醫院定價收費；日間至住院病情級別 3。含醫生費。香港居民、日間或 4 人房。",
+        link: "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/otorhinolaryngology"
       },
 
       hksh: {

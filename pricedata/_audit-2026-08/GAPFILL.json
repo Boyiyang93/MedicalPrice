@@ -1,0 +1,128 @@
+{
+  "date": "2026-08-21",
+  "applied": [
+    {
+      "id": "hernia_bilateral.union",
+      "price": 82900,
+      "priceLabel": "腹腔鏡雙側腹股溝疝修補術（含植入物）",
+      "displayPrice": "HK$82,900",
+      "link": "https://www.union.org/appassets/Charges/Surgical-Operation-Package-V1.pdf"
+    },
+    {
+      "id": "hernia_bilateral.hkah",
+      "price": 57800,
+      "priceLabel": "微創雙側腹股溝疝修補（公立轉介日間套餐）",
+      "displayPrice": "HK$57,800",
+      "link": "https://www.hkah.org.hk/tc/promotions/package-for-referrals-from-public-hospitals-laparoscopic-groin-hernia-repair-surgery"
+    },
+    {
+      "id": "sports_ortho.cuhk",
+      "price": 167080,
+      "priceLabel": "關節內視鏡前十字韌帶重建術（單側）",
+      "displayPrice": "HK$111,360 – $222,800",
+      "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+    },
+    {
+      "id": "sports_ortho.ghk",
+      "price": 138000,
+      "priceLabel": "關節鏡前十字韌帶重建術（腿後肌腱移植，單腿）",
+      "displayPrice": "HK$120,000 – $156,000",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "knee_arthroscopy.cuhk",
+      "price": 117810,
+      "priceLabel": "膝關節內視鏡／半月板手術（單側）",
+      "displayPrice": "HK$63,620 – $172,000",
+      "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/orthopaedics"
+    },
+    {
+      "id": "knee_arthroscopy.ghk",
+      "price": 86210,
+      "priceLabel": "膝關節鏡診斷／半月板手術（單腿）",
+      "displayPrice": "HK$57,500 – $114,920",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "shoulder_arthroscopy.ghk",
+      "price": 135800,
+      "priceLabel": "肩關節鏡修補／減壓／肩袖修復（單邊）",
+      "displayPrice": "HK$100,000 – $171,600",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "hip_replacement.ghk",
+      "price": 212800,
+      "priceLabel": "單邊全髖關節置換術",
+      "displayPrice": "HK$183,800 – $241,800",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "knee_replacement.ghk",
+      "price": 200035,
+      "priceLabel": "單膝全膝關節置換術",
+      "displayPrice": "HK$167,500 – $232,570",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "achilles_ankle.ghk",
+      "price": 99270,
+      "priceLabel": "跟腱修復／足踝關節鏡韌帶重建",
+      "displayPrice": "HK$74,000 – $124,540",
+      "link": "https://gleneagles.hk/tc/fee-charges/orthopaedic-procedures"
+    },
+    {
+      "id": "adenoid_tonsil.cuhk",
+      "price": 93000,
+      "priceLabel": "扁桃體切除術及腺樣增殖體切除手術",
+      "displayPrice": "HK$65,500 – $120,500",
+      "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/otorhinolaryngology"
+    },
+    {
+      "id": "adenoid_tonsil.matilda",
+      "price": 111230,
+      "priceLabel": "扁桃腺切除術及腺體切除術（全面護理）",
+      "displayPrice": "HK$86,100 – $136,360",
+      "link": "https://www.matilda.org/fees-and-packages/ent/tonsillectomy-and-adenoidectomy-packages?hsLang=zh-hk"
+    },
+    {
+      "id": "adenoid_tonsil.evangel",
+      "price": 9999999,
+      "priceLabel": null,
+      "displayPrice": null,
+      "link": null
+    },
+    {
+      "id": "tonsillectomy.matilda",
+      "price": 85930,
+      "priceLabel": "扁桃腺切除術（全面護理）",
+      "displayPrice": "HK$67,200 – $104,660",
+      "link": "https://www.matilda.org/fees-and-packages/ent/tonsillectomy-and-adenoidectomy-packages?hsLang=zh-hk"
+    },
+    {
+      "id": "tonsillectomy.evangel",
+      "price": 18484,
+      "priceLabel": "扁桃體切除術（歷史中位）",
+      "displayPrice": "HK$18,484",
+      "link": "https://www.evangel.org.hk/zh-hant/charges/price_list/"
+    },
+    {
+      "id": "sinus_surgery.cuhk",
+      "price": 156000,
+      "priceLabel": "功能性內視鏡鼻竇手術（FESS）",
+      "displayPrice": "HK$99,200 – $212,800",
+      "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/otorhinolaryngology"
+    },
+    {
+      "id": "thyroid_surgery.cuhk",
+      "price": 167380,
+      "priceLabel": "甲狀腺切除術（偏側／全切）",
+      "displayPrice": "HK$85,960 – $248,800",
+      "link": "https://www.cuhkmc.hk/sc/medical-packages/cumc-medical-package/general-surgery"
+    }
+  ],
+  "skipped": {
+    "hernia_abdominal": "除中大 CMP 腹腔疝（腹壁／切口疝）外，各院公開套餐仍只有腹股溝／小腸氣，不回填。",
+    "sports_ortho_others": "未找到獨立交叉韌帶套餐的醫院維持 Coming Soon，不把膝關節鏡價寫回。"
+  }
+}
