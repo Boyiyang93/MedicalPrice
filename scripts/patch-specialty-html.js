@@ -64,12 +64,10 @@ const PAGES = {
   },
   'gyn.html': {
     module: 'gynecology',
-    startMarker: '<section id="normal_delivery"',
+    startMarker: '<section id="cervical_treatment"',
     endMarker: '<footer class="mt-16',
     introReplace: false,
     items: [
-      ['normal_delivery', '自然分娩套餐'],
-      ['c_section', '剖腹產套餐'],
       ['cervical_treatment', '子宮頸病變治療手術'],
       ['hysteroscopy', '子宮鏡診治手術'],
       ['myomectomy', '子宮肌瘤切除術'],

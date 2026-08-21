@@ -148,14 +148,6 @@ const LAY_ALIASES = {
   'gyn.html#hysteroscopy': [
     '子宮鏡', '宮腔鏡', '異常出血', '月經失調', '子宮內膜息肉', '宮腔息肉', '診刮'
   ],
-  'gyn.html#normal_delivery': [
-    '順產', '自然分娩', '生仔', '產科套餐', '分娩', '自然產', '陰道分娩', '生產套餐',
-    '產子', '生B', 'maternity'
-  ],
-  'gyn.html#c_section': [
-    '剖腹產', '剖宮產', '剖腹', '剖腹生产', '剖腹生產', '剖腹生', '剖腹取胎',
-    'C-section', 'caesarean', 'cesarean'
-  ],
   'gyn.html#ovarian_cyst': [
     '卵巢囊腫', '卵巢瘤', '盆腔痛', '卵巢水泡', '卵巢手術', '附件腫塊', '卵巢囊肿'
   ],
@@ -181,35 +173,9 @@ const LAY_ALIASES = {
     '膝關節鏡', '半月板', '半月板撕裂', '十字韌帶', '前十字', 'ACL', '膝受傷',
     '膝扭傷', '膝鎖死', '運動傷膝'
   ],
-  'orthopedics.html#shoulder_arthroscopy': [
-    '肩關節鏡', '肩旋轉袖', '旋轉袖', '肩袖', '肩痛', '手臂舉唔到', '肩撞擊',
-    '肩周炎手術', '冰凍肩手術'
-  ],
-  'orthopedics.html#shoulder_replacement': [
-    '換肩', '肩關節置換', '人工肩', '嚴重肩退化'
-  ],
-  'orthopedics.html#carpal_tunnel': [
-    '腕管', '手腕管', '手麻痺', '手指麻痺', '滑鼠手', '手腕痛', '半夜手痺',
-    '腕隧道', 'carpal tunnel', 'CTS'
-  ],
-  'orthopedics.html#trigger_finger': [
-    '彈弓指', '手指卡住', '扳机指', '板機指', '手指彈響', '手指伸唔直', 'trigger finger'
-  ],
   'orthopedics.html#spine_surgery': [
     '脊椎手術', '腰椎', '椎間盤', '坐骨神經', '坐骨神經痛', '腰脫', '椎間盤突出',
     '脊椎退化', '腰痛腳痺', '頸椎手術', '腰椎手術', '脊柱手術'
-  ],
-  'orthopedics.html#orif_upper_limb': [
-    '手骨折', '手腕骨折', '鎖骨骨折', '上肢骨折', '手臂骨折', '肘骨折', '打鋼板',
-    '骨折手術', 'ORIF 上肢', '橈骨骨折'
-  ],
-  'orthopedics.html#orif_lower_limb': [
-    '腳骨折', '腳踝骨折', '下肢骨折', '小腿骨折', '脛骨骨折', '足踝骨折',
-    '打鋼釘', 'ORIF 下肢'
-  ],
-  'orthopedics.html#achilles_ankle': [
-    '跟腱', '腳踝韌帶', '阿基里斯腱', '跟腱斷裂', '腳踝扭傷手術', '踝關節不穩',
-    'Achilles'
   ],
   'orthopedics.html#joint_replacement': [
     '換骹', '關節置換', '人工關節', '換關節', '關節退化手術'
@@ -295,9 +261,13 @@ function htmlAnchorIds(page) {
   if (!fs.existsSync(filePath)) return new Set();
   const text = fs.readFileSync(filePath, 'utf8');
   const ids = new Set();
-  const re = /<(?:section|div|h[1-6]|article)[^>]*\bid="([^"]+)"/gi;
+  const re = /<section[^>]*\bid="([^"]+)"[^>]*>/gi;
   let m;
-  while ((m = re.exec(text))) ids.add(m[1]);
+  while ((m = re.exec(text))) {
+    const tag = m[0];
+    if (/data-mp-hidden\s*=\s*["']1["']/.test(tag)) continue;
+    ids.add(m[1]);
+  }
   return ids;
 }
 
@@ -306,11 +276,13 @@ function collectFromHtml() {
   const htmlFiles = fs.readdirSync(ROOT).filter((f) => f.endsWith('.html') && !EXCLUDED_PAGES.has(f));
   for (const file of htmlFiles) {
     const text = fs.readFileSync(path.join(ROOT, file), 'utf8');
-    const sectionRe = /<section[^>]*\bid="([^"]+)"[^>]*>[\s\S]*?<h2[^>]*>([\s\S]*?)<\/h2>/gi;
+    const sectionRe = /<section([^>]*)\bid="([^"]+)"([^>]*)>[\s\S]*?<h2[^>]*>([\s\S]*?)<\/h2>/gi;
     let m;
     while ((m = sectionRe.exec(text))) {
-      const id = m[1];
-      const label = m[2].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+      const attrs = (m[1] || '') + (m[3] || '');
+      if (/data-mp-hidden\s*=\s*["']1["']/.test(attrs)) continue;
+      const id = m[2];
+      const label = m[4].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
       if (!label || label.length < 2) continue;
       const keywords = [label, id.replace(/_/g, ' ')];
       // also pull procedure from nearby compare-group

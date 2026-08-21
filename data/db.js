@@ -1495,8 +1495,11 @@ const globalMedicalData = {
       },
       hernia_abdominal: {
       szufh: {
-        price: 9999999,
-        remarks: "定額一般外科手術資料整理中。"
+        price: 53000,
+        priceLabel: "腹腔疝氣修補術",
+        displayPrice: "HK$53,000",
+        remarks: "✓ 腹腔鏡腹腔疝修補（伴補片）；院內確認建議價。",
+        link: "https://www.szufh.hk/general-surgery-fees.html"
       },
 
       cuhk: {
@@ -2933,220 +2936,6 @@ const globalMedicalData = {
       }
     },
     gynecology: {
-      normal_delivery: {
-      szufh: {
-        price: 9999999,
-        remarks: "婦科套餐資料整理中。"
-      },
-
-      cuhk: {
-        price: 33550,
-        priceLabel: "自然分娩套餐 (二人房/一人房)",
-        displayPrice: "HK$23,200 – $43,900",
-        remarks: "⚠️ 套式收費不包括醫生費用。3日2夜 HK$23,200–40,300；4日3夜 HK$26,000–43,900。",
-        link: "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
-      },
-
-      hksh: {
-        price: 30450,
-        priceLabel: "自然分娩套餐 (二人房/一人房)",
-        displayPrice: "HK$22,300 – $38,600",
-        remarks: "⚠️ 套式收費不包括醫生費用。",
-        link: "https://www.hksh-hospital.com/dwh/zh-hk/obstetrics-and-gynaecology-centre/index.php"
-      },
-
-      ghk: {
-        price: 23900,
-        priceLabel: "自然分娩套餐（標準房 3日2夜）",
-        displayPrice: "HK$23,900 – $53,300",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$23,900。",
-        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
-      },
-
-      matilda: {
-        price: 64800,
-        priceLabel: "自然分娩套餐（兩晚・含產鉗／真空）",
-        displayPrice: "HK$64,800 – $100,800",
-        remarks: "✓ 醫院套餐價目（本地 scrape／官網）。 標準房$64,800（另有較低醫院套餐約$23,800 起，不含專科醫生費）。",
-        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages"
-      },
-
-      sth: {
-        price: 78809,
-        priceLabel: "陰道分娩（歷史中位總收費）",
-        displayPrice: "HK$78,809",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.sth.org.hk/"
-      },
-
-      baptist: {
-        price: 89451,
-        priceLabel: "自然分娩（歷史中位總收費）",
-        displayPrice: "HK$89,451",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2024–2025 住院五十分位總收費（醫生+醫院）。",
-        link: "https://www.hkbh.org.hk/fees-charges/"
-      },
-
-      union: {
-        price: 22500,
-        priceLabel: "自然分娩計劃（標準房 4日3夜）",
-        displayPrice: "HK$22,500 – $38,000",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$22,500。",
-        link: "https://www.union.org/tc/charges-promotion/charges"
-      },
-
-      canossa: {
-        price: 21600,
-        priceLabel: "自然分娩套餐（普通房 3日2夜）",
-        displayPrice: "HK$21,600 – $64,900",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 6人房$21,600。",
-        link: "https://www.canossahospital.org.hk/tc/fee/"
-      },
-
-      sph: {
-        price: 22000,
-        priceLabel: "自然分娩套餐（標準房 3日2夜）",
-        displayPrice: "HK$22,000 – $40,800",
-        remarks: "✓ 醫院套餐價目（本地 scrape／官網）。 標準房$22,000／雙人$28,000／私家$40,800；通常不含醫生費。",
-        link: "https://www.stpaul.org.hk/tc/charges"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "婦科套餐資料整理中。"
-      },
-
-      evangel: {
-        price: 102944,
-        priceLabel: "自然分娩（歷史中位總收費）",
-        displayPrice: "HK$102,944",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年普通房歷史五十分位總收費。",
-        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
-      },
-
-      twah: {
-        price: 22800,
-        priceLabel: "自然分娩計劃（2人房 3日2夜）",
-        displayPrice: "HK$22,800 – $43,500",
-        remarks: "✓ 醫院套餐價目（本地 scrape／官網）。 醫院產科計劃；通常不含醫生費。",
-        link: "https://www.twah.org.hk/tc/fees-and-charges"
-      },
-
-      hkah: {
-        price: 22000,
-        priceLabel: "自然分娩套餐（普通房 3日2夜）",
-        displayPrice: "HK$22,000 – $41,800",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 3人房$22,000。",
-        link: "https://www.hkah.org.hk/tc/fees-and-charges"
-      }
-      },
-      c_section: {
-      szufh: {
-        price: 9999999,
-        remarks: "婦科套餐資料整理中。"
-      },
-
-      cuhk: {
-        price: 45400,
-        priceLabel: "剖腹分娩套餐 (二人房/一人房)",
-        displayPrice: "HK$31,000 – $59,800",
-        remarks: "⚠️ 套式收費不包括醫生費用。選擇性 HK$31,000–49,800；緊急 HK$39,500–59,800。含 5日4夜住院。",
-        link: "https://www.cuhkmc.hk/sc/fees-and-charges/maternity"
-      },
-
-      hksh: {
-        price: 48000,
-        priceLabel: "剖腹分娩套餐 (二人房/一人房)",
-        displayPrice: "HK$28,800 – $67,200",
-        remarks: "⚠️ 套式收費不包括醫生費用。選擇性 HK$28,800–55,200；緊急 HK$35,800–67,200。",
-        link: "https://www.hksh-hospital.com/dwh/zh-hk/obstetrics-and-gynaecology-centre/index.php"
-      },
-
-      ghk: {
-        price: 33300,
-        priceLabel: "剖腹分娩套餐（標準房 5日4夜）",
-        displayPrice: "HK$33,300 – $73,800",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$33,300。",
-        link: "https://gleneagles.hk/tc/facilities-services/explore-facilities-and-services/specialist-outpatient-clinics/obstetrics-gynaecology-clinic"
-      },
-
-      matilda: {
-        price: 108600,
-        priceLabel: "剖腹分娩套餐（4晚）",
-        displayPrice: "HK$108,600 – $162,000",
-        remarks: "✓ 醫院套餐價目（本地 scrape／官網）。 標準房$108,600（另有較低醫院套餐約$34,300 起）。",
-        link: "https://www.matilda.org/zh-hk/fees-and-packages/hospital-packages"
-      },
-
-      sth: {
-        price: 82086,
-        priceLabel: "剖腹分娩（歷史中位總收費）",
-        displayPrice: "HK$82,086",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.sth.org.hk/"
-      },
-
-      baptist: {
-        price: 99927,
-        priceLabel: "剖腹分娩（歷史中位總收費）",
-        displayPrice: "HK$99,927",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2024–2025 住院五十分位總收費（醫生+醫院）。",
-        link: "https://www.hkbh.org.hk/fees-charges/"
-      },
-
-      union: {
-        price: 26000,
-        priceLabel: "剖腹分娩計劃（標準房 5日4夜）",
-        displayPrice: "HK$26,000 – $44,800",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 標準房$26,000。",
-        link: "https://www.union.org/tc/charges-promotion/charges"
-      },
-
-      canossa: {
-        price: 29800,
-        priceLabel: "剖腹分娩套餐（普通房 5日4夜）",
-        displayPrice: "HK$29,800 – $110,700",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 6人房$29,800。",
-        link: "https://www.canossahospital.org.hk/tc/fee/"
-      },
-
-      sph: {
-        price: 93962,
-        priceLabel: "剖腹取嬰術（歷史中位總收費）",
-        displayPrice: "HK$93,962",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.stpaul.org.hk/tc/charges"
-      },
-
-      pbh: {
-        price: 9999999,
-        remarks: "婦科套餐資料整理中。"
-      },
-
-      evangel: {
-        price: 26900,
-        priceLabel: "剖腹分娩（歷史中位總收費）",
-        displayPrice: "HK$26,900",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年普通房歷史五十分位總收費（醫生+醫院）。個案結構可能偏醫院費偏低，請以書面估價為準。",
-        link: "https://www.evangel.org.hk/zh-hant/charges/price_list/"
-      },
-
-      twah: {
-        price: 130111,
-        priceLabel: "剖腹分娩（歷史中位總收費）",
-        displayPrice: "HK$130,111",
-        remarks: "✓ 醫院價目／歷史統計（本地 scrape）。 2025年歷史統計五十分位總收費。",
-        link: "https://www.twah.org.hk/tc/fees-and-charges"
-      },
-
-      hkah: {
-        price: 31300,
-        priceLabel: "剖腹分娩套餐（普通房 5日4夜）",
-        displayPrice: "HK$31,300 – $61,500",
-        remarks: "⚠️ 參考 2026 公開分娩套餐整理（通常不含婦產／麻醉／兒科醫生費）。實際以醫院書面報價為準。 3人房約$31,300。",
-        link: "https://www.hkah.org.hk/tc/fees-and-charges"
-      }
-      },
       cervical_treatment: {
       szufh: {
         price: 20500,
@@ -6489,6 +6278,8 @@ const globalMedicalData = {
         "扁桃體切除術",
         "tonsillectomy",
         "扁桃腺切除術（歷史中位）",
+        "扁桃腺切除術（全面護理）",
+        "扁桃體切除術（歷史中位）",
         "割扁桃腺",
         "扁桃體",
         "扁桃腺",
@@ -6526,9 +6317,8 @@ const globalMedicalData = {
       "keywords": [
         "腺樣體及扁桃體手術",
         "adenoid tonsil",
-        "扁桃腺切除術（歷史中位）",
-        "扁桃腺切除術套餐（標準房）",
-        "扁桃體切除術（歷史中位）",
+        "扁桃體切除術及腺樣增殖體切除手術",
+        "扁桃腺切除術及腺體切除術（全面護理）",
         "腺樣體",
         "小兒鼻塞",
         "小兒打鼾",
@@ -6546,6 +6336,7 @@ const globalMedicalData = {
       "keywords": [
         "鼻竇炎及鼻中隔手術",
         "sinus surgery",
+        "功能性內視鏡鼻竇手術（FESS）",
         "功能性內視鏡鼻竇手術",
         "鼻竇",
         "鼻息肉",
@@ -6584,8 +6375,8 @@ const globalMedicalData = {
       "keywords": [
         "腹腔鏡膽囊切除術",
         "cholecystectomy",
-        "腹腔內視鏡膽囊切除術",
         "腹腔鏡內膽囊切除術",
+        "腹腔內視鏡膽囊切除術",
         "膽囊切除術（腹腔鏡）",
         "膽囊切除術",
         "膽石",
@@ -6706,7 +6497,6 @@ const globalMedicalData = {
       "keywords": [
         "腹腔疝氣修補術",
         "hernia abdominal",
-        "開放式疝氣手術（歷史中位）",
         "腹壁疝",
         "切口疝",
         "肚臍疝",
@@ -6747,6 +6537,8 @@ const globalMedicalData = {
       "keywords": [
         "雙側腹股溝疝氣修補術",
         "hernia bilateral",
+        "腹腔鏡雙側腹股溝疝修補術（含植入物）",
+        "微創雙側腹股溝疝修補（公立轉介日間套餐）",
         "雙側疝",
         "兩邊疝氣",
         "雙邊疝",
@@ -6807,6 +6599,7 @@ const globalMedicalData = {
       "keywords": [
         "甲狀腺處置手術",
         "thyroid surgery",
+        "甲狀腺切除術（偏側／全切）",
         "甲狀腺",
         "甲狀腺瘤",
         "甲狀腺腫",
@@ -6874,60 +6667,6 @@ const globalMedicalData = {
     },
     {
       "keywords": [
-        "自然分娩套餐",
-        "normal delivery",
-        "自然分娩套餐 (二人房/一人房)",
-        "自然分娩套餐（標準房 3日2夜）",
-        "自然分娩套餐（兩晚・含產鉗／真空）",
-        "陰道分娩（歷史中位總收費）",
-        "自然分娩（歷史中位總收費）",
-        "自然分娩計劃（標準房 4日3夜）",
-        "自然分娩套餐（普通房 3日2夜）",
-        "自然分娩計劃（2人房 3日2夜）",
-        "順產",
-        "自然分娩",
-        "生仔",
-        "產科套餐",
-        "分娩",
-        "自然產",
-        "陰道分娩",
-        "生產套餐",
-        "產子",
-        "生B",
-        "maternity"
-      ],
-      "page": "gyn.html",
-      "hash": "#normal_delivery",
-      "label": "自然分娩套餐 (二人房/一人房)"
-    },
-    {
-      "keywords": [
-        "剖腹產套餐",
-        "c section",
-        "剖腹分娩套餐 (二人房/一人房)",
-        "剖腹分娩套餐（標準房 5日4夜）",
-        "剖腹分娩套餐（4晚）",
-        "剖腹分娩（歷史中位總收費）",
-        "剖腹分娩計劃（標準房 5日4夜）",
-        "剖腹分娩套餐（普通房 5日4夜）",
-        "剖腹取嬰術（歷史中位總收費）",
-        "剖腹產",
-        "剖宮產",
-        "剖腹",
-        "剖腹生产",
-        "剖腹生產",
-        "剖腹生",
-        "剖腹取胎",
-        "C-section",
-        "caesarean",
-        "cesarean"
-      ],
-      "page": "gyn.html",
-      "hash": "#c_section",
-      "label": "剖腹分娩套餐 (二人房/一人房)"
-    },
-    {
-      "keywords": [
         "子宮頸病變治療手術",
         "cervical treatment",
         "陰道窺鏡檢查",
@@ -6950,8 +6689,8 @@ const globalMedicalData = {
       "keywords": [
         "子宮鏡診治手術",
         "hysteroscopy",
-        "子宮腔鏡（診斷）+ 擴刮套餐",
         "宮腔鏡檢查 + 刮宮術",
+        "子宮腔鏡（診斷）+ 擴刮套餐",
         "宮腔鏡 + 刮宮（C級套餐）",
         "子宮鏡",
         "宮腔鏡",
@@ -6969,8 +6708,8 @@ const globalMedicalData = {
       "keywords": [
         "子宮肌瘤切除術",
         "myomectomy",
-        "子宮肌瘤切除術（傳統）套餐",
         "肌瘤切除術",
+        "子宮肌瘤切除術（傳統）套餐",
         "子宮肌瘤",
         "肌瘤",
         "子宮瘤",
@@ -6991,8 +6730,8 @@ const globalMedicalData = {
         "子宮切除術",
         "hysterectomy",
         "子宮切除術（歷史中位）",
-        "子宮切除術（經腹腔）套餐",
         "腹腔鏡輔助子宮切除術",
+        "子宮切除術（經腹腔）套餐",
         "腹腔鏡子宮切除（歷史中位）",
         "切除子宮",
         "全宮切除",
@@ -7025,8 +6764,8 @@ const globalMedicalData = {
         "卵巢囊腫切除術",
         "ovarian cyst",
         "腹腔鏡卵巢囊腫切除（歷史中位）",
-        "卵巢囊腫切除（傳統）套餐",
         "腹腔鏡卵巢囊腫切除術",
+        "卵巢囊腫切除（傳統）套餐",
         "卵巢囊腫",
         "卵巢瘤",
         "盆腔痛",
@@ -7120,10 +6859,10 @@ const globalMedicalData = {
         "日間結腸鏡 (鎮靜麻醉)",
         "大腸鏡 ± 瘜肉（歷史中位）",
         "日間定額全包區間",
+        "日間腸鏡總收費中位",
         "結腸鏡檢查（睡眠監察麻醉）",
         "日間腸鏡（歷史中位總收費）",
         "日間常規程序基準",
-        "日間腸鏡總收費中位",
         "日間大腸鏡（鎮靜麻醉・不連瘜肉）",
         "日間大腸鏡總收費中位",
         "日間大房基準套餐價",
@@ -7236,8 +6975,8 @@ const globalMedicalData = {
         "CT 腦部平掃（門診）",
         "CT 腦部平掃",
         "CT 腦部平掃（門診／普通房）",
-        "CT 腦部平掃（標準房）",
         "CT 腦部掃描",
+        "CT 腦部平掃（標準房）",
         "CT 腦部掃描（門診參考）",
         "CT 腦部平掃（普通房）",
         "頭痛 CT",
@@ -7267,8 +7006,8 @@ const globalMedicalData = {
         "腦部磁力共振套餐",
         "MRI 腦部平掃",
         "MRI 腦部平掃（門診／標準房）",
-        "MRI 腦部平掃（標準房）",
         "MRI 腦部掃描",
+        "MRI 腦部平掃（標準房）",
         "MRI 腦部平掃（普通房）",
         "頭痛 MRI",
         "腦 MRI",
@@ -7339,6 +7078,7 @@ const globalMedicalData = {
         "全人工膝關節置換術",
         "knee replacement",
         "單側全膝關節置換術",
+        "單膝全膝關節置換術",
         "全膝關節置換術",
         "換膝",
         "換膝頭",
@@ -7361,6 +7101,7 @@ const globalMedicalData = {
         "髖關節全關節置換",
         "hip replacement",
         "單側全髖關節置換術",
+        "單邊全髖關節置換術",
         "機械臂輔助髖關節置換套餐",
         "換髖",
         "換骹",
@@ -7396,40 +7137,11 @@ const globalMedicalData = {
     },
     {
       "keywords": [
-        "肩關節鏡手術",
-        "shoulder arthroscopy",
-        "肩關節鏡",
-        "肩旋轉袖",
-        "旋轉袖",
-        "肩袖",
-        "肩痛",
-        "手臂舉唔到",
-        "肩撞擊",
-        "肩周炎手術",
-        "冰凍肩手術"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#shoulder_arthroscopy",
-      "label": "肩關節鏡手術"
-    },
-    {
-      "keywords": [
-        "全肩關節置換術",
-        "shoulder replacement",
-        "換肩",
-        "肩關節置換",
-        "人工肩",
-        "嚴重肩退化"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#shoulder_replacement",
-      "label": "全肩關節置換術"
-    },
-    {
-      "keywords": [
         "膝關節鏡手術",
         "knee arthroscopy",
+        "膝關節內視鏡／半月板手術（單側）",
         "膝關節內視鏡（歷史中位）",
+        "膝關節鏡診斷／半月板手術（單腿）",
         "膝關節內窺鏡檢查",
         "膝關節鏡",
         "半月板",
@@ -7450,8 +7162,8 @@ const globalMedicalData = {
       "keywords": [
         "骨科小手術及運動醫學",
         "sports ortho",
-        "膝關節內視鏡（歷史中位）",
-        "膝關節腔內窺鏡（歷史中位）",
+        "關節內視鏡前十字韌帶重建術（單側）",
+        "關節鏡前十字韌帶重建術（腿後肌腱移植，單腿）",
         "膝前十字韌帶重建術",
         "運動創傷",
         "運動傷科",
@@ -7484,98 +7196,6 @@ const globalMedicalData = {
       "page": "orthopedics.html",
       "hash": "#spine_surgery",
       "label": "脊柱手術"
-    },
-    {
-      "keywords": [
-        "ORIF (鎖骨/橈骨遠端骨折)",
-        "orif upper limb",
-        "ORIF (鎖骨/橈骨遠端)",
-        "切開復位內固定術（上肢）",
-        "開放性復位及內固定術",
-        "手骨折",
-        "手腕骨折",
-        "鎖骨骨折",
-        "上肢骨折",
-        "手臂骨折",
-        "肘骨折",
-        "打鋼板",
-        "骨折手術",
-        "ORIF 上肢",
-        "橈骨骨折"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#orif_upper_limb",
-      "label": "ORIF (鎖骨/橈骨遠端骨折)"
-    },
-    {
-      "keywords": [
-        "ORIF (髕骨/足踝骨折)",
-        "orif lower limb",
-        "切開復位內固定術（下肢）",
-        "開放性復位及內固定術",
-        "腳骨折",
-        "腳踝骨折",
-        "下肢骨折",
-        "小腿骨折",
-        "脛骨骨折",
-        "足踝骨折",
-        "打鋼釘",
-        "ORIF 下肢"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#orif_lower_limb",
-      "label": "ORIF (髕骨/足踝骨折)"
-    },
-    {
-      "keywords": [
-        "內視鏡腕管解除術",
-        "carpal tunnel",
-        "腕管鬆解術（歷史中位）",
-        "腕管",
-        "手腕管",
-        "手麻痺",
-        "手指麻痺",
-        "滑鼠手",
-        "手腕痛",
-        "半夜手痺",
-        "腕隧道",
-        "CTS"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#carpal_tunnel",
-      "label": "內視鏡腕管解除術"
-    },
-    {
-      "keywords": [
-        "板機狀指鬆解術",
-        "trigger finger",
-        "板機指鬆解術（歷史中位）",
-        "彈弓指",
-        "手指卡住",
-        "扳机指",
-        "板機指",
-        "手指彈響",
-        "手指伸唔直"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#trigger_finger",
-      "label": "板機狀指鬆解術"
-    },
-    {
-      "keywords": [
-        "跟腱修補/踝關節鏡韌帶修補",
-        "achilles ankle",
-        "跟腱",
-        "腳踝韌帶",
-        "阿基里斯腱",
-        "跟腱斷裂",
-        "腳踝扭傷手術",
-        "踝關節不穩",
-        "Achilles"
-      ],
-      "page": "orthopedics.html",
-      "hash": "#achilles_ankle",
-      "label": "跟腱修補/踝關節鏡韌帶修補"
     },
     {
       "keywords": [
@@ -7664,8 +7284,8 @@ const globalMedicalData = {
         "前列腺診療手術",
         "prostate",
         "前列腺及膀胱腫瘤手術",
-        "經尿道前列腺切除術（全面護理套餐）",
         "前列腺手術（電刮／等離子氣化）",
+        "經尿道前列腺切除術（全面護理套餐）",
         "經尿道前列腺切除術（TURP）套餐",
         "前列腺",
         "小便困難",
